@@ -1,0 +1,1 @@
+Uppdateringen innehåller förbättringar av stabiliteten samt buggfixar.

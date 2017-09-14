@@ -1,0 +1,1 @@
+Esta actualización contiene mejor estabilidad y soluciones de bugs.
