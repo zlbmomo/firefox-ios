@@ -83,12 +83,12 @@ extension SQLiteBookmarks {
         let copyMirrorContents =
         "INSERT OR IGNORE INTO \(TableBookmarksLocal) " +
         "(sync_status, local_modified, " +
-        " guid, date_added, type, bmkUri, title, parentid, parentName, feedUri, siteUri, pos," +
+        " guid, type, bmkUri, title, parentid, parentName, feedUri, siteUri, pos," +
         " description, tags, keyword, folderName, queryId, faviconID) " +
         "SELECT " +
         "\(SyncStatus.new.rawValue) AS sync_status, " +
         "server_modified AS local_modified, " +
-        "guid, date_added, type, bmkUri, title, parentid, parentName, " +
+        "guid, type, bmkUri, title, parentid, parentName, " +
         "feedUri, siteUri, pos, description, tags, keyword, folderName, queryId, faviconID " +
         "FROM \(TableBookmarksMirror) WHERE is_overridden IS 0"
 

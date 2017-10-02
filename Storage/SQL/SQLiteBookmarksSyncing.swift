@@ -56,10 +56,10 @@ extension SQLiteBookmarks {
         // Most of these will be NULL, because we're only dealing with folders,
         // and typically only the Mobile Bookmarks root.
         let overrideSQL = "INSERT OR IGNORE INTO \(TableBookmarksLocal) " +
-                          "(guid, type, date_added, bmkUri, title, parentid, parentName, feedUri, siteUri, pos," +
+                          "(guid, type, bmkUri, title, parentid, parentName, feedUri, siteUri, pos," +
                           " description, tags, keyword, folderName, queryId, is_deleted, " +
                           " local_modified, sync_status, faviconID) " +
-                          "SELECT guid, type, date_added, bmkUri, title, parentid, parentName, " +
+                          "SELECT guid, type, bmkUri, title, parentid, parentName, " +
                           "feedUri, siteUri, pos, description, tags, keyword, folderName, queryId, " +
                           "is_deleted, " +
                           "\(modified) AS local_modified, \(SyncStatus.changed.rawValue) AS sync_status, faviconID " +
@@ -87,10 +87,10 @@ extension SQLiteBookmarks {
         // Copy any that aren't overridden to the local table.
         let overrideSQL =
         "INSERT OR IGNORE INTO \(TableBookmarksLocal) " +
-        "(guid, type, date_added, bmkUri, title, parentid, parentName, feedUri, siteUri, pos," +
+        "(guid, type, bmkUri, title, parentid, parentName, feedUri, siteUri, pos," +
         " description, tags, keyword, folderName, queryId, is_deleted, " +
         " local_modified, sync_status, faviconID) " +
-        "SELECT guid, type, date_added, bmkUri, title, parentid, parentName, " +
+        "SELECT guid, type, bmkUri, title, parentid, parentName, " +
         "feedUri, siteUri, pos, description, tags, keyword, folderName, queryId, " +
         "is_deleted, " +
         "\(modified) AS local_modified, \(SyncStatus.changed.rawValue) AS sync_status, faviconID " +
@@ -135,7 +135,6 @@ extension SQLiteBookmarks {
         var args: Args = [
             newGUID,
             BookmarkNodeType.bookmark.rawValue,
-            now,
             urlString,
             title,
             parent,
@@ -167,8 +166,8 @@ extension SQLiteBookmarks {
         }
 
         let insertSQL = "INSERT INTO \(TableBookmarksLocal) " +
-                        "(guid, type, date_added, bmkUri, title, parentid, parentName, local_modified, sync_status, faviconID) " +
-                        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, \(iconValue))"
+                        "(guid, type, bmkUri, title, parentid, parentName, local_modified, sync_status, faviconID) " +
+                        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, \(iconValue))"
         try change(insertSQL, args: args, desc: "Error inserting \(newGUID).")
 
         func bumpParentStatus(_ status: Int) throws {
@@ -296,7 +295,6 @@ private extension BookmarkMirrorItem {
     func getUpdateOrInsertArgs() -> Args {
         let args: Args = [
             self.type.rawValue   ,
-            self.dateAdded,
             self.serverModified,
             self.isDeleted ? 1 : 0   ,
             self.hasDupe ? 1 : 0,
@@ -408,7 +406,7 @@ open class SQLiteBookmarkBufferStorage: BookmarkBufferStorage {
             // These have the same values in the same order.
             let update =
             "UPDATE \(TableBookmarksBuffer) SET " +
-            "type = ?, date_added = ?, server_modified = ?, is_deleted = ?, " +
+            "type = ?, server_modified = ?, is_deleted = ?, " +
             "hasDupe = ?, parentid = ?, parentName = ?, " +
             "feedUri = ?, siteUri = ?, pos = ?, title = ?, " +
             "description = ?, bmkUri = ?, tags = ?, keyword = ?, " +
@@ -420,10 +418,10 @@ open class SQLiteBookmarkBufferStorage: BookmarkBufferStorage {
             // serve that purpose just as well.
             let insert =
             "INSERT INTO \(TableBookmarksBuffer) " +
-            "(type, date_added, server_modified, is_deleted, hasDupe, parentid, parentName, " +
+            "(type, server_modified, is_deleted, hasDupe, parentid, parentName, " +
              "feedUri, siteUri, pos, title, description, bmkUri, tags, keyword, folderName, queryId, guid) " +
             "VALUES " +
-            "(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+            "(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
 
             for args in values {
                 try conn.executeChange(update, withArgs: args)
@@ -1006,9 +1004,9 @@ extension MergedSQLiteBookmarks {
                 let varlist = BrowserDB.varlist(guids.count)
                 let copySQL = [
                     "INSERT OR REPLACE INTO \(TableBookmarksMirror)",
-                    "(guid, type, date_added, parentid, parentName, feedUri, siteUri, pos, title, description,",
+                    "(guid, type, parentid, parentName, feedUri, siteUri, pos, title, description,",
                     "bmkUri, tags, keyword, folderName, queryId, server_modified)",
-                    "SELECT guid, type, date_added, parentid, parentName, feedUri, siteUri, pos, title, description,",
+                    "SELECT guid, type, parentid, parentName, feedUri, siteUri, pos, title, description,",
                     "bmkUri, tags, keyword, folderName, queryId, server_modified",
                     "FROM \(TableBookmarksBuffer)",
                     "WHERE guid IN",
@@ -1023,9 +1021,9 @@ extension MergedSQLiteBookmarks {
                 let varlist = BrowserDB.varlist(guids.count)
                 let copySQL = [
                     "INSERT OR REPLACE INTO \(TableBookmarksMirror)",
-                    "(guid, type, date_added, parentid, parentName, feedUri, siteUri, pos, title, description,",
+                    "(guid, type, parentid, parentName, feedUri, siteUri, pos, title, description,",
                     "bmkUri, tags, keyword, folderName, queryId, faviconID, server_modified)",
-                    "SELECT guid, type, date_added, parentid, parentName, feedUri, siteUri, pos, title, description,",
+                    "SELECT guid, type, parentid, parentName, feedUri, siteUri, pos, title, description,",
                     "bmkUri, tags, keyword, folderName, queryId, faviconID,",
                     
                     // This will be fixed up in batches after the initial copy.
@@ -1072,7 +1070,7 @@ extension MergedSQLiteBookmarks {
             if !op.mirrorItemsToUpdate.isEmpty {
                 let updateSQL = [
                     "UPDATE \(TableBookmarksMirror) SET",
-                    "type = ?, date_added = ?, server_modified = ?, is_deleted = ?,",
+                    "type = ?, server_modified = ?, is_deleted = ?,",
                     "hasDupe = ?, parentid = ?, parentName = ?,",
                     "feedUri = ?, siteUri = ?, pos = ?, title = ?,",
                     "description = ?, bmkUri = ?, tags = ?, keyword = ?,",
@@ -1089,13 +1087,13 @@ extension MergedSQLiteBookmarks {
             if !op.mirrorItemsToInsert.isEmpty {
                 let insertSQL = [
                     "INSERT OR IGNORE INTO \(TableBookmarksMirror) (",
-                    "type, date_added, server_modified, is_deleted,",
+                    "type, server_modified, is_deleted,",
                     "hasDupe, parentid, parentName,",
                     "feedUri, siteUri, pos, title,",
                     "description, bmkUri, tags, keyword,",
                     "folderName, queryId, guid",
                     "VALUES",
-                    "(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                    "(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
                     ].joined(separator: " ")
                 
                 try op.mirrorItemsToInsert.forEach { (_, mirrorItem) in
@@ -1146,13 +1144,13 @@ extension MergedSQLiteBookmarks {
             
             let insertSQL = [
                 "INSERT OR IGNORE INTO \(TableBookmarksBuffer) (",
-                "type, date_added, server_modified, is_deleted,",
+                "type, server_modified, is_deleted,",
                 "hasDupe, parentid, parentName,",
                 "feedUri, siteUri, pos, title,",
                 "description, bmkUri, tags, keyword,",
                 "folderName, queryId, guid)",
                 "VALUES",
-                "(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                "(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
                 ].joined(separator: " ")
             
             let args = op.mobileRoot.getUpdateOrInsertArgs()
@@ -1173,9 +1171,9 @@ extension MergedSQLiteBookmarks {
                 
                 let copySQL = [
                     "INSERT OR REPLACE INTO \(TableBookmarksBuffer)",
-                    "(guid, type, date_added, parentid, parentName, feedUri, siteUri, pos, title, description,",
+                    "(guid, type, parentid, parentName, feedUri, siteUri, pos, title, description,",
                     "bmkUri, tags, keyword, folderName, queryId, server_modified)",
-                    "SELECT guid, type, date_added, parentid, parentName, feedUri, siteUri, pos, title, description,",
+                    "SELECT guid, type, parentid, parentName, feedUri, siteUri, pos, title, description,",
                     "bmkUri, tags, keyword, folderName, queryId,",
                     "\(op.modifiedTime) AS server_modified",
                     "FROM \(TableBookmarksLocal) WHERE guid IN",
