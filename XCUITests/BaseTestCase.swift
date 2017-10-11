@@ -5,11 +5,14 @@
 import XCTest
 
 class BaseTestCase: XCTestCase {
+    var navigator: Navigator<FxUserState>!
+    var app: XCUIApplication!
 
     override func setUp() {
         super.setUp()
         continueAfterFailure = false
-        let app = XCUIApplication()
+        app = XCUIApplication()
+        navigator = createScreenGraph(app).navigator(self)
         app.terminate()
         restart(app, args: [LaunchArguments.ClearProfile, LaunchArguments.SkipIntro, LaunchArguments.SkipWhatsNew])
     }

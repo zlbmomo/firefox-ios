@@ -5,22 +5,7 @@
 import XCTest
 
 class NoImageTests: BaseTestCase {
-
-    var navigator: Navigator!
-    var app: XCUIApplication!
     static let NoImageButtonIdentifier = "menu-NoImageMode"
-
-    override func setUp() {
-        super.setUp()
-        app = XCUIApplication()
-        navigator = createScreenGraph(app).navigator(self)
-    }
-
-    override func tearDown() {
-        navigator = nil
-        app = nil
-        super.tearDown()
-    }
 
     private func showImages() {
         navigator.goto(BrowserTabMenu)
