@@ -58,6 +58,10 @@ extension ScreenGraph {
      * used to document the exits out of this node to other nodes.
      */
     func createScene(_ name: String, file: String = #file, line: UInt = #line, builder: @escaping SceneBuilder<T>) {
+        addScreenState(name, file: file, line: line, builder: builder)
+    }
+
+    func addScreenState(_ name: String, file: String = #file, line: UInt = #line, builder: @escaping SceneBuilder<T>) {
         let scene = ScreenGraphNode(map: self, name: name, builder: builder)
         scene.file = file
         scene.line = line
@@ -127,6 +131,8 @@ class ScreenGraphNode<T: UserState> {
 
     fileprivate weak var map: ScreenGraph<T>?
 
+    typealias UserStateChange = (T) -> ()
+
     // Iff this node has a backAction, this store temporarily stores 
     // the node we were at before we got to this one. This becomes the node we return to when the backAction is 
     // invoked.
@@ -150,6 +156,9 @@ class ScreenGraphNode<T: UserState> {
     var dismissOnUse: Bool = false
 
     var existsWhen: XCUIElement?
+    fileprivate var onEnterStateRecorder: UserStateChange? = nil
+
+    fileprivate var onExitStateRecorder: UserStateChange? = nil
 
     fileprivate var line: UInt!
 
@@ -262,6 +271,17 @@ extension ScreenGraphNode {
     }
 }
 
+extension ScreenGraphNode {
+    /// This allows us to record state changes in the app as the navigator moves into a given screen state.
+    func onEnter(recorder: @escaping UserStateChange) {
+        onEnterStateRecorder = recorder
+    }
+
+    /// This allows us to record state changes in the app as the navigator leaves a given screen state.
+    func onExit(recorder: @escaping UserStateChange) {
+        onExitStateRecorder = recorder
+    }
+}
 /**
  * The Navigator provides a set of methods to navigate around the app. You can `goto` nodes, `visit` multiple nodes,
  * or visit all nodes, but mostly you just goto. If you take actions that move around the app outside of the
@@ -313,6 +333,10 @@ class Navigator<T: UserState> {
                 returnToRecentScene = currentScene
             }
 
+            // Before moving to the next node, we may like to record the
+            // state of the app.
+            currentScene.onExitStateRecorder?(userState)
+
             let nextScene = map.nodedScenes[gkNext]!
             let edge = currentScene.edges[nextScene.name]!
 
@@ -328,6 +352,9 @@ class Navigator<T: UserState> {
                         expected: false)
                 }
             }
+
+            // Now we've transitioned to the next node, we might want to note some state.
+            nextScene.onEnterStateRecorder?(userState)
 
             if nextScene.hasBack {
                 if nextScene.returnNode == nil {
