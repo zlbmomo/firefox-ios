@@ -78,8 +78,16 @@ let allPrivateHomePanels = [
 
 let ContextMenu_ReloadButton = "ContextMenu_ReloadButton"
 
-func createScreenGraph(_ app: XCUIApplication, url: String = "https://www.mozilla.org/en-US/book/") -> ScreenGraph {
-    let map = ScreenGraph()
+
+class FxUserState: UserState {
+    required init() {
+        super.init()
+        initialScreenState = FirstRun
+    }
+}
+
+func createScreenGraph(_ app: XCUIApplication, url: String = "https://www.mozilla.org/en-US/book/") -> ScreenGraph<FxUserState> {
+    let map = ScreenGraph(with: FxUserState.self)
 
     let startBrowsingButton = app.buttons["IntroViewController.startBrowsingButton"]
     let introScrollView = app.scrollViews["IntroViewController.scrollView"]
@@ -374,8 +382,6 @@ func createScreenGraph(_ app: XCUIApplication, url: String = "https://www.mozill
 
         scene.dismissOnUse = true
     }
-
-    map.initialSceneName = FirstRun
 
     return map
 }
