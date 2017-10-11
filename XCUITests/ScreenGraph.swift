@@ -19,27 +19,36 @@ import Foundation
 import GameplayKit
 import XCTest
 
-typealias Edge = (XCTestCase, String, UInt) -> Void
-typealias SceneBuilder = (ScreenGraphNode) -> Void
+struct Edge {
+    let transition: (XCTestCase, String, UInt) -> Void
+}
+
+typealias SceneBuilder<T: UserState> = (ScreenGraphNode<T>) -> Void
 typealias NodeVisitor = (String) -> Void
+
+open class UserState {
+    public required init() {}
+    var initialScreenState: String?
+}
 
 /**
  * ScreenGraph
  * This is the main interface to building a graph of screens/app states and how to navigate between them.
  * The ScreenGraph will be used as a map to navigate the test agent around the app.
  */
-open class ScreenGraph {
-    var initialSceneName: String?
+open class ScreenGraph<T: UserState> {
+    fileprivate let userStateType: T.Type
 
-    var namedScenes: [String: ScreenGraphNode] = [:]
-    var nodedScenes: [GKGraphNode: ScreenGraphNode] = [:]
+    fileprivate var namedScenes: [String: ScreenGraphNode<T>] = [:]
+    fileprivate var nodedScenes: [GKGraphNode: ScreenGraphNode<T>] = [:]
 
-    var isReady: Bool = false
+    fileprivate var isReady: Bool = false
 
-    let gkGraph: GKGraph
+    fileprivate let gkGraph: GKGraph
 
-    init() {
+    init(with userStateType: T.Type) {
         self.gkGraph = GKGraph()
+        self.userStateType = userStateType
     }
 }
 
@@ -48,7 +57,7 @@ extension ScreenGraph {
      * Method for creating a ScreenGraphNode in the graph. The node should be accompanied by a closure 
      * used to document the exits out of this node to other nodes.
      */
-    func createScene(_ name: String, file: String = #file, line: UInt = #line, builder: @escaping (ScreenGraphNode) -> Void) {
+    func createScene(_ name: String, file: String = #file, line: UInt = #line, builder: @escaping SceneBuilder<T>) {
         let scene = ScreenGraphNode(map: self, name: name, builder: builder)
         scene.file = file
         scene.line = line
@@ -62,18 +71,20 @@ extension ScreenGraph {
      * Create a new navigator object. Navigator objects are the main way of getting around the app.
      * Typically, you'll do this in `TestCase.setUp()`
      */
-    func navigator(_ xcTest: XCTestCase, startingAt: String? = nil, file: String = #file, line: UInt = #line) -> Navigator {
+    func navigator(_ xcTest: XCTestCase, startingAt: String? = nil, file: String = #file, line: UInt = #line) -> Navigator<T> {
         buildGkGraph()
-        var current: ScreenGraphNode?
-        if let name = startingAt ?? initialSceneName {
+        var current: ScreenGraphNode<T>?
+        let userState = userStateType.init()
+        if let name = startingAt ?? userState.initialScreenState {
             current = namedScenes[name]
+            userState.initialScreenState = name
         }
 
         if current == nil {
             xcTest.recordFailure(withDescription: "The app's initial state couldn't be established.",
                 inFile: file, atLine: line, expected: false)
         }
-        return Navigator(self, xcTest: xcTest, initialScene: current!)
+        return Navigator(self, xcTest: xcTest, initialScene: current!, userState: userState)
     }
 
     fileprivate func buildGkGraph() {
@@ -108,18 +119,18 @@ typealias Gesture = () -> Void
  * The ScreenGraphNode has all the methods needed to define edges from this node to another node, using the usual
  * XCUIElement method of moving about.
  */
-class ScreenGraphNode {
+class ScreenGraphNode<T: UserState> {
     let name: String
-    fileprivate let builder: SceneBuilder
+    fileprivate let builder: SceneBuilder<T>
     fileprivate let gkNode: GKGraphNode
     fileprivate var edges: [String: Edge] = [:]
 
-    fileprivate weak var map: ScreenGraph?
+    fileprivate weak var map: ScreenGraph<T>?
 
     // Iff this node has a backAction, this store temporarily stores 
     // the node we were at before we got to this one. This becomes the node we return to when the backAction is 
     // invoked.
-    fileprivate weak var returnNode: ScreenGraphNode?
+    fileprivate weak var returnNode: ScreenGraphNode<T>?
 
     fileprivate var hasBack: Bool {
         return backAction != nil
@@ -144,14 +155,14 @@ class ScreenGraphNode {
 
     fileprivate var file: String!
 
-    fileprivate init(map: ScreenGraph, name: String, builder: @escaping SceneBuilder) {
+    fileprivate init(map: ScreenGraph<T>, name: String, builder: @escaping SceneBuilder<T>) {
         self.map = map
         self.name = name
         self.gkNode = GKGraphNode()
         self.builder = builder
     }
 
-    fileprivate func addEdge(_ dest: String, by edge: @escaping Edge) {
+    fileprivate func addEdge(_ dest: String, by edge: Edge) {
         edges[dest] = edge
         // by this time, we should've added all nodes in to the gkGraph.
 
@@ -184,7 +195,7 @@ extension ScreenGraphNode {
      * @param to – the destination node.
      */
     func gesture(withElement element: XCUIElement? = nil, to nodeName: String, file declFile: String = #file, line declLine: UInt = #line, g: @escaping () -> Void) {
-        addEdge(nodeName) { xcTest, file, line in
+        let edge = Edge(transition: { xcTest, file, line in
             if let el = element {
                 self.waitForElement(el, withTest: xcTest) { _ in
                     xcTest.recordFailure(withDescription: "Cannot find \(el)", inFile: declFile, atLine: declLine, expected: false)
@@ -192,7 +203,8 @@ extension ScreenGraphNode {
                 }
             }
             g()
-        }
+        })
+        addEdge(nodeName, by: edge)
     }
 
     func noop(to nodeName: String, file: String = #file, line: UInt = #line) {
@@ -255,17 +267,20 @@ extension ScreenGraphNode {
  * or visit all nodes, but mostly you just goto. If you take actions that move around the app outside of the
  * navigator, you can re-sync app with navigator my telling it which node it is now at, using the `nowAt` method.
  */
-class Navigator {
-    fileprivate let map: ScreenGraph
-    fileprivate var currentScene: ScreenGraphNode
-    fileprivate var returnToRecentScene: ScreenGraphNode
+class Navigator<T: UserState> {
+    fileprivate let map: ScreenGraph<T>
+    fileprivate var currentScene: ScreenGraphNode<T>
+    fileprivate var returnToRecentScene: ScreenGraphNode<T>
     fileprivate let xcTest: XCTestCase
 
-    fileprivate init(_ map: ScreenGraph, xcTest: XCTestCase, initialScene: ScreenGraphNode) {
+    var userState: T
+
+    fileprivate init(_ map: ScreenGraph<T>, xcTest: XCTestCase, initialScene: ScreenGraphNode<T>, userState: T) {
         self.map = map
         self.xcTest = xcTest
         self.currentScene = initialScene
         self.returnToRecentScene = initialScene
+        self.userState = userState
     }
 
     /**
@@ -299,10 +314,10 @@ class Navigator {
             }
 
             let nextScene = map.nodedScenes[gkNext]!
-            let action = currentScene.edges[nextScene.name]!
+            let edge = currentScene.edges[nextScene.name]!
 
             // We definitely have an action, so it's save to unbox.
-            action(xcTest, file, line)
+            edge.transition(xcTest, file, line)
 
             if let testElement = nextScene.existsWhen {
                 nextScene.waitForElement(testElement, withTest: xcTest) { _ in
@@ -381,7 +396,7 @@ class Navigator {
      * This may not be possible.
      */
     func revert(_ file: String = #file, line: UInt = #line) {
-        if let initial = self.map.initialSceneName {
+        if let initial = self.userState.initialScreenState {
             self.goto(initial, file: file, line: line)
         }
     }
