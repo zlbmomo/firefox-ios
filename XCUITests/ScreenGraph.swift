@@ -116,6 +116,24 @@ extension ScreenGraph {
 
 typealias Gesture = () -> Void
 
+class WaitCondition {
+    let predicate: NSPredicate
+    let object: Any
+    let file: String
+    let line: UInt
+
+    init(_ predicate: String, object: Any, file: String, line: UInt) {
+        self.predicate = NSPredicate(format: predicate)
+        self.object = object
+        self.file = file
+        self.line = line
+    }
+
+    func wait(timeoutHandler: () -> ()) {
+        waitOrTimeout(predicate, object: object, timeoutHandler: timeoutHandler)
+    }
+}
+
 /**
  * The ScreenGraph is made up of nodes. It is not possible to init these directly, only by creating 
  * screen nodes from the ScreenGraph object.
@@ -155,10 +173,11 @@ class ScreenGraphNode<T: UserState> {
      */
     var dismissOnUse: Bool = false
 
-    var existsWhen: XCUIElement?
     fileprivate var onEnterStateRecorder: UserStateChange? = nil
 
     fileprivate var onExitStateRecorder: UserStateChange? = nil
+
+    fileprivate var onEnterWaitCondition: WaitCondition? = nil
 
     fileprivate var line: UInt!
 
@@ -184,14 +203,12 @@ private let enabledPredicate = NSPredicate(format: "enabled == true")
 private let hittablePredicate = NSPredicate(format: "hittable == true")
 private let noopNodeVisitor: NodeVisitor = { _ in }
 
-extension ScreenGraphNode {
-    fileprivate func waitForElement(_ element: XCUIElement, withTest xcTest: XCTestCase, notFoundHandler: () -> Void) {
-        // Wait for 5 seconds for the element to exist.
-        let expectation = XCTNSPredicateExpectation(predicate: existsPredicate, object: element)
-        let result = XCTWaiter().wait(for: [expectation], timeout: 5)
-        if result != .completed {
-            notFoundHandler()
-        }
+// This is a function for waiting for a condition of an object to come true.
+func waitOrTimeout(_ predicate: NSPredicate = existsPredicate, object: Any, timeout: TimeInterval = 5, timeoutHandler: () -> ()) {
+    let expectation = XCTNSPredicateExpectation(predicate: predicate, object: object)
+    let result = XCTWaiter().wait(for: [expectation], timeout: timeout)
+    if result != .completed {
+        timeoutHandler()
     }
 }
 
@@ -206,7 +223,7 @@ extension ScreenGraphNode {
     func gesture(withElement element: XCUIElement? = nil, to nodeName: String, file declFile: String = #file, line declLine: UInt = #line, g: @escaping () -> Void) {
         let edge = Edge(transition: { xcTest, file, line in
             if let el = element {
-                self.waitForElement(el, withTest: xcTest) { _ in
+                waitOrTimeout(existsPredicate, object: el) { _ in
                     xcTest.recordFailure(withDescription: "Cannot find \(el)", inFile: declFile, atLine: declLine, expected: false)
                     xcTest.recordFailure(withDescription: "Cannot get from \(self.name) to \(nodeName). See \(declFile)", inFile: file, atLine: line, expected: false)
                 }
@@ -273,8 +290,17 @@ extension ScreenGraphNode {
 
 extension ScreenGraphNode {
     /// This allows us to record state changes in the app as the navigator moves into a given screen state.
-    func onEnter(recorder: @escaping UserStateChange) {
+    func onEnter(_ predicate: String = "exists == true", element: Any? = nil,
+                 file: String = #file, line: UInt = #line,
+                 recorder: @escaping UserStateChange) {
+        if let element = element {
+            onEnter(predicate, element: element)
+        }
         onEnterStateRecorder = recorder
+    }
+
+    func onEnter(_ predicate: String = "exists == true", element: Any, file: String = #file, line: UInt = #line) {
+        onEnterWaitCondition = WaitCondition(predicate, object: element, file: file, line: line)
     }
 
     /// This allows us to record state changes in the app as the navigator leaves a given screen state.
@@ -282,6 +308,7 @@ extension ScreenGraphNode {
         onExitStateRecorder = recorder
     }
 }
+
 /**
  * The Navigator provides a set of methods to navigate around the app. You can `goto` nodes, `visit` multiple nodes,
  * or visit all nodes, but mostly you just goto. If you take actions that move around the app outside of the
@@ -343,12 +370,11 @@ class Navigator<T: UserState> {
             // We definitely have an action, so it's save to unbox.
             edge.transition(xcTest, file, line)
 
-            if let testElement = nextScene.existsWhen {
-                nextScene.waitForElement(testElement, withTest: xcTest) { _ in
-                    // TODO report error in the correct place in the graph.
-                    self.xcTest.recordFailure(withDescription: "Cannot find \(testElement) in \(nextScene.name)",
-                        inFile: nextScene.file,
-                        atLine: nextScene.line,
+            if let condition = nextScene.onEnterWaitCondition {
+                condition.wait { _ in
+                    self.xcTest.recordFailure(withDescription: "Unsuccessfully entered \(nextScene.name)",
+                        inFile: condition.file,
+                        atLine: condition.line,
                         expected: false)
                 }
             }
