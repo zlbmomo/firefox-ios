@@ -23,7 +23,7 @@ struct Edge {
     let transition: (XCTestCase, String, UInt) -> Void
 }
 
-typealias SceneBuilder<T: UserState> = (ScreenGraphNode<T>) -> Void
+typealias SceneBuilder<T: UserState> = (ScreenStateNode<T>) -> Void
 typealias NodeVisitor = (String) -> Void
 
 open class UserState {
@@ -39,12 +39,14 @@ open class UserState {
 open class ScreenGraph<T: UserState> {
     fileprivate let userStateType: T.Type
 
-    fileprivate var namedScenes: [String: ScreenGraphNode<T>] = [:]
-    fileprivate var nodedScenes: [GKGraphNode: ScreenGraphNode<T>] = [:]
+    fileprivate var namedScenes: [String: ScreenStateNode<T>] = [:]
+    fileprivate var nodedScenes: [GKGraphNode: ScreenStateNode<T>] = [:]
 
     fileprivate var isReady: Bool = false
 
     fileprivate let gkGraph: GKGraph
+
+    typealias UserStateChange = (T) -> ()
 
     init(with userStateType: T.Type) {
         self.gkGraph = GKGraph()
@@ -62,11 +64,13 @@ extension ScreenGraph {
     }
 
     func addScreenState(_ name: String, file: String = #file, line: UInt = #line, builder: @escaping SceneBuilder<T>) {
-        let scene = ScreenGraphNode(map: self, name: name, builder: builder)
-        scene.file = file
-        scene.line = line
+        let scene = ScreenStateNode(map: self, name: name, file: file, line: line, builder: builder)
         namedScenes[name] = scene
         nodedScenes[scene.gkNode] = scene
+    }
+
+    func addScreenAction(_ name: String, transitionTo screenState: String, file: String = #file, line: UInt = #line, recorder: @escaping (T) -> ()) {
+        let screenAction = ScreenActionNode(self, name: name, file: file, line: line, recorder: recorder)
     }
 }
 
@@ -77,7 +81,7 @@ extension ScreenGraph {
      */
     func navigator(_ xcTest: XCTestCase, startingAt: String? = nil, file: String = #file, line: UInt = #line) -> Navigator<T> {
         buildGkGraph()
-        var current: ScreenGraphNode<T>?
+        var current: ScreenStateNode<T>?
         let userState = userStateType.init()
         if let name = startingAt ?? userState.initialScreenState {
             current = namedScenes[name]
@@ -114,6 +118,15 @@ extension ScreenGraph {
     }
 }
 
+class ScreenActionNode<T: UserState>: GraphNode<T> {
+    let recorder: (T) -> ()
+
+    init(_ map: ScreenGraph<T>, name: String, file: String, line: UInt, recorder: @escaping (T) -> ()) {
+        self.recorder = recorder
+        super.init(map, name: name, file: file, line: line)
+    }
+}
+
 typealias Gesture = () -> Void
 
 class WaitCondition {
@@ -134,6 +147,25 @@ class WaitCondition {
     }
 }
 
+class GraphNode<T: UserState> {
+    let name: String
+    fileprivate let gkNode: GKGraphNode
+
+    fileprivate weak var map: ScreenGraph<T>?
+
+    fileprivate var file: String!
+    fileprivate var line: UInt!
+
+    init(_ map: ScreenGraph<T>, name: String, file: String, line: UInt) {
+        self.map = map
+        self.name = name
+        self.file = file
+        self.line = line
+
+        self.gkNode = GKGraphNode()
+    }
+}
+
 /**
  * The ScreenGraph is made up of nodes. It is not possible to init these directly, only by creating 
  * screen nodes from the ScreenGraph object.
@@ -141,20 +173,16 @@ class WaitCondition {
  * The ScreenGraphNode has all the methods needed to define edges from this node to another node, using the usual
  * XCUIElement method of moving about.
  */
-class ScreenGraphNode<T: UserState> {
-    let name: String
+class ScreenStateNode<T: UserState>: GraphNode<T> {
     fileprivate let builder: SceneBuilder<T>
-    fileprivate let gkNode: GKGraphNode
     fileprivate var edges: [String: Edge] = [:]
-
-    fileprivate weak var map: ScreenGraph<T>?
 
     typealias UserStateChange = (T) -> ()
 
     // Iff this node has a backAction, this store temporarily stores 
     // the node we were at before we got to this one. This becomes the node we return to when the backAction is 
     // invoked.
-    fileprivate weak var returnNode: ScreenGraphNode<T>?
+    fileprivate weak var returnNode: ScreenStateNode<T>?
 
     fileprivate var hasBack: Bool {
         return backAction != nil
@@ -179,15 +207,9 @@ class ScreenGraphNode<T: UserState> {
 
     fileprivate var onEnterWaitCondition: WaitCondition? = nil
 
-    fileprivate var line: UInt!
-
-    fileprivate var file: String!
-
-    fileprivate init(map: ScreenGraph<T>, name: String, builder: @escaping SceneBuilder<T>) {
-        self.map = map
-        self.name = name
-        self.gkNode = GKGraphNode()
+    fileprivate init(map: ScreenGraph<T>, name: String, file: String, line: UInt, builder: @escaping SceneBuilder<T>) {
         self.builder = builder
+        super.init(map, name: name, file: file, line: line)
     }
 
     fileprivate func addEdge(_ dest: String, by edge: Edge) {
@@ -213,7 +235,7 @@ func waitOrTimeout(_ predicate: NSPredicate = existsPredicate, object: Any, time
 }
 
 // Public methods for defining edges out of this node.
-extension ScreenGraphNode {
+extension ScreenStateNode {
     /**
      * Declare that by performing the given action/gesture, then we can navigate from this node to the next.
      * 
@@ -288,7 +310,7 @@ extension ScreenGraphNode {
     }
 }
 
-extension ScreenGraphNode {
+extension ScreenStateNode {
     /// This allows us to record state changes in the app as the navigator moves into a given screen state.
     func onEnter(_ predicate: String = "exists == true", element: Any? = nil,
                  file: String = #file, line: UInt = #line,
@@ -316,13 +338,13 @@ extension ScreenGraphNode {
  */
 class Navigator<T: UserState> {
     fileprivate let map: ScreenGraph<T>
-    fileprivate var currentScene: ScreenGraphNode<T>
-    fileprivate var returnToRecentScene: ScreenGraphNode<T>
+    fileprivate var currentScene: ScreenStateNode<T>
+    fileprivate var returnToRecentScene: ScreenStateNode<T>
     fileprivate let xcTest: XCTestCase
 
     var userState: T
 
-    fileprivate init(_ map: ScreenGraph<T>, xcTest: XCTestCase, initialScene: ScreenGraphNode<T>, userState: T) {
+    fileprivate init(_ map: ScreenGraph<T>, xcTest: XCTestCase, initialScene: ScreenStateNode<T>, userState: T) {
         self.map = map
         self.xcTest = xcTest
         self.currentScene = initialScene
