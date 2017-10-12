@@ -11,6 +11,7 @@ class ScreenGraphTest: XCTestCase {
     override func setUp() {
         app = XCUIApplication()
         navigator = createTestGraph(app).navigator(self)
+        app.terminate()
         restart(app, args: [LaunchArguments.ClearProfile, LaunchArguments.SkipIntro])
     }
 
@@ -32,6 +33,16 @@ extension ScreenGraphTest {
 
         XCTAssertTrue(navigator.userState.url?.starts(with: "support.mozilla.org") ?? false, "Current url recorded by from the url bar")
     }
+
+    func testBackStack() {
+        // We'll go through the browser tab, through the menu.
+        navigator.goto(SettingsScreen)
+        // Going back, there is no explicit way back to the browser tab,
+        // and the menu will have dismissed. We should be detecting the existence of
+        // elements as we go through each screen state, so if there are errors, they'll be
+        // reported in the graph below.
+        navigator.goto(BrowserTab)
+    }
 }
 
 class TestUserState: UserState {
@@ -43,7 +54,7 @@ class TestUserState: UserState {
     var url: String? = nil
 }
 
-func createTestGraph(_ app: XCUIApplication) -> ScreenGraph<TestUserState> {
+fileprivate func createTestGraph(_ app: XCUIApplication) -> ScreenGraph<TestUserState> {
     let map = ScreenGraph(with: TestUserState.self)
 
     map.addScreenState(FirstRun) { screenState in
@@ -54,6 +65,26 @@ func createTestGraph(_ app: XCUIApplication) -> ScreenGraph<TestUserState> {
         screenState.onEnter("exists != true", element: app.progressIndicators.element(boundBy: 0)) { userState in
             userState.url = app.textFields["url"].value as? String
         }
+
+        screenState.tap(app.buttons["TabToolbar.menuButton"], to: BrowserTabMenu)
+    }
+
+    map.addScreenState(BrowserTabMenu) { screenState in
+        screenState.dismissOnUse = true
+        screenState.onEnter(element: app.tables["Context Menu"])
+        screenState.tap(app.tables.cells["Settings"], to: SettingsScreen)
+
+        screenState.backAction = {
+            app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.25)).tap()
+        }
+    }
+
+    let navigationControllerBackAction = {
+        app.navigationBars.element(boundBy: 0).buttons.element(boundBy: 0).tap()
+    }
+
+    map.addScreenState(SettingsScreen) { screenState in
+        screenState.backAction = navigationControllerBackAction
     }
 
     return map
