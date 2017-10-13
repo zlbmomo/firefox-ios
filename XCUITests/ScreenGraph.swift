@@ -537,12 +537,26 @@ class Navigator<T: UserState> {
         moveDirectlyTo(returnToRecentScene)
     }
 
+    /// Perform an app action, as defined by the graph.
+    /// Actions can cause userState to change. They only have one edge out,
+    /// which could be another action or a screen state.
+    /// This method will always return the app to a valid screen state.
     func performAction(_ screenActionName: String, file: String = #file, line: UInt = #line) {
         guard let _ = map.namedScenes[screenActionName] as? ScreenActionNode else {
             xcTest.recordFailure(withDescription: "\(screenActionName) is not an action", inFile: file, atLine: line, expected: false)
             return
         }
         goto(screenActionName, file: file, line: line)
+    }
+
+    func toggleOn(_ flag: Bool, withAction action: String, file: String = #file, line: UInt = #line) {
+        if !flag {
+            performAction(action, file: file, line: line)
+        }
+    }
+
+    func toggleOff(_ flag: Bool, withAction action: String, file: String = #file, line: UInt = #line) {
+        toggleOn(!flag, withAction: action)
     }
 
     /**

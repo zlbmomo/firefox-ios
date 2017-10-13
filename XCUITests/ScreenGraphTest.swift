@@ -44,10 +44,22 @@ extension ScreenGraphTest {
         navigator.goto(BrowserTab)
     }
 
-    func testSimpleAction() {
+    func testSimpleToggleAction() {
+        // Switch night mode on, by toggling.
         navigator.performAction(Action.ToggleNightMode)
         XCTAssertTrue(navigator.userState.nightMode)
         XCTAssertEqual(navigator.screenState, BrowserTab)
+
+        // Nothing should happen here, because night mode is already on.
+        navigator.toggleOn(navigator.userState.nightMode, withAction: Action.ToggleNightMode)
+        XCTAssertTrue(navigator.userState.nightMode)
+        XCTAssertEqual(navigator.screenState, BrowserTab)
+
+        // Switch night mode off.
+        navigator.toggleOff(navigator.userState.nightMode, withAction: Action.ToggleNightMode)
+        XCTAssertFalse(navigator.userState.nightMode)
+        XCTAssertEqual(navigator.screenState, BrowserTab)
+    }
     }
 }
 
