@@ -43,6 +43,11 @@ extension ScreenGraphTest {
         // reported in the graph below.
         navigator.goto(BrowserTab)
     }
+
+    func testSimpleAction() {
+        navigator.performAction(Action.ToggleNightMode)
+        XCTAssertTrue(navigator.userState.nightMode)
+    }
 }
 
 class TestUserState: UserState {
@@ -52,6 +57,11 @@ class TestUserState: UserState {
     }
 
     var url: String? = nil
+    var nightMode = false
+}
+
+fileprivate class Action {
+    static let ToggleNightMode = "menu-NightMode"
 }
 
 fileprivate func createTestGraph(for test: XCTestCase, with app: XCUIApplication) -> ScreenGraph<TestUserState> {
@@ -74,8 +84,12 @@ fileprivate func createTestGraph(for test: XCTestCase, with app: XCUIApplication
         screenState.onEnter(element: app.tables["Context Menu"])
         screenState.tap(app.tables.cells["Settings"], to: SettingsScreen)
 
+        screenState.tap(app.cells["menu-NightMode"], forAction: Action.ToggleNightMode) { userState in
+            userState.nightMode = !userState.nightMode
+        }
+
         screenState.backAction = {
-            app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.25)).tap()
+            app.buttons["PhotonMenu.cancel"].tap()
         }
     }
 

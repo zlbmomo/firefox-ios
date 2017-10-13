@@ -68,11 +68,78 @@ extension ScreenGraph {
     func addScreenState(_ name: String, file: String = #file, line: UInt = #line, builder: @escaping SceneBuilder<T>) {
         let scene = ScreenStateNode(map: self, name: name, file: file, line: line, builder: builder)
         namedScenes[name] = scene
-        nodedScenes[scene.gkNode] = scene
     }
 
-    func addScreenAction(_ name: String, transitionTo screenState: String, file: String = #file, line: UInt = #line, recorder: @escaping (T) -> ()) {
-        let screenAction = ScreenActionNode(self, name: name, file: file, line: line, recorder: recorder)
+    func addScreenAction(_ name: String, transitionTo nextNodeName: String, file: String = #file, line: UInt = #line, recorder: @escaping (T) -> ()) {
+        addOrCheckScreenAction(name, transitionTo: nextNodeName, file: file, line: line, recorder: recorder)
+    }
+}
+
+extension ScreenGraph {
+    fileprivate func addActionChain(_ actions: [String], finalState screenState: String?, r: @escaping UserStateChange, file: String, line: UInt) {
+        for i in 0..<actions.count {
+            let thisNodeName = actions[i]
+            let nextNodeName = i+1 < actions.count ? actions[i+1] : screenState
+            let recorder: UserStateChange?
+            if i == 0 {
+                recorder = r
+            } else {
+                recorder = nil
+            }
+            addOrCheckScreenAction(thisNodeName, transitionTo: nextNodeName, file: file, line: line, recorder: recorder)
+        }
+    }
+
+    fileprivate func addOrCheckScreenAction(_ name: String, transitionTo nextNodeName: String? = nil, file: String = #file, line: UInt = #line, recorder: UserStateChange?) {
+        let actionNode: ScreenActionNode<T>
+        if let existingNode = namedScenes[name] {
+            guard let existing = existingNode as? ScreenActionNode else {
+                self.xcTest.recordFailure(withDescription: "Screen state \(name) conflicts with an identically named action", inFile: existingNode.file, atLine: existingNode.line, expected: false)
+                self.xcTest.recordFailure(withDescription: "Action \(name) conflicts with an identically named screen state", inFile: file, atLine: line, expected: false)
+                return
+            }
+            // The new node has to have the same nextNodeName as the existing node.
+            // unless either one of them is nil, so use whichever is the non nil one.
+            if let d1 = existing.nextNodeName,
+                let d2 = nextNodeName,
+                d1 != d2 {
+                self.xcTest.recordFailure(withDescription: "Action points to \(d2) elsewhere", inFile: existing.file, atLine: existing.line, expected: false)
+                self.xcTest.recordFailure(withDescription: "Action points to \(d1) elsewhere", inFile: file, atLine: line, expected: false)
+                return
+            }
+
+            let overwriteNodeName = existing.nextNodeName ?? nextNodeName
+
+            // The new version of the same node can have additional UserStateChange recorders,
+            // so we just combine these together.
+            let overwriteRecorder: UserStateChange?
+            if let r1 = existing.recorder,
+                let r2 = recorder {
+                overwriteRecorder = { userState in
+                    r1(userState)
+                    r2(userState)
+                }
+            } else {
+                overwriteRecorder = existing.recorder ?? recorder
+            }
+
+            actionNode = ScreenActionNode(self,
+                                          name: name,
+                                          then: overwriteNodeName,
+                                          file: file,
+                                          line: line,
+                                          recorder: overwriteRecorder)
+
+        } else {
+            actionNode = ScreenActionNode(self,
+                                          name: name,
+                                          then: nextNodeName,
+                                          file: file,
+                                          line: line,
+                                          recorder: recorder)
+        }
+
+        self.namedScenes[name] = actionNode
     }
 }
 
@@ -105,31 +172,49 @@ extension ScreenGraph {
 
         isReady = true
 
-        // Construct all the GKGraphNodes, and add them to the GKGraph.
-        let graphNodes = namedScenes.values
-        gkGraph.add(graphNodes.map { $0.gkNode })
-
-        // Now, use the scene builders to collect edge actions and destinations.
-        graphNodes.forEach { graphNode in
+        // We have a collection of named nodes – mostly screen states.
+        // Each of those have builders, so use them to build the edges.
+        // However, they may also contribute some actions, which are also nodes,
+        // so namedScenes here is not the same as namedScenes after this block.
+        namedScenes.values.forEach { graphNode in
             if let screenStateNode = graphNode as? ScreenStateNode {
                 screenStateNode.builder(screenStateNode)
             }
         }
 
+        // Construct all the GKGraphNodes, and add them to the GKGraph.
+        let graphNodes = namedScenes.values
+        gkGraph.add(graphNodes.map { $0.gkNode })
+
+        graphNodes.forEach { graphNode in
+            nodedScenes[graphNode.gkNode] = graphNode
+        }
+
+        // Now, we should have a good idea what the edges of the nodes look like,
+        // so we need to construct the GKGraph edges from it.
         graphNodes.forEach { graphNode in
             if let screenStateNode = graphNode as? ScreenStateNode {
                 let gkNodes = screenStateNode.edges.keys.flatMap { self.namedScenes[$0]?.gkNode } as [GKGraphNode]
                 screenStateNode.gkNode.addConnections(to: gkNodes, bidirectional: false)
+            } else if let screenActionNode = graphNode as? ScreenActionNode {
+                if let destName = screenActionNode.nextNodeName,
+                    let destGkNode = namedScenes[destName]?.gkNode {
+                    screenActionNode.gkNode.addConnections(to: [destGkNode], bidirectional: false)
+                }
             }
         }
     }
 }
 
 class ScreenActionNode<T: UserState>: GraphNode<T> {
-    let recorder: (T) -> ()
+    typealias UserStateChange = (T) -> ()
+    let recorder: UserStateChange?
 
-    init(_ map: ScreenGraph<T>, name: String, file: String, line: UInt, recorder: @escaping (T) -> ()) {
+    var nextNodeName: String?
+
+    init(_ map: ScreenGraph<T>, name: String, then nextNodeName: String?, file: String, line: UInt, recorder: UserStateChange?) {
         self.recorder = recorder
+        self.nextNodeName = nextNodeName
         super.init(map, name: name, file: file, line: line)
     }
 }
@@ -185,6 +270,7 @@ class ScreenStateNode<T: UserState>: GraphNode<T> {
     fileprivate var edges: [String: Edge] = [:]
 
     typealias UserStateChange = (T) -> ()
+    fileprivate let noopUserStateChange: UserStateChange = { _ in }
 
     // Iff this node has a backAction, this store temporarily stores 
     // the node we were at before we got to this one. This becomes the node we return to when the backAction is 
@@ -318,7 +404,10 @@ extension ScreenStateNode {
 }
 
 extension ScreenStateNode {
-
+    func tap(_ element: XCUIElement, forAction actions: String..., transitionTo screenState: String? = nil, file: String = #file, line: UInt = #line, r: @escaping UserStateChange) {
+        map?.addActionChain(actions, finalState: screenState, r: r, file: file, line: line)
+        tap(element, to: actions[0], file: file, line: line)
+    }
 }
 
 extension ScreenStateNode {
@@ -393,12 +482,16 @@ class Navigator<T: UserState> {
                 return print("No next graph node from \(currentScene.name)")
             }
 
-            if let screenStateNode = currentScene as? ScreenStateNode<T> {
-                leave(screenStateNode, to: nextScene, file: file, line: line)
+            if let node = currentScene as? ScreenStateNode<T> {
+                leave(node, to: nextScene, file: file, line: line)
+            } else if let node = currentScene as? ScreenActionNode<T> {
+                leave(node, to: nextScene, file: file, line: line)
             }
 
-            if let screenStateNode = nextScene as? ScreenStateNode<T> {
-                enter(screenStateNode, withVisitor: nodeVisitor)
+            if let node = nextScene as? ScreenStateNode<T> {
+                enter(node, withVisitor: nodeVisitor)
+            } else if let node = nextScene as? ScreenActionNode<T> {
+                enter(node)
             }
 
             currentScene = nextScene
@@ -452,7 +545,17 @@ class Navigator<T: UserState> {
         }
 
         nodeVisitor(currentScene.name)
+    }
 
+    fileprivate func leave(_ currentScene: ScreenActionNode<T>, to nextScene: GraphNode<T>, file: String, line: UInt) {
+    }
+
+    fileprivate func enter(_ nextScene: ScreenActionNode<T>) {
+        nextScene.recorder?(userState)
+    }
+
+    func performAction(_ screenActionName: String, file: String = #file, line: UInt = #line) {
+        goto(screenActionName, file: file, line: line)
     }
 
     /**
