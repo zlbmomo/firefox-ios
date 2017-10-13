@@ -537,62 +537,6 @@ class Navigator<T: UserState> {
         moveDirectlyTo(returnToRecentScene)
     }
 
-    fileprivate func leave(_ currentScene: ScreenStateNode<T>, to nextScene: GraphNode<T>, file: String, line: UInt) {
-        if !currentScene.dismissOnUse {
-            returnToRecentScene = currentScene
-        }
-
-        // Before moving to the next node, we may like to record the
-        // state of the app.
-        currentScene.onExitStateRecorder?(userState)
-
-        if let edge = currentScene.edges[nextScene.name] {
-            // We definitely have an action, so it's save to unbox.
-            edge.transition(xcTest, file, line)
-        }
-
-        if currentScene.hasBack {
-            // we've had a backAction, and we're going to go back the previous
-            // state. Here we check if the transition above has taken us
-            // back to the previous screen.
-            if nextScene.name == currentScene.returnNode?.name {
-                currentScene.returnNode = nil
-                currentScene.gkNode.removeConnections(to: [ nextScene.gkNode ], bidirectional: false)
-            }
-        }
-    }
-
-    fileprivate func enter(_ nextScene: ScreenStateNode<T>, withVisitor nodeVisitor: NodeVisitor) {
-        if let condition = nextScene.onEnterWaitCondition {
-            condition.wait { _ in
-                self.xcTest.recordFailure(withDescription: "Unsuccessfully entered \(nextScene.name)",
-                    inFile: condition.file,
-                    atLine: condition.line,
-                    expected: false)
-            }
-        }
-
-        // Now we've transitioned to the next node, we might want to note some state.
-        nextScene.onEnterStateRecorder?(userState)
-
-        if nextScene.hasBack {
-            if nextScene.returnNode == nil {
-                nextScene.returnNode = returnToRecentScene
-                nextScene.gkNode.addConnections(to: [ returnToRecentScene.gkNode ], bidirectional: false)
-                nextScene.gesture(to: returnToRecentScene.name, g: nextScene.backAction!)
-            }
-        }
-
-        nodeVisitor(currentScene.name)
-    }
-
-    fileprivate func leave(_ currentScene: ScreenActionNode<T>, to nextScene: GraphNode<T>, file: String, line: UInt) {
-    }
-
-    fileprivate func enter(_ nextScene: ScreenActionNode<T>) {
-        nextScene.recorder?(userState)
-    }
-
     func performAction(_ screenActionName: String, file: String = #file, line: UInt = #line) {
         guard let _ = map.namedScenes[screenActionName] as? ScreenActionNode else {
             xcTest.recordFailure(withDescription: "\(screenActionName) is not an action", inFile: file, atLine: line, expected: false)
@@ -652,5 +596,65 @@ class Navigator<T: UserState> {
         if let initial = self.userState.initialScreenState {
             self.goto(initial, file: file, line: line)
         }
+    }
+}
+
+// Private methods to help with goto.
+fileprivate extension Navigator {
+    fileprivate func leave(_ currentScene: ScreenStateNode<T>, to nextScene: GraphNode<T>, file: String, line: UInt) {
+        if !currentScene.dismissOnUse {
+            returnToRecentScene = currentScene
+        }
+
+        // Before moving to the next node, we may like to record the
+        // state of the app.
+        currentScene.onExitStateRecorder?(userState)
+
+        if let edge = currentScene.edges[nextScene.name] {
+            // We definitely have an action, so it's save to unbox.
+            edge.transition(xcTest, file, line)
+        }
+
+        if currentScene.hasBack {
+            // we've had a backAction, and we're going to go back the previous
+            // state. Here we check if the transition above has taken us
+            // back to the previous screen.
+            if nextScene.name == currentScene.returnNode?.name {
+                currentScene.returnNode = nil
+                currentScene.gkNode.removeConnections(to: [ nextScene.gkNode ], bidirectional: false)
+            }
+        }
+    }
+
+    fileprivate func enter(_ nextScene: ScreenStateNode<T>, withVisitor nodeVisitor: NodeVisitor) {
+        if let condition = nextScene.onEnterWaitCondition {
+            condition.wait { _ in
+                self.xcTest.recordFailure(withDescription: "Unsuccessfully entered \(nextScene.name)",
+                    inFile: condition.file,
+                    atLine: condition.line,
+                    expected: false)
+            }
+        }
+
+        // Now we've transitioned to the next node, we might want to note some state.
+        nextScene.onEnterStateRecorder?(userState)
+
+        if nextScene.hasBack {
+            if nextScene.returnNode == nil {
+                nextScene.returnNode = returnToRecentScene
+                nextScene.gkNode.addConnections(to: [ returnToRecentScene.gkNode ], bidirectional: false)
+                nextScene.gesture(to: returnToRecentScene.name, g: nextScene.backAction!)
+            }
+        }
+
+        nodeVisitor(currentScene.name)
+    }
+
+    fileprivate func leave(_ currentScene: ScreenActionNode<T>, to nextScene: GraphNode<T>, file: String, line: UInt) {
+        // NOP
+    }
+
+    fileprivate func enter(_ nextScene: ScreenActionNode<T>) {
+        nextScene.recorder?(userState)
     }
 }
