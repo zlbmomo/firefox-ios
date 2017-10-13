@@ -47,6 +47,7 @@ extension ScreenGraphTest {
     func testSimpleAction() {
         navigator.performAction(Action.ToggleNightMode)
         XCTAssertTrue(navigator.userState.nightMode)
+        XCTAssertEqual(navigator.screenState, BrowserTab)
     }
 }
 

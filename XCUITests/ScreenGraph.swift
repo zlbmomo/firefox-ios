@@ -444,6 +444,10 @@ class Navigator<T: UserState> {
 
     var userState: T
 
+    var screenState: String {
+        return currentScene.name
+    }
+
     fileprivate init(_ map: ScreenGraph<T>, xcTest: XCTestCase, initialScene: ScreenStateNode<T>, userState: T) {
         self.map = map
         self.xcTest = xcTest
@@ -463,7 +467,7 @@ class Navigator<T: UserState> {
      * Move the application to the named node, wth an optional node visitor closure, which is called each time the
      * node changes.
      */
-    func goto(_ nodeName: String, file: String = #file, line: UInt = #line, visitWith nodeVisitor: NodeVisitor) {
+    func goto(_ nodeName: String, file: String = #file, line: UInt = #line, visitWith nodeVisitor: @escaping NodeVisitor) {
         let gkSrc = currentScene.gkNode
         guard let gkDest = map.namedScenes[nodeName]?.gkNode else {
             xcTest.recordFailure(withDescription: "Cannot route to \(nodeName), because it doesn't exist", inFile: file, atLine: line, expected: false)
@@ -477,11 +481,33 @@ class Navigator<T: UserState> {
         }
 
         gkPath.removeFirst()
-        gkPath.forEach { gkNext in
-            guard let nextScene = map.nodedScenes[gkNext] else {
-                return print("No next graph node from \(currentScene.name)")
-            }
 
+        var graphNodes = gkPath.flatMap { map.nodedScenes[$0] }
+
+        // If the path ends on an action, then we should follow that action
+        // until we're on a valid screen state, or there's nothing left to do.
+        if let lastAction = graphNodes.last as? ScreenActionNode {
+            var action = lastAction
+            var extras = [GraphNode<T>]()
+            while true {
+                if let nextNodeName = action.nextNodeName,
+                    let next = map.namedScenes[nextNodeName] {
+                    extras.append(next)
+                    if let nextAction = next as? ScreenActionNode<T> {
+                        action = nextAction
+                        continue
+                    }
+                }
+                break
+            }
+            graphNodes += extras
+        }
+
+        // moveDirectlyTo lets us move from the current scene to the next.
+        // We'll use it to follow the path we've calculated,
+        // and to move back to the final screen state once we're done.
+        // It takes care of exiting the current node, and moving to the next.
+        func moveDirectlyTo(_ nextScene: GraphNode<T>) {
             if let node = currentScene as? ScreenStateNode<T> {
                 leave(node, to: nextScene, file: file, line: line)
             } else if let node = currentScene as? ScreenActionNode<T> {
@@ -493,9 +519,22 @@ class Navigator<T: UserState> {
             } else if let node = nextScene as? ScreenActionNode<T> {
                 enter(node)
             }
-
             currentScene = nextScene
         }
+
+        // This is what we've all been leading up to.
+        // We have a path, now let's follow it.
+        graphNodes.forEach { nextScene in
+            moveDirectlyTo(nextScene)
+        }
+
+        if let _ = currentScene as? ScreenStateNode<T> {
+            // ok, we're done; we should return the app
+            // back to the screen state, and this path did that.
+            return
+        }
+
+        moveDirectlyTo(returnToRecentScene)
     }
 
     fileprivate func leave(_ currentScene: ScreenStateNode<T>, to nextScene: GraphNode<T>, file: String, line: UInt) {
@@ -555,6 +594,10 @@ class Navigator<T: UserState> {
     }
 
     func performAction(_ screenActionName: String, file: String = #file, line: UInt = #line) {
+        guard let _ = map.namedScenes[screenActionName] as? ScreenActionNode else {
+            xcTest.recordFailure(withDescription: "\(screenActionName) is not an action", inFile: file, atLine: line, expected: false)
+            return
+        }
         goto(screenActionName, file: file, line: line)
     }
 
@@ -575,7 +618,7 @@ class Navigator<T: UserState> {
     /**
      * Visit the named nodes, calling the NodeVisitor the first time it is encountered.
      */
-    func visitNodes(_ nodes: [String], file: String = #file, line: UInt = #line, f: NodeVisitor) {
+    func visitNodes(_ nodes: [String], file: String = #file, line: UInt = #line, f: @escaping NodeVisitor) {
         var visitedNodes = Set<String>()
         let desiredNodes = Set<String>(nodes)
         nodes.forEach { node in
@@ -596,7 +639,7 @@ class Navigator<T: UserState> {
      * 
      * Some nodes may not be immediately available, depending on the state of the app.
      */
-    func visitAll(_ file: String = #file, line: UInt = #line, f: NodeVisitor) {
+    func visitAll(_ file: String = #file, line: UInt = #line, f: @escaping NodeVisitor) {
         let nodes: [String] = self.map.namedScenes.keys.map { $0 } // keys can't be coerced into a [String]
         self.visitNodes(nodes, file: file, line: line, f: f)
     }
