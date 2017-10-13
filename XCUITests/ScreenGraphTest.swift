@@ -60,9 +60,16 @@ extension ScreenGraphTest {
         XCTAssertFalse(navigator.userState.nightMode)
         XCTAssertEqual(navigator.screenState, BrowserTab)
     }
+
+    func testChainedAction() {
+        navigator.userState.url = defaultURL
+        navigator.performAction(Action.LoadURLByTyping)
+        XCTAssertEqual(navigator.screenState, BrowserTab)
     }
 }
 
+
+let defaultURL = "https://example.com"
 class TestUserState: UserState {
     required init() {
         super.init()
@@ -75,6 +82,9 @@ class TestUserState: UserState {
 
 fileprivate class Action {
     static let ToggleNightMode = "menu-NightMode"
+    static let LoadURL = "LoadURL"
+    static let LoadURLByTyping = "LoadURLByTyping"
+    static let LoadURLByPasting = "LoadURLByPasting"
 }
 
 fileprivate func createTestGraph(for test: XCTestCase, with app: XCUIApplication) -> ScreenGraph<TestUserState> {
@@ -82,6 +92,7 @@ fileprivate func createTestGraph(for test: XCTestCase, with app: XCUIApplication
 
     map.addScreenState(FirstRun) { screenState in
         screenState.noop(to: BrowserTab)
+        screenState.tap(app.textFields["url"], to: URLBarOpen)
     }
 
     map.addScreenState(BrowserTab) { screenState in
@@ -90,6 +101,14 @@ fileprivate func createTestGraph(for test: XCTestCase, with app: XCUIApplication
         }
 
         screenState.tap(app.buttons["TabToolbar.menuButton"], to: BrowserTabMenu)
+        screenState.tap(app.textFields["url"], to: URLBarOpen)
+    }
+
+    map.addScreenState(URLBarOpen) { screenState in
+        screenState.gesture(forAction: Action.LoadURLByTyping, Action.LoadURL, transitionTo: BrowserTab) { userState in
+            let urlString = userState.url ?? defaultURL
+            app.textFields["address"].typeText("\(urlString)\r")
+        }
     }
 
     map.addScreenState(BrowserTabMenu) { screenState in

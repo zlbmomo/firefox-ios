@@ -408,6 +408,13 @@ extension ScreenStateNode {
         map?.addActionChain(actions, finalState: screenState, r: r, file: file, line: line)
         tap(element, to: actions[0], file: file, line: line)
     }
+
+    func gesture(withElement element: XCUIElement? = nil, forAction actions: String..., transitionTo screenState: String? = nil, file: String = #file, line: UInt = #line, r: @escaping UserStateChange) {
+        map?.addActionChain(actions, finalState: screenState, r: r, file: file, line: line)
+        gesture(withElement: element, to: actions[0], file: file, line: line) {
+            // NOP
+        }
+    }
 }
 
 extension ScreenStateNode {
