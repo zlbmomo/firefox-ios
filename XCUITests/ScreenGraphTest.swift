@@ -61,9 +61,25 @@ extension ScreenGraphTest {
         XCTAssertEqual(navigator.screenState, BrowserTab)
     }
 
-    func testChainedAction() {
+    func testChainedActionPerf1() {
+        let navigator = self.navigator!
+        measure {
+            navigator.userState.url = defaultURL
+            navigator.performAction(Action.LoadURLByPasting)
+            XCTAssertEqual(navigator.screenState, BrowserTab)
+        }
+    }
+
+    func testChainedActionPerf2() {
+        let navigator = self.navigator!
+        measure {
+            navigator.userState.url = defaultURL
+            navigator.performAction(Action.LoadURLByTyping)
+            XCTAssertEqual(navigator.screenState, BrowserTab)
+        }
+
         navigator.userState.url = defaultURL
-        navigator.performAction(Action.LoadURLByTyping)
+        navigator.performAction(Action.LoadURL)
         XCTAssertEqual(navigator.screenState, BrowserTab)
     }
 }
@@ -102,13 +118,23 @@ fileprivate func createTestGraph(for test: XCTestCase, with app: XCUIApplication
 
         screenState.tap(app.buttons["TabToolbar.menuButton"], to: BrowserTabMenu)
         screenState.tap(app.textFields["url"], to: URLBarOpen)
+
+        screenState.gesture(forAction: Action.LoadURLByPasting, Action.LoadURL) { userState in
+            UIPasteboard.general.string = userState.url ?? defaultURL
+            app.textFields["url"].press(forDuration: 1.0)
+            app.sheets.element(boundBy: 0).buttons.element(boundBy: 0).tap()
+        }
     }
 
     map.addScreenState(URLBarOpen) { screenState in
-        screenState.gesture(forAction: Action.LoadURLByTyping, Action.LoadURL, transitionTo: BrowserTab) { userState in
+        screenState.gesture(forAction: Action.LoadURLByTyping, Action.LoadURL) { userState in
             let urlString = userState.url ?? defaultURL
             app.textFields["address"].typeText("\(urlString)\r")
         }
+    }
+
+    map.addScreenAction(Action.LoadURL, transitionTo: BrowserTab) { userState in
+        // NOP
     }
 
     map.addScreenState(BrowserTabMenu) { screenState in
