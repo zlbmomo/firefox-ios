@@ -38,6 +38,7 @@ open class UserState {
  */
 open class ScreenGraph<T: UserState> {
     fileprivate let userStateType: T.Type
+    fileprivate let xcTest: XCTestCase
 
     fileprivate var namedScenes: [String: GraphNode<T>] = [:]
     fileprivate var nodedScenes: [GKGraphNode: GraphNode<T>] = [:]
@@ -48,9 +49,10 @@ open class ScreenGraph<T: UserState> {
 
     typealias UserStateChange = (T) -> ()
 
-    init(with userStateType: T.Type) {
+    init(for test: XCTestCase, with userStateType: T.Type) {
         self.gkGraph = GKGraph()
         self.userStateType = userStateType
+        self.xcTest = test
     }
 }
 
@@ -79,7 +81,7 @@ extension ScreenGraph {
      * Create a new navigator object. Navigator objects are the main way of getting around the app.
      * Typically, you'll do this in `TestCase.setUp()`
      */
-    func navigator(_ xcTest: XCTestCase, startingAt: String? = nil, file: String = #file, line: UInt = #line) -> Navigator<T> {
+    func navigator(startingAt: String? = nil, file: String = #file, line: UInt = #line) -> Navigator<T> {
         buildGkGraph()
         var current: ScreenStateNode<T>?
         let userState = userStateType.init()

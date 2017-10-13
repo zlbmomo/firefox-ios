@@ -12,7 +12,7 @@ class BaseTestCase: XCTestCase {
         super.setUp()
         continueAfterFailure = false
         app = XCUIApplication()
-        navigator = createScreenGraph(app).navigator(self)
+        navigator = createScreenGraph(for: self, with: app).navigator()
         app.terminate()
         restart(app, args: [LaunchArguments.ClearProfile, LaunchArguments.SkipIntro, LaunchArguments.SkipWhatsNew])
     }

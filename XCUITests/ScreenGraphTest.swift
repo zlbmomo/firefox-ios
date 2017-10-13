@@ -10,7 +10,7 @@ class ScreenGraphTest: XCTestCase {
 
     override func setUp() {
         app = XCUIApplication()
-        navigator = createTestGraph(app).navigator(self)
+        navigator = createTestGraph(for: self, with: app).navigator()
         app.terminate()
         restart(app, args: [LaunchArguments.ClearProfile, LaunchArguments.SkipIntro])
     }
@@ -54,8 +54,8 @@ class TestUserState: UserState {
     var url: String? = nil
 }
 
-fileprivate func createTestGraph(_ app: XCUIApplication) -> ScreenGraph<TestUserState> {
-    let map = ScreenGraph(with: TestUserState.self)
+fileprivate func createTestGraph(for test: XCTestCase, with app: XCUIApplication) -> ScreenGraph<TestUserState> {
+    let map = ScreenGraph(for: test, with: TestUserState.self)
 
     map.addScreenState(FirstRun) { screenState in
         screenState.noop(to: BrowserTab)

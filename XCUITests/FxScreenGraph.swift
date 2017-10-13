@@ -86,8 +86,8 @@ class FxUserState: UserState {
     }
 }
 
-func createScreenGraph(_ app: XCUIApplication, url: String = "https://www.mozilla.org/en-US/book/") -> ScreenGraph<FxUserState> {
-    let map = ScreenGraph(with: FxUserState.self)
+func createScreenGraph(for test: XCTestCase, with app: XCUIApplication, url: String = "https://www.mozilla.org/en-US/book/") -> ScreenGraph<FxUserState> {
+    let map = ScreenGraph(for: test, with: FxUserState.self)
 
     let startBrowsingButton = app.buttons["IntroViewController.startBrowsingButton"]
     let introScrollView = app.scrollViews["IntroViewController.scrollView"]
