@@ -1,0 +1,2985 @@
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="Client/3DTouchActions.strings" source-language="en" datatype="plaintext" target-language="hu">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Add to Bookmarks">
+        <source>Add to Bookmarks</source>
+        <target>Hozz&#225;ad&#225;s a k&#246;nyvjelz&#337;kh&#246;z</target>
+        <note>Label for preview action on Tab Tray Tab to add current tab to Bookmarks</note>
+      </trans-unit>
+      <trans-unit id="Add to Reading List">
+        <source>Add to Reading List</source>
+        <target>Felv&#233;tel az olvas&#225;si list&#225;ra</target>
+        <note>Label for preview action on Tab Tray Tab to add current tab to Reading List</note>
+      </trans-unit>
+      <trans-unit id="Close Tab">
+        <source>Close Tab</source>
+        <target>Lap bez&#225;r&#225;sa</target>
+        <note>Label for preview action on Tab Tray Tab to close the current tab</note>
+      </trans-unit>
+      <trans-unit id="Copy URL">
+        <source>Copy URL</source>
+        <target>URL m&#225;sol&#225;sa</target>
+        <note>Label for preview action on Tab Tray Tab to copy the URL of the current tab to clipboard</note>
+      </trans-unit>
+      <trans-unit id="Open Last Bookmark">
+        <source>Open Last Bookmark</source>
+        <target>Legut&#243;bbi k&#246;nyvjelz&#337; megnyit&#225;sa</target>
+        <note>String describing the action of opening the last added bookmark from the home screen Quick Actions via 3D Touch</note>
+      </trans-unit>
+      <trans-unit id="Open Last Tab">
+        <source>Open Last Tab</source>
+        <target>Legut&#243;bbi lap megnyit&#225;sa</target>
+        <note>String describing the action of opening the last tab sent to Firefox from the home screen Quick Actions via 3D Touch</note>
+      </trans-unit>
+      <trans-unit id="Preview of %@">
+        <source>Preview of %@</source>
+        <target>%@ el&#337;n&#233;zete</target>
+        <note>Accessibility label, associated to the 3D Touch action on the current tab in the tab tray, used to display a larger preview of the tab.</note>
+      </trans-unit>
+      <trans-unit id="Send to Device">
+        <source>Send to Device</source>
+        <target>K&#252;ld&#233;s eszk&#246;zre</target>
+        <note>Label for preview action on Tab Tray Tab to send the current tab to another device</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/AuthenticationManager.strings" source-language="en" datatype="plaintext" target-language="hu">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="After 1 hour">
+        <source>After 1 hour</source>
+        <target>1 &#243;ra ut&#225;n</target>
+        <note>'After 1 hour' interval item for selecting when to require passcode</note>
+      </trans-unit>
+      <trans-unit id="After 1 minute">
+        <source>After 1 minute</source>
+        <target>1 perc ut&#225;n</target>
+        <note>'After 1 minute' interval item for selecting when to require passcode</note>
+      </trans-unit>
+      <trans-unit id="After 5 minutes">
+        <source>After 5 minutes</source>
+        <target>5 perc ut&#225;n</target>
+        <note>'After 5 minutes' interval item for selecting when to require passcode</note>
+      </trans-unit>
+      <trans-unit id="After 10 minutes">
+        <source>After 10 minutes</source>
+        <target>10 perc ut&#225;n</target>
+        <note>'After 10 minutes' interval item for selecting when to require passcode</note>
+      </trans-unit>
+      <trans-unit id="After 15 minutes">
+        <source>After 15 minutes</source>
+        <target>15 perc ut&#225;n</target>
+        <note>'After 15 minutes' interval item for selecting when to require passcode</note>
+      </trans-unit>
+      <trans-unit id="Change Passcode">
+        <source>Change Passcode</source>
+        <target>Jelk&#243;d m&#243;dos&#237;t&#225;sa</target>
+        <note>Label used as a setting item and title of the following screen to change the current passcode</note>
+      </trans-unit>
+      <trans-unit id="Enter Passcode">
+        <source>Enter Passcode</source>
+        <target>&#205;rja be a jelk&#243;dot</target>
+        <note>Title of the dialog used to request the passcode</note>
+      </trans-unit>
+      <trans-unit id="Enter a new passcode">
+        <source>Enter a new passcode</source>
+        <target>&#205;rja be az &#250;j jelk&#243;dot</target>
+        <note>Text displayed above the input field when changing the existing passcode</note>
+      </trans-unit>
+      <trans-unit id="Enter a passcode">
+        <source>Enter a passcode</source>
+        <target>&#205;rjon be egy jelk&#243;dot</target>
+        <note>Text displayed above the input field when entering a new passcode</note>
+      </trans-unit>
+      <trans-unit id="Enter passcode">
+        <source>Enter passcode</source>
+        <target>&#205;rja be a jelk&#243;dot</target>
+        <note>Text displayed above the input field when changing the existing passcode</note>
+      </trans-unit>
+      <trans-unit id="Face ID &amp; Passcode">
+        <source>Face ID &amp; Passcode</source>
+        <target>Face ID &#233;s jelk&#243;d</target>
+        <note>Label for the Face ID/Passcode item in Settings</note>
+      </trans-unit>
+      <trans-unit id="Immediately">
+        <source>Immediately</source>
+        <target>Azonnal</target>
+        <note>'Immediately' interval item for selecting when to require passcode</note>
+      </trans-unit>
+      <trans-unit id="Incorrect passcode. Try again (Attempts remaining: %d).">
+        <source>Incorrect passcode. Try again (Attempts remaining: %d).</source>
+        <target>Helytelen jelk&#243;d. Pr&#243;b&#225;lja meg &#250;jra (%d k&#237;s&#233;rlet maradt).</target>
+        <note>Error message displayed when user enters incorrect passcode when trying to enter a protected section of the app with attempts remaining</note>
+      </trans-unit>
+      <trans-unit id="Incorrect passcode. Try again.">
+        <source>Incorrect passcode. Try again.</source>
+        <target>Helytelen jelk&#243;d. Pr&#243;b&#225;lja meg &#250;jra.</target>
+        <note>Error message displayed when user enters incorrect passcode when trying to enter a protected section of the app</note>
+      </trans-unit>
+      <trans-unit id="Maximum attempts reached. Please try again in an hour.">
+        <source>Maximum attempts reached. Please try again in an hour.</source>
+        <target>El&#233;rte a k&#237;s&#233;rletek maxim&#225;lis sz&#225;m&#225;t. Pr&#243;b&#225;lja meg &#250;jra egy &#243;ra m&#250;lva.</target>
+        <note>Error message displayed when user enters incorrect passcode and has reached the maximum number of attempts.</note>
+      </trans-unit>
+      <trans-unit id="Maximum attempts reached. Please try again later.">
+        <source>Maximum attempts reached. Please try again later.</source>
+        <target>El&#233;rte a k&#237;s&#233;rletek maxim&#225;lis sz&#225;m&#225;t. Pr&#243;b&#225;lja meg &#250;jra k&#233;s&#337;bb.</target>
+        <note>Error message displayed when user enters incorrect passcode and has reached the maximum number of attempts.</note>
+      </trans-unit>
+      <trans-unit id="New passcode must be different than existing code.">
+        <source>New passcode must be different than existing code.</source>
+        <target>Az &#250;j jelk&#243;dnak k&#252;l&#246;nb&#246;znie kell a r&#233;git&#337;l.</target>
+        <note>Error message displayed when user tries to enter the same passcode as their existing code when changing it.</note>
+      </trans-unit>
+      <trans-unit id="Passcode For Logins">
+        <source>Passcode For Logins</source>
+        <target>Jelk&#243;d a bejelentkez&#233;shez</target>
+        <note>Label for the Passcode item in Settings</note>
+      </trans-unit>
+      <trans-unit id="Passcodes didn&#8217;t match. Try again.">
+        <source>Passcodes didn&#8217;t match. Try again.</source>
+        <target>A jelk&#243;dok nem egyeznek. Pr&#243;b&#225;lja meg &#250;jra.</target>
+        <note>Error message displayed to user when their confirming passcode doesn't match the first code.</note>
+      </trans-unit>
+      <trans-unit id="Re-enter passcode">
+        <source>Re-enter passcode</source>
+        <target>&#205;rja be &#250;jra a jelk&#243;dot</target>
+        <note>Text displayed above the input field when confirming a passcode</note>
+      </trans-unit>
+      <trans-unit id="Require Passcode">
+        <source>Require Passcode</source>
+        <target>Jelk&#243;d k&#233;r&#233;se</target>
+        <note>Text displayed in the 'Interval' section, followed by the current interval setting, e.g. 'Immediately'</note>
+      </trans-unit>
+      <trans-unit id="Set Passcode">
+        <source>Set Passcode</source>
+        <target>Jelk&#243;d be&#225;ll&#237;t&#225;sa</target>
+        <note>Title of the dialog used to set a passcode</note>
+      </trans-unit>
+      <trans-unit id="Touch ID &amp; Passcode">
+        <source>Touch ID &amp; Passcode</source>
+        <target>Touch ID &#233;s jelk&#243;d</target>
+        <note>Label for the Touch ID/Passcode item in Settings</note>
+      </trans-unit>
+      <trans-unit id="Turn Passcode Off">
+        <source>Turn Passcode Off</source>
+        <target>Jelk&#243;d kikapcsol&#225;sa</target>
+        <note>Label used as a setting item to turn off passcode</note>
+      </trans-unit>
+      <trans-unit id="Turn Passcode On">
+        <source>Turn Passcode On</source>
+        <target>Jelk&#243;d bekapcsol&#225;sa</target>
+        <note>Label used as a setting item to turn on passcode</note>
+      </trans-unit>
+      <trans-unit id="Turn off your passcode.">
+        <source>Turn off your passcode.</source>
+        <target>A jelk&#243;dja kikapcsol&#225;sa.</target>
+        <note>Touch ID prompt subtitle when turning off passcode</note>
+      </trans-unit>
+      <trans-unit id="Use Face ID">
+        <source>Use Face ID</source>
+        <target>Face ID haszn&#225;lata</target>
+        <note>List section title for when to use Face ID</note>
+      </trans-unit>
+      <trans-unit id="Use Touch ID">
+        <source>Use Touch ID</source>
+        <target>Touch ID&#160;haszn&#225;lata</target>
+        <note>List section title for when to use Touch ID</note>
+      </trans-unit>
+      <trans-unit id="Use your fingerprint to access Logins now.">
+        <source>Use your fingerprint to access Logins now.</source>
+        <target>Haszn&#225;lja az ujjlenyomat&#225;t, hogy most hozz&#225;f&#233;rjen a bejelentkez&#233;sekhez.</target>
+        <note>Touch ID prompt subtitle when accessing logins</note>
+      </trans-unit>
+      <trans-unit id="Use your fingerprint to access Private Browsing now.">
+        <source>Use your fingerprint to access Private Browsing now.</source>
+        <target>Haszn&#225;lja az ujjlenyomat&#225;t, hogy most hozz&#225;f&#233;rjen a priv&#225;t b&#246;ng&#233;sz&#233;shez.</target>
+        <note>Touch ID prompt subtitle when accessing private browsing</note>
+      </trans-unit>
+      <trans-unit id="touchid.disable.reason.label">
+        <source>Use your fingerprint to disable Touch ID.</source>
+        <target>Haszn&#225;lja az ujjlenyomat&#225;t a Touch ID letilt&#225;s&#225;hoz.</target>
+        <note>Touch ID prompt subtitle when disabling Touch ID</note>
+      </trans-unit>
+      <trans-unit id="touchid.require.passcode.reason.label">
+        <source>Use your fingerprint to access configuring your required passcode interval.</source>
+        <target>Haszn&#225;lja az ujjlenyomat&#225;t, hogy hozz&#225;f&#233;rjen a jelk&#243;d megk&#246;vetel&#233;si id&#337;k&#246;z be&#225;ll&#237;t&#225;s&#225;hoz.</target>
+        <note>Touch ID prompt subtitle when accessing the require passcode setting</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/BookmarkPanel.strings" source-language="en" datatype="plaintext" target-language="hu">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Delete">
+        <source>Delete</source>
+        <target>T&#246;rl&#233;s</target>
+        <note>Action button for deleting bookmarks in the bookmarks panel.</note>
+      </trans-unit>
+      <trans-unit id="Desktop Bookmarks">
+        <source>Desktop Bookmarks</source>
+        <target>Asztali k&#246;nyvjelz&#337;k</target>
+        <note>The folder name for the virtual folder that contains all desktop bookmarks.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/BookmarkPanelDeleteConfirm.strings" source-language="en" datatype="plaintext" target-language="hu">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Are you sure you want to delete it and its contents?">
+        <source>Are you sure you want to delete it and its contents?</source>
+        <target>Biztos, hogy t&#246;r&#246;lni szeretn&#233; ezt &#233;s a tartalm&#225;t?</target>
+        <note>Main body of the confirmation alert when the user tries to delete a folder that still contains bookmarks and/or folders.</note>
+      </trans-unit>
+      <trans-unit id="Cancel">
+        <source>Cancel</source>
+        <target>M&#233;gse</target>
+        <note>Button label to cancel deletion when the user tried to delete a non-empty folder.</note>
+      </trans-unit>
+      <trans-unit id="Delete">
+        <source>Delete</source>
+        <target>T&#246;rl&#233;s</target>
+        <note>Button label for the button that deletes a folder and all of its children.</note>
+      </trans-unit>
+      <trans-unit id="This folder isn&#8217;t empty.">
+        <source>This folder isn&#8217;t empty.</source>
+        <target>Ez a mappa nem &#252;res.</target>
+        <note>Title of the confirmation alert when the user tries to delete a folder that still contains bookmarks and/or folders.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/ClearHistoryConfirm.strings" source-language="en" datatype="plaintext" target-language="hu">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Cancel">
+        <source>Cancel</source>
+        <target>M&#233;gse</target>
+        <note>The cancel button when confirming clear history.</note>
+      </trans-unit>
+      <trans-unit id="Clear">
+        <source>Clear</source>
+        <target>T&#246;rl&#233;s</target>
+        <note>The button that clears history even when Sync is connected.</note>
+      </trans-unit>
+      <trans-unit id="History will be removed from all your connected devices. This cannot be undone.">
+        <source>History will be removed from all your connected devices. This cannot be undone.</source>
+        <target>Az el&#337;zm&#233;nyek elt&#225;vol&#237;t&#225;sra ker&#252;lnek minden hozz&#225;kapcsolt eszk&#246;zr&#337;l. Ez nem vonhat&#243; vissza.</target>
+        <note>Description of the confirmation dialog shown when a user tries to clear history that's synced to another device.</note>
+      </trans-unit>
+      <trans-unit id="OK">
+        <source>OK</source>
+        <target>Rendben</target>
+        <note>The confirmation button that clears history even when Sync is connected.</note>
+      </trans-unit>
+      <trans-unit id="Remove history from your Firefox Account?">
+        <source>Remove history from your Firefox Account?</source>
+        <target>T&#246;rli az el&#337;zm&#233;nyeket a Firefox fi&#243;kj&#225;b&#243;l?</target>
+        <note>Title of the confirmation dialog shown when a user tries to clear history that's synced to another device.</note>
+      </trans-unit>
+      <trans-unit id="This action will clear all of your private data, including history from your synced devices.">
+        <source>This action will clear all of your private data, including history from your synced devices.</source>
+        <target>Ez a m&#369;velet t&#246;r&#246;l minden szem&#233;lyes adat&#225;t, bele&#233;rtve a szinkroniz&#225;lt eszk&#246;z&#246;k&#246;n l&#233;v&#337; el&#337;zm&#233;nyeket is.</target>
+        <note>Description of the confirmation dialog shown when a user tries to clear history that's synced to another device.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/ClearPrivateData.strings" source-language="en" datatype="plaintext" target-language="hu">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Browsing History">
+        <source>Browsing History</source>
+        <target>B&#246;ng&#233;sz&#233;si el&#337;zm&#233;nyek</target>
+        <note>Settings item for clearing browsing history</note>
+      </trans-unit>
+      <trans-unit id="Cache">
+        <source>Cache</source>
+        <target>Gyors&#237;t&#243;t&#225;r</target>
+        <note>Settings item for clearing the cache</note>
+      </trans-unit>
+      <trans-unit id="Clear Private Data">
+        <source>Clear Private Data</source>
+        <target>Szem&#233;lyes adatok t&#246;rl&#233;se</target>
+        <note>Button in settings that clears private data for the selected items.
+   Navigation title in settings.</note>
+      </trans-unit>
+      <trans-unit id="Cookies">
+        <source>Cookies</source>
+        <target>S&#252;tik</target>
+        <note>Settings item for clearing cookies</note>
+      </trans-unit>
+      <trans-unit id="Offline Website Data">
+        <source>Offline Website Data</source>
+        <target>Kapcsolat n&#233;lk&#252;li webhelyadatok</target>
+        <note>Settings item for clearing website data</note>
+      </trans-unit>
+      <trans-unit id="Saved Logins">
+        <source>Saved Logins</source>
+        <target>Mentett bejelentkez&#233;sek</target>
+        <note>Settings item for clearing passwords and login data</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/ClearPrivateDataConfirm.strings" source-language="en" datatype="plaintext" target-language="hu">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Cancel">
+        <source>Cancel</source>
+        <target>M&#233;gse</target>
+        <note>The cancel button when confirming clear private data.</note>
+      </trans-unit>
+      <trans-unit id="OK">
+        <source>OK</source>
+        <target>Rendben</target>
+        <note>The button that clears private data.</note>
+      </trans-unit>
+      <trans-unit id="This action will clear all of your private data. It cannot be undone.">
+        <source>This action will clear all of your private data. It cannot be undone.</source>
+        <target>Ez a m&#369;velet t&#246;rli az &#246;sszes szem&#233;lyes adat&#225;t. Vissza nem vonhat&#243;.</target>
+        <note>Description of the confirmation dialog shown when a user tries to clear their private data.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/ErrorPages.strings" source-language="en" datatype="plaintext" target-language="hu">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Open in Safari">
+        <source>Open in Safari</source>
+        <target>Megnyit&#225;s Safariban</target>
+        <note>Shown in error pages for files that can't be shown and need to be downloaded.</note>
+      </trans-unit>
+      <trans-unit id="Try again">
+        <source>Try again</source>
+        <target>Pr&#243;b&#225;lja &#250;jra</target>
+        <note>Shown in error pages on a button that will try to load the page again</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/FindInPage.strings" source-language="en" datatype="plaintext" target-language="hu">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Done">
+        <source>Done</source>
+        <target>K&#233;sz</target>
+        <note>Done button in Find in Page Toolbar.</note>
+      </trans-unit>
+      <trans-unit id="Find in Page">
+        <source>Find in Page</source>
+        <target>Keres&#233;s az oldalon</target>
+        <note>Text selection menu item</note>
+      </trans-unit>
+      <trans-unit id="Next in-page result">
+        <source>Next in-page result</source>
+        <target>K&#246;vetkez&#337; lapon bel&#252;li tal&#225;lat</target>
+        <note>Accessibility label for next result button in Find in Page Toolbar.</note>
+      </trans-unit>
+      <trans-unit id="Previous in-page result">
+        <source>Previous in-page result</source>
+        <target>El&#337;z&#337; lapon bel&#252;li tal&#225;lat</target>
+        <note>Accessibility label for previous result button in Find in Page Toolbar.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/HistoryPanel.strings" source-language="en" datatype="plaintext" target-language="hu">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Delete">
+        <source>Delete</source>
+        <target>T&#246;rl&#233;s</target>
+        <note>Action button for deleting history entries in the history panel.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/Info.plist" source-language="en" datatype="plaintext" target-language="hu">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="NSCameraUsageDescription">
+        <source>This lets you take and upload photos.</source>
+        <target>Ez lehet&#337;v&#233; teszi, hogy f&#233;nyk&#233;peket k&#233;sz&#237;tsen &#233;s t&#246;lts&#246;n fel.</target>
+      </trans-unit>
+      <trans-unit id="NSLocationWhenInUseUsageDescription">
+        <source>Websites you visit may request your location.</source>
+        <target>A megl&#225;togatott webhelyek k&#233;rhetik az &#214;n hely&#233;t.</target>
+      </trans-unit>
+      <trans-unit id="NSMicrophoneUsageDescription">
+        <source>This lets you take and upload videos.</source>
+        <target>Ez lehet&#337;v&#233; teszi, hogy vide&#243;kat k&#233;sz&#237;tsen &#233;s t&#246;lts&#246;n fel.</target>
+      </trans-unit>
+      <trans-unit id="NSPhotoLibraryAddUsageDescription">
+        <source>This lets you save photos.</source>
+        <target>Ezzel lementheti a k&#233;peket.</target>
+      </trans-unit>
+      <trans-unit id="NSPhotoLibraryUsageDescription">
+        <source>This lets you save and upload photos.</source>
+        <target>Ez lehet&#337;v&#233; teszi, hogy f&#233;nyk&#233;peket mentsen &#233;s t&#246;lts&#246;n fel.</target>
+      </trans-unit>
+      <trans-unit id="ShortcutItemTitleNewPrivateTab">
+        <source>New Private Tab</source>
+        <target>&#218;j priv&#225;t lap</target>
+      </trans-unit>
+      <trans-unit id="ShortcutItemTitleNewTab">
+        <source>New Tab</source>
+        <target>&#218;j lap</target>
+      </trans-unit>
+      <trans-unit id="ShortcutItemTitleQRCode">
+        <source>Scan QR Code</source>
+        <target>QR-k&#243;d leolvas&#225;sa</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/Intro.strings" source-language="en" datatype="plaintext" target-language="hu">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Browse multiple Web pages at the same time with tabs.">
+        <source>Browse multiple Web pages at the same time with tabs.</source>
+        <target>T&#246;bb weblap egyidej&#369; b&#246;ng&#233;sz&#233;se lapokkal.</target>
+        <note>See http://mzl.la/1T8gxwo</note>
+      </trans-unit>
+      <trans-unit id="Connect Firefox everywhere you use it.">
+        <source>Connect Firefox everywhere you use it.</source>
+        <target>Kapcsol&#243;djon a Firefoxhoz, mindenhol ahol haszn&#225;lja.</target>
+        <note>See http://mzl.la/1T8gxwo</note>
+      </trans-unit>
+      <trans-unit id="Intro.Slides.Mail.Description">
+        <source>Use any email app &#8212; not just Mail &#8212; with Firefox.</source>
+        <target>Haszn&#225;ljon b&#225;rmely e-mail appot &#8211; nem csak a Mailt &#8211; a Firefoxszal.</target>
+        <note>Description for the 'Mail' panel in the First Run tour.</note>
+      </trans-unit>
+      <trans-unit id="Intro.Slides.Mail.Title">
+        <source>You&#8217;ve got mail&#8230; options</source>
+        <target>&#220;zenetet kapott&#8230; be&#225;ll&#237;t&#225;sok</target>
+        <note>Title for the fourth panel 'Mail' in the First Run tour.</note>
+      </trans-unit>
+      <trans-unit id="Intro.Slides.Private.Description">
+        <source>Tap the mask icon to slip into Private Browsing mode.</source>
+        <target>&#201;rintse meg a maszk ikont, hogy priv&#225;t b&#246;ng&#233;sz&#233;sbe v&#225;ltson.</target>
+        <note>Description for the 'Private Browsing' panel in the First Run tour.</note>
+      </trans-unit>
+      <trans-unit id="Intro.Slides.Private.Title">
+        <source>Browse like no one&#8217;s watching</source>
+        <target>B&#246;ng&#233;sszen &#250;gy, mintha senki sem figyeln&#233;</target>
+        <note>Title for the third panel 'Private Browsing' in the First Run tour.</note>
+      </trans-unit>
+      <trans-unit id="Intro.Slides.Search.Description">
+        <source>Searching for something different? Choose another default search engine (or add your own) in Settings.</source>
+        <target>Valami m&#225;st keres? V&#225;lasszon m&#225;sik alap&#233;rtelmezett keres&#337;motort (vagy adja hozz&#225; a saj&#225;tj&#225;t) a Be&#225;ll&#237;t&#225;sokban.</target>
+        <note>Description for the 'Favorite Search Engine' panel in the First Run tour.</note>
+      </trans-unit>
+      <trans-unit id="Intro.Slides.Search.Title">
+        <source>Your search, your way</source>
+        <target>Az &#214;n keres&#233;se, az &#214;n &#250;tja</target>
+        <note>Title for the second  panel 'Search' in the First Run tour.</note>
+      </trans-unit>
+      <trans-unit id="Intro.Slides.Sync.Description">
+        <source>Use Sync to find the bookmarks, passwords, and other things you save to Firefox on all your devices.</source>
+        <target>Haszn&#225;lja a Syncet a k&#246;nyjelz&#337;k, jelszavak, &#233;s m&#225;s dolgok megtal&#225;l&#225;s&#225;ra, amelyeket a Firefoxba ment az &#246;sszes eszk&#246;z&#233;n.</target>
+        <note>Description for the 'Sync' panel in the First Run tour.</note>
+      </trans-unit>
+      <trans-unit id="Intro.Slides.Sync.Title">
+        <source>Pick up where you left off</source>
+        <target>Folytassa ott, ahol abbahagyta</target>
+        <note>Title for the fifth panel 'Sync' in the First Run tour.</note>
+      </trans-unit>
+      <trans-unit id="Intro.Slides.Welcome.Description">
+        <source>A modern mobile browser from Mozilla, the non-profit committed to a free and open web.</source>
+        <target>Egy modern mobil b&#246;ng&#233;sz&#337; a Mozill&#225;t&#243;l, a nonprofit szervezett&#337;l, amely elk&#246;telezett a szabad &#233;s ny&#237;lt web mellett.</target>
+        <note>Description for the 'Welcome' panel in the First Run tour.</note>
+      </trans-unit>
+      <trans-unit id="Intro.Slides.Welcome.Title">
+        <source>Thanks for choosing Firefox!</source>
+        <target>K&#246;sz&#246;nj&#252;k, hogy a Firefox b&#246;ng&#233;sz&#337;t v&#225;lasztotta!</target>
+        <note>Title for the first panel 'Welcome' in the First Run tour.</note>
+      </trans-unit>
+      <trans-unit id="Introductory slide %@ of %@">
+        <source>Introductory slide %1$@ of %2$@</source>
+        <target>Bevezet&#337; dia %1$@ / %2$@</target>
+        <note>String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3</note>
+      </trans-unit>
+      <trans-unit id="Personalize your Firefox just the way you like in Settings.">
+        <source>Personalize your Firefox just the way you like in Settings.</source>
+        <target>A be&#225;ll&#237;t&#225;sokban szabja szem&#233;lyre a Firefox&#225;t, &#250;gy ahogy szeretn&#233;.</target>
+        <note>See http://mzl.la/1T8gxwo</note>
+      </trans-unit>
+      <trans-unit id="Sign in to Firefox">
+        <source>Sign in to Firefox</source>
+        <target>Jelentkezzen be a Firefoxba</target>
+        <note>See http://mzl.la/1T8gxwo</note>
+      </trans-unit>
+      <trans-unit id="Start Browsing">
+        <source>Start Browsing</source>
+        <target>B&#246;ng&#233;sz&#233;s megkezd&#233;se</target>
+        <note>See http://mzl.la/1T8gxwo</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/LightweightThemes.strings" source-language="en" datatype="plaintext" target-language="hu">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Allow Firefox to use my Photos">
+        <source>Allow Firefox to use my Photos</source>
+        <target>Enged&#233;lyezze, hogy a Firefox haszn&#225;lja a f&#233;nyk&#233;peit</target>
+        <note>Pending feature; currently unused string! Button shown when user wishes to view photos for theme but has not given Firefox permission to do so yet.</note>
+      </trans-unit>
+      <trans-unit id="Back to Themes">
+        <source>Back to Themes</source>
+        <target>Vissza a t&#233;m&#225;khoz</target>
+        <note>Pending feature; currently unused string! Accessibility label for back button to theme chooser</note>
+      </trans-unit>
+      <trans-unit id="Choose">
+        <source>Choose</source>
+        <target>V&#225;lasszon</target>
+        <note>Pending feature; currently unused string! Back button shown to return back to theme settings from photo picker</note>
+      </trans-unit>
+      <trans-unit id="Choose Theme">
+        <source>Choose Theme</source>
+        <target>T&#233;ma kiv&#225;laszt&#225;sa</target>
+        <note>Pending feature; currently unused string! Accessibility label for settings row to enter theme settings</note>
+      </trans-unit>
+      <trans-unit id="Default Themes">
+        <source>Default Themes</source>
+        <target>Alap&#233;rtelmezett t&#233;m&#225;k</target>
+        <note>Pending feature; currently unused string! Accessibility label for themes subheader</note>
+      </trans-unit>
+      <trans-unit id="My Photos">
+        <source>My Photos</source>
+        <target>Az &#214;n f&#233;nyk&#233;pei</target>
+        <note>Pending feature; currently unused string! Accessibility label for photo viewer</note>
+      </trans-unit>
+      <trans-unit id="Photos">
+        <source>Photos</source>
+        <target>F&#233;nyk&#233;pek</target>
+        <note>Pending feature; currently unused string! Sub header for photo options in theme chooser</note>
+      </trans-unit>
+      <trans-unit id="Preview">
+        <source>Preview</source>
+        <target>El&#337;n&#233;zet</target>
+        <note>Pending feature; currently unused string! Button to show preview of selected theme</note>
+      </trans-unit>
+      <trans-unit id="Preview Theme">
+        <source>Preview Theme</source>
+        <target>T&#233;ma el&#337;n&#233;zete</target>
+        <note>Pending feature; currently unused string! Accessibility label for theme preview button</note>
+      </trans-unit>
+      <trans-unit id="Set">
+        <source>Set</source>
+        <target>Be&#225;ll&#237;t&#225;s</target>
+        <note>Pending feature; currently unused string! Button to set selected theme as current theme</note>
+      </trans-unit>
+      <trans-unit id="Set Theme">
+        <source>Set Theme</source>
+        <target>T&#233;ma be&#225;ll&#237;t&#225;sa</target>
+        <note>Pending feature; currently unused string! Accessibility label for set theme button</note>
+      </trans-unit>
+      <trans-unit id="Theme">
+        <source>Theme</source>
+        <target>T&#233;ma</target>
+        <note>Pending feature; currently unused string! Settings row to enter theme settings</note>
+      </trans-unit>
+      <trans-unit id="Themes">
+        <source>Themes</source>
+        <target>T&#233;m&#225;k</target>
+        <note>Pending feature; currently unused string! sub header for theme options in theme chooser</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/Localizable.strings" source-language="en" datatype="plaintext" target-language="hu">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="+">
+        <source>+</source>
+        <target>+</target>
+        <note>Button for larger reader font size. Keep this extremely short! This is shown in the reader mode toolbar.</note>
+      </trans-unit>
+      <trans-unit id="-">
+        <source>-</source>
+        <target>-</target>
+        <note>Button for smaller reader font size. Keep this extremely short! This is shown in the reader mode toolbar.</note>
+      </trans-unit>
+      <trans-unit id="A username and password are being requested by %@.">
+        <source>A username and password are being requested by %@.</source>
+        <target>A k&#246;vetkez&#337; felhaszn&#225;l&#243;nevet &#233;s jelsz&#243;t k&#233;r: %@.</target>
+        <note>Authentication prompt message with no realm. Parameter is the hostname of the site</note>
+      </trans-unit>
+      <trans-unit id="A username and password are being requested by %@. The site says: %@">
+        <source>A username and password are being requested by %1$@. The site says: %2$@</source>
+        <target>A k&#246;vetkez&#337; felhaszn&#225;l&#243;nevet &#233;s jelsz&#243;t k&#233;r: %1$@. Az oldal &#252;zenete: %2$@</target>
+        <note>Authentication prompt message with a realm. First parameter is the hostname. Second is the realm string</note>
+      </trans-unit>
+      <trans-unit id="Aa">
+        <source>Aa</source>
+        <target>Aa</target>
+        <note>Button for reader mode font size. Keep this extremely short! This is shown in the reader mode toolbar.</note>
+      </trans-unit>
+      <trans-unit id="About">
+        <source>About</source>
+        <target>N&#233;vjegy</target>
+        <note>About settings section title</note>
+      </trans-unit>
+      <trans-unit id="ActivityStream.ContextMenu.PinTopsite">
+        <source>Pin to Top Sites</source>
+        <target>R&#246;gz&#237;t&#233;s a N&#233;pszer&#369; oldalakhoz</target>
+        <note>The title for the pinning a topsite action</note>
+      </trans-unit>
+      <trans-unit id="ActivityStream.ContextMenu.RemovePinTopsite">
+        <source>Remove Pinned Site</source>
+        <target>R&#246;gz&#237;tett oldal elt&#225;vol&#237;t&#225;sa</target>
+        <note>The title for removing a pinned topsite action</note>
+      </trans-unit>
+      <trans-unit id="ActivityStream.HighlightIntro.Description">
+        <source>Firefox will place things here that you&#8217;ve discovered on the web so you can find your way back to the great articles, videos, bookmarks and other pages</source>
+        <target>A Firefox ide helyezi a dolgokat, amelyeket a weben felfedezett, &#237;gy vissza fog tal&#225;lni a nagyszer&#369; cikkekhez, vide&#243;khoz, k&#246;nyvjelz&#337;kh&#246;z &#233;s m&#225;s oldalakhoz.</target>
+        <note>The detailed text that explains what highlights are in AS.</note>
+      </trans-unit>
+      <trans-unit id="ActivityStream.HighlightIntro.Title">
+        <source>Be on the Lookout</source>
+        <target>Legyen r&#233;sen</target>
+        <note>The title that appears for the introduction to highlights in AS.</note>
+      </trans-unit>
+      <trans-unit id="ActivityStream.Highlights.Bookmark">
+        <source>Bookmarked</source>
+        <target>K&#246;nyvjelz&#337;z&#246;tt</target>
+        <note>The description of a highlight if it is a site the user has bookmarked</note>
+      </trans-unit>
+      <trans-unit id="ActivityStream.Highlights.Title">
+        <source>Highlights</source>
+        <target>Kiemel&#233;sek</target>
+        <note>Section title label for the Highlights section</note>
+      </trans-unit>
+      <trans-unit id="ActivityStream.Highlights.Visited">
+        <source>Visited</source>
+        <target>L&#225;togatott</target>
+        <note>The description of a highlight if it is a site the user has visited</note>
+      </trans-unit>
+      <trans-unit id="ActivityStream.PageControl.Button">
+        <source>Next Page</source>
+        <target>K&#246;vetkez&#337; oldal</target>
+        <note>The page control button that lets you switch between pages in top sites</note>
+      </trans-unit>
+      <trans-unit id="ActivityStream.Pocket.SectionTitle">
+        <source>Recommended by Pocket</source>
+        <target>A Pocket aj&#225;nl&#225;s&#225;val</target>
+        <note>Section title label for Recommended by Pocket section</note>
+      </trans-unit>
+      <trans-unit id="ActivityStream.Pocket.Trending">
+        <source>Trending</source>
+        <target>N&#233;pszer&#369;</target>
+        <note>The description of a Pocket Story</note>
+      </trans-unit>
+      <trans-unit id="ActivityStream.TopSites.SectionTitle">
+        <source>Top Sites</source>
+        <target>N&#233;pszer&#369; oldalak</target>
+        <note>Section title label for Top Sites</note>
+      </trans-unit>
+      <trans-unit id="Add Tab">
+        <source>Add Tab</source>
+        <target>Lap hozz&#225;ad&#225;sa</target>
+        <note>Accessibility label for the Add Tab button in the Tab Tray.</note>
+      </trans-unit>
+      <trans-unit id="Add to Reading List">
+        <source>Add to Reading List</source>
+        <target>Felv&#233;tel az olvas&#225;si list&#225;ra</target>
+        <note>Accessibility label for action adding current page to reading list.
+   Name for button adding current article to reading list in reader mode</note>
+      </trans-unit>
+      <trans-unit id="AddPass.Error.Dismiss">
+        <source>OK</source>
+        <target>Rendben</target>
+        <note>Button to dismiss the 'Add Pass Failed' alert.  See https://support.apple.com/HT204003 for context on Wallet.</note>
+      </trans-unit>
+      <trans-unit id="AddPass.Error.Message">
+        <source>An error occured while adding the pass to Wallet. Please try again later.</source>
+        <target>Hiba t&#246;rt&#233;nt a jegy Wallethez ad&#225;sa sor&#225;n. Pr&#243;b&#225;lja &#250;jra k&#233;s&#337;bb.</target>
+        <note>Text of the 'Add Pass Failed' alert.  See https://support.apple.com/HT204003 for context on Wallet.</note>
+      </trans-unit>
+      <trans-unit id="AddPass.Error.Title">
+        <source>Failed to Add Pass</source>
+        <target>A jegy hozz&#225;ad&#225;sa sikertelen</target>
+        <note>Title of the 'Add Pass Failed' alert. See https://support.apple.com/HT204003 for context on Wallet.</note>
+      </trans-unit>
+      <trans-unit id="Added page to Reading List">
+        <source>Added page to Reading List</source>
+        <target>Lap hozz&#225;adva az olvas&#225;si list&#225;hoz</target>
+        <note>Accessibility message e.g. spoken by VoiceOver after the current page gets added to the Reading List using the Reader View button, e.g. by long-pressing it or by its accessibility custom action.</note>
+      </trans-unit>
+      <trans-unit id="Address and Search">
+        <source>Address and Search</source>
+        <target>C&#237;m &#233;s keres&#233;s</target>
+        <note>Accessibility label for address and search field, both words (Address, Search) are therefore nouns.</note>
+      </trans-unit>
+      <trans-unit id="Always Send">
+        <source>Always Send</source>
+        <target>Mindig k&#252;ldj&#246;n</target>
+        <note>Used as a button label for crash dialog prompt</note>
+      </trans-unit>
+      <trans-unit id="Amazon">
+        <source>Amazon</source>
+        <target>Amazon</target>
+        <note>Tile title for Amazon</note>
+      </trans-unit>
+      <trans-unit id="Authentication required">
+        <source>Authentication required</source>
+        <target>Hiteles&#237;t&#233;s sz&#252;ks&#233;ges</target>
+        <note>Authentication prompt title</note>
+      </trans-unit>
+      <trans-unit id="Back">
+        <source>Back</source>
+        <target>Vissza</target>
+        <note>Accessibility label for the Back button in the tab toolbar.</note>
+      </trans-unit>
+      <trans-unit id="Block Pop-up Windows">
+        <source>Block Pop-up Windows</source>
+        <target>Felugr&#243; ablakok tilt&#225;sa</target>
+        <note>Block pop-up windows setting</note>
+      </trans-unit>
+      <trans-unit id="Bookmarks">
+        <source>Bookmarks</source>
+        <target>K&#246;nyvjelz&#337;k</target>
+        <note>Panel accessibility label</note>
+      </trans-unit>
+      <trans-unit id="Bookmarks you save will show up here.">
+        <source>Bookmarks you save will show up here.</source>
+        <target>A mentett k&#246;nyvjelz&#337;k itt fognak megjelenni.</target>
+        <note>Status label for the empty Bookmarks state.</note>
+      </trans-unit>
+      <trans-unit id="Bookmarks.Folder.Label">
+        <source>Folder</source>
+        <target>Mappa</target>
+        <note>The label to show the location of the folder where the bookmark is located</note>
+      </trans-unit>
+      <trans-unit id="Bookmarks.FolderLocation.Label">
+        <source>Location</source>
+        <target>Hely</target>
+        <note>The label for the location of the new folder</note>
+      </trans-unit>
+      <trans-unit id="Bookmarks.FolderName.Label">
+        <source>Folder Name</source>
+        <target>Mappa neve</target>
+        <note>The label for the title of the new folder</note>
+      </trans-unit>
+      <trans-unit id="Bookmarks.NewFolder.Label">
+        <source>New Folder</source>
+        <target>&#218;j mappa</target>
+        <note>The button to create a new folder</note>
+      </trans-unit>
+      <trans-unit id="Bookmarks.Title.Label">
+        <source>Title</source>
+        <target>C&#237;m</target>
+        <note>The label for the title of a bookmark</note>
+      </trans-unit>
+      <trans-unit id="Bookmarks.URL.Label">
+        <source>URL</source>
+        <target>URL</target>
+        <note>The label for the URL of a bookmark</note>
+      </trans-unit>
+      <trans-unit id="Brightness">
+        <source>Brightness</source>
+        <target>F&#233;nyer&#337;</target>
+        <note>Accessibility label for brightness adjustment slider in Reader Mode display settings</note>
+      </trans-unit>
+      <trans-unit id="Cancel">
+        <source>Cancel</source>
+        <target>M&#233;gse</target>
+        <note>Label for Cancel button</note>
+      </trans-unit>
+      <trans-unit id="Changes color theme.">
+        <source>Changes color theme.</source>
+        <target>M&#243;dos&#237;tja a sz&#237;nt&#233;m&#225;t.</target>
+        <note>Accessibility hint for the color theme setting buttons in reader mode display settings</note>
+      </trans-unit>
+      <trans-unit id="Changes font type.">
+        <source>Changes font type.</source>
+        <target>M&#243;dos&#237;tja a bet&#369;k&#233;szletet.</target>
+        <note>Accessibility hint for the font type buttons in reader mode display settings</note>
+      </trans-unit>
+      <trans-unit id="Clear Private Data">
+        <source>Clear Private Data</source>
+        <target>Szem&#233;lyes adatok t&#246;rl&#233;se</target>
+        <note>Label used as an item in Settings. When touched it will open a dialog prompting the user to make sure they want to clear all of their private data.</note>
+      </trans-unit>
+      <trans-unit id="ClipboardToast.GoToCopiedLink.Button">
+        <source>Go</source>
+        <target>Ugr&#225;s</target>
+        <note>The button to open a new tab with the copied link</note>
+      </trans-unit>
+      <trans-unit id="ClipboardToast.GoToCopiedLink.Title">
+        <source>Go to copied link?</source>
+        <target>Ugr&#225;s a m&#225;solt hivatkoz&#225;shoz?</target>
+        <note>Message displayed when the user has a copied link on the clipboard</note>
+      </trans-unit>
+      <trans-unit id="Close">
+        <source>Close</source>
+        <target>Bez&#225;r&#225;s</target>
+        <note>Accessibility label for action denoting closing a tab in tab list (tray)</note>
+      </trans-unit>
+      <trans-unit id="Closing tab">
+        <source>Closing tab</source>
+        <target>Lap bez&#225;r&#225;sa</target>
+        <note>Accessibility label (used by assistive technology) notifying the user that the tab is being closed.</note>
+      </trans-unit>
+      <trans-unit id="ContextMenu.ButtonToast.NewPrivateTabOpened.ButtonText">
+        <source>Switch</source>
+        <target>&#193;tv&#225;lt&#225;s</target>
+        <note>The button text in the Button Toast for switching to a fresh New Private Tab.</note>
+      </trans-unit>
+      <trans-unit id="ContextMenu.ButtonToast.NewPrivateTabOpened.LabelText">
+        <source>New Private Tab opened</source>
+        <target>&#218;j priv&#225;t lap ny&#237;lt meg</target>
+        <note>The label text in the Button Toast for switching to a fresh New Private Tab.</note>
+      </trans-unit>
+      <trans-unit id="ContextMenu.ButtonToast.NewTabOpened.ButtonText">
+        <source>Switch</source>
+        <target>&#193;tv&#225;lt&#225;s</target>
+        <note>The button text in the Button Toast for switching to a fresh New Tab.</note>
+      </trans-unit>
+      <trans-unit id="ContextMenu.ButtonToast.NewTabOpened.LabelText">
+        <source>New Tab opened</source>
+        <target>&#218;j lap ny&#237;lt meg</target>
+        <note>The label text in the Button Toast for switching to a fresh New Tab.</note>
+      </trans-unit>
+      <trans-unit id="Copy Address">
+        <source>Copy Address</source>
+        <target>C&#237;m m&#225;sol&#225;sa</target>
+        <note>Copy the URL from the location bar</note>
+      </trans-unit>
+      <trans-unit id="Copy Image">
+        <source>Copy Image</source>
+        <target>K&#233;p m&#225;sol&#225;sa</target>
+        <note>Context menu item for copying an image to the clipboard</note>
+      </trans-unit>
+      <trans-unit id="Copy Link">
+        <source>Copy Link</source>
+        <target>Hivatkoz&#225;s m&#225;sol&#225;sa</target>
+        <note>Context menu item for copying a link URL to the clipboard</note>
+      </trans-unit>
+      <trans-unit id="Could not add page to Reading List. Maybe it&#8217;s already there?">
+        <source>Could not add page to Reading List. Maybe it&#8217;s already there?</source>
+        <target>Az oldal nem adhat&#243; hozz&#225; az olvas&#225;si list&#225;hoz. Lehet, hogy m&#225;r rajta van?</target>
+        <note>Accessibility message e.g. spoken by VoiceOver after the user wanted to add current page to the Reading List and this was not done, likely because it already was in the Reading List, but perhaps also because of real failures.</note>
+      </trans-unit>
+      <trans-unit id="Could not add page to Reading list">
+        <source>Could not add page to Reading list</source>
+        <target>Az oldal nem adhat&#243; hozz&#225; az olvas&#225;si list&#225;hoz</target>
+        <note>Accessibility message e.g. spoken by VoiceOver after adding current webpage to the Reading List failed.</note>
+      </trans-unit>
+      <trans-unit id="Could not load page.">
+        <source>Could not load page.</source>
+        <target>Az oldal nem t&#246;lthet&#337; be.</target>
+        <note>Error message that is shown in settings when there was a problem loading</note>
+      </trans-unit>
+      <trans-unit id="Create an account">
+        <source>Create an account</source>
+        <target>Fi&#243;k l&#233;trehoz&#225;sa</target>
+        <note>See http://mzl.la/1Qtkf0j</note>
+      </trans-unit>
+      <trans-unit id="Dark">
+        <source>Dark</source>
+        <target>S&#246;t&#233;t</target>
+        <note>Dark theme setting in Reading View settings</note>
+      </trans-unit>
+      <trans-unit id="Debug: forget Sync auth state">
+        <source>Debug: forget Sync auth state</source>
+        <target>Hibakeres&#233;s: Sync hiteles&#237;t&#233;si &#225;llapot&#225;nak elfelejt&#233;se</target>
+        <note>Debug option</note>
+      </trans-unit>
+      <trans-unit id="Debug: require password">
+        <source>Debug: require password</source>
+        <target>Hibakeres&#233;s: jelsz&#243; megk&#246;vetel&#233;se</target>
+        <note>Debug option</note>
+      </trans-unit>
+      <trans-unit id="Debug: require upgrade">
+        <source>Debug: require upgrade</source>
+        <target>Hibakeres&#233;s: friss&#237;t&#233;s megk&#246;vetel&#233;se</target>
+        <note>Debug option</note>
+      </trans-unit>
+      <trans-unit id="Debug: use stage servers">
+        <source>Debug: use stage servers</source>
+        <target>Hibakeres&#233;s: tesztkiszolg&#225;l&#243;k haszn&#225;lata</target>
+        <note>Debug option</note>
+      </trans-unit>
+      <trans-unit id="Decrease text size">
+        <source>Decrease text size</source>
+        <target>Bet&#369;m&#233;ret cs&#246;kkent&#233;se</target>
+        <note>Accessibility label for button decreasing font size in display settings of reader mode</note>
+      </trans-unit>
+      <trans-unit id="Default Search Engine">
+        <source>Default Search Engine</source>
+        <target>Alap&#233;rtelmezett keres&#337;szolg&#225;ltat&#225;s</target>
+        <note>Accessibility label for default search engine setting.
+   Title for default search engine picker.
+   Title for default search engine settings section.</note>
+      </trans-unit>
+      <trans-unit id="Disable additional page dialogs">
+        <source>Disable additional page dialogs</source>
+        <target>Tov&#225;bbi p&#225;rbesz&#233;dablakok letilt&#225;sa</target>
+        <note>Pending feature; currently unused string! Checkbox label shown after multiple alerts are shown</note>
+      </trans-unit>
+      <trans-unit id="Display Settings">
+        <source>Display Settings</source>
+        <target>Megjelen&#237;t&#233;si be&#225;ll&#237;t&#225;sok</target>
+        <note>Name for display settings button in reader mode. Display in the meaning of presentation, not monitor.</note>
+      </trans-unit>
+      <trans-unit id="Do you want to save the password for %@ on %@?">
+        <source>Do you want to save the password for %1$@ on %2$@?</source>
+        <target>Szeretn&#233; elmenteni a jelszav&#225;t ehhez: %1$@ itt: %2$@?</target>
+        <note>Prompt for saving a password. The first parameter is the username being saved. The second parameter is the hostname of the site.</note>
+      </trans-unit>
+      <trans-unit id="Do you want to save the password on %@?">
+        <source>Do you want to save the password on %@?</source>
+        <target>Szeretn&#233; elmenteni a jelszav&#225;t itt: %@?</target>
+        <note>Prompt for saving a password with no username. The parameter is the hostname of the site.</note>
+      </trans-unit>
+      <trans-unit id="Do you want to update the password for %@ on %@?">
+        <source>Do you want to update the password for %1$@ on %2$@?</source>
+        <target>Szeretn&#233; friss&#237;teni a jelszav&#225;t ehhez: %1$@ itt: %2$@?</target>
+        <note>Prompt for updating a password. The first parameter is the username being saved. The second parameter is the hostname of the site.</note>
+      </trans-unit>
+      <trans-unit id="Do you want to update the password on %@?">
+        <source>Do you want to update the password on %@?</source>
+        <target>Szeretn&#233; friss&#237;teni a jelszav&#225;t itt: %@?</target>
+        <note>Prompt for updating a password with on username. The parameter is the hostname of the site.</note>
+      </trans-unit>
+      <trans-unit id="Done">
+        <source>Done</source>
+        <target>K&#233;sz</target>
+        <note>Done button on left side of the Settings view controller title bar</note>
+      </trans-unit>
+      <trans-unit id="Don&#8217;t Send">
+        <source>Don&#8217;t Send</source>
+        <target>Nincs k&#252;ld&#233;s</target>
+        <note>Used as a button label for crash dialog prompt</note>
+      </trans-unit>
+      <trans-unit id="Downloads.Alert.Cancel">
+        <source>No</source>
+        <target>Nem</target>
+        <note>The label of the button the user will press to reject the option to open a file in another application</note>
+      </trans-unit>
+      <trans-unit id="Downloads.Alert.Confirm">
+        <source>Yes</source>
+        <target>Igen</target>
+        <note>The label of the button the user will press to be presented with a list of other apps to open a file in</note>
+      </trans-unit>
+      <trans-unit id="Downloads.Alert.Message">
+        <source>Firefox is unable to download or display this file. Would you like to open it in another app?</source>
+        <target>A Firefox nem tudja sem let&#246;lteni, sem megjelen&#237;teni ezt a f&#225;jl. Szeretn&#233; megnyitni egy m&#225;sik appban?</target>
+        <note>The message of the alert box asking the user if they want to use another app to open a file.</note>
+      </trans-unit>
+      <trans-unit id="Downloads.Alert.Title">
+        <source>Firefox Downloads</source>
+        <target>Firefox let&#246;lt&#233;sek</target>
+        <note>The title of the alert box asking the user if they want to use another app to open a file.</note>
+      </trans-unit>
+      <trans-unit id="Downloads.Error.Message">
+        <source>Downloads aren&#8217;t supported in Firefox yet.</source>
+        <target>A Firefox m&#233;g nem t&#225;mogatja a let&#246;lt&#233;seket.</target>
+        <note>The message displayed to a user when they try and perform the download of an asset that Firefox cannot currently handle.</note>
+      </trans-unit>
+      <trans-unit id="Enter your password to connect.">
+        <source>Enter your password to connect.</source>
+        <target>A kapcsol&#243;d&#225;shoz adja meg jelszav&#225;t.</target>
+        <note>Text message in the settings table view</note>
+      </trans-unit>
+      <trans-unit id="ErrorPages.Advanced.Button">
+        <source>Advanced</source>
+        <target>Speci&#225;lis</target>
+        <note>Label for button to perform advanced actions on the error page</note>
+      </trans-unit>
+      <trans-unit id="ErrorPages.AdvancedWarning1.Text">
+        <source>Warning: we can&#8217;t confirm your connection to this website is secure.</source>
+        <target>Figyelmeztet&#233;s: nem tudjuk meger&#337;s&#237;teni, hogy a kapcsolata biztons&#225;gos-e ezzel a weboldallal.</target>
+        <note>Warning text when clicking the Advanced button on error pages</note>
+      </trans-unit>
+      <trans-unit id="ErrorPages.AdvancedWarning2.Text">
+        <source>It may be a misconfiguration or tampering by an attacker. Proceed if you accept the potential risk.</source>
+        <target>Lehet hib&#225;s be&#225;ll&#237;t&#225;s vagy egy t&#225;mad&#243; m&#369;ve. Akkor haladjon tov&#225;bb, ha elfogadja a lehets&#233;ges kock&#225;zatot.</target>
+        <note>Additional warning text when clicking the Advanced button on error pages</note>
+      </trans-unit>
+      <trans-unit id="ErrorPages.CertWarning.Description">
+        <source>The owner of %@ has configured their website improperly. To protect your information from being stolen, Firefox has not connected to this website.</source>
+        <target>A(z) %@ tulajdonosa rosszul &#225;ll&#237;totta be a webhelyet. Hogy megv&#233;dje az inform&#225;ci&#243;it az ellop&#225;sukt&#243;l, a Firefox nem kapcsol&#243;dott ehhez a webhelyhez.</target>
+        <note>Warning text on the certificate error page</note>
+      </trans-unit>
+      <trans-unit id="ErrorPages.CertWarning.Title">
+        <source>This Connection is Untrusted</source>
+        <target>Ez a kapcsolat nem megb&#237;zhat&#243;</target>
+        <note>Title on the certificate error page</note>
+      </trans-unit>
+      <trans-unit id="ErrorPages.GoBack.Button">
+        <source>Go Back</source>
+        <target>Ugr&#225;s vissza</target>
+        <note>Label for button to go back from the error page</note>
+      </trans-unit>
+      <trans-unit id="ErrorPages.VisitOnce.Button">
+        <source>Visit site anyway</source>
+        <target>Megtekint&#233;s mindenk&#233;pp</target>
+        <note>Button label to temporarily continue to the site from the certificate error page</note>
+      </trans-unit>
+      <trans-unit id="ExternalLink.AppStore.ConfirmationTitle">
+        <source>Open this link in the App Store app?</source>
+        <target>Megnyitja ezt a hivatkoz&#225;st az App Store appban?</target>
+        <note>Question shown to user when tapping a link that opens the App Store app</note>
+      </trans-unit>
+      <trans-unit id="Facebook">
+        <source>Facebook</source>
+        <target>Facebook</target>
+        <note>Tile title for Facebook</note>
+      </trans-unit>
+      <trans-unit id="Firefox will stop syncing with your account, but won&#8217;t delete any of your browsing data on this device.">
+        <source>Firefox will stop syncing with your account, but won&#8217;t delete any of your browsing data on this device.</source>
+        <target>A Firefox le&#225;ll&#237;tja a szinkroniz&#225;ci&#243;t a fi&#243;kj&#225;val, de nem t&#246;r&#246;l semmilyen b&#246;ng&#233;sz&#233;si adatot err&#337;l az eszk&#246;zr&#337;l.</target>
+        <note>Text of the 'sign out firefox account' alert</note>
+      </trans-unit>
+      <trans-unit id="Firefox would like to access your Photos">
+        <source>Firefox would like to access your Photos</source>
+        <target>A Firefox szeretne hozz&#225;f&#233;rni a f&#233;nyk&#233;peihez</target>
+        <note>See http://mzl.la/1G7uHo7</note>
+      </trans-unit>
+      <trans-unit id="Firefox.HomePage.Title">
+        <source>Firefox Home Page</source>
+        <target>Firefox kezd&#337;lap</target>
+        <note>Title for firefox about:home page in tab history list</note>
+      </trans-unit>
+      <trans-unit id="Forward">
+        <source>Forward</source>
+        <target>El&#337;re</target>
+        <note>Accessibility Label for the tab toolbar Forward button</note>
+      </trans-unit>
+      <trans-unit id="FxA.AccountVerificationDetails">
+        <source>Wrong email? Disconnect below to start over.</source>
+        <target>Hib&#225;s e-mail? V&#225;lassza le odalent az &#250;jrakezd&#233;shez.</target>
+        <note>Label stating how to disconnect account</note>
+      </trans-unit>
+      <trans-unit id="FxA.AccountVerificationRequired">
+        <source>Account Verification Required</source>
+        <target>Fi&#243;kellen&#337;rz&#233;s sz&#252;ks&#233;ges</target>
+        <note>Label stating your account is not verified</note>
+      </trans-unit>
+      <trans-unit id="FxA.AccountVerificationRequiredSurface">
+        <source>You need to verify %@. Check your email for the verification link from Firefox.</source>
+        <target>Meg kell er&#337;s&#237;tenie: %@. Ellen&#337;rizze az e-mailj&#233;t a Firefox ellen&#337;rz&#233;si hivatkoz&#225;sa miatt.</target>
+        <note>Message explaining that user needs to check email for Firefox Account verfication link.</note>
+      </trans-unit>
+      <trans-unit id="FxA.FirefoxAccount">
+        <source>Firefox Account</source>
+        <target>Firefox fi&#243;k</target>
+        <note>Settings section title for Firefox Account</note>
+      </trans-unit>
+      <trans-unit id="FxA.ManageAccount">
+        <source>Manage Account</source>
+        <target>Fi&#243;k kezel&#233;se</target>
+        <note>Button label to goto Firefox Account settings</note>
+      </trans-unit>
+      <trans-unit id="FxA.NoInternetConnection">
+        <source>No Internet Connection</source>
+        <target>Nincs internetkapcsolat</target>
+        <note>Label when no internet is present</note>
+      </trans-unit>
+      <trans-unit id="FxA.ResendEmail">
+        <source>Resend Email</source>
+        <target>E-mail &#250;jrak&#252;ld&#233;se</target>
+        <note>Button label to resend email</note>
+      </trans-unit>
+      <trans-unit id="FxA.SignIntoSync">
+        <source>Sign in to Sync</source>
+        <target>Jelentkezzen be a Syncbe</target>
+        <note>Button label to sign into Sync</note>
+      </trans-unit>
+      <trans-unit id="FxA.SyncExplain">
+        <source>Get your tabs, bookmarks, and passwords from your other devices.</source>
+        <target>Hozza &#225;t a lapjait, k&#246;nyvjelz&#337;it &#233;s jelszavait a t&#246;bbi eszk&#246;z&#233;r&#337;l.</target>
+        <note>Label explaining what sync does</note>
+      </trans-unit>
+      <trans-unit id="FxA.SyncNow">
+        <source>Sync Now</source>
+        <target>Szinkroniz&#225;l&#225;s most</target>
+        <note>Button label to Sync your Firefox Account</note>
+      </trans-unit>
+      <trans-unit id="FxA.TakeYourWebWithYou">
+        <source>Take Your Web With You</source>
+        <target>Vigye mag&#225;val a webet</target>
+        <note>Call to action for sign into sync button</note>
+      </trans-unit>
+      <trans-unit id="FxAPush_DeviceConnected_body">
+        <source>Firefox Sync has connected to %@</source>
+        <target>A Firefox Sync kapcsol&#243;dott ehhez: %@</target>
+        <note>Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device.</note>
+      </trans-unit>
+      <trans-unit id="FxAPush_DeviceConnected_title">
+        <source>Sync Connected</source>
+        <target>Sync kapcsol&#243;dva</target>
+        <note>Title of a notification displayed when another device has connected to FxA.</note>
+      </trans-unit>
+      <trans-unit id="FxAPush_DeviceDisconnected_ThisDevice_body">
+        <source>This device has been successfully disconnected from Firefox Sync.</source>
+        <target>Ez az eszk&#246;z sikeresen lekapcsol&#243;dott a Firefox Syncr&#337;l.</target>
+        <note>Body of a notification displayed when this device has been disconnected from FxA by another device.</note>
+      </trans-unit>
+      <trans-unit id="FxAPush_DeviceDisconnected_ThisDevice_title">
+        <source>Sync Disconnected</source>
+        <target>Sync lev&#225;lasztva</target>
+        <note>Title of a notification displayed when this device has been disconnected by another device.</note>
+      </trans-unit>
+      <trans-unit id="FxAPush_DeviceDisconnected_UnknownDevice_body">
+        <source>A device has disconnected from Firefox Sync</source>
+        <target>Egy eszk&#246;z lekapcsol&#243;dott a Firefox Syncr&#337;l</target>
+        <note>Body of a notification displayed when unnamed device has been disconnected from FxA.</note>
+      </trans-unit>
+      <trans-unit id="FxAPush_DeviceDisconnected_body">
+        <source>%@ has been successfully disconnected.</source>
+        <target>A(z) %@ sikeresen lekapcsol&#243;dott.</target>
+        <note>Body of a notification displayed when named device has been disconnected from FxA. %@ refers to the name of the disconnected device.</note>
+      </trans-unit>
+      <trans-unit id="FxAPush_DeviceDisconnected_title">
+        <source>Sync Disconnected</source>
+        <target>Sync lev&#225;lasztva</target>
+        <note>Title of a notification displayed when named device has been disconnected from FxA.</note>
+      </trans-unit>
+      <trans-unit id="General">
+        <source>General</source>
+        <target>&#193;ltal&#225;nos</target>
+        <note>General settings section title</note>
+      </trans-unit>
+      <trans-unit id="Get your open tabs, bookmarks, and passwords from your other devices.">
+        <source>Get your open tabs, bookmarks, and passwords from your other devices.</source>
+        <target>Hozza &#225;t a nyitott lapjait, k&#246;nyvjelz&#337;it &#233;s jelszavait a t&#246;bbi eszk&#246;z&#233;r&#337;l.</target>
+        <note>A re-worded offer about Sync, displayed when the Sync home panel is empty, that emphasizes one-way data transfer, not syncing.</note>
+      </trans-unit>
+      <trans-unit id="Go">
+        <source>Go</source>
+        <target>Ugr&#225;s</target>
+        <note>Pending feature; currently unused string! Button to browse to URL on the clipboard when browser is opened</note>
+      </trans-unit>
+      <trans-unit id="Go to copied URL?">
+        <source>Go to copied URL?</source>
+        <target>Ugr&#225;s a m&#225;solt URL-hez?</target>
+        <note>Pending feature; currently unused string! Prompt message shown when browser is opened with URL on the clipboard</note>
+      </trans-unit>
+      <trans-unit id="Help">
+        <source>Help</source>
+        <target>S&#250;g&#243;</target>
+        <note>Show the SUMO support page from the Support section in the settings. see http://mzl.la/1dmM8tZ</note>
+      </trans-unit>
+      <trans-unit id="History">
+        <source>History</source>
+        <target>El&#337;zm&#233;nyek</target>
+        <note>Panel accessibility label</note>
+      </trans-unit>
+      <trans-unit id="HistoryPanel.EmptyState.Title">
+        <source>Websites you&#8217;ve visited recently will show up here.</source>
+        <target>Azok a webhelyek jelennek meg itt, amelyeket nemr&#233;g l&#225;togatott meg.</target>
+        <note>Title for the History Panel empty state.</note>
+      </trans-unit>
+      <trans-unit id="HistoryPanel.EmptySyncedTabsNullState.Description">
+        <source>Your tabs from other devices show up here.</source>
+        <target>A m&#225;s eszk&#246;z&#246;k&#246;n l&#233;v&#337; lapok itt jelennek meg.</target>
+        <note>Description for the empty synced tabs null state in the History Panel</note>
+      </trans-unit>
+      <trans-unit id="HistoryPanel.EmptySyncedTabsState.Description">
+        <source>Sign in to view open tabs on your other devices.</source>
+        <target>Jelentkezzen be a t&#246;bbi eszk&#246;z&#233;n l&#233;v&#337; nyitott lapok megtekint&#233;s&#233;hez.</target>
+        <note>Description for the empty synced tabs state in the History Panel</note>
+      </trans-unit>
+      <trans-unit id="HistoryPanel.EmptySyncedTabsState.Title">
+        <source>Firefox Sync</source>
+        <target>Firefox Sync</target>
+        <note>Title for the empty synced tabs state in the History Panel</note>
+      </trans-unit>
+      <trans-unit id="HistoryPanel.HistoryBackButton.Title">
+        <source>History</source>
+        <target>El&#337;zm&#233;nyek</target>
+        <note>Title for the Back to History button in the History Panel</note>
+      </trans-unit>
+      <trans-unit id="HistoryPanel.RecentlyClosedTabsButton.Title">
+        <source>Recently Closed</source>
+        <target>Nemr&#233;g bez&#225;rt</target>
+        <note>Title for the Recently Closed button in the History Panel</note>
+      </trans-unit>
+      <trans-unit id="HistoryPanel.SyncedTabsCell.Description.Pluralized">
+        <source>%d device(s) connected</source>
+        <target>%d eszk&#246;z csatlakoztatva</target>
+        <note>Description that corresponds with a number of devices connected for the Synced Tabs Cell in the History Panel</note>
+      </trans-unit>
+      <trans-unit id="HistoryPanel.SyncedTabsCell.Title">
+        <source>Synced Devices</source>
+        <target>Szinkroniz&#225;lt eszk&#246;z&#246;k</target>
+        <note>Title for the Synced Tabs Cell in the History Panel</note>
+      </trans-unit>
+      <trans-unit id="HomePage.Set.Dialog.Cancel">
+        <source>Cancel</source>
+        <target>M&#233;gse</target>
+        <note>Button cancelling changes setting the home page for the first time.</note>
+      </trans-unit>
+      <trans-unit id="HomePage.Set.Dialog.Message">
+        <source>You can change this at any time in Settings</source>
+        <target>Ezt b&#225;rmikor m&#243;dos&#237;thatja a be&#225;ll&#237;t&#225;sokban</target>
+        <note>Alert dialog body when the user opens the home page for the first time.</note>
+      </trans-unit>
+      <trans-unit id="HomePage.Set.Dialog.OK">
+        <source>Set Homepage</source>
+        <target>Kezd&#337;lap be&#225;ll&#237;t&#225;sa</target>
+        <note>Button accepting changes setting the home page for the first time.</note>
+      </trans-unit>
+      <trans-unit id="HomePage.Set.Dialog.Title">
+        <source>Do you want to use this web page as your home page?</source>
+        <target>T&#233;nyleg ezt az oldalt szeretn&#233; be&#225;ll&#237;tani kezd&#337;lapnak?</target>
+        <note>Alert dialog title when the user opens the home page for the first time.</note>
+      </trans-unit>
+      <trans-unit id="HomePanel.ContextMenu.Bookmark">
+        <source>Bookmark</source>
+        <target>K&#246;nyvjelz&#337;</target>
+        <note>The title for the Bookmark context menu action for sites in Home Panels</note>
+      </trans-unit>
+      <trans-unit id="HomePanel.ContextMenu.DeleteFromHistory">
+        <source>Delete from History</source>
+        <target>T&#246;rl&#233;s az el&#337;zm&#233;nyekb&#337;l</target>
+        <note>The title for the Delete from History context menu action for sites in Home Panels</note>
+      </trans-unit>
+      <trans-unit id="HomePanel.ContextMenu.OpenInNewPrivateTab">
+        <source>Open in New Private Tab</source>
+        <target>Megnyit&#225;s &#250;j priv&#225;t lapon</target>
+        <note>The title for the Open in New Private Tab context menu action for sites in Home Panels</note>
+      </trans-unit>
+      <trans-unit id="HomePanel.ContextMenu.OpenInNewTab">
+        <source>Open in New Tab</source>
+        <target>Megnyit&#225;s &#250;j lapon</target>
+        <note>The title for the Open in New Tab context menu action for sites in Home Panels</note>
+      </trans-unit>
+      <trans-unit id="HomePanel.ContextMenu.Remove">
+        <source>Remove</source>
+        <target>Elt&#225;vol&#237;t&#225;s</target>
+        <note>The title for the Remove context menu action for sites in Home Panels</note>
+      </trans-unit>
+      <trans-unit id="HomePanel.ContextMenu.RemoveBookmark">
+        <source>Remove Bookmark</source>
+        <target>K&#246;nyvjelz&#337; elt&#225;vol&#237;t&#225;sa</target>
+        <note>The title for the Remove Bookmark context menu action for sites in Home Panels</note>
+      </trans-unit>
+      <trans-unit id="HomePanel.ContextMenu.Share">
+        <source>Share</source>
+        <target>Megoszt&#225;s</target>
+        <note>The title for the Share context menu action for sites in Home Panels</note>
+      </trans-unit>
+      <trans-unit id="Hotkeys.Back.DiscoveryTitle">
+        <source>Back</source>
+        <target>Vissza</target>
+        <note>Label to display in the Discoverability overlay for keyboard shortcuts</note>
+      </trans-unit>
+      <trans-unit id="Hotkeys.CloseTab.DiscoveryTitle">
+        <source>Close Tab</source>
+        <target>Lap bez&#225;r&#225;sa</target>
+        <note>Label to display in the Discoverability overlay for keyboard shortcuts</note>
+      </trans-unit>
+      <trans-unit id="Hotkeys.Find.DiscoveryTitle">
+        <source>Find</source>
+        <target>Keres&#233;s</target>
+        <note>Label to display in the Discoverability overlay for keyboard shortcuts</note>
+      </trans-unit>
+      <trans-unit id="Hotkeys.Forward.DiscoveryTitle">
+        <source>Forward</source>
+        <target>El&#337;re</target>
+        <note>Label to display in the Discoverability overlay for keyboard shortcuts</note>
+      </trans-unit>
+      <trans-unit id="Hotkeys.NewPrivateTab.DiscoveryTitle">
+        <source>New Private Tab</source>
+        <target>&#218;j priv&#225;t lap</target>
+        <note>Label to display in the Discoverability overlay for keyboard shortcuts</note>
+      </trans-unit>
+      <trans-unit id="Hotkeys.NewTab.DiscoveryTitle">
+        <source>New Tab</source>
+        <target>&#218;j lap</target>
+        <note>Label to display in the Discoverability overlay for keyboard shortcuts</note>
+      </trans-unit>
+      <trans-unit id="Hotkeys.Reload.DiscoveryTitle">
+        <source>Reload Page</source>
+        <target>&#218;jrat&#246;lt&#233;s</target>
+        <note>Label to display in the Discoverability overlay for keyboard shortcuts</note>
+      </trans-unit>
+      <trans-unit id="Hotkeys.SelectLocationBar.DiscoveryTitle">
+        <source>Select Location Bar</source>
+        <target>C&#237;ms&#225;v kiv&#225;laszt&#225;sa</target>
+        <note>Label to display in the Discoverability overlay for keyboard shortcuts</note>
+      </trans-unit>
+      <trans-unit id="Hotkeys.ShowNextTab.DiscoveryTitle">
+        <source>Show Next Tab</source>
+        <target>K&#246;vetkez&#337; lap megjelen&#237;t&#233;se</target>
+        <note>Label to display in the Discoverability overlay for keyboard shortcuts</note>
+      </trans-unit>
+      <trans-unit id="Hotkeys.ShowPreviousTab.DiscoveryTitle">
+        <source>Show Previous Tab</source>
+        <target>El&#337;z&#337; lap megjelen&#237;t&#233;se</target>
+        <note>Label to display in the Discoverability overlay for keyboard shortcuts</note>
+      </trans-unit>
+      <trans-unit id="Increase text size">
+        <source>Increase text size</source>
+        <target>Bet&#369;m&#233;ret n&#246;vel&#233;se</target>
+        <note>Accessibility label for button increasing font size in display settings of reader mode</note>
+      </trans-unit>
+      <trans-unit id="Intro Tour Carousel">
+        <source>Intro Tour Carousel</source>
+        <target>Bevezet&#337; k&#246;rhinta ablakelem</target>
+        <note>Accessibility label for the introduction tour carousel</note>
+      </trans-unit>
+      <trans-unit id="Last month">
+        <source>Last month</source>
+        <target>M&#250;lt h&#243;nap</target>
+        <note>History tableview section header</note>
+      </trans-unit>
+      <trans-unit id="Last synced: %@">
+        <source>Last synced: %@</source>
+        <target>Legut&#243;bb szinkroniz&#225;lva: %@</target>
+        <note>Remote tabs last synced time. Argument is the relative date string.</note>
+      </trans-unit>
+      <trans-unit id="Last week">
+        <source>Last week</source>
+        <target>M&#250;lt h&#233;t</target>
+        <note>History tableview section header</note>
+      </trans-unit>
+      <trans-unit id="Licenses">
+        <source>Licenses</source>
+        <target>Licencek</target>
+        <note>Settings item that opens a tab containing the licenses. See http://mzl.la/1NSAWCG</note>
+      </trans-unit>
+      <trans-unit id="Light">
+        <source>Light</source>
+        <target>Vil&#225;gos</target>
+        <note>Light theme setting in Reading View settings</note>
+      </trans-unit>
+      <trans-unit id="Load original page">
+        <source>Load original page</source>
+        <target>Eredeti oldal bet&#246;lt&#233;se</target>
+        <note>Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Firefox reader mode from another app.</note>
+      </trans-unit>
+      <trans-unit id="Loading content&#8230;">
+        <source>Loading content&#8230;</source>
+        <target>Tartalom bet&#246;lt&#233;se&#8230;</target>
+        <note>Message displayed when the reader mode page is loading. This message will appear only when sharing to Firefox reader mode from another app.</note>
+      </trans-unit>
+      <trans-unit id="Log Out">
+        <source>Log Out</source>
+        <target>Kijelentkez&#233;s</target>
+        <note>Button in settings screen to disconnect from your account
+   Disconnect button in the 'log out firefox account' alert</note>
+      </trans-unit>
+      <trans-unit id="Log Out?">
+        <source>Log Out?</source>
+        <target>Kijelentkez&#233;s?</target>
+        <note>Title of the 'log out firefox account' alert</note>
+      </trans-unit>
+      <trans-unit id="Log in">
+        <source>Log in</source>
+        <target>Bejelentkez&#233;s</target>
+        <note>Authentication prompt log in button</note>
+      </trans-unit>
+      <trans-unit id="Logins">
+        <source>Logins</source>
+        <target>Bejelentkez&#233;sek</target>
+        <note>Label used as an item in Settings. When touched, the user will be navigated to the Logins/Password manager.</note>
+      </trans-unit>
+      <trans-unit id="LoginsHelper.DontSave.Button">
+        <source>Don&#8217;t Save</source>
+        <target>Nincs ment&#233;s</target>
+        <note>Button to not save the user's password</note>
+      </trans-unit>
+      <trans-unit id="LoginsHelper.PromptSaveLogin.Title">
+        <source>Save login %1$@ for %2$@?</source>
+        <target>&#8222;%1$@&#8221; bejelentkez&#233;s ment&#233;se ehhez: %2$@?</target>
+        <note>Prompt for saving a login. The first parameter is the username being saved. The second parameter is the hostname of the site.</note>
+      </trans-unit>
+      <trans-unit id="LoginsHelper.PromptSavePassword.Title">
+        <source>Save password for %@?</source>
+        <target>Jelsz&#243; ment&#233;se ehhez: %@?</target>
+        <note>Prompt for saving a password with no username. The parameter is the hostname of the site.</note>
+      </trans-unit>
+      <trans-unit id="LoginsHelper.PromptUpdateLogin.Title">
+        <source>Update login %1$@ for %2$@?</source>
+        <target>&#8222;%1$@&#8221; bejelentkez&#233;s friss&#237;t&#233;se itt: %2$@?</target>
+        <note>Prompt for updating a login. The first parameter is the username for which the password will be updated for. The second parameter is the hostname of the site.</note>
+      </trans-unit>
+      <trans-unit id="LoginsHelper.PromptUpdatePassword.Title">
+        <source>Update password for %@?</source>
+        <target>Jelsz&#243; friss&#237;t&#233;se itt: %@?</target>
+        <note>Prompt for updating a password with no username. The parameter is the hostname of the site.</note>
+      </trans-unit>
+      <trans-unit id="LoginsHelper.SaveLogin.Button">
+        <source>Save Login</source>
+        <target>Bejelentkez&#233;s ment&#233;se</target>
+        <note>Button to save the user's password</note>
+      </trans-unit>
+      <trans-unit id="LoginsHelper.Update.Button">
+        <source>Update</source>
+        <target>Friss&#237;t&#233;s</target>
+        <note>Button to update the user's password</note>
+      </trans-unit>
+      <trans-unit id="Looks like Firefox crashed previously. Would you like to restore your tabs?">
+        <source>Looks like Firefox crashed previously. Would you like to restore your tabs?</source>
+        <target>&#218;gy n&#233;z ki, hogy a Firefox el&#337;z&#337;leg &#246;sszeomlott. Szeretn&#233; helyre&#225;ll&#237;tani a lapjait?</target>
+        <note>Restore Tabs Prompt Description</note>
+      </trans-unit>
+      <trans-unit id="Mark as Read">
+        <source>Mark as Read</source>
+        <target>Megjel&#246;l&#233;s olvasottk&#233;nt</target>
+        <note>Name for Mark as read button in reader mode
+   Title for the button that marks a reading list item as read</note>
+      </trans-unit>
+      <trans-unit id="Mark as Unread">
+        <source>Mark as Unread</source>
+        <target>Megjel&#246;l&#233;s olvasatlank&#233;nt</target>
+        <note>Name for Mark as unread button in reader mode
+   Title for the button that marks a reading list item as unread</note>
+      </trans-unit>
+      <trans-unit id="Menu.AddBookmark.Confirm">
+        <source>Bookmark Added</source>
+        <target>K&#246;nyvjelz&#337; hozz&#225;adva</target>
+        <note>Toast displayed to the user after a bookmark has been added.</note>
+      </trans-unit>
+      <trans-unit id="Menu.AddToReadingList.Confirm">
+        <source>Added To Reading List</source>
+        <target>Hozz&#225;adva az olvas&#225;si list&#225;hoz</target>
+        <note>Toast displayed to the user after adding the item to their reading list.</note>
+      </trans-unit>
+      <trans-unit id="Menu.CopyURL.Confirm">
+        <source>URL Copied To Clipboard</source>
+        <target>URL a v&#225;g&#243;lapra m&#225;solva</target>
+        <note>Toast displayed to user after copy url pressed.</note>
+      </trans-unit>
+      <trans-unit id="Menu.NightModeTurnOff.Label">
+        <source>Disable Night Mode</source>
+        <target>&#201;jszakai &#252;zemm&#243;d letilt&#225;sa</target>
+        <note>Label for the button, displayed in the menu, turns off night mode</note>
+      </trans-unit>
+      <trans-unit id="Menu.NightModeTurnOn.Label">
+        <source>Enable Night Mode</source>
+        <target>&#201;jszakai &#252;zemm&#243;d enged&#233;lyez&#233;se</target>
+        <note>Label for the button, displayed in the menu, turns on night mode.</note>
+      </trans-unit>
+      <trans-unit id="Menu.NoImageModeHideImages.Label">
+        <source>Hide Images</source>
+        <target>K&#233;pek elrejt&#233;se</target>
+        <note>Label for the button, displayed in the menu, hides images on the webpage when pressed.</note>
+      </trans-unit>
+      <trans-unit id="Menu.NoImageModeShowImages.Label">
+        <source>Show Images</source>
+        <target>K&#233;pek megjelen&#237;t&#233;se</target>
+        <note>Label for the button, displayed in the menu, shows images on the webpage when pressed</note>
+      </trans-unit>
+      <trans-unit id="Menu.RemoveBookmark.Confirm">
+        <source>Bookmark Removed</source>
+        <target>K&#246;nyvjelz&#337; t&#246;r&#246;lve</target>
+        <note>Toast displayed to the user after a bookmark has been removed.</note>
+      </trans-unit>
+      <trans-unit id="Missing error">
+        <source>Missing error</source>
+        <target>Hi&#225;nyz&#243; hiba</target>
+        <note>Error for a missing remote error number</note>
+      </trans-unit>
+      <trans-unit id="Missing message">
+        <source>Missing message</source>
+        <target>Hi&#225;nyz&#243; &#252;zenet</target>
+        <note>Error for a missing remote error message</note>
+      </trans-unit>
+      <trans-unit id="Navigation Toolbar">
+        <source>Navigation Toolbar</source>
+        <target>Navig&#225;ci&#243;s eszk&#246;zt&#225;r</target>
+        <note>Accessibility label for the navigation toolbar displayed at the bottom of the screen.</note>
+      </trans-unit>
+      <trans-unit id="New Tab">
+        <source>New Tab</source>
+        <target>&#218;j lap</target>
+        <note>Accessibility label for the New Tab button in the tab toolbar.</note>
+      </trans-unit>
+      <trans-unit id="No">
+        <source>No</source>
+        <target>Nem</target>
+        <note>Restore Tabs Negative Action</note>
+      </trans-unit>
+      <trans-unit id="No tabs">
+        <source>No tabs</source>
+        <target>Nincsenek lapok</target>
+        <note>Message spoken by VoiceOver to indicate that there are no tabs in the Tabs Tray</note>
+      </trans-unit>
+      <trans-unit id="Not now">
+        <source>Not now</source>
+        <target>Most nem</target>
+        <note>Button to not save the user's password</note>
+      </trans-unit>
+      <trans-unit id="OK">
+        <source>OK</source>
+        <target>Rendben</target>
+        <note>OK button</note>
+      </trans-unit>
+      <trans-unit id="Okay">
+        <source>Okay</source>
+        <target>Rendben</target>
+        <note>Restore Tabs Affirmative Action</note>
+      </trans-unit>
+      <trans-unit id="Oops! Firefox crashed">
+        <source>Oops! Firefox crashed</source>
+        <target>Hopp&#225;! A Firefox &#246;sszeomlott</target>
+        <note>Title for prompt displayed to user after the app crashes</note>
+      </trans-unit>
+      <trans-unit id="Open Settings">
+        <source>Open Settings</source>
+        <target>Be&#225;ll&#237;t&#225;sok megnyit&#225;sa</target>
+        <note>See http://mzl.la/1G7uHo7</note>
+      </trans-unit>
+      <trans-unit id="Open articles in Reader View by tapping the book icon when it appears in the title bar.">
+        <source>Open articles in Reader View by tapping the book icon when it appears in the title bar.</source>
+        <target>Nyissa meg a cikkeket olvas&#243; n&#233;zetben a k&#246;nyv ikonra kattintva a c&#237;ms&#225;vban.</target>
+        <note>See http://mzl.la/1LXbDOL</note>
+      </trans-unit>
+      <trans-unit id="Open in New Tab">
+        <source>Open in New Tab</source>
+        <target>Megnyit&#225;s &#250;j lapon</target>
+        <note>Context menu item for opening a link in a new tab</note>
+      </trans-unit>
+      <trans-unit id="Open in&#8230;">
+        <source>Open in&#8230;</source>
+        <target>Megnyit&#225;s a k&#246;vetkez&#337;vel&#8230;</target>
+        <note>String indicating that the file can be opened in another application on the device</note>
+      </trans-unit>
+      <trans-unit id="OpenURL.Error.Message">
+        <source>Firefox cannot open the page because it has an invalid address.</source>
+        <target>A Firefox nem tudja megnyitni az oldalt, mert a c&#237;me &#233;rv&#233;nytelen.</target>
+        <note>The message displayed to a user when they try to open a URL that cannot be handled by Firefox, or any external app.</note>
+      </trans-unit>
+      <trans-unit id="OpenURL.Error.Title">
+        <source>Cannot Open Page</source>
+        <target>Az oldal nem nyithat&#243; meg</target>
+        <note>Title of the message shown when the user attempts to navigate to an invalid link.</note>
+      </trans-unit>
+      <trans-unit id="Opening %@">
+        <source>Opening %@</source>
+        <target>%@ megnyit&#225;sa</target>
+        <note>Opening an external URL</note>
+      </trans-unit>
+      <trans-unit id="Page Options Menu">
+        <source>Page Options Menu</source>
+        <target>Lapbe&#225;ll&#237;t&#225;sok men&#252;</target>
+        <note>Accessibility label for the Page Options menu button</note>
+      </trans-unit>
+      <trans-unit id="Panel Chooser">
+        <source>Panel Chooser</source>
+        <target>Panel-v&#225;laszt&#243;</target>
+        <note>Accessibility label for the Home panel's top toolbar containing list of the home panels (top sites, bookmarsk, history, remote tabs, reading list).</note>
+      </trans-unit>
+      <trans-unit id="Password">
+        <source>Password</source>
+        <target>Jelsz&#243;</target>
+        <note>Password textbox in Authentication prompt</note>
+      </trans-unit>
+      <trans-unit id="Paste">
+        <source>Paste</source>
+        <target>Beilleszt&#233;s</target>
+        <note>Paste the URL into the location bar</note>
+      </trans-unit>
+      <trans-unit id="Paste &amp; Go">
+        <source>Paste &amp; Go</source>
+        <target>Beilleszt&#233;s &#233;s ugr&#225;s</target>
+        <note>Paste the URL into the location bar and visit</note>
+      </trans-unit>
+      <trans-unit id="PhotonMenu.cancel">
+        <source>Cancel</source>
+        <target>M&#233;gse</target>
+        <note>Button for closing the menu action sheet</note>
+      </trans-unit>
+      <trans-unit id="Please allow Firefox to access your device&#8217;s camera in &#8216;Settings&#8217; -&gt; &#8216;Privacy&#8217; -&gt; &#8216;Camera&#8217;.">
+        <source>Please allow Firefox to access your device&#8217;s camera in &#8216;Settings&#8217; -&gt; &#8216;Privacy&#8217; -&gt; &#8216;Camera&#8217;.</source>
+        <target>K&#233;rj&#252;k, enged&#233;lyezze a Firefoxnak, hogy el&#233;rje a k&#233;sz&#252;l&#233;k kamer&#225;j&#225;t a &#8222;Be&#225;ll&#237;t&#225;sok&#8221; -&gt; &#8222;Adatv&#233;delem&#8221; -&gt; &#8222;Kamera&#8221; alatt.</target>
+        <note>Text of the prompt user to setup the camera authorization.</note>
+      </trans-unit>
+      <trans-unit id="Privacy">
+        <source>Privacy</source>
+        <target>Mag&#225;nszf&#233;ra</target>
+        <note>Privacy section title</note>
+      </trans-unit>
+      <trans-unit id="Privacy Policy">
+        <source>Privacy Policy</source>
+        <target>Adatv&#233;delmi ir&#225;nyelvek</target>
+        <note>Show Firefox Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/firefox/</note>
+      </trans-unit>
+      <trans-unit id="Quick-Search Engines">
+        <source>Quick-Search Engines</source>
+        <target>Gyors keres&#233;si szolg&#225;ltat&#225;sok</target>
+        <note>Title for quick-search engines settings section.</note>
+      </trans-unit>
+      <trans-unit id="Reader View">
+        <source>Reader View</source>
+        <target>Olvas&#243; n&#233;zet</target>
+        <note>Accessibility label for the Reader View button</note>
+      </trans-unit>
+      <trans-unit id="ReaderMode.Available.VoiceOverAnnouncement">
+        <source>Reader Mode available</source>
+        <target>Olvas&#243; m&#243;d el&#233;rhet&#337;</target>
+        <note>Accessibility message e.g. spoken by VoiceOver when Reader Mode becomes available.</note>
+      </trans-unit>
+      <trans-unit id="Reading list">
+        <source>Reading list</source>
+        <target>Olvas&#225;si lista</target>
+        <note>Panel accessibility label</note>
+      </trans-unit>
+      <trans-unit id="RecentlyClosedTabsPanel.Title">
+        <source>Recently Closed</source>
+        <target>Nemr&#233;g bez&#225;rt</target>
+        <note>Title for the Recently Closed Tabs Panel</note>
+      </trans-unit>
+      <trans-unit id="Reload">
+        <source>Reload</source>
+        <target>&#218;jrat&#246;lt&#233;s</target>
+        <note>Accessibility Label for the tab toolbar Reload button</note>
+      </trans-unit>
+      <trans-unit id="Remove">
+        <source>Remove</source>
+        <target>Elt&#225;vol&#237;t&#225;s</target>
+        <note>Title for the button that removes a reading list item</note>
+      </trans-unit>
+      <trans-unit id="Remove from Reading List">
+        <source>Remove from Reading List</source>
+        <target>Elt&#225;vol&#237;t&#225;s az olvas&#225;si list&#225;r&#243;l</target>
+        <note>Name for button removing current article from reading list in reader mode</note>
+      </trans-unit>
+      <trans-unit id="Request Desktop Site">
+        <source>Request Desktop Site</source>
+        <target>Asztali oldal k&#233;r&#233;se</target>
+        <note>Action Sheet Button for Requesting the Desktop Site</note>
+      </trans-unit>
+      <trans-unit id="Request Mobile Site">
+        <source>Request Mobile Site</source>
+        <target>Mobile weboldal k&#233;r&#233;se</target>
+        <note>Action Sheet Button for Requesting the Mobile Site</note>
+      </trans-unit>
+      <trans-unit id="Reset text size">
+        <source>Reset text size</source>
+        <target>Sz&#246;vegm&#233;ret vissza&#225;ll&#237;t&#225;sa</target>
+        <note>Accessibility label for button resetting font size in display settings of reader mode</note>
+      </trans-unit>
+      <trans-unit id="Sans-serif">
+        <source>Sans-serif</source>
+        <target>Talpatlan</target>
+        <note>Font type setting in the reading view settings</note>
+      </trans-unit>
+      <trans-unit id="Save Image">
+        <source>Save Image</source>
+        <target>K&#233;p ment&#233;se</target>
+        <note>Context menu item for saving an image</note>
+      </trans-unit>
+      <trans-unit id="Save Logins">
+        <source>Save Logins</source>
+        <target>Bejelentkez&#233;sek ment&#233;se</target>
+        <note>Setting to enable the built-in password manager</note>
+      </trans-unit>
+      <trans-unit id="Save pages to your Reading List by tapping the book plus icon in the Reader View controls.">
+        <source>Save pages to your Reading List by tapping the book plus icon in the Reader View controls.</source>
+        <target>Mentse az oldalakat az olvas&#225;si list&#225;j&#225;ra, a k&#246;nyv plusz ikonra kattintva az olvas&#243; n&#233;zet vez&#233;rl&#337;elemei k&#246;zt.</target>
+        <note>See http://mzl.la/1LXbDOL</note>
+      </trans-unit>
+      <trans-unit id="ScanQRCode.Instructions.Label">
+        <source>Align QR code within frame to scan</source>
+        <target>A leolvas&#225;shoz igaz&#237;tsa a QR-k&#243;dot a keretbe</target>
+        <note>Text for the instructions label, displayed in the QR scanner view</note>
+      </trans-unit>
+      <trans-unit id="ScanQRCode.View.Title">
+        <source>Scan QR Code</source>
+        <target>QR-k&#243;d leolvas&#225;sa</target>
+        <note>Title for the QR code scanner view.</note>
+      </trans-unit>
+      <trans-unit id="Search">
+        <source>Search</source>
+        <target>Keres&#233;s</target>
+        <note>Navigation title for search settings.
+   Open search section of settings</note>
+      </trans-unit>
+      <trans-unit id="Search or enter address">
+        <source>Search or enter address</source>
+        <target>Keressen, vagy adjon meg c&#237;met</target>
+        <note>The text shown in the URL bar on about:home</note>
+      </trans-unit>
+      <trans-unit id="Search.ThirdPartyEngines.AddMessage">
+        <source>The new search engine will appear in the quick search bar.</source>
+        <target>Az &#250;j keres&#233;si szolg&#225;ltat&#225;s a gyorskeres&#337; s&#225;vban fog megjelenni.</target>
+        <note>The message that asks the user to Add the search provider explaining where the search engine will appear</note>
+      </trans-unit>
+      <trans-unit id="Search.ThirdPartyEngines.AddSuccess">
+        <source>Added Search engine!</source>
+        <target>Keres&#233;si zolg&#225;ltat&#225;s hozz&#225;adva!</target>
+        <note>The success message that appears after a user sucessfully adds a new search engine</note>
+      </trans-unit>
+      <trans-unit id="Search.ThirdPartyEngines.AddTitle">
+        <source>Add Search Provider?</source>
+        <target>Keres&#233;si szolg&#225;ltat&#243; hozz&#225;ad&#225;sa?</target>
+        <note>The title that asks the user to Add the search provider</note>
+      </trans-unit>
+      <trans-unit id="Search.ThirdPartyEngines.Cancel">
+        <source>Cancel</source>
+        <target>M&#233;gse</target>
+        <note>The cancel button if you do not want to add a search engine.</note>
+      </trans-unit>
+      <trans-unit id="Search.ThirdPartyEngines.DuplicateErrorMessage">
+        <source>A search engine with this title or URL has already been added.</source>
+        <target>Egy keres&#337;szolg&#225;ltat&#225;s m&#225;r hozz&#225; lett adva ezzel a c&#237;mmel vagy URL-lel.</target>
+        <note>A message explaining fault in custom search engine form.</note>
+      </trans-unit>
+      <trans-unit id="Search.ThirdPartyEngines.DuplicateErrorTitle">
+        <source>Failed</source>
+        <target>Sikertelen</target>
+        <note>A title stating that we failed to add custom search engine.</note>
+      </trans-unit>
+      <trans-unit id="Search.ThirdPartyEngines.FailedMessage">
+        <source>The search provider could not be added.</source>
+        <target>A keres&#233;si szolg&#225;ltat&#243; nem adhat&#243; hozz&#225;.</target>
+        <note>A title explaining that we failed to add a search engine</note>
+      </trans-unit>
+      <trans-unit id="Search.ThirdPartyEngines.FailedTitle">
+        <source>Failed</source>
+        <target>Sikertelen</target>
+        <note>A title explaining that we failed to add a search engine</note>
+      </trans-unit>
+      <trans-unit id="Search.ThirdPartyEngines.FormErrorMessage">
+        <source>Please fill all fields correctly.</source>
+        <target>Helyesen t&#246;ltse ki az &#246;sszes mez&#337;t.</target>
+        <note>A message explaining fault in custom search engine form.</note>
+      </trans-unit>
+      <trans-unit id="Search.ThirdPartyEngines.FormErrorTitle">
+        <source>Failed</source>
+        <target>Sikertelen</target>
+        <note>A title stating that we failed to add custom search engine.</note>
+      </trans-unit>
+      <trans-unit id="Search.ThirdPartyEngines.OK">
+        <source>OK</source>
+        <target>Rendben</target>
+        <note>The confirmation button</note>
+      </trans-unit>
+      <trans-unit id="Searches for the suggestion">
+        <source>Searches for the suggestion</source>
+        <target>Keres&#233;s a javaslatra</target>
+        <note>Accessibility hint describing the action performed when a search suggestion is clicked</note>
+      </trans-unit>
+      <trans-unit id="Secure connection">
+        <source>Secure connection</source>
+        <target>Biztons&#225;gos kapcsolat</target>
+        <note>Accessibility label for the lock icon, which is only present if the connection is secure</note>
+      </trans-unit>
+      <trans-unit id="Send Feedback">
+        <source>Send Feedback</source>
+        <target>Visszajelz&#233;s k&#252;ld&#233;se</target>
+        <note>Menu item in settings used to open input.mozilla.org where people can submit feedback</note>
+      </trans-unit>
+      <trans-unit id="Send Report">
+        <source>Send Report</source>
+        <target>Jelent&#233;s k&#252;ld&#233;se</target>
+        <note>Used as a button label for crash dialog prompt</note>
+      </trans-unit>
+      <trans-unit id="Send a crash report so Mozilla can fix the problem?">
+        <source>Send a crash report so Mozilla can fix the problem?</source>
+        <target>&#214;sszeoml&#225;s jelent&#233;se, hogy a Mozilla jav&#237;thassa a hib&#225;t?</target>
+        <note>Message displayed in the crash dialog above the buttons used to select when sending reports</note>
+      </trans-unit>
+      <trans-unit id="SendTo.Cancel.Button">
+        <source>Cancel</source>
+        <target>M&#233;gse</target>
+        <note>Button title for cancelling SendTo screen</note>
+      </trans-unit>
+      <trans-unit id="SendTo.Error.Message">
+        <source>Only HTTP and HTTPS links can be shared.</source>
+        <target>Csak HTTP &#233;s HTTPS hivatkoz&#225;sokat lehet megosztani.</target>
+        <note>Message in error prompt explaining why the URL is invalid.</note>
+      </trans-unit>
+      <trans-unit id="SendTo.Error.OK.Button">
+        <source>OK</source>
+        <target>OK</target>
+        <note>OK button to dismiss the error prompt.</note>
+      </trans-unit>
+      <trans-unit id="SendTo.Error.Title">
+        <source>The link you are trying to share cannot be shared.</source>
+        <target>A hivatkoz&#225;s, amit pr&#243;b&#225;l megosztani, nem oszthat&#243; meg.</target>
+        <note>Title of error prompt displayed when an invalid URL is shared.</note>
+      </trans-unit>
+      <trans-unit id="SentTab.NoTabArrivingNotification.body">
+        <source>Tap to begin</source>
+        <target>&#201;rintse meg az ind&#237;t&#225;shoz</target>
+        <note>Body of notification received after a spurious message from FxA has been received.</note>
+      </trans-unit>
+      <trans-unit id="SentTab.NoTabArrivingNotification.title">
+        <source>Firefox Sync</source>
+        <target>Firefox Sync</target>
+        <note>Title of notification received after a spurious message from FxA has been received.</note>
+      </trans-unit>
+      <trans-unit id="SentTab_TabArrivingNotification_NoDevice_body">
+        <source>New tab arrived from another device.</source>
+        <target>&#218;j lap &#233;rkezett egy m&#225;sik eszk&#246;zr&#337;l.</target>
+        <note>Body of notification shown when the device is sent one or more tabs from an unnamed device.</note>
+      </trans-unit>
+      <trans-unit id="SentTab_TabArrivingNotification_NoDevice_title">
+        <source>Tab received</source>
+        <target>Lap fogadva</target>
+        <note>Title of notification shown when the device is sent one or more tabs from an unnamed device.</note>
+      </trans-unit>
+      <trans-unit id="SentTab_TabArrivingNotification_WithDevice_body">
+        <source>New tab arrived in %@</source>
+        <target>&#218;j lap &#233;rkezett ide: %@</target>
+        <note>Body of notification shown when the device is sent one or more tabs from the named device. %@ is the placeholder for the app name.</note>
+      </trans-unit>
+      <trans-unit id="SentTab_TabArrivingNotification_WithDevice_title">
+        <source>Tab received from %@</source>
+        <target>Lap fogadva innen: %@</target>
+        <note>Title of notification shown when the device is sent one or more tabs from the named device. %@ is the placeholder for the device name. This device name will be localized by that device.</note>
+      </trans-unit>
+      <trans-unit id="Sepia">
+        <source>Sepia</source>
+        <target>Sz&#233;pia</target>
+        <note>Sepia theme setting in Reading View settings</note>
+      </trans-unit>
+      <trans-unit id="Serif">
+        <source>Serif</source>
+        <target>Talpas</target>
+        <note>Font type setting in the reading view settings</note>
+      </trans-unit>
+      <trans-unit id="Settings">
+        <source>Settings</source>
+        <target>Be&#225;ll&#237;t&#225;sok</target>
+        <note>Title in the settings view controller title bar</note>
+      </trans-unit>
+      <trans-unit id="Settings.AddCustomEngine">
+        <source>Add Search Engine</source>
+        <target>Keres&#337;szolg&#225;ltat&#225;s hozz&#225;ad&#225;sa</target>
+        <note>The button text in Search Settings that opens the Custom Search Engine view.</note>
+      </trans-unit>
+      <trans-unit id="Settings.AddCustomEngine.SaveButtonText">
+        <source>Save</source>
+        <target>Ment&#233;s</target>
+        <note>The text on the Save button when saving a custom search engine</note>
+      </trans-unit>
+      <trans-unit id="Settings.AddCustomEngine.Title">
+        <source>Add Search Engine</source>
+        <target>Keres&#337;szolg&#225;ltat&#225;s hozz&#225;ad&#225;sa</target>
+        <note>The title of the  Custom Search Engine view.</note>
+      </trans-unit>
+      <trans-unit id="Settings.AddCustomEngine.TitleLabel">
+        <source>Title</source>
+        <target>C&#237;m</target>
+        <note>The title for the field which sets the title for a custom search engine.</note>
+      </trans-unit>
+      <trans-unit id="Settings.AddCustomEngine.TitlePlaceholder">
+        <source>Search Engine</source>
+        <target>Keres&#337;szolg&#225;ltat&#225;s</target>
+        <note>The placeholder for Title Field when saving a custom search engine.</note>
+      </trans-unit>
+      <trans-unit id="Settings.AddCustomEngine.URLLabel">
+        <source>URL</source>
+        <target>URL</target>
+        <note>The title for URL Field</note>
+      </trans-unit>
+      <trans-unit id="Settings.AddCustomEngine.URLPlaceholder">
+        <source>URL (Replace Query with %s)</source>
+        <target>URL (Cser&#233;lje a keres&#233;st erre: %s)</target>
+        <note>The placeholder for URL Field when saving a custom search engine</note>
+      </trans-unit>
+      <trans-unit id="Settings.ClearPrivateData.Clear.Button">
+        <source>Clear Private Data</source>
+        <target>Szem&#233;lyes adatok t&#246;rl&#233;se</target>
+        <note>Button in settings that clears private data for the selected items.</note>
+      </trans-unit>
+      <trans-unit id="Settings.ClearPrivateData.SectionName">
+        <source>Clear Private Data</source>
+        <target>Szem&#233;lyes adatok t&#246;rl&#233;se</target>
+        <note>Label used as an item in Settings. When touched it will open a dialog prompting the user to make sure they want to clear all of their private data.</note>
+      </trans-unit>
+      <trans-unit id="Settings.ClearPrivateData.Title">
+        <source>Clear Private Data</source>
+        <target>Szem&#233;lyes adatok t&#246;rl&#233;se</target>
+        <note>Title displayed in header of the setting panel.</note>
+      </trans-unit>
+      <trans-unit id="Settings.DNT.OptionAlwaysOn">
+        <source>Always</source>
+        <target>Mindig</target>
+        <note>DNT Settings option for always on</note>
+      </trans-unit>
+      <trans-unit id="Settings.DNT.OptionOnWithTP">
+        <source>Only when using Tracking Protection</source>
+        <target>Csak, ha k&#246;vet&#233;s elleni v&#233;delmet haszn&#225;l</target>
+        <note>DNT Settings option for only turning on when Tracking Protection is also on</note>
+      </trans-unit>
+      <trans-unit id="Settings.DNT.Title">
+        <source>Send websites a Do Not Track signal that you don&#8217;t want to be tracked</source>
+        <target>Do Not Track jelz&#233;s k&#252;ld&#233;se a webhelyeknek, jelezve, hogy nem szeretn&#233;, hogy k&#246;vess&#233;k</target>
+        <note>DNT Settings title</note>
+      </trans-unit>
+      <trans-unit id="Settings.Disconnect.Button">
+        <source>Disconnect Sync</source>
+        <target>Lev&#225;l&#225;s a Syncr&#337;l</target>
+        <note>Button displayed at the bottom of settings page allowing users to Disconnect from FxA</note>
+      </trans-unit>
+      <trans-unit id="Settings.Disconnect.DestructiveButton">
+        <source>Disconnect</source>
+        <target>Lev&#225;l&#225;s</target>
+        <note>Destructive action button in alert when user is prompted for disconnect</note>
+      </trans-unit>
+      <trans-unit id="Settings.Disconnect.Title">
+        <source>Disconnect Sync?</source>
+        <target>Lev&#225;lik a Syncr&#337;l?</target>
+        <note>Title of the alert when prompting the user asking to disconnect.</note>
+      </trans-unit>
+      <trans-unit id="Settings.HomePage.Clear.Button">
+        <source>Clear</source>
+        <target>T&#246;rl&#233;s</target>
+        <note>Button in settings to clear the home page.</note>
+      </trans-unit>
+      <trans-unit id="Settings.HomePage.SectionName">
+        <source>Homepage</source>
+        <target>Kezd&#337;lap</target>
+        <note>Label used as an item in Settings. When touched it will open a dialog to configure the home page and its uses.</note>
+      </trans-unit>
+      <trans-unit id="Settings.HomePage.Title">
+        <source>Homepage Settings</source>
+        <target>Kezd&#337;lap be&#225;ll&#237;t&#225;sok</target>
+        <note>Title displayed in header of the setting panel.</note>
+      </trans-unit>
+      <trans-unit id="Settings.HomePage.URL.Placeholder">
+        <source>Enter a webpage</source>
+        <target>Adjon meg egy weblapot</target>
+        <note>Placeholder text in the homepage setting when no homepage has been set.</note>
+      </trans-unit>
+      <trans-unit id="Settings.HomePage.URL.Title">
+        <source>Current Homepage</source>
+        <target>Jelenlegi kezd&#337;lap</target>
+        <note>Title of the setting section containing the URL of the current home page.</note>
+      </trans-unit>
+      <trans-unit id="Settings.HomePage.UseCopiedLink.Button">
+        <source>Use Copied Link</source>
+        <target>M&#225;solt hivatkoz&#225;s haszn&#225;lata</target>
+        <note>Button in settings to use the current link on the clipboard as home page.</note>
+      </trans-unit>
+      <trans-unit id="Settings.HomePage.UseCurrent.Button">
+        <source>Use Current Page</source>
+        <target>Aktu&#225;lis oldal haszn&#225;lata</target>
+        <note>Button in settings to use the current page as home page.</note>
+      </trans-unit>
+      <trans-unit id="Settings.HomePage.UseDefault.Button">
+        <source>Use Default</source>
+        <target>Alap&#233;rtelmez&#233;s haszn&#225;lata</target>
+        <note>Button in settings to use the default home page. If no default is set, then this button isn't shown.</note>
+      </trans-unit>
+      <trans-unit id="Settings.NewTab.Description">
+        <source>When you open a New Tab:</source>
+        <target>Amikor megnyit egy &#250;j lapot:</target>
+        <note>A description in settings of what the new tab choice means</note>
+      </trans-unit>
+      <trans-unit id="Settings.NewTab.Option.ASTitle">
+        <source>Additional Content</source>
+        <target>Tov&#225;bbi tartalom</target>
+        <note>The title of the section in newtab that lets you modify the topsites panel</note>
+      </trans-unit>
+      <trans-unit id="Settings.NewTab.Option.BlankPage">
+        <source>Show a Blank Page</source>
+        <target>&#220;res oldal megjelen&#237;t&#233;se</target>
+        <note>Option in settings to show a blank page when you open a new tab</note>
+      </trans-unit>
+      <trans-unit id="Settings.NewTab.Option.Bookmarks">
+        <source>Show your Bookmarks</source>
+        <target>K&#246;nyvjelz&#337;k megjelen&#237;t&#233;se</target>
+        <note>Option in settings to show bookmarks when you open a new tab</note>
+      </trans-unit>
+      <trans-unit id="Settings.NewTab.Option.HighlightsBookmarks">
+        <source>Recent Bookmarks</source>
+        <target>Friss k&#246;nyvjelz&#337;k</target>
+        <note>Option in the settings to turn off recent bookmarks in the Highlights section</note>
+      </trans-unit>
+      <trans-unit id="Settings.NewTab.Option.HighlightsHistory">
+        <source>Visited</source>
+        <target>Megl&#225;togatva</target>
+        <note>Option in settings to turn off history in the highlights section</note>
+      </trans-unit>
+      <trans-unit id="Settings.NewTab.Option.History">
+        <source>Show your History</source>
+        <target>El&#337;zm&#233;nyek megjelen&#237;t&#233;se</target>
+        <note>Option in settings to show history when you open a new tab</note>
+      </trans-unit>
+      <trans-unit id="Settings.NewTab.Option.HomePage">
+        <source>Show your Homepage</source>
+        <target>Kezd&#337;lap megjelen&#237;t&#233;se</target>
+        <note>Option in settings to show your homepage when you open a new tab</note>
+      </trans-unit>
+      <trans-unit id="Settings.NewTab.Option.Pocket">
+        <source>Recommended by Pocket</source>
+        <target>A Pocket aj&#225;nl&#225;s&#225;val</target>
+        <note>Option in settings to turn on off pocket recommendations</note>
+      </trans-unit>
+      <trans-unit id="Settings.NewTab.Option.ReadingList">
+        <source>Show your Reading List</source>
+        <target>Olvas&#225;si lista megjelen&#237;t&#233;se</target>
+        <note>Option in settings to show reading list when you open a new tab</note>
+      </trans-unit>
+      <trans-unit id="Settings.NewTab.Option.TopSites">
+        <source>Show your Top Sites</source>
+        <target>Kedvenc oldalak megjelen&#237;t&#233;se</target>
+        <note>Option in settings to show top sites when you open a new tab</note>
+      </trans-unit>
+      <trans-unit id="Settings.NewTab.SectionName">
+        <source>New Tab</source>
+        <target>&#218;j lap</target>
+        <note>Label used as an item in Settings. When touched it will open a dialog to configure the new tab behaviour.</note>
+      </trans-unit>
+      <trans-unit id="Settings.NewTab.Title">
+        <source>New Tab Settings</source>
+        <target>&#218;j lap be&#225;ll&#237;t&#225;sok</target>
+        <note>Title displayed in header of the setting panel.</note>
+      </trans-unit>
+      <trans-unit id="Settings.OfferClipboardBar.Status">
+        <source>When Opening Firefox</source>
+        <target>A Firefox megnyit&#225;sakor</target>
+        <note>Description displayed under the &#8221;Offer to Open Copied Link&#8221; option. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349</note>
+      </trans-unit>
+      <trans-unit id="Settings.OfferClipboardBar.Title">
+        <source>Offer to Open Copied Links</source>
+        <target>M&#225;solt hivatkoz&#225;sok megnyit&#225;s&#225;nak felaj&#225;nl&#225;sa</target>
+        <note>Title of setting to enable the Go to Copied URL feature. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349</note>
+      </trans-unit>
+      <trans-unit id="Settings.OpenWith.PageTitle">
+        <source>Open mail links with</source>
+        <target>E-mail hivatkoz&#225;sok t&#225;rs&#237;t&#225;sa</target>
+        <note>Title for Open With Settings</note>
+      </trans-unit>
+      <trans-unit id="Settings.OpenWith.SectionName">
+        <source>Mail App</source>
+        <target>Mail app</target>
+        <note>Label used as an item in Settings. When touched it will open a dialog to configure the open with (mail links) behaviour.</note>
+      </trans-unit>
+      <trans-unit id="Settings.Search.Done.Button">
+        <source>Done</source>
+        <target>K&#233;sz</target>
+        <note>Button displayed at the top of the search settings.</note>
+      </trans-unit>
+      <trans-unit id="Settings.Search.Edit.Button">
+        <source>Edit</source>
+        <target>Szerkeszt&#233;s</target>
+        <note>Button displayed at the top of the search settings.</note>
+      </trans-unit>
+      <trans-unit id="Settings.SendUsage.Link">
+        <source>Learn More.</source>
+        <target>Tov&#225;bbi tudnival&#243;k</target>
+        <note>title for a link that explains how mozilla collects telemetry</note>
+      </trans-unit>
+      <trans-unit id="Settings.SendUsage.Message">
+        <source>Mozilla strives to only collect what we need to provide and improve Firefox for everyone.</source>
+        <target>A Mozilla arra t&#246;rekszik, hogy csak azt gy&#369;jtse, ami a Firefox fejleszt&#233;s&#233;hez &#233;s t&#225;mogat&#225;s&#225;hoz sz&#252;ks&#233;ges.</target>
+        <note>A short description that explains why mozilla collects usage data.</note>
+      </trans-unit>
+      <trans-unit id="Settings.SendUsage.Title">
+        <source>Send Usage Data</source>
+        <target>Haszn&#225;lati adatok elk&#252;ld&#233;se</target>
+        <note>The title for the setting to send usage data.</note>
+      </trans-unit>
+      <trans-unit id="Settings.TrackingProtection.BlockListsHeader">
+        <source>You can choose which list Firefox will use to block Web elements that may track your browsing activity.</source>
+        <target>Kiv&#225;laszthatja, hogy mely lista haszn&#225;lat&#225;val fogja a Firefox blokkolni az &#214;n b&#246;ng&#233;sz&#233;si tev&#233;kenys&#233;g&#233;t k&#246;vet&#337; weboldalelemeket.</target>
+        <note>Header description for tracking protection options section where Basic/Strict block list can be selected</note>
+      </trans-unit>
+      <trans-unit id="Settings.TrackingProtection.BlockListsTitle">
+        <source>Block Lists</source>
+        <target>Blokkol&#225;si list&#225;k</target>
+        <note>Title for tracking protection options section where Basic/Strict block list can be selected</note>
+      </trans-unit>
+      <trans-unit id="Settings.TrackingProtection.SectionName">
+        <source>Tracking Protection</source>
+        <target>K&#246;vet&#233;s elleni v&#233;delem</target>
+        <note>Row in top-level of settings that gets tapped to show the tracking protection settings detail view.</note>
+      </trans-unit>
+      <trans-unit id="Settings.TrackingProtectionOption.BlockListBasic">
+        <source>Basic (Recommended)</source>
+        <target>Alapvet&#337; (aj&#225;nlott)</target>
+        <note>Tracking protection settings option for using the basic blocklist.</note>
+      </trans-unit>
+      <trans-unit id="Settings.TrackingProtectionOption.BlockListBasicDescription">
+        <source>Allows some trackers so websites function properly.</source>
+        <target>Enged&#233;lyez n&#233;h&#225;ny k&#246;vet&#337;t, hogy helyesen m&#369;k&#246;djenek a webhelyek.</target>
+        <note>Tracking protection settings option description for using the basic blocklist.</note>
+      </trans-unit>
+      <trans-unit id="Settings.TrackingProtectionOption.BlockListStrict">
+        <source>Strict</source>
+        <target>Szigor&#250;</target>
+        <note>Tracking protection settings option for using the strict blocklist.</note>
+      </trans-unit>
+      <trans-unit id="Settings.TrackingProtectionOption.BlockListStrictDescription">
+        <source>Blocks known trackers. Some websites may not function properly.</source>
+        <target>Ismert k&#246;vet&#337;k blokkol&#225;sa. N&#233;h&#225;ny webhely lehet, hogy nem fog megfelel&#337;en m&#369;k&#246;dni.</target>
+        <note>Tracking protection settings option description for using the strict blocklist.</note>
+      </trans-unit>
+      <trans-unit id="Settings.TrackingProtectionOption.EnabledStateFooterLabel">
+        <source>Tracking is the collection of your browsing data across multiple websites. Tracking can be used to build a profile and display content based on your browsing and personal information.</source>
+        <target>A k&#246;vet&#233;s a webhelyek k&#246;zti b&#246;ng&#233;sz&#233;s&#233;nek adatgy&#369;jt&#233;se. A k&#246;vet&#233;s profil&#233;p&#237;t&#233;sre, &#233;s a b&#246;ng&#233;sz&#233;si valamint szem&#233;lyes inform&#225;ci&#243;i alapj&#225;n megjelen&#237;tett tartalomhoz haszn&#225;lhat&#243;.</target>
+        <note>Description label shown on tracking protection options screen.</note>
+      </trans-unit>
+      <trans-unit id="Settings.TrackingProtectionOption.EnabledStateHeaderLabel">
+        <source>Use Tracking Protection to Block Known Trackers</source>
+        <target>Haszn&#225;lja a k&#246;vet&#233;s elleni v&#233;delmet az ismert k&#246;vet&#337;k blokkol&#225;s&#225;ra</target>
+        <note>Description label shown at the top of tracking protection options screen.</note>
+      </trans-unit>
+      <trans-unit id="Settings.TrackingProtectionOption.OffLabel">
+        <source>Never</source>
+        <target>Soha</target>
+        <note>Settings option to specify that Tracking Protection is always off.</note>
+      </trans-unit>
+      <trans-unit id="Settings.TrackingProtectionOption.OnInPrivateBrowsingLabel">
+        <source>Private Browsing Mode Only</source>
+        <target>Csak priv&#225;t b&#246;ng&#233;sz&#233;sben</target>
+        <note>Settings option to specify that Tracking Protection is on only in Private Browsing mode.</note>
+      </trans-unit>
+      <trans-unit id="Settings.TrackingProtectionOption.OnLabel">
+        <source>Always On</source>
+        <target>Mindig be</target>
+        <note>Settings option to specify that Tracking Protection is always on.</note>
+      </trans-unit>
+      <trans-unit id="Settings.TroubleShootSync.Title">
+        <source>Troubleshoot</source>
+        <target>Hibaelh&#225;r&#237;t&#225;s</target>
+        <note>Title of link to help page to find out how to solve Sync issues</note>
+      </trans-unit>
+      <trans-unit id="Share Link">
+        <source>Share Link</source>
+        <target>Hivatkoz&#225;s megoszt&#225;sa</target>
+        <note>Context menu item for sharing a link URL</note>
+      </trans-unit>
+      <trans-unit id="ShareTo.Cancel.Button">
+        <source>Cancel</source>
+        <target>M&#233;gse</target>
+        <note>Button title for cancelling Share screen</note>
+      </trans-unit>
+      <trans-unit id="Show Search Suggestions">
+        <source>Show Search Suggestions</source>
+        <target>Keres&#233;si javaslatok megjelen&#237;t&#233;se</target>
+        <note>Label for show search suggestions setting.</note>
+      </trans-unit>
+      <trans-unit id="Show Tabs">
+        <source>Show Tabs</source>
+        <target>Lapok megjelen&#237;t&#233;se</target>
+        <note>Accessibility label for the tabs button in the (top) tab toolbar
+   Accessibility Label for the tabs button in the tab toolbar</note>
+      </trans-unit>
+      <trans-unit id="Show Tour">
+        <source>Show Tour</source>
+        <target>Bevezet&#337; megjelen&#237;t&#233;se</target>
+        <note>Show the on-boarding screen again from the settings</note>
+      </trans-unit>
+      <trans-unit id="Show search suggestions">
+        <source>Show search suggestions</source>
+        <target>Keres&#233;si javaslatok megjelen&#237;t&#233;se</target>
+        <note>Label for show search suggestions setting.</note>
+      </trans-unit>
+      <trans-unit id="Sign in">
+        <source>Sign in</source>
+        <target>Bejelentkez&#233;s</target>
+        <note>See http://mzl.la/1Qtkf0j
+   Text message / button in the settings table view</note>
+      </trans-unit>
+      <trans-unit id="Stop">
+        <source>Stop</source>
+        <target>Le&#225;ll&#237;t&#225;s</target>
+        <note>Accessibility Label for the tab toolbar Stop button</note>
+      </trans-unit>
+      <trans-unit id="Support">
+        <source>Support</source>
+        <target>T&#225;mogat&#225;s</target>
+        <note>Support section title</note>
+      </trans-unit>
+      <trans-unit id="Swipe right or left with three fingers to close the tab.">
+        <source>Swipe right or left with three fingers to close the tab.</source>
+        <target>A lap bez&#225;r&#225;s&#225;hoz legyintsen balra vagy jobbra h&#225;rom ujjal.</target>
+        <note>Accessibility hint for tab tray's displayed tab.</note>
+      </trans-unit>
+      <trans-unit id="Sync Now">
+        <source>Sync Now</source>
+        <target>Szinkroniz&#225;l&#225;s most</target>
+        <note>Sync Firefox Account</note>
+      </trans-unit>
+      <trans-unit id="Sync your tabs, bookmarks, passwords and more.">
+        <source>Sync your tabs, bookmarks, passwords and more.</source>
+        <target>Szinkroniz&#225;lja a lapjait, k&#246;nyvjelz&#337;it, jelszavait &#233;s egyebeket.</target>
+        <note>Text displayed when the Sync home panel is empty, describing the features provided by Sync to invite the user to log in.</note>
+      </trans-unit>
+      <trans-unit id="Sync your tabs, passwords and more.">
+        <source>Sync your tabs, passwords and more.</source>
+        <target>Szinkroniz&#225;lja a lapjait, jelszavait &#233;s egyebeket.</target>
+        <note>Text displayed when the Sync home panel is empty, describing the features provided by Sync to invite the user to log in.</note>
+      </trans-unit>
+      <trans-unit id="Sync.FirstTimeMessage.Label">
+        <source>Your first sync may take a while</source>
+        <target>Az els&#337; szinkroniz&#225;l&#225;s eltarthat egy darabig</target>
+        <note>Message displayed when the user syncs for the first time</note>
+      </trans-unit>
+      <trans-unit id="Sync.Syncing.Label">
+        <source>Syncing</source>
+        <target>Szinkroniz&#225;l&#225;s</target>
+        <note>Message displayed when the user's account is syncing with no ellipsis</note>
+      </trans-unit>
+      <trans-unit id="Sync.SyncingEllipsis.Label">
+        <source>Syncing&#8230;</source>
+        <target>Szinkroniz&#225;l&#225;s&#8230;</target>
+        <note>Message displayed when the user's account is syncing with ellipsis at the end</note>
+      </trans-unit>
+      <trans-unit id="SyncState.Bookmark.Title">
+        <source>Bookmarks</source>
+        <target>K&#246;nyvjelz&#337;k</target>
+        <note>The Bookmark sync component, used in SyncState.Partial.Title</note>
+      </trans-unit>
+      <trans-unit id="SyncState.Clients.Title">
+        <source>Remote Clients</source>
+        <target>T&#225;voli &#252;gyfelek</target>
+        <note>The Remote Clients sync component, used in SyncState.Partial.Title</note>
+      </trans-unit>
+      <trans-unit id="SyncState.Failed.Title">
+        <source>Syncing has failed</source>
+        <target>A szinkroniz&#225;l&#225;s sikertelen</target>
+        <note>Title for Sync status message when synchronization failed to complete</note>
+      </trans-unit>
+      <trans-unit id="SyncState.History.Title">
+        <source>History</source>
+        <target>El&#337;zm&#233;nyek</target>
+        <note>The History sync component, used in SyncState.Partial.Title</note>
+      </trans-unit>
+      <trans-unit id="SyncState.Logins.Title">
+        <source>Logins</source>
+        <target>Bejelentkez&#233;sek</target>
+        <note>The Logins sync component, used in SyncState.Partial.Title</note>
+      </trans-unit>
+      <trans-unit id="SyncState.NotStarted.Title">
+        <source>Sync is unavailable</source>
+        <target>A Sync nem &#233;rhet&#337; el</target>
+        <note>Title for Sync status message when Sync failed to start.</note>
+      </trans-unit>
+      <trans-unit id="SyncState.Offline.Title">
+        <source>Sync is offline</source>
+        <target>A Sync kapcsolat n&#233;lk&#252;li</target>
+        <note>Title for Sync status message when Sync failed due to being offline</note>
+      </trans-unit>
+      <trans-unit id="SyncState.Partial.Title">
+        <source>Sync is experiencing issues syncing %@</source>
+        <target>A Sync probl&#233;m&#225;kat tapasztal a(z) %@ szinkroniz&#225;l&#225;sakor</target>
+        <note>Title for Sync status message when a component of Sync failed to complete, where %@ represents the name of the component, i.e. Sync is experiencing issues syncing Bookmarks</note>
+      </trans-unit>
+      <trans-unit id="SyncState.Tabs.Title">
+        <source>Tabs</source>
+        <target>Lapok</target>
+        <note>The Tabs sync component, used in SyncState.Partial.Title</note>
+      </trans-unit>
+      <trans-unit id="Tab %@ of %@">
+        <source>Tab %1$@ of %2$@</source>
+        <target>Lap %1$@ / %2$@</target>
+        <note>Message spoken by VoiceOver saying the position of the single currently visible tab in Tabs Tray, along with the total number of tabs. E.g. \"Tab 2 of 5\" says that tab 2 is visible (and is the only visible tab), out of 5 tabs total.</note>
+      </trans-unit>
+      <trans-unit id="Tabs %@ to %@ of %@">
+        <source>Tabs %1$@ to %2$@ of %3$@</source>
+        <target>Lap %1$@ - %2$@ / %3$@</target>
+        <note>Message spoken by VoiceOver saying the range of tabs that are currently visible in Tabs Tray, along with the total number of tabs. E.g. \"Tabs 8 to 10 of 15\" says tabs 8, 9 and 10 are visible, out of 15 tabs total.</note>
+      </trans-unit>
+      <trans-unit id="Tabs Tray">
+        <source>Tabs Tray</source>
+        <target>Lapok t&#225;lca</target>
+        <note>Accessibility label for the Tabs Tray view.</note>
+      </trans-unit>
+      <trans-unit id="Tabs.DeleteAllUndo.Button">
+        <source>Undo</source>
+        <target>Visszavon&#225;s</target>
+        <note>The button to undo the delete all tabs</note>
+      </trans-unit>
+      <trans-unit id="Tabs.DeleteAllUndo.Title">
+        <source>%d tab(s) closed</source>
+        <target>%d lap bez&#225;rva</target>
+        <note>The label indicating that all the tabs were closed</note>
+      </trans-unit>
+      <trans-unit id="The data is invalid">
+        <source>The data is invalid</source>
+        <target>Az adatok &#233;rv&#233;nytelenek</target>
+        <note>Text of the prompt user the data is invalid</note>
+      </trans-unit>
+      <trans-unit id="The page could not be displayed in Reader View.">
+        <source>The page could not be displayed in Reader View.</source>
+        <target>A lap nem jelen&#237;thet&#337; meg olvas&#243; n&#233;zetben.</target>
+        <note>Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Firefox reader mode from another app.</note>
+      </trans-unit>
+      <trans-unit id="There was a problem accessing tabs from your other devices. Try again in a few moments.">
+        <source>There was a problem accessing tabs from your other devices. Try again in a few moments.</source>
+        <target>Hiba t&#246;rt&#233;nt a lapok m&#225;s eszk&#246;zr&#337;l t&#246;rt&#233;n&#337; el&#233;r&#233;sekor. Pr&#243;b&#225;lja &#250;jra n&#233;h&#225;ny pillanat m&#250;lva.</target>
+        <note>Error message in the remote tabs panel</note>
+      </trans-unit>
+      <trans-unit id="There was an error converting the page">
+        <source>There was an error converting the page</source>
+        <target>Hiba t&#246;rt&#233;nt az oldal &#225;talak&#237;t&#225;sakor</target>
+        <note>Error displayed when reader mode cannot be enabled</note>
+      </trans-unit>
+      <trans-unit id="This allows you to save the image to your Camera Roll.">
+        <source>This allows you to save the image to your Camera Roll.</source>
+        <target>Ez lehet&#337;v&#233; teszi, hogy mentse a k&#233;pet a Filmtekercs&#233;be.</target>
+        <note>See http://mzl.la/1G7uHo7</note>
+      </trans-unit>
+      <trans-unit id="This will open in another application">
+        <source>This will open in another application</source>
+        <target>Ez egy m&#225;sik alkalmaz&#225;st fog megnyitni</target>
+        <note>Opening an external app</note>
+      </trans-unit>
+      <trans-unit id="Today">
+        <source>Today</source>
+        <target>Ma</target>
+        <note>History tableview section header</note>
+      </trans-unit>
+      <trans-unit id="Toolbar.Menu.AccessibilityLabel">
+        <source>Menu</source>
+        <target>Men&#252;</target>
+        <note>Accessibility label for the Menu button.</note>
+      </trans-unit>
+      <trans-unit id="Toolbar.Menu.CloseAllTabs">
+        <source>Close All Tabs</source>
+        <target>Minden lap bez&#225;r&#225;sa</target>
+        <note>Accessibility label for the Close All Tabs menu button.</note>
+      </trans-unit>
+      <trans-unit id="Top sites">
+        <source>Top sites</source>
+        <target>Kedvenc oldalak</target>
+        <note>Panel accessibility label</note>
+      </trans-unit>
+      <trans-unit id="TopSites.EmptyState.Description">
+        <source>Your most visited sites will show up here.</source>
+        <target>A leggyakrabban l&#225;togatott oldalai itt fognak megjelenni.</target>
+        <note>Description label for the empty Top Sites state.</note>
+      </trans-unit>
+      <trans-unit id="TopSites.EmptyState.Title">
+        <source>Welcome to Top Sites</source>
+        <target>&#220;dv&#246;z&#246;lj&#252;k a kedvenc oldalain&#225;l</target>
+        <note>The title for the empty Top Sites state</note>
+      </trans-unit>
+      <trans-unit id="TopSites.RemovePage.Button">
+        <source>Remove page &#8212; %@</source>
+        <target>Oldal elt&#225;vol&#237;t&#225;sa &#8211; %@</target>
+        <note>Button shown in editing mode to remove this site from the top sites panel.</note>
+      </trans-unit>
+      <trans-unit id="Twitter">
+        <source>Twitter</source>
+        <target>Twitter</target>
+        <note>Tile title for Twitter</note>
+      </trans-unit>
+      <trans-unit id="Update">
+        <source>Update</source>
+        <target>Friss&#237;t&#233;s</target>
+        <note>Button to update the user's password</note>
+      </trans-unit>
+      <trans-unit id="Upgrade Firefox to connect.">
+        <source>Upgrade Firefox to connect.</source>
+        <target>A kapcsol&#243;d&#225;shoz friss&#237;tse a Firefoxot.</target>
+        <note>Text message in the settings table view</note>
+      </trans-unit>
+      <trans-unit id="Username">
+        <source>Username</source>
+        <target>Felhaszn&#225;l&#243;n&#233;v</target>
+        <note>Username textbox in Authentication prompt</note>
+      </trans-unit>
+      <trans-unit id="Verify your email address.">
+        <source>Verify your email address.</source>
+        <target>Er&#337;s&#237;tse meg az e-mail c&#237;m&#233;t.</target>
+        <note>Text message in the settings table view</note>
+      </trans-unit>
+      <trans-unit id="Version %@ (%@)">
+        <source>Version %1$@ (%2$@)</source>
+        <target>%1$@ verzi&#243; (%2$@)</target>
+        <note>Version number of Firefox shown in settings</note>
+      </trans-unit>
+      <trans-unit id="Web content">
+        <source>Web content</source>
+        <target>Webes tartalom</target>
+        <note>Accessibility label for the main web content view</note>
+      </trans-unit>
+      <trans-unit id="Welcome to your Reading List">
+        <source>Welcome to your Reading List</source>
+        <target>&#220;dv&#246;z&#246;lj&#252;k az olvas&#225;si list&#225;j&#225;ban</target>
+        <note>See http://mzl.la/1LXbDOL</note>
+      </trans-unit>
+      <trans-unit id="Well, this is embarrassing.">
+        <source>Well, this is embarrassing.</source>
+        <target>Sajn&#225;latos dolog t&#246;rt&#233;nt.</target>
+        <note>Restore Tabs Prompt Title</note>
+      </trans-unit>
+      <trans-unit id="Wikipedia">
+        <source>Wikipedia</source>
+        <target>Wikip&#233;dia</target>
+        <note>Tile title for Wikipedia</note>
+      </trans-unit>
+      <trans-unit id="Yes">
+        <source>Yes</source>
+        <target>Igen</target>
+        <note>Button to save the user's password</note>
+      </trans-unit>
+      <trans-unit id="Yesterday">
+        <source>Yesterday</source>
+        <target>Tegnap</target>
+        <note>History tableview section header</note>
+      </trans-unit>
+      <trans-unit id="You don&#8217;t have any tabs open in Firefox on your other devices.">
+        <source>You don&#8217;t have any tabs open in Firefox on your other devices.</source>
+        <target>Nincs egyetlen lap sem nyitva a Firefoxban a t&#246;bbi eszk&#246;z&#233;n.</target>
+        <note>Error message in the remote tabs panel</note>
+      </trans-unit>
+      <trans-unit id="YouTube">
+        <source>YouTube</source>
+        <target>YouTube</target>
+        <note>Tile title for YouTube</note>
+      </trans-unit>
+      <trans-unit id="Your Rights">
+        <source>Your Rights</source>
+        <target>Az &#214;n jogai</target>
+        <note>Your Rights settings section title</note>
+      </trans-unit>
+      <trans-unit id="computer">
+        <source>computer</source>
+        <target>sz&#225;m&#237;t&#243;g&#233;p</target>
+        <note>Accessibility label for Desktop Computer (PC) image in remote tabs list</note>
+      </trans-unit>
+      <trans-unit id="just now">
+        <source>just now</source>
+        <target>&#233;pp most</target>
+        <note>Relative time for a tab that was visited within the last few moments.</note>
+      </trans-unit>
+      <trans-unit id="mobile device">
+        <source>mobile device</source>
+        <target>mobileszk&#246;z</target>
+        <note>Accessibility label for Mobile Device image in remote tabs list</note>
+      </trans-unit>
+      <trans-unit id="more than a month ago">
+        <source>more than a month ago</source>
+        <target>t&#246;bb mint egy h&#243;napja</target>
+        <note>Relative date for dates older than a month and less than two months.</note>
+      </trans-unit>
+      <trans-unit id="more than a week ago">
+        <source>more than a week ago</source>
+        <target>t&#246;bb mint egy hete</target>
+        <note>Description for a date more than a week ago, but less than a month ago.</note>
+      </trans-unit>
+      <trans-unit id="read">
+        <source>read</source>
+        <target>elolvasva</target>
+        <note>Accessibility label for read article in reading list. It's a past participle - functions as an adjective.</note>
+      </trans-unit>
+      <trans-unit id="this week">
+        <source>this week</source>
+        <target>ezen a h&#233;ten</target>
+        <note>Relative date for date in past week.</note>
+      </trans-unit>
+      <trans-unit id="today at %@">
+        <source>today at %@</source>
+        <target>ma ekkor: %@</target>
+        <note>Relative date for date older than a minute.</note>
+      </trans-unit>
+      <trans-unit id="unread">
+        <source>unread</source>
+        <target>olvasatlan</target>
+        <note>Accessibility label for unread article in reading list. It's a past participle - functions as an adjective.</note>
+      </trans-unit>
+      <trans-unit id="yesterday">
+        <source>yesterday</source>
+        <target>tegnap</target>
+        <note>Relative date for yesterday.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/LoginManager.strings" source-language="en" datatype="plaintext" target-language="hu">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Are you sure?">
+        <source>Are you sure?</source>
+        <target>Biztos benne?</target>
+        <note>Prompt title when deleting logins</note>
+      </trans-unit>
+      <trans-unit id="Cancel">
+        <source>Cancel</source>
+        <target>M&#233;gse</target>
+        <note>Prompt option for cancelling out of deletion</note>
+      </trans-unit>
+      <trans-unit id="Clear Search">
+        <source>Clear Search</source>
+        <target>Keres&#233;s t&#246;rl&#233;se</target>
+        <note>Accessibility message e.g. spoken by VoiceOver after the user taps the close button in the search field to clear the search and exit search mode</note>
+      </trans-unit>
+      <trans-unit id="Copy">
+        <source>Copy</source>
+        <target>M&#225;sol&#225;s</target>
+        <note>Copy password text selection menu item</note>
+      </trans-unit>
+      <trans-unit id="Delete">
+        <source>Delete</source>
+        <target>T&#246;rl&#233;s</target>
+        <note>Label for the button used to delete the current login.</note>
+      </trans-unit>
+      <trans-unit id="Deselect All">
+        <source>Deselect All</source>
+        <target>A kijel&#246;l&#233;s megsz&#252;ntet&#233;se</target>
+        <note>Label for the button used to deselect all logins.</note>
+      </trans-unit>
+      <trans-unit id="Enter Search Mode">
+        <source>Enter Search Mode</source>
+        <target>Bel&#233;p&#233;s a keres&#233;si m&#243;dba</target>
+        <note>Accessibility label for entering search mode for logins</note>
+      </trans-unit>
+      <trans-unit id="Hide">
+        <source>Hide</source>
+        <target>Elrejt&#233;s</target>
+        <note>Hide password text selection menu item</note>
+      </trans-unit>
+      <trans-unit id="Last modified %@">
+        <source>Last modified %@</source>
+        <target>Legut&#243;bbi m&#243;dos&#237;t&#225;s: %@</target>
+        <note>Footer label describing when the current login was last modified with the timestamp as the parameter.</note>
+      </trans-unit>
+      <trans-unit id="Logins">
+        <source>Logins</source>
+        <target>Bejelentkez&#233;sek</target>
+        <note>Title for Logins List View screen.</note>
+      </trans-unit>
+      <trans-unit id="Logins will be permanently removed.">
+        <source>Logins will be permanently removed.</source>
+        <target>A bejelentkez&#233;sek v&#233;glegesen elt&#225;vol&#237;t&#225;sra ker&#252;lnek.</target>
+        <note>Prompt message warning the user that deleting non-synced logins will permanently remove them</note>
+      </trans-unit>
+      <trans-unit id="Logins will be removed from all connected devices.">
+        <source>Logins will be removed from all connected devices.</source>
+        <target>A bejelentkez&#233;sek elt&#225;vol&#237;t&#225;sra ker&#252;lnek minden &#246;sszekapcsolt eszk&#246;zr&#337;l.</target>
+        <note>Prompt message warning the user that deleted logins will remove logins from all connected devices</note>
+      </trans-unit>
+      <trans-unit id="No logins found">
+        <source>No logins found</source>
+        <target>Nincsenek bejelentkez&#233;sek</target>
+        <note>Label displayed when no logins are found after searching.</note>
+      </trans-unit>
+      <trans-unit id="Open &amp; Fill">
+        <source>Open &amp; Fill</source>
+        <target>Megnyit&#225;s &#233;s kit&#246;lt&#233;se</target>
+        <note>Open and Fill website text selection menu item</note>
+      </trans-unit>
+      <trans-unit id="Reveal">
+        <source>Reveal</source>
+        <target>Felfed&#233;s</target>
+        <note>Reveal password text selection menu item</note>
+      </trans-unit>
+      <trans-unit id="Search">
+        <source>Search</source>
+        <target>Keres&#233;s</target>
+        <note>Title for the search field at the top of the Logins list screen</note>
+      </trans-unit>
+      <trans-unit id="Search Input Field">
+        <source>Search Input Field</source>
+        <target>Keres&#233;si beviteli mez&#337;</target>
+        <note>Accessibility label for the search input field in the Logins list</note>
+      </trans-unit>
+      <trans-unit id="Select All">
+        <source>Select All</source>
+        <target>Mind kijel&#246;l&#233;se</target>
+        <note>Label for the button used to select all logins.</note>
+      </trans-unit>
+      <trans-unit id="password">
+        <source>password</source>
+        <target>jelsz&#243;</target>
+        <note>Label displayed above the password row in Login Detail View.</note>
+      </trans-unit>
+      <trans-unit id="username">
+        <source>username</source>
+        <target>felhaszn&#225;l&#243;n&#233;v</target>
+        <note>Label displayed above the username row in Login Detail View.</note>
+      </trans-unit>
+      <trans-unit id="website">
+        <source>website</source>
+        <target>weboldal</target>
+        <note>Label displayed above the website row in Login Detail View.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/PrivateBrowsing.strings" source-language="en" datatype="plaintext" target-language="hu">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Close Private Tabs">
+        <source>Close Private Tabs</source>
+        <target>Priv&#225;t lapok bez&#225;r&#225;sa</target>
+        <note>Setting for closing private tabs</note>
+      </trans-unit>
+      <trans-unit id="Firefox won&#8217;t remember any of your history or cookies, but new bookmarks will be saved.">
+        <source>Firefox won&#8217;t remember any of your history or cookies, but new bookmarks will be saved.</source>
+        <target>A Firefox nem fog eml&#233;kezni az el&#337;zm&#233;nyeire vagy a s&#252;tijeire, de az &#250;j k&#246;nyvjelz&#337;k mentve lesznek.</target>
+        <note>Description text displayed when there are no open tabs while in private mode</note>
+      </trans-unit>
+      <trans-unit id="Learn More">
+        <source>Learn More</source>
+        <target>Tudjon meg t&#246;bbet</target>
+        <note>Text button displayed when there are no tabs open while in private mode</note>
+      </trans-unit>
+      <trans-unit id="Off">
+        <source>Off</source>
+        <target>Ki</target>
+        <note>Toggled OFF accessibility value</note>
+      </trans-unit>
+      <trans-unit id="On">
+        <source>On</source>
+        <target>Be</target>
+        <note>Toggled ON accessibility value</note>
+      </trans-unit>
+      <trans-unit id="Open in New Private Tab">
+        <source>Open in New Private Tab</source>
+        <target>Megnyit&#225;s &#250;j priv&#225;t lapon</target>
+        <note>Context menu option for opening a link in a new private tab</note>
+      </trans-unit>
+      <trans-unit id="Private Browsing">
+        <source>Private Browsing</source>
+        <target>Priv&#225;t b&#246;ng&#233;sz&#233;s</target>
+        <note>Title displayed for when there are no open tabs while in private mode</note>
+      </trans-unit>
+      <trans-unit id="Private Mode">
+        <source>Private Mode</source>
+        <target>Priv&#225;t m&#243;d</target>
+        <note>Accessibility label for toggling on/off private mode</note>
+      </trans-unit>
+      <trans-unit id="Turns private mode on or off">
+        <source>Turns private mode on or off</source>
+        <target>Ki- vagy bekapcsolja a priv&#225;t m&#243;d</target>
+        <note>Accessiblity hint for toggling on/off private mode</note>
+      </trans-unit>
+      <trans-unit id="When Leaving Private Browsing">
+        <source>When Leaving Private Browsing</source>
+        <target>Mikor elhagyja a priv&#225;t b&#246;ng&#233;sz&#233;st</target>
+        <note>Will be displayed in Settings under 'Close Private Tabs'</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/Search.strings" source-language="en" datatype="plaintext" target-language="hu">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="%@ search">
+        <source>%@ search</source>
+        <target>%@ keres&#233;s</target>
+        <note>Label for search engine buttons. The argument corresponds to the name of the search engine.</note>
+      </trans-unit>
+      <trans-unit id="No">
+        <source>No</source>
+        <target>Nem</target>
+        <note>For search suggestions prompt. This string should be short so it fits nicely on the prompt row.</note>
+      </trans-unit>
+      <trans-unit id="Search Settings">
+        <source>Search Settings</source>
+        <target>Keres&#233;si be&#225;ll&#237;t&#225;sok</target>
+        <note>Label for search settings button.</note>
+      </trans-unit>
+      <trans-unit id="Search suggestions from %@">
+        <source>Search suggestions from %@</source>
+        <target>Keres&#233;si javaslatok innen: %@</target>
+        <note>Accessibility label for image of default search engine displayed left to the actual search suggestions from the engine. The parameter substituted for \"%@\" is the name of the search engine. E.g.: Search suggestions from Google</note>
+      </trans-unit>
+      <trans-unit id="Turn on search suggestions?">
+        <source>Turn on search suggestions?</source>
+        <target>Bekapcsolja a keres&#233;si javaslatokat?</target>
+        <note>Prompt shown before enabling provider search queries</note>
+      </trans-unit>
+      <trans-unit id="Yes">
+        <source>Yes</source>
+        <target>Igen</target>
+        <note>For search suggestions prompt. This string should be short so it fits nicely on the prompt row.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/SendAnonymousUsageData.strings" source-language="en" datatype="plaintext" target-language="hu">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="More Info&#8230;">
+        <source>More Info&#8230;</source>
+        <target>Tov&#225;bbi inform&#225;ci&#243;k&#8230;</target>
+        <note>Re-using more info label from 'anonymous usage data' item for showing a 'More Info' link on the Tracking Protection settings screen.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/SendTo.strings" source-language="en" datatype="plaintext" target-language="hu">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Available devices:">
+        <source>Available devices:</source>
+        <target>El&#233;rhet&#337; eszk&#246;z&#246;k:</target>
+        <note>Header for the list of devices table</note>
+      </trans-unit>
+      <trans-unit id="Close">
+        <source>Close</source>
+        <target>Bez&#225;r&#225;s</target>
+        <note>Close button in top navigation bar</note>
+      </trans-unit>
+      <trans-unit id="Please open Firefox, go to Settings and sign in to continue.">
+        <source>Please open Firefox, go to Settings and sign in to continue.</source>
+        <target>Nyissa meg a Firefoxot, menjen a be&#225;ll&#237;t&#225;sokhoz, &#233;s jelentkezzen be a folytat&#225;shoz.</target>
+        <note>See http://mzl.la/1ISlXnU</note>
+      </trans-unit>
+      <trans-unit id="Send">
+        <source>Send</source>
+        <target>K&#252;ld&#233;s</target>
+        <note>Navigation bar button to Send the current page to a device</note>
+      </trans-unit>
+      <trans-unit id="Send Tab">
+        <source>Send Tab</source>
+        <target>Lap k&#252;ld&#233;se</target>
+        <note>Title of the dialog that allows you to send a tab to a different device</note>
+      </trans-unit>
+      <trans-unit id="You are not signed in to your Firefox Account.">
+        <source>You are not signed in to your Firefox Account.</source>
+        <target>Nincs bejelentkezve a Firefox fi&#243;kj&#225;ba.</target>
+        <note>See http://mzl.la/1ISlXnU</note>
+      </trans-unit>
+      <trans-unit id="You don&#8217;t have any other devices connected to this Firefox Account available to sync.">
+        <source>You don&#8217;t have any other devices connected to this Firefox Account available to sync.</source>
+        <target>Nincs m&#225;s &#246;sszekapcsolt eszk&#246;ze ezzel a Firefox fi&#243;kkal, amellyel szinkroniz&#225;lhatna.</target>
+        <note>Error message shown in the remote tabs panel</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Extensions/SendTo/Info.plist" source-language="en" datatype="plaintext" target-language="hu">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName">
+        <source>Send Tab</source>
+        <target>Lap k&#252;ld&#233;se</target>
+      </trans-unit>
+      </body>
+  </file>
+  <file original="Extensions/ShareTo/ShareTo.strings" source-language="en" datatype="plaintext" target-language="hu">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Add">
+        <source>Add</source>
+        <target>Hozz&#225;ad&#225;s</target>
+        <note>Add button in the share dialog</note>
+      </trans-unit>
+      <trans-unit id="Add to Bookmarks">
+        <source>Add to Bookmarks</source>
+        <target>Hozz&#225;ad&#225;s a k&#246;nyvjelz&#337;kh&#246;z</target>
+        <note>On/off toggle to select adding this url to your bookmarks</note>
+      </trans-unit>
+      <trans-unit id="Add to Reading List">
+        <source>Add to Reading List</source>
+        <target>Felv&#233;tel az olvas&#225;si list&#225;ra</target>
+        <note>On/off toggle to select adding this url to your reading list</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Extensions/Today/Today.strings" source-language="en" datatype="plaintext" target-language="hu">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="TodayWidget.GoToCopiedLinkLabel">
+        <source>Go to copied link</source>
+        <target>Ugr&#225;s a m&#225;solt hivatkoz&#225;shoz</target>
+        <note>Go to link on clipboard</note>
+      </trans-unit>
+      <trans-unit id="TodayWidget.NewPrivateTabButtonLabel">
+        <source>New Private Tab</source>
+        <target>&#218;j priv&#225;t lap</target>
+        <note>New Private Tab button label</note>
+      </trans-unit>
+      <trans-unit id="TodayWidget.NewTabButtonLabel">
+        <source>New Tab</source>
+        <target>&#218;j lap</target>
+        <note>New Tab button label</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Extensions/ViewLater/Info.plist" source-language="en" datatype="plaintext" target-language="hu">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName">
+        <source>View Later</source>
+        <target>Megtekint&#233;s k&#233;s&#337;bb</target>
+      </trans-unit>
+      </body>
+  </file>
+  <file original="Shared/Supporting Files/Menu.strings" source-language="en" datatype="plaintext" target-language="hu">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Menu.AddBookmarkAction.Title">
+        <source>Bookmark This Page</source>
+        <target>Oldal k&#246;nyvjelz&#337;z&#233;se</target>
+        <note>Label for the button, displayed in the menu, used to create a bookmark for the current website.</note>
+      </trans-unit>
+      <trans-unit id="Menu.AddToReadingList.Title">
+        <source>Add to Reading List</source>
+        <target>Felv&#233;tel az olvas&#225;si list&#225;ra</target>
+        <note>Label for the button, displayed in the menu, used to add a page to the reading list.</note>
+      </trans-unit>
+      <trans-unit id="Menu.CloseAllTabsAction.Title">
+        <source>Close All Tabs</source>
+        <target>Minden lap bez&#225;r&#225;sa</target>
+        <note>Label for the button, displayed in the menu, used to close all tabs currently open.</note>
+      </trans-unit>
+      <trans-unit id="Menu.CopyURL.Title">
+        <source>Copy URL</source>
+        <target>URL m&#225;sol&#225;sa</target>
+        <note>Label for the button, displayed in the menu, used to copy the page url to the clipboard.</note>
+      </trans-unit>
+      <trans-unit id="Menu.FindInPageAction.Title">
+        <source>Find in Page</source>
+        <target>Keres&#233;s az oldalon</target>
+        <note>Label for the button, displayed in the menu, used to open the toolbar to search for text within the current page.</note>
+      </trans-unit>
+      <trans-unit id="Menu.NewPrivateTabAction.Title">
+        <source>Open New Private Tab</source>
+        <target>&#218;j priv&#225;t lap megnyit&#225;sa</target>
+        <note>Label for the button, displayed in the menu, used to open a new private tab.</note>
+      </trans-unit>
+      <trans-unit id="Menu.NewTabAction.Title">
+        <source>Open New Tab</source>
+        <target>&#218;j lap megnyit&#225;sa</target>
+        <note>Label for the button, displayed in the menu, used to open a new tab</note>
+      </trans-unit>
+      <trans-unit id="Menu.OpenBookmarksAction.AccessibilityLabel">
+        <source>Bookmarks</source>
+        <target>K&#246;nyvjelz&#337;k</target>
+        <note>Accessibility label for the button, displayed in the menu, used to open the Bbookmarks home panel.</note>
+      </trans-unit>
+      <trans-unit id="Menu.OpenHistoryAction.AccessibilityLabel">
+        <source>History</source>
+        <target>El&#337;zm&#233;nyek</target>
+        <note>Accessibility label for the button, displayed in the menu, used to open the History home panel.</note>
+      </trans-unit>
+      <trans-unit id="Menu.OpenHomePageAction.Title">
+        <source>Open Homepage</source>
+        <target>Kezd&#337;lap megnyit&#225;sa</target>
+        <note>Label for the button, displayed in the menu, used to navigate to the home page.</note>
+      </trans-unit>
+      <trans-unit id="Menu.OpenReadingListAction.AccessibilityLabel">
+        <source>Reading List</source>
+        <target>Olvas&#225;si lista</target>
+        <note>Accessibility label for the button, displayed in the menu, used to open the Reading list home panel.</note>
+      </trans-unit>
+      <trans-unit id="Menu.OpenSettingsAction.Title">
+        <source>Settings</source>
+        <target>Be&#225;ll&#237;t&#225;sok</target>
+        <note>Label for the button, displayed in the menu, used to open the Settings menu.</note>
+      </trans-unit>
+      <trans-unit id="Menu.OpenTopSitesAction.AccessibilityLabel">
+        <source>Top Sites</source>
+        <target>Kedvenc oldalak</target>
+        <note>Accessibility label for the button, displayed in the menu, used to open the Top Sites home panel.</note>
+      </trans-unit>
+      <trans-unit id="Menu.RemoveBookmarkAction.Title">
+        <source>Remove Bookmark</source>
+        <target>K&#246;nyvjelz&#337; elt&#225;vol&#237;t&#225;sa</target>
+        <note>Label for the button, displayed in the menu, used to delete an existing bookmark for the current website.</note>
+      </trans-unit>
+      <trans-unit id="Menu.ScanQRCodeAction.Title">
+        <source>Scan QR Code</source>
+        <target>QR-k&#243;d leolvas&#225;sa</target>
+        <note>Label for the button, displayed in the menu, used to open the QR code scanner.</note>
+      </trans-unit>
+      <trans-unit id="Menu.SetHomePageAction.Title">
+        <source>Set as Homepage</source>
+        <target>Be&#225;ll&#237;t&#225;s kezd&#337;lapk&#233;nt</target>
+        <note>Label for the button, displayed in the menu, used to set the homepage if none is currently set.</note>
+      </trans-unit>
+      <trans-unit id="Menu.SharePageAction.Title">
+        <source>Share Page With&#8230;</source>
+        <target>Lap megoszt&#225;sa&#8230;</target>
+        <note>Label for the button, displayed in the menu, used to open the share dialog.</note>
+      </trans-unit>
+      <trans-unit id="Menu.ShowTabs.Title">
+        <source>Show Tabs</source>
+        <target>Lapok megjelen&#237;t&#233;se</target>
+        <note>Label for the button, displayed in the menu, used to open the tabs tray</note>
+      </trans-unit>
+      <trans-unit id="Menu.ViewDekstopSiteAction.Title">
+        <source>Request Desktop Site</source>
+        <target>Asztali oldal k&#233;r&#233;se</target>
+        <note>Label for the button, displayed in the menu, used to request the desktop version of the current website.</note>
+      </trans-unit>
+      <trans-unit id="Menu.ViewMobileSiteAction.Title">
+        <source>Request Mobile Site</source>
+        <target>Mobil weboldal k&#233;r&#233;se</target>
+        <note>Label for the button, displayed in the menu, used to request the mobile version of the current website.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Shared/Supporting Files/Shared.strings" source-language="en" datatype="plaintext" target-language="hu">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="%@ on %@">
+        <source>%1$@ on %2$@</source>
+        <target>%1$@ itt: %2$@</target>
+        <note>A brief descriptive name for this app on this device, used for Send Tab and Synced Tabs. The first argument is the app name. The second argument is the device name.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Storage.strings" source-language="en" datatype="plaintext" target-language="hu">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Bookmarks Menu">
+        <source>Bookmarks Menu</source>
+        <target>K&#246;nyvjelz&#337;k men&#252;</target>
+        <note>The name of the folder that contains desktop bookmarks in the menu. This should match bookmarks.folder.menu.label on Android.</note>
+      </trans-unit>
+      <trans-unit id="Bookmarks Toolbar">
+        <source>Bookmarks Toolbar</source>
+        <target>K&#246;nyvjelz&#337;k eszk&#246;zt&#225;r</target>
+        <note>The name of the folder that contains desktop bookmarks in the toolbar. This should match bookmarks.folder.toolbar.label on Android.</note>
+      </trans-unit>
+      <trans-unit id="Mobile Bookmarks">
+        <source>Mobile Bookmarks</source>
+        <target>Mobil k&#246;nyvjelz&#337;k</target>
+        <note>The title of the folder that contains mobile bookmarks. This should match bookmarks.folder.mobile.label on Android.</note>
+      </trans-unit>
+      <trans-unit id="Unsorted Bookmarks">
+        <source>Unsorted Bookmarks</source>
+        <target>Nem rendezett k&#246;nyvjelz&#337;k</target>
+        <note>The name of the folder that contains unsorted desktop bookmarks. This should match bookmarks.folder.unfiled.label on Android.</note>
+      </trans-unit>
+      <trans-unit id="Untitled">
+        <source>Untitled</source>
+        <target>N&#233;vtelen</target>
+        <note>The default name for bookmark folders without titles.
+   The default name for bookmark nodes without titles.</note>
+      </trans-unit>
+    </body>
+  </file>
+  </xliff>

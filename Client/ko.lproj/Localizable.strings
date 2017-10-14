@@ -1,0 +1,1137 @@
+/* Button for larger reader font size. Keep this extremely short! This is shown in the reader mode toolbar. */
+"+" = "+";
+
+/* Button for smaller reader font size. Keep this extremely short! This is shown in the reader mode toolbar. */
+"-" = "-";
+
+/* Authentication prompt message with no realm. Parameter is the hostname of the site */
+"A username and password are being requested by %@." = "%@에서 사용자 이름과 비밀번호를 요청합니다.";
+
+/* Authentication prompt message with a realm. First parameter is the hostname. Second is the realm string */
+"A username and password are being requested by %@. The site says: %@" = "%1$@에서 사용자 이름과 비밀번호를 요청합니다. 사이트 메시지: %2$@";
+
+/* Button for reader mode font size. Keep this extremely short! This is shown in the reader mode toolbar. */
+"Aa" = "Aa";
+
+/* About settings section title */
+"About" = "상세정보";
+
+/* The title for the pinning a topsite action */
+"ActivityStream.ContextMenu.PinTopsite" = "인기 사이트에 고정";
+
+/* The title for removing a pinned topsite action */
+"ActivityStream.ContextMenu.RemovePinTopsite" = "고정된 사이트에서 삭제";
+
+/* The detailed text that explains what highlights are in AS. */
+"ActivityStream.HighlightIntro.Description" = "글이나 동영상, 즐겨찾기, 다른 페이지들을 다시 찾아볼 수 있게 웹에서 발견한 것들을 Firefox가 여기에 위치시킬 것입니다.";
+
+/* The title that appears for the introduction to highlights in AS. */
+"ActivityStream.HighlightIntro.Title" = "놓치지 마세요";
+
+/* The description of a highlight if it is a site the user has bookmarked */
+"ActivityStream.Highlights.Bookmark" = "즐겨찾기됨";
+
+/* Section title label for the Highlights section */
+"ActivityStream.Highlights.Title" = "하이라이트";
+
+/* The description of a highlight if it is a site the user has visited */
+"ActivityStream.Highlights.Visited" = "방문한";
+
+/* The page control button that lets you switch between pages in top sites */
+"ActivityStream.PageControl.Button" = "다음 페이지";
+
+/* Section title label for Recommended by Pocket section */
+"ActivityStream.Pocket.SectionTitle" = "Pocket 추천";
+
+/* The description of a Pocket Story */
+"ActivityStream.Pocket.Trending" = "인기";
+
+/* Section title label for Top Sites */
+"ActivityStream.TopSites.SectionTitle" = "상위 사이트";
+
+/* Accessibility label for the Add Tab button in the Tab Tray. */
+"Add Tab" = "탭 추가";
+
+/* Accessibility label for action adding current page to reading list.
+   Name for button adding current article to reading list in reader mode */
+"Add to Reading List" = "읽기 목록에 추가";
+
+/* Button to dismiss the 'Add Pass Failed' alert.  See https://support.apple.com/HT204003 for context on Wallet. */
+"AddPass.Error.Dismiss" = "확인";
+
+/* Text of the 'Add Pass Failed' alert.  See https://support.apple.com/HT204003 for context on Wallet. */
+"AddPass.Error.Message" = "지갑에 패스를 추가하는데 오류가 발생했습니다. 잠시 후에 다시 시도해 주세요.";
+
+/* Title of the 'Add Pass Failed' alert. See https://support.apple.com/HT204003 for context on Wallet. */
+"AddPass.Error.Title" = "패스 추가 실패";
+
+/* Accessibility message e.g. spoken by VoiceOver after the current page gets added to the Reading List using the Reader View button, e.g. by long-pressing it or by its accessibility custom action. */
+"Added page to Reading List" = "읽기 목록에 페이지 추가";
+
+/* Accessibility label for address and search field, both words (Address, Search) are therefore nouns. */
+"Address and Search" = "주소와 검색";
+
+/* Used as a button label for crash dialog prompt */
+"Always Send" = "항상 보내기";
+
+/* Tile title for Amazon */
+"Amazon" = "Amazon";
+
+/* Authentication prompt title */
+"Authentication required" = "인증 필요";
+
+/* Accessibility label for the Back button in the tab toolbar. */
+"Back" = "뒤로";
+
+/* Block pop-up windows setting */
+"Block Pop-up Windows" = "팝업창 차단";
+
+/* Panel accessibility label */
+"Bookmarks" = "즐겨찾기";
+
+/* Status label for the empty Bookmarks state. */
+"Bookmarks you save will show up here." = "저장된 즐겨찾기가 여기에 나타납니다.";
+
+/* The label to show the location of the folder where the bookmark is located */
+"Bookmarks.Folder.Label" = "폴더";
+
+/* The label for the location of the new folder */
+"Bookmarks.FolderLocation.Label" = "위치";
+
+/* The label for the title of the new folder */
+"Bookmarks.FolderName.Label" = "폴더명";
+
+/* The button to create a new folder */
+"Bookmarks.NewFolder.Label" = "신규 폴더";
+
+/* The label for the title of a bookmark */
+"Bookmarks.Title.Label" = "제목";
+
+/* The label for the URL of a bookmark */
+"Bookmarks.URL.Label" = "URL";
+
+/* Accessibility label for brightness adjustment slider in Reader Mode display settings */
+"Brightness" = "밝기";
+
+/* Label for Cancel button */
+"Cancel" = "취소";
+
+/* Accessibility hint for the color theme setting buttons in reader mode display settings */
+"Changes color theme." = "색상 테마 변경";
+
+/* Accessibility hint for the font type buttons in reader mode display settings */
+"Changes font type." = "서체 변경";
+
+/* Label used as an item in Settings. When touched it will open a dialog prompting the user to make sure they want to clear all of their private data. */
+"Clear Private Data" = "개인 정보 삭제";
+
+/* The button to open a new tab with the copied link */
+"ClipboardToast.GoToCopiedLink.Button" = "이동";
+
+/* Message displayed when the user has a copied link on the clipboard */
+"ClipboardToast.GoToCopiedLink.Title" = "복사한 링크로 이동하시겠습니까?";
+
+/* Accessibility label for action denoting closing a tab in tab list (tray) */
+"Close" = "닫기";
+
+/* Accessibility label (used by assistive technology) notifying the user that the tab is being closed. */
+"Closing tab" = "탭 닫기";
+
+/* The button text in the Button Toast for switching to a fresh New Private Tab. */
+"ContextMenu.ButtonToast.NewPrivateTabOpened.ButtonText" = "스위치";
+
+/* The label text in the Button Toast for switching to a fresh New Private Tab. */
+"ContextMenu.ButtonToast.NewPrivateTabOpened.LabelText" = "새 사생활 보호탭 열림";
+
+/* The button text in the Button Toast for switching to a fresh New Tab. */
+"ContextMenu.ButtonToast.NewTabOpened.ButtonText" = "스위치";
+
+/* The label text in the Button Toast for switching to a fresh New Tab. */
+"ContextMenu.ButtonToast.NewTabOpened.LabelText" = "새 탭 열림";
+
+/* Copy the URL from the location bar */
+"Copy Address" = "주소 복사";
+
+/* Context menu item for copying an image to the clipboard */
+"Copy Image" = "이미지 복사";
+
+/* Context menu item for copying a link URL to the clipboard */
+"Copy Link" = "링크 복사";
+
+/* Accessibility message e.g. spoken by VoiceOver after the user wanted to add current page to the Reading List and this was not done, likely because it already was in the Reading List, but perhaps also because of real failures. */
+"Could not add page to Reading List. Maybe it’s already there?" = "읽기 목록에 페이지를 추가하지 못했습니다. 이미 추가하지 않았나요?";
+
+/* Accessibility message e.g. spoken by VoiceOver after adding current webpage to the Reading List failed. */
+"Could not add page to Reading list" = "읽기 목록에 페이지를 추가하지 못했습니다.";
+
+/* Error message that is shown in settings when there was a problem loading */
+"Could not load page." = "페이지를 열지 못했습니다.";
+
+/* See http://mzl.la/1Qtkf0j */
+"Create an account" = "계정 생성";
+
+/* Dark theme setting in Reading View settings */
+"Dark" = "어두움";
+
+/* Debug option */
+"Debug: forget Sync auth state" = "디버그: Sync 인증 상태 사라짐";
+
+/* Debug option */
+"Debug: require password" = "디버그: 비밀번호 필요";
+
+/* Debug option */
+"Debug: require upgrade" = "디버그: 업그레이드 필요";
+
+/* Debug option */
+"Debug: use stage servers" = "디버그: 스테이지 서버 사용";
+
+/* Accessibility label for button decreasing font size in display settings of reader mode */
+"Decrease text size" = "글자 크기 작게";
+
+/* Accessibility label for default search engine setting.
+   Title for default search engine picker.
+   Title for default search engine settings section. */
+"Default Search Engine" = "기본 검색 엔진";
+
+/* Pending feature; currently unused string! Checkbox label shown after multiple alerts are shown */
+"Disable additional page dialogs" = "더이상 페이지 경고창 보지 않음";
+
+/* Name for display settings button in reader mode. Display in the meaning of presentation, not monitor. */
+"Display Settings" = "화면 설정";
+
+/* Prompt for saving a password. The first parameter is the username being saved. The second parameter is the hostname of the site. */
+"Do you want to save the password for %@ on %@?" = "%2$@의 %1$@ 계정 비밀번호를 저장하시겠습니까?";
+
+/* Prompt for saving a password with no username. The parameter is the hostname of the site. */
+"Do you want to save the password on %@?" = "%@의 비밀번호를 저장하시겠습니까?";
+
+/* Prompt for updating a password. The first parameter is the username being saved. The second parameter is the hostname of the site. */
+"Do you want to update the password for %@ on %@?" = "%2$@의 %1$@ 계정 비밀번호를 변경하시겠습니까?";
+
+/* Prompt for updating a password with on username. The parameter is the hostname of the site. */
+"Do you want to update the password on %@?" = "%@의 비밀번호를 변경하시겠습니까?";
+
+/* Done button on left side of the Settings view controller title bar */
+"Done" = "완료";
+
+/* Used as a button label for crash dialog prompt */
+"Don’t Send" = "보내지 않음";
+
+/* The label of the button the user will press to reject the option to open a file in another application */
+"Downloads.Alert.Cancel" = "아니오";
+
+/* The label of the button the user will press to be presented with a list of other apps to open a file in */
+"Downloads.Alert.Confirm" = "예";
+
+/* The message of the alert box asking the user if they want to use another app to open a file. */
+"Downloads.Alert.Message" = "파일을 다운로드 하거나 표시할 수 없습니다. 다른 앱에서 여시겠습니까?";
+
+/* The title of the alert box asking the user if they want to use another app to open a file. */
+"Downloads.Alert.Title" = "Firefox 다운로드";
+
+/* The message displayed to a user when they try and perform the download of an asset that Firefox cannot currently handle. */
+"Downloads.Error.Message" = "아직 다운로드가 지원되지 않습니다.";
+
+/* Text message in the settings table view */
+"Enter your password to connect." = "연결하기 위해서 비밀번호를 입력해 주세요.";
+
+/* Label for button to perform advanced actions on the error page */
+"ErrorPages.Advanced.Button" = "고급";
+
+/* Warning text when clicking the Advanced button on error pages */
+"ErrorPages.AdvancedWarning1.Text" = "경고: 이 웹사이트로의 연결이 안전한지 확인할 수 없습니다.";
+
+/* Additional warning text when clicking the Advanced button on error pages */
+"ErrorPages.AdvancedWarning2.Text" = "설정이 잘 못 되었거나 공격자의 간섭일 수 있습니다. 잠재적인 위험을 감수한다면 진행하세요.";
+
+/* Warning text on the certificate error page */
+"ErrorPages.CertWarning.Description" = "%@의 소유자가 웹사이트를 적절하게 설정하지 않았습니다. 정보를 보호하기 위해서 Firefox가 웹사이트에 접속을 하지 않았습니다.";
+
+/* Title on the certificate error page */
+"ErrorPages.CertWarning.Title" = "연결이 안전하지 않음";
+
+/* Label for button to go back from the error page */
+"ErrorPages.GoBack.Button" = "뒤로 가기";
+
+/* Button label to temporarily continue to the site from the certificate error page */
+"ErrorPages.VisitOnce.Button" = "무시하고 방문";
+
+/* Question shown to user when tapping a link that opens the App Store app */
+"ExternalLink.AppStore.ConfirmationTitle" = "App Store 앱에서 링크를 여시겠습니까?";
+
+/* Tile title for Facebook */
+"Facebook" = "Facebook";
+
+/* Text of the 'sign out firefox account' alert */
+"Firefox will stop syncing with your account, but won’t delete any of your browsing data on this device." = "Firefox가 계정의 동기화를 중지하지만 기기의 브라우징 데이터는 삭제하지 않습니다.";
+
+/* See http://mzl.la/1G7uHo7 */
+"Firefox would like to access your Photos" = "Firefox가 사진 정보에 접근하고자 합니다.";
+
+/* Title for firefox about:home page in tab history list */
+"Firefox.HomePage.Title" = "Firefox 홈 페이지";
+
+/* Accessibility Label for the tab toolbar Forward button */
+"Forward" = "앞으로";
+
+/* Label stating how to disconnect account */
+"FxA.AccountVerificationDetails" = "이메일이 잘못됐나요? 아래에서 끊고 다시 시작하세요.";
+
+/* Label stating your account is not verified */
+"FxA.AccountVerificationRequired" = "계정 확인 필요함";
+
+/* Message explaining that user needs to check email for Firefox Account verfication link. */
+"FxA.AccountVerificationRequiredSurface" = "%@ 계정을 확인해야 합니다. Firefox에서 이메일의 확인 링크를 확인하세요.";
+
+/* Settings section title for Firefox Account */
+"FxA.FirefoxAccount" = "Firefox 계정";
+
+/* Button label to goto Firefox Account settings */
+"FxA.ManageAccount" = "계정 관리";
+
+/* Label when no internet is present */
+"FxA.NoInternetConnection" = "인터넷 연결 안됨";
+
+/* Button label to resend email */
+"FxA.ResendEmail" = "이메일 재전송";
+
+/* Button label to sign into Sync */
+"FxA.SignIntoSync" = "Sync에 로그인";
+
+/* Label explaining what sync does */
+"FxA.SyncExplain" = "다른 기기에서 열려있는 탭과 즐겨찾기, 비밀번호를 가져오세요.";
+
+/* Button label to Sync your Firefox Account */
+"FxA.SyncNow" = "지금 동기화";
+
+/* Call to action for sign into sync button */
+"FxA.TakeYourWebWithYou" = "웹과 함께 하세요.";
+
+/* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
+"FxAPush_DeviceConnected_body" = "Firefox Sync가 %@와 연결됨";
+
+/* Title of a notification displayed when another device has connected to FxA. */
+"FxAPush_DeviceConnected_title" = "Sync 연결됨";
+
+/* Body of a notification displayed when this device has been disconnected from FxA by another device. */
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "기기는 Firefox Sync와 연결이 끊어졌습니다.";
+
+/* Title of a notification displayed when this device has been disconnected by another device. */
+"FxAPush_DeviceDisconnected_ThisDevice_title" = "동기화 연결끊김";
+
+/* Body of a notification displayed when unnamed device has been disconnected from FxA. */
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "기기가 Firefox Sync와 연결이 끊김";
+
+/* Body of a notification displayed when named device has been disconnected from FxA. %@ refers to the name of the disconnected device. */
+"FxAPush_DeviceDisconnected_body" = "%@가 성공적으로 연결이 해제되었습니다.";
+
+/* Title of a notification displayed when named device has been disconnected from FxA. */
+"FxAPush_DeviceDisconnected_title" = "동기화 연결끊김";
+
+/* General settings section title */
+"General" = "일반";
+
+/* A re-worded offer about Sync, displayed when the Sync home panel is empty, that emphasizes one-way data transfer, not syncing. */
+"Get your open tabs, bookmarks, and passwords from your other devices." = "다른 기긱에서 열려있는 탭과 즐겨찾기, 비밀번호를 가져오세요.";
+
+/* Pending feature; currently unused string! Button to browse to URL on the clipboard when browser is opened */
+"Go" = "이동";
+
+/* Pending feature; currently unused string! Prompt message shown when browser is opened with URL on the clipboard */
+"Go to copied URL?" = "복사한 URL로 이동하겠습니까?";
+
+/* Show the SUMO support page from the Support section in the settings. see http://mzl.la/1dmM8tZ */
+"Help" = "도움말";
+
+/* Panel accessibility label */
+"History" = "방문목록";
+
+/* Title for the History Panel empty state. */
+"HistoryPanel.EmptyState.Title" = "최근에 방문한 웹사이트를 표시합니다.";
+
+/* Description for the empty synced tabs null state in the History Panel */
+"HistoryPanel.EmptySyncedTabsNullState.Description" = "다른 기기의 탭을 표시합니다.";
+
+/* Description for the empty synced tabs state in the History Panel */
+"HistoryPanel.EmptySyncedTabsState.Description" = "다른 기기의 탭을 보려면 로그인 하세요.";
+
+/* Title for the empty synced tabs state in the History Panel */
+"HistoryPanel.EmptySyncedTabsState.Title" = "Firefox Sync";
+
+/* Title for the Back to History button in the History Panel */
+"HistoryPanel.HistoryBackButton.Title" = "방문목록";
+
+/* Title for the Recently Closed button in the History Panel */
+"HistoryPanel.RecentlyClosedTabsButton.Title" = "최근에 닫음";
+
+/* Description that corresponds with a number of devices connected for the Synced Tabs Cell in the History Panel */
+"HistoryPanel.SyncedTabsCell.Description.Pluralized" = "%d개의 기기 연결됨";
+
+/* Title for the Synced Tabs Cell in the History Panel */
+"HistoryPanel.SyncedTabsCell.Title" = "동기화된 기기";
+
+/* Button cancelling changes setting the home page for the first time. */
+"HomePage.Set.Dialog.Cancel" = "취소";
+
+/* Alert dialog body when the user opens the home page for the first time. */
+"HomePage.Set.Dialog.Message" = "설정에서 언제든지 취소할 수 있음";
+
+/* Button accepting changes setting the home page for the first time. */
+"HomePage.Set.Dialog.OK" = "홈페이지 설정";
+
+/* Alert dialog title when the user opens the home page for the first time. */
+"HomePage.Set.Dialog.Title" = "이 웹페이지를 홈페이지로 사용하시겠습니까?";
+
+/* The title for the Bookmark context menu action for sites in Home Panels */
+"HomePanel.ContextMenu.Bookmark" = "즐겨찾기";
+
+/* The title for the Delete from History context menu action for sites in Home Panels */
+"HomePanel.ContextMenu.DeleteFromHistory" = "방문 기록에서 삭제";
+
+/* The title for the Open in New Private Tab context menu action for sites in Home Panels */
+"HomePanel.ContextMenu.OpenInNewPrivateTab" = "새 사생활 탭에서 열기";
+
+/* The title for the Open in New Tab context menu action for sites in Home Panels */
+"HomePanel.ContextMenu.OpenInNewTab" = "새 탭에서 열기";
+
+/* The title for the Remove context menu action for sites in Home Panels */
+"HomePanel.ContextMenu.Remove" = "삭제";
+
+/* The title for the Remove Bookmark context menu action for sites in Home Panels */
+"HomePanel.ContextMenu.RemoveBookmark" = "즐겨찾기 삭제";
+
+/* The title for the Share context menu action for sites in Home Panels */
+"HomePanel.ContextMenu.Share" = "공유";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.Back.DiscoveryTitle" = "뒤로";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.CloseTab.DiscoveryTitle" = "탭 닫기";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.Find.DiscoveryTitle" = "찾기";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.Forward.DiscoveryTitle" = "앞으로";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.NewPrivateTab.DiscoveryTitle" = "새 사생활 보호 탭";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.NewTab.DiscoveryTitle" = "새 탭";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.Reload.DiscoveryTitle" = "페이지 새로고침";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.SelectLocationBar.DiscoveryTitle" = "주소창 선택";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.ShowNextTab.DiscoveryTitle" = "다음 탭 보기";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.ShowPreviousTab.DiscoveryTitle" = "이전 탭 보기";
+
+/* Accessibility label for button increasing font size in display settings of reader mode */
+"Increase text size" = "글자 크기 크게";
+
+/* Accessibility label for the introduction tour carousel */
+"Intro Tour Carousel" = "처음 시작 정보";
+
+/* History tableview section header */
+"Last month" = "지난달";
+
+/* Remote tabs last synced time. Argument is the relative date string. */
+"Last synced: %@" = "최종 동기화: %@";
+
+/* History tableview section header */
+"Last week" = "지난주";
+
+/* Settings item that opens a tab containing the licenses. See http://mzl.la/1NSAWCG */
+"Licenses" = "라이선스";
+
+/* Light theme setting in Reading View settings */
+"Light" = "밝음";
+
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+"Load original page" = "원래 페이지 열기";
+
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Firefox reader mode from another app. */
+"Loading content…" = "내용 읽는중…";
+
+/* Button in settings screen to disconnect from your account
+   Disconnect button in the 'log out firefox account' alert */
+"Log Out" = "로그아웃";
+
+/* Title of the 'log out firefox account' alert */
+"Log Out?" = "로그아웃?";
+
+/* Authentication prompt log in button */
+"Log in" = "로그인";
+
+/* Label used as an item in Settings. When touched, the user will be navigated to the Logins/Password manager. */
+"Logins" = "로그인";
+
+/* Button to not save the user's password */
+"LoginsHelper.DontSave.Button" = "저장하지 않음";
+
+/* Prompt for saving a login. The first parameter is the username being saved. The second parameter is the hostname of the site. */
+"LoginsHelper.PromptSaveLogin.Title" = "%2$@의 %1$@ 계정 로그인을 저장하시겠습니까?";
+
+/* Prompt for saving a password with no username. The parameter is the hostname of the site. */
+"LoginsHelper.PromptSavePassword.Title" = "%@에 대한 암호를 저장하시겠습니까?";
+
+/* Prompt for updating a login. The first parameter is the username for which the password will be updated for. The second parameter is the hostname of the site. */
+"LoginsHelper.PromptUpdateLogin.Title" = "%2$@의 %1$@ 계정 로그인을 변경하시겠습니까?";
+
+/* Prompt for updating a password with no username. The parameter is the hostname of the site. */
+"LoginsHelper.PromptUpdatePassword.Title" = "%@에 대한 암호를 변경하시겠습니까?";
+
+/* Button to save the user's password */
+"LoginsHelper.SaveLogin.Button" = "로그인 저장";
+
+/* Button to update the user's password */
+"LoginsHelper.Update.Button" = "업데이트";
+
+/* Restore Tabs Prompt Description */
+"Looks like Firefox crashed previously. Would you like to restore your tabs?" = "이전에 Firefox가 강제 종료되었습니다. 탭을 복구하시겠습니까?";
+
+/* Name for Mark as read button in reader mode
+   Title for the button that marks a reading list item as read */
+"Mark as Read" = "읽음으로 표시";
+
+/* Name for Mark as unread button in reader mode
+   Title for the button that marks a reading list item as unread */
+"Mark as Unread" = "안읽음으로 표시";
+
+/* Toast displayed to the user after a bookmark has been added. */
+"Menu.AddBookmark.Confirm" = "북마크 추가됨";
+
+/* Toast displayed to the user after adding the item to their reading list. */
+"Menu.AddToReadingList.Confirm" = "읽기 목록에 추가됨";
+
+/* Toast displayed to user after copy url pressed. */
+"Menu.CopyURL.Confirm" = "클립보드에 URL 복사됨";
+
+/* Label for the button, displayed in the menu, turns off night mode */
+"Menu.NightModeTurnOff.Label" = "나이트 모드 끔";
+
+/* Label for the button, displayed in the menu, turns on night mode. */
+"Menu.NightModeTurnOn.Label" = "나이트 모드 켬";
+
+/* Label for the button, displayed in the menu, hides images on the webpage when pressed. */
+"Menu.NoImageModeHideImages.Label" = "이미지 감추기";
+
+/* Label for the button, displayed in the menu, shows images on the webpage when pressed */
+"Menu.NoImageModeShowImages.Label" = "이미지 보기";
+
+/* Toast displayed to the user after a bookmark has been removed. */
+"Menu.RemoveBookmark.Confirm" = "북마크 제거됨";
+
+/* Error for a missing remote error number */
+"Missing error" = "오류 누락";
+
+/* Error for a missing remote error message */
+"Missing message" = "메시지 누락";
+
+/* Accessibility label for the navigation toolbar displayed at the bottom of the screen. */
+"Navigation Toolbar" = "네비게이션 툴바";
+
+/* Accessibility label for the New Tab button in the tab toolbar. */
+"New Tab" = "새 탭";
+
+/* Restore Tabs Negative Action */
+"No" = "아니오";
+
+/* Message spoken by VoiceOver to indicate that there are no tabs in the Tabs Tray */
+"No tabs" = "탭 없음";
+
+/* Button to not save the user's password */
+"Not now" = "다음에";
+
+/* OK button */
+"OK" = "확인";
+
+/* Restore Tabs Affirmative Action */
+"Okay" = "확인";
+
+/* Title for prompt displayed to user after the app crashes */
+"Oops! Firefox crashed" = "이런! Firefox가 종료됐습니다.";
+
+/* See http://mzl.la/1G7uHo7 */
+"Open Settings" = "설정 열기";
+
+/* See http://mzl.la/1LXbDOL */
+"Open articles in Reader View by tapping the book icon when it appears in the title bar." = "제목줄 옆에 나오는 책모양 아이콘을 눌러서 읽기 모드로 글을 열어보세요.";
+
+/* Context menu item for opening a link in a new tab */
+"Open in New Tab" = "새 탭 열기";
+
+/* String indicating that the file can be opened in another application on the device */
+"Open in…" = "다음으로 열기…";
+
+/* The message displayed to a user when they try to open a URL that cannot be handled by Firefox, or any external app. */
+"OpenURL.Error.Message" = "주소가 유효하지 않아서 페이지를 열 수 없습니다.";
+
+/* Title of the message shown when the user attempts to navigate to an invalid link. */
+"OpenURL.Error.Title" = "페이지 열 수 없음";
+
+/* Opening an external URL */
+"Opening %@" = "%@ 열기";
+
+/* Accessibility label for the Page Options menu button */
+"Page Options Menu" = "페이지 설정 메뉴";
+
+/* Accessibility label for the Home panel's top toolbar containing list of the home panels (top sites, bookmarsk, history, remote tabs, reading list). */
+"Panel Chooser" = "패널 선택";
+
+/* Password textbox in Authentication prompt */
+"Password" = "비밀번호";
+
+/* Paste the URL into the location bar */
+"Paste" = "붙이기";
+
+/* Paste the URL into the location bar and visit */
+"Paste & Go" = "붙여서 가기";
+
+/* Button for closing the menu action sheet */
+"PhotonMenu.cancel" = "취소";
+
+/* Text of the prompt user to setup the camera authorization. */
+"Please allow Firefox to access your device’s camera in ‘Settings’ -> ‘Privacy’ -> ‘Camera’." = "'설정' -> '개인 정보 보호' -> '카메라'에서 Firefox가 기기의 카메라에 접근하는 것을 허용 해 주세요.";
+
+/* Privacy section title */
+"Privacy" = "개인정보";
+
+/* Show Firefox Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/firefox/ */
+"Privacy Policy" = "개인정보 보호정책";
+
+/* Title for quick-search engines settings section. */
+"Quick-Search Engines" = "빠른 검색 엔진";
+
+/* Accessibility label for the Reader View button */
+"Reader View" = "읽기 모드";
+
+/* Accessibility message e.g. spoken by VoiceOver when Reader Mode becomes available. */
+"ReaderMode.Available.VoiceOverAnnouncement" = "읽기 모드 사용 가능";
+
+/* Panel accessibility label */
+"Reading list" = "읽기 목록";
+
+/* Title for the Recently Closed Tabs Panel */
+"RecentlyClosedTabsPanel.Title" = "최근 닫음";
+
+/* Accessibility Label for the tab toolbar Reload button */
+"Reload" = "새로고침";
+
+/* Title for the button that removes a reading list item */
+"Remove" = "삭제";
+
+/* Name for button removing current article from reading list in reader mode */
+"Remove from Reading List" = "읽기 목록에서 삭제";
+
+/* Action Sheet Button for Requesting the Desktop Site */
+"Request Desktop Site" = "데스크톱 사이트 보기";
+
+/* Action Sheet Button for Requesting the Mobile Site */
+"Request Mobile Site" = "모바일 사이트 보기";
+
+/* Accessibility label for button resetting font size in display settings of reader mode */
+"Reset text size" = "텍스트 크기 다시 설정";
+
+/* Font type setting in the reading view settings */
+"Sans-serif" = "고딕체";
+
+/* Context menu item for saving an image */
+"Save Image" = "사진 저장";
+
+/* Setting to enable the built-in password manager */
+"Save Logins" = "로그인 저장";
+
+/* See http://mzl.la/1LXbDOL */
+"Save pages to your Reading List by tapping the book plus icon in the Reader View controls." = "읽기 모드 도구에 있는 책 플러스 아이콘을 눌러서 읽기 목록에 페이지를 저장하세요.";
+
+/* Text for the instructions label, displayed in the QR scanner view */
+"ScanQRCode.Instructions.Label" = "QR코드를 틀에 맞춰 스캔하세요";
+
+/* Title for the QR code scanner view. */
+"ScanQRCode.View.Title" = "QR 코드 스캔";
+
+/* Navigation title for search settings.
+   Open search section of settings */
+"Search" = "검색";
+
+/* The text shown in the URL bar on about:home */
+"Search or enter address" = "검색어나 주소 입력";
+
+/* The message that asks the user to Add the search provider explaining where the search engine will appear */
+"Search.ThirdPartyEngines.AddMessage" = "새 검색 엔진이 빠른 검색창에 나타날 것입니다.";
+
+/* The success message that appears after a user sucessfully adds a new search engine */
+"Search.ThirdPartyEngines.AddSuccess" = "검색 엔진 추가됨!";
+
+/* The title that asks the user to Add the search provider */
+"Search.ThirdPartyEngines.AddTitle" = "검색 제공자를 추가하시겠습니까?";
+
+/* The cancel button if you do not want to add a search engine. */
+"Search.ThirdPartyEngines.Cancel" = "취소";
+
+/* A message explaining fault in custom search engine form. */
+"Search.ThirdPartyEngines.DuplicateErrorMessage" = "이 제목이나 URL을 사용하는 검색 엔진이 이미 추가 되었습니다.";
+
+/* A title stating that we failed to add custom search engine. */
+"Search.ThirdPartyEngines.DuplicateErrorTitle" = "실패";
+
+/* A title explaining that we failed to add a search engine */
+"Search.ThirdPartyEngines.FailedMessage" = "검색 제공자를 추가할 수 없습니다.";
+
+/* A title explaining that we failed to add a search engine */
+"Search.ThirdPartyEngines.FailedTitle" = "실패";
+
+/* A message explaining fault in custom search engine form. */
+"Search.ThirdPartyEngines.FormErrorMessage" = "모든 필드를 정확히 채워주세요.";
+
+/* A title stating that we failed to add custom search engine. */
+"Search.ThirdPartyEngines.FormErrorTitle" = "실패함";
+
+/* The confirmation button */
+"Search.ThirdPartyEngines.OK" = "확인";
+
+/* Accessibility hint describing the action performed when a search suggestion is clicked */
+"Searches for the suggestion" = "추천 검색";
+
+/* Accessibility label for the lock icon, which is only present if the connection is secure */
+"Secure connection" = "보안 접속";
+
+/* Menu item in settings used to open input.mozilla.org where people can submit feedback */
+"Send Feedback" = "의견 보내기";
+
+/* Used as a button label for crash dialog prompt */
+"Send Report" = "보고서 전송";
+
+/* Message displayed in the crash dialog above the buttons used to select when sending reports */
+"Send a crash report so Mozilla can fix the problem?" = "Mozilla가 문제를 고칠 수 있도록 보고서를 전송하시겠습니까?";
+
+/* Button title for cancelling SendTo screen */
+"SendTo.Cancel.Button" = "취소";
+
+/* Message in error prompt explaining why the URL is invalid. */
+"SendTo.Error.Message" = "HTTP와 HTTPS 링크만 공유될 수 있습니다.";
+
+/* OK button to dismiss the error prompt. */
+"SendTo.Error.OK.Button" = "확인";
+
+/* Title of error prompt displayed when an invalid URL is shared. */
+"SendTo.Error.Title" = "공유하고자 하는 링크는 공유될 수 없습니다.";
+
+/* Body of notification received after a spurious message from FxA has been received. */
+"SentTab.NoTabArrivingNotification.body" = "탭해서 시작";
+
+/* Title of notification received after a spurious message from FxA has been received. */
+"SentTab.NoTabArrivingNotification.title" = "Firefox Sync";
+
+/* Body of notification shown when the device is sent one or more tabs from an unnamed device. */
+"SentTab_TabArrivingNotification_NoDevice_body" = "다른 기기에서 새 탭이 도착하였습니다.";
+
+/* Title of notification shown when the device is sent one or more tabs from an unnamed device. */
+"SentTab_TabArrivingNotification_NoDevice_title" = "전송 받은 탭";
+
+/* Body of notification shown when the device is sent one or more tabs from the named device. %@ is the placeholder for the app name. */
+"SentTab_TabArrivingNotification_WithDevice_body" = "%@에 도착한 새 탭";
+
+/* Title of notification shown when the device is sent one or more tabs from the named device. %@ is the placeholder for the device name. This device name will be localized by that device. */
+"SentTab_TabArrivingNotification_WithDevice_title" = "%@에서 탭 전송됨";
+
+/* Sepia theme setting in Reading View settings */
+"Sepia" = "세피아";
+
+/* Font type setting in the reading view settings */
+"Serif" = "명조체";
+
+/* Title in the settings view controller title bar */
+"Settings" = "설정";
+
+/* The button text in Search Settings that opens the Custom Search Engine view. */
+"Settings.AddCustomEngine" = "검색 엔진 추가";
+
+/* The text on the Save button when saving a custom search engine */
+"Settings.AddCustomEngine.SaveButtonText" = "저장";
+
+/* The title of the  Custom Search Engine view. */
+"Settings.AddCustomEngine.Title" = "검색 엔진 추가";
+
+/* The title for the field which sets the title for a custom search engine. */
+"Settings.AddCustomEngine.TitleLabel" = "제목";
+
+/* The placeholder for Title Field when saving a custom search engine. */
+"Settings.AddCustomEngine.TitlePlaceholder" = "검색 엔진";
+
+/* The title for URL Field */
+"Settings.AddCustomEngine.URLLabel" = "URL";
+
+/* The placeholder for URL Field when saving a custom search engine */
+"Settings.AddCustomEngine.URLPlaceholder" = "URL(%s에 검색어가 들어감)";
+
+/* Button in settings that clears private data for the selected items. */
+"Settings.ClearPrivateData.Clear.Button" = "개인 정보 삭제";
+
+/* Label used as an item in Settings. When touched it will open a dialog prompting the user to make sure they want to clear all of their private data. */
+"Settings.ClearPrivateData.SectionName" = "개인 정보 삭제";
+
+/* Title displayed in header of the setting panel. */
+"Settings.ClearPrivateData.Title" = "개인 정보 삭제";
+
+/* DNT Settings option for always on */
+"Settings.DNT.OptionAlwaysOn" = "항상";
+
+/* DNT Settings option for only turning on when Tracking Protection is also on */
+"Settings.DNT.OptionOnWithTP" = "추적 방지 기능을 사용할 때만";
+
+/* DNT Settings title */
+"Settings.DNT.Title" = "웹사이트에 방문자 추적 금지 신호를 보내서 추적을 원하지 않는다고 알림";
+
+/* Button displayed at the bottom of settings page allowing users to Disconnect from FxA */
+"Settings.Disconnect.Button" = "동기화 끊기";
+
+/* Destructive action button in alert when user is prompted for disconnect */
+"Settings.Disconnect.DestructiveButton" = "연결 끊기";
+
+/* Title of the alert when prompting the user asking to disconnect. */
+"Settings.Disconnect.Title" = "동기화를 끊으시겠습니까?";
+
+/* Button in settings to clear the home page. */
+"Settings.HomePage.Clear.Button" = "삭제";
+
+/* Label used as an item in Settings. When touched it will open a dialog to configure the home page and its uses. */
+"Settings.HomePage.SectionName" = "홈페이지";
+
+/* Title displayed in header of the setting panel. */
+"Settings.HomePage.Title" = "홈페이지 설정";
+
+/* Placeholder text in the homepage setting when no homepage has been set. */
+"Settings.HomePage.URL.Placeholder" = "웹페이지 입력";
+
+/* Title of the setting section containing the URL of the current home page. */
+"Settings.HomePage.URL.Title" = "현재 홈페이지";
+
+/* Button in settings to use the current link on the clipboard as home page. */
+"Settings.HomePage.UseCopiedLink.Button" = "복사된 링크 사용";
+
+/* Button in settings to use the current page as home page. */
+"Settings.HomePage.UseCurrent.Button" = "현재 페이지 사용";
+
+/* Button in settings to use the default home page. If no default is set, then this button isn't shown. */
+"Settings.HomePage.UseDefault.Button" = "기본 사용";
+
+/* A description in settings of what the new tab choice means */
+"Settings.NewTab.Description" = "새 탭을 열 경우:";
+
+/* The title of the section in newtab that lets you modify the topsites panel */
+"Settings.NewTab.Option.ASTitle" = "추가 콘텐츠";
+
+/* Option in settings to show a blank page when you open a new tab */
+"Settings.NewTab.Option.BlankPage" = "빈 페이지 보이기";
+
+/* Option in settings to show bookmarks when you open a new tab */
+"Settings.NewTab.Option.Bookmarks" = "즐겨 찾기 보이기";
+
+/* Option in the settings to turn off recent bookmarks in the Highlights section */
+"Settings.NewTab.Option.HighlightsBookmarks" = "최근 북마크";
+
+/* Option in settings to turn off history in the highlights section */
+"Settings.NewTab.Option.HighlightsHistory" = "방문한";
+
+/* Option in settings to show history when you open a new tab */
+"Settings.NewTab.Option.History" = "방문 목록 보이기";
+
+/* Option in settings to show your homepage when you open a new tab */
+"Settings.NewTab.Option.HomePage" = "홈페이지 보이기";
+
+/* Option in settings to turn on off pocket recommendations */
+"Settings.NewTab.Option.Pocket" = "Pocket 추천";
+
+/* Option in settings to show reading list when you open a new tab */
+"Settings.NewTab.Option.ReadingList" = "읽기 목록 보이기";
+
+/* Option in settings to show top sites when you open a new tab */
+"Settings.NewTab.Option.TopSites" = "상위 사이트 보이기";
+
+/* Label used as an item in Settings. When touched it will open a dialog to configure the new tab behaviour. */
+"Settings.NewTab.SectionName" = "새 탭";
+
+/* Title displayed in header of the setting panel. */
+"Settings.NewTab.Title" = "새 탭 설정";
+
+/* Description displayed under the ”Offer to Open Copied Link” option. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
+"Settings.OfferClipboardBar.Status" = "파이어 폭스를 열 때";
+
+/* Title of setting to enable the Go to Copied URL feature. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
+"Settings.OfferClipboardBar.Title" = "복사된 링크를 열도록 제시";
+
+/* Title for Open With Settings */
+"Settings.OpenWith.PageTitle" = "메일 링크 열기";
+
+/* Label used as an item in Settings. When touched it will open a dialog to configure the open with (mail links) behaviour. */
+"Settings.OpenWith.SectionName" = "메일 앱";
+
+/* Button displayed at the top of the search settings. */
+"Settings.Search.Done.Button" = "완료";
+
+/* Button displayed at the top of the search settings. */
+"Settings.Search.Edit.Button" = "수정";
+
+/* title for a link that explains how mozilla collects telemetry */
+"Settings.SendUsage.Link" = "자세히 알아보기";
+
+/* A short description that explains why mozilla collects usage data. */
+"Settings.SendUsage.Message" = "Mozilla는 Firefox를 개선하기 위한 정보만 수집하기 위해 노력합니다.";
+
+/* The title for the setting to send usage data. */
+"Settings.SendUsage.Title" = "사용현황 데이터 보내기";
+
+/* Header description for tracking protection options section where Basic/Strict block list can be selected */
+"Settings.TrackingProtection.BlockListsHeader" = "Firefox가 어느 목록을 사용해서 사용자의 브라우징 활동을 추적하는 웹 요소를 차단할지 선택할 수 있습니다.";
+
+/* Title for tracking protection options section where Basic/Strict block list can be selected */
+"Settings.TrackingProtection.BlockListsTitle" = "차단 목록";
+
+/* Row in top-level of settings that gets tapped to show the tracking protection settings detail view. */
+"Settings.TrackingProtection.SectionName" = "추적 방지";
+
+/* Tracking protection settings option for using the basic blocklist. */
+"Settings.TrackingProtectionOption.BlockListBasic" = "기본 (권장)";
+
+/* Tracking protection settings option description for using the basic blocklist. */
+"Settings.TrackingProtectionOption.BlockListBasicDescription" = "웹사이트가 잘 작동하도록 몇몇 추적을 허용합니다.";
+
+/* Tracking protection settings option for using the strict blocklist. */
+"Settings.TrackingProtectionOption.BlockListStrict" = "엄격히";
+
+/* Tracking protection settings option description for using the strict blocklist. */
+"Settings.TrackingProtectionOption.BlockListStrictDescription" = "알려진 추적을 차단합니다. 어떤 웹사이트는 제대로 작동하지 않을 수 있습니다.";
+
+/* Description label shown on tracking protection options screen. */
+"Settings.TrackingProtectionOption.EnabledStateFooterLabel" = "추적이란 여러 웹사이트에 거쳐 사용자의 브라우징 데이터를 수집하는 것을 말합니다. 추적은 사용자의 브라우징 데이터와 개인정보를 이용해 사용자를 프로파일링하고 이를 기반으로 콘텐츠를 표시하는데 사용됩니다.";
+
+/* Description label shown at the top of tracking protection options screen. */
+"Settings.TrackingProtectionOption.EnabledStateHeaderLabel" = "추적 방지를 사용해서 알려진 추적 기관 차단";
+
+/* Settings option to specify that Tracking Protection is always off. */
+"Settings.TrackingProtectionOption.OffLabel" = "허용 안함";
+
+/* Settings option to specify that Tracking Protection is on only in Private Browsing mode. */
+"Settings.TrackingProtectionOption.OnInPrivateBrowsingLabel" = "비공개 브라우징 모드에서만";
+
+/* Settings option to specify that Tracking Protection is always on. */
+"Settings.TrackingProtectionOption.OnLabel" = "항상 켬";
+
+/* Title of link to help page to find out how to solve Sync issues */
+"Settings.TroubleShootSync.Title" = "문제 해결";
+
+/* Context menu item for sharing a link URL */
+"Share Link" = "링크 공유";
+
+/* Button title for cancelling Share screen */
+"ShareTo.Cancel.Button" = "취소";
+
+/* Label for show search suggestions setting. */
+"Show Search Suggestions" = "검색 추천 보기";
+
+/* Accessibility label for the tabs button in the (top) tab toolbar
+   Accessibility Label for the tabs button in the tab toolbar */
+"Show Tabs" = "탭 보기";
+
+/* Show the on-boarding screen again from the settings */
+"Show Tour" = "도움말 보기";
+
+/* Label for show search suggestions setting. */
+"Show search suggestions" = "검색 추천 보기";
+
+/* See http://mzl.la/1Qtkf0j
+   Text message / button in the settings table view */
+"Sign in" = "로그인";
+
+/* Accessibility Label for the tab toolbar Stop button */
+"Stop" = "정지";
+
+/* Support section title */
+"Support" = "지원";
+
+/* Accessibility hint for tab tray's displayed tab. */
+"Swipe right or left with three fingers to close the tab." = "탭을 닫기 위해서 세 손가락으로 좌나 우로 스와이프하세요.";
+
+/* Sync Firefox Account */
+"Sync Now" = "지금 동기화";
+
+/* Text displayed when the Sync home panel is empty, describing the features provided by Sync to invite the user to log in. */
+"Sync your tabs, bookmarks, passwords and more." = "탭과 북마크, 비밀번호 등을 동기화하세요.";
+
+/* Text displayed when the Sync home panel is empty, describing the features provided by Sync to invite the user to log in. */
+"Sync your tabs, passwords and more." = "탭과 비밀번호 등을 동기화하세요.";
+
+/* Message displayed when the user syncs for the first time */
+"Sync.FirstTimeMessage.Label" = "첫 동기화는 시간이 걸릴 수 있습니다";
+
+/* Message displayed when the user's account is syncing with no ellipsis */
+"Sync.Syncing.Label" = "동기화";
+
+/* Message displayed when the user's account is syncing with ellipsis at the end */
+"Sync.SyncingEllipsis.Label" = "동기화 중…";
+
+/* The Bookmark sync component, used in SyncState.Partial.Title */
+"SyncState.Bookmark.Title" = "즐겨 찾기";
+
+/* The Remote Clients sync component, used in SyncState.Partial.Title */
+"SyncState.Clients.Title" = "원격 클라이언트";
+
+/* Title for Sync status message when synchronization failed to complete */
+"SyncState.Failed.Title" = "동기화 실패";
+
+/* The History sync component, used in SyncState.Partial.Title */
+"SyncState.History.Title" = "이전 기록";
+
+/* The Logins sync component, used in SyncState.Partial.Title */
+"SyncState.Logins.Title" = "로그인";
+
+/* Title for Sync status message when Sync failed to start. */
+"SyncState.NotStarted.Title" = "동기화 할 수 없음";
+
+/* Title for Sync status message when Sync failed due to being offline */
+"SyncState.Offline.Title" = "동기화 오프라인";
+
+/* Title for Sync status message when a component of Sync failed to complete, where %@ represents the name of the component, i.e. Sync is experiencing issues syncing Bookmarks */
+"SyncState.Partial.Title" = "%@를 동기화 하는데 문제가 발생했습니다";
+
+/* The Tabs sync component, used in SyncState.Partial.Title */
+"SyncState.Tabs.Title" = "탭";
+
+/* Message spoken by VoiceOver saying the position of the single currently visible tab in Tabs Tray, along with the total number of tabs. E.g. \"Tab 2 of 5\" says that tab 2 is visible (and is the only visible tab), out of 5 tabs total. */
+"Tab %@ of %@" = "%2$@개 중 %1$@ 번 째 탭";
+
+/* Message spoken by VoiceOver saying the range of tabs that are currently visible in Tabs Tray, along with the total number of tabs. E.g. \"Tabs 8 to 10 of 15\" says tabs 8, 9 and 10 are visible, out of 15 tabs total. */
+"Tabs %@ to %@ of %@" = "%3$@개 중 %1$@ 번에서 %2$@ 번 째 탭";
+
+/* Accessibility label for the Tabs Tray view. */
+"Tabs Tray" = "탭 트레이";
+
+/* The button to undo the delete all tabs */
+"Tabs.DeleteAllUndo.Button" = "취소";
+
+/* The label indicating that all the tabs were closed */
+"Tabs.DeleteAllUndo.Title" = "%d개의 탭 닫힘";
+
+/* Text of the prompt user the data is invalid */
+"The data is invalid" = "올바르지 않은 데이타";
+
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+"The page could not be displayed in Reader View." = "읽기 모드에서 볼 수 없는 페이지 입니다.";
+
+/* Error message in the remote tabs panel */
+"There was a problem accessing tabs from your other devices. Try again in a few moments." = "다른 기기의 탭에 접근하는데 문제가 발생했습니다. 잠시후 다시 시도해 주세요.";
+
+/* Error displayed when reader mode cannot be enabled */
+"There was an error converting the page" = "페이지를 변환하는데 오류가 발생했습니다.";
+
+/* See http://mzl.la/1G7uHo7 */
+"This allows you to save the image to your Camera Roll." = "카메라 롤에 사진을 저장할 수 있습니다.";
+
+/* Opening an external app */
+"This will open in another application" = "다른 어플리케이션에서 엽니다.";
+
+/* History tableview section header */
+"Today" = "오늘";
+
+/* Accessibility label for the Menu button. */
+"Toolbar.Menu.AccessibilityLabel" = "메뉴";
+
+/* Accessibility label for the Close All Tabs menu button. */
+"Toolbar.Menu.CloseAllTabs" = "모든 탭 닫기";
+
+/* Panel accessibility label */
+"Top sites" = "상위 사이트";
+
+/* Description label for the empty Top Sites state. */
+"TopSites.EmptyState.Description" = "자주 방문한 사이트가 여기에 표시됩니다.";
+
+/* The title for the empty Top Sites state */
+"TopSites.EmptyState.Title" = "자주 방문하는 사이트에 오신걸 환영합니다";
+
+/* Button shown in editing mode to remove this site from the top sites panel. */
+"TopSites.RemovePage.Button" = "페이지 삭제 - %@";
+
+/* Tile title for Twitter */
+"Twitter" = "Twitter";
+
+/* Button to update the user's password */
+"Update" = "업데이트";
+
+/* Text message in the settings table view */
+"Upgrade Firefox to connect." = "연결을 위해서 Firefox를 업그레이드합니다.";
+
+/* Username textbox in Authentication prompt */
+"Username" = "사용자 이름";
+
+/* Text message in the settings table view */
+"Verify your email address." = "이메일 주소를 확인해 주세요.";
+
+/* Version number of Firefox shown in settings */
+"Version %@ (%@)" = "버전 %1$@ (%2$@)";
+
+/* Accessibility label for the main web content view */
+"Web content" = "웹 콘텐츠";
+
+/* See http://mzl.la/1LXbDOL */
+"Welcome to your Reading List" = "읽기 목록에 오신걸 환영합니다.";
+
+/* Restore Tabs Prompt Title */
+"Well, this is embarrassing." = "아, 이럴수가.";
+
+/* Tile title for Wikipedia */
+"Wikipedia" = "Wikipedia";
+
+/* Button to save the user's password */
+"Yes" = "네";
+
+/* History tableview section header */
+"Yesterday" = "어제";
+
+/* Error message in the remote tabs panel */
+"You don’t have any tabs open in Firefox on your other devices." = "다른 기기에서 연 탭이 없습니다.";
+
+/* Tile title for YouTube */
+"YouTube" = "YouTube";
+
+/* Your Rights settings section title */
+"Your Rights" = "사용자 권리";
+
+/* Accessibility label for Desktop Computer (PC) image in remote tabs list */
+"computer" = "컴퓨터";
+
+/* Relative time for a tab that was visited within the last few moments. */
+"just now" = "방금전";
+
+/* Accessibility label for Mobile Device image in remote tabs list */
+"mobile device" = "모바일 기기";
+
+/* Relative date for dates older than a month and less than two months. */
+"more than a month ago" = "한달전";
+
+/* Description for a date more than a week ago, but less than a month ago. */
+"more than a week ago" = "일주일전";
+
+/* Accessibility label for read article in reading list. It's a past participle - functions as an adjective. */
+"read" = "읽었음";
+
+/* Relative date for date in past week. */
+"this week" = "이번주";
+
+/* Relative date for date older than a minute. */
+"today at %@" = "오늘 %@";
+
+/* Accessibility label for unread article in reading list. It's a past participle - functions as an adjective. */
+"unread" = "않읽음";
+
+/* Relative date for yesterday. */
+"yesterday" = "어제";
+

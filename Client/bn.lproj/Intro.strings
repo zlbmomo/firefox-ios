@@ -1,0 +1,48 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "অনেকটা ওয়েব পেজ ব্রাউজ করুন একইসময় ট্যাবের সাহায্যে।";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "Firefox সংযোগ করুন সব জায়গায় যেখানে আপনি এটা ব্যবহার করেন।";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "ফায়ারফক্সের সাথে - শুধুমাত্র মেইল নয় - যেকোনো ইমেইল অ্যাপ ব্যবহার করুন।";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "আপনার মেইল এসেছে… অপশনসমূহ";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "ব্যাক্তিগত ব্রাউজিং মোডে চলে যেতে মুখোশ চিহ্ন স্পর্শ করুন।";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "ব্রাউজ করুন এমন ভাবে, যেনো কেউ দেখছে না।";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "ভিন্ন কিছু খুঁজছেন? সেটিংস থেকে অন্য আরেকটি ডিফল্ট সার্চ ইঞ্জিন পছন্দ (অথবা নিজের যুক্ত) করুন।";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "আপনার খোঁজ, আপনার পথ";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "বুকমার্ক, পাসওয়ার্ড এবং অন্যান্য জিনিস যা আপনি Firefox এ সংরক্ষণ করে থাকেন, তা আপনার সকল ডিভাইসে পেতে হলে, সিঙ্ক ব্যবহার করুন।";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "যেখানে আপনি রেখেছিলেন সেখান থেকেই শুরু করুন";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "একটি আধুনিক মোবাইল ব্রাউজার Mozilla থেকে, যারা একটি অলাভজনক প্রতিষ্ঠান এবং উন্মুক্ত ওয়েবের জন্যে প্রতিজ্ঞাবদ্ধ।";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "Firefox নির্বাচন করার জন্য ধন্যবাদ!";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "পরিচায়ক স্লাইড %2$@ এর %1$@";
+
+/* See http://mzl.la/1T8gxwo */
+"Personalize your Firefox just the way you like in Settings." = "সেটিংসে আপনার Firefox-কে নিজের মতোন করে সাজান ঠিক যেভাবে আপনি চান।";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "সাইন ইন করুন Firefox এ";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "ব্রাউজিং করা শুরু করুন";
+

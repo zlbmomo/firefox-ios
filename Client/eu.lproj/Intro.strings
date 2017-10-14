@@ -1,0 +1,48 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "Nabigatu hainbat web orri aldi berean fitxen bitartez.";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "Konektatu Firefox erabiltzen duzun toki orotan.";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "Erabili edozein posta-aplikazio Firefoxekin.";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "Postaren aukera berriak";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "Sakatu maskararen ikonoan nabigatze pribatuko modura aldatzeko.";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "Nabigatu inor begira ez balego bezala";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "Zerbait desberdinaren bila? Aukeratu beste bilaketa-motor lehenetsi bat ezarpenetan (edo gehitu zurea).";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "Bilaketa, zure erara";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "Erabili Sync laster-markak, pasahitza eta Firefoxen gailu guztietan gordetzen dituzun beste gauzak aurkitzeko.";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "Jarraitu utzi zenuen tokitik";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "Web ireki eta librearekin konprometituta dagoen irabazi asmorik gabeko Mozillaren mugikorretarako nabigatzaile modernoa.";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "Eskerrik asko Firefox aukeratzeagatik!";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "Atariko diapositiba (%2$@/%1$@)";
+
+/* See http://mzl.la/1T8gxwo */
+"Personalize your Firefox just the way you like in Settings." = "Pertsonalizatu Firefox nahi duzun moduan ezarpenetan.";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "Hasi saioa Firefoxen";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "Hasi nabigatzen";
+

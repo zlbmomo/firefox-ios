@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "Istoric de navigare";
+
+/* Settings item for clearing the cache */
+"Cache" = "Cache";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "Șterge datele private";
+
+/* Settings item for clearing cookies */
+"Cookies" = "Cookie-uri";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "Date offline ale site-urilor web";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "Autentificări salvate";
+

@@ -1,0 +1,7 @@
+/* Re-using more info label from 'anonymous usage data' item for showing a 'More Info' link on the Tracking Protection settings screen.
+          See http://bit.ly/1SmEXU1 */
+"More Info…" = "Więcej informacji…";
+
+/* See http://bit.ly/1SmEXU1 */
+"Send Anonymous Usage Data" = "Przesyłanie anonimowych danych o użyciu";
+

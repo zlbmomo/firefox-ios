@@ -1,0 +1,48 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "با زبانه‌ها چندین صفحه‌ی وب را در یک زمان مرور کنید.";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "به فایرفاکس متصل شوید هر جا که از آن استفاده می‌کنید.";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "با فایرفاکس، از هر برنامه‌ای برای رایانامه‌ها استفاده کنید - نه فقط Mail.";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "شما رایانامه دارید… گزینه‌ها";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "بر روی دکمهٔ ماسک مانند ضربه بزنید تا وارد حالت مرور ناشناس بشوید.";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "بدون دغدغه نگاه‌ها مرور کنید";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "دنبال یک چیز متفاوت هستید؟ در قسمت تنظیمات، یک موتور جست‌وجو پیش‌فرض دیگر انتخاب کنید (یا مال خودتان را اضافه کنید).";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "جست‌وجو شما، به روش شما";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "از همگام‌سازی برای پیدا کردن نشانک‌ها، گذرواژه‌ها و سایر چیزهایی که در فایرفاکس در سایر دستگاه ذخیره می‌کنید، استفاده کنید.";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "از همان جایی که قبلا بودید ادامه دهید";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "یک مرورگر پیشرفته از موزیلا، موسسه‌ای غیرانتفاعی که به وب آزاد و باز متعهد است.";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "از شما برای انتخاب فایرفاکس متشکریم!";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "اسلاید مقدماتی %1$@ از %2$@";
+
+/* See http://mzl.la/1T8gxwo */
+"Personalize your Firefox just the way you like in Settings." = "سفارشی سازی فایرفاکس خودتان به شیوه که می پسندید در تنظیمات.";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "ورود به فایرفاکس";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "شروع وب‌گردی";
+

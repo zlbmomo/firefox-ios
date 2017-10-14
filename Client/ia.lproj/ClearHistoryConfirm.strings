@@ -1,0 +1,12 @@
+/* The cancel button when confirming clear history. */
+"Cancel" = "Cancellar";
+
+/* The button that clears history even when Sync is connected. */
+"Clear" = "Clarar";
+
+/* Description of the confirmation dialog shown when a user tries to clear history that's synced to another device. */
+"History will be removed from all your connected devices. This cannot be undone." = "Le chronologia sera removite ex tote tu apparatos connexe. Isto non potera ser disfacite.";
+
+/* The confirmation button that clears history even when Sync is connected. */
+"OK" = "OK";
+

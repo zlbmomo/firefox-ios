@@ -1,0 +1,48 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "Pārlūkojiet vairākas mājas lapas vienlaicīgi izmantojot cilnes.";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "Pieslēdzieties Firefox, visur kur to lietojat.";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "Izmantot jebkuru e-pasta lietotni - ne tikai Mail - ar Firefox.";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "Jums pienācis pasts… iestatījumi";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "Pieskarieties maskas ikonai, lai nokļūtu privātās pārlūkošanas režīmā.";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "Pārlūko un neuztraucies, ka kāds skatītos";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "Meklējat ko citu? Izvēlieties citu noklusēto meklētāju (vai pievienojiet savu) Iestatījumos.";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "Meklējiet pa savam";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "Izmantojiet Sync, lai atrastu grāmatzīmes, paroles un citas lietas no Firefpx visās jūsu ierīcēs.";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "Turpiniet, kur beidzāt";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "Moderns mobilais pārlūks no Mozilla - bezpeļņas organizācijas, kas rūpējas par interneta atvērtību un brīvību.";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "Paldies, ka izvēlējāties Firefox!";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "Ievada slaids %1$@ no %2$@";
+
+/* See http://mzl.la/1T8gxwo */
+"Personalize your Firefox just the way you like in Settings." = "Pielāgojiet Firefox savām vēlmēm Iestatījumos.";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "Ieiet Firefox";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "Sākt pārlūkošanu";
+

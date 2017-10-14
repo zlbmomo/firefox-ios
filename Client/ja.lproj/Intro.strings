@@ -1,0 +1,48 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "タブを使えば、複数のウェブページを同時に開けます。";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "Firefox アカウントにログインすれば、家や職場のブックマークやパスワード、履歴などを同期できます。";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "Firefox なら、Mail 以外にも好きなメールアプリを使えます。";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "メールを受信しました... オプション";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "プライベートブラウジングモードへ切り替えるにはマスクアイコンをタップしてください。";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "誰にも監視されないブラウジング";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "何か違ったものを探していますか？ 設定で別の検索エンジンを既定として選んでみましょう (任意のエンジンの追加も可能です)。";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "好きな方法で検索";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "Sync を使えば、お使いのすべての端末から、ブックマークやパスワードなど Firefox へ保存したデータにアクセスできます。";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "やめたところから再開できます。";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "自由で開かれたウェブの実現に取り組んでいる非営利法人の Mozilla がお届けするモダンなモバイルブラウザー。";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "Firefox を選んでいただきありがとうございます！";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "導入スライド %2$@ 枚中 %1$@ 枚目";
+
+/* See http://mzl.la/1T8gxwo */
+"Personalize your Firefox just the way you like in Settings." = "Firefox を自分好みの設定にカスタマイズできます。";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "Firefox にログイン";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "ブラウジングをはじめる";
+

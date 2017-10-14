@@ -1,0 +1,96 @@
+/* 'After 1 hour' interval item for selecting when to require passcode */
+"After 1 hour" = "1 घंटे के बाद";
+
+/* 'After 1 minute' interval item for selecting when to require passcode */
+"After 1 minute" = "1 मिनट के बाद";
+
+/* 'After 5 minutes' interval item for selecting when to require passcode */
+"After 5 minutes" = "5 मिनट के बाद";
+
+/* 'After 10 minutes' interval item for selecting when to require passcode */
+"After 10 minutes" = "10 मिनट के बाद";
+
+/* 'After 15 minutes' interval item for selecting when to require passcode */
+"After 15 minutes" = "15 मिनट के बाद";
+
+/* Label used as a setting item and title of the following screen to change the current passcode */
+"Change Passcode" = "पासकोड परिवर्तन करें";
+
+/* Title of the dialog used to request the passcode */
+"Enter Passcode" = "पासकोड प्रविष्ट करें";
+
+/* Text displayed above the input field when changing the existing passcode */
+"Enter a new passcode" = "एक नया पासकोड प्रविष्ट करें";
+
+/* Text displayed above the input field when entering a new passcode */
+"Enter a passcode" = "एक पासकोड प्रविष्ट करें";
+
+/* Text displayed above the input field when changing the existing passcode */
+"Enter passcode" = "पासकोड प्रविष्ट करें";
+
+/* Label for the Face ID/Passcode item in Settings */
+"Face ID & Passcode" = "फेस आईडी और पासकोड";
+
+/* 'Immediately' interval item for selecting when to require passcode */
+"Immediately" = "तुरंत";
+
+/* Error message displayed when user enters incorrect passcode when trying to enter a protected section of the app with attempts remaining */
+"Incorrect passcode. Try again (Attempts remaining: %d)." = "गलत पासकोड. दोबारा कोशिश करें (बाकि प्रयास: %d).";
+
+/* Error message displayed when user enters incorrect passcode when trying to enter a protected section of the app */
+"Incorrect passcode. Try again." = "गलत पासकोड. दोबारा कोशिश करें.";
+
+/* Error message displayed when user enters incorrect passcode and has reached the maximum number of attempts. */
+"Maximum attempts reached. Please try again in an hour." = "ज्यादा से ज्यादा प्रयास हो चुके हैं. कृपया एक घंटे बाद दोबारा प्रयास करें.";
+
+/* Error message displayed when user enters incorrect passcode and has reached the maximum number of attempts. */
+"Maximum attempts reached. Please try again later." = "ज्यादा से ज्यादा प्रयास हो चुके हैं. कृपया बादमे दोबारा प्रयास करें.";
+
+/* Error message displayed when user tries to enter the same passcode as their existing code when changing it. */
+"New passcode must be different than existing code." = "नया पासकोड मौजूद कोड से अलग होना चाहिए.";
+
+/* Label for the Passcode item in Settings */
+"Passcode For Logins" = "लॉग इन के लिए पासकोड";
+
+/* Error message displayed to user when their confirming passcode doesn't match the first code. */
+"Passcodes didn’t match. Try again." = "पासकोड का मिलान नहीं हुआ. पुनः प्रयास करें.";
+
+/* Text displayed above the input field when confirming a passcode */
+"Re-enter passcode" = "पुनः पासकोड प्रविष्ट करें";
+
+/* Text displayed in the 'Interval' section, followed by the current interval setting, e.g. 'Immediately' */
+"Require Passcode" = "पासकोड की आवश्यकता है";
+
+/* Title of the dialog used to set a passcode */
+"Set Passcode" = "पासकोड सेट करें";
+
+/* Label for the Touch ID/Passcode item in Settings */
+"Touch ID & Passcode" = "टच आइडी और पासकोड";
+
+/* Label used as a setting item to turn off passcode */
+"Turn Passcode Off" = "पासकोड असक्षम करें";
+
+/* Label used as a setting item to turn on passcode */
+"Turn Passcode On" = "पासकोड सक्षम करें";
+
+/* Touch ID prompt subtitle when turning off passcode */
+"Turn off your passcode." = "अपना पासकोड असक्षम करें.";
+
+/* List section title for when to use Face ID */
+"Use Face ID" = "फेस आईडी अपनायें";
+
+/* List section title for when to use Touch ID */
+"Use Touch ID" = "टच आईडी का उपयोग करें.";
+
+/* Touch ID prompt subtitle when accessing logins */
+"Use your fingerprint to access Logins now." = "अब लॉगिन ऐक्सेस के लिए अपने फिंगरप्रिंट का उपयोग करें.";
+
+/* Touch ID prompt subtitle when accessing private browsing */
+"Use your fingerprint to access Private Browsing now." = "निजी ब्राउज़िंग करने के लिये अपने उंगली के निशान का प्रयोग करें";
+
+/* Touch ID prompt subtitle when disabling Touch ID */
+"touchid.disable.reason.label" = "टच आईडी निष्क्रिय करने के लिये अपने उंगली के निशान का प्रयोग करें.";
+
+/* Touch ID prompt subtitle when accessing the require passcode setting */
+"touchid.require.passcode.reason.label" = "अपने अपेक्षित पासकोड अंतराल तक पहुँचने के लिये अपने उंगली के निशान का प्रयोग करें.";
+

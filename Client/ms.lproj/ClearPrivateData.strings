@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "Sejarah Pelayaran";
+
+/* Settings item for clearing the cache */
+"Cache" = "Cache";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "Buang Data Peribadi";
+
+/* Settings item for clearing cookies */
+"Cookies" = "Kuki";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "Data Laman web Luar talian";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "Log Masuk Tersimpan";
+

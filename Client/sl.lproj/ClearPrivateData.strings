@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "Zgodovina brskanja";
+
+/* Settings item for clearing the cache */
+"Cache" = "Predpomnilnik";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "Počisti zasebne podatke";
+
+/* Settings item for clearing cookies */
+"Cookies" = "Piškotki";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "Podatki pri delu brez povezave";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "Shranjene prijave";
+

@@ -1,0 +1,18 @@
+/* Header for the list of devices table */
+"Available devices:" = "دستیاب آلات:";
+
+/* Close button in top navigation bar */
+"Close" = "بند کریں";
+
+/* See http://mzl.la/1ISlXnU */
+"Please open Firefox, go to Settings and sign in to continue." = "براہ مہربانی Firefox کھولیں، سیٹینگز میں جائیں اور جاری رکھنے کے لیئے سائن ان کریں۔";
+
+/* Navigation bar button to Send the current page to a device */
+"Send" = "ارسال کریں";
+
+/* Title of the dialog that allows you to send a tab to a different device */
+"Send Tab" = "ٹیب ارسال کریں";
+
+/* See http://mzl.la/1ISlXnU */
+"You are not signed in to your Firefox Account." = "آپ اپنے Firefox اکائونٹ میں سائن ان نہیں ہیں۔";
+

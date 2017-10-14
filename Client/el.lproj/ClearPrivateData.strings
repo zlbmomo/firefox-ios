@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "Ιστορικό περιήγησης";
+
+/* Settings item for clearing the cache */
+"Cache" = "Προσωρινή μνήμη";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "Διαγραφή ιδιωτικών δεδομένων";
+
+/* Settings item for clearing cookies */
+"Cookies" = "Cοokies";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "Δεδομένα ιστοσελίδων";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "Αποθηκευμένοι λογαριασμοί";
+

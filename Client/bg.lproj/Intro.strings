@@ -1,0 +1,48 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "Разглеждайте няколко страници едновременно в раздели.";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "Свържете се с Firefox, навсякъде където го използвате.";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "С Firefox използвате всяко приложение за поща, не само Mail.";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "Настройки на поща";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "Докоснете пиктограмата с маска, за да включите режима на поверително разглеждане.";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "Разглеждайте без да ви следят";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "Търсите нещо друго? Изберете друга стандартна търсеща машина (или добавете своя) в настройките.";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "Търсете, както ви е удобно";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "Използвайте Sync, за да намерите отметките, паролите и другите неща, които запазвате във Firefox на всички ваши устройства.";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "Продължете откъдето сте спрели";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "Модерен мобилен мрежов четец от Mozilla, организацията с нестопанска цел, отдадена на свободната и отворена Мрежа.";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "Благодарим ви, че избрахте Firefox!";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "Кадър с въведение %1$@ от %2$@";
+
+/* See http://mzl.la/1T8gxwo */
+"Personalize your Firefox just the way you like in Settings." = "Направете вашия Firefox точно такъв, какъвто го искате в настройките.";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "Вписване във Firefox";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "Започнете да разглеждате";
+

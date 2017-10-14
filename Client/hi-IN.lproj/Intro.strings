@@ -1,0 +1,48 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "टैब्स के साथ एक ही समय में कई वेब पृष्ठों को ब्राउज़ करें.";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "सभी जगह Firefox जोड़ें जहाँ आप इसका उपयोग करते हैं.";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "किसी भी ईमेल ऐप का उपयोग करें - सिर्फ मेल नहीं - Firefox के साथ.";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "आपको मेल मिल गया है… विकल्प";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "निजी ब्राउज़िंग मोड में जाने के लिए मास्क चिह्न को टैप करें.";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "ऐसे ब्राउज़ करें जैसे कोई नहीं देख रहा है";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "कुछ अलग खोंज रहे हैं? सेटिंग्स में दूसरा डिफ़ॉल्ट खोज इंजन(या अपना खुद जोड़े) चुने.";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "आपकी खोज, आपका तरीका";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "आपके सभी डिवाइसों पर बुकमार्क, पासवर्ड और अन्य चीज़ों को Firefox में सहेजने के लिए सिंक का उपयोग करें.";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "जहाँ आपने छोड़ा था वहाँ से चुने";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "Mozilla द्वारा एक आधुनिक मोबाइल ब्राउज़र, गैर-लाभकारी एक स्वतंत्र और उन्मुक्त वेब के लिए प्रतिबद्ध.";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "Firefox चुनने के लिए धन्यवाद!";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "आरंभिक स्लाइड %1$@ के %2$@";
+
+/* See http://mzl.la/1T8gxwo */
+"Personalize your Firefox just the way you like in Settings." = "अपनी पसंद के अनुसार सेटिंग में अपने Firefox को निजीकृत करें.";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "Firefox पे साइन इन करें";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "ब्राउजिंग शुरू करें";
+

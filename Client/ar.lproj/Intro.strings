@@ -1,0 +1,48 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "تصفح أكثر من صفحة وِب في نفس الوقت مع الألسنة.";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "اشبك فَيرفُكس أينما تستخدمه.";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "استخدم أيّا من تطبيقات البريد على فَيَرفُكس، ليس فقط تطبيق «البريد».";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "باتت لديك خيارات للبريد";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "انقر أيقونة القناع للانتقال إلى وضع التصفح الخاص.";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "تصفح و لا أحد يراقبك";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "أتبحث عن شيء مختلف؟ اختر محرّك بحث آخر ليكون المبدئي (أو أضف واحدا من عندك) من الإعدادات.";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "تبحثُ بأسلوبك أنت";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "استعمل «تزامن» لتجد العلامات، وكلمات السر وغيرها من الأمور التي تحفظها في فَيَرفُكس على أجهزتك.";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "أكمل من حيث انتهيت";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "متصفّح هواتف حديث من موزيلا، المؤسسة غير الربحية الملتزمة تجاه وِب حر ومفتوح.";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "شكرًا لك على اختيارك فَيَرفُكس.";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "الشريحة التعريفية %1$@ من %2$@";
+
+/* See http://mzl.la/1T8gxwo */
+"Personalize your Firefox just the way you like in Settings." = "خصص فيرفكس كما تحب من خلال الإعدادات.";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "لِج إلى فيرفكس";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "ابدأ التصفح";
+

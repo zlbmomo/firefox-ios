@@ -1,0 +1,48 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "使用分頁標籤一次瀏覽多個網頁。";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "在任何地方使用時都連線到 Firefox。";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "可在 Firefox 使用任何郵件程式，而不只是內建的「郵件」App。";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "設定要使用的郵件程式";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "點擊眼罩圖示，快速進入隱私瀏覽模式。";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "上網時，彷彿沒有人看著你";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "想找點不一樣的東西嗎？可在設定畫面中選擇不同的預設搜尋引擎，或自行新增。";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "用你的方式搜尋";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "使用 Sync 來尋找您在任何裝置中，儲存到 Firefox 的書籤、密碼等項目。";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "從結束的地方繼續";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "Firefox 是來自 Mozilla 的現代行動瀏覽器。Mozilla 是一個致力於自由與開放 Web 的非營利組織。";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "感謝您選擇使用 Firefox！";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "介紹畫面，第 %1$@ 張，共 %2$@ 張";
+
+/* See http://mzl.la/1T8gxwo */
+"Personalize your Firefox just the way you like in Settings." = "到設定畫面中用您想要的方式個人化 Firefox。";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "登入至 Firefox";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "開始瀏覽";
+

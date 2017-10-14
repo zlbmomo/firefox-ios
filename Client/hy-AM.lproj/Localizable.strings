@@ -1,0 +1,745 @@
+/* Button for larger reader font size. Keep this extremely short! This is shown in the reader mode toolbar. */
+"+" = "+";
+
+/* Button for smaller reader font size. Keep this extremely short! This is shown in the reader mode toolbar. */
+"-" = "-";
+
+/* The page control button that lets you switch between pages in top sites */
+"ActivityStream.PageControl.Button" = "Հաջորդ էջը";
+
+/* Section title label for Top Sites */
+"ActivityStream.TopSites.SectionTitle" = "Լավագույն կայքեր";
+
+/* Accessibility label for the Add Tab button in the Tab Tray. */
+"Add Tab" = "Ավելացնել ներդիր";
+
+/* Accessibility label for action adding current page to reading list.
+   Name for button adding current article to reading list in reader mode */
+"Add to Reading List" = "Հավելել ընթերցացուցակում";
+
+/* Button to dismiss the 'Add Pass Failed' alert.  See https://support.apple.com/HT204003 for context on Wallet. */
+"AddPass.Error.Dismiss" = "Լավ";
+
+/* Accessibility label for address and search field, both words (Address, Search) are therefore nouns. */
+"Address and Search" = "Հասցեն և Որոնում";
+
+/* Used as a button label for crash dialog prompt */
+"Always Send" = "Միշտ ուղարկել";
+
+/* Tile title for Amazon */
+"Amazon" = "Amazon";
+
+/* Authentication prompt title */
+"Authentication required" = "Պահանջվում է իսկորոշում";
+
+/* Accessibility label for the Back button in the tab toolbar. */
+"Back" = "Հետ";
+
+/* Block pop-up windows setting */
+"Block Pop-up Windows" = "Վերադառնալ ելնող պատուհանին";
+
+/* Panel accessibility label */
+"Bookmarks" = "Էջանիշեր";
+
+/* Status label for the empty Bookmarks state. */
+"Bookmarks you save will show up here." = "Ձեր պահպանած էջանիշերը կցուցադրվեն այստեղ:";
+
+/* The label to show the location of the folder where the bookmark is located */
+"Bookmarks.Folder.Label" = "Պանակ";
+
+/* The label for the location of the new folder */
+"Bookmarks.FolderLocation.Label" = "Տեղադրություն";
+
+/* The label for the title of the new folder */
+"Bookmarks.FolderName.Label" = "Պանակի անունը";
+
+/* The button to create a new folder */
+"Bookmarks.NewFolder.Label" = "Նոր պանակ";
+
+/* The label for the title of a bookmark */
+"Bookmarks.Title.Label" = "Անվանում";
+
+/* The label for the URL of a bookmark */
+"Bookmarks.URL.Label" = "URL";
+
+/* Accessibility label for brightness adjustment slider in Reader Mode display settings */
+"Brightness" = "Պայծառություն";
+
+/* Label for Cancel button */
+"Cancel" = "Չեղարկել";
+
+/* Accessibility hint for the color theme setting buttons in reader mode display settings */
+"Changes color theme." = "Փոխում է գույնային ոճը:";
+
+/* Accessibility hint for the font type buttons in reader mode display settings */
+"Changes font type." = "Փոխում է տառատեսակի տեսակը:";
+
+/* Label used as an item in Settings. When touched it will open a dialog prompting the user to make sure they want to clear all of their private data. */
+"Clear Private Data" = "Մաքրել Գաղտնի տվյալները";
+
+/* The button to open a new tab with the copied link */
+"ClipboardToast.GoToCopiedLink.Button" = "Անցնել";
+
+/* Message displayed when the user has a copied link on the clipboard */
+"ClipboardToast.GoToCopiedLink.Title" = "Անցնե՞լ պատճենված հղումով:";
+
+/* Accessibility label for action denoting closing a tab in tab list (tray) */
+"Close" = "Փակել";
+
+/* Accessibility label (used by assistive technology) notifying the user that the tab is being closed. */
+"Closing tab" = "Ներդիրի փակում";
+
+/* The button text in the Button Toast for switching to a fresh New Private Tab. */
+"ContextMenu.ButtonToast.NewPrivateTabOpened.ButtonText" = "Փոխարկել";
+
+/* The label text in the Button Toast for switching to a fresh New Private Tab. */
+"ContextMenu.ButtonToast.NewPrivateTabOpened.LabelText" = "Նոր Գաղտնի ներդիր է բացվել";
+
+/* The button text in the Button Toast for switching to a fresh New Tab. */
+"ContextMenu.ButtonToast.NewTabOpened.ButtonText" = "Փոխարկել";
+
+/* The label text in the Button Toast for switching to a fresh New Tab. */
+"ContextMenu.ButtonToast.NewTabOpened.LabelText" = "Նոր Ներդիր է բացվել";
+
+/* Copy the URL from the location bar */
+"Copy Address" = "Պատճենել հասցեն";
+
+/* Context menu item for copying an image to the clipboard */
+"Copy Image" = "Պատճենել պատկերը";
+
+/* Context menu item for copying a link URL to the clipboard */
+"Copy Link" = "Պատճենել հղումը";
+
+/* Accessibility message e.g. spoken by VoiceOver after the user wanted to add current page to the Reading List and this was not done, likely because it already was in the Reading List, but perhaps also because of real failures. */
+"Could not add page to Reading List. Maybe it’s already there?" = "Հնարավոր չէ հավելել էջը Ընթերցացուցակում: Միգուցե այն արդեն այնտե՞ղ է:";
+
+/* Accessibility message e.g. spoken by VoiceOver after adding current webpage to the Reading List failed. */
+"Could not add page to Reading list" = "Հնարավոր չէ հավելել էջը Ընթերցացուցակում";
+
+/* Error message that is shown in settings when there was a problem loading */
+"Could not load page." = "Հնարավոր չէ բեռնել էջը:";
+
+/* See http://mzl.la/1Qtkf0j */
+"Create an account" = "Ստեղծել հաշիվ";
+
+/* Dark theme setting in Reading View settings */
+"Dark" = "Մուգ";
+
+/* Debug option */
+"Debug: forget Sync auth state" = "Վրիպազերծում. մոռանալ Համաժամեցման իսկ. վիճակը";
+
+/* Debug option */
+"Debug: require password" = "Վրիպազերծում. գաղտնաբառ է պահանջվում";
+
+/* Debug option */
+"Debug: require upgrade" = "Վրիպազերծում. արդիացում է պահանջվում";
+
+/* Debug option */
+"Debug: use stage servers" = "Վրիպազերծում. օգտագործել փուլային սպասարկիչներ";
+
+/* Pending feature; currently unused string! Checkbox label shown after multiple alerts are shown */
+"Disable additional page dialogs" = "Անջատել լրացուցիչ էջի պատուհանները";
+
+/* Name for display settings button in reader mode. Display in the meaning of presentation, not monitor. */
+"Display Settings" = "Ցուցադրման կարգավորումներ";
+
+/* Prompt for saving a password. The first parameter is the username being saved. The second parameter is the hostname of the site. */
+"Do you want to save the password for %@ on %@?" = "Ցանկանո՞ւմ եք պահպանել գաղտնաբառը %1-ի համար %2$@-ում:";
+
+/* Prompt for saving a password with no username. The parameter is the hostname of the site. */
+"Do you want to save the password on %@?" = "Ցանկանո՞ւմ եք պահպանել գաղտնաբառը %@-ում:";
+
+/* Prompt for updating a password. The first parameter is the username being saved. The second parameter is the hostname of the site. */
+"Do you want to update the password for %@ on %@?" = "Ցանկանո՞ւմ եք թարմացնել գաղտնաբառը %1$@-ի համար %2$@-ում:";
+
+/* Prompt for updating a password with on username. The parameter is the hostname of the site. */
+"Do you want to update the password on %@?" = "Ցանկանո՞ւմ եք արդիացնել գաղտնաբառը %@-ում:";
+
+/* Done button on left side of the Settings view controller title bar */
+"Done" = "Պատրաստ է";
+
+/* Used as a button label for crash dialog prompt */
+"Don’t Send" = "Չուղարկել";
+
+/* The label of the button the user will press to reject the option to open a file in another application */
+"Downloads.Alert.Cancel" = "Ոչ";
+
+/* The label of the button the user will press to be presented with a list of other apps to open a file in */
+"Downloads.Alert.Confirm" = "Այո";
+
+/* The message of the alert box asking the user if they want to use another app to open a file. */
+"Downloads.Alert.Message" = "Firefox-ը չի կարողանում ներբեռնել կամ ցուցադրել այս ֆայլը: Բացե՞լ այն այլ հավելվածում:";
+
+/* The title of the alert box asking the user if they want to use another app to open a file. */
+"Downloads.Alert.Title" = "Firefox-ի Ներբեռնումներ";
+
+/* The message displayed to a user when they try and perform the download of an asset that Firefox cannot currently handle. */
+"Downloads.Error.Message" = "Ներբեռնումները դեռ չեն աջակցվում Firefox-ի կողմից:";
+
+/* Text message in the settings table view */
+"Enter your password to connect." = "Մուտքագրեք ձեր գաղտնաբառը՝ կապակցելու համար:";
+
+/* Label for button to perform advanced actions on the error page */
+"ErrorPages.Advanced.Button" = "Լրացուցիչ";
+
+/* Warning text when clicking the Advanced button on error pages */
+"ErrorPages.AdvancedWarning1.Text" = "Զգուշացում. մենք չենք կարող հաստատել, թե արդյոք ձեր կապակցումը այս կայքին անվտանգ է:";
+
+/* Button label to temporarily continue to the site from the certificate error page */
+"ErrorPages.VisitOnce.Button" = "Այդուհանդերձ, այցելել";
+
+/* Tile title for Facebook */
+"Facebook" = "Facebook";
+
+/* Title for firefox about:home page in tab history list */
+"Firefox.HomePage.Title" = "Firefox-ի Տնային էջը";
+
+/* General settings section title */
+"General" = "Գլխավոր";
+
+/* Pending feature; currently unused string! Button to browse to URL on the clipboard when browser is opened */
+"Go" = "Անցնել";
+
+/* Pending feature; currently unused string! Prompt message shown when browser is opened with URL on the clipboard */
+"Go to copied URL?" = "Անցնե՞լ պատճենված URL-ին:";
+
+/* Show the SUMO support page from the Support section in the settings. see http://mzl.la/1dmM8tZ */
+"Help" = "Օգնություն";
+
+/* Panel accessibility label */
+"History" = "Պատմություն";
+
+/* Title for the empty synced tabs state in the History Panel */
+"HistoryPanel.EmptySyncedTabsState.Title" = "Firefox Սինք";
+
+/* Title for the Back to History button in the History Panel */
+"HistoryPanel.HistoryBackButton.Title" = "Պատմություն";
+
+/* Title for the Recently Closed button in the History Panel */
+"HistoryPanel.RecentlyClosedTabsButton.Title" = "Վերջին փակվածները";
+
+/* Description that corresponds with a number of devices connected for the Synced Tabs Cell in the History Panel */
+"HistoryPanel.SyncedTabsCell.Description.Pluralized" = "%d սարքեր են կապակցվել";
+
+/* Title for the Synced Tabs Cell in the History Panel */
+"HistoryPanel.SyncedTabsCell.Title" = "Համաժամեցված սարքեր";
+
+/* Button cancelling changes setting the home page for the first time. */
+"HomePage.Set.Dialog.Cancel" = "Չեղարկել";
+
+/* Button accepting changes setting the home page for the first time. */
+"HomePage.Set.Dialog.OK" = "Կայել Տնային էջը";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.CloseTab.DiscoveryTitle" = "Փակել ներդիրը";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.Find.DiscoveryTitle" = "Գտնել";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.NewPrivateTab.DiscoveryTitle" = "Նեոր Գաղտնի Ներդիր";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.NewTab.DiscoveryTitle" = "Նոր Ներդիր";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.Reload.DiscoveryTitle" = "Կրկին բեռնել էջը";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.SelectLocationBar.DiscoveryTitle" = "Ընտրել տեղադրության գոտին";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.ShowNextTab.DiscoveryTitle" = "Ցուցադրել հաջորդ ներդիրը";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.ShowPreviousTab.DiscoveryTitle" = "Ցուցադրել նախորդ ներդիրը";
+
+/* Accessibility label for button increasing font size in display settings of reader mode */
+"Increase text size" = "Մեծացնել գրվածքի չափը";
+
+/* History tableview section header */
+"Last month" = "Վերջին ամսում";
+
+/* Remote tabs last synced time. Argument is the relative date string. */
+"Last synced: %@" = "Վերջին համաժանեցումը՝ %@";
+
+/* History tableview section header */
+"Last week" = "Վերջին շաբաթը";
+
+/* Settings item that opens a tab containing the licenses. See http://mzl.la/1NSAWCG */
+"Licenses" = "Արտոնագրեր";
+
+/* Light theme setting in Reading View settings */
+"Light" = "Բաց";
+
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+"Load original page" = "Բեռնել սկզբնական էջը";
+
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Firefox reader mode from another app. */
+"Loading content…" = "Բովանդակության բեռնում...";
+
+/* Button in settings screen to disconnect from your account
+   Disconnect button in the 'log out firefox account' alert */
+"Log Out" = "Դուրս գալ";
+
+/* Title of the 'log out firefox account' alert */
+"Log Out?" = "Դուրս գա՞լ";
+
+/* Authentication prompt log in button */
+"Log in" = "Մուտք գորխել";
+
+/* Label used as an item in Settings. When touched, the user will be navigated to the Logins/Password manager. */
+"Logins" = "Մուտքագրումներ";
+
+/* Button to not save the user's password */
+"LoginsHelper.DontSave.Button" = "Չպահպանել";
+
+/* Prompt for saving a login. The first parameter is the username being saved. The second parameter is the hostname of the site. */
+"LoginsHelper.PromptSaveLogin.Title" = "Պահպանե՞լ %1$@ մուտքագրումը %2$@-ի համար:";
+
+/* Prompt for saving a password with no username. The parameter is the hostname of the site. */
+"LoginsHelper.PromptSavePassword.Title" = "Պահպանե՞լ գաղտնաբառը %@-ի համար:";
+
+/* Prompt for updating a login. The first parameter is the username for which the password will be updated for. The second parameter is the hostname of the site. */
+"LoginsHelper.PromptUpdateLogin.Title" = "Թարմացնե՞լ %1$@ մուտքագրումը %2$@-ի համար:";
+
+/* Prompt for updating a password with no username. The parameter is the hostname of the site. */
+"LoginsHelper.PromptUpdatePassword.Title" = "Թարմացնե՞լ գաղտնաբառը %@-ի համար:";
+
+/* Button to save the user's password */
+"LoginsHelper.SaveLogin.Button" = "Պահպանել մուտքագրումը";
+
+/* Button to update the user's password */
+"LoginsHelper.Update.Button" = "Թարմացնել";
+
+/* Name for Mark as read button in reader mode
+   Title for the button that marks a reading list item as read */
+"Mark as Read" = "Նշել որպես ընթերցված";
+
+/* Name for Mark as unread button in reader mode
+   Title for the button that marks a reading list item as unread */
+"Mark as Unread" = "Նշել որպես չընթերցված";
+
+/* Error for a missing remote error number */
+"Missing error" = "Բացակայող սխալ";
+
+/* Accessibility label for the New Tab button in the tab toolbar. */
+"New Tab" = "Նոր Ներդիր";
+
+/* Restore Tabs Negative Action */
+"No" = "Ոչ";
+
+/* Message spoken by VoiceOver to indicate that there are no tabs in the Tabs Tray */
+"No tabs" = "Չկան ներդիրներ";
+
+/* Button to not save the user's password */
+"Not now" = "Ոչ հիմա";
+
+/* OK button */
+"OK" = "Լավ";
+
+/* Restore Tabs Affirmative Action */
+"Okay" = "Լավ";
+
+/* Title for prompt displayed to user after the app crashes */
+"Oops! Firefox crashed" = "Վա՜յ, Firefox-ը վթարվեց:";
+
+/* See http://mzl.la/1G7uHo7 */
+"Open Settings" = "Բացել կարգավորումները";
+
+/* Context menu item for opening a link in a new tab */
+"Open in New Tab" = "Բացել Նոր Ներդիրով";
+
+/* String indicating that the file can be opened in another application on the device */
+"Open in…" = "Բացել՝";
+
+/* Title of the message shown when the user attempts to navigate to an invalid link. */
+"OpenURL.Error.Title" = "Հնարավոր չէ բացել էջը";
+
+/* Opening an external URL */
+"Opening %@" = "%@-ի բացում";
+
+/* Password textbox in Authentication prompt */
+"Password" = "Գաղտնաբառ";
+
+/* Paste the URL into the location bar */
+"Paste" = "Տեղադրել";
+
+/* Paste the URL into the location bar and visit */
+"Paste & Go" = "Տեղադրել և Առաջ";
+
+/* Privacy section title */
+"Privacy" = "Գաղտնիություն";
+
+/* Show Firefox Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/firefox/ */
+"Privacy Policy" = "Գաղտնիության Դրույթներ";
+
+/* Title for quick-search engines settings section. */
+"Quick-Search Engines" = "Որոգ որոնման որոնիչներ";
+
+/* Accessibility label for the Reader View button */
+"Reader View" = "Ընթերցելու եղանակ";
+
+/* Accessibility message e.g. spoken by VoiceOver when Reader Mode becomes available. */
+"ReaderMode.Available.VoiceOverAnnouncement" = "Ընթերցելու կերպը հասանելի է";
+
+/* Panel accessibility label */
+"Reading list" = "Ընթերցելու ցանկ";
+
+/* Title for the Recently Closed Tabs Panel */
+"RecentlyClosedTabsPanel.Title" = "Վերջերս փակված";
+
+/* Accessibility Label for the tab toolbar Reload button */
+"Reload" = "Կրկին բեռնել";
+
+/* Title for the button that removes a reading list item */
+"Remove" = "Հեռացնել";
+
+/* Name for button removing current article from reading list in reader mode */
+"Remove from Reading List" = "ՀԵռացնել Ընթերցացուցակից";
+
+/* Action Sheet Button for Requesting the Desktop Site */
+"Request Desktop Site" = "Դեսքթոփ կայքի հարցում";
+
+/* Action Sheet Button for Requesting the Mobile Site */
+"Request Mobile Site" = "Բջջային կայքի հարցում";
+
+/* Accessibility label for button resetting font size in display settings of reader mode */
+"Reset text size" = "Վերակայել գրվածքի չափը";
+
+/* Context menu item for saving an image */
+"Save Image" = "Պահպանել պատկերը";
+
+/* Setting to enable the built-in password manager */
+"Save Logins" = "Պահպանել մուտքագրումը";
+
+/* See http://mzl.la/1LXbDOL */
+"Save pages to your Reading List by tapping the book plus icon in the Reader View controls." = "Պահպանեք էջերը ձեր Ընթերցացուցակում՝ հպելով գրքի պատկերակին Ընթերցացուցակի կառավարման գոտիում:";
+
+/* Navigation title for search settings.
+   Open search section of settings */
+"Search" = "Որոնում";
+
+/* The text shown in the URL bar on about:home */
+"Search or enter address" = "Որոնել կամ մուտքագրել հասցե";
+
+/* The message that asks the user to Add the search provider explaining where the search engine will appear */
+"Search.ThirdPartyEngines.AddMessage" = "Նոր որոնիչը կհայտնվի արագ որոնման գոտիում:";
+
+/* The success message that appears after a user sucessfully adds a new search engine */
+"Search.ThirdPartyEngines.AddSuccess" = "Ավելացվել է որոնիչ";
+
+/* The title that asks the user to Add the search provider */
+"Search.ThirdPartyEngines.AddTitle" = "Ավելացնե՞լ որոնիչ";
+
+/* The cancel button if you do not want to add a search engine. */
+"Search.ThirdPartyEngines.Cancel" = "Չեղարկել";
+
+/* A message explaining fault in custom search engine form. */
+"Search.ThirdPartyEngines.DuplicateErrorMessage" = "Տվյալ անվանումով կամ URL-ով որոնիչ արդեն ավելացված է:";
+
+/* A title stating that we failed to add custom search engine. */
+"Search.ThirdPartyEngines.DuplicateErrorTitle" = "Ձախողում";
+
+/* A title explaining that we failed to add a search engine */
+"Search.ThirdPartyEngines.FailedMessage" = "Որոնիչը հնարավոր չէ ավելացնել:";
+
+/* A title explaining that we failed to add a search engine */
+"Search.ThirdPartyEngines.FailedTitle" = "Ձախողում";
+
+/* A message explaining fault in custom search engine form. */
+"Search.ThirdPartyEngines.FormErrorMessage" = "Լրացրե՛ք բոլոր դաշտերը:";
+
+/* A title stating that we failed to add custom search engine. */
+"Search.ThirdPartyEngines.FormErrorTitle" = "Ձախողում";
+
+/* The confirmation button */
+"Search.ThirdPartyEngines.OK" = "Լավ";
+
+/* Accessibility hint describing the action performed when a search suggestion is clicked */
+"Searches for the suggestion" = "Առաջարկության որոնում";
+
+/* Accessibility label for the lock icon, which is only present if the connection is secure */
+"Secure connection" = "Անվտանգ կապակցում";
+
+/* Menu item in settings used to open input.mozilla.org where people can submit feedback */
+"Send Feedback" = "Ուղարկել արձագանք";
+
+/* Used as a button label for crash dialog prompt */
+"Send Report" = "Ուղարկել զեկույց";
+
+/* Message displayed in the crash dialog above the buttons used to select when sending reports */
+"Send a crash report so Mozilla can fix the problem?" = "Ուղարկե՞լ վթարի զեկույց Mozilla-ին, որպեսզի այն շտկվի:";
+
+/* Button title for cancelling SendTo screen */
+"SendTo.Cancel.Button" = "Չեղարկել";
+
+/* Message in error prompt explaining why the URL is invalid. */
+"SendTo.Error.Message" = "Միայն HTTP և HTTPS հղումները կարող են համօգտագործվել:";
+
+/* OK button to dismiss the error prompt. */
+"SendTo.Error.OK.Button" = "Լավ";
+
+/* Title of error prompt displayed when an invalid URL is shared. */
+"SendTo.Error.Title" = "Տվյալ հղումը հնարավոր չէ համօգտագործել:";
+
+/* Title in the settings view controller title bar */
+"Settings" = "Կարգավորումներ";
+
+/* The button text in Search Settings that opens the Custom Search Engine view. */
+"Settings.AddCustomEngine" = "Ավելացնել որոնիչ";
+
+/* The text on the Save button when saving a custom search engine */
+"Settings.AddCustomEngine.SaveButtonText" = "Պահպանել";
+
+/* The title of the  Custom Search Engine view. */
+"Settings.AddCustomEngine.Title" = "Ավելացնել որոնիչ";
+
+/* The title for the field which sets the title for a custom search engine. */
+"Settings.AddCustomEngine.TitleLabel" = "Անվանում";
+
+/* The placeholder for Title Field when saving a custom search engine. */
+"Settings.AddCustomEngine.TitlePlaceholder" = "Որոնիչ";
+
+/* The title for URL Field */
+"Settings.AddCustomEngine.URLLabel" = "URL";
+
+/* Button in settings that clears private data for the selected items. */
+"Settings.ClearPrivateData.Clear.Button" = "Մաքրել անձնական տվյալները";
+
+/* Label used as an item in Settings. When touched it will open a dialog prompting the user to make sure they want to clear all of their private data. */
+"Settings.ClearPrivateData.SectionName" = "Մաքրել անձնական տվյալները";
+
+/* Title displayed in header of the setting panel. */
+"Settings.ClearPrivateData.Title" = "Մաքրել անձնական տվյալները";
+
+/* Button in settings to clear the home page. */
+"Settings.HomePage.Clear.Button" = "Մաքրել";
+
+/* Label used as an item in Settings. When touched it will open a dialog to configure the home page and its uses. */
+"Settings.HomePage.SectionName" = "Տնային էջ";
+
+/* Title displayed in header of the setting panel. */
+"Settings.HomePage.Title" = "Տնային էջի կարգավորումներ";
+
+/* Placeholder text in the homepage setting when no homepage has been set. */
+"Settings.HomePage.URL.Placeholder" = "Մուտքագրել վեբ էջ";
+
+/* Title of the setting section containing the URL of the current home page. */
+"Settings.HomePage.URL.Title" = "Ընթացիկ Տնային էջը";
+
+/* Button in settings to use the current link on the clipboard as home page. */
+"Settings.HomePage.UseCopiedLink.Button" = "Օգտագործել Պատճենված հղում";
+
+/* Button in settings to use the current page as home page. */
+"Settings.HomePage.UseCurrent.Button" = "Օգտագործել ընթացիկ էջը";
+
+/* Button in settings to use the default home page. If no default is set, then this button isn't shown. */
+"Settings.HomePage.UseDefault.Button" = "Օգտ. լռելյայնը";
+
+/* A description in settings of what the new tab choice means */
+"Settings.NewTab.Description" = "Նոր Ներդիր բացելիս.";
+
+/* Option in settings to show a blank page when you open a new tab */
+"Settings.NewTab.Option.BlankPage" = "Ցուցադրել դատարկ էջ";
+
+/* Option in settings to show bookmarks when you open a new tab */
+"Settings.NewTab.Option.Bookmarks" = "Ցուցադրել Էջանիշներ";
+
+/* Option in settings to show history when you open a new tab */
+"Settings.NewTab.Option.History" = "Ցուցադրել Պատմությունը";
+
+/* Option in settings to show your homepage when you open a new tab */
+"Settings.NewTab.Option.HomePage" = "Ցուցադրել Տնային էջը";
+
+/* Option in settings to show reading list when you open a new tab */
+"Settings.NewTab.Option.ReadingList" = "Ցուցադրել Ընթերցացուցակը";
+
+/* Option in settings to show top sites when you open a new tab */
+"Settings.NewTab.Option.TopSites" = "Ցուցադրել Լավագույն կայքերը";
+
+/* Label used as an item in Settings. When touched it will open a dialog to configure the new tab behaviour. */
+"Settings.NewTab.SectionName" = "Նոր Ներդիր";
+
+/* Title displayed in header of the setting panel. */
+"Settings.NewTab.Title" = "Նոր ներդիրի կարգավորումներ";
+
+/* Button displayed at the top of the search settings. */
+"Settings.Search.Done.Button" = "Պատրաստ է";
+
+/* Button displayed at the top of the search settings. */
+"Settings.Search.Edit.Button" = "Խմբագրել";
+
+/* Title of link to help page to find out how to solve Sync issues */
+"Settings.TroubleShootSync.Title" = "Խափանաշտկել";
+
+/* Context menu item for sharing a link URL */
+"Share Link" = "Համօգտագործել հղումը";
+
+/* Button title for cancelling Share screen */
+"ShareTo.Cancel.Button" = "Չեղարկել";
+
+/* Label for show search suggestions setting. */
+"Show Search Suggestions" = "Ցուցադրել որոնման առաջարկները";
+
+/* Accessibility label for the tabs button in the (top) tab toolbar
+   Accessibility Label for the tabs button in the tab toolbar */
+"Show Tabs" = "Ցուցադրել ներդիրները";
+
+/* Show the on-boarding screen again from the settings */
+"Show Tour" = "Ցուցադրել Շրջայցը";
+
+/* Label for show search suggestions setting. */
+"Show search suggestions" = "Ցուցադրել որոնման առաջարկները";
+
+/* See http://mzl.la/1Qtkf0j
+   Text message / button in the settings table view */
+"Sign in" = "ՄՈւտք գործել";
+
+/* Accessibility Label for the tab toolbar Stop button */
+"Stop" = "Կանգնեցնել";
+
+/* Support section title */
+"Support" = "Աջակցում";
+
+/* Accessibility hint for tab tray's displayed tab. */
+"Swipe right or left with three fingers to close the tab." = "Սահեցրեք աջ կամ ձախ երեք մատով՝ փակելու համար ներդիրը:";
+
+/* Sync Firefox Account */
+"Sync Now" = "Համաժամեցնել";
+
+/* Text displayed when the Sync home panel is empty, describing the features provided by Sync to invite the user to log in. */
+"Sync your tabs, bookmarks, passwords and more." = "Համաժամեցրեք ձեր ներդիրները, էջանիշերը, գաղտնաբառերը և ավելին:";
+
+/* Text displayed when the Sync home panel is empty, describing the features provided by Sync to invite the user to log in. */
+"Sync your tabs, passwords and more." = "Համաժամեցրեք ձեր ներդիրները, գաղտնաբառերը և ավելին:";
+
+/* Message displayed when the user syncs for the first time */
+"Sync.FirstTimeMessage.Label" = "Ձեր առաջին համաժամեցումը որոշ ժամանակ կտևի";
+
+/* Message displayed when the user's account is syncing with no ellipsis */
+"Sync.Syncing.Label" = "Համաժամեցում";
+
+/* Message displayed when the user's account is syncing with ellipsis at the end */
+"Sync.SyncingEllipsis.Label" = "Համաժամեցում...";
+
+/* The Bookmark sync component, used in SyncState.Partial.Title */
+"SyncState.Bookmark.Title" = "Էջանիշեր";
+
+/* The Remote Clients sync component, used in SyncState.Partial.Title */
+"SyncState.Clients.Title" = "Հեռակա սպասառուներ";
+
+/* Title for Sync status message when synchronization failed to complete */
+"SyncState.Failed.Title" = "Համաժամեցումը ձախողվեց";
+
+/* The History sync component, used in SyncState.Partial.Title */
+"SyncState.History.Title" = "Պատմություն";
+
+/* The Logins sync component, used in SyncState.Partial.Title */
+"SyncState.Logins.Title" = "Մուտքագրումներ";
+
+/* Title for Sync status message when Sync failed to start. */
+"SyncState.NotStarted.Title" = "Համաժամեցումը անհաանելի է";
+
+/* Title for Sync status message when Sync failed due to being offline */
+"SyncState.Offline.Title" = "Համաժամեցումը անցանց է";
+
+/* Title for Sync status message when a component of Sync failed to complete, where %@ represents the name of the component, i.e. Sync is experiencing issues syncing Bookmarks */
+"SyncState.Partial.Title" = "Համաժամեցման խնդիրներ՝ %@-ի հետ կապված";
+
+/* The Tabs sync component, used in SyncState.Partial.Title */
+"SyncState.Tabs.Title" = "Ներդիրներ";
+
+/* Message spoken by VoiceOver saying the position of the single currently visible tab in Tabs Tray, along with the total number of tabs. E.g. \"Tab 2 of 5\" says that tab 2 is visible (and is the only visible tab), out of 5 tabs total. */
+"Tab %@ of %@" = "Ներդիր՝ %1$@-ը %2$@-ից";
+
+/* Message spoken by VoiceOver saying the range of tabs that are currently visible in Tabs Tray, along with the total number of tabs. E.g. \"Tabs 8 to 10 of 15\" says tabs 8, 9 and 10 are visible, out of 15 tabs total. */
+"Tabs %@ to %@ of %@" = "Ներդիրներ՝ %1$@-%2$@՝ %3$@-ից";
+
+/* The button to undo the delete all tabs */
+"Tabs.DeleteAllUndo.Button" = "Հետարկել";
+
+/* The label indicating that all the tabs were closed */
+"Tabs.DeleteAllUndo.Title" = "%d ներդիր է փակվել";
+
+/* History tableview section header */
+"Today" = "Այսօր";
+
+/* Accessibility label for the Menu button. */
+"Toolbar.Menu.AccessibilityLabel" = "Ցանկ";
+
+/* Panel accessibility label */
+"Top sites" = "Լավագույն կայքեր";
+
+/* Description label for the empty Top Sites state. */
+"TopSites.EmptyState.Description" = "Ձեր առավել հաճախած կայքերը այստեղ:";
+
+/* The title for the empty Top Sites state */
+"TopSites.EmptyState.Title" = "Բարի գալուստ լավագույն կայքեր";
+
+/* Button shown in editing mode to remove this site from the top sites panel. */
+"TopSites.RemovePage.Button" = "Հեռացնել էջը՝ %@";
+
+/* Tile title for Twitter */
+"Twitter" = "Twitter";
+
+/* Button to update the user's password */
+"Update" = "Թարմացնել";
+
+/* Text message in the settings table view */
+"Upgrade Firefox to connect." = "Արդիացրեք Firefox-ը՝ կապակցելու համար:";
+
+/* Username textbox in Authentication prompt */
+"Username" = "Օգտվողի անուն";
+
+/* Text message in the settings table view */
+"Verify your email address." = "Հաստատեք ձեր էլ. փոստը:";
+
+/* Version number of Firefox shown in settings */
+"Version %@ (%@)" = "Տարբերակ %1$@ (%2$@)";
+
+/* Accessibility label for the main web content view */
+"Web content" = "Վեբ բովանդակություն";
+
+/* See http://mzl.la/1LXbDOL */
+"Welcome to your Reading List" = "Բարի գալուստ Ընթերցացուցակ";
+
+/* Restore Tabs Prompt Title */
+"Well, this is embarrassing." = "Սա անհարմար է:";
+
+/* Tile title for Wikipedia */
+"Wikipedia" = "Wikipedia";
+
+/* Button to save the user's password */
+"Yes" = "Այո";
+
+/* History tableview section header */
+"Yesterday" = "Երեկ";
+
+/* Error message in the remote tabs panel */
+"You don’t have any tabs open in Firefox on your other devices." = "Դուք չունեք բացված որևէ ներդիր Firefox-ում՝ ձեր մյուս սարքերում:";
+
+/* Tile title for YouTube */
+"YouTube" = "YouTube";
+
+/* Your Rights settings section title */
+"Your Rights" = "Ձեր իրավունքները";
+
+/* Accessibility label for Desktop Computer (PC) image in remote tabs list */
+"computer" = "համակարգիչ";
+
+/* Relative time for a tab that was visited within the last few moments. */
+"just now" = "հենց հիմա";
+
+/* Accessibility label for Mobile Device image in remote tabs list */
+"mobile device" = "բջջային սարք";
+
+/* Relative date for dates older than a month and less than two months. */
+"more than a month ago" = "մեկ ամսից առաջ";
+
+/* Description for a date more than a week ago, but less than a month ago. */
+"more than a week ago" = "մեկ շաբաթից առաջ";
+
+/* Relative date for yesterday. */
+"yesterday" = "երեկ";
+

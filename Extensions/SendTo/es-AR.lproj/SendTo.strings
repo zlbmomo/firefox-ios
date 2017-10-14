@@ -1,0 +1,15 @@
+/* Header for the list of devices table */
+"Available devices:" = "Dispositivos disponibles:";
+
+/* Close button in top navigation bar */
+"Close" = "Cerrar";
+
+/* See http://mzl.la/1ISlXnU */
+"Please open Firefox, go to Settings and sign in to continue." = "Por favor abrí Firefox, andá a Configuraciones e iniciá la sesión para continuar.";
+
+/* Navigation bar button to Send the current page to a device */
+"Send" = "Enviar";
+
+/* Title of the dialog that allows you to send a tab to a different device */
+"Send Tab" = "Enviar pestaña";
+

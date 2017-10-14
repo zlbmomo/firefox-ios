@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "Ko‘rish tarixi";
+
+/* Settings item for clearing the cache */
+"Cache" = "Kesh";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "Maxfiy ma’lumotlarni tozalash";
+
+/* Settings item for clearing cookies */
+"Cookies" = "Kukilar";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "Oflayn vebsahifa ma’lumotlari";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "Saqlangan loginlar";
+

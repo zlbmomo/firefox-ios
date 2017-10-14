@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "História prehliadania";
+
+/* Settings item for clearing the cache */
+"Cache" = "Vyrovnávacia pamäť";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "Vymazať súkromné údaje";
+
+/* Settings item for clearing cookies */
+"Cookies" = "Cookies";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "Údaje webových stránok v režime offline";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "Uložené prihlasovacie údaje";
+

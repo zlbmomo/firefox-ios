@@ -1,0 +1,48 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "Retumi en pluraj retpaĝoj samtempe, per langetoj.";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "Konekti Firefox kie ajn vi ĝin uzas.";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "Uzi iun retpoŝta programo, ne nur Mail - per Firefox.";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "Vi havas mesaĝojn… kaj elekteblojn";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "Tuŝetu la maskan emblemon por eniri en la reĝimo de privata retumo.";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "Retumi kvazaŭ neniu vin rigardus";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "Ĉu vi serĉas ion alian, malsaman? Elektu alian norman serĉilon (aŭ aldonu propran) en la agordoj.";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "Via serĉo laŭ via maniero";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "Uzu Speguladon por retrovi en ĉiuj viaj aparatoj la legosignojn, pasvortojn kaj aliajn aferojn kiun vi konservis en Firefox.";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "Rekomencu kie vi haltis";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "Moderna poŝaparata retumilo de Mozilla, la neprofitcela organizo dediĉita al la libera kaj malfermita Teksaĵo.";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "Dankon pro via elekto de Firefox!";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "Prezenta lumbildo %1$@ el %2$@";
+
+/* See http://mzl.la/1T8gxwo */
+"Personalize your Firefox just the way you like in Settings." = "Personecigi vian Firefox ekzakte kiel vi volas, en Agordoj";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "Komenci seancon en Firefox";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "Komenci retumi";
+

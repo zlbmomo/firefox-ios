@@ -1,0 +1,15 @@
+/* Setting for closing private tabs */
+"Close Private Tabs" = "Փակել Գաղտնի ներդիրները";
+
+/* Text button displayed when there are no tabs open while in private mode */
+"Learn More" = "Իմանալ ավելին";
+
+/* Toggled OFF accessibility value */
+"Off" = "Անջ.";
+
+/* Toggled ON accessibility value */
+"On" = "Միաց.";
+
+/* Context menu option for opening a link in a new private tab */
+"Open in New Private Tab" = "Բացել Գաղտնի դիտարկման ներդիրով";
+

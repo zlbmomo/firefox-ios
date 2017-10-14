@@ -1,0 +1,24 @@
+/* 'After 1 hour' interval item for selecting when to require passcode */
+"After 1 hour" = "1 ժամից";
+
+/* 'After 1 minute' interval item for selecting when to require passcode */
+"After 1 minute" = "1 րոպեից";
+
+/* 'After 5 minutes' interval item for selecting when to require passcode */
+"After 5 minutes" = "5 րոպեից";
+
+/* 'After 10 minutes' interval item for selecting when to require passcode */
+"After 10 minutes" = "10 րոպեից";
+
+/* 'After 15 minutes' interval item for selecting when to require passcode */
+"After 15 minutes" = "15 րոպեից";
+
+/* 'Immediately' interval item for selecting when to require passcode */
+"Immediately" = "Անհապաղ";
+
+/* Touch ID prompt subtitle when accessing logins */
+"Use your fingerprint to access Logins now." = "Օգտագործեք մատնահետք՝ Մուտքագրումներին մատչելու համար:";
+
+/* Touch ID prompt subtitle when accessing private browsing */
+"Use your fingerprint to access Private Browsing now." = "Օգտագործեք մատնահետք՝ Գաղտնի դիտարկում սկսելու համար:";
+

@@ -1,0 +1,16 @@
+"NSCameraUsageDescription" = "यह आपको तस्वीरें लेने और अपलोड करने देता है.";
+
+"NSLocationWhenInUseUsageDescription" = "आपके द्वारा देखे गये वेबसाइट आपके पते के लिए अनुरोध कर सकते हैं.";
+
+"NSMicrophoneUsageDescription" = "यह आपको वीडियो लेने और अपलोड करने देता है.";
+
+"NSPhotoLibraryAddUsageDescription" = "यह आपको फोटो सहेजने देता है.";
+
+"NSPhotoLibraryUsageDescription" = "यह आपको तस्वीरें सहेजने और अपलोड करने देता है.";
+
+"ShortcutItemTitleNewPrivateTab" = "नया निजी टैब";
+
+"ShortcutItemTitleNewTab" = "नया टैब";
+
+"ShortcutItemTitleQRCode" = "QR कोड स्कैन करें";
+

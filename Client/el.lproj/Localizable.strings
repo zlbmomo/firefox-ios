@@ -1,0 +1,1137 @@
+/* Button for larger reader font size. Keep this extremely short! This is shown in the reader mode toolbar. */
+"+" = "+";
+
+/* Button for smaller reader font size. Keep this extremely short! This is shown in the reader mode toolbar. */
+"-" = "-";
+
+/* Authentication prompt message with no realm. Parameter is the hostname of the site */
+"A username and password are being requested by %@." = "Ο ιστότοπος %@ απαιτεί όνομα χρήστη και συνθηματικό.";
+
+/* Authentication prompt message with a realm. First parameter is the hostname. Second is the realm string */
+"A username and password are being requested by %@. The site says: %@" = "Απαιτείται ένα όνομα χρήστη και ένας κωδικός πρόσβασης από το %1$@. Η ιστοσελίδα λέει: %2$@";
+
+/* Button for reader mode font size. Keep this extremely short! This is shown in the reader mode toolbar. */
+"Aa" = "Αα";
+
+/* About settings section title */
+"About" = "Σχετικά";
+
+/* The title for the pinning a topsite action */
+"ActivityStream.ContextMenu.PinTopsite" = "Καρφίτσωμα σε κορυφαίες ιστοσελίδες";
+
+/* The title for removing a pinned topsite action */
+"ActivityStream.ContextMenu.RemovePinTopsite" = "Ξεκαρφίτσωμα ιστοσελίδας";
+
+/* The detailed text that explains what highlights are in AS. */
+"ActivityStream.HighlightIntro.Description" = "Το Firefox θα τοποθετήσει εδώ τα πράγματα που έχετε ανακαλύψει στο διαδίκτυο, ώστε να μπορείτε να επιστρέψετε σε υπέροχα άρθρα, βίντεο, σελιδοδείκτες και άλλες σελίδες";
+
+/* The title that appears for the introduction to highlights in AS. */
+"ActivityStream.HighlightIntro.Title" = "Έχετε τα μάτια σας ανοιχτά";
+
+/* The description of a highlight if it is a site the user has bookmarked */
+"ActivityStream.Highlights.Bookmark" = "Σε σελιδοδείκτη";
+
+/* Section title label for the Highlights section */
+"ActivityStream.Highlights.Title" = "Κορυφαίες στιγμές";
+
+/* The description of a highlight if it is a site the user has visited */
+"ActivityStream.Highlights.Visited" = "Σε ιστορικό";
+
+/* The page control button that lets you switch between pages in top sites */
+"ActivityStream.PageControl.Button" = "Επόμενη σελίδα";
+
+/* Section title label for Recommended by Pocket section */
+"ActivityStream.Pocket.SectionTitle" = "Προτάσεις του Pocket";
+
+/* The description of a Pocket Story */
+"ActivityStream.Pocket.Trending" = "Τάσεις";
+
+/* Section title label for Top Sites */
+"ActivityStream.TopSites.SectionTitle" = "Κορυφαίες ιστοσελίδες";
+
+/* Accessibility label for the Add Tab button in the Tab Tray. */
+"Add Tab" = "Προσθήκη καρτέλας";
+
+/* Accessibility label for action adding current page to reading list.
+   Name for button adding current article to reading list in reader mode */
+"Add to Reading List" = "Προσθήκη στη λίστα ανάγνωσης";
+
+/* Button to dismiss the 'Add Pass Failed' alert.  See https://support.apple.com/HT204003 for context on Wallet. */
+"AddPass.Error.Dismiss" = "ΟΚ";
+
+/* Text of the 'Add Pass Failed' alert.  See https://support.apple.com/HT204003 for context on Wallet. */
+"AddPass.Error.Message" = "Προέκυψε σφάλμα κατά την προσθήκη του πάσου στο Πορτοφόλι. Παρακαλώ δοκιμάστε ξανά αργότερα.";
+
+/* Title of the 'Add Pass Failed' alert. See https://support.apple.com/HT204003 for context on Wallet. */
+"AddPass.Error.Title" = "Αποτυχία προσθήκης πάσου";
+
+/* Accessibility message e.g. spoken by VoiceOver after the current page gets added to the Reading List using the Reader View button, e.g. by long-pressing it or by its accessibility custom action. */
+"Added page to Reading List" = "Η σελίδα προστέθηκε στη λίστα ανάγνωσης";
+
+/* Accessibility label for address and search field, both words (Address, Search) are therefore nouns. */
+"Address and Search" = "Διεύθυνση και αναζήτηση";
+
+/* Used as a button label for crash dialog prompt */
+"Always Send" = "Αποστολή πάντα";
+
+/* Tile title for Amazon */
+"Amazon" = "Amazon";
+
+/* Authentication prompt title */
+"Authentication required" = "Απαιτείται πιστοποίηση";
+
+/* Accessibility label for the Back button in the tab toolbar. */
+"Back" = "Πίσω";
+
+/* Block pop-up windows setting */
+"Block Pop-up Windows" = "Μπλοκάρισμα αναδυόμενων παραθύρων";
+
+/* Panel accessibility label */
+"Bookmarks" = "Σελιδοδείκτες";
+
+/* Status label for the empty Bookmarks state. */
+"Bookmarks you save will show up here." = "Οι αποθηκευμένοι σελιδοδείκτες θα εμφανίζονται εδώ.";
+
+/* The label to show the location of the folder where the bookmark is located */
+"Bookmarks.Folder.Label" = "Φάκελος";
+
+/* The label for the location of the new folder */
+"Bookmarks.FolderLocation.Label" = "Τοποθεσία";
+
+/* The label for the title of the new folder */
+"Bookmarks.FolderName.Label" = "Όνομα φακέλου";
+
+/* The button to create a new folder */
+"Bookmarks.NewFolder.Label" = "Νέος φάκελος";
+
+/* The label for the title of a bookmark */
+"Bookmarks.Title.Label" = "Τίτλος";
+
+/* The label for the URL of a bookmark */
+"Bookmarks.URL.Label" = "URL";
+
+/* Accessibility label for brightness adjustment slider in Reader Mode display settings */
+"Brightness" = "Φωτεινότητα";
+
+/* Label for Cancel button */
+"Cancel" = "Ακυρο";
+
+/* Accessibility hint for the color theme setting buttons in reader mode display settings */
+"Changes color theme." = "Αλλάζει το χρώμα θέματος.";
+
+/* Accessibility hint for the font type buttons in reader mode display settings */
+"Changes font type." = "Αλλάζει τον τύπο της γραμματοσειράς.";
+
+/* Label used as an item in Settings. When touched it will open a dialog prompting the user to make sure they want to clear all of their private data. */
+"Clear Private Data" = "Διαγραφή ιδιωτικών δεδομένων";
+
+/* The button to open a new tab with the copied link */
+"ClipboardToast.GoToCopiedLink.Button" = "Μετάβαση";
+
+/* Message displayed when the user has a copied link on the clipboard */
+"ClipboardToast.GoToCopiedLink.Title" = "Μετάβαση στον αντιγραμμένο σύνδεσμο;";
+
+/* Accessibility label for action denoting closing a tab in tab list (tray) */
+"Close" = "Κλείσιμο";
+
+/* Accessibility label (used by assistive technology) notifying the user that the tab is being closed. */
+"Closing tab" = "Κλείσιμο καρτέλας";
+
+/* The button text in the Button Toast for switching to a fresh New Private Tab. */
+"ContextMenu.ButtonToast.NewPrivateTabOpened.ButtonText" = "Εναλλαγή";
+
+/* The label text in the Button Toast for switching to a fresh New Private Tab. */
+"ContextMenu.ButtonToast.NewPrivateTabOpened.LabelText" = "Άνοιξε νέα ιδιωτική καρτέλα";
+
+/* The button text in the Button Toast for switching to a fresh New Tab. */
+"ContextMenu.ButtonToast.NewTabOpened.ButtonText" = "Εναλλαγή";
+
+/* The label text in the Button Toast for switching to a fresh New Tab. */
+"ContextMenu.ButtonToast.NewTabOpened.LabelText" = "Η νέα καρτέλα άνοιξε";
+
+/* Copy the URL from the location bar */
+"Copy Address" = "Αντιγραφή διεύθυνσης";
+
+/* Context menu item for copying an image to the clipboard */
+"Copy Image" = "Αντιγραφή εικόνας";
+
+/* Context menu item for copying a link URL to the clipboard */
+"Copy Link" = "Αντιγραφή συνδέσμου";
+
+/* Accessibility message e.g. spoken by VoiceOver after the user wanted to add current page to the Reading List and this was not done, likely because it already was in the Reading List, but perhaps also because of real failures. */
+"Could not add page to Reading List. Maybe it’s already there?" = "Αδυναμία προσθήκης σελίδας στη Λίστα Ανάγνωσης. Μήπως είναι ήδη εκεί;";
+
+/* Accessibility message e.g. spoken by VoiceOver after adding current webpage to the Reading List failed. */
+"Could not add page to Reading list" = "Δεν ήταν δυνατή η προσθήκη σελίδας στη λίστα ανάγνωσης";
+
+/* Error message that is shown in settings when there was a problem loading */
+"Could not load page." = "Αδυναμία φόρτωσης σελίδας.";
+
+/* See http://mzl.la/1Qtkf0j */
+"Create an account" = "Δημιουργία λογαριασμού";
+
+/* Dark theme setting in Reading View settings */
+"Dark" = "Σκούρο";
+
+/* Debug option */
+"Debug: forget Sync auth state" = "Αποσφαλμάτωση: ξεχάστε την κατάσταση πιστοποίησης του Sync";
+
+/* Debug option */
+"Debug: require password" = "Εντοπισμός σφαλμάτων: απαιτείται κωδικός πρόσβασης";
+
+/* Debug option */
+"Debug: require upgrade" = "Αποσφαλμάτωση: απαίτηση αναβάθμισης";
+
+/* Debug option */
+"Debug: use stage servers" = "Αποσφαλμάτωση: χρησιμοποιήστε δοκιμαστικούς διακομιστές";
+
+/* Accessibility label for button decreasing font size in display settings of reader mode */
+"Decrease text size" = "Σμίκρυνση κειμένου";
+
+/* Accessibility label for default search engine setting.
+   Title for default search engine picker.
+   Title for default search engine settings section. */
+"Default Search Engine" = "Προεπιλεγμένη μηχανή αναζήτησης";
+
+/* Pending feature; currently unused string! Checkbox label shown after multiple alerts are shown */
+"Disable additional page dialogs" = "Απενεργοποίηση επιπρόσθετων διαλόγων σελίδας";
+
+/* Name for display settings button in reader mode. Display in the meaning of presentation, not monitor. */
+"Display Settings" = "Ρυθμίσεις εμφάνισης";
+
+/* Prompt for saving a password. The first parameter is the username being saved. The second parameter is the hostname of the site. */
+"Do you want to save the password for %@ on %@?" = "Θέλετε να αποθηκεύσετε το συνθηματικό για %1$@ στο %2$@;";
+
+/* Prompt for saving a password with no username. The parameter is the hostname of the site. */
+"Do you want to save the password on %@?" = "Θέλετε να αποθηκεύσετε το συνθηματικό για το %@;";
+
+/* Prompt for updating a password. The first parameter is the username being saved. The second parameter is the hostname of the site. */
+"Do you want to update the password for %@ on %@?" = "Θέλετε να ενημερώσετε το συνθηματικό για %1$@ στο %2$@;";
+
+/* Prompt for updating a password with on username. The parameter is the hostname of the site. */
+"Do you want to update the password on %@?" = "Θέλετε να ενημερώσετε το συνθηματικό για το %@;";
+
+/* Done button on left side of the Settings view controller title bar */
+"Done" = "Ολοκληρώθηκε";
+
+/* Used as a button label for crash dialog prompt */
+"Don’t Send" = "Χωρίς αποστολή";
+
+/* The label of the button the user will press to reject the option to open a file in another application */
+"Downloads.Alert.Cancel" = "Όχι";
+
+/* The label of the button the user will press to be presented with a list of other apps to open a file in */
+"Downloads.Alert.Confirm" = "Ναι";
+
+/* The message of the alert box asking the user if they want to use another app to open a file. */
+"Downloads.Alert.Message" = "Το Firefox αδυνατεί να κάνει λήψη ή προβολή αυτού του αρχείου. Θα θέλατε να το ανοίξετε σε μια άλλη εφαρμογή;";
+
+/* The title of the alert box asking the user if they want to use another app to open a file. */
+"Downloads.Alert.Title" = "Λήψεις Firefox";
+
+/* The message displayed to a user when they try and perform the download of an asset that Firefox cannot currently handle. */
+"Downloads.Error.Message" = "Οι λήψεις δεν υποστηρίζονται ακόμα στο Firefox.";
+
+/* Text message in the settings table view */
+"Enter your password to connect." = "Εισάγετε τον κωδικό σας για να συνδεθείτε.";
+
+/* Label for button to perform advanced actions on the error page */
+"ErrorPages.Advanced.Button" = "Για προχωρημένους";
+
+/* Warning text when clicking the Advanced button on error pages */
+"ErrorPages.AdvancedWarning1.Text" = "Προειδοποίηση: δεν μπορούμε να επιβεβαιώσουμε ότι η σύνδεσή σας με αυτή την ιστοσελίδα είναι ασφαλής.";
+
+/* Additional warning text when clicking the Advanced button on error pages */
+"ErrorPages.AdvancedWarning2.Text" = "Ενδέχεται να είναι μια λάθος ρύθμιση ή αλλοίωση από τρίτους. Συνεχίστε αν αποδέχεστε τον πιθανό κίνδυνο.";
+
+/* Warning text on the certificate error page */
+"ErrorPages.CertWarning.Description" = "Ο ιδιοκτήτης του %@ δεν έχει ρυθμίσει σωστά την ιστοσελίδα του. Για την προστασία των πληροφοριών σας από κλοπή, το Firefox δεν έχει συνδεθεί σε αυτή την ιστοσελίδα.";
+
+/* Title on the certificate error page */
+"ErrorPages.CertWarning.Title" = "Αυτή η σύνδεση δεν είναι αξιόπιστη";
+
+/* Label for button to go back from the error page */
+"ErrorPages.GoBack.Button" = "Επιστροφή";
+
+/* Button label to temporarily continue to the site from the certificate error page */
+"ErrorPages.VisitOnce.Button" = "Επίσκεψη ούτως ή άλλως";
+
+/* Question shown to user when tapping a link that opens the App Store app */
+"ExternalLink.AppStore.ConfirmationTitle" = "Άνοιγμα συνδέσμου στην εφαρμογή App Store;";
+
+/* Tile title for Facebook */
+"Facebook" = "Facebook";
+
+/* Text of the 'sign out firefox account' alert */
+"Firefox will stop syncing with your account, but won’t delete any of your browsing data on this device." = "Το Firefox θα σταματήσει να συγχρονίζεται με το λογαριασμό σας, αλλά δεν θα διαγράψει τα δεδομένα περιήγησής από αυτή τη συσκευή.";
+
+/* See http://mzl.la/1G7uHo7 */
+"Firefox would like to access your Photos" = "Το Firefox θα ήθελε να έχει πρόσβαση στις φωτογραφίες σας";
+
+/* Title for firefox about:home page in tab history list */
+"Firefox.HomePage.Title" = "Αρχική σελίδα Firefox";
+
+/* Accessibility Label for the tab toolbar Forward button */
+"Forward" = "Εμπρός";
+
+/* Label stating how to disconnect account */
+"FxA.AccountVerificationDetails" = "Λάθος e-mail; Αποσυνδεθείτε παρακάτω για να ξεκινήσετε από την αρχή.";
+
+/* Label stating your account is not verified */
+"FxA.AccountVerificationRequired" = "Απαιτείται επαλήθευση λογαριασμού";
+
+/* Message explaining that user needs to check email for Firefox Account verfication link. */
+"FxA.AccountVerificationRequiredSurface" = "Πρέπει να επαληθεύσετε το %@. Ελέγξτε το e-mail σας για το σύνδεσμο επαλήθευσης από το Firefox.";
+
+/* Settings section title for Firefox Account */
+"FxA.FirefoxAccount" = "Λογαριασμός Firefox";
+
+/* Button label to goto Firefox Account settings */
+"FxA.ManageAccount" = "Διαχείριση λογαριασμού";
+
+/* Label when no internet is present */
+"FxA.NoInternetConnection" = "Χωρίς σύνδεση στο διαδίκτυο";
+
+/* Button label to resend email */
+"FxA.ResendEmail" = "Εκ νέου αποστολή e-mail";
+
+/* Button label to sign into Sync */
+"FxA.SignIntoSync" = "Σύνδεση στο Sync";
+
+/* Label explaining what sync does */
+"FxA.SyncExplain" = "Λάβετε τις καρτέλες, τους σελιδοδείκτες και τους κωδικούς πρόσβασής σας από τις άλλες σας συσκευές.";
+
+/* Button label to Sync your Firefox Account */
+"FxA.SyncNow" = "Συγχρονισμός τώρα";
+
+/* Call to action for sign into sync button */
+"FxA.TakeYourWebWithYou" = "Πάρτε μαζί σας το διαδίκτυο";
+
+/* Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device. */
+"FxAPush_DeviceConnected_body" = "Το Firefox Sync έχει συνδεθεί με τη συσκευή %@";
+
+/* Title of a notification displayed when another device has connected to FxA. */
+"FxAPush_DeviceConnected_title" = "Το Sync συνδέθηκε";
+
+/* Body of a notification displayed when this device has been disconnected from FxA by another device. */
+"FxAPush_DeviceDisconnected_ThisDevice_body" = "Αυτή η συσκευή έχει αποσυνδεθεί επιτυχώς από το Firefox Sync.";
+
+/* Title of a notification displayed when this device has been disconnected by another device. */
+"FxAPush_DeviceDisconnected_ThisDevice_title" = "Το Sync αποσυνδέθηκε";
+
+/* Body of a notification displayed when unnamed device has been disconnected from FxA. */
+"FxAPush_DeviceDisconnected_UnknownDevice_body" = "Μια συσκευή αποσυνδέθηκε από το Firefox Sync";
+
+/* Body of a notification displayed when named device has been disconnected from FxA. %@ refers to the name of the disconnected device. */
+"FxAPush_DeviceDisconnected_body" = "Η συσκευή %@ έχει αποσυνδεθεί επιτυχώς.";
+
+/* Title of a notification displayed when named device has been disconnected from FxA. */
+"FxAPush_DeviceDisconnected_title" = "Το Sync αποσυνδέθηκε";
+
+/* General settings section title */
+"General" = "Γενικά";
+
+/* A re-worded offer about Sync, displayed when the Sync home panel is empty, that emphasizes one-way data transfer, not syncing. */
+"Get your open tabs, bookmarks, and passwords from your other devices." = "Λάβετε τις ανοικτές σας καρτέλες, σελιδοδείκτες και κωδικούς πρόσβασης από τις άλλες σας συσκευές.";
+
+/* Pending feature; currently unused string! Button to browse to URL on the clipboard when browser is opened */
+"Go" = "Μετάβαση";
+
+/* Pending feature; currently unused string! Prompt message shown when browser is opened with URL on the clipboard */
+"Go to copied URL?" = "Μετάβαση στο αντιγραμμένο URL;";
+
+/* Show the SUMO support page from the Support section in the settings. see http://mzl.la/1dmM8tZ */
+"Help" = "Βοήθεια";
+
+/* Panel accessibility label */
+"History" = "Ιστορικό";
+
+/* Title for the History Panel empty state. */
+"HistoryPanel.EmptyState.Title" = "Οι πρόσφατες ιστοσελίδες σας θα εμφανίζονται εδώ.";
+
+/* Description for the empty synced tabs null state in the History Panel */
+"HistoryPanel.EmptySyncedTabsNullState.Description" = "Οι καρτέλες άλλων συσκευών εμφανίζονται εδώ.";
+
+/* Description for the empty synced tabs state in the History Panel */
+"HistoryPanel.EmptySyncedTabsState.Description" = "Συνδεθείτε για προβολή ανοικτών καρτελών στις άλλες σας συσκευές.";
+
+/* Title for the empty synced tabs state in the History Panel */
+"HistoryPanel.EmptySyncedTabsState.Title" = "Firefox Sync";
+
+/* Title for the Back to History button in the History Panel */
+"HistoryPanel.HistoryBackButton.Title" = "Ιστορικό";
+
+/* Title for the Recently Closed button in the History Panel */
+"HistoryPanel.RecentlyClosedTabsButton.Title" = "Έκλεισαν πρόσφατα";
+
+/* Description that corresponds with a number of devices connected for the Synced Tabs Cell in the History Panel */
+"HistoryPanel.SyncedTabsCell.Description.Pluralized" = "%d συνδεδεμένη(ες) συσκευή(ές)";
+
+/* Title for the Synced Tabs Cell in the History Panel */
+"HistoryPanel.SyncedTabsCell.Title" = "Συγχρονισμένες συσκευές";
+
+/* Button cancelling changes setting the home page for the first time. */
+"HomePage.Set.Dialog.Cancel" = "Ακύρωση";
+
+/* Alert dialog body when the user opens the home page for the first time. */
+"HomePage.Set.Dialog.Message" = "Μπορείτε να το αλλάξετε ανά πάσα στιγμή στις Ρυθμίσεις";
+
+/* Button accepting changes setting the home page for the first time. */
+"HomePage.Set.Dialog.OK" = "Ορισμός αρχικής σελίδας";
+
+/* Alert dialog title when the user opens the home page for the first time. */
+"HomePage.Set.Dialog.Title" = "Θέλετε να χρησιμοποιήσετε αυτή την ιστοσελίδα ως αρχική σελίδα;";
+
+/* The title for the Bookmark context menu action for sites in Home Panels */
+"HomePanel.ContextMenu.Bookmark" = "Σελιδοδείκτης";
+
+/* The title for the Delete from History context menu action for sites in Home Panels */
+"HomePanel.ContextMenu.DeleteFromHistory" = "Διαγραφή από ιστορικό";
+
+/* The title for the Open in New Private Tab context menu action for sites in Home Panels */
+"HomePanel.ContextMenu.OpenInNewPrivateTab" = "Άνοιγμα σε νέα ιδιωτική καρτέλα";
+
+/* The title for the Open in New Tab context menu action for sites in Home Panels */
+"HomePanel.ContextMenu.OpenInNewTab" = "Άνοιγμα σε νέα καρτέλα";
+
+/* The title for the Remove context menu action for sites in Home Panels */
+"HomePanel.ContextMenu.Remove" = "Αφαίρεση";
+
+/* The title for the Remove Bookmark context menu action for sites in Home Panels */
+"HomePanel.ContextMenu.RemoveBookmark" = "Αφαίρεση σελιδοδείκτη";
+
+/* The title for the Share context menu action for sites in Home Panels */
+"HomePanel.ContextMenu.Share" = "Κοινή χρήση";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.Back.DiscoveryTitle" = "Πίσω";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.CloseTab.DiscoveryTitle" = "Κλείσιμο καρτέλας";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.Find.DiscoveryTitle" = "Εύρεση";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.Forward.DiscoveryTitle" = "Εμπρός";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.NewPrivateTab.DiscoveryTitle" = "Νέα ιδιωτική καρτέλα";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.NewTab.DiscoveryTitle" = "Νέα καρτέλα";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.Reload.DiscoveryTitle" = "Ανανέωση σελίδας";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.SelectLocationBar.DiscoveryTitle" = "Επιλογή γραμμής τοποθεσίας";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.ShowNextTab.DiscoveryTitle" = "Εμφάνιση επόμενης καρτέλας";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.ShowPreviousTab.DiscoveryTitle" = "Εμφάνιση προηγούμενης καρτέλας";
+
+/* Accessibility label for button increasing font size in display settings of reader mode */
+"Increase text size" = "Αύξηση μεγέθους κειμένου";
+
+/* Accessibility label for the introduction tour carousel */
+"Intro Tour Carousel" = "Καρουζέλ ξενάγησης";
+
+/* History tableview section header */
+"Last month" = "Τελευταίος μήνας";
+
+/* Remote tabs last synced time. Argument is the relative date string. */
+"Last synced: %@" = "Τελευταίος συγχρονισμός %@";
+
+/* History tableview section header */
+"Last week" = "Τελευταία εβδομάδα";
+
+/* Settings item that opens a tab containing the licenses. See http://mzl.la/1NSAWCG */
+"Licenses" = "Άδειες χρήσης";
+
+/* Light theme setting in Reading View settings */
+"Light" = "Φωτεινό";
+
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+"Load original page" = "Φόρτωση αρχικής σελίδας";
+
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Firefox reader mode from another app. */
+"Loading content…" = "Φόρτωση περιεχομένου…";
+
+/* Button in settings screen to disconnect from your account
+   Disconnect button in the 'log out firefox account' alert */
+"Log Out" = "Αποσύνδεση";
+
+/* Title of the 'log out firefox account' alert */
+"Log Out?" = "Έξοδος;";
+
+/* Authentication prompt log in button */
+"Log in" = "Σύνδεση";
+
+/* Label used as an item in Settings. When touched, the user will be navigated to the Logins/Password manager. */
+"Logins" = "Συνδέσεις";
+
+/* Button to not save the user's password */
+"LoginsHelper.DontSave.Button" = "Χωρίς αποθήκευση";
+
+/* Prompt for saving a login. The first parameter is the username being saved. The second parameter is the hostname of the site. */
+"LoginsHelper.PromptSaveLogin.Title" = "Αποθήκευση σύνδεσης %1$@ για %2$@;";
+
+/* Prompt for saving a password with no username. The parameter is the hostname of the site. */
+"LoginsHelper.PromptSavePassword.Title" = "Αποθήκευση συνθηματικού για %@;";
+
+/* Prompt for updating a login. The first parameter is the username for which the password will be updated for. The second parameter is the hostname of the site. */
+"LoginsHelper.PromptUpdateLogin.Title" = "Ενημέρωση σύνδεσης %1$@ για %2$@;";
+
+/* Prompt for updating a password with no username. The parameter is the hostname of the site. */
+"LoginsHelper.PromptUpdatePassword.Title" = "Ενημέρωση συνθηματικού για %@;";
+
+/* Button to save the user's password */
+"LoginsHelper.SaveLogin.Button" = "Αποθήκευση σύνδεσης";
+
+/* Button to update the user's password */
+"LoginsHelper.Update.Button" = "Ενημέρωση";
+
+/* Restore Tabs Prompt Description */
+"Looks like Firefox crashed previously. Would you like to restore your tabs?" = "Φαίνεται πως το Firefox κατέρρευσε προηγουμένως. Θα θέλατε να επαναφέρετε τις καρτέλες σας;";
+
+/* Name for Mark as read button in reader mode
+   Title for the button that marks a reading list item as read */
+"Mark as Read" = "Σήμανση ως αναγνωσμένο";
+
+/* Name for Mark as unread button in reader mode
+   Title for the button that marks a reading list item as unread */
+"Mark as Unread" = "Σήμανση ως μη αναγνωσμένο";
+
+/* Toast displayed to the user after a bookmark has been added. */
+"Menu.AddBookmark.Confirm" = "Ο σελιδοδείκτης προστέθηκε";
+
+/* Toast displayed to the user after adding the item to their reading list. */
+"Menu.AddToReadingList.Confirm" = "Προστέθηκε στη λίστα ανάγνωσης";
+
+/* Toast displayed to user after copy url pressed. */
+"Menu.CopyURL.Confirm" = "Το URL αντιγράφτηκε στο πρόχειρο";
+
+/* Label for the button, displayed in the menu, turns off night mode */
+"Menu.NightModeTurnOff.Label" = "Απενεργοποίηση νυχτερινής λειτουργίας";
+
+/* Label for the button, displayed in the menu, turns on night mode. */
+"Menu.NightModeTurnOn.Label" = "Ενεργοποίηση νυχτερινής λειτουργίας";
+
+/* Label for the button, displayed in the menu, hides images on the webpage when pressed. */
+"Menu.NoImageModeHideImages.Label" = "Απόκρυψη εικόνων";
+
+/* Label for the button, displayed in the menu, shows images on the webpage when pressed */
+"Menu.NoImageModeShowImages.Label" = "Εμφάνιση εικόνων";
+
+/* Toast displayed to the user after a bookmark has been removed. */
+"Menu.RemoveBookmark.Confirm" = "Ο σελιδοδείκτης αφαιρέθηκε";
+
+/* Error for a missing remote error number */
+"Missing error" = "Σφάλμα απώλειας";
+
+/* Error for a missing remote error message */
+"Missing message" = "Μήνυμα απώλειας";
+
+/* Accessibility label for the navigation toolbar displayed at the bottom of the screen. */
+"Navigation Toolbar" = "Γραμμή εργαλείων πλοήγησης";
+
+/* Accessibility label for the New Tab button in the tab toolbar. */
+"New Tab" = "Νέα καρτέλα";
+
+/* Restore Tabs Negative Action */
+"No" = "Όχι";
+
+/* Message spoken by VoiceOver to indicate that there are no tabs in the Tabs Tray */
+"No tabs" = "Καμία καρτέλα";
+
+/* Button to not save the user's password */
+"Not now" = "Όχι τώρα";
+
+/* OK button */
+"OK" = "OK";
+
+/* Restore Tabs Affirmative Action */
+"Okay" = "Εντάξει";
+
+/* Title for prompt displayed to user after the app crashes */
+"Oops! Firefox crashed" = "Ωχ! Το Firefox κατέρρευσε";
+
+/* See http://mzl.la/1G7uHo7 */
+"Open Settings" = "Άνοιγμα ρυθμίσεων";
+
+/* See http://mzl.la/1LXbDOL */
+"Open articles in Reader View by tapping the book icon when it appears in the title bar." = "Ανοίξτε τα άρθρα στην προβολή ανάγνωσης πατώντας στο εικονίδιο-βιβλίο όταν εμφανίζεται στη γραμμή τίτλου.";
+
+/* Context menu item for opening a link in a new tab */
+"Open in New Tab" = "Άνοιγμα σε νέα καρτέλα";
+
+/* String indicating that the file can be opened in another application on the device */
+"Open in…" = "Άνοιγμα σε…";
+
+/* The message displayed to a user when they try to open a URL that cannot be handled by Firefox, or any external app. */
+"OpenURL.Error.Message" = "Το Firefox δεν μπορεί να ανοίξει τη σελίδα επειδή έχει μια μη έγκυρη διεύθυνση.";
+
+/* Title of the message shown when the user attempts to navigate to an invalid link. */
+"OpenURL.Error.Title" = "Αδυναμία ανοίγματος σελίδας";
+
+/* Opening an external URL */
+"Opening %@" = "Άνοιγμα %@";
+
+/* Accessibility label for the Page Options menu button */
+"Page Options Menu" = "Μενού επιλογών σελίδας";
+
+/* Accessibility label for the Home panel's top toolbar containing list of the home panels (top sites, bookmarsk, history, remote tabs, reading list). */
+"Panel Chooser" = "Επιλογή πίνακα";
+
+/* Password textbox in Authentication prompt */
+"Password" = "Κωδικός";
+
+/* Paste the URL into the location bar */
+"Paste" = "Επικόλληση";
+
+/* Paste the URL into the location bar and visit */
+"Paste & Go" = "Επικόλληση & Μετάβαση";
+
+/* Button for closing the menu action sheet */
+"PhotonMenu.cancel" = "Ακύρωση";
+
+/* Text of the prompt user to setup the camera authorization. */
+"Please allow Firefox to access your device’s camera in ‘Settings’ -> ‘Privacy’ -> ‘Camera’." = "Παρακαλώ επιτρέψτε στο Firefox την πρόσβαση στην κάμερα της συσκευής σας στις 'Ρυθμίσεις' -> 'Απόρρητο' -> 'Κάμερα'.";
+
+/* Privacy section title */
+"Privacy" = "Απόρρητο";
+
+/* Show Firefox Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/firefox/ */
+"Privacy Policy" = "Πολιτική απορρήτου";
+
+/* Title for quick-search engines settings section. */
+"Quick-Search Engines" = "Μηχανές γρήγορης αναζήτησης";
+
+/* Accessibility label for the Reader View button */
+"Reader View" = "Προβολή ανάγνωσης";
+
+/* Accessibility message e.g. spoken by VoiceOver when Reader Mode becomes available. */
+"ReaderMode.Available.VoiceOverAnnouncement" = "Η λειτουργία ανάγνωσης είναι διαθέσιμη";
+
+/* Panel accessibility label */
+"Reading list" = "Λίστα ανάγνωσης";
+
+/* Title for the Recently Closed Tabs Panel */
+"RecentlyClosedTabsPanel.Title" = "Έκλεισα πρόσφατα";
+
+/* Accessibility Label for the tab toolbar Reload button */
+"Reload" = "Ανανέωση";
+
+/* Title for the button that removes a reading list item */
+"Remove" = "Αφαίρεση";
+
+/* Name for button removing current article from reading list in reader mode */
+"Remove from Reading List" = "Αφαίρεση από τη λίστα ανάγνωσης";
+
+/* Action Sheet Button for Requesting the Desktop Site */
+"Request Desktop Site" = "Απαίτηση ιστοσελίδας υπολογιστών";
+
+/* Action Sheet Button for Requesting the Mobile Site */
+"Request Mobile Site" = "Απαίτηση ιστοσελίδας κινητών";
+
+/* Accessibility label for button resetting font size in display settings of reader mode */
+"Reset text size" = "Επαναφορά μεγέθους κειμένου";
+
+/* Font type setting in the reading view settings */
+"Sans-serif" = "Sans-serif";
+
+/* Context menu item for saving an image */
+"Save Image" = "Αποθήκευση εικόνας";
+
+/* Setting to enable the built-in password manager */
+"Save Logins" = "Αποθήκευση συνδέσεων";
+
+/* See http://mzl.la/1LXbDOL */
+"Save pages to your Reading List by tapping the book plus icon in the Reader View controls." = "Αποθηκεύστε σελίδες στη λίστα ανάγνωσής σας πατώντας το εικονίδιο βιβλίου με συν στα πλήκτρα προβολής ανάγνωσης.";
+
+/* Text for the instructions label, displayed in the QR scanner view */
+"ScanQRCode.Instructions.Label" = "Τοποθετήστε τον κωδικό QR εντός του πλαισίου για σάρωση";
+
+/* Title for the QR code scanner view. */
+"ScanQRCode.View.Title" = "Σάρωση κωδικού QR";
+
+/* Navigation title for search settings.
+   Open search section of settings */
+"Search" = "Αναζήτηση";
+
+/* The text shown in the URL bar on about:home */
+"Search or enter address" = "Αναζήτηση ή εισαγωγή διεύθυνσης";
+
+/* The message that asks the user to Add the search provider explaining where the search engine will appear */
+"Search.ThirdPartyEngines.AddMessage" = "Η νέα μηχανή αναζήτησης θα εμφανιστεί στη γραμμή γρήγορης αναζήτησης.";
+
+/* The success message that appears after a user sucessfully adds a new search engine */
+"Search.ThirdPartyEngines.AddSuccess" = "Προστέθηκε μηχανή αναζήτησης!";
+
+/* The title that asks the user to Add the search provider */
+"Search.ThirdPartyEngines.AddTitle" = "Προσθήκη παρόχου αναζήτησης;";
+
+/* The cancel button if you do not want to add a search engine. */
+"Search.ThirdPartyEngines.Cancel" = "Ακύρωση";
+
+/* A message explaining fault in custom search engine form. */
+"Search.ThirdPartyEngines.DuplicateErrorMessage" = "Μια μηχανή αναζήτησης με αυτό τον τίτλο ή το URL έχει ήδη προστεθεί.";
+
+/* A title stating that we failed to add custom search engine. */
+"Search.ThirdPartyEngines.DuplicateErrorTitle" = "Αποτυχία";
+
+/* A title explaining that we failed to add a search engine */
+"Search.ThirdPartyEngines.FailedMessage" = "Δεν ήταν δυνατή η προσθήκη παρόχου αναζήτησης.";
+
+/* A title explaining that we failed to add a search engine */
+"Search.ThirdPartyEngines.FailedTitle" = "Αποτυχία";
+
+/* A message explaining fault in custom search engine form. */
+"Search.ThirdPartyEngines.FormErrorMessage" = "Παρακαλώ συμπληρώστε σωστά όλα τα πεδία.";
+
+/* A title stating that we failed to add custom search engine. */
+"Search.ThirdPartyEngines.FormErrorTitle" = "Αποτυχία";
+
+/* The confirmation button */
+"Search.ThirdPartyEngines.OK" = "OK";
+
+/* Accessibility hint describing the action performed when a search suggestion is clicked */
+"Searches for the suggestion" = "Αναζητήσεις για την πρόταση";
+
+/* Accessibility label for the lock icon, which is only present if the connection is secure */
+"Secure connection" = "Ασφαλής σύνδεση";
+
+/* Menu item in settings used to open input.mozilla.org where people can submit feedback */
+"Send Feedback" = "Αποστολή σχολίων";
+
+/* Used as a button label for crash dialog prompt */
+"Send Report" = "Αποστολή αναφοράς";
+
+/* Message displayed in the crash dialog above the buttons used to select when sending reports */
+"Send a crash report so Mozilla can fix the problem?" = "Αποστολή αναφοράς κατάρρευσης, ώστε να μπορέσει η Mozilla να διορθώσει το πρόβλημα;";
+
+/* Button title for cancelling SendTo screen */
+"SendTo.Cancel.Button" = "Ακύρωση";
+
+/* Message in error prompt explaining why the URL is invalid. */
+"SendTo.Error.Message" = "Μπορούν να κοινοποιηθούν μόνο σύνδεσμοι HTTP και HTTPS.";
+
+/* OK button to dismiss the error prompt. */
+"SendTo.Error.OK.Button" = "OK";
+
+/* Title of error prompt displayed when an invalid URL is shared. */
+"SendTo.Error.Title" = "Δεν ήταν δυνατή η κοινοποίηση του συνδέσμου που προσπαθείτε να μοιραστείτε.";
+
+/* Body of notification received after a spurious message from FxA has been received. */
+"SentTab.NoTabArrivingNotification.body" = "Πατήστε για έναρξη";
+
+/* Title of notification received after a spurious message from FxA has been received. */
+"SentTab.NoTabArrivingNotification.title" = "Firefox Sync";
+
+/* Body of notification shown when the device is sent one or more tabs from an unnamed device. */
+"SentTab_TabArrivingNotification_NoDevice_body" = "Έφτασε νέα καρτέλα από άλλη συσκευή.";
+
+/* Title of notification shown when the device is sent one or more tabs from an unnamed device. */
+"SentTab_TabArrivingNotification_NoDevice_title" = "Ελήφθη καρτέλα";
+
+/* Body of notification shown when the device is sent one or more tabs from the named device. %@ is the placeholder for the app name. */
+"SentTab_TabArrivingNotification_WithDevice_body" = "Έφτασε νέα καρτέλα στο %@";
+
+/* Title of notification shown when the device is sent one or more tabs from the named device. %@ is the placeholder for the device name. This device name will be localized by that device. */
+"SentTab_TabArrivingNotification_WithDevice_title" = "Ελήφθη καρτέλα από τη συσκευή %@";
+
+/* Sepia theme setting in Reading View settings */
+"Sepia" = "Σέπια";
+
+/* Font type setting in the reading view settings */
+"Serif" = "Serif";
+
+/* Title in the settings view controller title bar */
+"Settings" = "Ρυθμίσεις";
+
+/* The button text in Search Settings that opens the Custom Search Engine view. */
+"Settings.AddCustomEngine" = "Προσθήκη μηχανής αναζήτησης";
+
+/* The text on the Save button when saving a custom search engine */
+"Settings.AddCustomEngine.SaveButtonText" = "Αποθήκευση";
+
+/* The title of the  Custom Search Engine view. */
+"Settings.AddCustomEngine.Title" = "Προσθήκη μηχανής αναζήτησης";
+
+/* The title for the field which sets the title for a custom search engine. */
+"Settings.AddCustomEngine.TitleLabel" = "Τίτλος";
+
+/* The placeholder for Title Field when saving a custom search engine. */
+"Settings.AddCustomEngine.TitlePlaceholder" = "Μηχανή αναζήτησης";
+
+/* The title for URL Field */
+"Settings.AddCustomEngine.URLLabel" = "URL";
+
+/* The placeholder for URL Field when saving a custom search engine */
+"Settings.AddCustomEngine.URLPlaceholder" = "URL (Αντικατάσταση ερωτήματος με %s)";
+
+/* Button in settings that clears private data for the selected items. */
+"Settings.ClearPrivateData.Clear.Button" = "Εκκαθάριση ιδιωτικών δεδομένων";
+
+/* Label used as an item in Settings. When touched it will open a dialog prompting the user to make sure they want to clear all of their private data. */
+"Settings.ClearPrivateData.SectionName" = "Εκκαθάριση ιδιωτικών δεδομένων";
+
+/* Title displayed in header of the setting panel. */
+"Settings.ClearPrivateData.Title" = "Εκκαθάριση ιδιωτικών δεδομένων";
+
+/* DNT Settings option for always on */
+"Settings.DNT.OptionAlwaysOn" = "Πάντα";
+
+/* DNT Settings option for only turning on when Tracking Protection is also on */
+"Settings.DNT.OptionOnWithTP" = "Μόνο κατά τη χρήση προστασίας από παρακολούθηση";
+
+/* DNT Settings title */
+"Settings.DNT.Title" = "Αποστολή αιτήματος \"Χωρίς παρακολούθηση\" σε ιστοσελίδες που δεν θέλετε να σάς παρακολουθούν";
+
+/* Button displayed at the bottom of settings page allowing users to Disconnect from FxA */
+"Settings.Disconnect.Button" = "Αποσύνδεση Sync";
+
+/* Destructive action button in alert when user is prompted for disconnect */
+"Settings.Disconnect.DestructiveButton" = "Αποσύνδεση";
+
+/* Title of the alert when prompting the user asking to disconnect. */
+"Settings.Disconnect.Title" = "Αποσύνδεση Sync;";
+
+/* Button in settings to clear the home page. */
+"Settings.HomePage.Clear.Button" = "Εκκαθάριση";
+
+/* Label used as an item in Settings. When touched it will open a dialog to configure the home page and its uses. */
+"Settings.HomePage.SectionName" = "Αρχική σελίδα";
+
+/* Title displayed in header of the setting panel. */
+"Settings.HomePage.Title" = "Ρυθμίσεις αρχικής σελίδας";
+
+/* Placeholder text in the homepage setting when no homepage has been set. */
+"Settings.HomePage.URL.Placeholder" = "Εισάγετε μια ιστοσελίδα";
+
+/* Title of the setting section containing the URL of the current home page. */
+"Settings.HomePage.URL.Title" = "Τρέχουσα αρχική σελίδα";
+
+/* Button in settings to use the current link on the clipboard as home page. */
+"Settings.HomePage.UseCopiedLink.Button" = "Χρήση αντιγραμμένου συνδέσμου";
+
+/* Button in settings to use the current page as home page. */
+"Settings.HomePage.UseCurrent.Button" = "Χρήση τρέχουσας σελίδας";
+
+/* Button in settings to use the default home page. If no default is set, then this button isn't shown. */
+"Settings.HomePage.UseDefault.Button" = "Χρήση προεπιλογής";
+
+/* A description in settings of what the new tab choice means */
+"Settings.NewTab.Description" = "Όταν ανοίγει νέα καρτέλα:";
+
+/* The title of the section in newtab that lets you modify the topsites panel */
+"Settings.NewTab.Option.ASTitle" = "Επιπρόσθετο περιεχόμενο";
+
+/* Option in settings to show a blank page when you open a new tab */
+"Settings.NewTab.Option.BlankPage" = "Εμφάνιση κενής σελίδας";
+
+/* Option in settings to show bookmarks when you open a new tab */
+"Settings.NewTab.Option.Bookmarks" = "Εμφάνιση σελιδοδεικτών";
+
+/* Option in the settings to turn off recent bookmarks in the Highlights section */
+"Settings.NewTab.Option.HighlightsBookmarks" = "Πρόσφατοι σελιδοδείκτες";
+
+/* Option in settings to turn off history in the highlights section */
+"Settings.NewTab.Option.HighlightsHistory" = "Επισκέψεις";
+
+/* Option in settings to show history when you open a new tab */
+"Settings.NewTab.Option.History" = "Εμφάνιση ιστορικού";
+
+/* Option in settings to show your homepage when you open a new tab */
+"Settings.NewTab.Option.HomePage" = "Εμφάνιση αρχικής σελίδας";
+
+/* Option in settings to turn on off pocket recommendations */
+"Settings.NewTab.Option.Pocket" = "Προτάσεις του Pocket";
+
+/* Option in settings to show reading list when you open a new tab */
+"Settings.NewTab.Option.ReadingList" = "Εμφάνιση λίστας ανάγνωσης";
+
+/* Option in settings to show top sites when you open a new tab */
+"Settings.NewTab.Option.TopSites" = "Εμφάνιση κορυφαίων ιστοσελίδων";
+
+/* Label used as an item in Settings. When touched it will open a dialog to configure the new tab behaviour. */
+"Settings.NewTab.SectionName" = "Νέα καρτέλα";
+
+/* Title displayed in header of the setting panel. */
+"Settings.NewTab.Title" = "Ρυθμίσεις νέας καρτέλας";
+
+/* Description displayed under the ”Offer to Open Copied Link” option. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
+"Settings.OfferClipboardBar.Status" = "Κατά το άνοιγμα του Firefox";
+
+/* Title of setting to enable the Go to Copied URL feature. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349 */
+"Settings.OfferClipboardBar.Title" = "Επιλογή για άνοιγμα αντιγραμμένων συνδέσμων";
+
+/* Title for Open With Settings */
+"Settings.OpenWith.PageTitle" = "Άνοιγμα συνδέσμων e-mail με";
+
+/* Label used as an item in Settings. When touched it will open a dialog to configure the open with (mail links) behaviour. */
+"Settings.OpenWith.SectionName" = "Εφαρμογή Mail";
+
+/* Button displayed at the top of the search settings. */
+"Settings.Search.Done.Button" = "Τέλος";
+
+/* Button displayed at the top of the search settings. */
+"Settings.Search.Edit.Button" = "Επεξεργασία";
+
+/* title for a link that explains how mozilla collects telemetry */
+"Settings.SendUsage.Link" = "Μάθετε περισσότερα.";
+
+/* A short description that explains why mozilla collects usage data. */
+"Settings.SendUsage.Message" = "Η Mozilla αγωνίζεται για να συλλέγει μόνο ό,τι χρειάζεται για να παρέχει και να βελτιώνει το Firefox για όλους.";
+
+/* The title for the setting to send usage data. */
+"Settings.SendUsage.Title" = "Αποστολή δεδομένων χρήσης";
+
+/* Header description for tracking protection options section where Basic/Strict block list can be selected */
+"Settings.TrackingProtection.BlockListsHeader" = "Μπορείτε να επιλέξετε ποια λίστα θα χρησιμοποιήσει το Firefox για τη φραγή διαδικτυακών στοιχείων, που ενδέχεται να ιχνηλατήσουν τη δραστηριότητά σας.";
+
+/* Title for tracking protection options section where Basic/Strict block list can be selected */
+"Settings.TrackingProtection.BlockListsTitle" = "Λίστες φραγής";
+
+/* Row in top-level of settings that gets tapped to show the tracking protection settings detail view. */
+"Settings.TrackingProtection.SectionName" = "Προστασία από παρακολούθηση";
+
+/* Tracking protection settings option for using the basic blocklist. */
+"Settings.TrackingProtectionOption.BlockListBasic" = "Βασική (Προτείνεται)";
+
+/* Tracking protection settings option description for using the basic blocklist. */
+"Settings.TrackingProtectionOption.BlockListBasicDescription" = "Επιτρέψτε ορισμένα trackers, ώστε να λειτουργούν σωστά οι ιστοσελίδες.";
+
+/* Tracking protection settings option for using the strict blocklist. */
+"Settings.TrackingProtectionOption.BlockListStrict" = "Αυστηρή";
+
+/* Tracking protection settings option description for using the strict blocklist. */
+"Settings.TrackingProtectionOption.BlockListStrictDescription" = "Αποκλείει γνωστά trackers. Ορισμένες ιστοσελίδες ενδέχεται να μην λειτουργούν σωστά.";
+
+/* Description label shown on tracking protection options screen. */
+"Settings.TrackingProtectionOption.EnabledStateFooterLabel" = "Παρακολούθηση είναι η συλλογή δεδομένων περιήγησης από πολλαπλές ιστοσελίδες. Η παρακολούθηση μπορεί να χρησιμοποιηθεί για τη δημιουργία ενός προφίλ και την προβολή περιεχομένου βάσει των πληροφοριών περιήγησης και των προσωπικών σας στοιχείων.";
+
+/* Description label shown at the top of tracking protection options screen. */
+"Settings.TrackingProtectionOption.EnabledStateHeaderLabel" = "Χρήση προστασίας από παρακολούθηση για φραγή γνωστών trackers";
+
+/* Settings option to specify that Tracking Protection is always off. */
+"Settings.TrackingProtectionOption.OffLabel" = "Ποτέ";
+
+/* Settings option to specify that Tracking Protection is on only in Private Browsing mode. */
+"Settings.TrackingProtectionOption.OnInPrivateBrowsingLabel" = "Μόνο στην ιδιωτική περιήγηση";
+
+/* Settings option to specify that Tracking Protection is always on. */
+"Settings.TrackingProtectionOption.OnLabel" = "Πάντα ενεργή";
+
+/* Title of link to help page to find out how to solve Sync issues */
+"Settings.TroubleShootSync.Title" = "Αντιμετώπιση προβλημάτων";
+
+/* Context menu item for sharing a link URL */
+"Share Link" = "Κοινή χρήση συνδέσμου";
+
+/* Button title for cancelling Share screen */
+"ShareTo.Cancel.Button" = "Ακύρωση";
+
+/* Label for show search suggestions setting. */
+"Show Search Suggestions" = "Εμφάνιση προτάσεων αναζήτησης";
+
+/* Accessibility label for the tabs button in the (top) tab toolbar
+   Accessibility Label for the tabs button in the tab toolbar */
+"Show Tabs" = "Εμφάνιση καρτελών";
+
+/* Show the on-boarding screen again from the settings */
+"Show Tour" = "Εμφάνιση ξενάγησης";
+
+/* Label for show search suggestions setting. */
+"Show search suggestions" = "Εμφάνιση προτάσεων αναζήτησης";
+
+/* See http://mzl.la/1Qtkf0j
+   Text message / button in the settings table view */
+"Sign in" = "Σύνδεση";
+
+/* Accessibility Label for the tab toolbar Stop button */
+"Stop" = "Διακοπή";
+
+/* Support section title */
+"Support" = "Υποστήριξη";
+
+/* Accessibility hint for tab tray's displayed tab. */
+"Swipe right or left with three fingers to close the tab." = "Σύρετε αριστερά ή δεξιά χρησιμοποιώντας τρία δάχτυλα για να κλείσετε την καρτέλα.";
+
+/* Sync Firefox Account */
+"Sync Now" = "Συγχρονισμός Τώρα";
+
+/* Text displayed when the Sync home panel is empty, describing the features provided by Sync to invite the user to log in. */
+"Sync your tabs, bookmarks, passwords and more." = "Συγχρονίστε τις καρτέλες, τους σελιδοδείκτες, τα συνθηματικά σας και πολλά άλλα.";
+
+/* Text displayed when the Sync home panel is empty, describing the features provided by Sync to invite the user to log in. */
+"Sync your tabs, passwords and more." = "Συγχρονίστε τις καρτέλες, τα συνθηματικά σας και πολλά άλλα.";
+
+/* Message displayed when the user syncs for the first time */
+"Sync.FirstTimeMessage.Label" = "Ο πρώτος συγχρονισμός ίσως διαρκέσει αρκετή ώρα";
+
+/* Message displayed when the user's account is syncing with no ellipsis */
+"Sync.Syncing.Label" = "Συγχρονισμός";
+
+/* Message displayed when the user's account is syncing with ellipsis at the end */
+"Sync.SyncingEllipsis.Label" = "Συγχρονισμός…";
+
+/* The Bookmark sync component, used in SyncState.Partial.Title */
+"SyncState.Bookmark.Title" = "Σελιδοδείκτες";
+
+/* The Remote Clients sync component, used in SyncState.Partial.Title */
+"SyncState.Clients.Title" = "Απομακρυσμένες συσκευές";
+
+/* Title for Sync status message when synchronization failed to complete */
+"SyncState.Failed.Title" = "Ο συγχρονισμός απέτυχε";
+
+/* The History sync component, used in SyncState.Partial.Title */
+"SyncState.History.Title" = "Ιστορικό";
+
+/* The Logins sync component, used in SyncState.Partial.Title */
+"SyncState.Logins.Title" = "Συνδέσεις";
+
+/* Title for Sync status message when Sync failed to start. */
+"SyncState.NotStarted.Title" = "Το Sync δεν είναι διαθέσιμο";
+
+/* Title for Sync status message when Sync failed due to being offline */
+"SyncState.Offline.Title" = "Το Sync είναι εκτός σύνδεσης";
+
+/* Title for Sync status message when a component of Sync failed to complete, where %@ represents the name of the component, i.e. Sync is experiencing issues syncing Bookmarks */
+"SyncState.Partial.Title" = "Το Sync αντιμετωπίζει θέματα συγχρονισμού %@";
+
+/* The Tabs sync component, used in SyncState.Partial.Title */
+"SyncState.Tabs.Title" = "Καρτέλες";
+
+/* Message spoken by VoiceOver saying the position of the single currently visible tab in Tabs Tray, along with the total number of tabs. E.g. \"Tab 2 of 5\" says that tab 2 is visible (and is the only visible tab), out of 5 tabs total. */
+"Tab %@ of %@" = "Καρτέλα %1$@ από %2$@";
+
+/* Message spoken by VoiceOver saying the range of tabs that are currently visible in Tabs Tray, along with the total number of tabs. E.g. \"Tabs 8 to 10 of 15\" says tabs 8, 9 and 10 are visible, out of 15 tabs total. */
+"Tabs %@ to %@ of %@" = "Καρτέλες %1$@ έως %2$@ από %3$@";
+
+/* Accessibility label for the Tabs Tray view. */
+"Tabs Tray" = "Γραμμή καρτελών";
+
+/* The button to undo the delete all tabs */
+"Tabs.DeleteAllUndo.Button" = "Αναίρεση";
+
+/* The label indicating that all the tabs were closed */
+"Tabs.DeleteAllUndo.Title" = "Έκλεισε(αν) %d καρτέλα(ες)";
+
+/* Text of the prompt user the data is invalid */
+"The data is invalid" = "Τα δεδομένα είναι άκυρα";
+
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+"The page could not be displayed in Reader View." = "Δεν ήταν δυνατή η προβολή της σελίδας στην προβολή ανάγνωσης.";
+
+/* Error message in the remote tabs panel */
+"There was a problem accessing tabs from your other devices. Try again in a few moments." = "Προέκυψε πρόβλημα κατά την πρόσβαση σε καρτέλες από τις άλλες σας συσκευές. Δοκιμάστε ξανά σε λίγο.";
+
+/* Error displayed when reader mode cannot be enabled */
+"There was an error converting the page" = "Προέκυψε σφάλμα μετατροπής της σελίδας";
+
+/* See http://mzl.la/1G7uHo7 */
+"This allows you to save the image to your Camera Roll." = "Αυτό σάς επιτρέπει να αποθηκεύσετε την εικόνα στο άλμπουμ κάμερας.";
+
+/* Opening an external app */
+"This will open in another application" = "Αυτό θα ανοίξει σε μια άλλη εφαρμογή";
+
+/* History tableview section header */
+"Today" = "Σήμερα";
+
+/* Accessibility label for the Menu button. */
+"Toolbar.Menu.AccessibilityLabel" = "Μενού";
+
+/* Accessibility label for the Close All Tabs menu button. */
+"Toolbar.Menu.CloseAllTabs" = "Κλείσιμο όλων των καρτελών";
+
+/* Panel accessibility label */
+"Top sites" = "Δημοφιλείς σελίδες";
+
+/* Description label for the empty Top Sites state. */
+"TopSites.EmptyState.Description" = "Οι πιο συχνές ιστοσελίδες θα εμφανίζονται εδώ.";
+
+/* The title for the empty Top Sites state */
+"TopSites.EmptyState.Title" = "Καλώς ορίσατε στις κορυφαίες ιστοσελίδες";
+
+/* Button shown in editing mode to remove this site from the top sites panel. */
+"TopSites.RemovePage.Button" = "Αφαίρεση σελίδας - %@";
+
+/* Tile title for Twitter */
+"Twitter" = "Twitter";
+
+/* Button to update the user's password */
+"Update" = "Ενημέρωση";
+
+/* Text message in the settings table view */
+"Upgrade Firefox to connect." = "Αναβάθμιση του Firefox για να συνδεθείτε.";
+
+/* Username textbox in Authentication prompt */
+"Username" = "Όνομα Χρήστη";
+
+/* Text message in the settings table view */
+"Verify your email address." = "Επιβεβαίωσε την διεύθυνση email.";
+
+/* Version number of Firefox shown in settings */
+"Version %@ (%@)" = "Έκδοση %1$@ (%2$@)";
+
+/* Accessibility label for the main web content view */
+"Web content" = "Περιεχόμενο ιστού";
+
+/* See http://mzl.la/1LXbDOL */
+"Welcome to your Reading List" = "Καλώς ορίσατε στην Λίστα Ανάγνωσης";
+
+/* Restore Tabs Prompt Title */
+"Well, this is embarrassing." = "Αυτό είναι κάπως ντροπιαστικό.";
+
+/* Tile title for Wikipedia */
+"Wikipedia" = "Βικιπαίδεια";
+
+/* Button to save the user's password */
+"Yes" = "Ναι";
+
+/* History tableview section header */
+"Yesterday" = "Χθες";
+
+/* Error message in the remote tabs panel */
+"You don’t have any tabs open in Firefox on your other devices." = "Δεν έχετε καμία ανοικτή καρτέλα στο Firefox στις άλλες σας συσκευές.";
+
+/* Tile title for YouTube */
+"YouTube" = "YouTube";
+
+/* Your Rights settings section title */
+"Your Rights" = "Τα δικαιώματά σας";
+
+/* Accessibility label for Desktop Computer (PC) image in remote tabs list */
+"computer" = "υπολογιστής";
+
+/* Relative time for a tab that was visited within the last few moments. */
+"just now" = "μόλις τώρα";
+
+/* Accessibility label for Mobile Device image in remote tabs list */
+"mobile device" = "κινητή συσκευή";
+
+/* Relative date for dates older than a month and less than two months. */
+"more than a month ago" = "πάνω από ένα μήνα πριν";
+
+/* Description for a date more than a week ago, but less than a month ago. */
+"more than a week ago" = "πάνω από μια εβδομάδα πριν";
+
+/* Accessibility label for read article in reading list. It's a past participle - functions as an adjective. */
+"read" = "αναγνωσμένο";
+
+/* Relative date for date in past week. */
+"this week" = "αυτή την εβδομάδα";
+
+/* Relative date for date older than a minute. */
+"today at %@" = "σήμερα στις %@";
+
+/* Accessibility label for unread article in reading list. It's a past participle - functions as an adjective. */
+"unread" = "μη αναγνωσμένο";
+
+/* Relative date for yesterday. */
+"yesterday" = "χθες";
+

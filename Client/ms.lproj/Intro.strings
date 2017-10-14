@@ -1,0 +1,48 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "Pelayar berbilang halaman Web pada masa yang sama dengan tab.";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "Sambung Firefox di mana-mana sahaja anda menggunakannya.";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "Gunakan aplikasi e-mel lain - bukan hanya Mel - dengan Firefox.";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "Anda ada pilihan mel…";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "Tekan ikon topeng untuk masuk ke mod Pelayaran Peribadi.";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "Layari seperti tiada yang memerhati";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "Mencari sesuatu yang berlainan? Pilih enjin piawai lain (atau anda tambah sendiri) dalam Tetapan.";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "Carian anda, cara anda";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "Gunakan Sync untuk mencari tandabuku, kata laluan dan perkara lain yang anda simpan dalam Firefox ke peranti anda yang lain.";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "Mulakan semula di mana anda tinggalkan";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "Pelayar moden oleh Mozilla, sebuah organisasi bukan untung yang komited mengekalkan web yang terbuka dan percuma.";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "Terima kasih kerana memilih Firefox!";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "Slaid pengenalan %1$@ daripada %2$@";
+
+/* See http://mzl.la/1T8gxwo */
+"Personalize your Firefox just the way you like in Settings." = "Sesuaikan Firefox anda seperti yang anda suka dalam Tetapan.";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "Daftar masuk ke Firefox";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "Mulakan Pelayaran";
+

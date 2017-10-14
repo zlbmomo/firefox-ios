@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "탐색 기록";
+
+/* Settings item for clearing the cache */
+"Cache" = "캐시";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "개인 정보 삭제Clear Private Data";
+
+/* Settings item for clearing cookies */
+"Cookies" = "쿠키";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "오프라인 웹사이트 정보";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "저장된 로그인 정보";
+

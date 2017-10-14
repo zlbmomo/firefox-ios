@@ -1,0 +1,30 @@
+/* Prompt option for cancelling out of deletion */
+"Cancel" = "Cancellar";
+
+/* Copy password text selection menu item */
+"Copy" = "Copiar";
+
+/* Label for the button used to delete the current login. */
+"Delete" = "Deler";
+
+/* Hide password text selection menu item */
+"Hide" = "Celar";
+
+/* Reveal password text selection menu item */
+"Reveal" = "Revelar";
+
+/* Title for the search field at the top of the Logins list screen */
+"Search" = "Cercar";
+
+/* Label for the button used to select all logins. */
+"Select All" = "Selectionar toto";
+
+/* Label displayed above the password row in Login Detail View. */
+"password" = "contrasigno";
+
+/* Label displayed above the username row in Login Detail View. */
+"username" = "nomine de usator";
+
+/* Label displayed above the website row in Login Detail View. */
+"website" = "sito web";
+

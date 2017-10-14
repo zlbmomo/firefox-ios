@@ -1,0 +1,48 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "Procházejte více webových stránek v panelech současně.";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "Připojte se k Firefoxu, kdekoli ho používáte.";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "Používejte s Firefoxem jakoukoli e-mailovou aplikaci, ne jen Mail.";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "S e-mailem máte na výběr";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "Klepněte na ikonu masky pro přechod do anonymního režimu.";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "Prohlížejte internet, jako když se nikdo nedívá";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "Hledáte něco jiného? V nastavení si zvolte jiný vyhledávací modul (nebo přidejte vlastní) jako výchozí.";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "Vaše hledání, vaše cesta";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "Používejte Sync k nalezení záložek, hesel a dalších věcí uložených v aplikaci Firefox na všech vašich zařízeních.";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "Pokračujte, kde jste skončili";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "Moderní mobilní prohlížeč od Mozilly, neziskové organizace zaměřené na otevřený web.";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "Díky, že jste zvolili Firefox!";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "Úvodní slide %1$@ z %2$@";
+
+/* See http://mzl.la/1T8gxwo */
+"Personalize your Firefox just the way you like in Settings." = "Přizpůsobte si svůj Firefox podle sebe v jeho Nastavení.";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "Přihlásit se do Firefoxu";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "Začít prohlížet";
+

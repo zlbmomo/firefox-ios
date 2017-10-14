@@ -1,0 +1,63 @@
+/* Prompt title when deleting logins */
+"Are you sure?" = "क्या आप सुनिश्चित हैं?";
+
+/* Prompt option for cancelling out of deletion */
+"Cancel" = "रद्द करें";
+
+/* Accessibility message e.g. spoken by VoiceOver after the user taps the close button in the search field to clear the search and exit search mode */
+"Clear Search" = "खोज साफ़ करें";
+
+/* Copy password text selection menu item */
+"Copy" = "नक़ल करें";
+
+/* Label for the button used to delete the current login. */
+"Delete" = "मिटाएँ";
+
+/* Label for the button used to deselect all logins. */
+"Deselect All" = "सभी अचयनित करें";
+
+/* Accessibility label for entering search mode for logins */
+"Enter Search Mode" = "खोज विधि प्रविष्ट करें";
+
+/* Hide password text selection menu item */
+"Hide" = "छुपाएँ";
+
+/* Footer label describing when the current login was last modified with the timestamp as the parameter. */
+"Last modified %@" = "अंतिम बार परिवर्तित %@";
+
+/* Title for Logins List View screen. */
+"Logins" = "दाखिले";
+
+/* Prompt message warning the user that deleting non-synced logins will permanently remove them */
+"Logins will be permanently removed." = "लॉगइन्स स्थायी रूप से हटा दिये जाएँगे.";
+
+/* Prompt message warning the user that deleted logins will remove logins from all connected devices */
+"Logins will be removed from all connected devices." = "लॉगइन्स सभी जुड़े हुए उपकरणों से हटा दिये जाएँगे.";
+
+/* Label displayed when no logins are found after searching. */
+"No logins found" = "कोई लॉग इन नहीं मिला";
+
+/* Open and Fill website text selection menu item */
+"Open & Fill" = "खोलें और भरें";
+
+/* Reveal password text selection menu item */
+"Reveal" = "प्रत्यक्ष करें";
+
+/* Title for the search field at the top of the Logins list screen */
+"Search" = "ढूंढें";
+
+/* Accessibility label for the search input field in the Logins list */
+"Search Input Field" = "इनपुट क्षेत्र खोजें";
+
+/* Label for the button used to select all logins. */
+"Select All" = "सभी चुनें";
+
+/* Label displayed above the password row in Login Detail View. */
+"password" = "कूटशब्द";
+
+/* Label displayed above the username row in Login Detail View. */
+"username" = "उपयोक्तानाम";
+
+/* Label displayed above the website row in Login Detail View. */
+"website" = "वेबसाइट";
+

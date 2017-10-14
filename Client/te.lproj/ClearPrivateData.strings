@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "బ్రౌజింగ్ చరిత్ర";
+
+/* Settings item for clearing the cache */
+"Cache" = "కాష్";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "ప్రైవేట్ డేటాను క్లియర్ చేయండి";
+
+/* Settings item for clearing cookies */
+"Cookies" = "కుకీలు";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "ఆఫ్‌లైన్ వెబ్‌సైటు డేటా";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "భద్రపరిచిన లాగిన్ లు";
+

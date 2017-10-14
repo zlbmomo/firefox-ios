@@ -1,0 +1,48 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "Navegueu per diverses pàgines web a la vegada amb les pestanyes.";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "Connecteu el Firefox allà on l'utilitzeu.";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "Utilitzeu qualsevol aplicació de correu electrònic (no només el Mail) amb el Firefox.";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "Més opcions per llegir el correu";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "Toqueu la icona de màscara per entrar en el mode de navegació privada.";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "Navegueu sense sentir-vos observat";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "Busqueu una altra cosa? Trieu un altre motor de cerca per defecte (o afegiu-ne qualsevol altre) als Paràmetres.";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "Cerqueu com vulgueu";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "Utilitzeu el Sync per accedir a les adreces d'interès, contrasenyes i altres elements que heu desat al Firefox en tots els vostres dispositius.";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "Continueu des d'on ho vàreu deixar";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "Un navegador mòbil modern de Mozilla, l'organització sense ànim de lucre compromesa a mantenir el Web lliure i obert.";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "Gràcies per triar el Firefox!";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "Diapositiva %1$@ de %2$@";
+
+/* See http://mzl.la/1T8gxwo */
+"Personalize your Firefox just the way you like in Settings." = "Personalitzeu el Firefox com vulgueu als Paràmetres.";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "Inicia la sessió al Firefox";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "Comença a navegar";
+

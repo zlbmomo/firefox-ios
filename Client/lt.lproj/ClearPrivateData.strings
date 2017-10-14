@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "Naršymo žurnalas";
+
+/* Settings item for clearing the cache */
+"Cache" = "Podėlis";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "Valyti privačius duomenis";
+
+/* Settings item for clearing cookies */
+"Cookies" = "Slapukai";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "Duomenys darbui neprisijungus";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "Įrašyti prisijungimai";
+

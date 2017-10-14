@@ -1,0 +1,12 @@
+/* Main body of the confirmation alert when the user tries to delete a folder that still contains bookmarks and/or folders. */
+"Are you sure you want to delete it and its contents?" = "இதையும் இதன் உள்ளடக்கத்தையும் நிச்சயம் அழிக்க வேண்டுமா?";
+
+/* Button label to cancel deletion when the user tried to delete a non-empty folder. */
+"Cancel" = "ரத்து";
+
+/* Button label for the button that deletes a folder and all of its children. */
+"Delete" = "அழி";
+
+/* Title of the confirmation alert when the user tries to delete a folder that still contains bookmarks and/or folders. */
+"This folder isn’t empty." = "இந்த அடைவு காலியாக இல்லை.";
+

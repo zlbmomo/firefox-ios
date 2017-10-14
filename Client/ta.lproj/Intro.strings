@@ -1,0 +1,48 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "கீற்றுகளைக் கொண்டு ஒரே நேரத்தில் பல தளங்களை உலாவ முடியும்.";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "நீங்கள் பாவிக்கும் அனைத்து சாதனங்களிலிருங்நதும் பயர்பாஸை இணையுங்கள்.";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "ஏதேனும் மின்னஞ்சல் செயலியைப் பயன்படுத்தவும் - பயர்பாக்சுடன் - வெறும் மின்னஞ்சல் மட்டுமல்ல.";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "நீங்கள் அஞ்சல்… தெரிவுகள் பெற்றீர்கள்";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "தனிப்பட்ட உலாவல் முறைக்குச் செல்ல முகமூடி சின்னத்தைத் தட்டவும்.";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "யாருக்கும் தெரியாம உலாவுங்கள்";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "வித்தியாசமானதைத் தேடுகிறீர்களா? அமைப்புகளில் வேறொரு இயல்புநிலை தேடியியந்திரத்தைத் தேர்ந்தெடுக்கவும் (அல்லது சேர்க்கவும்).";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "உங்களின் தேடல் உங்கள் வழி";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "பயர்பாக்சு உலாவியில் நீங்கள் சேமிக்கும் புத்தகக்குறிகள், கடவுச்சொற்கள், பிறவற்றை உங்கள் எல்லா கருவிகளிலும் எடுக்க ஒத்திசைவைப் பயன்படுத்தவும்.";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "நீங்கள் விட்டுவிட்ட இடத்தில் எடு";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "சுதந்திர மற்றும் திறந்த இணையத்திற்காக அர்பணிக்கப்பட்ட இலாபநோக்கற்ற, மொசில்லாவிலிருந்து ஒரு நவீன கைபேசி உலாவி.";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "பயர்பாஃசைத் தேர்வு செய்தமைக்கு நன்றி!";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "அறிமுக காட்சிவில்லை %1$@ of %2$@";
+
+/* See http://mzl.la/1T8gxwo */
+"Personalize your Firefox just the way you like in Settings." = "அமைவுகளை எவ்வாறு விரும்புகிறீர்களோ அவ்வாறே பயர்பாஃசை விருப்பமையுங்கள்.";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "பயர்பாஃசில் உள்நுழை";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "உலாவத் தொடங்குங்கள்";
+

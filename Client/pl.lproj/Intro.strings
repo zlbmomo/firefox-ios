@@ -1,0 +1,48 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "Dzięki kartom przeglądaj wiele stron jednocześnie";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "Łącz się z Firefoksem, gdziekolwiek jesteś";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "Używaj dowolnej aplikacji e-mail, a nie tylko domyślnego Maila";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "Ustawienia poczty";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "Stuknij ikonę maski, by przejść do przeglądania prywatnego";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "Przeglądaj, jak gdyby nikt nie patrzył";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "Szukasz czegoś innego? Wybierz inną domyślną wyszukiwarkę (lub dodaj własną) w ustawieniach";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "Wyszukuj po swojemu";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "Używaj synchronizacji, by odnajdywać zakładki, hasła i inne rzeczy zachowywane w Firefoksie na wszystkich swoich urządzeniach";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "Kontynuuj przeglądanie";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "Nowoczesna przeglądarka od Mozilli, organizacji non-profit oddanej wolnemu i otwartemu Internetowi";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "Dziękujemy za wybranie Firefoksa!";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "Wprowadzenie, strona %1$@ z %2$@";
+
+/* See http://mzl.la/1if9ODp */
+"Personalize your Firefox just the way you like in Settings." = "Dostosuj Firefoksa do własnych upodobań poprzez ustawienia";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "Zaloguj się do Firefoksa";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "Rozpocznij przeglądanie";
+

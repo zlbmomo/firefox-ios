@@ -1,0 +1,19 @@
+/* Accessibility label for action adding current page to reading list.
+   Name for button adding current article to reading list in reader mode */
+"Add to Reading List" = "Dodaj na listu za čitanje";
+
+/* Accessibility message e.g. spoken by VoiceOver after the current page gets added to the Reading List using the Reader View button, e.g. by long-pressing it or by its accessibility custom action. */
+"Added page to Reading List" = "Stranica dodana na listu za čitanje";
+
+/* Panel accessibility label */
+"Reading list" = "Lisza za čitanje";
+
+/* Name for button removing current article from reading list in reader mode */
+"Remove from Reading List" = "Ukloni sa liste za čitanje";
+
+/* Option in settings to show reading list when you open a new tab */
+"Settings.NewTab.Option.ReadingList" = "Prikaz vaše liste za čitanje";
+
+/* See http://mzl.la/1LXbDOL */
+"Welcome to your Reading List" = "Dobrodošli na vašu listu za čitanje";
+

@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "Roll istor ar merdeiñ";
+
+/* Settings item for clearing the cache */
+"Cache" = "Krubuilh";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "Skarzhañ ar roadennoù prevez";
+
+/* Settings item for clearing cookies */
+"Cookies" = "Toupinoù";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "Roadennoù ezlinenn";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "Titouroù kennaskañ enrollet";
+

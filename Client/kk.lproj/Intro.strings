@@ -1,0 +1,48 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "Бірнеше веб-парақтарға беттер арқылы бір уақытта шолу.";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "Firefox қашан қолдансаңыз да, оны байланыстырыңыз.";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "Firefox көмегімен кез келген пошта қолданбасын - тек Mail емес - қолданыңыз.";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "Сізде поштаның… таңдауы бар";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "Жекелік шолу режиміне өту үшін бетперде таңбашасын шертіңіз.";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "Бақылаудан қорықпай-ақ интернетті шолыңыз";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "Басқа бірнәрсе іздедіңіз бе? Баптаулардан басқа негізгі іздеу жүйесін таңдаңыз (немесе өзіңіздікін қосыңыз).";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "Сіздің іздеулеріңіз, сіздің жолыңызбен";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "Синхрондау көмегімен сіз барлық құрылғыларыңызда Firefox ішінде сақтаған бетбелгілер, парольдер және т.б. нәрселерді табуға болады.";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "Жұмысты қалдырған жерінен жалғастырыңыз";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "Mozilla, еркін және ашық интернетке ұмтылатын коммерциялық емес ұйым, жасаған заманауи мобильді браузер.";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "Firefox-ты таңдағаныңыз үшін рахмет!";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "Кіріспе слайды %1$@, барлығы %2$@ слайд";
+
+/* See http://mzl.la/1T8gxwo */
+"Personalize your Firefox just the way you like in Settings." = "Firefox-ты өзіңізге ұнайтындай етіп баптауларда өзгертіңіз.";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "Firefox-қа кіру";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "Шолуды бастау";
+

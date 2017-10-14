@@ -1,0 +1,861 @@
+/* Button for larger reader font size. Keep this extremely short! This is shown in the reader mode toolbar. */
+"+" = "+";
+
+/* Button for smaller reader font size. Keep this extremely short! This is shown in the reader mode toolbar. */
+"-" = "-";
+
+/* Authentication prompt message with no realm. Parameter is the hostname of the site */
+"A username and password are being requested by %@." = "Nga %@ po kërkohen një emër përdoruesi dhe një fjalëkalim.";
+
+/* Authentication prompt message with a realm. First parameter is the hostname. Second is the realm string */
+"A username and password are being requested by %@. The site says: %@" = "Nga %1$@ po kërkohen një emër përdoruesi dhe një fjalëkalim. Sajti thotë: %2$@";
+
+/* Button for reader mode font size. Keep this extremely short! This is shown in the reader mode toolbar. */
+"Aa" = "Aa";
+
+/* About settings section title */
+"About" = "Rreth";
+
+/* The detailed text that explains what highlights are in AS. */
+"ActivityStream.HighlightIntro.Description" = "Firefox-i këtu do të vendosë gjëra që keni zbuluar në web, që të mund të gjeni lehtë rrugën për t’u kthyer te artikuj, video, faqerojtës apo të tjera faqe të goditura";
+
+/* The title that appears for the introduction to highlights in AS. */
+"ActivityStream.HighlightIntro.Title" = "Sytë Katër";
+
+/* The page control button that lets you switch between pages in top sites */
+"ActivityStream.PageControl.Button" = "Faqja Pasuese";
+
+/* Accessibility label for the Add Tab button in the Tab Tray. */
+"Add Tab" = "Shtoni Skedë";
+
+/* Accessibility label for action adding current page to reading list.
+   Name for button adding current article to reading list in reader mode */
+"Add to Reading List" = "Shtoje te Listë Leximesh";
+
+/* Button to dismiss the 'Add Pass Failed' alert.  See https://support.apple.com/HT204003 for context on Wallet. */
+"AddPass.Error.Dismiss" = "OK";
+
+/* Text of the 'Add Pass Failed' alert.  See https://support.apple.com/HT204003 for context on Wallet. */
+"AddPass.Error.Message" = "Ndodhi një gabim teksa bileta juaj shtohej te Wallet. Ju lutemi, riprovoni më vonë.";
+
+/* Title of the 'Add Pass Failed' alert. See https://support.apple.com/HT204003 for context on Wallet. */
+"AddPass.Error.Title" = "Dështoi Shtimi i Biletës";
+
+/* Accessibility message e.g. spoken by VoiceOver after the current page gets added to the Reading List using the Reader View button, e.g. by long-pressing it or by its accessibility custom action. */
+"Added page to Reading List" = "Faqja u shtua te Listë Leximesh";
+
+/* Accessibility label for address and search field, both words (Address, Search) are therefore nouns. */
+"Address and Search" = "Adresë dhe Kërkim";
+
+/* Used as a button label for crash dialog prompt */
+"Always Send" = "Dërgo Përherë";
+
+/* Tile title for Amazon */
+"Amazon" = "Amazon";
+
+/* Authentication prompt title */
+"Authentication required" = "Lyp mirëfilltësim";
+
+/* Accessibility label for the Back button in the tab toolbar. */
+"Back" = "Mbrapsht";
+
+/* Block pop-up windows setting */
+"Block Pop-up Windows" = "Blloko Dritare Flluskash";
+
+/* Panel accessibility label */
+"Bookmarks" = "Faqerojtës";
+
+/* Status label for the empty Bookmarks state. */
+"Bookmarks you save will show up here." = "Këtu do të shfaqen faqerojtësit që ruani.";
+
+/* The label to show the location of the folder where the bookmark is located */
+"Bookmarks.Folder.Label" = "Dosje";
+
+/* The label for the location of the new folder */
+"Bookmarks.FolderLocation.Label" = "Vend";
+
+/* The label for the title of the new folder */
+"Bookmarks.FolderName.Label" = "Emër Dosjeje";
+
+/* The button to create a new folder */
+"Bookmarks.NewFolder.Label" = "Dosje e Re";
+
+/* The label for the title of a bookmark */
+"Bookmarks.Title.Label" = "Titull";
+
+/* The label for the URL of a bookmark */
+"Bookmarks.URL.Label" = "URL";
+
+/* Accessibility label for brightness adjustment slider in Reader Mode display settings */
+"Brightness" = "Ndriçim";
+
+/* Label for Cancel button */
+"Cancel" = "Anuloje";
+
+/* Accessibility hint for the color theme setting buttons in reader mode display settings */
+"Changes color theme." = "Ndryshon temë ngjyrash.";
+
+/* Accessibility hint for the font type buttons in reader mode display settings */
+"Changes font type." = "Ndryshon lloj shkronjash.";
+
+/* Label used as an item in Settings. When touched it will open a dialog prompting the user to make sure they want to clear all of their private data. */
+"Clear Private Data" = "Pastro të Dhëna Private";
+
+/* Accessibility label for action denoting closing a tab in tab list (tray) */
+"Close" = "Mbylle";
+
+/* Accessibility label (used by assistive technology) notifying the user that the tab is being closed. */
+"Closing tab" = "Po mbyllet skeda";
+
+/* The button text in the Button Toast for switching to a fresh New Private Tab. */
+"ContextMenu.ButtonToast.NewPrivateTabOpened.ButtonText" = "Kaloni në të";
+
+/* The label text in the Button Toast for switching to a fresh New Private Tab. */
+"ContextMenu.ButtonToast.NewPrivateTabOpened.LabelText" = "U hap Skedë e Re Private";
+
+/* The button text in the Button Toast for switching to a fresh New Tab. */
+"ContextMenu.ButtonToast.NewTabOpened.ButtonText" = "Kaloni në të";
+
+/* The label text in the Button Toast for switching to a fresh New Tab. */
+"ContextMenu.ButtonToast.NewTabOpened.LabelText" = "U hap Skedë e Re";
+
+/* Copy the URL from the location bar */
+"Copy Address" = "Kopjo Adresën";
+
+/* Context menu item for copying an image to the clipboard */
+"Copy Image" = "Kopjo Figurën";
+
+/* Context menu item for copying a link URL to the clipboard */
+"Copy Link" = "Kopjo Lidhjen";
+
+/* Accessibility message e.g. spoken by VoiceOver after the user wanted to add current page to the Reading List and this was not done, likely because it already was in the Reading List, but perhaps also because of real failures. */
+"Could not add page to Reading List. Maybe it’s already there?" = "Faqja s’u shtua dot te Listë Leximesh. Mos vallë gjendet tashmë në të?";
+
+/* Accessibility message e.g. spoken by VoiceOver after adding current webpage to the Reading List failed. */
+"Could not add page to Reading list" = "Faqja s’u shtua dot te Listë Leximesh";
+
+/* Error message that is shown in settings when there was a problem loading */
+"Could not load page." = "Faqja s’u shtua dot.";
+
+/* See http://mzl.la/1Qtkf0j */
+"Create an account" = "Krijoni një llogari";
+
+/* Dark theme setting in Reading View settings */
+"Dark" = "E errët";
+
+/* Debug option */
+"Debug: forget Sync auth state" = "Diagnostikim: harroje gjendjen e mirëfilltësimit të Sync-ut";
+
+/* Debug option */
+"Debug: require password" = "Diagnostikim: kërko fjalëkalim";
+
+/* Debug option */
+"Debug: require upgrade" = "Diagnostikim: kërko përditësim";
+
+/* Accessibility label for button decreasing font size in display settings of reader mode */
+"Decrease text size" = "Zvogëlo madhësinë e tekstit";
+
+/* Accessibility label for default search engine setting.
+   Title for default search engine picker.
+   Title for default search engine settings section. */
+"Default Search Engine" = "Motor Kërkimesh Parazgjedhje";
+
+/* Pending feature; currently unused string! Checkbox label shown after multiple alerts are shown */
+"Disable additional page dialogs" = "Çaktivizo dialogë shtesë faqeje";
+
+/* Name for display settings button in reader mode. Display in the meaning of presentation, not monitor. */
+"Display Settings" = "Rregullime Ekrani";
+
+/* Prompt for saving a password. The first parameter is the username being saved. The second parameter is the hostname of the site. */
+"Do you want to save the password for %@ on %@?" = "Doni të ruhet fjalëkalimi për %1$@ për te %2$@?";
+
+/* Prompt for saving a password with no username. The parameter is the hostname of the site. */
+"Do you want to save the password on %@?" = "Doni të ruhet fjalëkalimi për te %@?";
+
+/* Prompt for updating a password. The first parameter is the username being saved. The second parameter is the hostname of the site. */
+"Do you want to update the password for %@ on %@?" = "Doni të përditësohet fjalëkalimi për %1$@ për te %2$@?";
+
+/* Prompt for updating a password with on username. The parameter is the hostname of the site. */
+"Do you want to update the password on %@?" = "Doni të përditësohet fjalëkalimi për te %@?";
+
+/* Done button on left side of the Settings view controller title bar */
+"Done" = "U bë";
+
+/* Used as a button label for crash dialog prompt */
+"Don’t Send" = "Mos e Dërgo";
+
+/* The label of the button the user will press to reject the option to open a file in another application */
+"Downloads.Alert.Cancel" = "Jo";
+
+/* The label of the button the user will press to be presented with a list of other apps to open a file in */
+"Downloads.Alert.Confirm" = "Po";
+
+/* The message of the alert box asking the user if they want to use another app to open a file. */
+"Downloads.Alert.Message" = "Firefox-i s’arrin ta shkarkojë ose shfaqë këtë kartelë. Do të donit të hapej me një tjetër aplikacion?";
+
+/* The title of the alert box asking the user if they want to use another app to open a file. */
+"Downloads.Alert.Title" = "Shkarkime Firefox-i";
+
+/* The message displayed to a user when they try and perform the download of an asset that Firefox cannot currently handle. */
+"Downloads.Error.Message" = "Ky lloj shkarkimi s’mbulohet ende nga Firefox-i.";
+
+/* Text message in the settings table view */
+"Enter your password to connect." = "Jepni fjalëkalimin tuaj që të bëhet lidhja.";
+
+/* Label for button to perform advanced actions on the error page */
+"ErrorPages.Advanced.Button" = "Të thelluara";
+
+/* Warning text when clicking the Advanced button on error pages */
+"ErrorPages.AdvancedWarning1.Text" = "Kujdes: s’e konfirmojmë dot se lidhja juaj me këtë sajt është e sigurt.";
+
+/* Additional warning text when clicking the Advanced button on error pages */
+"ErrorPages.AdvancedWarning2.Text" = "Mund të jetë një keqformësim ose futje hundësh nga dikush që po sulmon. Vazhdoni, nëse e pranoni rrezikun potencial.";
+
+/* Warning text on the certificate error page */
+"ErrorPages.CertWarning.Description" = "I zoti i %@ e ka formësuar keq sajtin e tij. Që të mbrohen nga vjedhjet të dhënat tuaja, Firefox-i nuk u lidh me këtë sajt.";
+
+/* Title on the certificate error page */
+"ErrorPages.CertWarning.Title" = "Kjo Lidhje Nuk Besohet";
+
+/* Label for button to go back from the error page */
+"ErrorPages.GoBack.Button" = "Shko Mbrapsht";
+
+/* Button label to temporarily continue to the site from the certificate error page */
+"ErrorPages.VisitOnce.Button" = "Vizitoje sajtin, sido qoftë";
+
+/* Tile title for Facebook */
+"Facebook" = "Facebook";
+
+/* Text of the 'sign out firefox account' alert */
+"Firefox will stop syncing with your account, but won’t delete any of your browsing data on this device." = "Firefox-i do të reshtë së njëkohësuari me llogarinë tuaj, por nuk do të fshihet ndonjë nga të dhënat e shfletimeve tuaja në këtë pajisje.";
+
+/* See http://mzl.la/1G7uHo7 */
+"Firefox would like to access your Photos" = "Firefox-i do të donte të hynte te Fotot tuaja";
+
+/* Accessibility Label for the tab toolbar Forward button */
+"Forward" = "Përpara";
+
+/* General settings section title */
+"General" = "Të përgjithshme";
+
+/* A re-worded offer about Sync, displayed when the Sync home panel is empty, that emphasizes one-way data transfer, not syncing. */
+"Get your open tabs, bookmarks, and passwords from your other devices." = "Merrni skeda, faqerojtës dhe fjalëkalime tuajt nga pajisje të tjera tuajat.";
+
+/* Pending feature; currently unused string! Button to browse to URL on the clipboard when browser is opened */
+"Go" = "Shko";
+
+/* Pending feature; currently unused string! Prompt message shown when browser is opened with URL on the clipboard */
+"Go to copied URL?" = "Të shkohet te URL-ja e kopjuar?";
+
+/* Show the SUMO support page from the Support section in the settings. see http://mzl.la/1dmM8tZ */
+"Help" = "Ndihmë";
+
+/* Panel accessibility label */
+"History" = "Historik";
+
+/* Title for the History Panel empty state. */
+"HistoryPanel.EmptyState.Title" = "Këtu do të shfaqen sajtet që keni vizituar tani afër.";
+
+/* Description for the empty synced tabs null state in the History Panel */
+"HistoryPanel.EmptySyncedTabsNullState.Description" = "Këtu shfaqen skedat prej pajisjeve tuaja të tjera.";
+
+/* Description for the empty synced tabs state in the History Panel */
+"HistoryPanel.EmptySyncedTabsState.Description" = "Bëni hyrjen, që të shihni skeda të hapura te pajisje tuajat të tjera.";
+
+/* Title for the empty synced tabs state in the History Panel */
+"HistoryPanel.EmptySyncedTabsState.Title" = "Firefox Sync";
+
+/* Title for the Back to History button in the History Panel */
+"HistoryPanel.HistoryBackButton.Title" = "Historik";
+
+/* Title for the Recently Closed button in the History Panel */
+"HistoryPanel.RecentlyClosedTabsButton.Title" = "Mbyllur së fundi";
+
+/* Description that corresponds with a number of devices connected for the Synced Tabs Cell in the History Panel */
+"HistoryPanel.SyncedTabsCell.Description.Pluralized" = "%d device(s) të lidhura";
+
+/* Title for the Synced Tabs Cell in the History Panel */
+"HistoryPanel.SyncedTabsCell.Title" = "Pajisje të njëkohësuara";
+
+/* Button cancelling changes setting the home page for the first time. */
+"HomePage.Set.Dialog.Cancel" = "Anuloje";
+
+/* Alert dialog body when the user opens the home page for the first time. */
+"HomePage.Set.Dialog.Message" = "Këtë mund ta ndryshoni kurdo, te Rregullime";
+
+/* Button accepting changes setting the home page for the first time. */
+"HomePage.Set.Dialog.OK" = "Vëre si Krye";
+
+/* Alert dialog title when the user opens the home page for the first time. */
+"HomePage.Set.Dialog.Title" = "Doni të përdoret kjo faqe web si faqja juaj hyrëse?";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.Back.DiscoveryTitle" = "Mbrapsht";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.CloseTab.DiscoveryTitle" = "Mbylle Skedën";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.Find.DiscoveryTitle" = "Gjej";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.Forward.DiscoveryTitle" = "Përpara";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.NewPrivateTab.DiscoveryTitle" = "Skedë e Re Private";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.NewTab.DiscoveryTitle" = "Skedë e Re";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.Reload.DiscoveryTitle" = "Ringarkoje Faqen";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.SelectLocationBar.DiscoveryTitle" = "Përzgjidhni Shtyllë Vendesh";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.ShowNextTab.DiscoveryTitle" = "Shfaq Skedën Pasuese";
+
+/* Label to display in the Discoverability overlay for keyboard shortcuts */
+"Hotkeys.ShowPreviousTab.DiscoveryTitle" = "Shfaq Skedën e Mëparshme";
+
+/* Accessibility label for button increasing font size in display settings of reader mode */
+"Increase text size" = "Rrit madhësi teksti";
+
+/* Accessibility label for the introduction tour carousel */
+"Intro Tour Carousel" = "Rrotullamja e Turit Hyrës";
+
+/* History tableview section header */
+"Last month" = "Muajin e fundit";
+
+/* Remote tabs last synced time. Argument is the relative date string. */
+"Last synced: %@" = "Njëkohësuar së fundi më: %@";
+
+/* History tableview section header */
+"Last week" = "Javën e fundit";
+
+/* Settings item that opens a tab containing the licenses. See http://mzl.la/1NSAWCG */
+"Licenses" = "Licenca";
+
+/* Light theme setting in Reading View settings */
+"Light" = "E çelët";
+
+/* Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+"Load original page" = "Ngarko faqen origjinale";
+
+/* Message displayed when the reader mode page is loading. This message will appear only when sharing to Firefox reader mode from another app. */
+"Loading content…" = "Po ngarkohet lëndë…";
+
+/* Button in settings screen to disconnect from your account
+   Disconnect button in the 'log out firefox account' alert */
+"Log Out" = "Dilni";
+
+/* Title of the 'log out firefox account' alert */
+"Log Out?" = "Të dilet?";
+
+/* Authentication prompt log in button */
+"Log in" = "Hyni";
+
+/* Label used as an item in Settings. When touched, the user will be navigated to the Logins/Password manager. */
+"Logins" = "Kredenciale Hyrjesh";
+
+/* Button to not save the user's password */
+"LoginsHelper.DontSave.Button" = "Mos e Ruaj";
+
+/* Prompt for saving a login. The first parameter is the username being saved. The second parameter is the hostname of the site. */
+"LoginsHelper.PromptSaveLogin.Title" = "Të ruhen kredencialet e hyrjes për %1$@ te %2$@?";
+
+/* Prompt for saving a password with no username. The parameter is the hostname of the site. */
+"LoginsHelper.PromptSavePassword.Title" = "Të ruhet fjalëkalimi për %@?";
+
+/* Prompt for updating a login. The first parameter is the username for which the password will be updated for. The second parameter is the hostname of the site. */
+"LoginsHelper.PromptUpdateLogin.Title" = "Të përditësohen kredenciale hyrjesh për %1$@ te %2$@?";
+
+/* Prompt for updating a password with no username. The parameter is the hostname of the site. */
+"LoginsHelper.PromptUpdatePassword.Title" = "Të përditësohet fjalëkalimi për %@?";
+
+/* Button to save the user's password */
+"LoginsHelper.SaveLogin.Button" = "Ruaji Kredencialet e Hyrjes";
+
+/* Button to update the user's password */
+"LoginsHelper.Update.Button" = "Përditësoje";
+
+/* Restore Tabs Prompt Description */
+"Looks like Firefox crashed previously. Would you like to restore your tabs?" = "Duket se Firefox-i, më herët, u vithis. Do të donit të rikthehen skedat tuaja?";
+
+/* Name for Mark as read button in reader mode
+   Title for the button that marks a reading list item as read */
+"Mark as Read" = "Shënoje si të Lexuar";
+
+/* Name for Mark as unread button in reader mode
+   Title for the button that marks a reading list item as unread */
+"Mark as Unread" = "Shënoje si të Palexuar";
+
+/* Error for a missing remote error number */
+"Missing error" = "Mungon gabimi";
+
+/* Error for a missing remote error message */
+"Missing message" = "Mungon mesazhi";
+
+/* Accessibility label for the navigation toolbar displayed at the bottom of the screen. */
+"Navigation Toolbar" = "Panel Lëvizjesh";
+
+/* Accessibility label for the New Tab button in the tab toolbar. */
+"New Tab" = "Skedë e Re";
+
+/* Restore Tabs Negative Action */
+"No" = "Jo";
+
+/* Message spoken by VoiceOver to indicate that there are no tabs in the Tabs Tray */
+"No tabs" = "S’ka skeda";
+
+/* Button to not save the user's password */
+"Not now" = "Jo tani";
+
+/* OK button */
+"OK" = "OK";
+
+/* Restore Tabs Affirmative Action */
+"Okay" = "OK";
+
+/* Title for prompt displayed to user after the app crashes */
+"Oops! Firefox crashed" = "Hëm! Firefox-i u vithis";
+
+/* See http://mzl.la/1G7uHo7 */
+"Open Settings" = "Hap Rregullimet";
+
+/* See http://mzl.la/1LXbDOL */
+"Open articles in Reader View by tapping the book icon when it appears in the title bar." = "Artikujt nën Pamjen Lexues i hapni duke prekur ikonën libër, kur shfaqet te shtylla e titullit.";
+
+/* Context menu item for opening a link in a new tab */
+"Open in New Tab" = "Hape në Skedë të Re";
+
+/* String indicating that the file can be opened in another application on the device */
+"Open in…" = "Hapeni në…";
+
+/* The message displayed to a user when they try to open a URL that cannot be handled by Firefox, or any external app. */
+"OpenURL.Error.Message" = "Firefox-i s’e hap dot faqen, ngaqë ajo ka një adresë të pavlefshme.";
+
+/* Title of the message shown when the user attempts to navigate to an invalid link. */
+"OpenURL.Error.Title" = "S’hap Dot Faqen";
+
+/* Opening an external URL */
+"Opening %@" = "Po hapet %@";
+
+/* Accessibility label for the Home panel's top toolbar containing list of the home panels (top sites, bookmarsk, history, remote tabs, reading list). */
+"Panel Chooser" = "Zgjedhës Panelesh";
+
+/* Password textbox in Authentication prompt */
+"Password" = "Fjalëkalim";
+
+/* Paste the URL into the location bar */
+"Paste" = "Ngjite";
+
+/* Paste the URL into the location bar and visit */
+"Paste & Go" = "Ngjite & Shko";
+
+/* Privacy section title */
+"Privacy" = "Privatësi";
+
+/* Show Firefox Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/firefox/ */
+"Privacy Policy" = "Rregulla Privatësie";
+
+/* Title for quick-search engines settings section. */
+"Quick-Search Engines" = "Motorë Kërkimesh të Shpejta";
+
+/* Accessibility label for the Reader View button */
+"Reader View" = "Pamja Lexues";
+
+/* Panel accessibility label */
+"Reading list" = "Listë leximesh";
+
+/* Title for the Recently Closed Tabs Panel */
+"RecentlyClosedTabsPanel.Title" = "Mbyllur Së Fundi";
+
+/* Accessibility Label for the tab toolbar Reload button */
+"Reload" = "Ringarkoje";
+
+/* Title for the button that removes a reading list item */
+"Remove" = "Hiqe";
+
+/* Name for button removing current article from reading list in reader mode */
+"Remove from Reading List" = "Hiqe nga Listë Leximesh";
+
+/* Action Sheet Button for Requesting the Desktop Site */
+"Request Desktop Site" = "Kërko Sajtin për Desktop";
+
+/* Action Sheet Button for Requesting the Mobile Site */
+"Request Mobile Site" = "Kërko Sajtin për Celular";
+
+/* Font type setting in the reading view settings */
+"Sans-serif" = "Sans-serif";
+
+/* Context menu item for saving an image */
+"Save Image" = "Ruaje Figurën";
+
+/* Setting to enable the built-in password manager */
+"Save Logins" = "Ruaji Kredencialet e Hyrjeve";
+
+/* See http://mzl.la/1LXbDOL */
+"Save pages to your Reading List by tapping the book plus icon in the Reader View controls." = "Faqet te Lista juaj e Leximeve ruhen duke prekur ikonën libër plus te kontrollet e Listës së Leximeve.";
+
+/* Navigation title for search settings.
+   Open search section of settings */
+"Search" = "Kërkim";
+
+/* The text shown in the URL bar on about:home */
+"Search or enter address" = "Kërkoni ose jepni adresë";
+
+/* The message that asks the user to Add the search provider explaining where the search engine will appear */
+"Search.ThirdPartyEngines.AddMessage" = "Motori i ri i kërkimeve do të shfaqet te shtylla e kërkimeve të shpejta.";
+
+/* The success message that appears after a user sucessfully adds a new search engine */
+"Search.ThirdPartyEngines.AddSuccess" = "Motori i Kërkimeve u Shtua!";
+
+/* The title that asks the user to Add the search provider */
+"Search.ThirdPartyEngines.AddTitle" = "Të shtohet Furnizuesi i Kërkimeve?";
+
+/* The cancel button if you do not want to add a search engine. */
+"Search.ThirdPartyEngines.Cancel" = "Anuloje";
+
+/* A title explaining that we failed to add a search engine */
+"Search.ThirdPartyEngines.FailedMessage" = "Furnizuesi i kërkimeve s’u shtua dot.";
+
+/* A title explaining that we failed to add a search engine */
+"Search.ThirdPartyEngines.FailedTitle" = "Dështoi";
+
+/* A message explaining fault in custom search engine form. */
+"Search.ThirdPartyEngines.FormErrorMessage" = "Ju lutemi, plotësoni saktë krejt fushat.";
+
+/* A title stating that we failed to add custom search engine. */
+"Search.ThirdPartyEngines.FormErrorTitle" = "Dështoi";
+
+/* The confirmation button */
+"Search.ThirdPartyEngines.OK" = "OK";
+
+/* Accessibility hint describing the action performed when a search suggestion is clicked */
+"Searches for the suggestion" = "Sugjerime për kërkimin";
+
+/* Accessibility label for the lock icon, which is only present if the connection is secure */
+"Secure connection" = "Lidhje e sigurt";
+
+/* Menu item in settings used to open input.mozilla.org where people can submit feedback */
+"Send Feedback" = "Dërgoni Përshtypjet";
+
+/* Used as a button label for crash dialog prompt */
+"Send Report" = "Dërgoje Raportin";
+
+/* Message displayed in the crash dialog above the buttons used to select when sending reports */
+"Send a crash report so Mozilla can fix the problem?" = "Të dërgohet një raport vithisjeje, që kështu Mozilla të mund të ndreqë problemin?";
+
+/* Button title for cancelling SendTo screen */
+"SendTo.Cancel.Button" = "Anuloje";
+
+/* Message in error prompt explaining why the URL is invalid. */
+"SendTo.Error.Message" = "Me të tjerët mund të ndahen vetëm lidhje HTTP dhe HTTPS.";
+
+/* OK button to dismiss the error prompt. */
+"SendTo.Error.OK.Button" = "OK";
+
+/* Title of error prompt displayed when an invalid URL is shared. */
+"SendTo.Error.Title" = "Lidhja që po provoni të ndani me të tjerët, s’mund të ndahet.";
+
+/* Sepia theme setting in Reading View settings */
+"Sepia" = "Sepia";
+
+/* Font type setting in the reading view settings */
+"Serif" = "Serif";
+
+/* Title in the settings view controller title bar */
+"Settings" = "Rregullime";
+
+/* The button text in Search Settings that opens the Custom Search Engine view. */
+"Settings.AddCustomEngine" = "Shtoni Motor Kërkimesh";
+
+/* The text on the Save button when saving a custom search engine */
+"Settings.AddCustomEngine.SaveButtonText" = "Ruaje";
+
+/* The title of the  Custom Search Engine view. */
+"Settings.AddCustomEngine.Title" = "Shtoni Motorë Kërkimesh";
+
+/* The title for the field which sets the title for a custom search engine. */
+"Settings.AddCustomEngine.TitleLabel" = "Titull";
+
+/* The placeholder for Title Field when saving a custom search engine. */
+"Settings.AddCustomEngine.TitlePlaceholder" = "Motorë Kërkimesh";
+
+/* The title for URL Field */
+"Settings.AddCustomEngine.URLLabel" = "URL";
+
+/* The placeholder for URL Field when saving a custom search engine */
+"Settings.AddCustomEngine.URLPlaceholder" = "URL (Zëvendësoje Kërkesën me %s)";
+
+/* Button in settings that clears private data for the selected items. */
+"Settings.ClearPrivateData.Clear.Button" = "Pastro të Dhënat Private";
+
+/* Label used as an item in Settings. When touched it will open a dialog prompting the user to make sure they want to clear all of their private data. */
+"Settings.ClearPrivateData.SectionName" = "Pastroni të Dhënat Private";
+
+/* Title displayed in header of the setting panel. */
+"Settings.ClearPrivateData.Title" = "Pastroni të Dhëna Private";
+
+/* Button in settings to clear the home page. */
+"Settings.HomePage.Clear.Button" = "Pastroje";
+
+/* Label used as an item in Settings. When touched it will open a dialog to configure the home page and its uses. */
+"Settings.HomePage.SectionName" = "Faqe hyrëse";
+
+/* Title displayed in header of the setting panel. */
+"Settings.HomePage.Title" = "Rregullime Faqeje Hyrëse";
+
+/* Placeholder text in the homepage setting when no homepage has been set. */
+"Settings.HomePage.URL.Placeholder" = "Jepni një faqe web";
+
+/* Title of the setting section containing the URL of the current home page. */
+"Settings.HomePage.URL.Title" = "Faqja Hyrëse e Tanishme";
+
+/* Button in settings to use the current link on the clipboard as home page. */
+"Settings.HomePage.UseCopiedLink.Button" = "Përdor Lidhjen e Kopjuar";
+
+/* Button in settings to use the current page as home page. */
+"Settings.HomePage.UseCurrent.Button" = "Përdor Faqen e Tanishme";
+
+/* Button in settings to use the default home page. If no default is set, then this button isn't shown. */
+"Settings.HomePage.UseDefault.Button" = "Përdor Parazgjedhjen";
+
+/* A description in settings of what the new tab choice means */
+"Settings.NewTab.Description" = "Kur hapni një Skedë të Re:";
+
+/* Option in settings to show a blank page when you open a new tab */
+"Settings.NewTab.Option.BlankPage" = "Shfaq një Faqe të Zbrazët";
+
+/* Option in settings to show bookmarks when you open a new tab */
+"Settings.NewTab.Option.Bookmarks" = "Shfaq Faqerojtësit tuaj";
+
+/* Option in settings to show history when you open a new tab */
+"Settings.NewTab.Option.History" = "Shfaq Historikun tuaj";
+
+/* Option in settings to show your homepage when you open a new tab */
+"Settings.NewTab.Option.HomePage" = "Shfaq Faqen tuaj Hyrëse";
+
+/* Option in settings to show reading list when you open a new tab */
+"Settings.NewTab.Option.ReadingList" = "Shfaq Listën tuaj të Leximeve";
+
+/* Option in settings to show top sites when you open a new tab */
+"Settings.NewTab.Option.TopSites" = "Shfaq Sajtet tuaj Kryesues";
+
+/* Label used as an item in Settings. When touched it will open a dialog to configure the new tab behaviour. */
+"Settings.NewTab.SectionName" = "Skedë e Re";
+
+/* Title displayed in header of the setting panel. */
+"Settings.NewTab.Title" = "Rregullime Skede të Re";
+
+/* Button displayed at the top of the search settings. */
+"Settings.Search.Done.Button" = "U bë";
+
+/* Button displayed at the top of the search settings. */
+"Settings.Search.Edit.Button" = "Përpunoni";
+
+/* Title of link to help page to find out how to solve Sync issues */
+"Settings.TroubleShootSync.Title" = "Diagnostikoje";
+
+/* Context menu item for sharing a link URL */
+"Share Link" = "Ndajeni Lidhjen Me të Tjerët";
+
+/* Button title for cancelling Share screen */
+"ShareTo.Cancel.Button" = "Anuloje";
+
+/* Label for show search suggestions setting. */
+"Show Search Suggestions" = "Shfaq Sugjerime Kërkimi";
+
+/* Accessibility label for the tabs button in the (top) tab toolbar
+   Accessibility Label for the tabs button in the tab toolbar */
+"Show Tabs" = "Shfaq Skeda";
+
+/* Show the on-boarding screen again from the settings */
+"Show Tour" = "Shfaq Turin";
+
+/* Label for show search suggestions setting. */
+"Show search suggestions" = "Shfaq sugjerime kërkimi";
+
+/* See http://mzl.la/1Qtkf0j
+   Text message / button in the settings table view */
+"Sign in" = "Hyni";
+
+/* Accessibility Label for the tab toolbar Stop button */
+"Stop" = "Ndale";
+
+/* Support section title */
+"Support" = "Asistencë";
+
+/* Accessibility hint for tab tray's displayed tab. */
+"Swipe right or left with three fingers to close the tab." = "Që të mbyllet skeda, fërkojeni majtas ose djathtas me tre gishta.";
+
+/* Sync Firefox Account */
+"Sync Now" = "Njëkohësoje Tani";
+
+/* Text displayed when the Sync home panel is empty, describing the features provided by Sync to invite the user to log in. */
+"Sync your tabs, bookmarks, passwords and more." = "Njëkohësoni skedat, faqerojtësit, fjalëkalimet tuaja, etj.";
+
+/* Text displayed when the Sync home panel is empty, describing the features provided by Sync to invite the user to log in. */
+"Sync your tabs, passwords and more." = "Njëkohësoni skedat, fjalëkalimet tuaja, etj.";
+
+/* Message displayed when the user syncs for the first time */
+"Sync.FirstTimeMessage.Label" = "Njëkohësimi juaj i parë mund të hajë ca kohë";
+
+/* Message displayed when the user's account is syncing with no ellipsis */
+"Sync.Syncing.Label" = "Po njëkohësohet";
+
+/* Message displayed when the user's account is syncing with ellipsis at the end */
+"Sync.SyncingEllipsis.Label" = "Po njëkohësohet…";
+
+/* The Bookmark sync component, used in SyncState.Partial.Title */
+"SyncState.Bookmark.Title" = "Faqerojtës";
+
+/* The Remote Clients sync component, used in SyncState.Partial.Title */
+"SyncState.Clients.Title" = "Klientë të Largët";
+
+/* Title for Sync status message when synchronization failed to complete */
+"SyncState.Failed.Title" = "Njëkohësimi dështoi";
+
+/* The History sync component, used in SyncState.Partial.Title */
+"SyncState.History.Title" = "Historik";
+
+/* The Logins sync component, used in SyncState.Partial.Title */
+"SyncState.Logins.Title" = "Kredenciale Hyrjesh";
+
+/* Title for Sync status message when Sync failed to start. */
+"SyncState.NotStarted.Title" = "Njëkohësimi s’është gati";
+
+/* Title for Sync status message when Sync failed due to being offline */
+"SyncState.Offline.Title" = "Sync-u s’është në linjë";
+
+/* Title for Sync status message when a component of Sync failed to complete, where %@ represents the name of the component, i.e. Sync is experiencing issues syncing Bookmarks */
+"SyncState.Partial.Title" = "Sync-u po ka probleme me njëkohësimin e %@";
+
+/* The Tabs sync component, used in SyncState.Partial.Title */
+"SyncState.Tabs.Title" = "Skeda";
+
+/* Message spoken by VoiceOver saying the position of the single currently visible tab in Tabs Tray, along with the total number of tabs. E.g. \"Tab 2 of 5\" says that tab 2 is visible (and is the only visible tab), out of 5 tabs total. */
+"Tab %@ of %@" = "Skeda %1$@ nga %2$@";
+
+/* Message spoken by VoiceOver saying the range of tabs that are currently visible in Tabs Tray, along with the total number of tabs. E.g. \"Tabs 8 to 10 of 15\" says tabs 8, 9 and 10 are visible, out of 15 tabs total. */
+"Tabs %@ to %@ of %@" = "Skedat nga %1$@ deri në %2$@, nga %3$@ gjithsej";
+
+/* Accessibility label for the Tabs Tray view. */
+"Tabs Tray" = "Panel Skedash";
+
+/* The button to undo the delete all tabs */
+"Tabs.DeleteAllUndo.Button" = "Zhbëje";
+
+/* The label indicating that all the tabs were closed */
+"Tabs.DeleteAllUndo.Title" = "U mbyllën %d skeda";
+
+/* Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Firefox reader mode from another app. */
+"The page could not be displayed in Reader View." = "Faqja s’u shfaq dot nën Pamjen Lexues.";
+
+/* Error message in the remote tabs panel */
+"There was a problem accessing tabs from your other devices. Try again in a few moments." = "Pati një problem me hyrjen te skedat prej pajisjeve tuaja të tjera. Riprovoni pas pak çastesh.";
+
+/* Error displayed when reader mode cannot be enabled */
+"There was an error converting the page" = "Pati një gabim në shndërrimin e faqes";
+
+/* See http://mzl.la/1G7uHo7 */
+"This allows you to save the image to your Camera Roll." = "Kjo ju lejon të ruani figurën te Camera Roll-i juaj.";
+
+/* Opening an external app */
+"This will open in another application" = "Kjo do të hapet në një aplikacion tjetër";
+
+/* History tableview section header */
+"Today" = "Sot";
+
+/* Accessibility label for the Menu button. */
+"Toolbar.Menu.AccessibilityLabel" = "Menu";
+
+/* Panel accessibility label */
+"Top sites" = "Sajte kryesues";
+
+/* Description label for the empty Top Sites state. */
+"TopSites.EmptyState.Description" = "Këtu do të shfaqen sajtet më të vizituar nga ju.";
+
+/* The title for the empty Top Sites state */
+"TopSites.EmptyState.Title" = "Mirë se vini te Sajtet Kryesues";
+
+/* Button shown in editing mode to remove this site from the top sites panel. */
+"TopSites.RemovePage.Button" = "Hiqe faqen - %@";
+
+/* Tile title for Twitter */
+"Twitter" = "Twitter";
+
+/* Button to update the user's password */
+"Update" = "Përditësoje";
+
+/* Text message in the settings table view */
+"Upgrade Firefox to connect." = "Që të lidheni, përmirësoni Firefox-in.";
+
+/* Username textbox in Authentication prompt */
+"Username" = "Emër përdoruesi";
+
+/* Text message in the settings table view */
+"Verify your email address." = "Verifikoni adresën tuaj email.";
+
+/* Version number of Firefox shown in settings */
+"Version %@ (%@)" = "Versioni %1$@ (%2$@)";
+
+/* Accessibility label for the main web content view */
+"Web content" = "Lëndë Web";
+
+/* See http://mzl.la/1LXbDOL */
+"Welcome to your Reading List" = "Mirë se vini te Lista juaj e Leximeve";
+
+/* Restore Tabs Prompt Title */
+"Well, this is embarrassing." = "Hëm, ndjehemi ngushtë.";
+
+/* Tile title for Wikipedia */
+"Wikipedia" = "Wikipedia";
+
+/* Button to save the user's password */
+"Yes" = "Po";
+
+/* History tableview section header */
+"Yesterday" = "Dje";
+
+/* Error message in the remote tabs panel */
+"You don’t have any tabs open in Firefox on your other devices." = "S’keni ndonjë skedë të hapur te Firefox-i në pajisje tuajat të tjera.";
+
+/* Tile title for YouTube */
+"YouTube" = "YouTube";
+
+/* Your Rights settings section title */
+"Your Rights" = "Të drejtat Tuaja";
+
+/* Accessibility label for Desktop Computer (PC) image in remote tabs list */
+"computer" = "kompjuter";
+
+/* Relative time for a tab that was visited within the last few moments. */
+"just now" = "mu tani";
+
+/* Accessibility label for Mobile Device image in remote tabs list */
+"mobile device" = "pajisje celulare";
+
+/* Relative date for dates older than a month and less than two months. */
+"more than a month ago" = "më shumë se një muaj më parë";
+
+/* Description for a date more than a week ago, but less than a month ago. */
+"more than a week ago" = "më shumë se një javë më parë";
+
+/* Accessibility label for read article in reading list. It's a past participle - functions as an adjective. */
+"read" = "lexojeni";
+
+/* Relative date for date in past week. */
+"this week" = "këtë javë";
+
+/* Relative date for date older than a minute. */
+"today at %@" = "sot, më %@";
+
+/* Accessibility label for unread article in reading list. It's a past participle - functions as an adjective. */
+"unread" = "të palexuara";
+
+/* Relative date for yesterday. */
+"yesterday" = "dje";
+

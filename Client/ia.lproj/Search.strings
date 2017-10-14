@@ -1,0 +1,9 @@
+/* For search suggestions prompt. This string should be short so it fits nicely on the prompt row. */
+"No" = "No";
+
+/* Label for search settings button. */
+"Search Settings" = "Cercar in le parametros";
+
+/* For search suggestions prompt. This string should be short so it fits nicely on the prompt row. */
+"Yes" = "Si";
+

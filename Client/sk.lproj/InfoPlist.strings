@@ -1,0 +1,16 @@
+"NSCameraUsageDescription" = "Toto umožňuje vytvárať a odosielať fotografie.";
+
+"NSLocationWhenInUseUsageDescription" = "Stránky, ktoré navštevujete, môžu žiadať prezradiť vašu polohu.";
+
+"NSMicrophoneUsageDescription" = "Toto vám umožňuje tvoriť a nahrávať videá.";
+
+"NSPhotoLibraryAddUsageDescription" = "Toto vám umožňuje ukladať fotky.";
+
+"NSPhotoLibraryUsageDescription" = "Toto vám umožňuje ukladať a odosielať fotky.";
+
+"ShortcutItemTitleNewPrivateTab" = "Nová súkromná karta";
+
+"ShortcutItemTitleNewTab" = "Nová karta";
+
+"ShortcutItemTitleQRCode" = "Skenovanie QR kódu";
+

@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "تأريخ التصفح";
+
+/* Settings item for clearing the cache */
+"Cache" = "الخبيئة";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "امحُ البيانات الخاصة";
+
+/* Settings item for clearing cookies */
+"Cookies" = "الكعكات";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "بيانات المواقع للعمل دون اتصال";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "جلسات الولوج المحفوظة";
+

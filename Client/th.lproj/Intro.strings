@@ -1,0 +1,48 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "เรียกดูหลายหน้าเว็บพร้อมกันในเวลาเดียวด้วยแท็บ";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "เชื่อมต่อ Firefox ในทุกที่ที่คุณใช้งาน";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "ใช้แอปอีเมลใด ๆ - ไม่ใช่แค่เมล - ด้วย Firefox";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "คุณได้รับจดหมาย… ตัวเลือก";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "แตะไอคอนหน้ากากเพื่อเข้าไปในโหมดการท่องเว็บแบบส่วนตัว";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "ท่องเว็บเหมือนไม่มีใครเฝ้ามองอยู่";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "กำลังค้นหาอย่างอื่น? เลือกเครื่องมือค้นหาเริ่มต้นอื่น (หรือเพิ่มของคุณเอง) ในการตั้งค่า";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "การค้นหาของคุณในแบบของคุณ";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "ใช้ Sync เพื่อค้นหาที่คั่นหน้า, รหัสผ่าน และสิ่งอื่น ๆ ที่คุณบันทึกไปยัง Firefox ในอุปกรณ์ทั้งหมดของคุณ";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "หยิบจากที่ที่คุณทำค้างไว้";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "เบราว์เซอร์มือถือที่ทันสมัยจาก Mozilla องค์กรไม่แสวงหาผลกำไรที่มุ่งมั่นเพื่อเว็บฟรีและเปิดกว้าง";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "ขอบคุณที่เลือก Firefox!";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "ภาพนิ่งเกริ่นนำ %1$@ จาก %2$@";
+
+/* See http://mzl.la/1T8gxwo */
+"Personalize your Firefox just the way you like in Settings." = "ปรับแต่ง Firefox ของคุณให้เป็นส่วนบุคคลในแบบที่คุณชอบในการตั้งค่า";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "ลงชื่อเข้า Firefox";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "เริ่มการท่องเว็บ";
+

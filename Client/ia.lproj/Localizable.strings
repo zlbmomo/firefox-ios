@@ -1,0 +1,415 @@
+/* Button for larger reader font size. Keep this extremely short! This is shown in the reader mode toolbar. */
+"+" = "+";
+
+/* Button for smaller reader font size. Keep this extremely short! This is shown in the reader mode toolbar. */
+"-" = "-";
+
+/* Button for reader mode font size. Keep this extremely short! This is shown in the reader mode toolbar. */
+"Aa" = "Aa";
+
+/* The title for the pinning a topsite action */
+"ActivityStream.ContextMenu.PinTopsite" = "Adder al sitos plus popular";
+
+/* The title for removing a pinned topsite action */
+"ActivityStream.ContextMenu.RemovePinTopsite" = "Remover ex le sitos popular";
+
+/* The description of a highlight if it is a site the user has bookmarked */
+"ActivityStream.Highlights.Bookmark" = "Marcapaginas addite";
+
+/* Section title label for the Highlights section */
+"ActivityStream.Highlights.Title" = "In evidentia";
+
+/* The description of a highlight if it is a site the user has visited */
+"ActivityStream.Highlights.Visited" = "Visitate";
+
+/* The page control button that lets you switch between pages in top sites */
+"ActivityStream.PageControl.Button" = "Pagina sequente";
+
+/* Section title label for Recommended by Pocket section */
+"ActivityStream.Pocket.SectionTitle" = "Recommendate per Pocket";
+
+/* The description of a Pocket Story */
+"ActivityStream.Pocket.Trending" = "Tendentias";
+
+/* Section title label for Top Sites */
+"ActivityStream.TopSites.SectionTitle" = "Sitos popular";
+
+/* Accessibility label for the Add Tab button in the Tab Tray. */
+"Add Tab" = "Adder scheda";
+
+/* Accessibility label for action adding current page to reading list.
+   Name for button adding current article to reading list in reader mode */
+"Add to Reading List" = "Adder al lista de lectura";
+
+/* Button to dismiss the 'Add Pass Failed' alert.  See https://support.apple.com/HT204003 for context on Wallet. */
+"AddPass.Error.Dismiss" = "OK";
+
+/* Text of the 'Add Pass Failed' alert.  See https://support.apple.com/HT204003 for context on Wallet. */
+"AddPass.Error.Message" = "Un error occurreva in le addition del passe al Portafolio. Per favor retenta plus tarde.";
+
+/* Title of the 'Add Pass Failed' alert. See https://support.apple.com/HT204003 for context on Wallet. */
+"AddPass.Error.Title" = "Falta a adder le passe";
+
+/* Accessibility message e.g. spoken by VoiceOver after the current page gets added to the Reading List using the Reader View button, e.g. by long-pressing it or by its accessibility custom action. */
+"Added page to Reading List" = "Pagina addite al lista de lectura";
+
+/* Accessibility label for address and search field, both words (Address, Search) are therefore nouns. */
+"Address and Search" = "Adresse e recerca";
+
+/* Used as a button label for crash dialog prompt */
+"Always Send" = "Inviar sempre";
+
+/* Tile title for Amazon */
+"Amazon" = "Amazon";
+
+/* Authentication prompt title */
+"Authentication required" = "Authentication requirite";
+
+/* Accessibility label for the Back button in the tab toolbar. */
+"Back" = "Retro";
+
+/* Block pop-up windows setting */
+"Block Pop-up Windows" = "Blocar le fenestras emergente";
+
+/* Panel accessibility label */
+"Bookmarks" = "Marcapaginas";
+
+/* Status label for the empty Bookmarks state. */
+"Bookmarks you save will show up here." = "Le marcapaginas que tu salva sera monstrate hic.";
+
+/* The label to show the location of the folder where the bookmark is located */
+"Bookmarks.Folder.Label" = "Plica";
+
+/* The label for the location of the new folder */
+"Bookmarks.FolderLocation.Label" = "Position";
+
+/* The label for the title of the new folder */
+"Bookmarks.FolderName.Label" = "Nomine del plica";
+
+/* The button to create a new folder */
+"Bookmarks.NewFolder.Label" = "Nove plica";
+
+/* The label for the title of a bookmark */
+"Bookmarks.Title.Label" = "Titulo";
+
+/* The label for the URL of a bookmark */
+"Bookmarks.URL.Label" = "URL";
+
+/* Accessibility label for brightness adjustment slider in Reader Mode display settings */
+"Brightness" = "Brillantia";
+
+/* Label for Cancel button */
+"Cancel" = "Cancellar";
+
+/* Accessibility hint for the color theme setting buttons in reader mode display settings */
+"Changes color theme." = "Cambia le thema de colores.";
+
+/* Accessibility hint for the font type buttons in reader mode display settings */
+"Changes font type." = "Cambia le typo de character.";
+
+/* Label used as an item in Settings. When touched it will open a dialog prompting the user to make sure they want to clear all of their private data. */
+"Clear Private Data" = "Clarar le datos private";
+
+/* The button to open a new tab with the copied link */
+"ClipboardToast.GoToCopiedLink.Button" = "Vade";
+
+/* Message displayed when the user has a copied link on the clipboard */
+"ClipboardToast.GoToCopiedLink.Title" = "Ir al adresse copiate?";
+
+/* Accessibility label for action denoting closing a tab in tab list (tray) */
+"Close" = "Clauder";
+
+/* Accessibility label (used by assistive technology) notifying the user that the tab is being closed. */
+"Closing tab" = "Scheda in clausura";
+
+/* The button text in the Button Toast for switching to a fresh New Private Tab. */
+"ContextMenu.ButtonToast.NewPrivateTabOpened.ButtonText" = "Commutar";
+
+/* The label text in the Button Toast for switching to a fresh New Private Tab. */
+"ContextMenu.ButtonToast.NewPrivateTabOpened.LabelText" = "Nove scheda private aperite";
+
+/* The button text in the Button Toast for switching to a fresh New Tab. */
+"ContextMenu.ButtonToast.NewTabOpened.ButtonText" = "Commutar";
+
+/* The label text in the Button Toast for switching to a fresh New Tab. */
+"ContextMenu.ButtonToast.NewTabOpened.LabelText" = "Nove scheda aperite";
+
+/* Copy the URL from the location bar */
+"Copy Address" = "Copiar le adresse";
+
+/* Context menu item for copying an image to the clipboard */
+"Copy Image" = "Copiar le imagine";
+
+/* Context menu item for copying a link URL to the clipboard */
+"Copy Link" = "Copiar le ligamine";
+
+/* See http://mzl.la/1Qtkf0j */
+"Create an account" = "Crea un conto";
+
+/* Dark theme setting in Reading View settings */
+"Dark" = "Obscur";
+
+/* Done button on left side of the Settings view controller title bar */
+"Done" = "Facite";
+
+/* The label of the button the user will press to reject the option to open a file in another application */
+"Downloads.Alert.Cancel" = "No";
+
+/* The label of the button the user will press to be presented with a list of other apps to open a file in */
+"Downloads.Alert.Confirm" = "Si";
+
+/* Label for button to perform advanced actions on the error page */
+"ErrorPages.Advanced.Button" = "Avantiate";
+
+/* Label for button to go back from the error page */
+"ErrorPages.GoBack.Button" = "Vade retro";
+
+/* Tile title for Facebook */
+"Facebook" = "Facebook";
+
+/* Accessibility Label for the tab toolbar Forward button */
+"Forward" = "Avante";
+
+/* Settings section title for Firefox Account */
+"FxA.FirefoxAccount" = "Conto Firefox";
+
+/* Button label to goto Firefox Account settings */
+"FxA.ManageAccount" = "Gerer le conto";
+
+/* Button label to Sync your Firefox Account */
+"FxA.SyncNow" = "Synchronisar ora";
+
+/* Title of a notification displayed when this device has been disconnected by another device. */
+"FxAPush_DeviceDisconnected_ThisDevice_title" = "Sync disconnectite";
+
+/* General settings section title */
+"General" = "General";
+
+/* Show the SUMO support page from the Support section in the settings. see http://mzl.la/1dmM8tZ */
+"Help" = "Adjuta";
+
+/* Panel accessibility label */
+"History" = "Chronologia";
+
+/* Title for the Back to History button in the History Panel */
+"HistoryPanel.HistoryBackButton.Title" = "Chronologia";
+
+/* Button cancelling changes setting the home page for the first time. */
+"HomePage.Set.Dialog.Cancel" = "Cancellar";
+
+/* The title for the Bookmark context menu action for sites in Home Panels */
+"HomePanel.ContextMenu.Bookmark" = "Adder marcapaginas";
+
+/* The title for the Open in New Tab context menu action for sites in Home Panels */
+"HomePanel.ContextMenu.OpenInNewTab" = "Aperir in un nove scheda";
+
+/* The title for the Remove context menu action for sites in Home Panels */
+"HomePanel.ContextMenu.Remove" = "Remover";
+
+/* The title for the Remove Bookmark context menu action for sites in Home Panels */
+"HomePanel.ContextMenu.RemoveBookmark" = "Remover le marcapagina";
+
+/* History tableview section header */
+"Last month" = "Ultime mense";
+
+/* Button in settings screen to disconnect from your account
+   Disconnect button in the 'log out firefox account' alert */
+"Log Out" = "Disconnecter se";
+
+/* Title of the 'log out firefox account' alert */
+"Log Out?" = "Disconnecter se?";
+
+/* Authentication prompt log in button */
+"Log in" = "Authenticar se";
+
+/* Label used as an item in Settings. When touched, the user will be navigated to the Logins/Password manager. */
+"Logins" = "Authenticationes";
+
+/* Button to update the user's password */
+"LoginsHelper.Update.Button" = "Actualisar";
+
+/* Accessibility label for the New Tab button in the tab toolbar. */
+"New Tab" = "Nove scheda";
+
+/* Restore Tabs Negative Action */
+"No" = "No";
+
+/* Button to not save the user's password */
+"Not now" = "Plus tarde";
+
+/* OK button */
+"OK" = "OK";
+
+/* Restore Tabs Affirmative Action */
+"Okay" = "Okay";
+
+/* Password textbox in Authentication prompt */
+"Password" = "Contrasigno";
+
+/* Paste the URL into the location bar */
+"Paste" = "Collar";
+
+/* Paste the URL into the location bar and visit */
+"Paste & Go" = "Collar e ir";
+
+/* Privacy section title */
+"Privacy" = "Confidentialitate";
+
+/* Accessibility Label for the tab toolbar Reload button */
+"Reload" = "Recargar";
+
+/* Title for the button that removes a reading list item */
+"Remove" = "Remover";
+
+/* Navigation title for search settings.
+   Open search section of settings */
+"Search" = "Cercar";
+
+/* The cancel button if you do not want to add a search engine. */
+"Search.ThirdPartyEngines.Cancel" = "Cancellar";
+
+/* A title stating that we failed to add custom search engine. */
+"Search.ThirdPartyEngines.DuplicateErrorTitle" = "Fallite";
+
+/* A title explaining that we failed to add a search engine */
+"Search.ThirdPartyEngines.FailedTitle" = "Fallite";
+
+/* A title stating that we failed to add custom search engine. */
+"Search.ThirdPartyEngines.FormErrorTitle" = "Fallite";
+
+/* The confirmation button */
+"Search.ThirdPartyEngines.OK" = "OK";
+
+/* Button title for cancelling SendTo screen */
+"SendTo.Cancel.Button" = "Cancellar";
+
+/* OK button to dismiss the error prompt. */
+"SendTo.Error.OK.Button" = "OK";
+
+/* Title of notification shown when the device is sent one or more tabs from an unnamed device. */
+"SentTab_TabArrivingNotification_NoDevice_title" = "Scheda recipite";
+
+/* Sepia theme setting in Reading View settings */
+"Sepia" = "Sepia";
+
+/* Font type setting in the reading view settings */
+"Serif" = "Serif";
+
+/* Title in the settings view controller title bar */
+"Settings" = "Parametros";
+
+/* The button text in Search Settings that opens the Custom Search Engine view. */
+"Settings.AddCustomEngine" = "Adder un motor de recerca";
+
+/* The text on the Save button when saving a custom search engine */
+"Settings.AddCustomEngine.SaveButtonText" = "Salvar";
+
+/* The title of the  Custom Search Engine view. */
+"Settings.AddCustomEngine.Title" = "Adder un motor de recerca";
+
+/* The placeholder for Title Field when saving a custom search engine. */
+"Settings.AddCustomEngine.TitlePlaceholder" = "Motor de recerca";
+
+/* The title for URL Field */
+"Settings.AddCustomEngine.URLLabel" = "URL";
+
+/* Button in settings that clears private data for the selected items. */
+"Settings.ClearPrivateData.Clear.Button" = "Clarar le datos private";
+
+/* Label used as an item in Settings. When touched it will open a dialog prompting the user to make sure they want to clear all of their private data. */
+"Settings.ClearPrivateData.SectionName" = "Clarar le datos private";
+
+/* Title displayed in header of the setting panel. */
+"Settings.ClearPrivateData.Title" = "Clarar le datos private";
+
+/* DNT Settings option for always on */
+"Settings.DNT.OptionAlwaysOn" = "Sempre";
+
+/* Destructive action button in alert when user is prompted for disconnect */
+"Settings.Disconnect.DestructiveButton" = "Disconnecter se";
+
+/* Button in settings to clear the home page. */
+"Settings.HomePage.Clear.Button" = "Clarar";
+
+/* Label used as an item in Settings. When touched it will open a dialog to configure the home page and its uses. */
+"Settings.HomePage.SectionName" = "Pagina initial";
+
+/* Option in settings to show bookmarks when you open a new tab */
+"Settings.NewTab.Option.Bookmarks" = "Monstrar tu marcapaginas";
+
+/* Label used as an item in Settings. When touched it will open a dialog to configure the new tab behaviour. */
+"Settings.NewTab.SectionName" = "Nove scheda";
+
+/* Button displayed at the top of the search settings. */
+"Settings.Search.Done.Button" = "Facite";
+
+/* Button displayed at the top of the search settings. */
+"Settings.Search.Edit.Button" = "Editar";
+
+/* Row in top-level of settings that gets tapped to show the tracking protection settings detail view. */
+"Settings.TrackingProtection.SectionName" = "Protection contra le traciamento";
+
+/* Tracking protection settings option for using the strict blocklist. */
+"Settings.TrackingProtectionOption.BlockListStrict" = "Stricte";
+
+/* Settings option to specify that Tracking Protection is always off. */
+"Settings.TrackingProtectionOption.OffLabel" = "Nunquam";
+
+/* Title of link to help page to find out how to solve Sync issues */
+"Settings.TroubleShootSync.Title" = "Diagnostico";
+
+/* Button title for cancelling Share screen */
+"ShareTo.Cancel.Button" = "Cancellar";
+
+/* See http://mzl.la/1Qtkf0j
+   Text message / button in the settings table view */
+"Sign in" = "Authenticar se";
+
+/* Accessibility Label for the tab toolbar Stop button */
+"Stop" = "Cessar";
+
+/* Sync Firefox Account */
+"Sync Now" = "Synchronisar ora";
+
+/* The Bookmark sync component, used in SyncState.Partial.Title */
+"SyncState.Bookmark.Title" = "Marcapaginas";
+
+/* The History sync component, used in SyncState.Partial.Title */
+"SyncState.History.Title" = "Chronologia";
+
+/* The Logins sync component, used in SyncState.Partial.Title */
+"SyncState.Logins.Title" = "Authenticationes";
+
+/* The Tabs sync component, used in SyncState.Partial.Title */
+"SyncState.Tabs.Title" = "Schedas";
+
+/* The button to undo the delete all tabs */
+"Tabs.DeleteAllUndo.Button" = "Disfacer";
+
+/* History tableview section header */
+"Today" = "Hodie";
+
+/* Accessibility label for the Menu button. */
+"Toolbar.Menu.AccessibilityLabel" = "Menu";
+
+/* Panel accessibility label */
+"Top sites" = "Sitos popular";
+
+/* Button to update the user's password */
+"Update" = "Actualisar";
+
+/* Tile title for Wikipedia */
+"Wikipedia" = "Wikipedia";
+
+/* Button to save the user's password */
+"Yes" = "Si";
+
+/* History tableview section header */
+"Yesterday" = "Heri";
+
+/* Accessibility label for Desktop Computer (PC) image in remote tabs list */
+"computer" = "Computator";
+
+/* Relative date for yesterday. */
+"yesterday" = "heri";
+

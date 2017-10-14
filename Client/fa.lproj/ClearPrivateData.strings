@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "تاریخچه مرور";
+
+/* Settings item for clearing the cache */
+"Cache" = "حافظه نهان";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "پاک‌سازی اطلاعات خصوصی";
+
+/* Settings item for clearing cookies */
+"Cookies" = "کوکی‌ها";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "اطلاعات آفلاین پایگا‌ه‌ اینترنتی";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "ورودهای ذخیره شده";
+

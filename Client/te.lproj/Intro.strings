@@ -1,0 +1,33 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "ట్యాబ్లను ఉపయోగించి ఒకే సమయంలో బహుళ వెబ్ పేజీలను బ్రౌజ్ చేయండి.";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "మీరు ఎక్కడ Firefox ఉపయోగిస్తున్నారో అక్కడ కనెక్ట్ చేయండి.";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "మీకు మెయిల్... ఎంపికలు ఉన్నాయి";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "ఎవరూ చూడనట్టుగా విహరణ చెయ్యండి";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "మీ శోధన, మీ మార్గం";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "మీరు వదిలిన చోటు నుండి ప్రారంభించండి";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "Firefox ని ఎంచుకున్నందుకు కృతజ్ఞతలు!";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "పరిచయ స్లయిడ్ %2$@ లో %1$@ది";
+
+/* See http://mzl.la/1T8gxwo */
+"Personalize your Firefox just the way you like in Settings." = "మీ Firefox కేవలం మీ సెట్టింగ్స్ లో నచ్చిన విధంగానే వ్యక్తిగతీకరించండి.";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "Firefoxకు ప్రవేశించండి";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "బ్రౌజింగ్ ను ప్రారంభించండి";
+

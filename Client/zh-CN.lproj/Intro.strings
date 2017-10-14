@@ -1,0 +1,48 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "使用标签页方式同时浏览多个网页。";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "无处不在的连通 Firefox。";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "可以与 Firefox 配合使用任何邮件 App，不再只是自带的“邮件”。";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "现在…你能选择要调用的邮件 App";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "点击面具图标进入隐私浏览模式。";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "上网时拒绝对你的监视";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "想用其他引擎搜索？在“设置”中选择其他默认搜索引擎（或添加自己想要的搜索引擎）。";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "你的搜索，由你而定";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "使用同步服务，在您的任何设备上都能有同一份书签、密码等保存在 Firefox 里的内容。";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "从上次看到的地方继续";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "Firefox 是现代化的移动浏览器，由致力于建立一个自由且开放的网络的非营利组织 Mozilla 打造。";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "感谢您选择 Firefox！";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "介绍页面，第 %1$@ 张，共 %2$@ 张";
+
+/* See http://mzl.la/1T8gxwo */
+"Personalize your Firefox just the way you like in Settings." = "让 Firefox 有你的个性，在“设置”页面中按你所想自由定制。";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "登录 Firefox";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "开始浏览";
+

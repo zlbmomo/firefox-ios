@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "Amazray n tunigin";
+
+/* Settings item for clearing the cache */
+"Cache" = "Tuffirt";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "Sfeḍ isefka n tunigin";
+
+/* Settings item for clearing cookies */
+"Cookies" = "Inagan n tuqqna";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "Isefka n usmel s war tuqqna";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "Inekcam yettwakelsen";
+

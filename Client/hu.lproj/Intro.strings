@@ -1,0 +1,48 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "Több weblap egyidejű böngészése lapokkal.";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "Kapcsolódjon a Firefoxhoz, mindenhol ahol használja.";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "Használjon bármely e-mail appot – nem csak a Mailt – a Firefoxszal.";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "Üzenetet kapott… beállítások";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "Érintse meg a maszk ikont, hogy privát böngészésbe váltson.";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "Böngésszen úgy, mintha senki sem figyelné";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "Valami mást keres? Válasszon másik alapértelmezett keresőmotort (vagy adja hozzá a sajátját) a Beállításokban.";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "Az Ön keresése, az Ön útja";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "Használja a Syncet a könyjelzők, jelszavak, és más dolgok megtalálására, amelyeket a Firefoxba ment az összes eszközén.";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "Folytassa ott, ahol abbahagyta";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "Egy modern mobil böngésző a Mozillától, a nonprofit szervezettől, amely elkötelezett a szabad és nyílt web mellett.";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "Köszönjük, hogy a Firefox böngészőt választotta!";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "Bevezető dia %1$@ / %2$@";
+
+/* See http://mzl.la/1T8gxwo */
+"Personalize your Firefox just the way you like in Settings." = "A beállításokban szabja személyre a Firefoxát, úgy ahogy szeretné.";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "Jelentkezzen be a Firefoxba";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "Böngészés megkezdése";
+

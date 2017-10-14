@@ -1,0 +1,48 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "Rzu ɣer ddeqs n isebtar web ɣef yiwet n tikelt s yiccaren.";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "Qqen ɣer Firefox deg yal adig anida telliḍ.";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "Seqdec asnas imayl win ibγun illi- mačči kan Mail - s Firefox.";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "Tewwiḍ iγewwaṛen… n imayl";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "Senned ɣef tignit n tgelmust akken ad tedduḍ ar uskar n tunigin tusligt.";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "Inig am akken ulac win i k-id-ittmuqqulen";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "Tettnadiḍ ayen-nniḍen? Fren amsedday-nniḍen n unadi amezwer (neɣ rnu wayeḍ) deg iɣewwaṛen.";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "Anadi-ik, abrid-ik";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "Seqdec Sync akken ad tafeḍ ticraḍ n isebtar, awalen uffiren, akked tiɣawsiwin-nniḍen i tskelseḍ di Firefox ɣef ibenkan-ik meṛṛa.";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "Kemmel seg anida telliḍ";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "Iminig aziraz atrar sɣur Mozilla, d win yeldin yurna baṭṭel.";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "Tanemmirt mi tferneḍ Firefox!";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "Tigri n uqeddem %1$@ seg %2$@";
+
+/* See http://mzl.la/1T8gxwo */
+"Personalize your Firefox just the way you like in Settings." = "Sagen Firefox-inek akken tebɣiḍ deg iɣawwaṛen.";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "Kcem ɣer Firefox";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "Bdu tunigin";
+

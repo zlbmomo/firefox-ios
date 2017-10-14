@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "Přehladowanska historija";
+
+/* Settings item for clearing the cache */
+"Cache" = "Pufrowak";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "Priwatne daty zhašeć";
+
+/* Settings item for clearing cookies */
+"Cookies" = "Placki";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "Daty websydła offline";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "Składowane přizjewjenja";
+

@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "Журнал посещений";
+
+/* Settings item for clearing the cache */
+"Cache" = "Кэш";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "Удалить личные данные";
+
+/* Settings item for clearing cookies */
+"Cookies" = "Куки";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "Данные автономных сайтов";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "Сохранённые логины";
+

@@ -1,0 +1,48 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "Vərəqlərlə bir neçə web saytı eyni vaxtda gəzin.";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "Firefox-u işlətdiyiniz hər yerdə bir-birinə bağlayın.";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "İstənilən e-poçt tətbiqini işlədin - sadəcə Mail-i deyil - Firefox ilə.";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "E-poçt seçimləri";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "Məxfi Səyahət rejiminə keçmək üçün maska ikonuna toxunun.";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "Başqalarının izləməsindən narahat olmadan internetdə gəzin";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "Fərqli şeylər axtarırsız? Tənzimləmələrdən fərqli axtarış mühərriyi seçin və ya özünüzkünü əlavə edin.";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "Sizin axtarış, sizin qaydalar";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "Sync ilə istədiyiniz cihazınızdan Firefox səyyahına saxladığınız əlfəcin, parol və digər şeyləri rahatlıqla tapın.";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "Qaldığınız yerdən davam edin";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "Azad və açıq internet üçün əlləşən qeyri-kommersiyal Mozilladan müasir mobil səyyah.";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "Firefox seçdiyiniz üçün təşəkkürlər!";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "Tanıdıcı slayd %1$@ / %2$@";
+
+/* See http://mzl.la/1T8gxwo */
+"Personalize your Firefox just the way you like in Settings." = "Firefox-u zövqünüzə uyğun olaraq Tənzimləmələrdən fərdiləşdirin.";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "Firefox-a daxil ol";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "Səyahətə Başla";
+

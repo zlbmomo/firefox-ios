@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "ব্রাউজিং ইতিহাস";
+
+/* Settings item for clearing the cache */
+"Cache" = "ক্যাশে";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "ব্যাক্তিগত তথ্য মুছুন";
+
+/* Settings item for clearing cookies */
+"Cookies" = "কুকি";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "অফলাইন ওয়েবসাইটের তথ্য";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "সংরক্ষিত লগইন";
+

@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "உலாவல் வரலாறு";
+
+/* Settings item for clearing the cache */
+"Cache" = "இடையகம்";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "தனிபயன் தரவை துடைக்கவும்";
+
+/* Settings item for clearing cookies */
+"Cookies" = "நினைவிகள்";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "முடக்கலை தள தரவு";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "சேமிக்கப்பட்ட புகுபதிகைகள்";
+

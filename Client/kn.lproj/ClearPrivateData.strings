@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "ಜಾಲವೀಕ್ಷಣಾ ಇತಿಹಾಸ";
+
+/* Settings item for clearing the cache */
+"Cache" = "ಕ್ಯಾಶೆ";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "ಖಾಸಗಿ ದತ್ತಾಂಶವನ್ನು ಖಾಲಿಮಾಡು";
+
+/* Settings item for clearing cookies */
+"Cookies" = "ಕುಕೀಗಳು";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "ಆಫ್‌ಲೈನ್‌ ಜಾಲತಾಣದ ದತ್ತಾಂಶ";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "ಉಳಿಸಿದ ಲಾಗಿನ್‌ಗಳು";
+

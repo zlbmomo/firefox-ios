@@ -1,0 +1,2985 @@
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="Client/3DTouchActions.strings" source-language="en" datatype="plaintext" target-language="sl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Add to Bookmarks">
+        <source>Add to Bookmarks</source>
+        <target>Dodaj med zaznamke</target>
+        <note>Label for preview action on Tab Tray Tab to add current tab to Bookmarks</note>
+      </trans-unit>
+      <trans-unit id="Add to Reading List">
+        <source>Add to Reading List</source>
+        <target>Dodaj na bralni seznam</target>
+        <note>Label for preview action on Tab Tray Tab to add current tab to Reading List</note>
+      </trans-unit>
+      <trans-unit id="Close Tab">
+        <source>Close Tab</source>
+        <target>Zapri zavihek</target>
+        <note>Label for preview action on Tab Tray Tab to close the current tab</note>
+      </trans-unit>
+      <trans-unit id="Copy URL">
+        <source>Copy URL</source>
+        <target>Kopiraj URL</target>
+        <note>Label for preview action on Tab Tray Tab to copy the URL of the current tab to clipboard</note>
+      </trans-unit>
+      <trans-unit id="Open Last Bookmark">
+        <source>Open Last Bookmark</source>
+        <target>Odpri zadnji zaznamek</target>
+        <note>String describing the action of opening the last added bookmark from the home screen Quick Actions via 3D Touch</note>
+      </trans-unit>
+      <trans-unit id="Open Last Tab">
+        <source>Open Last Tab</source>
+        <target>Odpri zadnji zavihek</target>
+        <note>String describing the action of opening the last tab sent to Firefox from the home screen Quick Actions via 3D Touch</note>
+      </trans-unit>
+      <trans-unit id="Preview of %@">
+        <source>Preview of %@</source>
+        <target>Predogled: %@</target>
+        <note>Accessibility label, associated to the 3D Touch action on the current tab in the tab tray, used to display a larger preview of the tab.</note>
+      </trans-unit>
+      <trans-unit id="Send to Device">
+        <source>Send to Device</source>
+        <target>Posreduj na napravo</target>
+        <note>Label for preview action on Tab Tray Tab to send the current tab to another device</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/AuthenticationManager.strings" source-language="en" datatype="plaintext" target-language="sl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="After 1 hour">
+        <source>After 1 hour</source>
+        <target>&#268;ez 1 uro</target>
+        <note>'After 1 hour' interval item for selecting when to require passcode</note>
+      </trans-unit>
+      <trans-unit id="After 1 minute">
+        <source>After 1 minute</source>
+        <target>&#268;ez 1 minuto</target>
+        <note>'After 1 minute' interval item for selecting when to require passcode</note>
+      </trans-unit>
+      <trans-unit id="After 5 minutes">
+        <source>After 5 minutes</source>
+        <target>&#268;ez 5 minut</target>
+        <note>'After 5 minutes' interval item for selecting when to require passcode</note>
+      </trans-unit>
+      <trans-unit id="After 10 minutes">
+        <source>After 10 minutes</source>
+        <target>&#268;ez 10 minut</target>
+        <note>'After 10 minutes' interval item for selecting when to require passcode</note>
+      </trans-unit>
+      <trans-unit id="After 15 minutes">
+        <source>After 15 minutes</source>
+        <target>&#268;ez 15 minut</target>
+        <note>'After 15 minutes' interval item for selecting when to require passcode</note>
+      </trans-unit>
+      <trans-unit id="Change Passcode">
+        <source>Change Passcode</source>
+        <target>Spremeni geslo</target>
+        <note>Label used as a setting item and title of the following screen to change the current passcode</note>
+      </trans-unit>
+      <trans-unit id="Enter Passcode">
+        <source>Enter Passcode</source>
+        <target>Vnesite geslo</target>
+        <note>Title of the dialog used to request the passcode</note>
+      </trans-unit>
+      <trans-unit id="Enter a new passcode">
+        <source>Enter a new passcode</source>
+        <target>Vnesite novo geslo</target>
+        <note>Text displayed above the input field when changing the existing passcode</note>
+      </trans-unit>
+      <trans-unit id="Enter a passcode">
+        <source>Enter a passcode</source>
+        <target>Vnesite geslo</target>
+        <note>Text displayed above the input field when entering a new passcode</note>
+      </trans-unit>
+      <trans-unit id="Enter passcode">
+        <source>Enter passcode</source>
+        <target>Vnesite geslo</target>
+        <note>Text displayed above the input field when changing the existing passcode</note>
+      </trans-unit>
+      <trans-unit id="Face ID &amp; Passcode">
+        <source>Face ID &amp; Passcode</source>
+        <target>Face ID in geslo</target>
+        <note>Label for the Face ID/Passcode item in Settings</note>
+      </trans-unit>
+      <trans-unit id="Immediately">
+        <source>Immediately</source>
+        <target>Takoj</target>
+        <note>'Immediately' interval item for selecting when to require passcode</note>
+      </trans-unit>
+      <trans-unit id="Incorrect passcode. Try again (Attempts remaining: %d).">
+        <source>Incorrect passcode. Try again (Attempts remaining: %d).</source>
+        <target>Nepravilno geslo. Poskusite znova (preostalih poskusov: %d).</target>
+        <note>Error message displayed when user enters incorrect passcode when trying to enter a protected section of the app with attempts remaining</note>
+      </trans-unit>
+      <trans-unit id="Incorrect passcode. Try again.">
+        <source>Incorrect passcode. Try again.</source>
+        <target>Napa&#269;no geslo. Poskusite znova.</target>
+        <note>Error message displayed when user enters incorrect passcode when trying to enter a protected section of the app</note>
+      </trans-unit>
+      <trans-unit id="Maximum attempts reached. Please try again in an hour.">
+        <source>Maximum attempts reached. Please try again in an hour.</source>
+        <target>Najve&#269;je &#353;tevilo poskusov dose&#382;eno. Poskusite znova &#269;ez eno uro.</target>
+        <note>Error message displayed when user enters incorrect passcode and has reached the maximum number of attempts.</note>
+      </trans-unit>
+      <trans-unit id="Maximum attempts reached. Please try again later.">
+        <source>Maximum attempts reached. Please try again later.</source>
+        <target>Najve&#269;je &#353;tevilo poskusov dose&#382;eno. Poskusite znova pozneje.</target>
+        <note>Error message displayed when user enters incorrect passcode and has reached the maximum number of attempts.</note>
+      </trans-unit>
+      <trans-unit id="New passcode must be different than existing code.">
+        <source>New passcode must be different than existing code.</source>
+        <target>Novo geslo mora biti druga&#269;no od obstoje&#269;ega.</target>
+        <note>Error message displayed when user tries to enter the same passcode as their existing code when changing it.</note>
+      </trans-unit>
+      <trans-unit id="Passcode For Logins">
+        <source>Passcode For Logins</source>
+        <target>Geslo za prijave</target>
+        <note>Label for the Passcode item in Settings</note>
+      </trans-unit>
+      <trans-unit id="Passcodes didn&#8217;t match. Try again.">
+        <source>Passcodes didn&#8217;t match. Try again.</source>
+        <target>Gesli se ne ujemata. Poskusite znova.</target>
+        <note>Error message displayed to user when their confirming passcode doesn't match the first code.</note>
+      </trans-unit>
+      <trans-unit id="Re-enter passcode">
+        <source>Re-enter passcode</source>
+        <target>Ponovno vnesite geslo</target>
+        <note>Text displayed above the input field when confirming a passcode</note>
+      </trans-unit>
+      <trans-unit id="Require Passcode">
+        <source>Require Passcode</source>
+        <target>Zahtevaj geslo</target>
+        <note>Text displayed in the 'Interval' section, followed by the current interval setting, e.g. 'Immediately'</note>
+      </trans-unit>
+      <trans-unit id="Set Passcode">
+        <source>Set Passcode</source>
+        <target>Nastavi geslo</target>
+        <note>Title of the dialog used to set a passcode</note>
+      </trans-unit>
+      <trans-unit id="Touch ID &amp; Passcode">
+        <source>Touch ID &amp; Passcode</source>
+        <target>Touch ID in geslo</target>
+        <note>Label for the Touch ID/Passcode item in Settings</note>
+      </trans-unit>
+      <trans-unit id="Turn Passcode Off">
+        <source>Turn Passcode Off</source>
+        <target>Izklju&#269;i geslo</target>
+        <note>Label used as a setting item to turn off passcode</note>
+      </trans-unit>
+      <trans-unit id="Turn Passcode On">
+        <source>Turn Passcode On</source>
+        <target>Vklju&#269;i geslo</target>
+        <note>Label used as a setting item to turn on passcode</note>
+      </trans-unit>
+      <trans-unit id="Turn off your passcode.">
+        <source>Turn off your passcode.</source>
+        <target>Izklju&#269;ite svoje geslo.</target>
+        <note>Touch ID prompt subtitle when turning off passcode</note>
+      </trans-unit>
+      <trans-unit id="Use Face ID">
+        <source>Use Face ID</source>
+        <target>Uporabi Face ID</target>
+        <note>List section title for when to use Face ID</note>
+      </trans-unit>
+      <trans-unit id="Use Touch ID">
+        <source>Use Touch ID</source>
+        <target>Uporabi Touch ID</target>
+        <note>List section title for when to use Touch ID</note>
+      </trans-unit>
+      <trans-unit id="Use your fingerprint to access Logins now.">
+        <source>Use your fingerprint to access Logins now.</source>
+        <target>Uporabite svoj prstni odtis za dostop do prijav.</target>
+        <note>Touch ID prompt subtitle when accessing logins</note>
+      </trans-unit>
+      <trans-unit id="Use your fingerprint to access Private Browsing now.">
+        <source>Use your fingerprint to access Private Browsing now.</source>
+        <target>Uporabite svoj prstni odtis za dostop do zasebnega brskanja.</target>
+        <note>Touch ID prompt subtitle when accessing private browsing</note>
+      </trans-unit>
+      <trans-unit id="touchid.disable.reason.label">
+        <source>Use your fingerprint to disable Touch ID.</source>
+        <target>Uporabite svoj prstni odtis za izklju&#269;itev Touch ID.</target>
+        <note>Touch ID prompt subtitle when disabling Touch ID</note>
+      </trans-unit>
+      <trans-unit id="touchid.require.passcode.reason.label">
+        <source>Use your fingerprint to access configuring your required passcode interval.</source>
+        <target>Uporabite svoj prstni odtis za dostop do nastavitev intervala zahtevanega gesla.</target>
+        <note>Touch ID prompt subtitle when accessing the require passcode setting</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/BookmarkPanel.strings" source-language="en" datatype="plaintext" target-language="sl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Delete">
+        <source>Delete</source>
+        <target>Izbri&#353;i</target>
+        <note>Action button for deleting bookmarks in the bookmarks panel.</note>
+      </trans-unit>
+      <trans-unit id="Desktop Bookmarks">
+        <source>Desktop Bookmarks</source>
+        <target>Zaznamki namizja</target>
+        <note>The folder name for the virtual folder that contains all desktop bookmarks.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/BookmarkPanelDeleteConfirm.strings" source-language="en" datatype="plaintext" target-language="sl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Are you sure you want to delete it and its contents?">
+        <source>Are you sure you want to delete it and its contents?</source>
+        <target>Ali res &#382;elite izbrisati mapo in njeno vsebino?</target>
+        <note>Main body of the confirmation alert when the user tries to delete a folder that still contains bookmarks and/or folders.</note>
+      </trans-unit>
+      <trans-unit id="Cancel">
+        <source>Cancel</source>
+        <target>Prekli&#269;i</target>
+        <note>Button label to cancel deletion when the user tried to delete a non-empty folder.</note>
+      </trans-unit>
+      <trans-unit id="Delete">
+        <source>Delete</source>
+        <target>Izbri&#353;i</target>
+        <note>Button label for the button that deletes a folder and all of its children.</note>
+      </trans-unit>
+      <trans-unit id="This folder isn&#8217;t empty.">
+        <source>This folder isn&#8217;t empty.</source>
+        <target>Ta mapa ni prazna.</target>
+        <note>Title of the confirmation alert when the user tries to delete a folder that still contains bookmarks and/or folders.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/ClearHistoryConfirm.strings" source-language="en" datatype="plaintext" target-language="sl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Cancel">
+        <source>Cancel</source>
+        <target>Prekli&#269;i</target>
+        <note>The cancel button when confirming clear history.</note>
+      </trans-unit>
+      <trans-unit id="Clear">
+        <source>Clear</source>
+        <target>Po&#269;isti</target>
+        <note>The button that clears history even when Sync is connected.</note>
+      </trans-unit>
+      <trans-unit id="History will be removed from all your connected devices. This cannot be undone.">
+        <source>History will be removed from all your connected devices. This cannot be undone.</source>
+        <target>Zgodovina bo odstranjena iz vseh povezanih naprav. Tega ni mogo&#269;e razveljaviti.</target>
+        <note>Description of the confirmation dialog shown when a user tries to clear history that's synced to another device.</note>
+      </trans-unit>
+      <trans-unit id="OK">
+        <source>OK</source>
+        <target>V redu</target>
+        <note>The confirmation button that clears history even when Sync is connected.</note>
+      </trans-unit>
+      <trans-unit id="Remove history from your Firefox Account?">
+        <source>Remove history from your Firefox Account?</source>
+        <target>Odstranim zgodovino iz Firefox Ra&#269;una?</target>
+        <note>Title of the confirmation dialog shown when a user tries to clear history that's synced to another device.</note>
+      </trans-unit>
+      <trans-unit id="This action will clear all of your private data, including history from your synced devices.">
+        <source>This action will clear all of your private data, including history from your synced devices.</source>
+        <target>To dejanje bo po&#269;istilo vse va&#353;e zasebne podatke, vklju&#269;no z zgodovino iz sinhroniziranih naprav.</target>
+        <note>Description of the confirmation dialog shown when a user tries to clear history that's synced to another device.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/ClearPrivateData.strings" source-language="en" datatype="plaintext" target-language="sl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Browsing History">
+        <source>Browsing History</source>
+        <target>Zgodovina brskanja</target>
+        <note>Settings item for clearing browsing history</note>
+      </trans-unit>
+      <trans-unit id="Cache">
+        <source>Cache</source>
+        <target>Predpomnilnik</target>
+        <note>Settings item for clearing the cache</note>
+      </trans-unit>
+      <trans-unit id="Clear Private Data">
+        <source>Clear Private Data</source>
+        <target>Po&#269;isti zasebne podatke</target>
+        <note>Button in settings that clears private data for the selected items.
+   Navigation title in settings.</note>
+      </trans-unit>
+      <trans-unit id="Cookies">
+        <source>Cookies</source>
+        <target>Pi&#353;kotki</target>
+        <note>Settings item for clearing cookies</note>
+      </trans-unit>
+      <trans-unit id="Offline Website Data">
+        <source>Offline Website Data</source>
+        <target>Podatki pri delu brez povezave</target>
+        <note>Settings item for clearing website data</note>
+      </trans-unit>
+      <trans-unit id="Saved Logins">
+        <source>Saved Logins</source>
+        <target>Shranjene prijave</target>
+        <note>Settings item for clearing passwords and login data</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/ClearPrivateDataConfirm.strings" source-language="en" datatype="plaintext" target-language="sl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Cancel">
+        <source>Cancel</source>
+        <target>Prekli&#269;i</target>
+        <note>The cancel button when confirming clear private data.</note>
+      </trans-unit>
+      <trans-unit id="OK">
+        <source>OK</source>
+        <target>V redu</target>
+        <note>The button that clears private data.</note>
+      </trans-unit>
+      <trans-unit id="This action will clear all of your private data. It cannot be undone.">
+        <source>This action will clear all of your private data. It cannot be undone.</source>
+        <target>To dejanje bo po&#269;istilo vse zasebne podatke. Ni ga mogo&#269;e razveljaviti.</target>
+        <note>Description of the confirmation dialog shown when a user tries to clear their private data.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/ErrorPages.strings" source-language="en" datatype="plaintext" target-language="sl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Open in Safari">
+        <source>Open in Safari</source>
+        <target>Odpri v Safariju</target>
+        <note>Shown in error pages for files that can't be shown and need to be downloaded.</note>
+      </trans-unit>
+      <trans-unit id="Try again">
+        <source>Try again</source>
+        <target>Poskusi znova</target>
+        <note>Shown in error pages on a button that will try to load the page again</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/FindInPage.strings" source-language="en" datatype="plaintext" target-language="sl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Done">
+        <source>Done</source>
+        <target>Kon&#269;aj</target>
+        <note>Done button in Find in Page Toolbar.</note>
+      </trans-unit>
+      <trans-unit id="Find in Page">
+        <source>Find in Page</source>
+        <target>Najdi na strani</target>
+        <note>Text selection menu item</note>
+      </trans-unit>
+      <trans-unit id="Next in-page result">
+        <source>Next in-page result</source>
+        <target>Naslednji zadetek na strani</target>
+        <note>Accessibility label for next result button in Find in Page Toolbar.</note>
+      </trans-unit>
+      <trans-unit id="Previous in-page result">
+        <source>Previous in-page result</source>
+        <target>Prej&#353;nji zadetek na strani</target>
+        <note>Accessibility label for previous result button in Find in Page Toolbar.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/HistoryPanel.strings" source-language="en" datatype="plaintext" target-language="sl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Delete">
+        <source>Delete</source>
+        <target>Izbri&#353;i</target>
+        <note>Action button for deleting history entries in the history panel.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/Info.plist" source-language="en" datatype="plaintext" target-language="sl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="NSCameraUsageDescription">
+        <source>This lets you take and upload photos.</source>
+        <target>To vam omogo&#269;a slikati in po&#353;iljati fotografije.</target>
+      </trans-unit>
+      <trans-unit id="NSLocationWhenInUseUsageDescription">
+        <source>Websites you visit may request your location.</source>
+        <target>Spletne strani lahko zahtevajo va&#353;o lokacijo.</target>
+      </trans-unit>
+      <trans-unit id="NSMicrophoneUsageDescription">
+        <source>This lets you take and upload videos.</source>
+        <target>Omogo&#269;a snemanje in nalaganje videa.</target>
+      </trans-unit>
+      <trans-unit id="NSPhotoLibraryAddUsageDescription">
+        <source>This lets you save photos.</source>
+        <target>To vam omogo&#269;a shranjevati fotografije.</target>
+      </trans-unit>
+      <trans-unit id="NSPhotoLibraryUsageDescription">
+        <source>This lets you save and upload photos.</source>
+        <target>To vam omogo&#269;a shranjevati in po&#353;iljati fotografije.</target>
+      </trans-unit>
+      <trans-unit id="ShortcutItemTitleNewPrivateTab">
+        <source>New Private Tab</source>
+        <target>Nov zasebni zavihek</target>
+      </trans-unit>
+      <trans-unit id="ShortcutItemTitleNewTab">
+        <source>New Tab</source>
+        <target>Nov zavihek</target>
+      </trans-unit>
+      <trans-unit id="ShortcutItemTitleQRCode">
+        <source>Scan QR Code</source>
+        <target>Skeniraj QR-kodo</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/Intro.strings" source-language="en" datatype="plaintext" target-language="sl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Browse multiple Web pages at the same time with tabs.">
+        <source>Browse multiple Web pages at the same time with tabs.</source>
+        <target>Brskajte po ve&#269; spletnih straneh hkrati s pomo&#269;jo zavihkov.</target>
+        <note>See http://mzl.la/1T8gxwo</note>
+      </trans-unit>
+      <trans-unit id="Connect Firefox everywhere you use it.">
+        <source>Connect Firefox everywhere you use it.</source>
+        <target>Pove&#382;ite Firefox, kjerkoli ga uporabljate.</target>
+        <note>See http://mzl.la/1T8gxwo</note>
+      </trans-unit>
+      <trans-unit id="Intro.Slides.Mail.Description">
+        <source>Use any email app &#8212; not just Mail &#8212; with Firefox.</source>
+        <target>Uporabite poljubni po&#353;tni odjemalec s Firefoxom, ne le Mail.</target>
+        <note>Description for the 'Mail' panel in the First Run tour.</note>
+      </trans-unit>
+      <trans-unit id="Intro.Slides.Mail.Title">
+        <source>You&#8217;ve got mail&#8230; options</source>
+        <target>Nastavitve e-po&#353;te</target>
+        <note>Title for the fourth panel 'Mail' in the First Run tour.</note>
+      </trans-unit>
+      <trans-unit id="Intro.Slides.Private.Description">
+        <source>Tap the mask icon to slip into Private Browsing mode.</source>
+        <target>Tapnite ikono maske, da zdrsnete v na&#269;in zasebnega brskanja.</target>
+        <note>Description for the 'Private Browsing' panel in the First Run tour.</note>
+      </trans-unit>
+      <trans-unit id="Intro.Slides.Private.Title">
+        <source>Browse like no one&#8217;s watching</source>
+        <target>Brskajte, kot da vas nih&#269;e ne gleda</target>
+        <note>Title for the third panel 'Private Browsing' in the First Run tour.</note>
+      </trans-unit>
+      <trans-unit id="Intro.Slides.Search.Description">
+        <source>Searching for something different? Choose another default search engine (or add your own) in Settings.</source>
+        <target>I&#353;&#269;ete nekaj druga&#269;nega? V nastavitvah izberite drug privzeti iskalnik (ali dodajte svojega).</target>
+        <note>Description for the 'Favorite Search Engine' panel in the First Run tour.</note>
+      </trans-unit>
+      <trans-unit id="Intro.Slides.Search.Title">
+        <source>Your search, your way</source>
+        <target>Va&#353;e iskanje, na va&#353; na&#269;in</target>
+        <note>Title for the second  panel 'Search' in the First Run tour.</note>
+      </trans-unit>
+      <trans-unit id="Intro.Slides.Sync.Description">
+        <source>Use Sync to find the bookmarks, passwords, and other things you save to Firefox on all your devices.</source>
+        <target>Z uporabo Synca lahko dostopate do zaznamkov, gesel in drugih svojih Firefoxovih podatkov na vseh svojih napravah.</target>
+        <note>Description for the 'Sync' panel in the First Run tour.</note>
+      </trans-unit>
+      <trans-unit id="Intro.Slides.Sync.Title">
+        <source>Pick up where you left off</source>
+        <target>Nadaljujte, kjer ste kon&#269;ali</target>
+        <note>Title for the fifth panel 'Sync' in the First Run tour.</note>
+      </trans-unit>
+      <trans-unit id="Intro.Slides.Welcome.Description">
+        <source>A modern mobile browser from Mozilla, the non-profit committed to a free and open web.</source>
+        <target>Sodoben mobilni brskalnik izpod rok Mozille, neprofitne organizacije, predane svobodnemu in odprtemu spletu.</target>
+        <note>Description for the 'Welcome' panel in the First Run tour.</note>
+      </trans-unit>
+      <trans-unit id="Intro.Slides.Welcome.Title">
+        <source>Thanks for choosing Firefox!</source>
+        <target>Hvala, da ste izbrali Firefox!</target>
+        <note>Title for the first panel 'Welcome' in the First Run tour.</note>
+      </trans-unit>
+      <trans-unit id="Introductory slide %@ of %@">
+        <source>Introductory slide %1$@ of %2$@</source>
+        <target>Predstavitvena stran %1$@ od %2$@</target>
+        <note>String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3</note>
+      </trans-unit>
+      <trans-unit id="Personalize your Firefox just the way you like in Settings.">
+        <source>Personalize your Firefox just the way you like in Settings.</source>
+        <target>V nastavitvah lahko prilagodite Firefox po svojih &#382;eljah.</target>
+        <note>See http://mzl.la/1T8gxwo</note>
+      </trans-unit>
+      <trans-unit id="Sign in to Firefox">
+        <source>Sign in to Firefox</source>
+        <target>Prijavite se v Firefox</target>
+        <note>See http://mzl.la/1T8gxwo</note>
+      </trans-unit>
+      <trans-unit id="Start Browsing">
+        <source>Start Browsing</source>
+        <target>Za&#269;nite z brskanjem</target>
+        <note>See http://mzl.la/1T8gxwo</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/LightweightThemes.strings" source-language="en" datatype="plaintext" target-language="sl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Allow Firefox to use my Photos">
+        <source>Allow Firefox to use my Photos</source>
+        <target>Dovoli uporabo mojih fotografij v Firefoxu</target>
+        <note>Pending feature; currently unused string! Button shown when user wishes to view photos for theme but has not given Firefox permission to do so yet.</note>
+      </trans-unit>
+      <trans-unit id="Back to Themes">
+        <source>Back to Themes</source>
+        <target>Nazaj na teme</target>
+        <note>Pending feature; currently unused string! Accessibility label for back button to theme chooser</note>
+      </trans-unit>
+      <trans-unit id="Choose">
+        <source>Choose</source>
+        <target>Izberi</target>
+        <note>Pending feature; currently unused string! Back button shown to return back to theme settings from photo picker</note>
+      </trans-unit>
+      <trans-unit id="Choose Theme">
+        <source>Choose Theme</source>
+        <target>Izberi temo</target>
+        <note>Pending feature; currently unused string! Accessibility label for settings row to enter theme settings</note>
+      </trans-unit>
+      <trans-unit id="Default Themes">
+        <source>Default Themes</source>
+        <target>Privzete teme</target>
+        <note>Pending feature; currently unused string! Accessibility label for themes subheader</note>
+      </trans-unit>
+      <trans-unit id="My Photos">
+        <source>My Photos</source>
+        <target>Moje fotografije</target>
+        <note>Pending feature; currently unused string! Accessibility label for photo viewer</note>
+      </trans-unit>
+      <trans-unit id="Photos">
+        <source>Photos</source>
+        <target>Fotografije</target>
+        <note>Pending feature; currently unused string! Sub header for photo options in theme chooser</note>
+      </trans-unit>
+      <trans-unit id="Preview">
+        <source>Preview</source>
+        <target>Predogled</target>
+        <note>Pending feature; currently unused string! Button to show preview of selected theme</note>
+      </trans-unit>
+      <trans-unit id="Preview Theme">
+        <source>Preview Theme</source>
+        <target>Predogled teme</target>
+        <note>Pending feature; currently unused string! Accessibility label for theme preview button</note>
+      </trans-unit>
+      <trans-unit id="Set">
+        <source>Set</source>
+        <target>Nastavi</target>
+        <note>Pending feature; currently unused string! Button to set selected theme as current theme</note>
+      </trans-unit>
+      <trans-unit id="Set Theme">
+        <source>Set Theme</source>
+        <target>Nastavi temo</target>
+        <note>Pending feature; currently unused string! Accessibility label for set theme button</note>
+      </trans-unit>
+      <trans-unit id="Theme">
+        <source>Theme</source>
+        <target>Tema</target>
+        <note>Pending feature; currently unused string! Settings row to enter theme settings</note>
+      </trans-unit>
+      <trans-unit id="Themes">
+        <source>Themes</source>
+        <target>Teme</target>
+        <note>Pending feature; currently unused string! sub header for theme options in theme chooser</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/Localizable.strings" source-language="en" datatype="plaintext" target-language="sl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="+">
+        <source>+</source>
+        <target>+</target>
+        <note>Button for larger reader font size. Keep this extremely short! This is shown in the reader mode toolbar.</note>
+      </trans-unit>
+      <trans-unit id="-">
+        <source>-</source>
+        <target>-</target>
+        <note>Button for smaller reader font size. Keep this extremely short! This is shown in the reader mode toolbar.</note>
+      </trans-unit>
+      <trans-unit id="A username and password are being requested by %@.">
+        <source>A username and password are being requested by %@.</source>
+        <target>Uporabni&#353;ko ime in geslo zahteva %@.</target>
+        <note>Authentication prompt message with no realm. Parameter is the hostname of the site</note>
+      </trans-unit>
+      <trans-unit id="A username and password are being requested by %@. The site says: %@">
+        <source>A username and password are being requested by %1$@. The site says: %2$@</source>
+        <target>Uporabni&#353;ko ime in geslo zahteva %1$@. Sporo&#269;ilo strani: %2$@</target>
+        <note>Authentication prompt message with a realm. First parameter is the hostname. Second is the realm string</note>
+      </trans-unit>
+      <trans-unit id="Aa">
+        <source>Aa</source>
+        <target>Aa</target>
+        <note>Button for reader mode font size. Keep this extremely short! This is shown in the reader mode toolbar.</note>
+      </trans-unit>
+      <trans-unit id="About">
+        <source>About</source>
+        <target>Predstavitev</target>
+        <note>About settings section title</note>
+      </trans-unit>
+      <trans-unit id="ActivityStream.ContextMenu.PinTopsite">
+        <source>Pin to Top Sites</source>
+        <target>Pripni med glavne strani</target>
+        <note>The title for the pinning a topsite action</note>
+      </trans-unit>
+      <trans-unit id="ActivityStream.ContextMenu.RemovePinTopsite">
+        <source>Remove Pinned Site</source>
+        <target>Odstrani pripeto spletno mesto</target>
+        <note>The title for removing a pinned topsite action</note>
+      </trans-unit>
+      <trans-unit id="ActivityStream.HighlightIntro.Description">
+        <source>Firefox will place things here that you&#8217;ve discovered on the web so you can find your way back to the great articles, videos, bookmarks and other pages</source>
+        <target>Firefox bo sem uvr&#353;&#269;al stvari, ki jih odkrivate na spletu, tako da boste lahko znova na&#353;li zanimive &#269;lanke, videoposnetke, zaznamke in druge strani</target>
+        <note>The detailed text that explains what highlights are in AS.</note>
+      </trans-unit>
+      <trans-unit id="ActivityStream.HighlightIntro.Title">
+        <source>Be on the Lookout</source>
+        <target>Bodite na pre&#382;i</target>
+        <note>The title that appears for the introduction to highlights in AS.</note>
+      </trans-unit>
+      <trans-unit id="ActivityStream.Highlights.Bookmark">
+        <source>Bookmarked</source>
+        <target>Dodano med zaznamke</target>
+        <note>The description of a highlight if it is a site the user has bookmarked</note>
+      </trans-unit>
+      <trans-unit id="ActivityStream.Highlights.Title">
+        <source>Highlights</source>
+        <target>Poudarki</target>
+        <note>Section title label for the Highlights section</note>
+      </trans-unit>
+      <trans-unit id="ActivityStream.Highlights.Visited">
+        <source>Visited</source>
+        <target>Obiskano</target>
+        <note>The description of a highlight if it is a site the user has visited</note>
+      </trans-unit>
+      <trans-unit id="ActivityStream.PageControl.Button">
+        <source>Next Page</source>
+        <target>Naslednja stran</target>
+        <note>The page control button that lets you switch between pages in top sites</note>
+      </trans-unit>
+      <trans-unit id="ActivityStream.Pocket.SectionTitle">
+        <source>Recommended by Pocket</source>
+        <target>Priporo&#269;a Pocket</target>
+        <note>Section title label for Recommended by Pocket section</note>
+      </trans-unit>
+      <trans-unit id="ActivityStream.Pocket.Trending">
+        <source>Trending</source>
+        <target>Priljubljeno</target>
+        <note>The description of a Pocket Story</note>
+      </trans-unit>
+      <trans-unit id="ActivityStream.TopSites.SectionTitle">
+        <source>Top Sites</source>
+        <target>Glavne strani</target>
+        <note>Section title label for Top Sites</note>
+      </trans-unit>
+      <trans-unit id="Add Tab">
+        <source>Add Tab</source>
+        <target>Dodaj zavihek</target>
+        <note>Accessibility label for the Add Tab button in the Tab Tray.</note>
+      </trans-unit>
+      <trans-unit id="Add to Reading List">
+        <source>Add to Reading List</source>
+        <target>Dodaj na bralni seznam</target>
+        <note>Accessibility label for action adding current page to reading list.
+   Name for button adding current article to reading list in reader mode</note>
+      </trans-unit>
+      <trans-unit id="AddPass.Error.Dismiss">
+        <source>OK</source>
+        <target>V redu</target>
+        <note>Button to dismiss the 'Add Pass Failed' alert.  See https://support.apple.com/HT204003 for context on Wallet.</note>
+      </trans-unit>
+      <trans-unit id="AddPass.Error.Message">
+        <source>An error occured while adding the pass to Wallet. Please try again later.</source>
+        <target>Med dodajanjem dovolilnice v Wallet je pri&#353;lo do te&#382;ave. Poskusite znova pozneje.</target>
+        <note>Text of the 'Add Pass Failed' alert.  See https://support.apple.com/HT204003 for context on Wallet.</note>
+      </trans-unit>
+      <trans-unit id="AddPass.Error.Title">
+        <source>Failed to Add Pass</source>
+        <target>Dodajanje dovolilnice neuspe&#353;no</target>
+        <note>Title of the 'Add Pass Failed' alert. See https://support.apple.com/HT204003 for context on Wallet.</note>
+      </trans-unit>
+      <trans-unit id="Added page to Reading List">
+        <source>Added page to Reading List</source>
+        <target>Stran dodana na bralni seznam</target>
+        <note>Accessibility message e.g. spoken by VoiceOver after the current page gets added to the Reading List using the Reader View button, e.g. by long-pressing it or by its accessibility custom action.</note>
+      </trans-unit>
+      <trans-unit id="Address and Search">
+        <source>Address and Search</source>
+        <target>Naslov in iskanje</target>
+        <note>Accessibility label for address and search field, both words (Address, Search) are therefore nouns.</note>
+      </trans-unit>
+      <trans-unit id="Always Send">
+        <source>Always Send</source>
+        <target>Vedno po&#353;lji</target>
+        <note>Used as a button label for crash dialog prompt</note>
+      </trans-unit>
+      <trans-unit id="Amazon">
+        <source>Amazon</source>
+        <target>Amazon</target>
+        <note>Tile title for Amazon</note>
+      </trans-unit>
+      <trans-unit id="Authentication required">
+        <source>Authentication required</source>
+        <target>Zahtevana je overitev</target>
+        <note>Authentication prompt title</note>
+      </trans-unit>
+      <trans-unit id="Back">
+        <source>Back</source>
+        <target>Nazaj</target>
+        <note>Accessibility label for the Back button in the tab toolbar.</note>
+      </trans-unit>
+      <trans-unit id="Block Pop-up Windows">
+        <source>Block Pop-up Windows</source>
+        <target>Prepovej pojavna okna</target>
+        <note>Block pop-up windows setting</note>
+      </trans-unit>
+      <trans-unit id="Bookmarks">
+        <source>Bookmarks</source>
+        <target>Zaznamki</target>
+        <note>Panel accessibility label</note>
+      </trans-unit>
+      <trans-unit id="Bookmarks you save will show up here.">
+        <source>Bookmarks you save will show up here.</source>
+        <target>Tukaj bodo prikazani shranjeni zaznamki.</target>
+        <note>Status label for the empty Bookmarks state.</note>
+      </trans-unit>
+      <trans-unit id="Bookmarks.Folder.Label">
+        <source>Folder</source>
+        <target>Mapa</target>
+        <note>The label to show the location of the folder where the bookmark is located</note>
+      </trans-unit>
+      <trans-unit id="Bookmarks.FolderLocation.Label">
+        <source>Location</source>
+        <target>Mesto</target>
+        <note>The label for the location of the new folder</note>
+      </trans-unit>
+      <trans-unit id="Bookmarks.FolderName.Label">
+        <source>Folder Name</source>
+        <target>Ime mape</target>
+        <note>The label for the title of the new folder</note>
+      </trans-unit>
+      <trans-unit id="Bookmarks.NewFolder.Label">
+        <source>New Folder</source>
+        <target>Nova mapa</target>
+        <note>The button to create a new folder</note>
+      </trans-unit>
+      <trans-unit id="Bookmarks.Title.Label">
+        <source>Title</source>
+        <target>Naslov</target>
+        <note>The label for the title of a bookmark</note>
+      </trans-unit>
+      <trans-unit id="Bookmarks.URL.Label">
+        <source>URL</source>
+        <target>URL</target>
+        <note>The label for the URL of a bookmark</note>
+      </trans-unit>
+      <trans-unit id="Brightness">
+        <source>Brightness</source>
+        <target>Svetlost</target>
+        <note>Accessibility label for brightness adjustment slider in Reader Mode display settings</note>
+      </trans-unit>
+      <trans-unit id="Cancel">
+        <source>Cancel</source>
+        <target>Prekli&#269;i</target>
+        <note>Label for Cancel button</note>
+      </trans-unit>
+      <trans-unit id="Changes color theme.">
+        <source>Changes color theme.</source>
+        <target>Spremeni barvno temo.</target>
+        <note>Accessibility hint for the color theme setting buttons in reader mode display settings</note>
+      </trans-unit>
+      <trans-unit id="Changes font type.">
+        <source>Changes font type.</source>
+        <target>Spremeni slog pisave.</target>
+        <note>Accessibility hint for the font type buttons in reader mode display settings</note>
+      </trans-unit>
+      <trans-unit id="Clear Private Data">
+        <source>Clear Private Data</source>
+        <target>Po&#269;isti zasebne podatke</target>
+        <note>Label used as an item in Settings. When touched it will open a dialog prompting the user to make sure they want to clear all of their private data.</note>
+      </trans-unit>
+      <trans-unit id="ClipboardToast.GoToCopiedLink.Button">
+        <source>Go</source>
+        <target>Pojdi</target>
+        <note>The button to open a new tab with the copied link</note>
+      </trans-unit>
+      <trans-unit id="ClipboardToast.GoToCopiedLink.Title">
+        <source>Go to copied link?</source>
+        <target>Odprem kopirano povezavo?</target>
+        <note>Message displayed when the user has a copied link on the clipboard</note>
+      </trans-unit>
+      <trans-unit id="Close">
+        <source>Close</source>
+        <target>Zapri</target>
+        <note>Accessibility label for action denoting closing a tab in tab list (tray)</note>
+      </trans-unit>
+      <trans-unit id="Closing tab">
+        <source>Closing tab</source>
+        <target>Zapiranje zavihka</target>
+        <note>Accessibility label (used by assistive technology) notifying the user that the tab is being closed.</note>
+      </trans-unit>
+      <trans-unit id="ContextMenu.ButtonToast.NewPrivateTabOpened.ButtonText">
+        <source>Switch</source>
+        <target>Preklopi</target>
+        <note>The button text in the Button Toast for switching to a fresh New Private Tab.</note>
+      </trans-unit>
+      <trans-unit id="ContextMenu.ButtonToast.NewPrivateTabOpened.LabelText">
+        <source>New Private Tab opened</source>
+        <target>Odprt nov zaseben zavihek</target>
+        <note>The label text in the Button Toast for switching to a fresh New Private Tab.</note>
+      </trans-unit>
+      <trans-unit id="ContextMenu.ButtonToast.NewTabOpened.ButtonText">
+        <source>Switch</source>
+        <target>Preklopi</target>
+        <note>The button text in the Button Toast for switching to a fresh New Tab.</note>
+      </trans-unit>
+      <trans-unit id="ContextMenu.ButtonToast.NewTabOpened.LabelText">
+        <source>New Tab opened</source>
+        <target>Odprt nov zavihek</target>
+        <note>The label text in the Button Toast for switching to a fresh New Tab.</note>
+      </trans-unit>
+      <trans-unit id="Copy Address">
+        <source>Copy Address</source>
+        <target>Kopiraj naslov</target>
+        <note>Copy the URL from the location bar</note>
+      </trans-unit>
+      <trans-unit id="Copy Image">
+        <source>Copy Image</source>
+        <target>Kopiraj sliko</target>
+        <note>Context menu item for copying an image to the clipboard</note>
+      </trans-unit>
+      <trans-unit id="Copy Link">
+        <source>Copy Link</source>
+        <target>Kopiraj povezavo</target>
+        <note>Context menu item for copying a link URL to the clipboard</note>
+      </trans-unit>
+      <trans-unit id="Could not add page to Reading List. Maybe it&#8217;s already there?">
+        <source>Could not add page to Reading List. Maybe it&#8217;s already there?</source>
+        <target>Strani ni bilo mogo&#269;e dodati na bralni seznam. Je &#382;e na njem?</target>
+        <note>Accessibility message e.g. spoken by VoiceOver after the user wanted to add current page to the Reading List and this was not done, likely because it already was in the Reading List, but perhaps also because of real failures.</note>
+      </trans-unit>
+      <trans-unit id="Could not add page to Reading list">
+        <source>Could not add page to Reading list</source>
+        <target>Strani ni bilo mogo&#269;e dodati na bralni seznam</target>
+        <note>Accessibility message e.g. spoken by VoiceOver after adding current webpage to the Reading List failed.</note>
+      </trans-unit>
+      <trans-unit id="Could not load page.">
+        <source>Could not load page.</source>
+        <target>Ni bilo mogo&#269;e nalo&#382;iti strani.</target>
+        <note>Error message that is shown in settings when there was a problem loading</note>
+      </trans-unit>
+      <trans-unit id="Create an account">
+        <source>Create an account</source>
+        <target>Ustvari ra&#269;un</target>
+        <note>See http://mzl.la/1Qtkf0j</note>
+      </trans-unit>
+      <trans-unit id="Dark">
+        <source>Dark</source>
+        <target>Temno</target>
+        <note>Dark theme setting in Reading View settings</note>
+      </trans-unit>
+      <trans-unit id="Debug: forget Sync auth state">
+        <source>Debug: forget Sync auth state</source>
+        <target>Razhro&#353;&#269;evanje: pozabi prijavo Sync</target>
+        <note>Debug option</note>
+      </trans-unit>
+      <trans-unit id="Debug: require password">
+        <source>Debug: require password</source>
+        <target>Razhro&#353;&#269;evanje: zahtevaj geslo</target>
+        <note>Debug option</note>
+      </trans-unit>
+      <trans-unit id="Debug: require upgrade">
+        <source>Debug: require upgrade</source>
+        <target>Razhro&#353;&#269;evanje: zahtevaj nadgradnjo</target>
+        <note>Debug option</note>
+      </trans-unit>
+      <trans-unit id="Debug: use stage servers">
+        <source>Debug: use stage servers</source>
+        <target>Razhro&#353;&#269;evanje: uporabi preizkusne stre&#382;nike</target>
+        <note>Debug option</note>
+      </trans-unit>
+      <trans-unit id="Decrease text size">
+        <source>Decrease text size</source>
+        <target>Zmanj&#353;aj velikost besedila</target>
+        <note>Accessibility label for button decreasing font size in display settings of reader mode</note>
+      </trans-unit>
+      <trans-unit id="Default Search Engine">
+        <source>Default Search Engine</source>
+        <target>Privzet iskalnik</target>
+        <note>Accessibility label for default search engine setting.
+   Title for default search engine picker.
+   Title for default search engine settings section.</note>
+      </trans-unit>
+      <trans-unit id="Disable additional page dialogs">
+        <source>Disable additional page dialogs</source>
+        <target>Onemogo&#269;i dodatna pogovorna okna</target>
+        <note>Pending feature; currently unused string! Checkbox label shown after multiple alerts are shown</note>
+      </trans-unit>
+      <trans-unit id="Display Settings">
+        <source>Display Settings</source>
+        <target>Nastavitve zaslona</target>
+        <note>Name for display settings button in reader mode. Display in the meaning of presentation, not monitor.</note>
+      </trans-unit>
+      <trans-unit id="Do you want to save the password for %@ on %@?">
+        <source>Do you want to save the password for %1$@ on %2$@?</source>
+        <target>&#381;elite shraniti geslo za %1$@ na %2$@?</target>
+        <note>Prompt for saving a password. The first parameter is the username being saved. The second parameter is the hostname of the site.</note>
+      </trans-unit>
+      <trans-unit id="Do you want to save the password on %@?">
+        <source>Do you want to save the password on %@?</source>
+        <target>&#381;elite shraniti geslo za %@?</target>
+        <note>Prompt for saving a password with no username. The parameter is the hostname of the site.</note>
+      </trans-unit>
+      <trans-unit id="Do you want to update the password for %@ on %@?">
+        <source>Do you want to update the password for %1$@ on %2$@?</source>
+        <target>&#381;elite posodobiti geslo za %1$@ na %2$@?</target>
+        <note>Prompt for updating a password. The first parameter is the username being saved. The second parameter is the hostname of the site.</note>
+      </trans-unit>
+      <trans-unit id="Do you want to update the password on %@?">
+        <source>Do you want to update the password on %@?</source>
+        <target>&#381;elite posodobiti geslo za %@?</target>
+        <note>Prompt for updating a password with on username. The parameter is the hostname of the site.</note>
+      </trans-unit>
+      <trans-unit id="Done">
+        <source>Done</source>
+        <target>Kon&#269;aj</target>
+        <note>Done button on left side of the Settings view controller title bar</note>
+      </trans-unit>
+      <trans-unit id="Don&#8217;t Send">
+        <source>Don&#8217;t Send</source>
+        <target>Ne po&#353;lji</target>
+        <note>Used as a button label for crash dialog prompt</note>
+      </trans-unit>
+      <trans-unit id="Downloads.Alert.Cancel">
+        <source>No</source>
+        <target>Ne</target>
+        <note>The label of the button the user will press to reject the option to open a file in another application</note>
+      </trans-unit>
+      <trans-unit id="Downloads.Alert.Confirm">
+        <source>Yes</source>
+        <target>Da</target>
+        <note>The label of the button the user will press to be presented with a list of other apps to open a file in</note>
+      </trans-unit>
+      <trans-unit id="Downloads.Alert.Message">
+        <source>Firefox is unable to download or display this file. Would you like to open it in another app?</source>
+        <target>Firefox ne more prenesti ali prikazati te datoteke. Jo &#382;elite odpreti v drugi aplikaciji?</target>
+        <note>The message of the alert box asking the user if they want to use another app to open a file.</note>
+      </trans-unit>
+      <trans-unit id="Downloads.Alert.Title">
+        <source>Firefox Downloads</source>
+        <target>Prenosi Firefox</target>
+        <note>The title of the alert box asking the user if they want to use another app to open a file.</note>
+      </trans-unit>
+      <trans-unit id="Downloads.Error.Message">
+        <source>Downloads aren&#8217;t supported in Firefox yet.</source>
+        <target>Prenosi v Firefoxu &#353;e niso podprti.</target>
+        <note>The message displayed to a user when they try and perform the download of an asset that Firefox cannot currently handle.</note>
+      </trans-unit>
+      <trans-unit id="Enter your password to connect.">
+        <source>Enter your password to connect.</source>
+        <target>Vnesite geslo za povezavo.</target>
+        <note>Text message in the settings table view</note>
+      </trans-unit>
+      <trans-unit id="ErrorPages.Advanced.Button">
+        <source>Advanced</source>
+        <target>Napredno</target>
+        <note>Label for button to perform advanced actions on the error page</note>
+      </trans-unit>
+      <trans-unit id="ErrorPages.AdvancedWarning1.Text">
+        <source>Warning: we can&#8217;t confirm your connection to this website is secure.</source>
+        <target>Opozorilo: ne moremo potrditi, da je va&#353;a povezava na to stran varna.</target>
+        <note>Warning text when clicking the Advanced button on error pages</note>
+      </trans-unit>
+      <trans-unit id="ErrorPages.AdvancedWarning2.Text">
+        <source>It may be a misconfiguration or tampering by an attacker. Proceed if you accept the potential risk.</source>
+        <target>Lahko gre za napa&#269;ne nastavitve ali poseg napadalca. Nadaljujte, &#269;e ste pripravljeni tvegati.</target>
+        <note>Additional warning text when clicking the Advanced button on error pages</note>
+      </trans-unit>
+      <trans-unit id="ErrorPages.CertWarning.Description">
+        <source>The owner of %@ has configured their website improperly. To protect your information from being stolen, Firefox has not connected to this website.</source>
+        <target>Lastnik %@ je nepravilno nastavil svojo spletno stran. Firefox se ni povezal nanjo, da bi prepre&#269;il krajo va&#353;ih podatkov.</target>
+        <note>Warning text on the certificate error page</note>
+      </trans-unit>
+      <trans-unit id="ErrorPages.CertWarning.Title">
+        <source>This Connection is Untrusted</source>
+        <target>Va&#353;a povezava ni zasebna</target>
+        <note>Title on the certificate error page</note>
+      </trans-unit>
+      <trans-unit id="ErrorPages.GoBack.Button">
+        <source>Go Back</source>
+        <target>Nazaj</target>
+        <note>Label for button to go back from the error page</note>
+      </trans-unit>
+      <trans-unit id="ErrorPages.VisitOnce.Button">
+        <source>Visit site anyway</source>
+        <target>Vseeno obi&#353;&#269;i stran</target>
+        <note>Button label to temporarily continue to the site from the certificate error page</note>
+      </trans-unit>
+      <trans-unit id="ExternalLink.AppStore.ConfirmationTitle">
+        <source>Open this link in the App Store app?</source>
+        <target>&#381;elite odpreti to povezavo v aplikaciji App Store?</target>
+        <note>Question shown to user when tapping a link that opens the App Store app</note>
+      </trans-unit>
+      <trans-unit id="Facebook">
+        <source>Facebook</source>
+        <target>Facebook</target>
+        <note>Tile title for Facebook</note>
+      </trans-unit>
+      <trans-unit id="Firefox will stop syncing with your account, but won&#8217;t delete any of your browsing data on this device.">
+        <source>Firefox will stop syncing with your account, but won&#8217;t delete any of your browsing data on this device.</source>
+        <target>Firefox se bo prenehal sinhronizirati z va&#353;im ra&#269;unom, vendar ne bo izbrisal podatkov o brskanju na tej napravi.</target>
+        <note>Text of the 'sign out firefox account' alert</note>
+      </trans-unit>
+      <trans-unit id="Firefox would like to access your Photos">
+        <source>Firefox would like to access your Photos</source>
+        <target>Firefox &#382;eli dostop do va&#353;ih slik.</target>
+        <note>See http://mzl.la/1G7uHo7</note>
+      </trans-unit>
+      <trans-unit id="Firefox.HomePage.Title">
+        <source>Firefox Home Page</source>
+        <target>Doma&#269;a stran Firefoxa</target>
+        <note>Title for firefox about:home page in tab history list</note>
+      </trans-unit>
+      <trans-unit id="Forward">
+        <source>Forward</source>
+        <target>Naprej</target>
+        <note>Accessibility Label for the tab toolbar Forward button</note>
+      </trans-unit>
+      <trans-unit id="FxA.AccountVerificationDetails">
+        <source>Wrong email? Disconnect below to start over.</source>
+        <target>Napa&#269;na e-po&#353;ta? Prekinite povezavo spodaj in za&#269;nite znova.</target>
+        <note>Label stating how to disconnect account</note>
+      </trans-unit>
+      <trans-unit id="FxA.AccountVerificationRequired">
+        <source>Account Verification Required</source>
+        <target>Zahtevana je potrditev ra&#269;una</target>
+        <note>Label stating your account is not verified</note>
+      </trans-unit>
+      <trans-unit id="FxA.AccountVerificationRequiredSurface">
+        <source>You need to verify %@. Check your email for the verification link from Firefox.</source>
+        <target>%@ morate potrditi. V svojem e-po&#353;tnem predalu poi&#353;&#269;ite Firefoxovo sporo&#269;ilo s potrditveno povezavo.</target>
+        <note>Message explaining that user needs to check email for Firefox Account verfication link.</note>
+      </trans-unit>
+      <trans-unit id="FxA.FirefoxAccount">
+        <source>Firefox Account</source>
+        <target>Firefox Ra&#269;un</target>
+        <note>Settings section title for Firefox Account</note>
+      </trans-unit>
+      <trans-unit id="FxA.ManageAccount">
+        <source>Manage Account</source>
+        <target>Upravljanje ra&#269;una</target>
+        <note>Button label to goto Firefox Account settings</note>
+      </trans-unit>
+      <trans-unit id="FxA.NoInternetConnection">
+        <source>No Internet Connection</source>
+        <target>Ni internetne povezave</target>
+        <note>Label when no internet is present</note>
+      </trans-unit>
+      <trans-unit id="FxA.ResendEmail">
+        <source>Resend Email</source>
+        <target>Ponovno po&#353;lji e-po&#353;to</target>
+        <note>Button label to resend email</note>
+      </trans-unit>
+      <trans-unit id="FxA.SignIntoSync">
+        <source>Sign in to Sync</source>
+        <target>Prijava v Sync</target>
+        <note>Button label to sign into Sync</note>
+      </trans-unit>
+      <trans-unit id="FxA.SyncExplain">
+        <source>Get your tabs, bookmarks, and passwords from your other devices.</source>
+        <target>Uporabite zavihke, zaznamke in gesla iz svojih drugih naprav.</target>
+        <note>Label explaining what sync does</note>
+      </trans-unit>
+      <trans-unit id="FxA.SyncNow">
+        <source>Sync Now</source>
+        <target>Sinhroniziraj zdaj</target>
+        <note>Button label to Sync your Firefox Account</note>
+      </trans-unit>
+      <trans-unit id="FxA.TakeYourWebWithYou">
+        <source>Take Your Web With You</source>
+        <target>Ponesite svoj splet s seboj</target>
+        <note>Call to action for sign into sync button</note>
+      </trans-unit>
+      <trans-unit id="FxAPush_DeviceConnected_body">
+        <source>Firefox Sync has connected to %@</source>
+        <target>Firefox Sync se je povezal z %@</target>
+        <note>Title of a notification displayed when another device has connected to FxA. %@ refers to the name of the newly connected device.</note>
+      </trans-unit>
+      <trans-unit id="FxAPush_DeviceConnected_title">
+        <source>Sync Connected</source>
+        <target>Sync je povezan</target>
+        <note>Title of a notification displayed when another device has connected to FxA.</note>
+      </trans-unit>
+      <trans-unit id="FxAPush_DeviceDisconnected_ThisDevice_body">
+        <source>This device has been successfully disconnected from Firefox Sync.</source>
+        <target>Ta naprava ni ve&#269; povezana s Firefox Sync.</target>
+        <note>Body of a notification displayed when this device has been disconnected from FxA by another device.</note>
+      </trans-unit>
+      <trans-unit id="FxAPush_DeviceDisconnected_ThisDevice_title">
+        <source>Sync Disconnected</source>
+        <target>Sync je prekinjen</target>
+        <note>Title of a notification displayed when this device has been disconnected by another device.</note>
+      </trans-unit>
+      <trans-unit id="FxAPush_DeviceDisconnected_UnknownDevice_body">
+        <source>A device has disconnected from Firefox Sync</source>
+        <target>Naprava je bila odklopljena iz Firefox Sync</target>
+        <note>Body of a notification displayed when unnamed device has been disconnected from FxA.</note>
+      </trans-unit>
+      <trans-unit id="FxAPush_DeviceDisconnected_body">
+        <source>%@ has been successfully disconnected.</source>
+        <target>Naprava %@ je bila uspe&#353;no odklopljena.</target>
+        <note>Body of a notification displayed when named device has been disconnected from FxA. %@ refers to the name of the disconnected device.</note>
+      </trans-unit>
+      <trans-unit id="FxAPush_DeviceDisconnected_title">
+        <source>Sync Disconnected</source>
+        <target>Sync je prekinjen</target>
+        <note>Title of a notification displayed when named device has been disconnected from FxA.</note>
+      </trans-unit>
+      <trans-unit id="General">
+        <source>General</source>
+        <target>Splo&#353;no</target>
+        <note>General settings section title</note>
+      </trans-unit>
+      <trans-unit id="Get your open tabs, bookmarks, and passwords from your other devices.">
+        <source>Get your open tabs, bookmarks, and passwords from your other devices.</source>
+        <target>Uporabite odprte zavihke, zaznamke in gesla iz svojih drugih naprav.</target>
+        <note>A re-worded offer about Sync, displayed when the Sync home panel is empty, that emphasizes one-way data transfer, not syncing.</note>
+      </trans-unit>
+      <trans-unit id="Go">
+        <source>Go</source>
+        <target>Pojdi</target>
+        <note>Pending feature; currently unused string! Button to browse to URL on the clipboard when browser is opened</note>
+      </trans-unit>
+      <trans-unit id="Go to copied URL?">
+        <source>Go to copied URL?</source>
+        <target>Odprem URL v odlo&#382;i&#353;&#269;u?</target>
+        <note>Pending feature; currently unused string! Prompt message shown when browser is opened with URL on the clipboard</note>
+      </trans-unit>
+      <trans-unit id="Help">
+        <source>Help</source>
+        <target>Pomo&#269;</target>
+        <note>Show the SUMO support page from the Support section in the settings. see http://mzl.la/1dmM8tZ</note>
+      </trans-unit>
+      <trans-unit id="History">
+        <source>History</source>
+        <target>Zgodovina</target>
+        <note>Panel accessibility label</note>
+      </trans-unit>
+      <trans-unit id="HistoryPanel.EmptyState.Title">
+        <source>Websites you&#8217;ve visited recently will show up here.</source>
+        <target>Tukaj bodo prikazane nedavno obiskane strani.</target>
+        <note>Title for the History Panel empty state.</note>
+      </trans-unit>
+      <trans-unit id="HistoryPanel.EmptySyncedTabsNullState.Description">
+        <source>Your tabs from other devices show up here.</source>
+        <target>Tukaj bodo prikazani va&#353;i zavihki iz drugih naprav.</target>
+        <note>Description for the empty synced tabs null state in the History Panel</note>
+      </trans-unit>
+      <trans-unit id="HistoryPanel.EmptySyncedTabsState.Description">
+        <source>Sign in to view open tabs on your other devices.</source>
+        <target>Prijavite se za ogled odprtih zavihkov v drugih napravah.</target>
+        <note>Description for the empty synced tabs state in the History Panel</note>
+      </trans-unit>
+      <trans-unit id="HistoryPanel.EmptySyncedTabsState.Title">
+        <source>Firefox Sync</source>
+        <target>Firefox Sync</target>
+        <note>Title for the empty synced tabs state in the History Panel</note>
+      </trans-unit>
+      <trans-unit id="HistoryPanel.HistoryBackButton.Title">
+        <source>History</source>
+        <target>Zgodovina</target>
+        <note>Title for the Back to History button in the History Panel</note>
+      </trans-unit>
+      <trans-unit id="HistoryPanel.RecentlyClosedTabsButton.Title">
+        <source>Recently Closed</source>
+        <target>Nedavno zaprto</target>
+        <note>Title for the Recently Closed button in the History Panel</note>
+      </trans-unit>
+      <trans-unit id="HistoryPanel.SyncedTabsCell.Description.Pluralized">
+        <source>%d device(s) connected</source>
+        <target>&#352;tevilo povezanih naprav: %d</target>
+        <note>Description that corresponds with a number of devices connected for the Synced Tabs Cell in the History Panel</note>
+      </trans-unit>
+      <trans-unit id="HistoryPanel.SyncedTabsCell.Title">
+        <source>Synced Devices</source>
+        <target>Sihnronizirane naprave</target>
+        <note>Title for the Synced Tabs Cell in the History Panel</note>
+      </trans-unit>
+      <trans-unit id="HomePage.Set.Dialog.Cancel">
+        <source>Cancel</source>
+        <target>Prekli&#269;i</target>
+        <note>Button cancelling changes setting the home page for the first time.</note>
+      </trans-unit>
+      <trans-unit id="HomePage.Set.Dialog.Message">
+        <source>You can change this at any time in Settings</source>
+        <target>To lahko kadar koli spremenite v nastavitvah</target>
+        <note>Alert dialog body when the user opens the home page for the first time.</note>
+      </trans-unit>
+      <trans-unit id="HomePage.Set.Dialog.OK">
+        <source>Set Homepage</source>
+        <target>Nastavi doma&#269;o stran</target>
+        <note>Button accepting changes setting the home page for the first time.</note>
+      </trans-unit>
+      <trans-unit id="HomePage.Set.Dialog.Title">
+        <source>Do you want to use this web page as your home page?</source>
+        <target>Ali &#382;elite to stran uporabljati kot doma&#269;o stran?</target>
+        <note>Alert dialog title when the user opens the home page for the first time.</note>
+      </trans-unit>
+      <trans-unit id="HomePanel.ContextMenu.Bookmark">
+        <source>Bookmark</source>
+        <target>Zaznamek</target>
+        <note>The title for the Bookmark context menu action for sites in Home Panels</note>
+      </trans-unit>
+      <trans-unit id="HomePanel.ContextMenu.DeleteFromHistory">
+        <source>Delete from History</source>
+        <target>Izbri&#353;i iz zgodovine</target>
+        <note>The title for the Delete from History context menu action for sites in Home Panels</note>
+      </trans-unit>
+      <trans-unit id="HomePanel.ContextMenu.OpenInNewPrivateTab">
+        <source>Open in New Private Tab</source>
+        <target>Odpri v zasebnem zavihku</target>
+        <note>The title for the Open in New Private Tab context menu action for sites in Home Panels</note>
+      </trans-unit>
+      <trans-unit id="HomePanel.ContextMenu.OpenInNewTab">
+        <source>Open in New Tab</source>
+        <target>Odpri v novem zavihku</target>
+        <note>The title for the Open in New Tab context menu action for sites in Home Panels</note>
+      </trans-unit>
+      <trans-unit id="HomePanel.ContextMenu.Remove">
+        <source>Remove</source>
+        <target>Odstrani</target>
+        <note>The title for the Remove context menu action for sites in Home Panels</note>
+      </trans-unit>
+      <trans-unit id="HomePanel.ContextMenu.RemoveBookmark">
+        <source>Remove Bookmark</source>
+        <target>Odstrani zaznamek</target>
+        <note>The title for the Remove Bookmark context menu action for sites in Home Panels</note>
+      </trans-unit>
+      <trans-unit id="HomePanel.ContextMenu.Share">
+        <source>Share</source>
+        <target>Deli</target>
+        <note>The title for the Share context menu action for sites in Home Panels</note>
+      </trans-unit>
+      <trans-unit id="Hotkeys.Back.DiscoveryTitle">
+        <source>Back</source>
+        <target>Nazaj</target>
+        <note>Label to display in the Discoverability overlay for keyboard shortcuts</note>
+      </trans-unit>
+      <trans-unit id="Hotkeys.CloseTab.DiscoveryTitle">
+        <source>Close Tab</source>
+        <target>Zapri zavihek</target>
+        <note>Label to display in the Discoverability overlay for keyboard shortcuts</note>
+      </trans-unit>
+      <trans-unit id="Hotkeys.Find.DiscoveryTitle">
+        <source>Find</source>
+        <target>Najdi</target>
+        <note>Label to display in the Discoverability overlay for keyboard shortcuts</note>
+      </trans-unit>
+      <trans-unit id="Hotkeys.Forward.DiscoveryTitle">
+        <source>Forward</source>
+        <target>Naprej</target>
+        <note>Label to display in the Discoverability overlay for keyboard shortcuts</note>
+      </trans-unit>
+      <trans-unit id="Hotkeys.NewPrivateTab.DiscoveryTitle">
+        <source>New Private Tab</source>
+        <target>Nov zasebni zavihek</target>
+        <note>Label to display in the Discoverability overlay for keyboard shortcuts</note>
+      </trans-unit>
+      <trans-unit id="Hotkeys.NewTab.DiscoveryTitle">
+        <source>New Tab</source>
+        <target>Nov zavihek</target>
+        <note>Label to display in the Discoverability overlay for keyboard shortcuts</note>
+      </trans-unit>
+      <trans-unit id="Hotkeys.Reload.DiscoveryTitle">
+        <source>Reload Page</source>
+        <target>Ponovno nalo&#382;i stran</target>
+        <note>Label to display in the Discoverability overlay for keyboard shortcuts</note>
+      </trans-unit>
+      <trans-unit id="Hotkeys.SelectLocationBar.DiscoveryTitle">
+        <source>Select Location Bar</source>
+        <target>Izberite vrstico z mestom</target>
+        <note>Label to display in the Discoverability overlay for keyboard shortcuts</note>
+      </trans-unit>
+      <trans-unit id="Hotkeys.ShowNextTab.DiscoveryTitle">
+        <source>Show Next Tab</source>
+        <target>Prika&#382;i naslednji zavihek</target>
+        <note>Label to display in the Discoverability overlay for keyboard shortcuts</note>
+      </trans-unit>
+      <trans-unit id="Hotkeys.ShowPreviousTab.DiscoveryTitle">
+        <source>Show Previous Tab</source>
+        <target>Prika&#382;i prej&#353;nji zavihek</target>
+        <note>Label to display in the Discoverability overlay for keyboard shortcuts</note>
+      </trans-unit>
+      <trans-unit id="Increase text size">
+        <source>Increase text size</source>
+        <target>Pove&#269;aj velikost besedila</target>
+        <note>Accessibility label for button increasing font size in display settings of reader mode</note>
+      </trans-unit>
+      <trans-unit id="Intro Tour Carousel">
+        <source>Intro Tour Carousel</source>
+        <target>Vrtiljak predstavitvenega vodi&#269;a</target>
+        <note>Accessibility label for the introduction tour carousel</note>
+      </trans-unit>
+      <trans-unit id="Last month">
+        <source>Last month</source>
+        <target>Zadnji mesec</target>
+        <note>History tableview section header</note>
+      </trans-unit>
+      <trans-unit id="Last synced: %@">
+        <source>Last synced: %@</source>
+        <target>Zadnja sinhronizacija: %@</target>
+        <note>Remote tabs last synced time. Argument is the relative date string.</note>
+      </trans-unit>
+      <trans-unit id="Last week">
+        <source>Last week</source>
+        <target>Zadnji teden</target>
+        <note>History tableview section header</note>
+      </trans-unit>
+      <trans-unit id="Licenses">
+        <source>Licenses</source>
+        <target>Licence</target>
+        <note>Settings item that opens a tab containing the licenses. See http://mzl.la/1NSAWCG</note>
+      </trans-unit>
+      <trans-unit id="Light">
+        <source>Light</source>
+        <target>Svetlo</target>
+        <note>Light theme setting in Reading View settings</note>
+      </trans-unit>
+      <trans-unit id="Load original page">
+        <source>Load original page</source>
+        <target>Nalo&#382;i izvirno stran</target>
+        <note>Link for going to the non-reader page when the reader view could not be loaded. This message will appear only when sharing to Firefox reader mode from another app.</note>
+      </trans-unit>
+      <trans-unit id="Loading content&#8230;">
+        <source>Loading content&#8230;</source>
+        <target>Nalaganje vsebine &#8230;</target>
+        <note>Message displayed when the reader mode page is loading. This message will appear only when sharing to Firefox reader mode from another app.</note>
+      </trans-unit>
+      <trans-unit id="Log Out">
+        <source>Log Out</source>
+        <target>Odjava</target>
+        <note>Button in settings screen to disconnect from your account
+   Disconnect button in the 'log out firefox account' alert</note>
+      </trans-unit>
+      <trans-unit id="Log Out?">
+        <source>Log Out?</source>
+        <target>Se &#382;elite odjaviti?</target>
+        <note>Title of the 'log out firefox account' alert</note>
+      </trans-unit>
+      <trans-unit id="Log in">
+        <source>Log in</source>
+        <target>Prijava</target>
+        <note>Authentication prompt log in button</note>
+      </trans-unit>
+      <trans-unit id="Logins">
+        <source>Logins</source>
+        <target>Prijave</target>
+        <note>Label used as an item in Settings. When touched, the user will be navigated to the Logins/Password manager.</note>
+      </trans-unit>
+      <trans-unit id="LoginsHelper.DontSave.Button">
+        <source>Don&#8217;t Save</source>
+        <target>Ne shrani</target>
+        <note>Button to not save the user's password</note>
+      </trans-unit>
+      <trans-unit id="LoginsHelper.PromptSaveLogin.Title">
+        <source>Save login %1$@ for %2$@?</source>
+        <target>Shranim prijavo %1$@ za %2$@?</target>
+        <note>Prompt for saving a login. The first parameter is the username being saved. The second parameter is the hostname of the site.</note>
+      </trans-unit>
+      <trans-unit id="LoginsHelper.PromptSavePassword.Title">
+        <source>Save password for %@?</source>
+        <target>Shranim geslo za %@?</target>
+        <note>Prompt for saving a password with no username. The parameter is the hostname of the site.</note>
+      </trans-unit>
+      <trans-unit id="LoginsHelper.PromptUpdateLogin.Title">
+        <source>Update login %1$@ for %2$@?</source>
+        <target>Posodobim prijavo %1$@ za %2$@?</target>
+        <note>Prompt for updating a login. The first parameter is the username for which the password will be updated for. The second parameter is the hostname of the site.</note>
+      </trans-unit>
+      <trans-unit id="LoginsHelper.PromptUpdatePassword.Title">
+        <source>Update password for %@?</source>
+        <target>Posodobim geslo za %@?</target>
+        <note>Prompt for updating a password with no username. The parameter is the hostname of the site.</note>
+      </trans-unit>
+      <trans-unit id="LoginsHelper.SaveLogin.Button">
+        <source>Save Login</source>
+        <target>Shrani prijavo</target>
+        <note>Button to save the user's password</note>
+      </trans-unit>
+      <trans-unit id="LoginsHelper.Update.Button">
+        <source>Update</source>
+        <target>Posodobi</target>
+        <note>Button to update the user's password</note>
+      </trans-unit>
+      <trans-unit id="Looks like Firefox crashed previously. Would you like to restore your tabs?">
+        <source>Looks like Firefox crashed previously. Would you like to restore your tabs?</source>
+        <target>O&#269;itno se je Firefox predhodno sesul. &#381;elite obnoviti zavihke?</target>
+        <note>Restore Tabs Prompt Description</note>
+      </trans-unit>
+      <trans-unit id="Mark as Read">
+        <source>Mark as Read</source>
+        <target>Ozna&#269;i kot prebrano</target>
+        <note>Name for Mark as read button in reader mode
+   Title for the button that marks a reading list item as read</note>
+      </trans-unit>
+      <trans-unit id="Mark as Unread">
+        <source>Mark as Unread</source>
+        <target>Ozna&#269;i kot neprebrano</target>
+        <note>Name for Mark as unread button in reader mode
+   Title for the button that marks a reading list item as unread</note>
+      </trans-unit>
+      <trans-unit id="Menu.AddBookmark.Confirm">
+        <source>Bookmark Added</source>
+        <target>Zaznamek dodan</target>
+        <note>Toast displayed to the user after a bookmark has been added.</note>
+      </trans-unit>
+      <trans-unit id="Menu.AddToReadingList.Confirm">
+        <source>Added To Reading List</source>
+        <target>Dodano na bralni seznam</target>
+        <note>Toast displayed to the user after adding the item to their reading list.</note>
+      </trans-unit>
+      <trans-unit id="Menu.CopyURL.Confirm">
+        <source>URL Copied To Clipboard</source>
+        <target>URL kopiran v odlo&#382;i&#353;&#269;e</target>
+        <note>Toast displayed to user after copy url pressed.</note>
+      </trans-unit>
+      <trans-unit id="Menu.NightModeTurnOff.Label">
+        <source>Disable Night Mode</source>
+        <target>Onemogo&#269;i no&#269;ni na&#269;in</target>
+        <note>Label for the button, displayed in the menu, turns off night mode</note>
+      </trans-unit>
+      <trans-unit id="Menu.NightModeTurnOn.Label">
+        <source>Enable Night Mode</source>
+        <target>Omogo&#269;i no&#269;ni na&#269;in</target>
+        <note>Label for the button, displayed in the menu, turns on night mode.</note>
+      </trans-unit>
+      <trans-unit id="Menu.NoImageModeHideImages.Label">
+        <source>Hide Images</source>
+        <target>Skrij slike</target>
+        <note>Label for the button, displayed in the menu, hides images on the webpage when pressed.</note>
+      </trans-unit>
+      <trans-unit id="Menu.NoImageModeShowImages.Label">
+        <source>Show Images</source>
+        <target>Prika&#382;i slike</target>
+        <note>Label for the button, displayed in the menu, shows images on the webpage when pressed</note>
+      </trans-unit>
+      <trans-unit id="Menu.RemoveBookmark.Confirm">
+        <source>Bookmark Removed</source>
+        <target>Zaznamek odstranjen</target>
+        <note>Toast displayed to the user after a bookmark has been removed.</note>
+      </trans-unit>
+      <trans-unit id="Missing error">
+        <source>Missing error</source>
+        <target>Manjkajo&#269;a napaka</target>
+        <note>Error for a missing remote error number</note>
+      </trans-unit>
+      <trans-unit id="Missing message">
+        <source>Missing message</source>
+        <target>Manjkajo&#269;e sporo&#269;ilo</target>
+        <note>Error for a missing remote error message</note>
+      </trans-unit>
+      <trans-unit id="Navigation Toolbar">
+        <source>Navigation Toolbar</source>
+        <target>Vrstica za brskanje</target>
+        <note>Accessibility label for the navigation toolbar displayed at the bottom of the screen.</note>
+      </trans-unit>
+      <trans-unit id="New Tab">
+        <source>New Tab</source>
+        <target>Nov zavihek</target>
+        <note>Accessibility label for the New Tab button in the tab toolbar.</note>
+      </trans-unit>
+      <trans-unit id="No">
+        <source>No</source>
+        <target>Ne</target>
+        <note>Restore Tabs Negative Action</note>
+      </trans-unit>
+      <trans-unit id="No tabs">
+        <source>No tabs</source>
+        <target>Ni zavihkov</target>
+        <note>Message spoken by VoiceOver to indicate that there are no tabs in the Tabs Tray</note>
+      </trans-unit>
+      <trans-unit id="Not now">
+        <source>Not now</source>
+        <target>Ne zdaj</target>
+        <note>Button to not save the user's password</note>
+      </trans-unit>
+      <trans-unit id="OK">
+        <source>OK</source>
+        <target>V redu</target>
+        <note>OK button</note>
+      </trans-unit>
+      <trans-unit id="Okay">
+        <source>Okay</source>
+        <target>V redu</target>
+        <note>Restore Tabs Affirmative Action</note>
+      </trans-unit>
+      <trans-unit id="Oops! Firefox crashed">
+        <source>Oops! Firefox crashed</source>
+        <target>Ups! Firefox se je sesul</target>
+        <note>Title for prompt displayed to user after the app crashes</note>
+      </trans-unit>
+      <trans-unit id="Open Settings">
+        <source>Open Settings</source>
+        <target>Odpri nastavitve</target>
+        <note>See http://mzl.la/1G7uHo7</note>
+      </trans-unit>
+      <trans-unit id="Open articles in Reader View by tapping the book icon when it appears in the title bar.">
+        <source>Open articles in Reader View by tapping the book icon when it appears in the title bar.</source>
+        <target>Odprite &#269;lanke v bralnem pogledu, tako da tapnete ikono knjige, ko se pojavi v naslovni vrstici.</target>
+        <note>See http://mzl.la/1LXbDOL</note>
+      </trans-unit>
+      <trans-unit id="Open in New Tab">
+        <source>Open in New Tab</source>
+        <target>Odpri v novem zavihku</target>
+        <note>Context menu item for opening a link in a new tab</note>
+      </trans-unit>
+      <trans-unit id="Open in&#8230;">
+        <source>Open in&#8230;</source>
+        <target>Odpri v &#8230;</target>
+        <note>String indicating that the file can be opened in another application on the device</note>
+      </trans-unit>
+      <trans-unit id="OpenURL.Error.Message">
+        <source>Firefox cannot open the page because it has an invalid address.</source>
+        <target>Firefox ne more odpreti strani, ker je njen naslov neveljaven.</target>
+        <note>The message displayed to a user when they try to open a URL that cannot be handled by Firefox, or any external app.</note>
+      </trans-unit>
+      <trans-unit id="OpenURL.Error.Title">
+        <source>Cannot Open Page</source>
+        <target>Strani ni mogo&#269;e odpreti</target>
+        <note>Title of the message shown when the user attempts to navigate to an invalid link.</note>
+      </trans-unit>
+      <trans-unit id="Opening %@">
+        <source>Opening %@</source>
+        <target>Odpiranje %@</target>
+        <note>Opening an external URL</note>
+      </trans-unit>
+      <trans-unit id="Page Options Menu">
+        <source>Page Options Menu</source>
+        <target>Meni mo&#382;nosti strani</target>
+        <note>Accessibility label for the Page Options menu button</note>
+      </trans-unit>
+      <trans-unit id="Panel Chooser">
+        <source>Panel Chooser</source>
+        <target>Izbirnik plo&#353;&#269;</target>
+        <note>Accessibility label for the Home panel's top toolbar containing list of the home panels (top sites, bookmarsk, history, remote tabs, reading list).</note>
+      </trans-unit>
+      <trans-unit id="Password">
+        <source>Password</source>
+        <target>Geslo</target>
+        <note>Password textbox in Authentication prompt</note>
+      </trans-unit>
+      <trans-unit id="Paste">
+        <source>Paste</source>
+        <target>Prilepi</target>
+        <note>Paste the URL into the location bar</note>
+      </trans-unit>
+      <trans-unit id="Paste &amp; Go">
+        <source>Paste &amp; Go</source>
+        <target>Prilepi in pojdi</target>
+        <note>Paste the URL into the location bar and visit</note>
+      </trans-unit>
+      <trans-unit id="PhotonMenu.cancel">
+        <source>Cancel</source>
+        <target>Prekli&#269;i</target>
+        <note>Button for closing the menu action sheet</note>
+      </trans-unit>
+      <trans-unit id="Please allow Firefox to access your device&#8217;s camera in &#8216;Settings&#8217; -&gt; &#8216;Privacy&#8217; -&gt; &#8216;Camera&#8217;.">
+        <source>Please allow Firefox to access your device&#8217;s camera in &#8216;Settings&#8217; -&gt; &#8216;Privacy&#8217; -&gt; &#8216;Camera&#8217;.</source>
+        <target>Dovolite Firefoxu dostop do kamere va&#353;e naprave v "Nastavitve" -&gt; "Zasebnost" -&gt; "Kamera".</target>
+        <note>Text of the prompt user to setup the camera authorization.</note>
+      </trans-unit>
+      <trans-unit id="Privacy">
+        <source>Privacy</source>
+        <target>Zasebnost</target>
+        <note>Privacy section title</note>
+      </trans-unit>
+      <trans-unit id="Privacy Policy">
+        <source>Privacy Policy</source>
+        <target>Politika zasebnosti</target>
+        <note>Show Firefox Browser Privacy Policy page from the Privacy section in the settings. See https://www.mozilla.org/privacy/firefox/</note>
+      </trans-unit>
+      <trans-unit id="Quick-Search Engines">
+        <source>Quick-Search Engines</source>
+        <target>Hitri iskalniki</target>
+        <note>Title for quick-search engines settings section.</note>
+      </trans-unit>
+      <trans-unit id="Reader View">
+        <source>Reader View</source>
+        <target>Bralni pogled</target>
+        <note>Accessibility label for the Reader View button</note>
+      </trans-unit>
+      <trans-unit id="ReaderMode.Available.VoiceOverAnnouncement">
+        <source>Reader Mode available</source>
+        <target>Na voljo je bralni na&#269;in</target>
+        <note>Accessibility message e.g. spoken by VoiceOver when Reader Mode becomes available.</note>
+      </trans-unit>
+      <trans-unit id="Reading list">
+        <source>Reading list</source>
+        <target>Bralni seznam</target>
+        <note>Panel accessibility label</note>
+      </trans-unit>
+      <trans-unit id="RecentlyClosedTabsPanel.Title">
+        <source>Recently Closed</source>
+        <target>Nedavno zaprto</target>
+        <note>Title for the Recently Closed Tabs Panel</note>
+      </trans-unit>
+      <trans-unit id="Reload">
+        <source>Reload</source>
+        <target>Ponovno nalo&#382;i</target>
+        <note>Accessibility Label for the tab toolbar Reload button</note>
+      </trans-unit>
+      <trans-unit id="Remove">
+        <source>Remove</source>
+        <target>Odstrani</target>
+        <note>Title for the button that removes a reading list item</note>
+      </trans-unit>
+      <trans-unit id="Remove from Reading List">
+        <source>Remove from Reading List</source>
+        <target>Odstrani z bralnega seznama</target>
+        <note>Name for button removing current article from reading list in reader mode</note>
+      </trans-unit>
+      <trans-unit id="Request Desktop Site">
+        <source>Request Desktop Site</source>
+        <target>Zahtevaj stran za namizja</target>
+        <note>Action Sheet Button for Requesting the Desktop Site</note>
+      </trans-unit>
+      <trans-unit id="Request Mobile Site">
+        <source>Request Mobile Site</source>
+        <target>Zahtevaj mobilno stran</target>
+        <note>Action Sheet Button for Requesting the Mobile Site</note>
+      </trans-unit>
+      <trans-unit id="Reset text size">
+        <source>Reset text size</source>
+        <target>Ponastavi velikost besedila</target>
+        <note>Accessibility label for button resetting font size in display settings of reader mode</note>
+      </trans-unit>
+      <trans-unit id="Sans-serif">
+        <source>Sans-serif</source>
+        <target>Sans-serif</target>
+        <note>Font type setting in the reading view settings</note>
+      </trans-unit>
+      <trans-unit id="Save Image">
+        <source>Save Image</source>
+        <target>Shrani sliko</target>
+        <note>Context menu item for saving an image</note>
+      </trans-unit>
+      <trans-unit id="Save Logins">
+        <source>Save Logins</source>
+        <target>Shrani prijave</target>
+        <note>Setting to enable the built-in password manager</note>
+      </trans-unit>
+      <trans-unit id="Save pages to your Reading List by tapping the book plus icon in the Reader View controls.">
+        <source>Save pages to your Reading List by tapping the book plus icon in the Reader View controls.</source>
+        <target>Shranite strani na bralni seznam, tako da tapnete na ikono knjige plus v ukazih bralnega pogleda.</target>
+        <note>See http://mzl.la/1LXbDOL</note>
+      </trans-unit>
+      <trans-unit id="ScanQRCode.Instructions.Label">
+        <source>Align QR code within frame to scan</source>
+        <target>Za skeniranje poravnajte QR-kodo v okvir</target>
+        <note>Text for the instructions label, displayed in the QR scanner view</note>
+      </trans-unit>
+      <trans-unit id="ScanQRCode.View.Title">
+        <source>Scan QR Code</source>
+        <target>Skenirajte QR-kodo</target>
+        <note>Title for the QR code scanner view.</note>
+      </trans-unit>
+      <trans-unit id="Search">
+        <source>Search</source>
+        <target>Iskanje</target>
+        <note>Navigation title for search settings.
+   Open search section of settings</note>
+      </trans-unit>
+      <trans-unit id="Search or enter address">
+        <source>Search or enter address</source>
+        <target>Iskanje ali naslov strani</target>
+        <note>The text shown in the URL bar on about:home</note>
+      </trans-unit>
+      <trans-unit id="Search.ThirdPartyEngines.AddMessage">
+        <source>The new search engine will appear in the quick search bar.</source>
+        <target>Novi isklanik se bo pojavil v vrstici za hitro iskanje.</target>
+        <note>The message that asks the user to Add the search provider explaining where the search engine will appear</note>
+      </trans-unit>
+      <trans-unit id="Search.ThirdPartyEngines.AddSuccess">
+        <source>Added Search engine!</source>
+        <target>Iskalnik dodan!</target>
+        <note>The success message that appears after a user sucessfully adds a new search engine</note>
+      </trans-unit>
+      <trans-unit id="Search.ThirdPartyEngines.AddTitle">
+        <source>Add Search Provider?</source>
+        <target>Dodam ponudnika iskanja?</target>
+        <note>The title that asks the user to Add the search provider</note>
+      </trans-unit>
+      <trans-unit id="Search.ThirdPartyEngines.Cancel">
+        <source>Cancel</source>
+        <target>Prekli&#269;i</target>
+        <note>The cancel button if you do not want to add a search engine.</note>
+      </trans-unit>
+      <trans-unit id="Search.ThirdPartyEngines.DuplicateErrorMessage">
+        <source>A search engine with this title or URL has already been added.</source>
+        <target>Iskalnik s tem imenom ali naslovom je bil &#382;e dodan.</target>
+        <note>A message explaining fault in custom search engine form.</note>
+      </trans-unit>
+      <trans-unit id="Search.ThirdPartyEngines.DuplicateErrorTitle">
+        <source>Failed</source>
+        <target>Neuspe&#353;no</target>
+        <note>A title stating that we failed to add custom search engine.</note>
+      </trans-unit>
+      <trans-unit id="Search.ThirdPartyEngines.FailedMessage">
+        <source>The search provider could not be added.</source>
+        <target>Ponudnika iskanja ni bilo mogo&#269;e dodati.</target>
+        <note>A title explaining that we failed to add a search engine</note>
+      </trans-unit>
+      <trans-unit id="Search.ThirdPartyEngines.FailedTitle">
+        <source>Failed</source>
+        <target>Neuspe&#353;no</target>
+        <note>A title explaining that we failed to add a search engine</note>
+      </trans-unit>
+      <trans-unit id="Search.ThirdPartyEngines.FormErrorMessage">
+        <source>Please fill all fields correctly.</source>
+        <target>Pravilno izpolnite vsa polja.</target>
+        <note>A message explaining fault in custom search engine form.</note>
+      </trans-unit>
+      <trans-unit id="Search.ThirdPartyEngines.FormErrorTitle">
+        <source>Failed</source>
+        <target>Neuspe&#353;no</target>
+        <note>A title stating that we failed to add custom search engine.</note>
+      </trans-unit>
+      <trans-unit id="Search.ThirdPartyEngines.OK">
+        <source>OK</source>
+        <target>V redu</target>
+        <note>The confirmation button</note>
+      </trans-unit>
+      <trans-unit id="Searches for the suggestion">
+        <source>Searches for the suggestion</source>
+        <target>Iskanje predlogov</target>
+        <note>Accessibility hint describing the action performed when a search suggestion is clicked</note>
+      </trans-unit>
+      <trans-unit id="Secure connection">
+        <source>Secure connection</source>
+        <target>Varna povezava</target>
+        <note>Accessibility label for the lock icon, which is only present if the connection is secure</note>
+      </trans-unit>
+      <trans-unit id="Send Feedback">
+        <source>Send Feedback</source>
+        <target>Po&#353;lji povratne informacije</target>
+        <note>Menu item in settings used to open input.mozilla.org where people can submit feedback</note>
+      </trans-unit>
+      <trans-unit id="Send Report">
+        <source>Send Report</source>
+        <target>Po&#353;lji poro&#269;ilo</target>
+        <note>Used as a button label for crash dialog prompt</note>
+      </trans-unit>
+      <trans-unit id="Send a crash report so Mozilla can fix the problem?">
+        <source>Send a crash report so Mozilla can fix the problem?</source>
+        <target>Po&#353;ljem poro&#269;ilo, da lahko Mozilla odpravi napako?</target>
+        <note>Message displayed in the crash dialog above the buttons used to select when sending reports</note>
+      </trans-unit>
+      <trans-unit id="SendTo.Cancel.Button">
+        <source>Cancel</source>
+        <target>Prekli&#269;i</target>
+        <note>Button title for cancelling SendTo screen</note>
+      </trans-unit>
+      <trans-unit id="SendTo.Error.Message">
+        <source>Only HTTP and HTTPS links can be shared.</source>
+        <target>Delite lahko samo povezave HTTP in HTTPS.</target>
+        <note>Message in error prompt explaining why the URL is invalid.</note>
+      </trans-unit>
+      <trans-unit id="SendTo.Error.OK.Button">
+        <source>OK</source>
+        <target>V redu</target>
+        <note>OK button to dismiss the error prompt.</note>
+      </trans-unit>
+      <trans-unit id="SendTo.Error.Title">
+        <source>The link you are trying to share cannot be shared.</source>
+        <target>Povezave, ki jo posku&#353;ate deliti, ni mogo&#269;e deliti.</target>
+        <note>Title of error prompt displayed when an invalid URL is shared.</note>
+      </trans-unit>
+      <trans-unit id="SentTab.NoTabArrivingNotification.body">
+        <source>Tap to begin</source>
+        <target>Tapnite za za&#269;etek</target>
+        <note>Body of notification received after a spurious message from FxA has been received.</note>
+      </trans-unit>
+      <trans-unit id="SentTab.NoTabArrivingNotification.title">
+        <source>Firefox Sync</source>
+        <target>Firefox Sync</target>
+        <note>Title of notification received after a spurious message from FxA has been received.</note>
+      </trans-unit>
+      <trans-unit id="SentTab_TabArrivingNotification_NoDevice_body">
+        <source>New tab arrived from another device.</source>
+        <target>Nov zavihek je prispel iz druge naprave.</target>
+        <note>Body of notification shown when the device is sent one or more tabs from an unnamed device.</note>
+      </trans-unit>
+      <trans-unit id="SentTab_TabArrivingNotification_NoDevice_title">
+        <source>Tab received</source>
+        <target>Prejet zavihek</target>
+        <note>Title of notification shown when the device is sent one or more tabs from an unnamed device.</note>
+      </trans-unit>
+      <trans-unit id="SentTab_TabArrivingNotification_WithDevice_body">
+        <source>New tab arrived in %@</source>
+        <target>Nov zavihek je prispel v %@</target>
+        <note>Body of notification shown when the device is sent one or more tabs from the named device. %@ is the placeholder for the app name.</note>
+      </trans-unit>
+      <trans-unit id="SentTab_TabArrivingNotification_WithDevice_title">
+        <source>Tab received from %@</source>
+        <target>Zavihek prejet z %@</target>
+        <note>Title of notification shown when the device is sent one or more tabs from the named device. %@ is the placeholder for the device name. This device name will be localized by that device.</note>
+      </trans-unit>
+      <trans-unit id="Sepia">
+        <source>Sepia</source>
+        <target>Sepia</target>
+        <note>Sepia theme setting in Reading View settings</note>
+      </trans-unit>
+      <trans-unit id="Serif">
+        <source>Serif</source>
+        <target>Serif</target>
+        <note>Font type setting in the reading view settings</note>
+      </trans-unit>
+      <trans-unit id="Settings">
+        <source>Settings</source>
+        <target>Nastavitve</target>
+        <note>Title in the settings view controller title bar</note>
+      </trans-unit>
+      <trans-unit id="Settings.AddCustomEngine">
+        <source>Add Search Engine</source>
+        <target>Dodaj iskalnik</target>
+        <note>The button text in Search Settings that opens the Custom Search Engine view.</note>
+      </trans-unit>
+      <trans-unit id="Settings.AddCustomEngine.SaveButtonText">
+        <source>Save</source>
+        <target>Shrani</target>
+        <note>The text on the Save button when saving a custom search engine</note>
+      </trans-unit>
+      <trans-unit id="Settings.AddCustomEngine.Title">
+        <source>Add Search Engine</source>
+        <target>Dodaj iskalnik</target>
+        <note>The title of the  Custom Search Engine view.</note>
+      </trans-unit>
+      <trans-unit id="Settings.AddCustomEngine.TitleLabel">
+        <source>Title</source>
+        <target>Naslov</target>
+        <note>The title for the field which sets the title for a custom search engine.</note>
+      </trans-unit>
+      <trans-unit id="Settings.AddCustomEngine.TitlePlaceholder">
+        <source>Search Engine</source>
+        <target>Iskalnik</target>
+        <note>The placeholder for Title Field when saving a custom search engine.</note>
+      </trans-unit>
+      <trans-unit id="Settings.AddCustomEngine.URLLabel">
+        <source>URL</source>
+        <target>URL</target>
+        <note>The title for URL Field</note>
+      </trans-unit>
+      <trans-unit id="Settings.AddCustomEngine.URLPlaceholder">
+        <source>URL (Replace Query with %s)</source>
+        <target>URL (zamenjajte poizvedbo z %s)</target>
+        <note>The placeholder for URL Field when saving a custom search engine</note>
+      </trans-unit>
+      <trans-unit id="Settings.ClearPrivateData.Clear.Button">
+        <source>Clear Private Data</source>
+        <target>Po&#269;isti zasebne podatke</target>
+        <note>Button in settings that clears private data for the selected items.</note>
+      </trans-unit>
+      <trans-unit id="Settings.ClearPrivateData.SectionName">
+        <source>Clear Private Data</source>
+        <target>Po&#269;isti zasebne podatke</target>
+        <note>Label used as an item in Settings. When touched it will open a dialog prompting the user to make sure they want to clear all of their private data.</note>
+      </trans-unit>
+      <trans-unit id="Settings.ClearPrivateData.Title">
+        <source>Clear Private Data</source>
+        <target>Po&#269;isti zasebne podatke</target>
+        <note>Title displayed in header of the setting panel.</note>
+      </trans-unit>
+      <trans-unit id="Settings.DNT.OptionAlwaysOn">
+        <source>Always</source>
+        <target>Vedno</target>
+        <note>DNT Settings option for always on</note>
+      </trans-unit>
+      <trans-unit id="Settings.DNT.OptionOnWithTP">
+        <source>Only when using Tracking Protection</source>
+        <target>Samo pri uporabi za&#353;&#269;ite pred sledenjem</target>
+        <note>DNT Settings option for only turning on when Tracking Protection is also on</note>
+      </trans-unit>
+      <trans-unit id="Settings.DNT.Title">
+        <source>Send websites a Do Not Track signal that you don&#8217;t want to be tracked</source>
+        <target>S signalom Brez sledenja sporo&#269;aj spletnim stranem, naj vam ne sledijo</target>
+        <note>DNT Settings title</note>
+      </trans-unit>
+      <trans-unit id="Settings.Disconnect.Button">
+        <source>Disconnect Sync</source>
+        <target>Prekini povezavo</target>
+        <note>Button displayed at the bottom of settings page allowing users to Disconnect from FxA</note>
+      </trans-unit>
+      <trans-unit id="Settings.Disconnect.DestructiveButton">
+        <source>Disconnect</source>
+        <target>Prekini povezavo</target>
+        <note>Destructive action button in alert when user is prompted for disconnect</note>
+      </trans-unit>
+      <trans-unit id="Settings.Disconnect.Title">
+        <source>Disconnect Sync?</source>
+        <target>Prekinem povezavo?</target>
+        <note>Title of the alert when prompting the user asking to disconnect.</note>
+      </trans-unit>
+      <trans-unit id="Settings.HomePage.Clear.Button">
+        <source>Clear</source>
+        <target>Po&#269;isti</target>
+        <note>Button in settings to clear the home page.</note>
+      </trans-unit>
+      <trans-unit id="Settings.HomePage.SectionName">
+        <source>Homepage</source>
+        <target>Doma&#269;a stran</target>
+        <note>Label used as an item in Settings. When touched it will open a dialog to configure the home page and its uses.</note>
+      </trans-unit>
+      <trans-unit id="Settings.HomePage.Title">
+        <source>Homepage Settings</source>
+        <target>Nastavitve doma&#269;e strani</target>
+        <note>Title displayed in header of the setting panel.</note>
+      </trans-unit>
+      <trans-unit id="Settings.HomePage.URL.Placeholder">
+        <source>Enter a webpage</source>
+        <target>Vnesite spletno stran</target>
+        <note>Placeholder text in the homepage setting when no homepage has been set.</note>
+      </trans-unit>
+      <trans-unit id="Settings.HomePage.URL.Title">
+        <source>Current Homepage</source>
+        <target>Trenutna doma&#269;a stran</target>
+        <note>Title of the setting section containing the URL of the current home page.</note>
+      </trans-unit>
+      <trans-unit id="Settings.HomePage.UseCopiedLink.Button">
+        <source>Use Copied Link</source>
+        <target>Uporabi kopirano povezavo</target>
+        <note>Button in settings to use the current link on the clipboard as home page.</note>
+      </trans-unit>
+      <trans-unit id="Settings.HomePage.UseCurrent.Button">
+        <source>Use Current Page</source>
+        <target>Uporabi trenutno stran</target>
+        <note>Button in settings to use the current page as home page.</note>
+      </trans-unit>
+      <trans-unit id="Settings.HomePage.UseDefault.Button">
+        <source>Use Default</source>
+        <target>Uporabi privzeto</target>
+        <note>Button in settings to use the default home page. If no default is set, then this button isn't shown.</note>
+      </trans-unit>
+      <trans-unit id="Settings.NewTab.Description">
+        <source>When you open a New Tab:</source>
+        <target>Pri odpiranju novega zavihka:</target>
+        <note>A description in settings of what the new tab choice means</note>
+      </trans-unit>
+      <trans-unit id="Settings.NewTab.Option.ASTitle">
+        <source>Additional Content</source>
+        <target>Dodatna vsebina</target>
+        <note>The title of the section in newtab that lets you modify the topsites panel</note>
+      </trans-unit>
+      <trans-unit id="Settings.NewTab.Option.BlankPage">
+        <source>Show a Blank Page</source>
+        <target>Prika&#382;i prazno stran</target>
+        <note>Option in settings to show a blank page when you open a new tab</note>
+      </trans-unit>
+      <trans-unit id="Settings.NewTab.Option.Bookmarks">
+        <source>Show your Bookmarks</source>
+        <target>Prika&#382;i zaznamke</target>
+        <note>Option in settings to show bookmarks when you open a new tab</note>
+      </trans-unit>
+      <trans-unit id="Settings.NewTab.Option.HighlightsBookmarks">
+        <source>Recent Bookmarks</source>
+        <target>Nedavni zaznamki</target>
+        <note>Option in the settings to turn off recent bookmarks in the Highlights section</note>
+      </trans-unit>
+      <trans-unit id="Settings.NewTab.Option.HighlightsHistory">
+        <source>Visited</source>
+        <target>Obiskano</target>
+        <note>Option in settings to turn off history in the highlights section</note>
+      </trans-unit>
+      <trans-unit id="Settings.NewTab.Option.History">
+        <source>Show your History</source>
+        <target>Prika&#382;i zgodovino</target>
+        <note>Option in settings to show history when you open a new tab</note>
+      </trans-unit>
+      <trans-unit id="Settings.NewTab.Option.HomePage">
+        <source>Show your Homepage</source>
+        <target>Prika&#382;i doma&#269;o stran</target>
+        <note>Option in settings to show your homepage when you open a new tab</note>
+      </trans-unit>
+      <trans-unit id="Settings.NewTab.Option.Pocket">
+        <source>Recommended by Pocket</source>
+        <target>Priporo&#269;a Pocket</target>
+        <note>Option in settings to turn on off pocket recommendations</note>
+      </trans-unit>
+      <trans-unit id="Settings.NewTab.Option.ReadingList">
+        <source>Show your Reading List</source>
+        <target>Prika&#382;i bralni seznam</target>
+        <note>Option in settings to show reading list when you open a new tab</note>
+      </trans-unit>
+      <trans-unit id="Settings.NewTab.Option.TopSites">
+        <source>Show your Top Sites</source>
+        <target>Prika&#382;i najbolj priljubljena spletna mesta</target>
+        <note>Option in settings to show top sites when you open a new tab</note>
+      </trans-unit>
+      <trans-unit id="Settings.NewTab.SectionName">
+        <source>New Tab</source>
+        <target>Nov zavihek</target>
+        <note>Label used as an item in Settings. When touched it will open a dialog to configure the new tab behaviour.</note>
+      </trans-unit>
+      <trans-unit id="Settings.NewTab.Title">
+        <source>New Tab Settings</source>
+        <target>Nastavitve novega zavihka</target>
+        <note>Title displayed in header of the setting panel.</note>
+      </trans-unit>
+      <trans-unit id="Settings.OfferClipboardBar.Status">
+        <source>When Opening Firefox</source>
+        <target>Ko odprete Firefox</target>
+        <note>Description displayed under the &#8221;Offer to Open Copied Link&#8221; option. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349</note>
+      </trans-unit>
+      <trans-unit id="Settings.OfferClipboardBar.Title">
+        <source>Offer to Open Copied Links</source>
+        <target>Ponudi odpiranje kopiranih povezav</target>
+        <note>Title of setting to enable the Go to Copied URL feature. See https://bug1223660.bmoattachments.org/attachment.cgi?id=8898349</note>
+      </trans-unit>
+      <trans-unit id="Settings.OpenWith.PageTitle">
+        <source>Open mail links with</source>
+        <target>Za odpiranje e-po&#353;tnih povezav uporabi</target>
+        <note>Title for Open With Settings</note>
+      </trans-unit>
+      <trans-unit id="Settings.OpenWith.SectionName">
+        <source>Mail App</source>
+        <target>Aplikacijo za e-po&#353;to</target>
+        <note>Label used as an item in Settings. When touched it will open a dialog to configure the open with (mail links) behaviour.</note>
+      </trans-unit>
+      <trans-unit id="Settings.Search.Done.Button">
+        <source>Done</source>
+        <target>Kon&#269;aj</target>
+        <note>Button displayed at the top of the search settings.</note>
+      </trans-unit>
+      <trans-unit id="Settings.Search.Edit.Button">
+        <source>Edit</source>
+        <target>Uredi</target>
+        <note>Button displayed at the top of the search settings.</note>
+      </trans-unit>
+      <trans-unit id="Settings.SendUsage.Link">
+        <source>Learn More.</source>
+        <target>Ve&#269; o tem.</target>
+        <note>title for a link that explains how mozilla collects telemetry</note>
+      </trans-unit>
+      <trans-unit id="Settings.SendUsage.Message">
+        <source>Mozilla strives to only collect what we need to provide and improve Firefox for everyone.</source>
+        <target>Mozilla se trudi, da zbira samo podatke, ki jih potrebuje za razvoj in izbolj&#353;evanje Firefoxa.</target>
+        <note>A short description that explains why mozilla collects usage data.</note>
+      </trans-unit>
+      <trans-unit id="Settings.SendUsage.Title">
+        <source>Send Usage Data</source>
+        <target>Po&#353;iljaj podatke o uporabi</target>
+        <note>The title for the setting to send usage data.</note>
+      </trans-unit>
+      <trans-unit id="Settings.TrackingProtection.BlockListsHeader">
+        <source>You can choose which list Firefox will use to block Web elements that may track your browsing activity.</source>
+        <target>Izberite, kateri seznam naj Firefox uporablja za zavra&#269;anje elementov, ki bi lahko sledili va&#353;im aktivnostim na spletu.</target>
+        <note>Header description for tracking protection options section where Basic/Strict block list can be selected</note>
+      </trans-unit>
+      <trans-unit id="Settings.TrackingProtection.BlockListsTitle">
+        <source>Block Lists</source>
+        <target>Seznami za zavra&#269;anje</target>
+        <note>Title for tracking protection options section where Basic/Strict block list can be selected</note>
+      </trans-unit>
+      <trans-unit id="Settings.TrackingProtection.SectionName">
+        <source>Tracking Protection</source>
+        <target>Za&#353;&#269;ita pred sledenjem</target>
+        <note>Row in top-level of settings that gets tapped to show the tracking protection settings detail view.</note>
+      </trans-unit>
+      <trans-unit id="Settings.TrackingProtectionOption.BlockListBasic">
+        <source>Basic (Recommended)</source>
+        <target>Osnovna (priporo&#269;eno)</target>
+        <note>Tracking protection settings option for using the basic blocklist.</note>
+      </trans-unit>
+      <trans-unit id="Settings.TrackingProtectionOption.BlockListBasicDescription">
+        <source>Allows some trackers so websites function properly.</source>
+        <target>Dovoli nekaj sledilcev, da bo spletna stran delovala pravilno.</target>
+        <note>Tracking protection settings option description for using the basic blocklist.</note>
+      </trans-unit>
+      <trans-unit id="Settings.TrackingProtectionOption.BlockListStrict">
+        <source>Strict</source>
+        <target>Stroga</target>
+        <note>Tracking protection settings option for using the strict blocklist.</note>
+      </trans-unit>
+      <trans-unit id="Settings.TrackingProtectionOption.BlockListStrictDescription">
+        <source>Blocks known trackers. Some websites may not function properly.</source>
+        <target>Zavra&#269;a znane sledilce. Nekatere spletne strani morda ne bodo delovale pravilno.</target>
+        <note>Tracking protection settings option description for using the strict blocklist.</note>
+      </trans-unit>
+      <trans-unit id="Settings.TrackingProtectionOption.EnabledStateFooterLabel">
+        <source>Tracking is the collection of your browsing data across multiple websites. Tracking can be used to build a profile and display content based on your browsing and personal information.</source>
+        <target>Sledenje je zbiranje podatkov o va&#353;em brskanju prek ve&#269; spletnih strani. Z uporabo sledenja je mogo&#269;e ustvariti profil ter prikazovati vsebino na podlagi va&#353;ih osebnih podatkov in podatkov o brskanju.</target>
+        <note>Description label shown on tracking protection options screen.</note>
+      </trans-unit>
+      <trans-unit id="Settings.TrackingProtectionOption.EnabledStateHeaderLabel">
+        <source>Use Tracking Protection to Block Known Trackers</source>
+        <target>Uporabljaj za&#353;&#269;ito pred sledenjem za zavra&#269;anje znanih sledilcev</target>
+        <note>Description label shown at the top of tracking protection options screen.</note>
+      </trans-unit>
+      <trans-unit id="Settings.TrackingProtectionOption.OffLabel">
+        <source>Never</source>
+        <target>Nikoli</target>
+        <note>Settings option to specify that Tracking Protection is always off.</note>
+      </trans-unit>
+      <trans-unit id="Settings.TrackingProtectionOption.OnInPrivateBrowsingLabel">
+        <source>Private Browsing Mode Only</source>
+        <target>Samo v zasebnem brskanju</target>
+        <note>Settings option to specify that Tracking Protection is on only in Private Browsing mode.</note>
+      </trans-unit>
+      <trans-unit id="Settings.TrackingProtectionOption.OnLabel">
+        <source>Always On</source>
+        <target>Vedno vklju&#269;eno</target>
+        <note>Settings option to specify that Tracking Protection is always on.</note>
+      </trans-unit>
+      <trans-unit id="Settings.TroubleShootSync.Title">
+        <source>Troubleshoot</source>
+        <target>Odpravljanje te&#382;av</target>
+        <note>Title of link to help page to find out how to solve Sync issues</note>
+      </trans-unit>
+      <trans-unit id="Share Link">
+        <source>Share Link</source>
+        <target>Deli povezavo</target>
+        <note>Context menu item for sharing a link URL</note>
+      </trans-unit>
+      <trans-unit id="ShareTo.Cancel.Button">
+        <source>Cancel</source>
+        <target>Prekli&#269;i</target>
+        <note>Button title for cancelling Share screen</note>
+      </trans-unit>
+      <trans-unit id="Show Search Suggestions">
+        <source>Show Search Suggestions</source>
+        <target>Prika&#382;i predloge iskanja</target>
+        <note>Label for show search suggestions setting.</note>
+      </trans-unit>
+      <trans-unit id="Show Tabs">
+        <source>Show Tabs</source>
+        <target>Prika&#382;i zavihke</target>
+        <note>Accessibility label for the tabs button in the (top) tab toolbar
+   Accessibility Label for the tabs button in the tab toolbar</note>
+      </trans-unit>
+      <trans-unit id="Show Tour">
+        <source>Show Tour</source>
+        <target>Prika&#382;i vodi&#269;a</target>
+        <note>Show the on-boarding screen again from the settings</note>
+      </trans-unit>
+      <trans-unit id="Show search suggestions">
+        <source>Show search suggestions</source>
+        <target>Prika&#382;i predloge iskanja</target>
+        <note>Label for show search suggestions setting.</note>
+      </trans-unit>
+      <trans-unit id="Sign in">
+        <source>Sign in</source>
+        <target>Prijava</target>
+        <note>See http://mzl.la/1Qtkf0j
+   Text message / button in the settings table view</note>
+      </trans-unit>
+      <trans-unit id="Stop">
+        <source>Stop</source>
+        <target>Ustavi</target>
+        <note>Accessibility Label for the tab toolbar Stop button</note>
+      </trans-unit>
+      <trans-unit id="Support">
+        <source>Support</source>
+        <target>Podpora</target>
+        <note>Support section title</note>
+      </trans-unit>
+      <trans-unit id="Swipe right or left with three fingers to close the tab.">
+        <source>Swipe right or left with three fingers to close the tab.</source>
+        <target>Za zapiranje zavihka podrsajte desno ali levo s tremi prsti.</target>
+        <note>Accessibility hint for tab tray's displayed tab.</note>
+      </trans-unit>
+      <trans-unit id="Sync Now">
+        <source>Sync Now</source>
+        <target>Sinhroniziraj zdaj</target>
+        <note>Sync Firefox Account</note>
+      </trans-unit>
+      <trans-unit id="Sync your tabs, bookmarks, passwords and more.">
+        <source>Sync your tabs, bookmarks, passwords and more.</source>
+        <target>Sinhronizirajte zavihke, zaznamke, gesla in drugo.</target>
+        <note>Text displayed when the Sync home panel is empty, describing the features provided by Sync to invite the user to log in.</note>
+      </trans-unit>
+      <trans-unit id="Sync your tabs, passwords and more.">
+        <source>Sync your tabs, passwords and more.</source>
+        <target>Sinhronizirajte zavihke, gesla in drugo.</target>
+        <note>Text displayed when the Sync home panel is empty, describing the features provided by Sync to invite the user to log in.</note>
+      </trans-unit>
+      <trans-unit id="Sync.FirstTimeMessage.Label">
+        <source>Your first sync may take a while</source>
+        <target>Prva sinhronizacija lahko traja malce dlje</target>
+        <note>Message displayed when the user syncs for the first time</note>
+      </trans-unit>
+      <trans-unit id="Sync.Syncing.Label">
+        <source>Syncing</source>
+        <target>Sinhroniziram</target>
+        <note>Message displayed when the user's account is syncing with no ellipsis</note>
+      </trans-unit>
+      <trans-unit id="Sync.SyncingEllipsis.Label">
+        <source>Syncing&#8230;</source>
+        <target>Sinhroniziram ...</target>
+        <note>Message displayed when the user's account is syncing with ellipsis at the end</note>
+      </trans-unit>
+      <trans-unit id="SyncState.Bookmark.Title">
+        <source>Bookmarks</source>
+        <target>Zaznamki</target>
+        <note>The Bookmark sync component, used in SyncState.Partial.Title</note>
+      </trans-unit>
+      <trans-unit id="SyncState.Clients.Title">
+        <source>Remote Clients</source>
+        <target>Oddaljeni odjemalci</target>
+        <note>The Remote Clients sync component, used in SyncState.Partial.Title</note>
+      </trans-unit>
+      <trans-unit id="SyncState.Failed.Title">
+        <source>Syncing has failed</source>
+        <target>Sinhronizacija ni uspela</target>
+        <note>Title for Sync status message when synchronization failed to complete</note>
+      </trans-unit>
+      <trans-unit id="SyncState.History.Title">
+        <source>History</source>
+        <target>Zgodovina</target>
+        <note>The History sync component, used in SyncState.Partial.Title</note>
+      </trans-unit>
+      <trans-unit id="SyncState.Logins.Title">
+        <source>Logins</source>
+        <target>Prijave</target>
+        <note>The Logins sync component, used in SyncState.Partial.Title</note>
+      </trans-unit>
+      <trans-unit id="SyncState.NotStarted.Title">
+        <source>Sync is unavailable</source>
+        <target>Sync ni na voljo</target>
+        <note>Title for Sync status message when Sync failed to start.</note>
+      </trans-unit>
+      <trans-unit id="SyncState.Offline.Title">
+        <source>Sync is offline</source>
+        <target>Sync ni povezan</target>
+        <note>Title for Sync status message when Sync failed due to being offline</note>
+      </trans-unit>
+      <trans-unit id="SyncState.Partial.Title">
+        <source>Sync is experiencing issues syncing %@</source>
+        <target>Sync ima te&#382;ave s sihnronizacijo %@</target>
+        <note>Title for Sync status message when a component of Sync failed to complete, where %@ represents the name of the component, i.e. Sync is experiencing issues syncing Bookmarks</note>
+      </trans-unit>
+      <trans-unit id="SyncState.Tabs.Title">
+        <source>Tabs</source>
+        <target>Zavihki</target>
+        <note>The Tabs sync component, used in SyncState.Partial.Title</note>
+      </trans-unit>
+      <trans-unit id="Tab %@ of %@">
+        <source>Tab %1$@ of %2$@</source>
+        <target>Zavihek %1$@ od %2$@</target>
+        <note>Message spoken by VoiceOver saying the position of the single currently visible tab in Tabs Tray, along with the total number of tabs. E.g. \"Tab 2 of 5\" says that tab 2 is visible (and is the only visible tab), out of 5 tabs total.</note>
+      </trans-unit>
+      <trans-unit id="Tabs %@ to %@ of %@">
+        <source>Tabs %1$@ to %2$@ of %3$@</source>
+        <target>Zavihki %1$@ do %2$@ od %3$@</target>
+        <note>Message spoken by VoiceOver saying the range of tabs that are currently visible in Tabs Tray, along with the total number of tabs. E.g. \"Tabs 8 to 10 of 15\" says tabs 8, 9 and 10 are visible, out of 15 tabs total.</note>
+      </trans-unit>
+      <trans-unit id="Tabs Tray">
+        <source>Tabs Tray</source>
+        <target>Predal zavihkov</target>
+        <note>Accessibility label for the Tabs Tray view.</note>
+      </trans-unit>
+      <trans-unit id="Tabs.DeleteAllUndo.Button">
+        <source>Undo</source>
+        <target>Razveljavi</target>
+        <note>The button to undo the delete all tabs</note>
+      </trans-unit>
+      <trans-unit id="Tabs.DeleteAllUndo.Title">
+        <source>%d tab(s) closed</source>
+        <target>Zaprti zavihki: %d</target>
+        <note>The label indicating that all the tabs were closed</note>
+      </trans-unit>
+      <trans-unit id="The data is invalid">
+        <source>The data is invalid</source>
+        <target>Podatek je neveljaven</target>
+        <note>Text of the prompt user the data is invalid</note>
+      </trans-unit>
+      <trans-unit id="The page could not be displayed in Reader View.">
+        <source>The page could not be displayed in Reader View.</source>
+        <target>Strani ni mogo&#269;e prikazati v bralnem pogledu.</target>
+        <note>Message displayed when the reader mode page could not be loaded. This message will appear only when sharing to Firefox reader mode from another app.</note>
+      </trans-unit>
+      <trans-unit id="There was a problem accessing tabs from your other devices. Try again in a few moments.">
+        <source>There was a problem accessing tabs from your other devices. Try again in a few moments.</source>
+        <target>Pri&#353;lo je do napake pri dostopu do zavihkov va&#353;ih drugih naprav. Poskusite znova &#269;ez nekaj trenutkov.</target>
+        <note>Error message in the remote tabs panel</note>
+      </trans-unit>
+      <trans-unit id="There was an error converting the page">
+        <source>There was an error converting the page</source>
+        <target>Pri&#353;lo je do napake pri pretvarjanju strani</target>
+        <note>Error displayed when reader mode cannot be enabled</note>
+      </trans-unit>
+      <trans-unit id="This allows you to save the image to your Camera Roll.">
+        <source>This allows you to save the image to your Camera Roll.</source>
+        <target>To vam omogo&#269;a, da shranite sliko v Camera Roll.</target>
+        <note>See http://mzl.la/1G7uHo7</note>
+      </trans-unit>
+      <trans-unit id="This will open in another application">
+        <source>This will open in another application</source>
+        <target>Odpiranje v drugi aplikaciji</target>
+        <note>Opening an external app</note>
+      </trans-unit>
+      <trans-unit id="Today">
+        <source>Today</source>
+        <target>Danes</target>
+        <note>History tableview section header</note>
+      </trans-unit>
+      <trans-unit id="Toolbar.Menu.AccessibilityLabel">
+        <source>Menu</source>
+        <target>Meni</target>
+        <note>Accessibility label for the Menu button.</note>
+      </trans-unit>
+      <trans-unit id="Toolbar.Menu.CloseAllTabs">
+        <source>Close All Tabs</source>
+        <target>Zapri vse zavihke</target>
+        <note>Accessibility label for the Close All Tabs menu button.</note>
+      </trans-unit>
+      <trans-unit id="Top sites">
+        <source>Top sites</source>
+        <target>Glavne strani</target>
+        <note>Panel accessibility label</note>
+      </trans-unit>
+      <trans-unit id="TopSites.EmptyState.Description">
+        <source>Your most visited sites will show up here.</source>
+        <target>Tukaj bodo prikazane va&#353;e najpogosteje obiskane strani.</target>
+        <note>Description label for the empty Top Sites state.</note>
+      </trans-unit>
+      <trans-unit id="TopSites.EmptyState.Title">
+        <source>Welcome to Top Sites</source>
+        <target>Pozdravljeni v glavnih straneh</target>
+        <note>The title for the empty Top Sites state</note>
+      </trans-unit>
+      <trans-unit id="TopSites.RemovePage.Button">
+        <source>Remove page &#8212; %@</source>
+        <target>Odstrani stran &#8211; %@</target>
+        <note>Button shown in editing mode to remove this site from the top sites panel.</note>
+      </trans-unit>
+      <trans-unit id="Twitter">
+        <source>Twitter</source>
+        <target>Twitter</target>
+        <note>Tile title for Twitter</note>
+      </trans-unit>
+      <trans-unit id="Update">
+        <source>Update</source>
+        <target>Posodobi</target>
+        <note>Button to update the user's password</note>
+      </trans-unit>
+      <trans-unit id="Upgrade Firefox to connect.">
+        <source>Upgrade Firefox to connect.</source>
+        <target>Za povezavo nadgradite Firefox.</target>
+        <note>Text message in the settings table view</note>
+      </trans-unit>
+      <trans-unit id="Username">
+        <source>Username</source>
+        <target>Uporabni&#353;ko ime</target>
+        <note>Username textbox in Authentication prompt</note>
+      </trans-unit>
+      <trans-unit id="Verify your email address.">
+        <source>Verify your email address.</source>
+        <target>Preverite va&#353; e-po&#353;tni naslov.</target>
+        <note>Text message in the settings table view</note>
+      </trans-unit>
+      <trans-unit id="Version %@ (%@)">
+        <source>Version %1$@ (%2$@)</source>
+        <target>Razli&#269;ica %1$@ (%2$@)</target>
+        <note>Version number of Firefox shown in settings</note>
+      </trans-unit>
+      <trans-unit id="Web content">
+        <source>Web content</source>
+        <target>Spletna vsebina</target>
+        <note>Accessibility label for the main web content view</note>
+      </trans-unit>
+      <trans-unit id="Welcome to your Reading List">
+        <source>Welcome to your Reading List</source>
+        <target>Pozdravljeni v bralnem seznamu</target>
+        <note>See http://mzl.la/1LXbDOL</note>
+      </trans-unit>
+      <trans-unit id="Well, this is embarrassing.">
+        <source>Well, this is embarrassing.</source>
+        <target>No, to je pa nerodno.</target>
+        <note>Restore Tabs Prompt Title</note>
+      </trans-unit>
+      <trans-unit id="Wikipedia">
+        <source>Wikipedia</source>
+        <target>Wikipedija</target>
+        <note>Tile title for Wikipedia</note>
+      </trans-unit>
+      <trans-unit id="Yes">
+        <source>Yes</source>
+        <target>Da</target>
+        <note>Button to save the user's password</note>
+      </trans-unit>
+      <trans-unit id="Yesterday">
+        <source>Yesterday</source>
+        <target>V&#269;eraj</target>
+        <note>History tableview section header</note>
+      </trans-unit>
+      <trans-unit id="You don&#8217;t have any tabs open in Firefox on your other devices.">
+        <source>You don&#8217;t have any tabs open in Firefox on your other devices.</source>
+        <target>V Firefoxu na drugih napravah nimate odprtih drugih zavihkov.</target>
+        <note>Error message in the remote tabs panel</note>
+      </trans-unit>
+      <trans-unit id="YouTube">
+        <source>YouTube</source>
+        <target>YouTube</target>
+        <note>Tile title for YouTube</note>
+      </trans-unit>
+      <trans-unit id="Your Rights">
+        <source>Your Rights</source>
+        <target>Va&#353;e pravice</target>
+        <note>Your Rights settings section title</note>
+      </trans-unit>
+      <trans-unit id="computer">
+        <source>computer</source>
+        <target>ra&#269;unalnik</target>
+        <note>Accessibility label for Desktop Computer (PC) image in remote tabs list</note>
+      </trans-unit>
+      <trans-unit id="just now">
+        <source>just now</source>
+        <target>zdaj</target>
+        <note>Relative time for a tab that was visited within the last few moments.</note>
+      </trans-unit>
+      <trans-unit id="mobile device">
+        <source>mobile device</source>
+        <target>mobilna naprava</target>
+        <note>Accessibility label for Mobile Device image in remote tabs list</note>
+      </trans-unit>
+      <trans-unit id="more than a month ago">
+        <source>more than a month ago</source>
+        <target>pred ve&#269; kot enim mesecem</target>
+        <note>Relative date for dates older than a month and less than two months.</note>
+      </trans-unit>
+      <trans-unit id="more than a week ago">
+        <source>more than a week ago</source>
+        <target>pred ve&#269; kot enim tednom</target>
+        <note>Description for a date more than a week ago, but less than a month ago.</note>
+      </trans-unit>
+      <trans-unit id="read">
+        <source>read</source>
+        <target>prebrano</target>
+        <note>Accessibility label for read article in reading list. It's a past participle - functions as an adjective.</note>
+      </trans-unit>
+      <trans-unit id="this week">
+        <source>this week</source>
+        <target>ta teden</target>
+        <note>Relative date for date in past week.</note>
+      </trans-unit>
+      <trans-unit id="today at %@">
+        <source>today at %@</source>
+        <target>danes ob %@</target>
+        <note>Relative date for date older than a minute.</note>
+      </trans-unit>
+      <trans-unit id="unread">
+        <source>unread</source>
+        <target>neprebrano</target>
+        <note>Accessibility label for unread article in reading list. It's a past participle - functions as an adjective.</note>
+      </trans-unit>
+      <trans-unit id="yesterday">
+        <source>yesterday</source>
+        <target>v&#269;eraj</target>
+        <note>Relative date for yesterday.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/LoginManager.strings" source-language="en" datatype="plaintext" target-language="sl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Are you sure?">
+        <source>Are you sure?</source>
+        <target>Ste prepri&#269;ani?</target>
+        <note>Prompt title when deleting logins</note>
+      </trans-unit>
+      <trans-unit id="Cancel">
+        <source>Cancel</source>
+        <target>Prekli&#269;i</target>
+        <note>Prompt option for cancelling out of deletion</note>
+      </trans-unit>
+      <trans-unit id="Clear Search">
+        <source>Clear Search</source>
+        <target>Po&#269;isti iskanje</target>
+        <note>Accessibility message e.g. spoken by VoiceOver after the user taps the close button in the search field to clear the search and exit search mode</note>
+      </trans-unit>
+      <trans-unit id="Copy">
+        <source>Copy</source>
+        <target>Kopiraj</target>
+        <note>Copy password text selection menu item</note>
+      </trans-unit>
+      <trans-unit id="Delete">
+        <source>Delete</source>
+        <target>Izbri&#353;i</target>
+        <note>Label for the button used to delete the current login.</note>
+      </trans-unit>
+      <trans-unit id="Deselect All">
+        <source>Deselect All</source>
+        <target>Po&#269;isti izbiro</target>
+        <note>Label for the button used to deselect all logins.</note>
+      </trans-unit>
+      <trans-unit id="Enter Search Mode">
+        <source>Enter Search Mode</source>
+        <target>Vklju&#269;ite iskalni na&#269;in</target>
+        <note>Accessibility label for entering search mode for logins</note>
+      </trans-unit>
+      <trans-unit id="Hide">
+        <source>Hide</source>
+        <target>Skrij</target>
+        <note>Hide password text selection menu item</note>
+      </trans-unit>
+      <trans-unit id="Last modified %@">
+        <source>Last modified %@</source>
+        <target>Zadnja sprememba: %@</target>
+        <note>Footer label describing when the current login was last modified with the timestamp as the parameter.</note>
+      </trans-unit>
+      <trans-unit id="Logins">
+        <source>Logins</source>
+        <target>Prijave</target>
+        <note>Title for Logins List View screen.</note>
+      </trans-unit>
+      <trans-unit id="Logins will be permanently removed.">
+        <source>Logins will be permanently removed.</source>
+        <target>Prijave bodo trajno odstranjene.</target>
+        <note>Prompt message warning the user that deleting non-synced logins will permanently remove them</note>
+      </trans-unit>
+      <trans-unit id="Logins will be removed from all connected devices.">
+        <source>Logins will be removed from all connected devices.</source>
+        <target>Prijave bodo odstranjene iz vseh povezanih naprav.</target>
+        <note>Prompt message warning the user that deleted logins will remove logins from all connected devices</note>
+      </trans-unit>
+      <trans-unit id="No logins found">
+        <source>No logins found</source>
+        <target>Ni prijav</target>
+        <note>Label displayed when no logins are found after searching.</note>
+      </trans-unit>
+      <trans-unit id="Open &amp; Fill">
+        <source>Open &amp; Fill</source>
+        <target>Odpri in izpolni</target>
+        <note>Open and Fill website text selection menu item</note>
+      </trans-unit>
+      <trans-unit id="Reveal">
+        <source>Reveal</source>
+        <target>Razkrij</target>
+        <note>Reveal password text selection menu item</note>
+      </trans-unit>
+      <trans-unit id="Search">
+        <source>Search</source>
+        <target>I&#353;&#269;i</target>
+        <note>Title for the search field at the top of the Logins list screen</note>
+      </trans-unit>
+      <trans-unit id="Search Input Field">
+        <source>Search Input Field</source>
+        <target>Iskalno polje</target>
+        <note>Accessibility label for the search input field in the Logins list</note>
+      </trans-unit>
+      <trans-unit id="Select All">
+        <source>Select All</source>
+        <target>Izberi vse</target>
+        <note>Label for the button used to select all logins.</note>
+      </trans-unit>
+      <trans-unit id="password">
+        <source>password</source>
+        <target>geslo</target>
+        <note>Label displayed above the password row in Login Detail View.</note>
+      </trans-unit>
+      <trans-unit id="username">
+        <source>username</source>
+        <target>uporabni&#353;ko ime</target>
+        <note>Label displayed above the username row in Login Detail View.</note>
+      </trans-unit>
+      <trans-unit id="website">
+        <source>website</source>
+        <target>spletna stran</target>
+        <note>Label displayed above the website row in Login Detail View.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/PrivateBrowsing.strings" source-language="en" datatype="plaintext" target-language="sl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Close Private Tabs">
+        <source>Close Private Tabs</source>
+        <target>Zapri zasebne zavihke</target>
+        <note>Setting for closing private tabs</note>
+      </trans-unit>
+      <trans-unit id="Firefox won&#8217;t remember any of your history or cookies, but new bookmarks will be saved.">
+        <source>Firefox won&#8217;t remember any of your history or cookies, but new bookmarks will be saved.</source>
+        <target>Firefox ne bo hranil va&#353;e zgodovine in pi&#353;kotkov, novi zaznamki pa bodo shranjeni.</target>
+        <note>Description text displayed when there are no open tabs while in private mode</note>
+      </trans-unit>
+      <trans-unit id="Learn More">
+        <source>Learn More</source>
+        <target>Ve&#269; o tem</target>
+        <note>Text button displayed when there are no tabs open while in private mode</note>
+      </trans-unit>
+      <trans-unit id="Off">
+        <source>Off</source>
+        <target>Izklju&#269;eno</target>
+        <note>Toggled OFF accessibility value</note>
+      </trans-unit>
+      <trans-unit id="On">
+        <source>On</source>
+        <target>Vklju&#269;eno</target>
+        <note>Toggled ON accessibility value</note>
+      </trans-unit>
+      <trans-unit id="Open in New Private Tab">
+        <source>Open in New Private Tab</source>
+        <target>Odpri v zasebnem zavihku</target>
+        <note>Context menu option for opening a link in a new private tab</note>
+      </trans-unit>
+      <trans-unit id="Private Browsing">
+        <source>Private Browsing</source>
+        <target>Zasebno brskanje</target>
+        <note>Title displayed for when there are no open tabs while in private mode</note>
+      </trans-unit>
+      <trans-unit id="Private Mode">
+        <source>Private Mode</source>
+        <target>Zasebni na&#269;in</target>
+        <note>Accessibility label for toggling on/off private mode</note>
+      </trans-unit>
+      <trans-unit id="Turns private mode on or off">
+        <source>Turns private mode on or off</source>
+        <target>Vklju&#269;i ali izklju&#269;i zasebni na&#269;in</target>
+        <note>Accessiblity hint for toggling on/off private mode</note>
+      </trans-unit>
+      <trans-unit id="When Leaving Private Browsing">
+        <source>When Leaving Private Browsing</source>
+        <target>Ob koncu zasebnega brskanja</target>
+        <note>Will be displayed in Settings under 'Close Private Tabs'</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/Search.strings" source-language="en" datatype="plaintext" target-language="sl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="%@ search">
+        <source>%@ search</source>
+        <target>Iskalnik %@</target>
+        <note>Label for search engine buttons. The argument corresponds to the name of the search engine.</note>
+      </trans-unit>
+      <trans-unit id="No">
+        <source>No</source>
+        <target>Ne</target>
+        <note>For search suggestions prompt. This string should be short so it fits nicely on the prompt row.</note>
+      </trans-unit>
+      <trans-unit id="Search Settings">
+        <source>Search Settings</source>
+        <target>Nastavitve iskanja</target>
+        <note>Label for search settings button.</note>
+      </trans-unit>
+      <trans-unit id="Search suggestions from %@">
+        <source>Search suggestions from %@</source>
+        <target>Prika&#382;i predloge iskalnika %@</target>
+        <note>Accessibility label for image of default search engine displayed left to the actual search suggestions from the engine. The parameter substituted for \"%@\" is the name of the search engine. E.g.: Search suggestions from Google</note>
+      </trans-unit>
+      <trans-unit id="Turn on search suggestions?">
+        <source>Turn on search suggestions?</source>
+        <target>Vklju&#269;im predloge iskanja?</target>
+        <note>Prompt shown before enabling provider search queries</note>
+      </trans-unit>
+      <trans-unit id="Yes">
+        <source>Yes</source>
+        <target>Da</target>
+        <note>For search suggestions prompt. This string should be short so it fits nicely on the prompt row.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/SendAnonymousUsageData.strings" source-language="en" datatype="plaintext" target-language="sl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="More Info&#8230;">
+        <source>More Info&#8230;</source>
+        <target>Podrobnosti &#8230;</target>
+        <note>Re-using more info label from 'anonymous usage data' item for showing a 'More Info' link on the Tracking Protection settings screen.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Client/SendTo.strings" source-language="en" datatype="plaintext" target-language="sl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Available devices:">
+        <source>Available devices:</source>
+        <target>Naprave na voljo:</target>
+        <note>Header for the list of devices table</note>
+      </trans-unit>
+      <trans-unit id="Close">
+        <source>Close</source>
+        <target>Zapri</target>
+        <note>Close button in top navigation bar</note>
+      </trans-unit>
+      <trans-unit id="Please open Firefox, go to Settings and sign in to continue.">
+        <source>Please open Firefox, go to Settings and sign in to continue.</source>
+        <target>Odprite Firefox, pojdite v Nastavitve in se prijavite za nadaljevanje.</target>
+        <note>See http://mzl.la/1ISlXnU</note>
+      </trans-unit>
+      <trans-unit id="Send">
+        <source>Send</source>
+        <target>Po&#353;lji</target>
+        <note>Navigation bar button to Send the current page to a device</note>
+      </trans-unit>
+      <trans-unit id="Send Tab">
+        <source>Send Tab</source>
+        <target>Po&#353;lji zavihek</target>
+        <note>Title of the dialog that allows you to send a tab to a different device</note>
+      </trans-unit>
+      <trans-unit id="You are not signed in to your Firefox Account.">
+        <source>You are not signed in to your Firefox Account.</source>
+        <target>Niste prijavljeni v va&#353; Firefox Ra&#269;un.</target>
+        <note>See http://mzl.la/1ISlXnU</note>
+      </trans-unit>
+      <trans-unit id="You don&#8217;t have any other devices connected to this Firefox Account available to sync.">
+        <source>You don&#8217;t have any other devices connected to this Firefox Account available to sync.</source>
+        <target>S tem Firefox Ra&#269;unom nimate povezanih drugih naprav na voljo za sinhronizacijo.</target>
+        <note>Error message shown in the remote tabs panel</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Extensions/SendTo/Info.plist" source-language="en" datatype="plaintext" target-language="sl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName">
+        <source>Send Tab</source>
+        <target>Po&#353;lji zavihek</target>
+      </trans-unit>
+      </body>
+  </file>
+  <file original="Extensions/ShareTo/ShareTo.strings" source-language="en" datatype="plaintext" target-language="sl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Add">
+        <source>Add</source>
+        <target>Dodaj</target>
+        <note>Add button in the share dialog</note>
+      </trans-unit>
+      <trans-unit id="Add to Bookmarks">
+        <source>Add to Bookmarks</source>
+        <target>Dodaj med zaznamke</target>
+        <note>On/off toggle to select adding this url to your bookmarks</note>
+      </trans-unit>
+      <trans-unit id="Add to Reading List">
+        <source>Add to Reading List</source>
+        <target>Dodaj na bralni seznam</target>
+        <note>On/off toggle to select adding this url to your reading list</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Extensions/Today/Today.strings" source-language="en" datatype="plaintext" target-language="sl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="TodayWidget.GoToCopiedLinkLabel">
+        <source>Go to copied link</source>
+        <target>Pojdite na kopirano povezavo</target>
+        <note>Go to link on clipboard</note>
+      </trans-unit>
+      <trans-unit id="TodayWidget.NewPrivateTabButtonLabel">
+        <source>New Private Tab</source>
+        <target>Nov zasebni zavihek</target>
+        <note>New Private Tab button label</note>
+      </trans-unit>
+      <trans-unit id="TodayWidget.NewTabButtonLabel">
+        <source>New Tab</source>
+        <target>Nov zavihek</target>
+        <note>New Tab button label</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Extensions/ViewLater/Info.plist" source-language="en" datatype="plaintext" target-language="sl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName">
+        <source>View Later</source>
+        <target>Prika&#382;i pozneje</target>
+      </trans-unit>
+      </body>
+  </file>
+  <file original="Shared/Supporting Files/Menu.strings" source-language="en" datatype="plaintext" target-language="sl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Menu.AddBookmarkAction.Title">
+        <source>Bookmark This Page</source>
+        <target>Dodaj zaznamek</target>
+        <note>Label for the button, displayed in the menu, used to create a bookmark for the current website.</note>
+      </trans-unit>
+      <trans-unit id="Menu.AddToReadingList.Title">
+        <source>Add to Reading List</source>
+        <target>Dodaj na bralni seznam</target>
+        <note>Label for the button, displayed in the menu, used to add a page to the reading list.</note>
+      </trans-unit>
+      <trans-unit id="Menu.CloseAllTabsAction.Title">
+        <source>Close All Tabs</source>
+        <target>Zapri vse zavihke</target>
+        <note>Label for the button, displayed in the menu, used to close all tabs currently open.</note>
+      </trans-unit>
+      <trans-unit id="Menu.CopyURL.Title">
+        <source>Copy URL</source>
+        <target>Kopiraj URL</target>
+        <note>Label for the button, displayed in the menu, used to copy the page url to the clipboard.</note>
+      </trans-unit>
+      <trans-unit id="Menu.FindInPageAction.Title">
+        <source>Find in Page</source>
+        <target>Najdi na strani</target>
+        <note>Label for the button, displayed in the menu, used to open the toolbar to search for text within the current page.</note>
+      </trans-unit>
+      <trans-unit id="Menu.NewPrivateTabAction.Title">
+        <source>Open New Private Tab</source>
+        <target>Odpri nov zaseben zavihek</target>
+        <note>Label for the button, displayed in the menu, used to open a new private tab.</note>
+      </trans-unit>
+      <trans-unit id="Menu.NewTabAction.Title">
+        <source>Open New Tab</source>
+        <target>Odpri nov zavihek</target>
+        <note>Label for the button, displayed in the menu, used to open a new tab</note>
+      </trans-unit>
+      <trans-unit id="Menu.OpenBookmarksAction.AccessibilityLabel">
+        <source>Bookmarks</source>
+        <target>Zaznamki</target>
+        <note>Accessibility label for the button, displayed in the menu, used to open the Bbookmarks home panel.</note>
+      </trans-unit>
+      <trans-unit id="Menu.OpenHistoryAction.AccessibilityLabel">
+        <source>History</source>
+        <target>Zgodovina</target>
+        <note>Accessibility label for the button, displayed in the menu, used to open the History home panel.</note>
+      </trans-unit>
+      <trans-unit id="Menu.OpenHomePageAction.Title">
+        <source>Open Homepage</source>
+        <target>Odpri doma&#269;o stran</target>
+        <note>Label for the button, displayed in the menu, used to navigate to the home page.</note>
+      </trans-unit>
+      <trans-unit id="Menu.OpenReadingListAction.AccessibilityLabel">
+        <source>Reading List</source>
+        <target>Bralni seznam</target>
+        <note>Accessibility label for the button, displayed in the menu, used to open the Reading list home panel.</note>
+      </trans-unit>
+      <trans-unit id="Menu.OpenSettingsAction.Title">
+        <source>Settings</source>
+        <target>Nastavitve</target>
+        <note>Label for the button, displayed in the menu, used to open the Settings menu.</note>
+      </trans-unit>
+      <trans-unit id="Menu.OpenTopSitesAction.AccessibilityLabel">
+        <source>Top Sites</source>
+        <target>Najbolj priljubljena spletna mesta</target>
+        <note>Accessibility label for the button, displayed in the menu, used to open the Top Sites home panel.</note>
+      </trans-unit>
+      <trans-unit id="Menu.RemoveBookmarkAction.Title">
+        <source>Remove Bookmark</source>
+        <target>Odstrani zaznamek</target>
+        <note>Label for the button, displayed in the menu, used to delete an existing bookmark for the current website.</note>
+      </trans-unit>
+      <trans-unit id="Menu.ScanQRCodeAction.Title">
+        <source>Scan QR Code</source>
+        <target>Skeniraj QR-kodo</target>
+        <note>Label for the button, displayed in the menu, used to open the QR code scanner.</note>
+      </trans-unit>
+      <trans-unit id="Menu.SetHomePageAction.Title">
+        <source>Set as Homepage</source>
+        <target>Nastavi kot doma&#269;o stran</target>
+        <note>Label for the button, displayed in the menu, used to set the homepage if none is currently set.</note>
+      </trans-unit>
+      <trans-unit id="Menu.SharePageAction.Title">
+        <source>Share Page With&#8230;</source>
+        <target>Deli stran z &#8230;</target>
+        <note>Label for the button, displayed in the menu, used to open the share dialog.</note>
+      </trans-unit>
+      <trans-unit id="Menu.ShowTabs.Title">
+        <source>Show Tabs</source>
+        <target>Prika&#382;i zavihke</target>
+        <note>Label for the button, displayed in the menu, used to open the tabs tray</note>
+      </trans-unit>
+      <trans-unit id="Menu.ViewDekstopSiteAction.Title">
+        <source>Request Desktop Site</source>
+        <target>Zahtevaj stran za namizje</target>
+        <note>Label for the button, displayed in the menu, used to request the desktop version of the current website.</note>
+      </trans-unit>
+      <trans-unit id="Menu.ViewMobileSiteAction.Title">
+        <source>Request Mobile Site</source>
+        <target>Zahtevaj mobilno stran</target>
+        <note>Label for the button, displayed in the menu, used to request the mobile version of the current website.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Shared/Supporting Files/Shared.strings" source-language="en" datatype="plaintext" target-language="sl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="%@ on %@">
+        <source>%1$@ on %2$@</source>
+        <target>%1$@ na %2$@</target>
+        <note>A brief descriptive name for this app on this device, used for Send Tab and Synced Tabs. The first argument is the app name. The second argument is the device name.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Storage.strings" source-language="en" datatype="plaintext" target-language="sl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.3" build-num="8E3004b"/>
+    </header>
+    <body>
+      <trans-unit id="Bookmarks Menu">
+        <source>Bookmarks Menu</source>
+        <target>Meni zaznamkov</target>
+        <note>The name of the folder that contains desktop bookmarks in the menu. This should match bookmarks.folder.menu.label on Android.</note>
+      </trans-unit>
+      <trans-unit id="Bookmarks Toolbar">
+        <source>Bookmarks Toolbar</source>
+        <target>Vrstica zaznamkov</target>
+        <note>The name of the folder that contains desktop bookmarks in the toolbar. This should match bookmarks.folder.toolbar.label on Android.</note>
+      </trans-unit>
+      <trans-unit id="Mobile Bookmarks">
+        <source>Mobile Bookmarks</source>
+        <target>Mobilni zaznamki</target>
+        <note>The title of the folder that contains mobile bookmarks. This should match bookmarks.folder.mobile.label on Android.</note>
+      </trans-unit>
+      <trans-unit id="Unsorted Bookmarks">
+        <source>Unsorted Bookmarks</source>
+        <target>Nerazvr&#353;&#269;eni zaznamki</target>
+        <note>The name of the folder that contains unsorted desktop bookmarks. This should match bookmarks.folder.unfiled.label on Android.</note>
+      </trans-unit>
+      <trans-unit id="Untitled">
+        <source>Untitled</source>
+        <target>Neimenovano</target>
+        <note>The default name for bookmark folders without titles.
+   The default name for bookmark nodes without titles.</note>
+      </trans-unit>
+    </body>
+  </file>
+  </xliff>

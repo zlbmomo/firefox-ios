@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "היסטורית גלישה";
+
+/* Settings item for clearing the cache */
+"Cache" = "מטמון";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "ניקוי נתונים פרטיים";
+
+/* Settings item for clearing cookies */
+"Cookies" = "עוגיות";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "מידע לא מקוון של אתרים";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "כניסות שמורות";
+

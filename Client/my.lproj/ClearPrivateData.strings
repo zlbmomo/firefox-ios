@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "လှော်လှန်ခြင်း မှတ်တမ်း";
+
+/* Settings item for clearing the cache */
+"Cache" = "ယာယီမှတ်တမ်း";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "တစ်ကိုယ်ရေသုံး အချက်အလက်များရှင်းပါ";
+
+/* Settings item for clearing cookies */
+"Cookies" = "ကွတ်ကီးများ";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "ချိတ်ဆက်မဲ့သုံးအချက်အလက်";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "သိမ်းထားသော ဝင်ရောက်မှုများ";
+

@@ -1,0 +1,48 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "Bla i flere nettsider samtidig med faner.";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "Koble til Firefox overalt hvor du bruker den.";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "Anvend hvilken som helst e-post-app - ikke bare Mail - med Firefox.";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "Du har e-post… innstillinger";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "Trykk på maske-ikonet for å surfe med privat nettlesing.";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "Surf uten å føle deg overvåket";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "Søker du etter noe annet? Velg en annen standard søkemotor (eller legg til din egen) i innstillinger.";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "Ditt søk på din måte";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "Bruk Sync for å finne bokmerker, passord og andre ting som du lagrer i Firefox på alle dine enheter.";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "Fortsett der du sluttet";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "En moderne mobilnettleser fra Mozilla, en ideell organisasjon forpliktet til et fritt og åpent nett.";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "Takk for at du velger Firefox!";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "Introduksjonslysbilde %1$@ av %2$@";
+
+/* See http://mzl.la/1T8gxwo */
+"Personalize your Firefox just the way you like in Settings." = "Tilpass Firefox akkurat slik du vil ha den i Innstillinger.";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "Logg inn på Firefox";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "Begynn å surfe";
+

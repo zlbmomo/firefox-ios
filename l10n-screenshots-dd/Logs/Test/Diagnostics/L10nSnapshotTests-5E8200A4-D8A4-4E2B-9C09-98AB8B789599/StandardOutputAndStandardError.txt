@@ -1,0 +1,1805 @@
+2017-10-20 15:50:06.787115+0100 L10nSnapshotTests-Runner[39524:9315799] +[CATransaction synchronize] called within transaction
+2017-10-20 15:50:06.842973+0100 L10nSnapshotTests-Runner[39524:9315799] Running tests...
+2017-10-20 15:50:08.018872+0100 L10nSnapshotTests-Runner[39524:9315799] Continuing to run tests in the background with task ID 1
+Test Suite 'Selected tests' started at 2017-10-20 15:50:09.080
+Test Suite 'L10nSnapshotTests.xctest' started at 2017-10-20 15:50:09.081
+Test Suite 'L10nIntroSnapshotTests' started at 2017-10-20 15:50:09.081
+Test Case '-[L10nSnapshotTests.L10nIntroSnapshotTests testIntro]' started.
+    t =     0.00s Start Test at 2017-10-20 15:50:09.082
+    t =     0.03s Set Up
+    t =     0.08s     Pressing Home button
+    t =     0.10s     Open org.mozilla.ios.Fennec
+    t =     0.12s         Launch org.mozilla.ios.Fennec
+    t =     7.68s             Wait for org.mozilla.ios.Fennec to idle
+    t =    10.18s Find the Target Application 0x60c0000b9080
+    t =    11.21s Checking `Expect predicate `exists == 0` for object Other`
+    t =    11.21s     Snapshot accessibility hierarchy for app with pid 39529
+    t =    11.23s     Find: Descendants matching type Other
+    t =    11.23s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60800045e060)'
+snapshot: Intro-1-Intro.Welcome
+    t =    12.24s Find the Window
+    t =    13.27s Checking `Expect predicate `exists == 1` for object "IntroViewController.scrollView" ScrollView`
+    t =    13.28s Swipe left "IntroViewController.scrollView" ScrollView
+    t =    13.28s     Wait for org.mozilla.ios.Fennec to idle
+    t =    13.30s     Find the "IntroViewController.scrollView" ScrollView
+    t =    13.41s         Wait for org.mozilla.ios.Fennec to idle
+    t =    13.42s     Synthesize event
+    t =    13.65s     Wait for org.mozilla.ios.Fennec to idle
+    t =    14.15s Find the Target Application 0x6000000ba880
+    t =    15.16s Checking `Expect predicate `exists == 0` for object Other`
+    t =    15.16s     Snapshot accessibility hierarchy for app with pid 39529
+    t =    15.18s     Find: Descendants matching type Other
+    t =    15.18s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x604000258a20)'
+snapshot: Intro-2-Intro.Search
+    t =    16.18s Find the Window
+    t =    17.22s Checking `Expect predicate `exists == 1` for object "IntroViewController.scrollView" ScrollView`
+    t =    17.23s Swipe left "IntroViewController.scrollView" ScrollView
+    t =    17.23s     Wait for org.mozilla.ios.Fennec to idle
+    t =    17.24s     Find the "IntroViewController.scrollView" ScrollView
+    t =    17.35s         Wait for org.mozilla.ios.Fennec to idle
+    t =    17.36s     Synthesize event
+    t =    17.58s     Wait for org.mozilla.ios.Fennec to idle
+    t =    18.09s Find the Target Application 0x6080000bc740
+    t =    19.10s Checking `Expect predicate `exists == 0` for object Other`
+    t =    19.10s     Snapshot accessibility hierarchy for app with pid 39529
+    t =    19.11s     Find: Descendants matching type Other
+    t =    19.11s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x608000640bd0)'
+snapshot: Intro-3-Intro.Private
+    t =    20.11s Find the Window
+    t =    21.15s Checking `Expect predicate `exists == 1` for object "IntroViewController.scrollView" ScrollView`
+    t =    21.16s Swipe left "IntroViewController.scrollView" ScrollView
+    t =    21.16s     Wait for org.mozilla.ios.Fennec to idle
+    t =    21.17s     Find the "IntroViewController.scrollView" ScrollView
+    t =    21.28s         Wait for org.mozilla.ios.Fennec to idle
+    t =    21.29s     Synthesize event
+    t =    21.51s     Wait for org.mozilla.ios.Fennec to idle
+    t =    22.02s Find the Target Application 0x6080000bc560
+    t =    23.03s Checking `Expect predicate `exists == 0` for object Other`
+    t =    23.03s     Snapshot accessibility hierarchy for app with pid 39529
+    t =    23.04s     Find: Descendants matching type Other
+    t =    23.04s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x6000002502c0)'
+snapshot: Intro-4-Intro.Mail
+    t =    24.05s Find the Window
+    t =    25.07s Checking `Expect predicate `exists == 1` for object "IntroViewController.scrollView" ScrollView`
+    t =    25.08s Swipe left "IntroViewController.scrollView" ScrollView
+    t =    25.08s     Wait for org.mozilla.ios.Fennec to idle
+    t =    25.09s     Find the "IntroViewController.scrollView" ScrollView
+    t =    25.20s         Wait for org.mozilla.ios.Fennec to idle
+    t =    25.22s     Synthesize event
+    t =    25.44s     Wait for org.mozilla.ios.Fennec to idle
+    t =    25.97s Find the Target Application 0x60c0000bc140
+    t =    26.98s Checking `Expect predicate `exists == 0` for object Other`
+    t =    26.98s     Snapshot accessibility hierarchy for app with pid 39529
+    t =    26.99s     Find: Descendants matching type Other
+    t =    27.00s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60c000442130)'
+snapshot: Intro-5-Intro.Sync
+    t =    28.00s Find the Window
+    t =    28.03s Tear Down
+Test Case '-[L10nSnapshotTests.L10nIntroSnapshotTests testIntro]' passed (28.228 seconds).
+Test Suite 'L10nIntroSnapshotTests' passed at 2017-10-20 15:50:37.311.
+	 Executed 1 test, with 0 failures (0 unexpected) in 28.228 (28.229) seconds
+Test Suite 'L10nSnapshotTests' started at 2017-10-20 15:50:37.311
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test02DefaultTopSites]' started.
+    t =     0.00s Start Test at 2017-10-20 15:50:37.312
+    t =     0.01s Set Up
+    t =     0.12s     Terminate org.mozilla.ios.Fennec:39529
+    t =     0.34s     Pressing Home button
+    t =     0.39s     Open org.mozilla.ios.Fennec
+    t =     0.43s         Launch org.mozilla.ios.Fennec
+    t =     7.88s             Wait for org.mozilla.ios.Fennec to idle
+    t =    10.02s Find the Target Application 0x6080000bf200
+    t =    11.05s Checking `Expect predicate `exists == 0` for object Other`
+    t =    11.05s     Snapshot accessibility hierarchy for app with pid 39538
+    t =    11.09s     Find: Descendants matching type Other
+    t =    11.09s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60c000256320)'
+    t =    11.09s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60c000255cc0)'
+snapshot: 02DefaultTopSites-01
+    t =    12.10s Find the Window
+    t =    12.12s Tear Down
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test02DefaultTopSites]' passed (12.327 seconds).
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test03MenuOnTopSites]' started.
+    t =     0.00s Start Test at 2017-10-20 15:50:49.639
+    t =     0.01s Set Up
+    t =     0.12s     Terminate org.mozilla.ios.Fennec:39538
+    t =     0.36s     Pressing Home button
+    t =     0.40s     Open org.mozilla.ios.Fennec
+    t =     0.43s         Launch org.mozilla.ios.Fennec
+    t =     7.47s             Wait for org.mozilla.ios.Fennec to idle
+    t =    10.35s Checking `Expect predicate `exists == 1` for object "TabToolbar.menuButton" Button`
+    t =    10.39s Tap "TabToolbar.menuButton" Button
+    t =    10.39s     Wait for org.mozilla.ios.Fennec to idle
+    t =    10.41s     Find the "TabToolbar.menuButton" Button
+    t =    10.53s         Wait for org.mozilla.ios.Fennec to idle
+    t =    10.54s     Synthesize event
+    t =    10.61s     Wait for org.mozilla.ios.Fennec to idle
+    t =    10.89s Find the Target Application 0x60c0000bac40
+    t =    11.92s Checking `Expect predicate `exists == 0` for object Other`
+    t =    11.92s     Snapshot accessibility hierarchy for app with pid 39542
+    t =    11.97s     Find: Descendants matching type Other
+    t =    11.97s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x608000641e60)'
+    t =    11.97s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x608000641c50)'
+snapshot: 03MenuOnTopSites-01
+    t =    12.97s Find the Window
+    t =    13.01s Tear Down
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test03MenuOnTopSites]' passed (13.217 seconds).
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test04Settings]' started.
+    t =     0.00s Start Test at 2017-10-20 15:51:02.857
+    t =     0.02s Set Up
+    t =     0.12s     Terminate org.mozilla.ios.Fennec:39542
+    t =     0.35s     Pressing Home button
+    t =     0.39s     Open org.mozilla.ios.Fennec
+    t =     0.42s         Launch org.mozilla.ios.Fennec
+    t =     7.18s             Wait for org.mozilla.ios.Fennec to idle
+    t =    10.14s Checking `Expect predicate `exists == 1` for object "TabToolbar.menuButton" Button`
+    t =    10.18s Tap "TabToolbar.menuButton" Button
+    t =    10.18s     Wait for org.mozilla.ios.Fennec to idle
+    t =    10.20s     Find the "TabToolbar.menuButton" Button
+    t =    10.32s         Wait for org.mozilla.ios.Fennec to idle
+    t =    10.33s     Synthesize event
+    t =    10.41s     Wait for org.mozilla.ios.Fennec to idle
+    t =    11.46s Checking `Expect predicate `exists == 1` for object "menu-Settings" Cell`
+    t =    11.50s Tap "menu-Settings" Cell
+    t =    11.50s     Wait for org.mozilla.ios.Fennec to idle
+    t =    11.52s     Find the "menu-Settings" Cell
+    t =    11.65s         Wait for org.mozilla.ios.Fennec to idle
+    t =    11.67s     Synthesize event
+    t =    11.75s     Wait for org.mozilla.ios.Fennec to idle
+    t =    12.12s Find the Target Application 0x6000000bdb80
+    t =    13.17s Checking `Expect predicate `exists == 0` for object Other`
+    t =    13.17s     Snapshot accessibility hierarchy for app with pid 39546
+    t =    13.25s     Find: Descendants matching type Other
+    t =    13.25s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60c0002589f0)'
+    t =    13.25s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60c000454670)'
+snapshot: 04Settings-main-0
+    t =    14.26s Find the Window
+    t =    15.29s Checking `Expect predicate `exists == 1` for object "Search" Cell`
+    t =    15.32s Tap "Search" Cell
+    t =    15.33s     Wait for org.mozilla.ios.Fennec to idle
+    t =    15.34s     Find the "Search" Cell
+    t =    15.48s         Wait for org.mozilla.ios.Fennec to idle
+    t =    15.49s     Synthesize event
+    t =    15.57s     Wait for org.mozilla.ios.Fennec to idle
+    t =    15.86s Find the Target Application 0x60c0000bce60
+    t =    16.97s Checking `Expect predicate `exists == 0` for object Other`
+    t =    16.97s     Snapshot accessibility hierarchy for app with pid 39546
+    t =    17.13s     Find: Descendants matching type Other
+    t =    17.14s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60c00025da00)'
+    t =    17.14s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60c0002554b0)'
+snapshot: 04Settings-SearchSettings-0
+    t =    18.14s Find the Window
+    t =    18.17s Tap Button
+    t =    18.17s     Wait for org.mozilla.ios.Fennec to idle
+    t =    18.19s     Find the Button
+    t =    18.41s         Wait for org.mozilla.ios.Fennec to idle
+    t =    18.43s     Synthesize event
+    t =    18.50s     Wait for org.mozilla.ios.Fennec to idle
+    t =    19.54s Checking `Expect predicate `exists == 1` for object "NewTab" Cell`
+    t =    19.62s Tap "NewTab" Cell
+    t =    19.62s     Wait for org.mozilla.ios.Fennec to idle
+    t =    19.63s     Find the "NewTab" Cell
+    t =    19.78s         Wait for org.mozilla.ios.Fennec to idle
+    t =    19.79s     Synthesize event
+    t =    19.87s     Wait for org.mozilla.ios.Fennec to idle
+    t =    20.10s Find the Target Application 0x6080002a1aa0
+    t =    21.12s Checking `Expect predicate `exists == 0` for object Other`
+    t =    21.12s     Snapshot accessibility hierarchy for app with pid 39546
+    t =    21.15s     Find: Descendants matching type Other
+    t =    21.15s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x608000646f60)'
+    t =    21.15s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60800064bbb0)'
+snapshot: 04Settings-NewTabSettings-0
+    t =    22.15s Find the Window
+    t =    22.18s Tap Button
+    t =    22.18s     Wait for org.mozilla.ios.Fennec to idle
+    t =    22.19s     Find the Button
+    t =    22.31s         Wait for org.mozilla.ios.Fennec to idle
+    t =    22.32s     Synthesize event
+    t =    22.39s     Wait for org.mozilla.ios.Fennec to idle
+    t =    23.44s Checking `Expect predicate `exists == 1` for object "Homepage" Cell`
+    t =    23.52s Tap "Homepage" Cell
+    t =    23.52s     Wait for org.mozilla.ios.Fennec to idle
+    t =    23.54s     Find the "Homepage" Cell
+    t =    23.69s         Wait for org.mozilla.ios.Fennec to idle
+    t =    23.71s     Synthesize event
+    t =    23.78s     Wait for org.mozilla.ios.Fennec to idle
+    t =    24.04s Find the Target Application 0x6040000bcbc0
+    t =    25.06s Checking `Expect predicate `exists == 0` for object Other`
+    t =    25.06s     Snapshot accessibility hierarchy for app with pid 39546
+    t =    25.08s     Find: Descendants matching type Other
+    t =    25.08s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x600000442fd0)'
+    t =    25.08s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x600000443c90)'
+snapshot: 04Settings-HomePageSettings-0
+    t =    26.09s Find the Window
+    t =    26.11s Tap Button
+    t =    26.11s     Wait for org.mozilla.ios.Fennec to idle
+    t =    26.14s     Find the Button
+    t =    26.25s         Wait for org.mozilla.ios.Fennec to idle
+    t =    26.29s     Synthesize event
+    t =    26.36s     Wait for org.mozilla.ios.Fennec to idle
+    t =    27.41s Checking `Expect predicate `exists == 1` for object "OpenWith.Setting" Cell`
+    t =    27.48s Tap "OpenWith.Setting" Cell
+    t =    27.48s     Wait for org.mozilla.ios.Fennec to idle
+    t =    27.50s     Find the "OpenWith.Setting" Cell
+    t =    27.65s         Wait for org.mozilla.ios.Fennec to idle
+    t =    27.69s     Synthesize event
+    t =    27.77s     Wait for org.mozilla.ios.Fennec to idle
+    t =    28.01s Find the Target Application 0x6040000bc8c0
+    t =    29.02s Checking `Expect predicate `exists == 0` for object Other`
+    t =    29.02s     Snapshot accessibility hierarchy for app with pid 39546
+    t =    29.05s     Find: Descendants matching type Other
+    t =    29.05s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60800064d8f0)'
+    t =    29.05s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60800064d4d0)'
+snapshot: 04Settings-OpenWithSettings-0
+    t =    30.06s Find the Window
+    t =    30.09s Tap Button
+    t =    30.09s     Wait for org.mozilla.ios.Fennec to idle
+    t =    30.10s     Find the Button
+    t =    30.22s         Wait for org.mozilla.ios.Fennec to idle
+    t =    30.24s     Synthesize event
+    t =    30.31s     Wait for org.mozilla.ios.Fennec to idle
+    t =    31.35s Checking `Expect predicate `exists == 1` for object Table`
+    t =    31.42s Swipe up Table
+    t =    31.42s     Wait for org.mozilla.ios.Fennec to idle
+    t =    31.44s     Find the Table
+    t =    31.58s         Wait for org.mozilla.ios.Fennec to idle
+    t =    31.60s     Synthesize event
+    t =    31.83s     Wait for org.mozilla.ios.Fennec to idle
+    t =    35.14s Checking `Expect predicate `exists == 1` for object "Logins" Cell`
+    t =    35.20s Tap "Logins" Cell
+    t =    35.20s     Wait for org.mozilla.ios.Fennec to idle
+    t =    35.24s     Find the "Logins" Cell
+    t =    35.38s         Wait for org.mozilla.ios.Fennec to idle
+    t =    35.40s     Synthesize event
+    t =    35.42s         Scroll element to visible
+    t =    35.43s         Find the "Logins" Cell
+    t =    35.54s     Wait for org.mozilla.ios.Fennec to idle
+    t =    36.65s Checking `Expect predicate `exists == 1` for object "Login List" Table`
+    t =    36.87s Find the Target Application 0x6080002a4920
+    t =    37.88s Checking `Expect predicate `exists == 0` for object Other`
+    t =    37.88s     Snapshot accessibility hierarchy for app with pid 39546
+    t =    37.90s     Find: Descendants matching type Other
+    t =    37.90s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60400025bb40)'
+    t =    37.90s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60400025dd90)'
+snapshot: 04Settings-LoginsSettings-0
+    t =    38.91s Find the Window
+    t =    38.93s Tap Button
+    t =    38.94s     Wait for org.mozilla.ios.Fennec to idle
+    t =    38.95s     Find the Button
+    t =    39.06s         Wait for org.mozilla.ios.Fennec to idle
+    t =    39.09s     Synthesize event
+    t =    39.16s     Wait for org.mozilla.ios.Fennec to idle
+    t =    40.21s Checking `Expect predicate `exists == 1` for object "TouchIDPasscode" Cell`
+    t =    40.28s Tap "TouchIDPasscode" Cell
+    t =    40.28s     Wait for org.mozilla.ios.Fennec to idle
+    t =    40.30s     Find the "TouchIDPasscode" Cell
+    t =    40.45s         Wait for org.mozilla.ios.Fennec to idle
+    t =    40.47s     Synthesize event
+    t =    40.54s     Wait for org.mozilla.ios.Fennec to idle
+    t =    40.77s Find the Target Application 0x60c0002a4b60
+    t =    41.79s Checking `Expect predicate `exists == 0` for object Other`
+    t =    41.79s     Snapshot accessibility hierarchy for app with pid 39546
+    t =    41.81s     Find: Descendants matching type Other
+    t =    41.81s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60400025fe90)'
+    t =    41.81s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60400025fec0)'
+snapshot: 04Settings-PasscodeSettings-0
+    t =    42.82s Find the Window
+    t =    42.84s Tap Button
+    t =    42.85s     Wait for org.mozilla.ios.Fennec to idle
+    t =    42.86s     Find the Button
+    t =    42.97s         Wait for org.mozilla.ios.Fennec to idle
+    t =    42.99s     Synthesize event
+    t =    43.06s     Wait for org.mozilla.ios.Fennec to idle
+    t =    44.11s Checking `Expect predicate `exists == 1` for object "ClearPrivateData" Cell`
+    t =    44.19s Tap "ClearPrivateData" Cell
+    t =    44.19s     Wait for org.mozilla.ios.Fennec to idle
+    t =    44.24s     Find the "ClearPrivateData" Cell
+    t =    44.38s         Wait for org.mozilla.ios.Fennec to idle
+    t =    44.44s     Synthesize event
+    t =    44.52s     Wait for org.mozilla.ios.Fennec to idle
+    t =    44.75s Find the Target Application 0x6040002a0540
+    t =    45.78s Checking `Expect predicate `exists == 0` for object Other`
+    t =    45.78s     Snapshot accessibility hierarchy for app with pid 39546
+    t =    45.81s     Find: Descendants matching type Other
+    t =    45.81s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60000044dbc0)'
+    t =    45.81s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60000044dc50)'
+snapshot: 04Settings-ClearPrivateDataSettings-0
+    t =    46.82s Find the Window
+    t =    46.85s Tap Button
+    t =    46.85s     Wait for org.mozilla.ios.Fennec to idle
+    t =    46.86s     Find the Button
+    t =    46.99s         Wait for org.mozilla.ios.Fennec to idle
+    t =    47.04s     Synthesize event
+    t =    47.11s     Wait for org.mozilla.ios.Fennec to idle
+    t =    48.16s Checking `Expect predicate `exists == 1` for object "TrackingProtection" Cell`
+    t =    48.23s Tap "TrackingProtection" Cell
+    t =    48.23s     Wait for org.mozilla.ios.Fennec to idle
+    t =    48.25s     Find the "TrackingProtection" Cell
+    t =    48.39s         Wait for org.mozilla.ios.Fennec to idle
+    t =    48.44s     Synthesize event
+    t =    48.52s     Wait for org.mozilla.ios.Fennec to idle
+    t =    48.76s Find the Target Application 0x6000002a5d00
+    t =    49.78s Checking `Expect predicate `exists == 0` for object Other`
+    t =    49.78s     Snapshot accessibility hierarchy for app with pid 39546
+    t =    49.81s     Find: Descendants matching type Other
+    t =    49.81s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60000044f210)'
+    t =    49.81s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60000044e400)'
+snapshot: 04Settings-TrackingProtectionSettings-0
+    t =    50.81s Find the Window
+    t =    50.84s Tear Down
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test04Settings]' passed (51.047 seconds).
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test05PrivateBrowsingTabsEmptyState]' started.
+    t =     0.00s Start Test at 2017-10-20 15:51:53.905
+    t =     0.02s Set Up
+    t =     0.12s     Terminate org.mozilla.ios.Fennec:39546
+    t =     0.35s     Pressing Home button
+    t =     0.38s     Open org.mozilla.ios.Fennec
+    t =     0.42s         Launch org.mozilla.ios.Fennec
+    t =     8.22s             Wait for org.mozilla.ios.Fennec to idle
+    t =    10.32s Tap "TabToolbar.tabsButton" Button
+    t =    10.33s     Wait for org.mozilla.ios.Fennec to idle
+    t =    10.34s     Find the "TabToolbar.tabsButton" Button
+    t =    10.46s         Wait for org.mozilla.ios.Fennec to idle
+    t =    10.48s     Synthesize event
+    t =    10.55s     Wait for org.mozilla.ios.Fennec to idle
+    t =    11.63s Checking `Expect predicate `exists == 1` for object "TabTrayController.maskButton" Button`
+    t =    11.65s Tap "TabTrayController.maskButton" Button
+    t =    11.65s     Wait for org.mozilla.ios.Fennec to idle
+    t =    11.66s     Find the "TabTrayController.maskButton" Button
+    t =    11.77s         Wait for org.mozilla.ios.Fennec to idle
+    t =    11.79s     Synthesize event
+    t =    11.86s     Wait for org.mozilla.ios.Fennec to idle
+    t =    12.09s Find the Target Application 0x6080002a7800
+    t =    13.10s Checking `Expect predicate `exists == 0` for object Other`
+    t =    13.10s     Snapshot accessibility hierarchy for app with pid 39570
+    t =    13.11s     Find: Descendants matching type Other
+    t =    13.11s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x608000643de0)'
+    t =    13.11s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x6080006559f0)'
+snapshot: 05PrivateBrowsingTabsEmptyState-01
+    t =    14.12s Find the Window
+    t =    14.14s Tear Down
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test05PrivateBrowsingTabsEmptyState]' passed (14.345 seconds).
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test06PanelsEmptyState]' started.
+    t =     0.00s Start Test at 2017-10-20 15:52:08.250
+    t =     0.01s Set Up
+    t =     0.12s     Terminate org.mozilla.ios.Fennec:39570
+    t =     0.35s     Pressing Home button
+    t =     0.39s     Open org.mozilla.ios.Fennec
+    t =     0.42s         Launch org.mozilla.ios.Fennec
+    t =     7.94s             Wait for org.mozilla.ios.Fennec to idle
+    t =    10.89s Checking `Expect predicate `exists == 1` for object "TabToolbar.menuButton" Button`
+    t =    10.93s Tap "TabToolbar.menuButton" Button
+    t =    10.93s     Wait for org.mozilla.ios.Fennec to idle
+    t =    10.94s     Find the "TabToolbar.menuButton" Button
+    t =    11.06s         Wait for org.mozilla.ios.Fennec to idle
+    t =    11.08s     Synthesize event
+    t =    11.15s     Wait for org.mozilla.ios.Fennec to idle
+    t =    12.22s Checking `Expect predicate `exists == 1` for object "menu-panel-Bookmarks" Cell`
+    t =    12.26s Tap "menu-panel-Bookmarks" Cell
+    t =    12.26s     Wait for org.mozilla.ios.Fennec to idle
+    t =    12.28s     Find the "menu-panel-Bookmarks" Cell
+    t =    12.41s         Wait for org.mozilla.ios.Fennec to idle
+    t =    12.43s     Synthesize event
+    t =    12.50s     Wait for org.mozilla.ios.Fennec to idle
+    t =    12.78s Find the Target Application 0x60c0000bbf60
+    t =    13.80s Checking `Expect predicate `exists == 0` for object Other`
+    t =    13.80s     Snapshot accessibility hierarchy for app with pid 39577
+    t =    13.82s     Find: Descendants matching type Other
+    t =    13.82s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60000025f200)'
+    t =    13.82s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x600000443450)'
+snapshot: 06PanelsEmptyState-0-HomePanel.Bookmarks.1
+    t =    14.82s Find the Window
+    t =    15.85s Checking `Expect predicate `exists == 1` for object "HomePanels.TopSites" Button`
+    t =    15.87s Tap "HomePanels.TopSites" Button
+    t =    15.87s     Wait for org.mozilla.ios.Fennec to idle
+    t =    15.88s     Find the "HomePanels.TopSites" Button
+    t =    15.99s         Wait for org.mozilla.ios.Fennec to idle
+    t =    16.01s     Synthesize event
+    t =    16.07s     Wait for org.mozilla.ios.Fennec to idle
+    t =    16.32s Find the Target Application 0x6080002a7500
+    t =    17.33s Checking `Expect predicate `exists == 0` for object Other`
+    t =    17.33s     Snapshot accessibility hierarchy for app with pid 39577
+    t =    17.36s     Find: Descendants matching type Other
+    t =    17.36s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x604000441470)'
+    t =    17.36s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60400025ad30)'
+snapshot: 06PanelsEmptyState-1-HomePanel.TopSites.0
+    t =    18.37s Find the Window
+    t =    19.40s Checking `Expect predicate `exists == 1` for object "HomePanels.History" Button`
+    t =    19.41s Tap "HomePanels.History" Button
+    t =    19.41s     Wait for org.mozilla.ios.Fennec to idle
+    t =    19.43s     Find the "HomePanels.History" Button
+    t =    19.55s         Wait for org.mozilla.ios.Fennec to idle
+    t =    19.56s     Synthesize event
+    t =    19.63s     Wait for org.mozilla.ios.Fennec to idle
+    t =    19.89s Find the Target Application 0x6000002a1ec0
+    t =    20.92s Checking `Expect predicate `exists == 0` for object Other`
+    t =    20.92s     Snapshot accessibility hierarchy for app with pid 39577
+    t =    20.95s     Find: Descendants matching type Other
+    t =    20.95s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x608000648e50)'
+    t =    20.95s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x6080006562f0)'
+snapshot: 06PanelsEmptyState-2-HomePanel.History.2
+    t =    21.95s Find the Window
+    t =    22.98s Checking `Expect predicate `exists == 1` for object "HomePanels.ReadingList" Button`
+    t =    23.00s Tap "HomePanels.ReadingList" Button
+    t =    23.00s     Wait for org.mozilla.ios.Fennec to idle
+    t =    23.01s     Find the "HomePanels.ReadingList" Button
+    t =    23.13s         Wait for org.mozilla.ios.Fennec to idle
+    t =    23.14s     Synthesize event
+    t =    23.21s     Wait for org.mozilla.ios.Fennec to idle
+    t =    23.46s Find the Target Application 0x6040000bad60
+    t =    24.47s Checking `Expect predicate `exists == 0` for object Other`
+    t =    24.47s     Snapshot accessibility hierarchy for app with pid 39577
+    t =    24.49s     Find: Descendants matching type Other
+    t =    24.49s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x600000442fa0)'
+    t =    24.49s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x600000442af0)'
+snapshot: 06PanelsEmptyState-3-HomePanel.ReadingList.3
+    t =    25.49s Find the Window
+    t =    25.52s Tear Down
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test06PanelsEmptyState]' passed (25.724 seconds).
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test07AddSearchProvider]' started.
+    t =     0.00s Start Test at 2017-10-20 15:52:33.974
+    t =     0.01s Set Up
+    t =     0.11s     Terminate org.mozilla.ios.Fennec:39577
+    t =     0.37s     Pressing Home button
+    t =     0.41s     Open org.mozilla.ios.Fennec
+    t =     0.44s         Launch org.mozilla.ios.Fennec
+    t =     7.43s             Wait for org.mozilla.ios.Fennec to idle
+    t =     9.28s Long press "url" TextField
+    t =     9.28s     Wait for org.mozilla.ios.Fennec to idle
+    t =     9.30s     Find the "url" TextField
+    t =     9.44s         Wait for org.mozilla.ios.Fennec to idle
+    t =     9.45s     Synthesize event
+    t =    10.48s     Wait for org.mozilla.ios.Fennec to idle
+    t =    11.50s Checking `Expect predicate `exists == 1` for object Sheet`
+2017-10-20 15:52:45.505423+0100 L10nSnapshotTests-Runner[39524:9315799] Returning local object of class NSString
+    t =    11.55s Tap Button
+    t =    11.55s     Wait for org.mozilla.ios.Fennec to idle
+    t =    11.57s     Find the Button
+    t =    11.69s         Wait for org.mozilla.ios.Fennec to idle
+    t =    11.71s         Check for UI interruption: Descendants matching type Alert
+    t =    11.73s     Synthesize event
+    t =    11.80s     Wait for org.mozilla.ios.Fennec to idle
+    t =    12.92s Checking `Expect predicate `exists != 1` for object ProgressIndicator`
+    t =    13.94s Checking `Expect predicate `exists == 1` for object "focus" Button`
+    t =    14.96s Checking `Expect predicate `exists == 1` for object "focus" Button`
+    t =    15.98s Checking `Expect predicate `exists == 1` for object "focus" Button`
+    t =    17.00s Checking `Expect predicate `exists == 1` for object "focus" Button`
+    t =    18.02s Checking `Expect predicate `exists == 1` for object "focus" Button`
+    t =    18.04s Assertion Failure: L10nSnapshotTests.swift:59: failed - 
+    t =    18.05s Tear Down
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test07AddSearchProvider]' failed (18.251 seconds).
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test08URLBar]' started.
+    t =     0.00s Start Test at 2017-10-20 15:52:52.226
+    t =     0.01s Set Up
+    t =     0.12s     Terminate org.mozilla.ios.Fennec:39586
+    t =     0.37s     Pressing Home button
+    t =     0.41s     Open org.mozilla.ios.Fennec
+    t =     0.44s         Launch org.mozilla.ios.Fennec
+    t =     7.65s             Wait for org.mozilla.ios.Fennec to idle
+    t =    10.60s Checking `Expect predicate `exists == 1` for object "url" TextField`
+    t =    10.64s Tap "url" TextField
+    t =    10.64s     Wait for org.mozilla.ios.Fennec to idle
+    t =    10.65s     Find the "url" TextField
+    t =    10.77s         Wait for org.mozilla.ios.Fennec to idle
+    t =    10.79s     Synthesize event
+    t =    10.86s     Wait for org.mozilla.ios.Fennec to idle
+    t =    11.72s Find the Target Application 0x60c0002a0060
+    t =    12.76s Checking `Expect predicate `exists == 0` for object Other`
+    t =    12.76s     Snapshot accessibility hierarchy for app with pid 39595
+    t =    12.83s     Find: Descendants matching type Other
+    t =    12.83s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60000024fcf0)'
+    t =    12.83s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x600000441dd0)'
+snapshot: 08URLBar-01
+    t =    13.84s Find the Window
+    t =    13.88s Type 'moz' into "address" TextField
+    t =    13.88s     Wait for org.mozilla.ios.Fennec to idle
+    t =    13.91s     Find the "address" TextField
+    t =    14.03s         Wait for org.mozilla.ios.Fennec to idle
+    t =    14.06s     Synthesize event
+    t =    14.13s     Wait for org.mozilla.ios.Fennec to idle
+    t =    14.36s Find the Target Application 0x6040000ba280
+    t =    15.39s Checking `Expect predicate `exists == 0` for object Other`
+    t =    15.39s     Snapshot accessibility hierarchy for app with pid 39595
+    t =    15.44s     Find: Descendants matching type Other
+    t =    15.44s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60c000455a20)'
+    t =    15.44s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60c000453860)'
+snapshot: 08URLBar-02
+    t =    16.44s Find the Window
+    t =    16.49s Tear Down
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test08URLBar]' passed (16.691 seconds).
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test09URLBarContextMenu]' started.
+    t =     0.00s Start Test at 2017-10-20 15:53:08.918
+    t =     0.03s Set Up
+    t =     0.14s     Terminate org.mozilla.ios.Fennec:39595
+    t =     0.43s     Pressing Home button
+    t =     0.46s     Open org.mozilla.ios.Fennec
+    t =     0.49s         Launch org.mozilla.ios.Fennec
+    t =     7.72s             Wait for org.mozilla.ios.Fennec to idle
+    t =     9.59s Long press "url" TextField
+    t =     9.59s     Wait for org.mozilla.ios.Fennec to idle
+    t =     9.61s     Find the "url" TextField
+    t =     9.75s         Wait for org.mozilla.ios.Fennec to idle
+    t =     9.77s     Synthesize event
+    t =    10.80s     Wait for org.mozilla.ios.Fennec to idle
+    t =    11.83s Checking `Expect predicate `exists == 1` for object Sheet`
+    t =    12.06s Find the Target Application 0x6080002a9b40
+    t =    13.08s Checking `Expect predicate `exists == 0` for object Other`
+    t =    13.08s     Snapshot accessibility hierarchy for app with pid 39606
+    t =    13.13s     Find: Descendants matching type Other
+    t =    13.13s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60800064cd80)'
+    t =    13.13s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x608000840a50)'
+snapshot: 09LocationBarContextMenu-01-no-url
+    t =    14.14s Find the Window
+    t =    14.17s Tap Button
+    t =    14.17s     Wait for org.mozilla.ios.Fennec to idle
+    t =    14.19s     Find the Button
+    t =    14.32s         Wait for org.mozilla.ios.Fennec to idle
+    t =    14.34s         Check for UI interruption: Descendants matching type Alert
+    t =    14.36s     Synthesize event
+    t =    14.43s     Wait for org.mozilla.ios.Fennec to idle
+2017-10-20 15:53:23.388356+0100 L10nSnapshotTests-Runner[39524:9315799] Returning local object of class NSString
+2017-10-20 15:53:23.393272+0100 L10nSnapshotTests-Runner[39524:9320250] PBItemCollectionServicer connection disconnected.
+    t =    14.48s Long press "url" TextField
+    t =    14.48s     Wait for org.mozilla.ios.Fennec to idle
+    t =    14.49s     Find the "url" TextField
+    t =    14.61s         Wait for org.mozilla.ios.Fennec to idle
+    t =    14.63s     Synthesize event
+    t =    15.64s     Wait for org.mozilla.ios.Fennec to idle
+    t =    16.67s Checking `Expect predicate `exists == 1` for object Sheet`
+    t =    16.90s Find the Target Application 0x6080002a1560
+    t =    17.91s Checking `Expect predicate `exists == 0` for object Other`
+    t =    17.91s     Snapshot accessibility hierarchy for app with pid 39606
+    t =    17.95s     Find: Descendants matching type Other
+    t =    17.95s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60000044eb80)'
+    t =    17.95s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60000025c200)'
+snapshot: 09LocationBarContextMenu-02-with-url
+    t =    18.96s Find the Window
+    t =    18.99s Tear Down
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test09URLBarContextMenu]' passed (19.195 seconds).
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test10MenuOnWebPage]' started.
+    t =     0.00s Start Test at 2017-10-20 15:53:28.114
+    t =     0.02s Set Up
+    t =     0.12s     Terminate org.mozilla.ios.Fennec:39606
+    t =     0.38s     Pressing Home button
+    t =     0.42s     Open org.mozilla.ios.Fennec
+    t =     0.45s         Launch org.mozilla.ios.Fennec
+    t =     7.49s             Wait for org.mozilla.ios.Fennec to idle
+    t =     9.45s Long press "url" TextField
+    t =     9.45s     Wait for org.mozilla.ios.Fennec to idle
+    t =     9.47s     Find the "url" TextField
+    t =     9.62s         Wait for org.mozilla.ios.Fennec to idle
+    t =     9.63s         Check for UI interruption: Descendants matching type Alert
+    t =     9.65s     Synthesize event
+    t =    10.68s     Wait for org.mozilla.ios.Fennec to idle
+    t =    11.78s Checking `Expect predicate `exists == 1` for object Sheet`
+2017-10-20 15:53:39.916212+0100 L10nSnapshotTests-Runner[39524:9315799] Returning local object of class NSString
+2017-10-20 15:53:39.923200+0100 L10nSnapshotTests-Runner[39524:9323600] PBItemCollectionServicer connection disconnected.
+    t =    11.81s Tap Button
+    t =    11.81s     Wait for org.mozilla.ios.Fennec to idle
+    t =    11.83s     Find the Button
+    t =    11.95s         Wait for org.mozilla.ios.Fennec to idle
+    t =    11.98s         Check for UI interruption: Descendants matching type Alert
+    t =    12.00s     Synthesize event
+    t =    12.08s     Wait for org.mozilla.ios.Fennec to idle
+    t =    13.15s Checking `Expect predicate `exists != 1` for object ProgressIndicator`
+    t =    13.18s     Snapshot accessibility hierarchy for app with pid 39613
+    t =    13.19s     Find: Descendants matching type ProgressIndicator
+    t =    14.19s Checking `Expect predicate `exists == 1` for object "TabToolbar.menuButton" Button`
+    t =    14.22s     Snapshot accessibility hierarchy for app with pid 39613
+    t =    14.24s     Find: Descendants matching type Button
+    t =    14.24s     Find: Elements matching predicate '"TabToolbar.menuButton" IN identifiers'
+    t =    14.24s Tap "TabToolbar.menuButton" Button
+    t =    14.24s     Wait for org.mozilla.ios.Fennec to idle
+    t =    14.25s     Find the "TabToolbar.menuButton" Button
+    t =    14.28s         Snapshot accessibility hierarchy for app with pid 39613
+    t =    14.29s         Find: Descendants matching type Button
+    t =    14.29s         Find: Elements matching predicate '"TabToolbar.menuButton" IN identifiers'
+    t =    14.40s         Wait for org.mozilla.ios.Fennec to idle
+    t =    14.41s     Synthesize event
+    t =    14.48s     Wait for org.mozilla.ios.Fennec to idle
+    t =    14.74s Find the Target Application 0x6000002a4ce0
+    t =    14.77s     Snapshot accessibility hierarchy for app with pid 39613
+    t =    15.79s Checking `Expect predicate `exists == 0` for object Other`
+    t =    15.79s     Snapshot accessibility hierarchy for app with pid 39613
+    t =    15.83s     Find: Descendants matching type Other
+    t =    15.83s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60400025dd60)'
+    t =    15.83s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x604000448d60)'
+snapshot: 10MenuOnWebPage-01
+    t =    16.84s Find the Window
+    t =    16.87s Tap "PhotonMenu.cancel" Button
+    t =    16.87s     Wait for org.mozilla.ios.Fennec to idle
+    t =    16.89s     Find the "PhotonMenu.cancel" Button
+    t =    16.93s         Snapshot accessibility hierarchy for app with pid 39613
+    t =    16.95s         Find: Descendants matching type Button
+    t =    16.95s         Find: Elements matching predicate '"PhotonMenu.cancel" IN identifiers'
+    t =    17.06s         Wait for org.mozilla.ios.Fennec to idle
+    t =    17.08s     Synthesize event
+    t =    17.15s     Wait for org.mozilla.ios.Fennec to idle
+    t =    18.18s Checking `Expect predicate `exists == 1` for object "TabToolbar.menuButton" Button`
+    t =    18.21s     Snapshot accessibility hierarchy for app with pid 39613
+    t =    18.22s     Find: Descendants matching type Button
+    t =    18.22s     Find: Elements matching predicate '"TabToolbar.menuButton" IN identifiers'
+    t =    18.22s Tap "TabToolbar.menuButton" Button
+    t =    18.22s     Wait for org.mozilla.ios.Fennec to idle
+    t =    18.24s     Find the "TabToolbar.menuButton" Button
+    t =    18.26s         Snapshot accessibility hierarchy for app with pid 39613
+    t =    18.28s         Find: Descendants matching type Button
+    t =    18.28s         Find: Elements matching predicate '"TabToolbar.menuButton" IN identifiers'
+    t =    18.38s         Wait for org.mozilla.ios.Fennec to idle
+    t =    18.40s     Synthesize event
+    t =    18.47s     Wait for org.mozilla.ios.Fennec to idle
+    t =    19.50s Checking `Expect predicate `exists == 1` for object "menu-NoImageMode" Cell`
+    t =    19.54s     Snapshot accessibility hierarchy for app with pid 39613
+    t =    19.57s     Find: Descendants matching type Table
+    t =    19.57s     Find: Descendants matching type Cell
+    t =    19.57s     Find: Elements matching predicate '"menu-NoImageMode" IN identifiers'
+    t =    19.57s Tap "menu-NoImageMode" Cell
+    t =    19.57s     Wait for org.mozilla.ios.Fennec to idle
+    t =    19.59s     Find the "menu-NoImageMode" Cell
+    t =    19.62s         Snapshot accessibility hierarchy for app with pid 39613
+    t =    19.65s         Find: Descendants matching type Table
+    t =    19.65s         Find: Descendants matching type Cell
+    t =    19.65s         Find: Elements matching predicate '"menu-NoImageMode" IN identifiers'
+    t =    19.76s         Wait for org.mozilla.ios.Fennec to idle
+    t =    19.78s     Synthesize event
+    t =    19.86s     Wait for org.mozilla.ios.Fennec to idle
+    t =    20.91s Checking `Expect predicate `exists == 1` for object "TabToolbar.menuButton" Button`
+    t =    20.93s     Snapshot accessibility hierarchy for app with pid 39613
+    t =    20.95s     Find: Descendants matching type Button
+    t =    20.95s     Find: Elements matching predicate '"TabToolbar.menuButton" IN identifiers'
+    t =    20.95s Tap "TabToolbar.menuButton" Button
+    t =    20.95s     Wait for org.mozilla.ios.Fennec to idle
+    t =    20.97s     Find the "TabToolbar.menuButton" Button
+    t =    21.00s         Snapshot accessibility hierarchy for app with pid 39613
+    t =    21.01s         Find: Descendants matching type Button
+    t =    21.01s         Find: Elements matching predicate '"TabToolbar.menuButton" IN identifiers'
+    t =    21.12s         Wait for org.mozilla.ios.Fennec to idle
+    t =    21.13s     Synthesize event
+    t =    21.20s     Wait for org.mozilla.ios.Fennec to idle
+    t =    22.23s Checking `Expect predicate `exists == 1` for object "menu-NightMode" Cell`
+    t =    22.27s     Snapshot accessibility hierarchy for app with pid 39613
+    t =    22.29s     Find: Descendants matching type Table
+    t =    22.29s     Find: Descendants matching type Cell
+    t =    22.30s     Find: Elements matching predicate '"menu-NightMode" IN identifiers'
+    t =    22.30s Tap "menu-NightMode" Cell
+    t =    22.30s     Wait for org.mozilla.ios.Fennec to idle
+    t =    22.32s     Find the "menu-NightMode" Cell
+    t =    22.35s         Snapshot accessibility hierarchy for app with pid 39613
+    t =    22.38s         Find: Descendants matching type Table
+    t =    22.38s         Find: Descendants matching type Cell
+    t =    22.38s         Find: Elements matching predicate '"menu-NightMode" IN identifiers'
+    t =    22.48s         Wait for org.mozilla.ios.Fennec to idle
+    t =    22.53s     Synthesize event
+    t =    22.61s     Wait for org.mozilla.ios.Fennec to idle
+    t =    23.69s Checking `Expect predicate `exists == 1` for object "TabToolbar.menuButton" Button`
+    t =    23.71s     Snapshot accessibility hierarchy for app with pid 39613
+    t =    23.72s     Find: Descendants matching type Button
+    t =    23.72s     Find: Elements matching predicate '"TabToolbar.menuButton" IN identifiers'
+    t =    23.72s Tap "TabToolbar.menuButton" Button
+    t =    23.72s     Wait for org.mozilla.ios.Fennec to idle
+    t =    23.74s     Find the "TabToolbar.menuButton" Button
+    t =    23.76s         Snapshot accessibility hierarchy for app with pid 39613
+    t =    23.78s         Find: Descendants matching type Button
+    t =    23.78s         Find: Elements matching predicate '"TabToolbar.menuButton" IN identifiers'
+    t =    23.88s         Wait for org.mozilla.ios.Fennec to idle
+    t =    23.93s     Synthesize event
+    t =    24.01s     Wait for org.mozilla.ios.Fennec to idle
+    t =    24.24s Find the Target Application 0x6040002a2820
+    t =    24.27s     Snapshot accessibility hierarchy for app with pid 39613
+    t =    25.29s Checking `Expect predicate `exists == 0` for object Other`
+    t =    25.29s     Snapshot accessibility hierarchy for app with pid 39613
+    t =    25.33s     Find: Descendants matching type Other
+    t =    25.33s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60c0004559f0)'
+    t =    25.33s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60c00025cef0)'
+snapshot: 10MenuOnWebPage-02
+    t =    26.34s Find the Window
+    t =    26.37s Tap "PhotonMenu.cancel" Button
+    t =    26.37s     Wait for org.mozilla.ios.Fennec to idle
+    t =    26.43s     Find the "PhotonMenu.cancel" Button
+    t =    26.46s         Snapshot accessibility hierarchy for app with pid 39613
+    t =    26.48s         Find: Descendants matching type Button
+    t =    26.48s         Find: Elements matching predicate '"PhotonMenu.cancel" IN identifiers'
+    t =    26.59s         Wait for org.mozilla.ios.Fennec to idle
+    t =    26.61s     Synthesize event
+    t =    26.69s     Wait for org.mozilla.ios.Fennec to idle
+    t =    27.73s Checking `Expect predicate `exists == 1` for object "TabLocationView.pageOptionsButton" Button`
+    t =    27.75s     Snapshot accessibility hierarchy for app with pid 39613
+    t =    27.77s     Find: Descendants matching type Button
+    t =    27.77s     Find: Elements matching predicate '"TabLocationView.pageOptionsButton" IN identifiers'
+    t =    27.77s Tap "TabLocationView.pageOptionsButton" Button
+    t =    27.77s     Wait for org.mozilla.ios.Fennec to idle
+    t =    27.78s     Find the "TabLocationView.pageOptionsButton" Button
+    t =    27.81s         Snapshot accessibility hierarchy for app with pid 39613
+    t =    27.82s         Find: Descendants matching type Button
+    t =    27.82s         Find: Elements matching predicate '"TabLocationView.pageOptionsButton" IN identifiers'
+    t =    27.93s         Wait for org.mozilla.ios.Fennec to idle
+    t =    27.94s     Synthesize event
+    t =    28.01s     Wait for org.mozilla.ios.Fennec to idle
+    t =    28.26s Find the Target Application 0x6080002a3ba0
+    t =    28.29s     Snapshot accessibility hierarchy for app with pid 39613
+    t =    29.31s Checking `Expect predicate `exists == 0` for object Other`
+    t =    29.31s     Snapshot accessibility hierarchy for app with pid 39613
+    t =    29.36s     Find: Descendants matching type Other
+    t =    29.36s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60000044d920)'
+    t =    29.36s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60000045c110)'
+snapshot: 10MenuOnWebPage-03
+    t =    30.36s Find the Window
+    t =    30.40s Tap "PhotonMenu.cancel" Button
+    t =    30.40s     Wait for org.mozilla.ios.Fennec to idle
+    t =    30.43s     Find the "PhotonMenu.cancel" Button
+    t =    30.46s         Snapshot accessibility hierarchy for app with pid 39613
+    t =    30.49s         Find: Descendants matching type Button
+    t =    30.49s         Find: Elements matching predicate '"PhotonMenu.cancel" IN identifiers'
+    t =    30.60s         Wait for org.mozilla.ios.Fennec to idle
+    t =    30.63s     Synthesize event
+    t =    30.70s     Wait for org.mozilla.ios.Fennec to idle
+    t =    30.73s Tear Down
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test10MenuOnWebPage]' passed (30.932 seconds).
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test11WebViewContextMenu]' started.
+    t =     0.00s Start Test at 2017-10-20 15:53:59.046
+    t =     0.01s Set Up
+    t =     0.12s     Terminate org.mozilla.ios.Fennec:39613
+    t =     0.40s     Pressing Home button
+    t =     0.42s     Open org.mozilla.ios.Fennec
+    t =     0.45s         Launch org.mozilla.ios.Fennec
+    t =     8.99s             Wait for org.mozilla.ios.Fennec to idle
+    t =    11.11s Long press "url" TextField
+    t =    11.11s     Wait for org.mozilla.ios.Fennec to idle
+    t =    11.12s     Find the "url" TextField
+    t =    11.26s         Wait for org.mozilla.ios.Fennec to idle
+    t =    11.28s     Synthesize event
+    t =    12.30s     Wait for org.mozilla.ios.Fennec to idle
+    t =    13.42s Checking `Expect predicate `exists == 1` for object Sheet`
+2017-10-20 15:54:12.494663+0100 L10nSnapshotTests-Runner[39524:9315799] Returning local object of class NSString
+2017-10-20 15:54:12.501757+0100 L10nSnapshotTests-Runner[39524:9320250] PBItemCollectionServicer connection disconnected.
+    t =    13.46s Tap Button
+    t =    13.46s     Wait for org.mozilla.ios.Fennec to idle
+    t =    13.48s     Find the Button
+    t =    13.60s         Wait for org.mozilla.ios.Fennec to idle
+    t =    13.63s         Check for UI interruption: Descendants matching type Alert
+    t =    13.65s     Synthesize event
+    t =    13.72s     Wait for org.mozilla.ios.Fennec to idle
+    t =    14.78s Checking `Expect predicate `exists != 1` for object ProgressIndicator`
+    t =    14.80s     Snapshot accessibility hierarchy for app with pid 39651
+    t =    14.82s     Find: Descendants matching type ProgressIndicator
+    t =    15.82s Checking `Expect predicate `exists == 1` for object Link`
+    t =    15.84s     Snapshot accessibility hierarchy for app with pid 39651
+    t =    15.85s     Find: Descendants matching type WebView
+    t =    15.85s     Find: Element at index 0
+    t =    15.85s     Find: Descendants matching type Link
+    t =    15.85s     Find: Element at index 0
+    t =    15.85s Long press Link
+    t =    15.85s     Wait for org.mozilla.ios.Fennec to idle
+    t =    15.86s     Find the Link
+    t =    15.88s         Snapshot accessibility hierarchy for app with pid 39651
+    t =    15.89s         Find: Descendants matching type WebView
+    t =    15.89s         Find: Element at index 0
+    t =    15.90s         Find: Descendants matching type Link
+    t =    15.90s         Find: Element at index 0
+    t =    16.00s         Wait for org.mozilla.ios.Fennec to idle
+    t =    16.01s     Synthesize event
+    t =    17.04s     Wait for org.mozilla.ios.Fennec to idle
+    t =    17.28s Find the Target Application 0x6080002a2220
+    t =    17.30s     Snapshot accessibility hierarchy for app with pid 39651
+    t =    18.32s Checking `Expect predicate `exists == 0` for object Other`
+    t =    18.32s     Snapshot accessibility hierarchy for app with pid 39651
+    t =    18.37s     Find: Descendants matching type Other
+    t =    18.37s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60c0006455e0)'
+    t =    18.37s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60c000255d50)'
+snapshot: 11WebViewContextMenu-01-link
+    t =    19.38s Find the Window
+    t =    19.42s Get number of matches for: Descendants matching type Button
+    t =    19.46s     Snapshot accessibility hierarchy for app with pid 39651
+    t =    19.48s     Find: Descendants matching type Sheet
+    t =    19.48s     Find: Element at index 0
+    t =    19.48s     Find: Descendants matching type Button
+    t =    19.48s Tap Button
+    t =    19.48s     Wait for org.mozilla.ios.Fennec to idle
+    t =    19.51s     Find the Button
+    t =    19.53s         Snapshot accessibility hierarchy for app with pid 39651
+    t =    19.55s         Find: Descendants matching type Sheet
+    t =    19.55s         Find: Element at index 0
+    t =    19.55s         Find: Descendants matching type Button
+    t =    19.55s         Find: Element at index 4
+    t =    19.65s         Wait for org.mozilla.ios.Fennec to idle
+    t =    19.68s         Check for UI interruption: Descendants matching type Alert
+    t =    19.70s             Snapshot accessibility hierarchy for app with pid 39651
+    t =    19.72s             Find: Descendants matching type Alert
+    t =    19.72s     Synthesize event
+    t =    19.80s     Wait for org.mozilla.ios.Fennec to idle
+    t =    19.84s Long press "url" TextField
+    t =    19.84s     Wait for org.mozilla.ios.Fennec to idle
+    t =    19.85s     Find the "url" TextField
+    t =    19.87s         Snapshot accessibility hierarchy for app with pid 39651
+    t =    19.88s         Find: Descendants matching type TextField
+    t =    19.88s         Find: Elements matching predicate '"url" IN identifiers'
+    t =    19.99s         Wait for org.mozilla.ios.Fennec to idle
+    t =    20.00s     Synthesize event
+    t =    21.02s     Wait for org.mozilla.ios.Fennec to idle
+    t =    22.04s Checking `Expect predicate `exists == 1` for object Sheet`
+    t =    22.07s     Snapshot accessibility hierarchy for app with pid 39651
+    t =    22.09s     Find: Descendants matching type Sheet
+    t =    22.09s     Find: Element at index 0
+2017-10-20 15:54:21.134863+0100 L10nSnapshotTests-Runner[39524:9315799] Returning local object of class NSString
+2017-10-20 15:54:21.141487+0100 L10nSnapshotTests-Runner[39524:9323600] PBItemCollectionServicer connection disconnected.
+    t =    22.10s Tap Button
+    t =    22.10s     Wait for org.mozilla.ios.Fennec to idle
+    t =    22.12s     Find the Button
+    t =    22.14s         Snapshot accessibility hierarchy for app with pid 39651
+    t =    22.16s         Find: Descendants matching type Sheet
+    t =    22.16s         Find: Element at index 0
+    t =    22.16s         Find: Descendants matching type Button
+    t =    22.16s         Find: Element at index 0
+    t =    22.26s         Wait for org.mozilla.ios.Fennec to idle
+    t =    22.29s         Check for UI interruption: Descendants matching type Alert
+    t =    22.31s             Snapshot accessibility hierarchy for app with pid 39651
+    t =    22.33s             Find: Descendants matching type Alert
+    t =    22.33s     Synthesize event
+    t =    22.40s     Wait for org.mozilla.ios.Fennec to idle
+    t =    23.46s Checking `Expect predicate `exists != 1` for object ProgressIndicator`
+    t =    23.48s     Snapshot accessibility hierarchy for app with pid 39651
+    t =    23.49s     Find: Descendants matching type ProgressIndicator
+    t =    24.49s Checking `Expect predicate `exists == 1` for object Image`
+    t =    24.51s     Snapshot accessibility hierarchy for app with pid 39651
+    t =    24.52s     Find: Descendants matching type WebView
+    t =    24.52s     Find: Element at index 0
+    t =    24.52s     Find: Descendants matching type Image
+    t =    24.52s     Find: Element at index 0
+    t =    24.52s Long press Image
+    t =    24.52s     Wait for org.mozilla.ios.Fennec to idle
+    t =    24.54s     Find the Image
+    t =    24.56s         Snapshot accessibility hierarchy for app with pid 39651
+    t =    24.57s         Find: Descendants matching type WebView
+    t =    24.57s         Find: Element at index 0
+    t =    24.57s         Find: Descendants matching type Image
+    t =    24.57s         Find: Element at index 0
+    t =    24.68s         Wait for org.mozilla.ios.Fennec to idle
+    t =    24.69s     Synthesize event
+    t =    25.71s     Wait for org.mozilla.ios.Fennec to idle
+    t =    25.95s Find the Target Application 0x6040002a1d40
+    t =    25.96s     Snapshot accessibility hierarchy for app with pid 39651
+    t =    26.98s Checking `Expect predicate `exists == 0` for object Other`
+    t =    26.98s     Snapshot accessibility hierarchy for app with pid 39651
+    t =    27.02s     Find: Descendants matching type Other
+    t =    27.02s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60800064b2b0)'
+    t =    27.02s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60800065dbb0)'
+snapshot: 11WebViewContextMenu-02-image
+    t =    28.02s Find the Window
+    t =    28.06s Get number of matches for: Descendants matching type Button
+    t =    28.10s     Snapshot accessibility hierarchy for app with pid 39651
+    t =    28.12s     Find: Descendants matching type Sheet
+    t =    28.12s     Find: Element at index 0
+    t =    28.12s     Find: Descendants matching type Button
+    t =    28.12s Tap Button
+    t =    28.12s     Wait for org.mozilla.ios.Fennec to idle
+    t =    28.15s     Find the Button
+    t =    28.17s         Snapshot accessibility hierarchy for app with pid 39651
+    t =    28.18s         Find: Descendants matching type Sheet
+    t =    28.18s         Find: Element at index 0
+    t =    28.19s         Find: Descendants matching type Button
+    t =    28.19s         Find: Element at index 2
+    t =    28.29s         Wait for org.mozilla.ios.Fennec to idle
+    t =    28.31s         Check for UI interruption: Descendants matching type Alert
+    t =    28.33s             Snapshot accessibility hierarchy for app with pid 39651
+    t =    28.35s             Find: Descendants matching type Alert
+    t =    28.35s     Synthesize event
+    t =    28.43s     Wait for org.mozilla.ios.Fennec to idle
+    t =    28.47s Long press "url" TextField
+    t =    28.47s     Wait for org.mozilla.ios.Fennec to idle
+    t =    28.49s     Find the "url" TextField
+    t =    28.51s         Snapshot accessibility hierarchy for app with pid 39651
+    t =    28.53s         Find: Descendants matching type TextField
+    t =    28.53s         Find: Elements matching predicate '"url" IN identifiers'
+    t =    28.63s         Wait for org.mozilla.ios.Fennec to idle
+    t =    28.64s     Synthesize event
+    t =    29.66s     Wait for org.mozilla.ios.Fennec to idle
+    t =    30.70s Checking `Expect predicate `exists == 1` for object Sheet`
+    t =    30.72s     Snapshot accessibility hierarchy for app with pid 39651
+    t =    30.74s     Find: Descendants matching type Sheet
+    t =    30.74s     Find: Element at index 0
+2017-10-20 15:54:29.784219+0100 L10nSnapshotTests-Runner[39524:9315799] Returning local object of class NSString
+2017-10-20 15:54:29.790945+0100 L10nSnapshotTests-Runner[39524:9322452] PBItemCollectionServicer connection disconnected.
+    t =    30.75s Tap Button
+    t =    30.75s     Wait for org.mozilla.ios.Fennec to idle
+    t =    30.79s     Find the Button
+    t =    30.81s         Snapshot accessibility hierarchy for app with pid 39651
+    t =    30.83s         Find: Descendants matching type Sheet
+    t =    30.83s         Find: Element at index 0
+    t =    30.83s         Find: Descendants matching type Button
+    t =    30.83s         Find: Element at index 0
+    t =    30.94s         Wait for org.mozilla.ios.Fennec to idle
+    t =    30.96s         Check for UI interruption: Descendants matching type Alert
+    t =    30.98s             Snapshot accessibility hierarchy for app with pid 39651
+    t =    31.00s             Find: Descendants matching type Alert
+    t =    31.00s     Synthesize event
+    t =    31.08s     Wait for org.mozilla.ios.Fennec to idle
+    t =    32.15s Checking `Expect predicate `exists != 1` for object ProgressIndicator`
+    t =    32.17s     Snapshot accessibility hierarchy for app with pid 39651
+    t =    32.18s     Find: Descendants matching type ProgressIndicator
+    t =    33.19s Checking `Expect predicate `exists == 1` for object Link`
+    t =    33.21s     Snapshot accessibility hierarchy for app with pid 39651
+    t =    33.22s     Find: Descendants matching type WebView
+    t =    33.22s     Find: Element at index 0
+    t =    33.22s     Find: Descendants matching type Link
+    t =    33.22s     Find: Element at index 0
+    t =    33.22s Long press Link
+    t =    33.22s     Wait for org.mozilla.ios.Fennec to idle
+    t =    33.24s     Find the Link
+    t =    33.25s         Snapshot accessibility hierarchy for app with pid 39651
+    t =    33.26s         Find: Descendants matching type WebView
+    t =    33.27s         Find: Element at index 0
+    t =    33.27s         Find: Descendants matching type Link
+    t =    33.27s         Find: Element at index 0
+    t =    33.37s         Wait for org.mozilla.ios.Fennec to idle
+    t =    33.39s     Synthesize event
+    t =    34.40s     Wait for org.mozilla.ios.Fennec to idle
+    t =    34.63s Find the Target Application 0x6000002a9a20
+    t =    34.66s     Snapshot accessibility hierarchy for app with pid 39651
+    t =    35.67s Checking `Expect predicate `exists == 0` for object Other`
+    t =    35.68s     Snapshot accessibility hierarchy for app with pid 39651
+    t =    35.72s     Find: Descendants matching type Other
+    t =    35.72s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60c00025d010)'
+    t =    35.72s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60c0004527e0)'
+snapshot: 11WebViewContextMenu-03-imageWithLink
+    t =    36.72s Find the Window
+    t =    36.76s Get number of matches for: Descendants matching type Button
+    t =    36.81s     Snapshot accessibility hierarchy for app with pid 39651
+    t =    36.83s     Find: Descendants matching type Sheet
+    t =    36.83s     Find: Element at index 0
+    t =    36.84s     Find: Descendants matching type Button
+    t =    36.84s Tap Button
+    t =    36.84s     Wait for org.mozilla.ios.Fennec to idle
+    t =    36.86s     Find the Button
+    t =    36.89s         Snapshot accessibility hierarchy for app with pid 39651
+    t =    36.91s         Find: Descendants matching type Sheet
+    t =    36.91s         Find: Element at index 0
+    t =    36.91s         Find: Descendants matching type Button
+    t =    36.91s         Find: Element at index 6
+    t =    37.01s         Wait for org.mozilla.ios.Fennec to idle
+    t =    37.04s         Check for UI interruption: Descendants matching type Alert
+    t =    37.07s             Snapshot accessibility hierarchy for app with pid 39651
+    t =    37.09s             Find: Descendants matching type Alert
+    t =    37.09s     Synthesize event
+    t =    37.17s     Wait for org.mozilla.ios.Fennec to idle
+    t =    37.21s Tear Down
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test11WebViewContextMenu]' passed (37.409 seconds).
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test12WebViewAuthenticationDialog]' started.
+    t =     0.00s Start Test at 2017-10-20 15:54:36.455
+    t =     0.01s Set Up
+    t =     0.12s     Terminate org.mozilla.ios.Fennec:39651
+    t =     0.34s     Pressing Home button
+    t =     0.38s     Open org.mozilla.ios.Fennec
+    t =     0.41s         Launch org.mozilla.ios.Fennec
+    t =     7.95s             Wait for org.mozilla.ios.Fennec to idle
+    t =     9.79s Long press "url" TextField
+    t =     9.79s     Wait for org.mozilla.ios.Fennec to idle
+    t =     9.81s     Find the "url" TextField
+    t =     9.95s         Wait for org.mozilla.ios.Fennec to idle
+    t =     9.96s     Synthesize event
+    t =    10.98s     Wait for org.mozilla.ios.Fennec to idle
+    t =    12.01s Checking `Expect predicate `exists == 1` for object Sheet`
+2017-10-20 15:54:48.487767+0100 L10nSnapshotTests-Runner[39524:9315799] Returning local object of class NSString
+2017-10-20 15:54:48.494185+0100 L10nSnapshotTests-Runner[39524:9321152] PBItemCollectionServicer connection disconnected.
+    t =    12.04s Tap Button
+    t =    12.04s     Wait for org.mozilla.ios.Fennec to idle
+    t =    12.06s     Find the Button
+    t =    12.19s         Wait for org.mozilla.ios.Fennec to idle
+    t =    12.21s         Check for UI interruption: Descendants matching type Alert
+    t =    12.23s     Synthesize event
+    t =    12.30s     Wait for org.mozilla.ios.Fennec to idle
+    t =    13.39s Checking `Expect predicate `exists == 1` for object Alert`
+snapshot: 12WebViewAuthenticationDialog-01
+    t =    14.43s Find the Window
+    t =    14.48s Tap Button
+    t =    14.48s     Wait for org.mozilla.ios.Fennec to idle
+    t =    14.52s     Find the Button
+    t =    14.65s         Wait for org.mozilla.ios.Fennec to idle
+    t =    14.69s         Check for UI interruption: Descendants matching type Alert
+    t =    14.71s     Synthesize event
+    t =    14.80s     Wait for org.mozilla.ios.Fennec to idle
+    t =    15.35s Tear Down
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test12WebViewAuthenticationDialog]' passed (15.556 seconds).
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test13ReloadButtonContextMenu]' started.
+    t =     0.00s Start Test at 2017-10-20 15:54:52.011
+    t =     0.01s Set Up
+    t =     0.11s     Terminate org.mozilla.ios.Fennec:39680
+    t =     0.34s     Pressing Home button
+    t =     0.37s     Open org.mozilla.ios.Fennec
+    t =     0.40s         Launch org.mozilla.ios.Fennec
+    t =     7.33s             Wait for org.mozilla.ios.Fennec to idle
+    t =     9.32s Long press "url" TextField
+    t =     9.32s     Wait for org.mozilla.ios.Fennec to idle
+    t =     9.33s     Find the "url" TextField
+    t =     9.47s         Wait for org.mozilla.ios.Fennec to idle
+    t =     9.49s     Synthesize event
+    t =    10.51s     Wait for org.mozilla.ios.Fennec to idle
+    t =    11.54s Checking `Expect predicate `exists == 1` for object Sheet`
+2017-10-20 15:55:03.575716+0100 L10nSnapshotTests-Runner[39524:9315799] Returning local object of class NSString
+2017-10-20 15:55:03.582161+0100 L10nSnapshotTests-Runner[39524:9315905] PBItemCollectionServicer connection disconnected.
+    t =    11.57s Tap Button
+    t =    11.57s     Wait for org.mozilla.ios.Fennec to idle
+    t =    11.60s     Find the Button
+    t =    11.72s         Wait for org.mozilla.ios.Fennec to idle
+    t =    11.74s         Check for UI interruption: Descendants matching type Alert
+    t =    11.76s     Synthesize event
+    t =    11.85s     Wait for org.mozilla.ios.Fennec to idle
+    t =    12.93s Checking `Expect predicate `exists != 1` for object ProgressIndicator`
+    t =    12.95s     Snapshot accessibility hierarchy for app with pid 39684
+    t =    12.97s     Find: Descendants matching type ProgressIndicator
+    t =    13.97s Checking `Expect predicate `exists == 1` for object "TabToolbar.stopReloadButton" Button`
+    t =    14.00s     Snapshot accessibility hierarchy for app with pid 39684
+    t =    14.02s     Find: Descendants matching type Button
+    t =    14.02s     Find: Elements matching predicate '"TabToolbar.stopReloadButton" IN identifiers'
+    t =    14.02s Long press "TabToolbar.stopReloadButton" Button
+    t =    14.02s     Wait for org.mozilla.ios.Fennec to idle
+    t =    14.03s     Find the "TabToolbar.stopReloadButton" Button
+    t =    14.05s         Snapshot accessibility hierarchy for app with pid 39684
+    t =    14.07s         Find: Descendants matching type Button
+    t =    14.07s         Find: Elements matching predicate '"TabToolbar.stopReloadButton" IN identifiers'
+    t =    14.18s         Wait for org.mozilla.ios.Fennec to idle
+    t =    14.19s     Synthesize event
+    t =    15.21s     Wait for org.mozilla.ios.Fennec to idle
+    t =    15.44s Find the Target Application 0x6040002afe40
+    t =    15.46s     Snapshot accessibility hierarchy for app with pid 39684
+    t =    16.48s Checking `Expect predicate `exists == 0` for object Other`
+    t =    16.48s     Snapshot accessibility hierarchy for app with pid 39684
+    t =    16.52s     Find: Descendants matching type Other
+    t =    16.52s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60c00045bb70)'
+    t =    16.52s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60c00064a0e0)'
+snapshot: 13ContextMenuReloadButton-01
+    t =    17.52s Find the Window
+    t =    18.56s Checking `Expect predicate `exists == 1` for object Button`
+    t =    18.59s     Snapshot accessibility hierarchy for app with pid 39684
+    t =    18.60s     Find: Descendants matching type Sheet
+    t =    18.60s     Find: Element at index 0
+    t =    18.60s     Find: Descendants matching type Button
+    t =    18.60s     Find: Element at index 0
+    t =    18.61s Tap Button
+    t =    18.61s     Wait for org.mozilla.ios.Fennec to idle
+    t =    18.63s     Find the Button
+    t =    18.65s         Snapshot accessibility hierarchy for app with pid 39684
+    t =    18.67s         Find: Descendants matching type Sheet
+    t =    18.67s         Find: Element at index 0
+    t =    18.67s         Find: Descendants matching type Button
+    t =    18.67s         Find: Element at index 0
+    t =    18.77s         Wait for org.mozilla.ios.Fennec to idle
+    t =    18.80s         Check for UI interruption: Descendants matching type Alert
+    t =    18.82s             Snapshot accessibility hierarchy for app with pid 39684
+    t =    18.84s             Find: Descendants matching type Alert
+    t =    18.84s     Synthesize event
+    t =    18.92s     Wait for org.mozilla.ios.Fennec to idle
+    t =    19.96s Checking `Expect predicate `exists == 1` for object "TabToolbar.stopReloadButton" Button`
+    t =    19.99s     Snapshot accessibility hierarchy for app with pid 39684
+    t =    20.00s     Find: Descendants matching type Button
+    t =    20.00s     Find: Elements matching predicate '"TabToolbar.stopReloadButton" IN identifiers'
+    t =    20.00s Long press "TabToolbar.stopReloadButton" Button
+    t =    20.00s     Wait for org.mozilla.ios.Fennec to idle
+    t =    20.02s     Find the "TabToolbar.stopReloadButton" Button
+    t =    20.04s         Snapshot accessibility hierarchy for app with pid 39684
+    t =    20.06s         Find: Descendants matching type Button
+    t =    20.06s         Find: Elements matching predicate '"TabToolbar.stopReloadButton" IN identifiers'
+    t =    20.16s         Wait for org.mozilla.ios.Fennec to idle
+    t =    20.18s     Synthesize event
+    t =    21.20s     Wait for org.mozilla.ios.Fennec to idle
+snapshot: 13ContextMenuReloadButton-02
+    t =    22.22s Find the Window
+    t =    22.26s Get number of matches for: Descendants matching type Button
+    t =    22.30s     Snapshot accessibility hierarchy for app with pid 39684
+    t =    22.32s     Find: Descendants matching type Sheet
+    t =    22.32s     Find: Element at index 0
+    t =    22.32s     Find: Descendants matching type Button
+    t =    22.32s Tap Button
+    t =    22.32s     Wait for org.mozilla.ios.Fennec to idle
+    t =    22.34s     Find the Button
+    t =    22.37s         Snapshot accessibility hierarchy for app with pid 39684
+    t =    22.38s         Find: Descendants matching type Sheet
+    t =    22.38s         Find: Element at index 0
+    t =    22.38s         Find: Descendants matching type Button
+    t =    22.39s         Find: Element at index 1
+    t =    22.49s         Wait for org.mozilla.ios.Fennec to idle
+    t =    22.52s         Check for UI interruption: Descendants matching type Alert
+    t =    22.55s             Snapshot accessibility hierarchy for app with pid 39684
+    t =    22.57s             Find: Descendants matching type Alert
+    t =    22.57s     Synthesize event
+    t =    22.64s     Wait for org.mozilla.ios.Fennec to idle
+    t =    22.67s Tear Down
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test13ReloadButtonContextMenu]' passed (22.876 seconds).
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test17PasswordSnackbar]' started.
+    t =     0.00s Start Test at 2017-10-20 15:55:14.888
+    t =     0.01s Set Up
+    t =     0.12s     Terminate org.mozilla.ios.Fennec:39684
+    t =     0.35s     Pressing Home button
+    t =     0.39s     Open org.mozilla.ios.Fennec
+    t =     0.42s         Launch org.mozilla.ios.Fennec
+    t =     9.09s             Wait for org.mozilla.ios.Fennec to idle
+    t =    11.24s Long press "url" TextField
+    t =    11.24s     Wait for org.mozilla.ios.Fennec to idle
+    t =    11.25s     Find the "url" TextField
+    t =    11.40s         Wait for org.mozilla.ios.Fennec to idle
+    t =    11.42s     Synthesize event
+    t =    12.44s     Wait for org.mozilla.ios.Fennec to idle
+    t =    13.55s Checking `Expect predicate `exists == 1` for object Sheet`
+2017-10-20 15:55:28.468688+0100 L10nSnapshotTests-Runner[39524:9315799] Returning local object of class NSString
+2017-10-20 15:55:28.473084+0100 L10nSnapshotTests-Runner[39524:9322452] PBItemCollectionServicer connection disconnected.
+    t =    13.59s Tap Button
+    t =    13.59s     Wait for org.mozilla.ios.Fennec to idle
+    t =    13.61s     Find the Button
+    t =    13.73s         Wait for org.mozilla.ios.Fennec to idle
+    t =    13.76s         Check for UI interruption: Descendants matching type Alert
+    t =    13.78s     Synthesize event
+    t =    13.85s     Wait for org.mozilla.ios.Fennec to idle
+    t =    14.92s Checking `Expect predicate `exists != 1` for object ProgressIndicator`
+    t =    14.95s     Snapshot accessibility hierarchy for app with pid 39718
+    t =    14.96s     Find: Descendants matching type ProgressIndicator
+    t =    14.96s Tap "submit" Button
+    t =    14.97s     Wait for org.mozilla.ios.Fennec to idle
+    t =    14.98s     Find the "submit" Button
+    t =    15.00s         Snapshot accessibility hierarchy for app with pid 39718
+    t =    15.02s         Find: Descendants matching type WebView
+    t =    15.02s         Find: Element at index 0
+    t =    15.02s         Find: Descendants matching type Button
+    t =    15.02s         Find: Elements matching predicate '"submit" IN identifiers'
+    t =    15.13s         Wait for org.mozilla.ios.Fennec to idle
+    t =    15.14s     Synthesize event
+    t =    15.22s     Wait for org.mozilla.ios.Fennec to idle
+    t =    15.45s Find the Target Application 0x60c0004a7680
+    t =    15.47s     Snapshot accessibility hierarchy for app with pid 39718
+    t =    16.48s Checking `Expect predicate `exists == 0` for object Other`
+    t =    16.49s     Snapshot accessibility hierarchy for app with pid 39718
+    t =    16.51s     Find: Descendants matching type Other
+    t =    16.52s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x600000641c80)'
+    t =    16.52s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60000064c990)'
+snapshot: 17PasswordSnackbar-01
+    t =    17.52s Find the Window
+    t =    17.55s Tap "SaveLoginPrompt.saveLoginButton" Button
+    t =    17.55s     Wait for org.mozilla.ios.Fennec to idle
+    t =    17.57s     Find the "SaveLoginPrompt.saveLoginButton" Button
+    t =    17.58s         Snapshot accessibility hierarchy for app with pid 39718
+    t =    17.60s         Find: Descendants matching type Button
+    t =    17.60s         Find: Elements matching predicate '"SaveLoginPrompt.saveLoginButton" IN identifiers'
+    t =    17.71s         Wait for org.mozilla.ios.Fennec to idle
+    t =    17.72s     Synthesize event
+    t =    17.79s     Wait for org.mozilla.ios.Fennec to idle
+    t =    17.81s Long press "url" TextField
+    t =    17.81s     Wait for org.mozilla.ios.Fennec to idle
+    t =    17.82s     Find the "url" TextField
+    t =    17.84s         Snapshot accessibility hierarchy for app with pid 39718
+    t =    17.86s         Find: Descendants matching type TextField
+    t =    17.86s         Find: Elements matching predicate '"url" IN identifiers'
+    t =    17.96s         Wait for org.mozilla.ios.Fennec to idle
+    t =    17.97s     Synthesize event
+    t =    18.99s     Wait for org.mozilla.ios.Fennec to idle
+    t =    20.02s Checking `Expect predicate `exists == 1` for object Sheet`
+    t =    20.04s     Snapshot accessibility hierarchy for app with pid 39718
+    t =    20.06s     Find: Descendants matching type Sheet
+    t =    20.06s     Find: Element at index 0
+2017-10-20 15:55:34.951150+0100 L10nSnapshotTests-Runner[39524:9315799] Returning local object of class NSString
+2017-10-20 15:55:34.955596+0100 L10nSnapshotTests-Runner[39524:9325383] PBItemCollectionServicer connection disconnected.
+    t =    20.07s Tap Button
+    t =    20.07s     Wait for org.mozilla.ios.Fennec to idle
+    t =    20.09s     Find the Button
+    t =    20.12s         Snapshot accessibility hierarchy for app with pid 39718
+    t =    20.13s         Find: Descendants matching type Sheet
+    t =    20.13s         Find: Element at index 0
+    t =    20.13s         Find: Descendants matching type Button
+    t =    20.13s         Find: Element at index 0
+    t =    20.24s         Wait for org.mozilla.ios.Fennec to idle
+    t =    20.26s         Check for UI interruption: Descendants matching type Alert
+    t =    20.28s             Snapshot accessibility hierarchy for app with pid 39718
+    t =    20.30s             Find: Descendants matching type Alert
+    t =    20.30s     Synthesize event
+    t =    20.38s     Wait for org.mozilla.ios.Fennec to idle
+    t =    21.43s Checking `Expect predicate `exists != 1` for object ProgressIndicator`
+    t =    21.45s     Snapshot accessibility hierarchy for app with pid 39718
+    t =    21.46s     Find: Descendants matching type ProgressIndicator
+    t =    21.47s Tap "submit" Button
+    t =    21.47s     Wait for org.mozilla.ios.Fennec to idle
+    t =    21.48s     Find the "submit" Button
+    t =    21.50s         Snapshot accessibility hierarchy for app with pid 39718
+    t =    21.52s         Find: Descendants matching type WebView
+    t =    21.52s         Find: Element at index 0
+    t =    21.52s         Find: Descendants matching type Button
+    t =    21.52s         Find: Elements matching predicate '"submit" IN identifiers'
+    t =    21.62s         Wait for org.mozilla.ios.Fennec to idle
+    t =    21.63s     Synthesize event
+    t =    21.70s     Wait for org.mozilla.ios.Fennec to idle
+    t =    21.94s Find the Target Application 0x6000002b00e0
+    t =    21.95s     Snapshot accessibility hierarchy for app with pid 39718
+    t =    22.97s Checking `Expect predicate `exists == 0` for object Other`
+    t =    22.97s     Snapshot accessibility hierarchy for app with pid 39718
+    t =    23.00s     Find: Descendants matching type Other
+    t =    23.00s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x608000640060)'
+    t =    23.00s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x608000843c60)'
+snapshot: 17PasswordSnackbar-02
+    t =    24.00s Find the Window
+    t =    24.03s Tear Down
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test17PasswordSnackbar]' passed (24.233 seconds).
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test18TopSitesMenu]' started.
+    t =     0.00s Start Test at 2017-10-20 15:55:39.122
+    t =     0.01s Set Up
+    t =     0.12s     Terminate org.mozilla.ios.Fennec:39718
+    t =     0.37s     Pressing Home button
+    t =     0.40s     Open org.mozilla.ios.Fennec
+    t =     0.43s         Launch org.mozilla.ios.Fennec
+    t =     7.13s             Wait for org.mozilla.ios.Fennec to idle
+    t =     8.98s Long press "url" TextField
+    t =     8.98s     Wait for org.mozilla.ios.Fennec to idle
+    t =     8.99s     Find the "url" TextField
+    t =     9.13s         Wait for org.mozilla.ios.Fennec to idle
+    t =     9.15s     Synthesize event
+    t =    10.17s     Wait for org.mozilla.ios.Fennec to idle
+    t =    11.20s Checking `Expect predicate `exists == 1` for object Sheet`
+2017-10-20 15:55:50.347829+0100 L10nSnapshotTests-Runner[39524:9315799] Returning local object of class NSString
+2017-10-20 15:55:50.355268+0100 L10nSnapshotTests-Runner[39524:9320250] PBItemCollectionServicer connection disconnected.
+    t =    11.23s Tap Button
+    t =    11.23s     Wait for org.mozilla.ios.Fennec to idle
+    t =    11.26s     Find the Button
+    t =    11.38s         Wait for org.mozilla.ios.Fennec to idle
+    t =    11.40s         Check for UI interruption: Descendants matching type Alert
+    t =    11.42s     Synthesize event
+    t =    11.50s     Wait for org.mozilla.ios.Fennec to idle
+    t =    12.58s Checking `Expect predicate `exists != 1` for object ProgressIndicator`
+    t =    12.61s     Snapshot accessibility hierarchy for app with pid 39764
+    t =    12.62s     Find: Descendants matching type ProgressIndicator
+    t =    13.63s Checking `Expect predicate `exists == 1` for object "TabToolbar.menuButton" Button`
+    t =    13.66s     Snapshot accessibility hierarchy for app with pid 39764
+    t =    13.68s     Find: Descendants matching type Button
+    t =    13.68s     Find: Elements matching predicate '"TabToolbar.menuButton" IN identifiers'
+    t =    13.68s Tap "TabToolbar.menuButton" Button
+    t =    13.68s     Wait for org.mozilla.ios.Fennec to idle
+    t =    13.69s     Find the "TabToolbar.menuButton" Button
+    t =    13.71s         Snapshot accessibility hierarchy for app with pid 39764
+    t =    13.73s         Find: Descendants matching type Button
+    t =    13.73s         Find: Elements matching predicate '"TabToolbar.menuButton" IN identifiers'
+    t =    13.83s         Wait for org.mozilla.ios.Fennec to idle
+    t =    13.85s     Synthesize event
+    t =    13.92s     Wait for org.mozilla.ios.Fennec to idle
+    t =    14.98s Checking `Expect predicate `exists == 1` for object "menu-panel-TopSites" Cell`
+    t =    15.02s     Snapshot accessibility hierarchy for app with pid 39764
+    t =    15.05s     Find: Descendants matching type Table
+    t =    15.05s     Find: Descendants matching type Cell
+    t =    15.05s     Find: Elements matching predicate '"menu-panel-TopSites" IN identifiers'
+    t =    15.05s Tap "menu-panel-TopSites" Cell
+    t =    15.05s     Wait for org.mozilla.ios.Fennec to idle
+    t =    15.07s     Find the "menu-panel-TopSites" Cell
+    t =    15.10s         Snapshot accessibility hierarchy for app with pid 39764
+    t =    15.13s         Find: Descendants matching type Table
+    t =    15.13s         Find: Descendants matching type Cell
+    t =    15.13s         Find: Elements matching predicate '"menu-panel-TopSites" IN identifiers'
+    t =    15.23s         Wait for org.mozilla.ios.Fennec to idle
+    t =    15.26s     Synthesize event
+    t =    15.33s     Wait for org.mozilla.ios.Fennec to idle
+    t =    16.37s Checking `Expect predicate `exists == 1` for object "TopSite" Cell`
+    t =    16.40s Long press "TopSite" Cell
+    t =    16.40s     Wait for org.mozilla.ios.Fennec to idle
+    t =    16.41s     Find the "TopSite" Cell
+    t =    16.53s         Wait for org.mozilla.ios.Fennec to idle
+    t =    16.55s     Synthesize event
+    t =    17.57s     Wait for org.mozilla.ios.Fennec to idle
+    t =    17.79s Find the Target Application 0x6040002adaa0
+    t =    18.82s Checking `Expect predicate `exists == 0` for object Other`
+    t =    18.83s     Snapshot accessibility hierarchy for app with pid 39764
+    t =    18.87s     Find: Descendants matching type Other
+    t =    18.87s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x600000646930)'
+    t =    18.87s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x600000456f20)'
+snapshot: 18TopSitesMenu-01
+    t =    19.87s Find the Window
+    t =    19.91s Tear Down
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test18TopSitesMenu]' passed (20.113 seconds).
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test19HistoryTableContextMenu]' started.
+    t =     0.00s Start Test at 2017-10-20 15:55:59.236
+    t =     0.02s Set Up
+    t =     0.12s     Terminate org.mozilla.ios.Fennec:39764
+    t =     0.36s     Pressing Home button
+    t =     0.39s     Open org.mozilla.ios.Fennec
+    t =     0.42s         Launch org.mozilla.ios.Fennec
+    t =     6.25s             Wait for accessibility to load
+    t =     6.64s             Wait for org.mozilla.ios.Fennec to idle
+    t =     8.47s Long press "url" TextField
+    t =     8.47s     Wait for org.mozilla.ios.Fennec to idle
+    t =     8.48s     Find the "url" TextField
+    t =     8.62s         Wait for org.mozilla.ios.Fennec to idle
+    t =     8.64s     Synthesize event
+    t =     9.66s     Wait for org.mozilla.ios.Fennec to idle
+    t =    10.77s Checking `Expect predicate `exists == 1` for object Sheet`
+2017-10-20 15:56:10.033774+0100 L10nSnapshotTests-Runner[39524:9315799] Returning local object of class NSString
+2017-10-20 15:56:10.040605+0100 L10nSnapshotTests-Runner[39524:9320250] PBItemCollectionServicer connection disconnected.
+    t =    10.81s Tap Button
+    t =    10.81s     Wait for org.mozilla.ios.Fennec to idle
+    t =    10.83s     Find the Button
+    t =    10.95s         Wait for org.mozilla.ios.Fennec to idle
+    t =    10.98s         Check for UI interruption: Descendants matching type Alert
+    t =    10.99s     Synthesize event
+    t =    11.08s     Wait for org.mozilla.ios.Fennec to idle
+    t =    12.14s Checking `Expect predicate `exists != 1` for object ProgressIndicator`
+    t =    12.17s     Snapshot accessibility hierarchy for app with pid 39769
+    t =    12.18s     Find: Descendants matching type ProgressIndicator
+    t =    13.19s Checking `Expect predicate `exists == 1` for object "TabToolbar.menuButton" Button`
+    t =    13.22s     Snapshot accessibility hierarchy for app with pid 39769
+    t =    13.23s     Find: Descendants matching type Button
+    t =    13.23s     Find: Elements matching predicate '"TabToolbar.menuButton" IN identifiers'
+    t =    13.23s Tap "TabToolbar.menuButton" Button
+    t =    13.23s     Wait for org.mozilla.ios.Fennec to idle
+    t =    13.25s     Find the "TabToolbar.menuButton" Button
+    t =    13.27s         Snapshot accessibility hierarchy for app with pid 39769
+    t =    13.29s         Find: Descendants matching type Button
+    t =    13.29s         Find: Elements matching predicate '"TabToolbar.menuButton" IN identifiers'
+    t =    13.39s         Wait for org.mozilla.ios.Fennec to idle
+    t =    13.41s     Synthesize event
+    t =    13.48s     Wait for org.mozilla.ios.Fennec to idle
+    t =    14.54s Checking `Expect predicate `exists == 1` for object "menu-panel-History" Cell`
+    t =    14.58s     Snapshot accessibility hierarchy for app with pid 39769
+    t =    14.60s     Find: Descendants matching type Table
+    t =    14.60s     Find: Descendants matching type Cell
+    t =    14.60s     Find: Elements matching predicate '"menu-panel-History" IN identifiers'
+    t =    14.60s Tap "menu-panel-History" Cell
+    t =    14.60s     Wait for org.mozilla.ios.Fennec to idle
+    t =    14.62s     Find the "menu-panel-History" Cell
+    t =    14.65s         Snapshot accessibility hierarchy for app with pid 39769
+    t =    14.68s         Find: Descendants matching type Table
+    t =    14.68s         Find: Descendants matching type Cell
+    t =    14.68s         Find: Elements matching predicate '"menu-panel-History" IN identifiers'
+    t =    14.79s         Wait for org.mozilla.ios.Fennec to idle
+    t =    14.81s     Synthesize event
+    t =    14.89s     Wait for org.mozilla.ios.Fennec to idle
+    t =    15.93s Checking `Expect predicate `exists == 1` for object Cell`
+    t =    15.96s Long press Cell
+    t =    15.96s     Wait for org.mozilla.ios.Fennec to idle
+    t =    15.97s     Find the Cell
+    t =    16.09s         Wait for org.mozilla.ios.Fennec to idle
+    t =    16.11s     Synthesize event
+    t =    17.13s     Wait for org.mozilla.ios.Fennec to idle
+    t =    17.35s Find the Target Application 0x6040002ab760
+    t =    18.38s Checking `Expect predicate `exists == 0` for object Other`
+    t =    18.38s     Snapshot accessibility hierarchy for app with pid 39769
+    t =    18.42s     Find: Descendants matching type Other
+    t =    18.42s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x608000655a80)'
+    t =    18.42s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x608000644c50)'
+snapshot: 19HistoryTableContextMenu-01
+    t =    19.43s Find the Window
+    t =    19.46s Tear Down
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test19HistoryTableContextMenu]' passed (19.667 seconds).
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test20BookmarksTableContextMenu]' started.
+    t =     0.00s Start Test at 2017-10-20 15:56:18.903
+    t =     0.02s Set Up
+    t =     0.12s     Terminate org.mozilla.ios.Fennec:39769
+    t =     0.39s     Pressing Home button
+    t =     0.42s     Open org.mozilla.ios.Fennec
+    t =     0.45s         Launch org.mozilla.ios.Fennec
+    t =     6.65s             Wait for org.mozilla.ios.Fennec to idle
+    t =     8.48s Long press "url" TextField
+    t =     8.48s     Wait for org.mozilla.ios.Fennec to idle
+    t =     8.50s     Find the "url" TextField
+    t =     8.64s         Wait for org.mozilla.ios.Fennec to idle
+    t =     8.65s     Synthesize event
+    t =     9.68s     Wait for org.mozilla.ios.Fennec to idle
+    t =    10.78s Checking `Expect predicate `exists == 1` for object Sheet`
+2017-10-20 15:56:29.712714+0100 L10nSnapshotTests-Runner[39524:9315799] Returning local object of class NSString
+2017-10-20 15:56:29.719510+0100 L10nSnapshotTests-Runner[39524:9323601] PBItemCollectionServicer connection disconnected.
+    t =    10.82s Tap Button
+    t =    10.82s     Wait for org.mozilla.ios.Fennec to idle
+    t =    10.84s     Find the Button
+    t =    10.96s         Wait for org.mozilla.ios.Fennec to idle
+    t =    10.99s         Check for UI interruption: Descendants matching type Alert
+    t =    11.01s     Synthesize event
+    t =    11.08s     Wait for org.mozilla.ios.Fennec to idle
+    t =    12.15s Checking `Expect predicate `exists != 1` for object ProgressIndicator`
+    t =    12.17s     Snapshot accessibility hierarchy for app with pid 39785
+    t =    12.19s     Find: Descendants matching type ProgressIndicator
+    t =    13.20s Checking `Expect predicate `exists == 1` for object "TabLocationView.pageOptionsButton" Button`
+    t =    13.22s     Snapshot accessibility hierarchy for app with pid 39785
+    t =    13.24s     Find: Descendants matching type Button
+    t =    13.24s     Find: Elements matching predicate '"TabLocationView.pageOptionsButton" IN identifiers'
+    t =    13.24s Tap "TabLocationView.pageOptionsButton" Button
+    t =    13.24s     Wait for org.mozilla.ios.Fennec to idle
+    t =    13.26s     Find the "TabLocationView.pageOptionsButton" Button
+    t =    13.28s         Snapshot accessibility hierarchy for app with pid 39785
+    t =    13.29s         Find: Descendants matching type Button
+    t =    13.29s         Find: Elements matching predicate '"TabLocationView.pageOptionsButton" IN identifiers'
+    t =    13.40s         Wait for org.mozilla.ios.Fennec to idle
+    t =    13.42s     Synthesize event
+    t =    13.49s     Wait for org.mozilla.ios.Fennec to idle
+    t =    14.55s Checking `Expect predicate `exists == 1` for object "menu-Bookmark" Cell`
+    t =    14.59s     Snapshot accessibility hierarchy for app with pid 39785
+    t =    14.62s     Find: Descendants matching type Table
+    t =    14.62s     Find: Elements matching predicate '"Context Menu" IN identifiers'
+    t =    14.62s     Find: Descendants matching type Cell
+    t =    14.62s     Find: Elements matching predicate '"menu-Bookmark" IN identifiers'
+    t =    14.62s Tap "menu-Bookmark" Cell
+    t =    14.62s     Wait for org.mozilla.ios.Fennec to idle
+    t =    14.64s     Find the "menu-Bookmark" Cell
+    t =    14.67s         Snapshot accessibility hierarchy for app with pid 39785
+    t =    14.70s         Find: Descendants matching type Table
+    t =    14.70s         Find: Elements matching predicate '"Context Menu" IN identifiers'
+    t =    14.70s         Find: Descendants matching type Cell
+    t =    14.70s         Find: Elements matching predicate '"menu-Bookmark" IN identifiers'
+    t =    14.80s         Wait for org.mozilla.ios.Fennec to idle
+    t =    14.83s     Synthesize event
+    t =    14.91s     Wait for org.mozilla.ios.Fennec to idle
+    t =    15.95s Checking `Expect predicate `exists == 1` for object "TabToolbar.menuButton" Button`
+    t =    15.97s     Snapshot accessibility hierarchy for app with pid 39785
+    t =    15.99s     Find: Descendants matching type Button
+    t =    15.99s     Find: Elements matching predicate '"TabToolbar.menuButton" IN identifiers'
+    t =    15.99s Tap "TabToolbar.menuButton" Button
+    t =    15.99s     Wait for org.mozilla.ios.Fennec to idle
+    t =    16.00s     Find the "TabToolbar.menuButton" Button
+    t =    16.02s         Snapshot accessibility hierarchy for app with pid 39785
+    t =    16.04s         Find: Descendants matching type Button
+    t =    16.04s         Find: Elements matching predicate '"TabToolbar.menuButton" IN identifiers'
+    t =    16.15s         Wait for org.mozilla.ios.Fennec to idle
+    t =    16.16s     Synthesize event
+    t =    16.23s     Wait for org.mozilla.ios.Fennec to idle
+    t =    17.28s Checking `Expect predicate `exists == 1` for object "menu-panel-Bookmarks" Cell`
+    t =    17.32s     Snapshot accessibility hierarchy for app with pid 39785
+    t =    17.34s     Find: Descendants matching type Table
+    t =    17.34s     Find: Descendants matching type Cell
+    t =    17.34s     Find: Elements matching predicate '"menu-panel-Bookmarks" IN identifiers'
+    t =    17.34s Tap "menu-panel-Bookmarks" Cell
+    t =    17.34s     Wait for org.mozilla.ios.Fennec to idle
+    t =    17.37s     Find the "menu-panel-Bookmarks" Cell
+    t =    17.40s         Snapshot accessibility hierarchy for app with pid 39785
+    t =    17.42s         Find: Descendants matching type Table
+    t =    17.42s         Find: Descendants matching type Cell
+    t =    17.42s         Find: Elements matching predicate '"menu-panel-Bookmarks" IN identifiers'
+    t =    17.53s         Wait for org.mozilla.ios.Fennec to idle
+    t =    17.55s     Synthesize event
+    t =    17.62s     Wait for org.mozilla.ios.Fennec to idle
+    t =    18.71s Checking `Expect predicate `exists == 1` for object Cell`
+    t =    18.73s Long press Cell
+    t =    18.73s     Wait for org.mozilla.ios.Fennec to idle
+    t =    18.75s     Find the Cell
+    t =    18.86s         Wait for org.mozilla.ios.Fennec to idle
+    t =    18.88s     Synthesize event
+    t =    19.90s     Wait for org.mozilla.ios.Fennec to idle
+    t =    20.12s Find the Target Application 0x6000002b7a60
+    t =    21.15s Checking `Expect predicate `exists == 0` for object Other`
+    t =    21.15s     Snapshot accessibility hierarchy for app with pid 39785
+    t =    21.18s     Find: Descendants matching type Other
+    t =    21.18s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60400064e3a0)'
+    t =    21.18s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60400064e670)'
+snapshot: 20BookmarksTableContextMenu-01
+    t =    22.19s Find the Window
+    t =    22.23s Tear Down
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test20BookmarksTableContextMenu]' passed (22.429 seconds).
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test21ReaderModeSettingsMenu]' started.
+    t =     0.00s Start Test at 2017-10-20 15:56:41.333
+    t =     0.02s Set Up
+    t =     0.12s     Terminate org.mozilla.ios.Fennec:39785
+    t =     0.36s     Pressing Home button
+    t =     0.39s     Open org.mozilla.ios.Fennec
+    t =     0.42s         Launch org.mozilla.ios.Fennec
+    t =     6.25s             Wait for accessibility to load
+    t =     6.66s             Wait for org.mozilla.ios.Fennec to idle
+    t =     8.59s Long press "url" TextField
+    t =     8.59s     Wait for org.mozilla.ios.Fennec to idle
+    t =     8.60s     Find the "url" TextField
+    t =     8.74s         Wait for org.mozilla.ios.Fennec to idle
+    t =     8.76s     Synthesize event
+    t =     9.78s     Wait for org.mozilla.ios.Fennec to idle
+    t =    10.81s Checking `Expect predicate `exists == 1` for object Sheet`
+2017-10-20 15:56:52.171732+0100 L10nSnapshotTests-Runner[39524:9315799] Returning local object of class NSString
+2017-10-20 15:56:52.177082+0100 L10nSnapshotTests-Runner[39524:9327107] PBItemCollectionServicer connection disconnected.
+    t =    10.84s Tap Button
+    t =    10.85s     Wait for org.mozilla.ios.Fennec to idle
+    t =    10.87s     Find the Button
+    t =    10.99s         Wait for org.mozilla.ios.Fennec to idle
+    t =    11.01s         Check for UI interruption: Descendants matching type Alert
+    t =    11.03s     Synthesize event
+    t =    11.11s     Wait for org.mozilla.ios.Fennec to idle
+    t =    12.17s Checking `Expect predicate `exists != 1` for object ProgressIndicator`
+    t =    12.20s     Snapshot accessibility hierarchy for app with pid 39789
+    t =    12.21s     Find: Descendants matching type ProgressIndicator
+    t =    12.21s Tap "TabLocationView.readerModeButton" Button
+    t =    12.21s     Wait for org.mozilla.ios.Fennec to idle
+    t =    12.23s     Find the "TabLocationView.readerModeButton" Button
+    t =    12.26s         Snapshot accessibility hierarchy for app with pid 39789
+    t =    12.27s         Find: Descendants matching type Button
+    t =    12.27s         Find: Elements matching predicate '"TabLocationView.readerModeButton" IN identifiers'
+    t =    12.38s         Wait for org.mozilla.ios.Fennec to idle
+    t =    12.39s     Synthesize event
+    t =    12.47s     Wait for org.mozilla.ios.Fennec to idle
+    t =    12.49s Tap "ReaderModeBarView.settingsButton" Button
+    t =    12.49s     Wait for org.mozilla.ios.Fennec to idle
+    t =    12.54s     Find the "ReaderModeBarView.settingsButton" Button
+    t =    12.57s         Snapshot accessibility hierarchy for app with pid 39789
+    t =    12.58s         Find: Descendants matching type Button
+    t =    12.58s         Find: Elements matching predicate '"ReaderModeBarView.settingsButton" IN identifiers'
+    t =    12.69s         Wait for org.mozilla.ios.Fennec to idle
+    t =    12.71s     Synthesize event
+    t =    12.78s     Wait for org.mozilla.ios.Fennec to idle
+    t =    13.03s Find the Target Application 0x6000002b21e0
+    t =    13.06s     Snapshot accessibility hierarchy for app with pid 39789
+    t =    14.08s Checking `Expect predicate `exists == 0` for object Other`
+    t =    14.08s     Snapshot accessibility hierarchy for app with pid 39789
+    t =    14.12s     Find: Descendants matching type Other
+    t =    14.12s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60c000458ed0)'
+    t =    14.12s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60c000456800)'
+snapshot: 21ReaderModeSettingsMenu-01
+    t =    15.13s Find the Window
+    t =    15.17s Tear Down
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test21ReaderModeSettingsMenu]' passed (15.373 seconds).
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test22ReadingListTableContextMenu]' started.
+    t =     0.00s Start Test at 2017-10-20 15:56:56.706
+    t =     0.02s Set Up
+    t =     0.13s     Terminate org.mozilla.ios.Fennec:39789
+    t =     0.38s     Pressing Home button
+    t =     0.42s     Open org.mozilla.ios.Fennec
+    t =     0.45s         Launch org.mozilla.ios.Fennec
+    t =     6.80s             Wait for org.mozilla.ios.Fennec to idle
+    t =     8.73s Long press "url" TextField
+    t =     8.73s     Wait for org.mozilla.ios.Fennec to idle
+    t =     8.74s     Find the "url" TextField
+    t =     8.88s         Wait for org.mozilla.ios.Fennec to idle
+    t =     8.90s     Synthesize event
+    t =     9.92s     Wait for org.mozilla.ios.Fennec to idle
+    t =    10.95s Checking `Expect predicate `exists == 1` for object Sheet`
+2017-10-20 15:57:07.680784+0100 L10nSnapshotTests-Runner[39524:9315799] Returning local object of class NSString
+2017-10-20 15:57:07.687621+0100 L10nSnapshotTests-Runner[39524:9327107] PBItemCollectionServicer connection disconnected.
+    t =    10.98s Tap Button
+    t =    10.98s     Wait for org.mozilla.ios.Fennec to idle
+    t =    11.01s     Find the Button
+    t =    11.13s         Wait for org.mozilla.ios.Fennec to idle
+    t =    11.15s         Check for UI interruption: Descendants matching type Alert
+    t =    11.17s     Synthesize event
+    t =    11.24s     Wait for org.mozilla.ios.Fennec to idle
+    t =    12.31s Checking `Expect predicate `exists != 1` for object ProgressIndicator`
+    t =    12.34s     Snapshot accessibility hierarchy for app with pid 39795
+    t =    12.36s     Find: Descendants matching type ProgressIndicator
+    t =    12.36s Tap "TabLocationView.readerModeButton" Button
+    t =    12.36s     Wait for org.mozilla.ios.Fennec to idle
+    t =    12.37s     Find the "TabLocationView.readerModeButton" Button
+    t =    12.40s         Snapshot accessibility hierarchy for app with pid 39795
+    t =    12.42s         Find: Descendants matching type Button
+    t =    12.42s         Find: Elements matching predicate '"TabLocationView.readerModeButton" IN identifiers'
+    t =    12.52s         Wait for org.mozilla.ios.Fennec to idle
+    t =    12.54s     Synthesize event
+    t =    12.61s     Wait for org.mozilla.ios.Fennec to idle
+    t =    12.63s Tap "ReaderModeBarView.listStatusButton" Button
+    t =    12.63s     Wait for org.mozilla.ios.Fennec to idle
+    t =    12.69s     Find the "ReaderModeBarView.listStatusButton" Button
+    t =    12.71s         Snapshot accessibility hierarchy for app with pid 39795
+    t =    12.73s         Find: Descendants matching type Button
+    t =    12.73s         Find: Elements matching predicate '"ReaderModeBarView.listStatusButton" IN identifiers'
+    t =    12.83s         Wait for org.mozilla.ios.Fennec to idle
+    t =    12.85s     Synthesize event
+    t =    12.92s     Wait for org.mozilla.ios.Fennec to idle
+    t =    12.93s Tap "url" TextField
+    t =    12.93s     Wait for org.mozilla.ios.Fennec to idle
+    t =    12.94s     Find the "url" TextField
+    t =    12.97s         Snapshot accessibility hierarchy for app with pid 39795
+    t =    12.98s         Find: Descendants matching type TextField
+    t =    12.99s         Find: Elements matching predicate '"url" IN identifiers'
+    t =    13.09s         Wait for org.mozilla.ios.Fennec to idle
+    t =    13.10s     Synthesize event
+    t =    13.17s     Wait for org.mozilla.ios.Fennec to idle
+    t =    13.79s Tap "HomePanels.ReadingList" Button
+    t =    13.79s     Wait for org.mozilla.ios.Fennec to idle
+    t =    13.83s     Find the "HomePanels.ReadingList" Button
+    t =    13.97s         Wait for org.mozilla.ios.Fennec to idle
+    t =    13.99s     Synthesize event
+    t =    14.07s     Wait for org.mozilla.ios.Fennec to idle
+    t =    14.65s Long press Cell
+    t =    14.65s     Wait for org.mozilla.ios.Fennec to idle
+    t =    14.66s     Find the Cell
+    t =    14.79s         Wait for org.mozilla.ios.Fennec to idle
+    t =    14.80s     Synthesize event
+    t =    16.82s     Wait for org.mozilla.ios.Fennec to idle
+    t =    17.04s Find the Target Application 0x6000002ba4c0
+    t =    18.06s Checking `Expect predicate `exists == 0` for object Other`
+    t =    18.06s     Snapshot accessibility hierarchy for app with pid 39795
+    t =    18.10s     Find: Descendants matching type Other
+    t =    18.10s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x6080006533b0)'
+    t =    18.10s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x6080006518e0)'
+snapshot: 22ReadingListTableContextMenu-01
+    t =    19.11s Find the Window
+    t =    19.14s Tear Down
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test22ReadingListTableContextMenu]' passed (19.344 seconds).
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test23ReadingListTableRowMenu]' started.
+    t =     0.00s Start Test at 2017-10-20 15:57:16.050
+    t =     0.02s Set Up
+    t =     0.12s     Terminate org.mozilla.ios.Fennec:39795
+    t =     0.35s     Pressing Home button
+    t =     0.39s     Open org.mozilla.ios.Fennec
+    t =     0.42s         Launch org.mozilla.ios.Fennec
+    t =     6.63s             Wait for accessibility to load
+    t =     7.06s             Wait for org.mozilla.ios.Fennec to idle
+    t =     9.02s Long press "url" TextField
+    t =     9.02s     Wait for org.mozilla.ios.Fennec to idle
+    t =     9.03s     Find the "url" TextField
+    t =     9.17s         Wait for org.mozilla.ios.Fennec to idle
+    t =     9.19s     Synthesize event
+    t =    10.21s     Wait for org.mozilla.ios.Fennec to idle
+    t =    11.32s Checking `Expect predicate `exists == 1` for object Sheet`
+2017-10-20 15:57:27.393356+0100 L10nSnapshotTests-Runner[39524:9315799] Returning local object of class NSString
+2017-10-20 15:57:27.398262+0100 L10nSnapshotTests-Runner[39524:9322452] PBItemCollectionServicer connection disconnected.
+    t =    11.35s Tap Button
+    t =    11.35s     Wait for org.mozilla.ios.Fennec to idle
+    t =    11.37s     Find the Button
+    t =    11.49s         Wait for org.mozilla.ios.Fennec to idle
+    t =    11.52s         Check for UI interruption: Descendants matching type Alert
+    t =    11.53s     Synthesize event
+    t =    11.61s     Wait for org.mozilla.ios.Fennec to idle
+    t =    12.68s Checking `Expect predicate `exists != 1` for object ProgressIndicator`
+    t =    12.71s     Snapshot accessibility hierarchy for app with pid 39801
+    t =    12.72s     Find: Descendants matching type ProgressIndicator
+    t =    12.72s Tap "TabLocationView.readerModeButton" Button
+    t =    12.72s     Wait for org.mozilla.ios.Fennec to idle
+    t =    12.74s     Find the "TabLocationView.readerModeButton" Button
+    t =    12.76s         Snapshot accessibility hierarchy for app with pid 39801
+    t =    12.78s         Find: Descendants matching type Button
+    t =    12.78s         Find: Elements matching predicate '"TabLocationView.readerModeButton" IN identifiers'
+    t =    12.89s         Wait for org.mozilla.ios.Fennec to idle
+    t =    12.90s     Synthesize event
+    t =    12.97s     Wait for org.mozilla.ios.Fennec to idle
+    t =    12.99s Tap "ReaderModeBarView.listStatusButton" Button
+    t =    12.99s     Wait for org.mozilla.ios.Fennec to idle
+    t =    13.05s     Find the "ReaderModeBarView.listStatusButton" Button
+    t =    13.07s         Snapshot accessibility hierarchy for app with pid 39801
+    t =    13.09s         Find: Descendants matching type Button
+    t =    13.09s         Find: Elements matching predicate '"ReaderModeBarView.listStatusButton" IN identifiers'
+    t =    13.20s         Wait for org.mozilla.ios.Fennec to idle
+    t =    13.21s     Synthesize event
+    t =    13.28s     Wait for org.mozilla.ios.Fennec to idle
+    t =    13.29s Tap "url" TextField
+    t =    13.29s     Wait for org.mozilla.ios.Fennec to idle
+    t =    13.31s     Find the "url" TextField
+    t =    13.33s         Snapshot accessibility hierarchy for app with pid 39801
+    t =    13.35s         Find: Descendants matching type TextField
+    t =    13.35s         Find: Elements matching predicate '"url" IN identifiers'
+    t =    13.46s         Wait for org.mozilla.ios.Fennec to idle
+    t =    13.47s     Synthesize event
+    t =    13.54s     Wait for org.mozilla.ios.Fennec to idle
+    t =    14.13s Tap "HomePanels.ReadingList" Button
+    t =    14.13s     Wait for org.mozilla.ios.Fennec to idle
+    t =    14.17s     Find the "HomePanels.ReadingList" Button
+    t =    14.31s         Wait for org.mozilla.ios.Fennec to idle
+    t =    14.34s     Synthesize event
+    t =    14.42s     Wait for org.mozilla.ios.Fennec to idle
+    t =    14.98s Swipe left Cell
+    t =    14.98s     Wait for org.mozilla.ios.Fennec to idle
+    t =    14.99s     Find the Cell
+    t =    15.12s         Wait for org.mozilla.ios.Fennec to idle
+    t =    15.13s     Synthesize event
+    t =    15.35s     Wait for org.mozilla.ios.Fennec to idle
+    t =    15.57s Find the Target Application 0x6000002b7940
+    t =    16.59s Checking `Expect predicate `exists == 0` for object Other`
+    t =    16.59s     Snapshot accessibility hierarchy for app with pid 39801
+    t =    16.62s     Find: Descendants matching type Other
+    t =    16.62s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60c000655a80)'
+    t =    16.62s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60c00064e0a0)'
+snapshot: 23ReadingListTableRowMenu-01
+    t =    17.63s Find the Window
+    t =    17.65s Tap Button
+    t =    17.65s     Wait for org.mozilla.ios.Fennec to idle
+    t =    17.67s     Find the Button
+    t =    17.79s         Wait for org.mozilla.ios.Fennec to idle
+    t =    17.80s     Synthesize event
+    t =    17.87s     Wait for org.mozilla.ios.Fennec to idle
+    t =    17.90s Swipe left Cell
+    t =    17.90s     Wait for org.mozilla.ios.Fennec to idle
+    t =    17.91s     Find the Cell
+    t =    18.03s         Wait for org.mozilla.ios.Fennec to idle
+    t =    18.04s     Synthesize event
+    t =    18.27s     Wait for org.mozilla.ios.Fennec to idle
+    t =    18.49s Find the Target Application 0x6040002bfce0
+    t =    19.50s Checking `Expect predicate `exists == 0` for object Other`
+    t =    19.50s     Snapshot accessibility hierarchy for app with pid 39801
+    t =    19.53s     Find: Descendants matching type Other
+    t =    19.53s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x60000065c8c0)'
+    t =    19.53s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x600000457250)'
+snapshot: 23ReadingListTableRowMenu-02
+    t =    20.54s Find the Window
+    t =    20.57s Tear Down
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test23ReadingListTableRowMenu]' passed (20.769 seconds).
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test24BookmarksListTableRowMenu]' started.
+    t =     0.00s Start Test at 2017-10-20 15:57:36.820
+    t =     0.01s Set Up
+    t =     0.11s     Terminate org.mozilla.ios.Fennec:39801
+    t =     0.37s     Pressing Home button
+    t =     0.40s     Open org.mozilla.ios.Fennec
+    t =     0.43s         Launch org.mozilla.ios.Fennec
+    t =     7.19s             Wait for org.mozilla.ios.Fennec to idle
+    t =     9.03s Long press "url" TextField
+    t =     9.03s     Wait for org.mozilla.ios.Fennec to idle
+    t =     9.04s     Find the "url" TextField
+    t =     9.18s         Wait for org.mozilla.ios.Fennec to idle
+    t =     9.20s     Synthesize event
+    t =    10.22s     Wait for org.mozilla.ios.Fennec to idle
+    t =    11.25s Checking `Expect predicate `exists == 1` for object Sheet`
+2017-10-20 15:57:48.093938+0100 L10nSnapshotTests-Runner[39524:9315799] Returning local object of class NSString
+2017-10-20 15:57:48.100404+0100 L10nSnapshotTests-Runner[39524:9328927] PBItemCollectionServicer connection disconnected.
+    t =    11.28s Tap Button
+    t =    11.28s     Wait for org.mozilla.ios.Fennec to idle
+    t =    11.30s     Find the Button
+    t =    11.43s         Wait for org.mozilla.ios.Fennec to idle
+    t =    11.45s         Check for UI interruption: Descendants matching type Alert
+    t =    11.47s     Synthesize event
+    t =    11.55s     Wait for org.mozilla.ios.Fennec to idle
+    t =    12.64s Checking `Expect predicate `exists != 1` for object ProgressIndicator`
+    t =    12.67s     Snapshot accessibility hierarchy for app with pid 39807
+    t =    12.68s     Find: Descendants matching type ProgressIndicator
+    t =    13.69s Checking `Expect predicate `exists == 1` for object "TabLocationView.pageOptionsButton" Button`
+    t =    13.72s     Snapshot accessibility hierarchy for app with pid 39807
+    t =    13.73s     Find: Descendants matching type Button
+    t =    13.73s     Find: Elements matching predicate '"TabLocationView.pageOptionsButton" IN identifiers'
+    t =    13.73s Tap "TabLocationView.pageOptionsButton" Button
+    t =    13.74s     Wait for org.mozilla.ios.Fennec to idle
+    t =    13.75s     Find the "TabLocationView.pageOptionsButton" Button
+    t =    13.77s         Snapshot accessibility hierarchy for app with pid 39807
+    t =    13.79s         Find: Descendants matching type Button
+    t =    13.79s         Find: Elements matching predicate '"TabLocationView.pageOptionsButton" IN identifiers'
+    t =    13.89s         Wait for org.mozilla.ios.Fennec to idle
+    t =    13.91s     Synthesize event
+    t =    13.98s     Wait for org.mozilla.ios.Fennec to idle
+    t =    15.03s Checking `Expect predicate `exists == 1` for object "menu-Bookmark" Cell`
+    t =    15.07s     Snapshot accessibility hierarchy for app with pid 39807
+    t =    15.10s     Find: Descendants matching type Table
+    t =    15.10s     Find: Elements matching predicate '"Context Menu" IN identifiers'
+    t =    15.10s     Find: Descendants matching type Cell
+    t =    15.10s     Find: Elements matching predicate '"menu-Bookmark" IN identifiers'
+    t =    15.10s Tap "menu-Bookmark" Cell
+    t =    15.10s     Wait for org.mozilla.ios.Fennec to idle
+    t =    15.12s     Find the "menu-Bookmark" Cell
+    t =    15.15s         Snapshot accessibility hierarchy for app with pid 39807
+    t =    15.18s         Find: Descendants matching type Table
+    t =    15.18s         Find: Elements matching predicate '"Context Menu" IN identifiers'
+    t =    15.18s         Find: Descendants matching type Cell
+    t =    15.18s         Find: Elements matching predicate '"menu-Bookmark" IN identifiers'
+    t =    15.29s         Wait for org.mozilla.ios.Fennec to idle
+    t =    15.31s     Synthesize event
+    t =    15.39s     Wait for org.mozilla.ios.Fennec to idle
+    t =    16.43s Checking `Expect predicate `exists == 1` for object "TabToolbar.menuButton" Button`
+    t =    16.46s     Snapshot accessibility hierarchy for app with pid 39807
+    t =    16.47s     Find: Descendants matching type Button
+    t =    16.47s     Find: Elements matching predicate '"TabToolbar.menuButton" IN identifiers'
+    t =    16.47s Tap "TabToolbar.menuButton" Button
+    t =    16.48s     Wait for org.mozilla.ios.Fennec to idle
+    t =    16.49s     Find the "TabToolbar.menuButton" Button
+    t =    16.51s         Snapshot accessibility hierarchy for app with pid 39807
+    t =    16.53s         Find: Descendants matching type Button
+    t =    16.53s         Find: Elements matching predicate '"TabToolbar.menuButton" IN identifiers'
+    t =    16.63s         Wait for org.mozilla.ios.Fennec to idle
+    t =    16.65s     Synthesize event
+    t =    16.72s     Wait for org.mozilla.ios.Fennec to idle
+    t =    17.76s Checking `Expect predicate `exists == 1` for object "menu-panel-Bookmarks" Cell`
+    t =    17.80s     Snapshot accessibility hierarchy for app with pid 39807
+    t =    17.82s     Find: Descendants matching type Table
+    t =    17.82s     Find: Descendants matching type Cell
+    t =    17.82s     Find: Elements matching predicate '"menu-panel-Bookmarks" IN identifiers'
+    t =    17.82s Tap "menu-panel-Bookmarks" Cell
+    t =    17.82s     Wait for org.mozilla.ios.Fennec to idle
+    t =    17.84s     Find the "menu-panel-Bookmarks" Cell
+    t =    17.88s         Snapshot accessibility hierarchy for app with pid 39807
+    t =    17.90s         Find: Descendants matching type Table
+    t =    17.90s         Find: Descendants matching type Cell
+    t =    17.90s         Find: Elements matching predicate '"menu-panel-Bookmarks" IN identifiers'
+    t =    18.01s         Wait for org.mozilla.ios.Fennec to idle
+    t =    18.03s     Synthesize event
+    t =    18.10s     Wait for org.mozilla.ios.Fennec to idle
+    t =    19.15s Checking `Expect predicate `exists == 1` for object Cell`
+    t =    19.17s Long press Cell
+    t =    19.17s     Wait for org.mozilla.ios.Fennec to idle
+    t =    19.18s     Find the Cell
+    t =    19.30s         Wait for org.mozilla.ios.Fennec to idle
+    t =    19.31s     Synthesize event
+    t =    20.33s     Wait for org.mozilla.ios.Fennec to idle
+    t =    20.35s Swipe left Cell
+    t =    20.35s     Wait for org.mozilla.ios.Fennec to idle
+    t =    20.37s     Find the Cell
+    t =    20.49s         Wait for org.mozilla.ios.Fennec to idle
+    t =    20.52s     Synthesize event
+    t =    20.75s     Wait for org.mozilla.ios.Fennec to idle
+    t =    20.98s Find the Target Application 0x6040002bea80
+    t =    21.99s Checking `Expect predicate `exists == 0` for object Other`
+    t =    22.00s     Snapshot accessibility hierarchy for app with pid 39807
+    t =    22.03s     Find: Descendants matching type Other
+    t =    22.03s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x600000842fd0)'
+    t =    22.03s     Find: Elements containing elements matching predicate 'BLOCKPREDICATE(0x600000847ef0)'
+snapshot: 24BookmarksListTableRowMenu-01
+    t =    23.04s Find the Window
+    t =    23.07s Tear Down
+Test Case '-[L10nSnapshotTests.L10nSnapshotTests test24BookmarksListTableRowMenu]' passed (23.275 seconds).
+Test Suite 'L10nSnapshotTests' failed at 2017-10-20 15:58:00.095.
+	 Executed 20 tests, with 1 failure (0 unexpected) in 442.773 (442.784) seconds
+Test Suite 'L10nSnapshotTests.xctest' failed at 2017-10-20 15:58:00.096.
+	 Executed 21 tests, with 1 failure (0 unexpected) in 471.002 (471.015) seconds
+Test Suite 'Selected tests' failed at 2017-10-20 15:58:00.096.
+	 Executed 21 tests, with 1 failure (0 unexpected) in 471.002 (471.017) seconds

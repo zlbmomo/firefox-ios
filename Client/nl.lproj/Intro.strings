@@ -1,0 +1,48 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "Surf op meerdere webpagina’s tegelijk met tabbladen.";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "Verbind Firefox overal waar u het gebruikt.";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "Gebruik meerdere e-mailapps – niet alleen Mail – met Firefox.";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "‘U hebt mail…’-opties";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "Tik op het maskerpictogram om in privénavigatiemodus te komen.";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "Surf alsof niemand meekijkt";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "Op zoek naar iets anders? Kies een andere standaardzoekmachine (of voeg er zelf een toe) in Instellingen.";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "Zoeken op uw manier";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "Gebruik Sync om de bladwijzers, wachtwoorden en andere dingen die u in Firefox op al uw apparaten opslaat te vinden.";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "Ga verder waar u was gebleven";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "Een moderne mobiele browser van Mozilla, de non-profitorganisatie met toewijding aan een vrij en open web.";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "Bedankt voor het kiezen van Firefox!";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "Inleidende pagina %1$@ van %2$@";
+
+/* See http://mzl.la/1T8gxwo */
+"Personalize your Firefox just the way you like in Settings." = "Personaliseer uw Firefox helemaal naar wens in Instellingen.";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "Aanmelden bij Firefox";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "Beginnen met browsen";
+

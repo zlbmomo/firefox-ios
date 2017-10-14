@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "Webbläsarhistorik";
+
+/* Settings item for clearing the cache */
+"Cache" = "Cache";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "Rensa privat data";
+
+/* Settings item for clearing cookies */
+"Cookies" = "Kakor";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "Nedkopplad webbplatsdata";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "Sparade inloggningar";
+

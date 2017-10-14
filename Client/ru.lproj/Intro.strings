@@ -1,0 +1,48 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "Откройте сразу множество веб-страниц при помощи вкладок.";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "Подключитесь к Firefox, где бы вы ни находились.";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "Используйте с Firefox любую эл. почту, а не только приложение «Почта».";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "У вас есть выбор… в настройке эл. почты";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "Коснитесь значка маски, чтобы переключиться в режим приватного просмотра.";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "Сёрфите Интернет не опасаясь слежки";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "Искали что-то другое? Выберите другую поисковую систему по умолчанию (или добавьте свою) в настройках.";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "Ваш поиск, Ваш Интернет";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "Используйте синхронизацию для доступа к закладкам, паролям и многому другому, что вы сохраните в Firefox на всех ваших устройствах.";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "Начните с того места, на котором остановились";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "Современный мобильный браузер от Mozilla, некоммерческой организации, преданной свободному и открытому Интернету.";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "Спасибо, что выбрали Firefox!";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "Вводный слайд: %1$@ из %2$@";
+
+/* See http://mzl.la/1T8gxwo */
+"Personalize your Firefox just the way you like in Settings." = "Зайдите в Параметры и настройте Firefox по своему вкусу.";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "Войти в Firefox";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "Начать веб-сёрфинг";
+

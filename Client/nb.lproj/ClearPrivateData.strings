@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "Nettleserhistorikk";
+
+/* Settings item for clearing the cache */
+"Cache" = "Hurtiglager";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "Slett private data";
+
+/* Settings item for clearing cookies */
+"Cookies" = "Infokapsler";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "Frakoblet nettsidedata";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "Lagrede innlogginger";
+

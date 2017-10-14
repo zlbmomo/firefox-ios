@@ -1,0 +1,12 @@
+"NSCameraUsageDescription" = "רכיב זה מאפשר לך לצלם ולהעלות תמונות.";
+
+"NSLocationWhenInUseUsageDescription" = "אתרים אליהם נכנסים עשויים לבקש את המיקום של המשתמש.";
+
+"NSMicrophoneUsageDescription" = "רכיב זה מאפשר לך להסריט ולהעלות סרטונים.";
+
+"NSPhotoLibraryUsageDescription" = "רכיב זה מאפשר לך לשמור ולהעלות תמונות.";
+
+"ShortcutItemTitleNewPrivateTab" = "לשונית פרטית חדשה";
+
+"ShortcutItemTitleNewTab" = "לשונית חדשה";
+

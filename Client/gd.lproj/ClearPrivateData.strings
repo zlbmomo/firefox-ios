@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "An eachdraidh brabhsaidh";
+
+/* Settings item for clearing the cache */
+"Cache" = "An tasgadan";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "Falamhaich an dàta prìobhaideach";
+
+/* Settings item for clearing cookies */
+"Cookies" = "Briosgaidean";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "Dàta làraichean-lìn far loidhne";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "Clàraidhean a-steach sàbhailte";
+

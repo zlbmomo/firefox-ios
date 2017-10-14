@@ -1,0 +1,6 @@
+/* Action button for deleting bookmarks in the bookmarks panel. */
+"Delete" = "அழி";
+
+/* The folder name for the virtual folder that contains all desktop bookmarks. */
+"Desktop Bookmarks" = "திரைமுகப்பு புத்தகக்குறிகள்";
+

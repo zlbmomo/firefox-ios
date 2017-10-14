@@ -1,0 +1,48 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "Defnyddio tabiau i bori mwy nag un tudalen gwe ar y tro.";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "Cysylltu drwy Firefox ymhob man.";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "Defnyddiwch unrhyw ap e-bost - nid dim ond Mail - gyda Firefox.";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "Mae gennych chi ddewisiadau… e-bost";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "Tapiwch yr eicon masg i lithro i'r modd Pori Preifat.";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "Pori fel petai neb yn eich gwylio";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "Chwilio am rywbeth gwahanol? Dewiswch beiriant chwilio ragosodedig arall (neu ychwanegu un eich hun) yn y Gosodiadau.";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "Chwilio, cynhwysfawr";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "Defnyddiwch Sync i ganfod nodau tudalen, cyfrineiriau, ac ati, wedi eu cadw i Firefox ar eich holl ddyfeisiau.";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "Ailgychwyn o le roeddech chi ddiwethaf";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "Porwr symudol modern gan Mozilla, y corff ddim-er-elw sy'n ymroddedig i we rydd ac agored.";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "Diolch am ddewis Firefox!";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "Sleid cyflwyno %1$@ of %2$@";
+
+/* See http://mzl.la/1T8gxwo */
+"Personalize your Firefox just the way you like in Settings." = "Gwneud eich hun yn gartrefol drwy Ddewisiadau Firefox.";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "Mewngofnodi i Firefox";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "Cychwyn Pori";
+

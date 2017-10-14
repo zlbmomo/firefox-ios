@@ -1,0 +1,16 @@
+"NSCameraUsageDescription" = "Це дозволяє вам знімати й вивантажувати фото.";
+
+"NSLocationWhenInUseUsageDescription" = "Відвідувані вами сайти можуть запитувати ваше розташування.";
+
+"NSMicrophoneUsageDescription" = "Це дозволяє вам знімати й вивантажувати відео.";
+
+"NSPhotoLibraryAddUsageDescription" = "Це дозволяє вам зберігати фотографії.";
+
+"NSPhotoLibraryUsageDescription" = "Це дозволяє вам знімати й вивантажувати фото.";
+
+"ShortcutItemTitleNewPrivateTab" = "Приватна вкладка";
+
+"ShortcutItemTitleNewTab" = "Нова вкладка";
+
+"ShortcutItemTitleQRCode" = "Сканувати QR-код";
+

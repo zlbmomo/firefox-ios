@@ -1,0 +1,48 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "Með því að nota flipa getur þú vafrað á mörgum vefsvæðum á sama tíma.";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "Tengdu Firefox alls staðar þar sem þú notar hann.";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "Nota hvaða tölvupóstforrit - ekki aðeins Mail - í Firefox.";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "Þú hefur fengið póst... valkosti";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "Snerta grímu íkonið til að fara í hulisvöfrun.";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "Vafra eins og enginn sjái til";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "Ertu að leita að einhverjum nýju? Kjósa aðra sjálfgefna leitarvél (eða bæta við nýja) í stillingum.";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "Leitin þín, leiðin þín";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "Nota Sync til að finna bókamerki, lykilorð, og allt annað sem þú vistir í Firefox á öllum þínum tækjum.";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "Halda áfram þar sem frá var horfið";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "Nútímanlegur vafri frá Mozilla fyrir handhæg tæki, hagnaðarlaus og skuldbundinn að viðhalda vefnum frjálsum og opnum.";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "Takk fyrir að velja Firefox!";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "Kynningarglæra %1$@ af %2$@";
+
+/* See http://mzl.la/1T8gxwo */
+"Personalize your Firefox just the way you like in Settings." = "Aðlagaðu Firefox eftir þínu höfði í Stillingum";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "Firefox innskráning";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "Fara að vafra";
+

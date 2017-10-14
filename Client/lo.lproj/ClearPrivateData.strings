@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "ປະຫວັດການທ່ອງເວັບ";
+
+/* Settings item for clearing the cache */
+"Cache" = "ແຄຊ໌";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "ລົບລ້າງຂໍ້ມູນສ່ວນຕົວ";
+
+/* Settings item for clearing cookies */
+"Cookies" = "ຄຸກກີ້";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "ຂໍ້ມູນອັອບລາຍຂອງເວັບໄຊທ໌";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "ບັນທຶກການເຂົ້າສູ່ລະບົບໄວ້";
+

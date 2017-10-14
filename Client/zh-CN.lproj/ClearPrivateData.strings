@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "浏览历史";
+
+/* Settings item for clearing the cache */
+"Cache" = "缓存";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "清除隐私数据";
+
+/* Settings item for clearing cookies */
+"Cookies" = "Cookie";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "离线网站数据";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "已保存的登录信息";
+

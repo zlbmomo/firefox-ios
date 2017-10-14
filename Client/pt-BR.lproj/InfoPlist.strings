@@ -1,0 +1,16 @@
+"NSCameraUsageDescription" = "Isto lhe permite tirar e enviar fotos.";
+
+"NSLocationWhenInUseUsageDescription" = "Sites podem solicitar sua localização.";
+
+"NSMicrophoneUsageDescription" = "Isto lhe permite fazer e enviar videos.";
+
+"NSPhotoLibraryAddUsageDescription" = "Isso permite que você salve fotos.";
+
+"NSPhotoLibraryUsageDescription" = "Isto lhe permite salvar e enviar fotos.";
+
+"ShortcutItemTitleNewPrivateTab" = "Nova aba privativa";
+
+"ShortcutItemTitleNewTab" = "Nova aba";
+
+"ShortcutItemTitleQRCode" = "Digitalizar código QR";
+

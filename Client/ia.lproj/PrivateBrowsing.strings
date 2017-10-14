@@ -1,0 +1,15 @@
+/* Setting for closing private tabs */
+"Close Private Tabs" = "Clauder le schedas private";
+
+/* Text button displayed when there are no tabs open while in private mode */
+"Learn More" = "Saper plus";
+
+/* Toggled OFF accessibility value */
+"Off" = "Inactive";
+
+/* Toggled ON accessibility value */
+"On" = "Active";
+
+/* Context menu option for opening a link in a new private tab */
+"Open in New Private Tab" = "Aperir in un nove scheda private";
+

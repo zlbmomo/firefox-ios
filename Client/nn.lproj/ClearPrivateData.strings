@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "Nettlesarhistorikk";
+
+/* Settings item for clearing the cache */
+"Cache" = "Snøgglager";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "Slett private data";
+
+/* Settings item for clearing cookies */
+"Cookies" = "Infokapslar";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "Fråkopla nettsidedata";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "Lagra innloggingar";
+

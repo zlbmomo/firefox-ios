@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "ประวัติการท่องเว็บ";
+
+/* Settings item for clearing the cache */
+"Cache" = "แคช";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "ล้างข้อมูลส่วนตัว";
+
+/* Settings item for clearing cookies */
+"Cookies" = "คุกกี้";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "ข้อมูลเว็บไซต์ออฟไลน์";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "การเข้าสู่ระบบที่บันทึกไว้";
+

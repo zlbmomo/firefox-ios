@@ -1,0 +1,48 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "Navega en múltiples páginas al mismo tiempo.";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "Conéctate a Firefox donde sea que lo uses.";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "Usar cualquier aplicación de correo - no solo la app Mail - con Firefox.";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "Tienes opciones para tu correo…";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "Toca el ícono de la máscara para cambiar al modo de navegación privada.";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "Navega como si nadie te mirase";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "¿Buscas algo diferente? Elige otro motor de búsqueda predeterminado (o añade uno propio) en los ajustes.";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "Tu búsqueda, a tu manera";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "Usa Sync para encontrar marcadores, contraseñas y otras cosas que guardes en Firefox en todos tus dispositivos.";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "Continúa donde quedaste";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "Un navegador móvil moderno de Mozilla, la organización sin fines de lucro comprometida a una web libre y abierta.";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "¡Gracias por elegir Firefox!";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "Diapositiva de introducción %1$@ de %2$@";
+
+/* See http://mzl.la/1T8gxwo */
+"Personalize your Firefox just the way you like in Settings." = "Modifica Firefox a tu pinta en Ajustes.";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "Conéctate a Firefox";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "Empezar a navegar";
+

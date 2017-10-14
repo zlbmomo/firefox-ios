@@ -1,0 +1,16 @@
+"NSCameraUsageDescription" = "To vam omogoča slikati in pošiljati fotografije.";
+
+"NSLocationWhenInUseUsageDescription" = "Spletne strani lahko zahtevajo vašo lokacijo.";
+
+"NSMicrophoneUsageDescription" = "Omogoča snemanje in nalaganje videa.";
+
+"NSPhotoLibraryAddUsageDescription" = "To vam omogoča shranjevati fotografije.";
+
+"NSPhotoLibraryUsageDescription" = "To vam omogoča shranjevati in pošiljati fotografije.";
+
+"ShortcutItemTitleNewPrivateTab" = "Nov zasebni zavihek";
+
+"ShortcutItemTitleNewTab" = "Nov zavihek";
+
+"ShortcutItemTitleQRCode" = "Skeniraj QR-kodo";
+

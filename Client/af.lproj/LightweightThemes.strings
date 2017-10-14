@@ -1,0 +1,36 @@
+/* Pending feature; currently unused string! Button shown when user wishes to view photos for theme but has not given Firefox permission to do so yet. */
+"Allow Firefox to use my Photos" = "Laat Firefox toe om my foto’s te gebruik";
+
+/* Pending feature; currently unused string! Accessibility label for back button to theme chooser */
+"Back to Themes" = "Terug na temas";
+
+/* Pending feature; currently unused string! Back button shown to return back to theme settings from photo picker */
+"Choose" = "Kies";
+
+/* Pending feature; currently unused string! Accessibility label for settings row to enter theme settings */
+"Choose Theme" = "Kies tema";
+
+/* Pending feature; currently unused string! Accessibility label for themes subheader */
+"Default Themes" = "Verstektemas";
+
+/* Pending feature; currently unused string! Accessibility label for photo viewer */
+"My Photos" = "My foto’s";
+
+/* Pending feature; currently unused string! Sub header for photo options in theme chooser */
+"Photos" = "Foto's";
+
+/* Pending feature; currently unused string! Button to show preview of selected theme */
+"Preview" = "Voorskou";
+
+/* Pending feature; currently unused string! Button to set selected theme as current theme */
+"Set" = "Stel";
+
+/* Pending feature; currently unused string! Accessibility label for set theme button */
+"Set Theme" = "Stel tema";
+
+/* Pending feature; currently unused string! Settings row to enter theme settings */
+"Theme" = "Tema";
+
+/* Pending feature; currently unused string! sub header for theme options in theme chooser */
+"Themes" = "Temas";
+

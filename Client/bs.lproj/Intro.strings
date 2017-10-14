@@ -1,0 +1,39 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "Pretražujte više stranica istovremeno s tabovima.";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "Povežite Firefox gdje god ga koristite.";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "Koristite bilo koju aplikaciju e-pošte — ne samo Mail — s Firefoxom.";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "Postavke e-pošte";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "Dodirnite ikonu maske da biste prešli u način privatnog pretraživanja.";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "Šretražujte kao da vas niko ne gleda";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "Da li tražite nešto drugačije? U vašim postavkama izaberite drugačiji standardni pretraživač (ili dodajte svoj).";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "Tražite, na svoj način";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "Koristite Sinhronizaciju da pristupite zabilješkama, lozinkama i drugim stvarima koje ste sačuvali na Firefoxu na svim vašim uređajima.";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "Nastavite tamo gdje ste stali";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "Savremeni mobilni pretraživač od Mozille, neprofitne organizacije posvećene slobodnom i otvorenom internetu.";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "Hvala za odabir Firefoxa!";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "Uvodni slajd %1$@ od %2$@";
+

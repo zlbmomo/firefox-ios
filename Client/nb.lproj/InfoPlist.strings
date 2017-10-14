@@ -1,0 +1,16 @@
+"NSCameraUsageDescription" = "Dette gjør det mulig å ta og laste opp bilder.";
+
+"NSLocationWhenInUseUsageDescription" = "Nettsider du besøker kan be om din plassering.";
+
+"NSMicrophoneUsageDescription" = "Dette gjør det mulig å ta og laste opp videoer.";
+
+"NSPhotoLibraryAddUsageDescription" = "Dette gjør det mulig å lagre bilder.";
+
+"NSPhotoLibraryUsageDescription" = "Dette gjør det mulig å lagre og laste opp bilder.";
+
+"ShortcutItemTitleNewPrivateTab" = "Ny privat fane";
+
+"ShortcutItemTitleNewTab" = "Ny fane";
+
+"ShortcutItemTitleQRCode" = "Skann QR-kode";
+

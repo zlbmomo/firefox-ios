@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "Pārlūkošanas vēsturi";
+
+/* Settings item for clearing the cache */
+"Cache" = "Kešatmiņu";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "Notīrīt privātos datus";
+
+/* Settings item for clearing cookies */
+"Cookies" = "Sīkdatnes";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "Lapu saglabātos datus";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "Saglabātās paroles";
+

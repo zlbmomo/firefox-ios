@@ -1,0 +1,48 @@
+/* See http://mzl.la/1T8gxwo */
+"Browse multiple Web pages at the same time with tabs." = "Sekmeler sayesinde aynı anda birden fazla web sayfasında gezin.";
+
+/* See http://mzl.la/1T8gxwo */
+"Connect Firefox everywhere you use it." = "Her yerden Firefox’a bağlanın.";
+
+/* Description for the 'Mail' panel in the First Run tour. */
+"Intro.Slides.Mail.Description" = "Firefox’la yalnızca Mail’i değil, istediğiniz e-posta uygulamasını kullanabilirsiniz.";
+
+/* Title for the fourth panel 'Mail' in the First Run tour. */
+"Intro.Slides.Mail.Title" = "E-posta seçenekleri";
+
+/* Description for the 'Private Browsing' panel in the First Run tour. */
+"Intro.Slides.Private.Description" = "Gizli Gezinti moduna geçmek için maske simgesine dokunun.";
+
+/* Title for the third panel 'Private Browsing' in the First Run tour. */
+"Intro.Slides.Private.Title" = "Hiç kimse izlemiyormuş gibi gez";
+
+/* Description for the 'Favorite Search Engine' panel in the First Run tour. */
+"Intro.Slides.Search.Description" = "Başka bir şey mi arıyorsunuz? Ayarlar menüsünden varsayılan arama motorunuzu değiştirebilir veya yenilerini ekleyebilirsiniz.";
+
+/* Title for the second  panel 'Search' in the First Run tour. */
+"Intro.Slides.Search.Title" = "Senin araman, senin kararın";
+
+/* Description for the 'Sync' panel in the First Run tour. */
+"Intro.Slides.Sync.Description" = "Tüm cihazlarınızda Firefox’a kaydettiğiniz yer imlerine, parolalara ve diğer bilgilere ulaşmak için Sync’i kullanabilirsiniz.";
+
+/* Title for the fifth panel 'Sync' in the First Run tour. */
+"Intro.Slides.Sync.Title" = "Kaldığın yerden devam et";
+
+/* Description for the 'Welcome' panel in the First Run tour. */
+"Intro.Slides.Welcome.Description" = "Kâr amacı gütmeden özgür ve açık web’i korumaya ant içmiş Mozilla’dan, çağdaş bir mobil tarayıcı.";
+
+/* Title for the first panel 'Welcome' in the First Run tour. */
+"Intro.Slides.Welcome.Title" = "Firefox’u seçtiğiniz için teşekkürler!";
+
+/* String spoken by assistive technology (like VoiceOver) stating on which page of the intro wizard we currently are. E.g. Introductory slide 1 of 3 */
+"Introductory slide %@ of %@" = "Tanıtım ekranı %1$@ / %2$@";
+
+/* See http://mzl.la/1T8gxwo */
+"Personalize your Firefox just the way you like in Settings." = "Ayarlar ekranından Firefox’u istediğiniz gibi kişiselleştirin.";
+
+/* See http://mzl.la/1T8gxwo */
+"Sign in to Firefox" = "Firefox’a giriş yap";
+
+/* See http://mzl.la/1T8gxwo */
+"Start Browsing" = "Gezinmeye başla";
+

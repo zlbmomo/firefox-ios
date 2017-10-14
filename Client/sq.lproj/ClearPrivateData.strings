@@ -1,0 +1,19 @@
+/* Settings item for clearing browsing history */
+"Browsing History" = "Historik Shfletimesh";
+
+/* Settings item for clearing the cache */
+"Cache" = "Fshehtinë";
+
+/* Button in settings that clears private data for the selected items.
+   Navigation title in settings. */
+"Clear Private Data" = "Pastro të Dhëna Private";
+
+/* Settings item for clearing cookies */
+"Cookies" = "Cookies";
+
+/* Settings item for clearing website data */
+"Offline Website Data" = "Të dhëna Sajtesh për Jashtë Linje";
+
+/* Settings item for clearing passwords and login data */
+"Saved Logins" = "Kredenciale Hyrjesh të Ruajtura";
+
