@@ -20,14 +20,16 @@ import GameplayKit
 import XCTest
 
 struct Edge {
+    let destName: String
+    let predicate: NSPredicate?
     let transition: (XCTestCase, String, UInt) -> Void
 }
 
 typealias SceneBuilder<T: UserState> = (ScreenStateNode<T>) -> Void
 typealias NodeVisitor = (String) -> Void
 
-open class UserState {
-    public required init() {}
+open class UserState: NSObject {
+    public required override init() {}
     var initialScreenState: String?
 }
 
@@ -42,6 +44,8 @@ open class ScreenGraph<T: UserState> {
 
     fileprivate var namedScenes: [String: GraphNode<T>] = [:]
     fileprivate var nodedScenes: [GKGraphNode: GraphNode<T>] = [:]
+
+    fileprivate var conditionalEdges: [ConditionalEdge<T>]!
 
     fileprivate var isReady: Bool = false
 
@@ -203,6 +207,23 @@ extension ScreenGraph {
                 }
             }
         }
+
+        self.conditionalEdges = calculateConditionalEdges()
+    }
+
+    fileprivate func calculateConditionalEdges() -> [ConditionalEdge<T>] {
+        buildGkGraph()
+        let screenStateNodes = namedScenes.values.flatMap { $0 as? ScreenStateNode }
+
+        return screenStateNodes.map { node -> [ConditionalEdge<T>] in
+            let src = node.gkNode
+            return node.edges.values.flatMap { edge -> ConditionalEdge<T>? in
+                guard let predicate = edge.predicate else { return nil }
+                guard let dest = self.namedScenes[edge.destName]?.gkNode else { return nil }
+
+                return ConditionalEdge<T>(src: src, dest: dest, predicate: predicate)
+            } as [ConditionalEdge<T>]
+        }.flatMap { $0 }
     }
 }
 
@@ -335,8 +356,15 @@ extension ScreenStateNode {
      * @param withElement – optional, but if provided will attempt to verify it is there before performing the action.
      * @param to – the destination node.
      */
-    func gesture(withElement element: XCUIElement? = nil, to nodeName: String, file declFile: String = #file, line declLine: UInt = #line, g: @escaping () -> Void) {
-        let edge = Edge(transition: { xcTest, file, line in
+    func gesture(withElement element: XCUIElement? = nil, to nodeName: String, if predicateString: String? = nil, file declFile: String = #file, line declLine: UInt = #line, g: @escaping () -> Void) {
+        let predicate: NSPredicate?
+        if let predicateString = predicateString {
+            predicate = NSPredicate(format: predicateString)
+        } else {
+            predicate = nil
+        }
+
+        let edge = Edge(destName: nodeName, predicate: predicate, transition: { xcTest, file, line in
             if let el = element {
                 waitOrTimeout(existsPredicate, object: el) { _ in
                     xcTest.recordFailure(withDescription: "Cannot find \(el)", inFile: declFile, atLine: declLine, expected: false)
@@ -348,8 +376,8 @@ extension ScreenStateNode {
         addEdge(nodeName, by: edge)
     }
 
-    func noop(to nodeName: String, file: String = #file, line: UInt = #line) {
-        self.gesture(to: nodeName, file: file, line: line) {
+    func noop(to nodeName: String, if predicate: String? = nil, file: String = #file, line: UInt = #line) {
+        self.gesture(to: nodeName, if: predicate, file: file, line: line) {
             // NOOP.
         }
     }
@@ -360,8 +388,8 @@ extension ScreenStateNode {
      * @param element - the element to tap
      * @param to – the destination node.
      */
-    func tap(_ element: XCUIElement, to nodeName: String, file: String = #file, line: UInt = #line) {
-        self.gesture(withElement: element, to: nodeName, file: file, line: line) {
+    func tap(_ element: XCUIElement, to nodeName: String, if predicate: String? = nil, file: String = #file, line: UInt = #line) {
+        self.gesture(withElement: element, to: nodeName, if: predicate, file: file, line: line) {
             element.tap()
         }
     }
@@ -404,16 +432,22 @@ extension ScreenStateNode {
 }
 
 extension ScreenStateNode {
-    func tap(_ element: XCUIElement, forAction actions: String..., transitionTo screenState: String? = nil, file: String = #file, line: UInt = #line, r: @escaping UserStateChange) {
+    func gesture(withElement element: XCUIElement? = nil, forAction actions: String..., transitionTo screenState: String? = nil, if predicate: String? = nil, file: String = #file, line: UInt = #line, r: @escaping UserStateChange) {
         map?.addActionChain(actions, finalState: screenState, r: r, file: file, line: line)
-        tap(element, to: actions[0], file: file, line: line)
-    }
-
-    func gesture(withElement element: XCUIElement? = nil, forAction actions: String..., transitionTo screenState: String? = nil, file: String = #file, line: UInt = #line, r: @escaping UserStateChange) {
-        map?.addActionChain(actions, finalState: screenState, r: r, file: file, line: line)
-        gesture(withElement: element, to: actions[0], file: file, line: line) {
+        gesture(withElement: element, to: actions[0], if: predicate, file: file, line: line) {
             // NOP
         }
+    }
+
+    func noop(forAction actions: String..., transitionTo screenState: String? = nil, if predicate: String? = nil, file: String = #file, line: UInt = #line, r: @escaping UserStateChange) {
+        map?.addActionChain(actions, finalState: screenState, r: r, file: file, line: line)
+        noop(to: actions[0], if: predicate, file: file, line: line)
+    }
+
+    func tap(_ element: XCUIElement, forAction actions: String..., transitionTo screenState: String? = nil, if predicate: String? = nil, file: String = #file, line: UInt = #line, r: @escaping UserStateChange) {
+        map?.addActionChain(actions, finalState: screenState, r: r, file: file, line: line)
+        tap(element, to: actions[0], if: predicate, file: file, line: line)
+    }
     }
 }
 
@@ -438,6 +472,26 @@ extension ScreenStateNode {
     }
 }
 
+fileprivate class ConditionalEdge<T> {
+    let predicate: NSPredicate
+    let src: GKGraphNode
+    let dest: GKGraphNode
+
+    var isOpen: Bool = true
+
+    init(src: GKGraphNode, dest: GKGraphNode, predicate: NSPredicate) {
+        self.src = src
+        self.dest = dest
+        self.predicate = predicate
+    }
+
+    func userStateShouldChangeEdge(_ state: T) -> Bool {
+        let newValue = predicate.evaluate(with: state)
+        defer { self.isOpen = newValue }
+        return isOpen != newValue
+    }
+}
+
 /**
  * The Navigator provides a set of methods to navigate around the app. You can `goto` nodes, `visit` multiple nodes,
  * or visit all nodes, but mostly you just goto. If you take actions that move around the app outside of the
@@ -455,12 +509,26 @@ class Navigator<T: UserState> {
         return currentScene.name
     }
 
-    fileprivate init(_ map: ScreenGraph<T>, xcTest: XCTestCase, initialScene: ScreenStateNode<T>, userState: T) {
+    fileprivate init(_ map: ScreenGraph<T>,
+                     xcTest: XCTestCase,
+                     initialScene: ScreenStateNode<T>,
+                     userState: T) {
         self.map = map
         self.xcTest = xcTest
         self.currentScene = initialScene
         self.returnToRecentScene = initialScene
         self.userState = userState
+
+        // We should let the initial state update the user state.
+        if let node = currentScene as? ScreenStateNode<T> {
+            node.onEnterStateRecorder?(userState)
+        } else if let node = currentScene as? ScreenActionNode<T> {
+            node.recorder?(userState)
+        }
+
+        // Then, we should update the routable graph with respect
+        // to the user state.
+        _ = userStateShouldChangeGraph(userState)
     }
 
     /**
@@ -468,6 +536,20 @@ class Navigator<T: UserState> {
      */
     func goto(_ nodeName: String, file: String = #file, line: UInt = #line) {
         goto(nodeName, file: file, line: line, visitWith: noopNodeVisitor)
+    }
+
+    /**
+     * Returns true if this node (action or screen state) is directly reachable from the current point.
+     * This is relatively naive: it doesn't take into account conditional edges (those with `if:` predicates),
+     * so is not useful in the general case, but it is if you know the specific graph.
+     */
+    func can(goto nodeName: String) -> Bool {
+        let gkSrc = currentScene.gkNode
+        guard let gkDest = map.namedScenes[nodeName]?.gkNode else {
+            return false
+        }
+        let gkPath = map.gkGraph.findPath(from: gkSrc, to: gkDest)
+        return gkPath.count > 0
     }
 
     /**
@@ -487,13 +569,46 @@ class Navigator<T: UserState> {
             return
         }
 
-        gkPath.removeFirst()
+        // moveDirectlyTo lets us move from the current scene to the next.
+        // We'll use it to follow the path we've calculated,
+        // and to move back to the final screen state once we're done.
+        // It takes care of exiting the current node, and moving to the next.
+        @discardableResult func moveDirectlyTo(_ nextScene: GraphNode<T>) -> Bool {
+            var maybeStateChanged = false
+            if let node = currentScene as? ScreenStateNode<T> {
+                leave(node, to: nextScene, file: file, line: line)
+                maybeStateChanged = node.onExitStateRecorder != nil
+            } else if let node = currentScene as? ScreenActionNode<T> {
+                leave(node, to: nextScene, file: file, line: line)
+            }
 
-        var graphNodes = gkPath.flatMap { map.nodedScenes[$0] }
+            if let node = nextScene as? ScreenStateNode<T> {
+                enter(node, withVisitor: nodeVisitor)
+                maybeStateChanged = maybeStateChanged || node.onEnterStateRecorder != nil
+            } else if let node = nextScene as? ScreenActionNode<T> {
+                enter(node)
+                maybeStateChanged = maybeStateChanged || node.recorder != nil
+            }
+            currentScene = nextScene
+
+            return maybeStateChanged && self.userStateShouldChangeGraph(userState)
+        }
+
+        gkPath.removeFirst()
+        let graphNodes = gkPath.flatMap { map.nodedScenes[$0] }
+
+        for i in 0 ..< graphNodes.count {
+            let graphChanged = moveDirectlyTo(graphNodes[i])
+            if graphChanged {
+                // Whelp! The graph has changed under our feet. Our original path
+                // may not be valid. We should re-calculate.
+                return goto(nodeName, file: file, line: line, visitWith: nodeVisitor)
+            }
+        }
 
         // If the path ends on an action, then we should follow that action
         // until we're on a valid screen state, or there's nothing left to do.
-        if let lastAction = graphNodes.last as? ScreenActionNode {
+        if let lastAction = currentScene as? ScreenActionNode {
             var action = lastAction
             var extras = [GraphNode<T>]()
             while true {
@@ -507,32 +622,9 @@ class Navigator<T: UserState> {
                 }
                 break
             }
-            graphNodes += extras
-        }
-
-        // moveDirectlyTo lets us move from the current scene to the next.
-        // We'll use it to follow the path we've calculated,
-        // and to move back to the final screen state once we're done.
-        // It takes care of exiting the current node, and moving to the next.
-        func moveDirectlyTo(_ nextScene: GraphNode<T>) {
-            if let node = currentScene as? ScreenStateNode<T> {
-                leave(node, to: nextScene, file: file, line: line)
-            } else if let node = currentScene as? ScreenActionNode<T> {
-                leave(node, to: nextScene, file: file, line: line)
+            extras.forEach { nextScene in
+                moveDirectlyTo(nextScene)
             }
-
-            if let node = nextScene as? ScreenStateNode<T> {
-                enter(node, withVisitor: nodeVisitor)
-            } else if let node = nextScene as? ScreenActionNode<T> {
-                enter(node)
-            }
-            currentScene = nextScene
-        }
-
-        // This is what we've all been leading up to.
-        // We have a path, now let's follow it.
-        graphNodes.forEach { nextScene in
-            moveDirectlyTo(nextScene)
         }
 
         if let _ = currentScene as? ScreenStateNode<T> {
@@ -677,5 +769,24 @@ fileprivate extension Navigator {
 
     fileprivate func enter(_ nextScene: ScreenActionNode<T>) {
         nextScene.recorder?(userState)
+    }
+}
+
+// Private methods to help with conditional edges.
+fileprivate extension Navigator {
+    func userStateShouldChangeGraph(_ userState: T) -> Bool {
+        var graphChanged = false
+        map.conditionalEdges.forEach { edge in
+            if !edge.userStateShouldChangeEdge(userState) {
+                return
+            }
+            graphChanged = true
+            if edge.isOpen {
+                edge.src.addConnections(to: [edge.dest], bidirectional: false)
+            } else {
+                edge.src.removeConnections(to: [edge.dest], bidirectional: false)
+            }
+        }
+        return graphChanged
     }
 }
