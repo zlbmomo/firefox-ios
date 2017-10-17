@@ -39,6 +39,32 @@
                BlueprintName = "L10nSnapshotTests"
                ReferencedContainer = "container:Client.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "L10nSnapshotTests/test03MenuOnTopSites()">
+               </Test>
+               <Test
+                  Identifier = "L10nSnapshotTests/test04Foo()">
+               </Test>
+               <Test
+                  Identifier = "L10nSnapshotTests/test04Settings()">
+               </Test>
+               <Test
+                  Identifier = "L10nSnapshotTests/test05PrivateBrowsingTabsEmptyState()">
+               </Test>
+               <Test
+                  Identifier = "L10nSnapshotTests/test10MenuOnWebPage()">
+               </Test>
+               <Test
+                  Identifier = "L10nSnapshotTests/test18TopSitesMenu()">
+               </Test>
+               <Test
+                  Identifier = "L10nSnapshotTests/test19HistoryTableContextMenu()">
+               </Test>
+               <Test
+                  Identifier = "L10nSnapshotTests/test20BookmarksTableContextMenu()">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <AdditionalOptions>
