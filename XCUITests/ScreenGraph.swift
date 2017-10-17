@@ -81,6 +81,19 @@ extension ScreenGraph {
 
 extension ScreenGraph {
     fileprivate func addActionChain(_ actions: [String], finalState screenState: String?, r: @escaping UserStateChange, file: String, line: UInt) {
+        let firstNodeName = actions[0]
+        if let existing = namedScenes[firstNodeName] {
+            xcTest.recordFailure(withDescription: "Action \(firstNodeName) is defined elsewhere, but should be unique", inFile: file, atLine: line, expected: true)
+            xcTest.recordFailure(withDescription: "Action \(firstNodeName) is defined elsewhere, but should be unique", inFile: existing.file, atLine: existing.line, expected: true)
+        }
+
+        if let screenState = screenState {
+            guard let _ = namedScenes[screenState] as? ScreenStateNode else {
+                xcTest.recordFailure(withDescription: "Expected \(screenState) to be a screen state", inFile: file, atLine: line, expected: false)
+                return
+            }
+        }
+
         for i in 0..<actions.count {
             let thisNodeName = actions[i]
             let nextNodeName = i+1 < actions.count ? actions[i+1] : screenState
@@ -107,8 +120,8 @@ extension ScreenGraph {
             if let d1 = existing.nextNodeName,
                 let d2 = nextNodeName,
                 d1 != d2 {
-                self.xcTest.recordFailure(withDescription: "Action points to \(d2) elsewhere", inFile: existing.file, atLine: existing.line, expected: false)
-                self.xcTest.recordFailure(withDescription: "Action points to \(d1) elsewhere", inFile: file, atLine: line, expected: false)
+                self.xcTest.recordFailure(withDescription: "\(name) action points to \(d2) elsewhere", inFile: existing.file, atLine: existing.line, expected: false)
+                self.xcTest.recordFailure(withDescription: "\(name) action points to \(d1) elsewhere", inFile: file, atLine: line, expected: false)
                 return
             }
 
@@ -269,7 +282,7 @@ class GraphNode<T: UserState> {
     fileprivate var file: String
     fileprivate var line: UInt
 
-    init(_ map: ScreenGraph<T>, name: String, file: String, line: UInt) {
+    fileprivate init(_ map: ScreenGraph<T>, name: String, file: String, line: UInt) {
         self.map = map
         self.name = name
         self.file = file
@@ -394,38 +407,38 @@ extension ScreenStateNode {
         }
     }
 
-    func doubleTap(_ element: XCUIElement, to nodeName: String, file: String = #file, line: UInt = #line) {
-        self.gesture(withElement: element, to: nodeName, file: file, line: line) {
+    func doubleTap(_ element: XCUIElement, to nodeName: String, if predicate: String? = nil, file: String = #file, line: UInt = #line) {
+        self.gesture(withElement: element, to: nodeName, if: predicate, file: file, line: line) {
             element.doubleTap()
         }
     }
 
-    func typeText(_ text: String, into element: XCUIElement, to nodeName: String, file: String = #file, line: UInt = #line) {
-        self.gesture(withElement: element, to: nodeName, file: file, line: line) {
+    func typeText(_ text: String, into element: XCUIElement, to nodeName: String, if predicate: String? = nil, file: String = #file, line: UInt = #line) {
+        self.gesture(withElement: element, to: nodeName, if: predicate, file: file, line: line) {
             element.typeText(text)
         }
     }
 
-    func swipeLeft(_ element: XCUIElement, to nodeName: String, file: String = #file, line: UInt = #line) {
-        self.gesture(withElement: element, to: nodeName, file: file, line: line) {
+    func swipeLeft(_ element: XCUIElement, to nodeName: String, if predicate: String? = nil, file: String = #file, line: UInt = #line) {
+        self.gesture(withElement: element, to: nodeName, if: predicate, file: file, line: line) {
             element.swipeLeft()
         }
     }
 
-    func swipeRight(_ element: XCUIElement, to nodeName: String, file: String = #file, line: UInt = #line) {
-        self.gesture(withElement: element, to: nodeName, file: file, line: line) {
+    func swipeRight(_ element: XCUIElement, to nodeName: String, if predicate: String? = nil, file: String = #file, line: UInt = #line) {
+        self.gesture(withElement: element, to: nodeName, if: predicate, file: file, line: line) {
             element.swipeRight()
         }
     }
 
-    func swipeUp(_ element: XCUIElement, to nodeName: String, file: String = #file, line: UInt = #line) {
-        self.gesture(withElement: element, to: nodeName, file: file, line: line) {
+    func swipeUp(_ element: XCUIElement, to nodeName: String, if predicate: String? = nil, file: String = #file, line: UInt = #line) {
+        self.gesture(withElement: element, to: nodeName, if: predicate, file: file, line: line) {
             element.swipeUp()
         }
     }
 
-    func swipeDown(_ element: XCUIElement, to nodeName: String, file: String = #file, line: UInt = #line) {
-        self.gesture(withElement: element, to: nodeName, file: file, line: line) {
+    func swipeDown(_ element: XCUIElement, to nodeName: String, if predicate: String? = nil, file: String = #file, line: UInt = #line) {
+        self.gesture(withElement: element, to: nodeName, if: predicate, file: file, line: line) {
             element.swipeDown()
         }
     }
@@ -448,6 +461,35 @@ extension ScreenStateNode {
         map?.addActionChain(actions, finalState: screenState, r: r, file: file, line: line)
         tap(element, to: actions[0], if: predicate, file: file, line: line)
     }
+
+    func doubleTap(_ element: XCUIElement, forAction actions: String..., transitionTo screenState: String? = nil, if predicate: String? = nil, file: String = #file, line: UInt = #line, r: @escaping UserStateChange) {
+        map?.addActionChain(actions, finalState: screenState, r: r, file: file, line: line)
+        doubleTap(element, to: actions[0], if: predicate, file: file, line: line)
+    }
+
+    func typeText(_ text: String, into element: XCUIElement, forAction actions: String..., transitionTo screenState: String? = nil, if predicate: String? = nil, file: String = #file, line: UInt = #line, r: @escaping UserStateChange) {
+        map?.addActionChain(actions, finalState: screenState, r: r, file: file, line: line)
+        typeText(text, into: element, to: actions[0], if: predicate, file: file, line: line)
+    }
+
+    func swipeLeft(_ element: XCUIElement, forAction actions: String..., transitionTo screenState: String? = nil, if predicate: String? = nil, file: String = #file, line: UInt = #line, r: @escaping UserStateChange) {
+        map?.addActionChain(actions, finalState: screenState, r: r, file: file, line: line)
+        swipeLeft(element, to: actions[0], if: predicate, file: file, line: line)
+    }
+
+    func swipeRight(_ element: XCUIElement, forAction actions: String..., transitionTo screenState: String? = nil, if predicate: String? = nil, file: String = #file, line: UInt = #line, r: @escaping UserStateChange) {
+        map?.addActionChain(actions, finalState: screenState, r: r, file: file, line: line)
+        swipeRight(element, to: actions[0], if: predicate, file: file, line: line)
+    }
+
+    func swipeUp(_ element: XCUIElement, forAction actions: String..., transitionTo screenState: String? = nil, if predicate: String? = nil, file: String = #file, line: UInt = #line, r: @escaping UserStateChange) {
+        map?.addActionChain(actions, finalState: screenState, r: r, file: file, line: line)
+        swipeUp(element, to: actions[0], if: predicate, file: file, line: line)
+    }
+
+    func swipeDown(_ element: XCUIElement, forAction actions: String..., transitionTo screenState: String? = nil, if predicate: String? = nil, file: String = #file, line: UInt = #line, r: @escaping UserStateChange) {
+        map?.addActionChain(actions, finalState: screenState, r: r, file: file, line: line)
+        swipeDown(element, to: actions[0], if: predicate, file: file, line: line)
     }
 }
 
@@ -457,7 +499,7 @@ extension ScreenStateNode {
                  file: String = #file, line: UInt = #line,
                  recorder: @escaping UserStateChange) {
         if let element = element {
-            onEnter(predicate, element: element)
+            onEnter(predicate, element: element, file: file, line: line)
         }
         onEnterStateRecorder = recorder
     }
