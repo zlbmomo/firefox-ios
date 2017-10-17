@@ -56,6 +56,9 @@
                   Identifier = "L10nSnapshotTests/test10MenuOnWebPage()">
                </Test>
                <Test
+                  Identifier = "L10nSnapshotTests/test14SetHompage()">
+               </Test>
+               <Test
                   Identifier = "L10nSnapshotTests/test18TopSitesMenu()">
                </Test>
                <Test
@@ -63,6 +66,12 @@
                </Test>
                <Test
                   Identifier = "L10nSnapshotTests/test20BookmarksTableContextMenu()">
+               </Test>
+               <Test
+                  Identifier = "L10nSnapshotTests/test23ReadingListTableRowMenu()">
+               </Test>
+               <Test
+                  Identifier = "L10nSnapshotTests/test24BookmarksListTableRowMenu()">
                </Test>
             </SkippedTests>
          </TestableReference>
