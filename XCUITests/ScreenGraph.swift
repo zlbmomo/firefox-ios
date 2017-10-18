@@ -386,6 +386,11 @@ extension ScreenStateNode {
             }
             g()
         })
+
+        guard let _ = map?.namedScenes[nodeName] else {
+            map?.xcTest.recordFailure(withDescription: "Node \(nodeName) has not been declared anywhere", inFile: file, atLine: line, expected: false)
+            return 
+        }
         addEdge(nodeName, by: edge)
     }
 
@@ -410,6 +415,12 @@ extension ScreenStateNode {
     func doubleTap(_ element: XCUIElement, to nodeName: String, if predicate: String? = nil, file: String = #file, line: UInt = #line) {
         self.gesture(withElement: element, to: nodeName, if: predicate, file: file, line: line) {
             element.doubleTap()
+        }
+    }
+
+    func press(_ element: XCUIElement, forDuration duration: TimeInterval = 1, to nodeName: String, if predicate: String? = nil, file: String = #file, line: UInt = #line) {
+        self.gesture(withElement: element, to: nodeName, if: predicate, file: file, line: line) {
+            element.press(forDuration: duration)
         }
     }
 
@@ -466,6 +477,12 @@ extension ScreenStateNode {
         map?.addActionChain(actions, finalState: screenState, r: r, file: file, line: line)
         doubleTap(element, to: actions[0], if: predicate, file: file, line: line)
     }
+
+    func press(_ element: XCUIElement, forDuration duration: TimeInterval = 1, forAction actions: String..., transitionTo screenState: String? = nil, if predicate: String? = nil, file: String = #file, line: UInt = #line, r: @escaping UserStateChange) {
+        map?.addActionChain(actions, finalState: screenState, r: r, file: file, line: line)
+        press(element, forDuration: duration, to: actions[0], if: predicate, file: file, line: line)
+    }
+
 
     func typeText(_ text: String, into element: XCUIElement, forAction actions: String..., transitionTo screenState: String? = nil, if predicate: String? = nil, file: String = #file, line: UInt = #line, r: @escaping UserStateChange) {
         map?.addActionChain(actions, finalState: screenState, r: r, file: file, line: line)
@@ -571,6 +588,10 @@ class Navigator<T: UserState> {
         // Then, we should update the routable graph with respect
         // to the user state.
         _ = userStateShouldChangeGraph(userState)
+    }
+
+    func synchronizeWithUserState() {
+        _ = userStateShouldChangeGraph(self.userState)
     }
 
     /**
@@ -690,6 +711,22 @@ class Navigator<T: UserState> {
         goto(screenActionName, file: file, line: line)
     }
 
+    func back(file: String = #file, line: UInt = #line) {
+        guard let currentScene = currentScene as? ScreenStateNode else {
+            return
+        }
+
+        guard let returnNode = currentScene.returnNode,
+            let _ = currentScene.backAction else {
+                xcTest.recordFailure(withDescription: "No valid back action", inFile: currentScene.file, atLine: currentScene.line, expected: false)
+                xcTest.recordFailure(withDescription: "No valid back action", inFile: file, atLine: line, expected: false)
+                return
+        }
+
+        goto(returnNode.name)
+    }
+
+
     func toggleOn(_ flag: Bool, withAction action: String, file: String = #file, line: UInt = #line) {
         if !flag {
             performAction(action, file: file, line: line)
@@ -697,7 +734,7 @@ class Navigator<T: UserState> {
     }
 
     func toggleOff(_ flag: Bool, withAction action: String, file: String = #file, line: UInt = #line) {
-        toggleOn(!flag, withAction: action)
+        toggleOn(!flag, withAction: action, file: file, line: line)
     }
 
     /**
@@ -718,18 +755,9 @@ class Navigator<T: UserState> {
      * Visit the named nodes, calling the NodeVisitor the first time it is encountered.
      */
     func visitNodes(_ nodes: [String], file: String = #file, line: UInt = #line, f: @escaping NodeVisitor) {
-        var visitedNodes = Set<String>()
-        let desiredNodes = Set<String>(nodes)
         nodes.forEach { node in
-            if visitedNodes.contains(node) {
-                return
-            }
-            self.goto(node, file: file, line: line) { visitedNode in
-                if desiredNodes.contains(visitedNode) && !visitedNodes.contains(visitedNode) {
-                    f(visitedNode)
-                }
-                visitedNodes.insert(visitedNode)
-            }
+            self.goto(node, file: file, line: line)
+            f(node)
         }
     }
 
