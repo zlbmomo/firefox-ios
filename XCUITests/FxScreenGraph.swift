@@ -8,7 +8,10 @@ import XCTest
 let FirstRun = "OptionalFirstRun"
 let TabTray = "TabTray"
 let PrivateTabTray = "PrivateTabTray"
+let NewTabScreen = "NewTabScreen"
 let URLBarOpen = "URLBarOpen"
+let URLBarLongPressMenu = "URLBarLongPressMenu"
+let ReloadLongPressMenu = "ReloadLongPressMenu"
 let PrivateURLBarOpen = "PrivateURLBarOpen"
 let BrowserTab = "BrowserTab"
 let PrivateBrowserTab = "PrivateBrowserTab"
@@ -26,6 +29,9 @@ let LoginsSettings = "LoginsSettings"
 let OpenWithSettings = "OpenWithSettings"
 let ShowTourInSettings = "ShowTourInSettings"
 let Intro_FxASignin = "Intro_FxASignin"
+let WebImageContextMenu = "WebImageContextMenu"
+let WebLinkContextMenu = "WebLinkContextMenu"
+let CloseTabMenu = "CloseTabMenu"
 
 let allSettingsScreens = [
     SettingsScreen,
@@ -76,36 +82,44 @@ let allPrivateHomePanels = [
     P_HomePanel_ReadingList
 ]
 
-let ContextMenu_ReloadButton = "ContextMenu_ReloadButton"
+class Action {
+    static let LoadURL = "LoadURL"
+    static let LoadURLByTyping = "LoadURLByTyping"
+    static let LoadURLByPasting = "LoadURLByPasting"
 
+    static let SetURL = "SetURL"
+    static let SetURLByTyping = "SetURLByTyping"
+    static let SetURLByPasting = "SetURLByPasting"
+
+    static let ReloadURL = "ReloadURL"
+
+    static let TogglePrivateMode = "TogglePrivateBrowing"
+    static let ToggleRequestDesktopSite = "ToggleRequestDesktopSite"
+}
 
 class FxUserState: UserState {
     required init() {
         super.init()
         initialScreenState = FirstRun
     }
+
+    var isPrivate = false
+    var showIntro = false
+    var showWhatsNew = false
+    var url: String? = nil
+    var requestDesktopSite = false
 }
 
-func createScreenGraph(for test: XCTestCase, with app: XCUIApplication, url: String = "https://www.mozilla.org/en-US/book/") -> ScreenGraph<FxUserState> {
+fileprivate let defaultURL = "https://www.mozilla.org/en-US/book/"
+
+func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> ScreenGraph<FxUserState> {
     let map = ScreenGraph(for: test, with: FxUserState.self)
 
-    let startBrowsingButton = app.buttons["IntroViewController.startBrowsingButton"]
     let introScrollView = app.scrollViews["IntroViewController.scrollView"]
-    map.createScene(FirstRun) { scene in
-        // We don't yet have conditional edges, so we declare an edge from this node
-        // to BrowserTab, and then just make it work.
-        if introScrollView.exists {
-
-            scene.gesture(to: BrowserTab) {
-                // go find the startBrowsing button on the second page of the intro.
-                introScrollView.swipeLeft()
-                startBrowsingButton.tap()
-           }
-
-            scene.noop(to: allIntroPages[0])
-        } else {
-            scene.noop(to: HomePanelsScreen)
-        }
+    map.addScreenState(FirstRun) { scene in
+        scene.noop(to: BrowserTab, if: "showIntro == false && showWhatsNew == true")
+        scene.noop(to: NewTabScreen, if: "showIntro == false && showWhatsNew == false")
+        scene.noop(to: allIntroPages[0], if: "showIntro == true")
     }
 
     // Add the intro screens.
@@ -116,7 +130,7 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication, url: Str
         let prev = i == 0 ? nil : allIntroPages[i - 1]
         let next = i == introLast ? nil : allIntroPages[i + 1]
 
-        map.createScene(intro) { scene in
+        map.addScreenState(intro) { scene in
             if let prev = prev {
                 scene.swipeRight(introPager, to: prev)
             }
@@ -126,6 +140,7 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication, url: Str
             }
 
             if i > 0 {
+                let startBrowsingButton = app.buttons["IntroViewController.startBrowsingButton"]
                 scene.tap(startBrowsingButton, to: BrowserTab)
             }
         }
@@ -133,59 +148,85 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication, url: Str
         i += 1
     }
 
-    map.createScene(URLBarOpen) { scene in
-        // This is used for opening BrowserTab with default mozilla URL
-        // For custom URL, should use Navigator.openNewURL or Navigator.openURL.
-        scene.typeText(url + "\r", into: app.textFields["address"], to: BrowserTab)
-        scene.tap( app.textFields["url"], to: HomePanelsScreen)
-        /*
-        scene.backAction = {
-            app.buttons["goBack"].tap()
-        }
- */
-    }
-
-    map.createScene(PrivateURLBarOpen) { scene in
-        // This is used for opening BrowserTab with default mozilla URL
-        // For custom URL, should use Navigator.openNewURL or Navigator.openURL.
-        scene.typeText(url + "\r", into: app.textFields["address"], to:PrivateBrowserTab)
-        scene.tap( app.textFields["address"], to: PrivateHomePanelsScreen)
-    }
-
     let noopAction = {}
+
+    // Some internally useful screen states.
+    let URLBarAvailable = "URLBarAvailable"
+    let Loading = "Loading"
+    let ToolBarAvailable = "ToolBarAvailable"
+
+
+    map.addScreenState(NewTabScreen) { screenState in
+        screenState.noop(to: HomePanelsScreen)
+        screenState.noop(to: URLBarAvailable)
+        screenState.tap(app.buttons["TabToolbar.menuButton"], to: BrowserTabMenu)
+    }
+
+    map.addScreenState(URLBarAvailable) { screenState in
+        screenState.backAction = noopAction
+        screenState.tap(app.textFields["url"], to: URLBarOpen)
+        screenState.gesture(to: URLBarLongPressMenu) {
+            app.textFields["url"].press(forDuration: 1.0)
+        }
+    }
+
+    map.addScreenState(URLBarLongPressMenu) { screenState in
+        let menu = app.sheets.element(boundBy: 0)
+        screenState.onEnter(element: menu)
+
+        screenState.gesture(forAction: Action.LoadURLByPasting, Action.LoadURL) { userState in
+            UIPasteboard.general.string = userState.url ?? defaultURL
+            menu.buttons.element(boundBy: 0).tap()
+        }
+
+        screenState.gesture(forAction: Action.SetURLByPasting) { userState in
+            UIPasteboard.general.string = userState.url ?? defaultURL
+            menu.buttons.element(boundBy: 1).tap()
+        }
+
+        screenState.backAction = {
+            menu.buttons.element(boundBy: 3).tap()
+        }
+
+        screenState.dismissOnUse = true
+    }
+
+    map.addScreenState(URLBarOpen) { scene in
+        // This is used for opening BrowserTab with default mozilla URL
+        // For custom URL, should use Navigator.openNewURL or Navigator.openURL.
+        scene.gesture(forAction: Action.LoadURLByTyping, Action.LoadURL) { userState in
+            let url = userState.url ?? defaultURL
+            app.textFields["address"].typeText("\(url)\r")
+        }
+
+        scene.gesture(forAction: Action.SetURLByTyping, Action.SetURL) { userState in
+            let url = userState.url ?? defaultURL
+            app.textFields["address"].typeText("\(url)")
+        }
+
+        scene.noop(to: HomePanelsScreen)
+
+        scene.backAction = {
+            app.buttons["urlBar-cancel"].tap()
+        }
+    }
+
+    map.addScreenAction(Action.LoadURL, transitionTo: Loading) { _ in }
+    map.addScreenState(Loading) { screenState in
+        screenState.onEnter("exists != true", element: app.progressIndicators.element(boundBy: 0))
+        screenState.noop(to: BrowserTab)
+    }
+
     map.createScene(HomePanelsScreen) { scene in
         scene.tap(app.buttons["HomePanels.TopSites"], to: HomePanel_TopSites)
         scene.tap(app.buttons["HomePanels.Bookmarks"], to: HomePanel_Bookmarks)
         scene.tap(app.buttons["HomePanels.History"], to: HomePanel_History)
         scene.tap(app.buttons["HomePanels.ReadingList"], to: HomePanel_ReadingList)
 
-        scene.tap(app.textFields["url"], to: URLBarOpen)
-        scene.tap(app.buttons["TabToolbar.menuButton"], to: BrowserTabMenu)
         if map.isiPad() {
             scene.tap(app.buttons["TopTabsViewController.tabsButton"], to: TabTray)
         } else {
             scene.gesture(to: TabTray) {
-                if (app.buttons["TabToolbar.tabsButton"].exists) {
-                    app.buttons["TabToolbar.tabsButton"].tap()
-                } else {
-                    app.buttons["URLBarView.tabsButton"].tap()
-                }
-            }
-        }
-    }
-
-    map.createScene(PrivateHomePanelsScreen) { scene in
-        scene.tap(app.buttons["HomePanels.TopSites"], to: P_HomePanel_TopSites)
-        scene.tap(app.buttons["HomePanels.Bookmarks"], to: P_HomePanel_Bookmarks)
-        scene.tap(app.buttons["HomePanels.History"], to: P_HomePanel_History)
-        scene.tap(app.buttons["HomePanels.ReadingList"], to: P_HomePanel_ReadingList)
-
-        scene.tap(app.textFields["url"], to: PrivateURLBarOpen)
-        scene.tap(app.buttons["TabToolbar.menuButton"], to: BrowserTabMenu)
-        if map.isiPad() {
-            scene.tap(app.buttons["TopTabsViewController.tabsButton"], to: PrivateTabTray)
-        } else {
-            scene.gesture(to: PrivateTabTray) {
                 if (app.buttons["TabToolbar.tabsButton"].exists) {
                     app.buttons["TabToolbar.tabsButton"].tap()
                 } else {
@@ -201,18 +242,6 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication, url: Str
         map.createScene(name) { scene in
             scene.backAction = noopAction
         }
-    }
-
-    allPrivateHomePanels.forEach { name in
-        // Tab panel means that all the home panels are available all the time, so we can
-        // fake this out by a noop back to the HomePanelsScreen which can get to every other panel.
-        map.createScene(name) { scene in
-            scene.backAction = noopAction
-        }
-    }
-
-    let closeMenuAction = {
-        app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.25)).tap()
     }
 
     let navigationControllerBackAction = {
@@ -308,32 +337,41 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication, url: Str
         }
         scene.backAction = {
             introScrollView.swipeLeft()
+            let startBrowsingButton = app.buttons["IntroViewController.startBrowsingButton"]
             startBrowsingButton.tap()
         }
-
     }
 
     map.createScene(Intro_FxASignin) { scene in
        scene.tap(app.navigationBars["Client.FxAContentView"].buttons.element(boundBy: 0), to: HomePanelsScreen)
     }
 
-    map.createScene(PrivateTabTray) { scene in
-        scene.tap(app.buttons["TabTrayController.addTabButton"], to: PrivateHomePanelsScreen)
-        scene.tap(app.buttons["TabTrayController.maskButton"], to: TabTray)
-    }
-
     map.createScene(TabTray) { scene in
-        scene.tap(app.buttons["TabTrayController.addTabButton"], to: HomePanelsScreen)
-        scene.tap(app.buttons["TabTrayController.maskButton"], to: PrivateTabTray)
+        scene.tap(app.buttons["TabTrayController.addTabButton"], to: NewTabScreen)
+        scene.tap(app.buttons["TabTrayController.maskButton"], forAction: Action.TogglePrivateMode) { userState in
+            userState.isPrivate = !userState.isPrivate
+        }
+        scene.tap(app.buttons["TabTrayController.removeTabsButton"], to: CloseTabMenu)
     }
 
-    map.createScene(BrowserTab) { scene in
-        scene.tap(app.textFields["url"], to: URLBarOpen)
-        scene.tap(app.buttons["TabToolbar.menuButton"], to: BrowserTabMenu)
+    map.addScreenState(CloseTabMenu) { screenState in
+        screenState.backAction = cancelBackAction
+    }
+
+    let lastButtonIsCancel = {
+        let lastIndex = app.sheets.element(boundBy: 0).buttons.count - 1
+        app.sheets.element(boundBy: 0).buttons.element(boundBy: lastIndex).tap()
+    }
+
+    map.addScreenState(ToolBarAvailable) { screenState in
+        screenState.backAction = noopAction
+
+        screenState.tap(app.buttons["TabLocationView.pageOptionsButton"], to: PageOptionsMenu)
+        screenState.tap(app.buttons["TabToolbar.menuButton"], to: BrowserTabMenu)
         if map.isiPad() {
-            scene.tap(app.buttons["TopTabsViewController.tabsButton"], to: TabTray)
+            screenState.tap(app.buttons["TopTabsViewController.tabsButton"], to: TabTray)
         } else {
-            scene.gesture(to: TabTray) {
+            screenState.gesture(to: TabTray) {
                 if (app.buttons["TabToolbar.tabsButton"].exists) {
                     app.buttons["TabToolbar.tabsButton"].tap()
                 } else {
@@ -341,9 +379,43 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication, url: Str
                 }
             }
         }
-        scene.tap(app.buttons["TabLocationView.pageOptionsButton"], to: PageOptionsMenu)
+    }
+
+    map.createScene(BrowserTab) { scene in
+        scene.noop(to: URLBarAvailable)
+        scene.noop(to: ToolBarAvailable)
+
+        let link = app.webViews.element(boundBy: 0).links.element(boundBy: 0)
+        let image = app.webViews.element(boundBy: 0).images.element(boundBy: 0)
+
+        scene.press(link, to: WebLinkContextMenu)
+        scene.press(image, to: WebImageContextMenu)
+
+        let reloadButton = app.buttons["TabToolbar.stopReloadButton"]
+        scene.press(reloadButton, to: ReloadLongPressMenu)
+        scene.tap(reloadButton, forAction: Action.ReloadURL, Action.LoadURL) { _ in }
 
         scene.backAction = backBtnBackAction
+    }
+
+    map.addScreenState(ReloadLongPressMenu) { screenState in
+        screenState.backAction = lastButtonIsCancel
+        screenState.dismissOnUse = true
+
+        let rdsButton = app.cells["menu-RequestDesktopSite"]
+        screenState.tap(rdsButton, forAction: Action.ToggleRequestDesktopSite) { userState in
+            userState.requestDesktopSite = !userState.requestDesktopSite
+        }
+    }
+
+    map.addScreenState(WebImageContextMenu) { screenState in
+        screenState.dismissOnUse = true
+        screenState.backAction = lastButtonIsCancel
+    }
+
+    map.addScreenState(WebLinkContextMenu) { screenState in
+        screenState.dismissOnUse = true
+        screenState.backAction = lastButtonIsCancel
     }
 
     // make sure after the menu action, navigator.nowAt() is used to set the current state
@@ -357,30 +429,11 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication, url: Str
         scene.tap(app.buttons["FindInPage.close"], to: BrowserTab)
     }
 
-    map.createScene(PrivateBrowserTab) { scene in
-        scene.tap(app.textFields["url"], to: URLBarOpen)
-        scene.tap(app.buttons["TabToolbar.menuButton"], to: BrowserTabMenu)
-        if map.isiPad() {
-            scene.tap(app.buttons["TopTabsViewController.tabsButton"], to: PrivateTabTray)
-        } else {
-            scene.gesture(to: PrivateTabTray) {
-                if (app.buttons["TabToolbar.tabsButton"].exists) {
-                    app.buttons["TabToolbar.tabsButton"].tap()
-                } else {
-                    app.buttons["URLBarView.tabsButton"].tap()
-                }
-            }
-        }
-        scene.tap(app.buttons["TabLocationView.pageOptionsButton"], to: PageOptionsMenu)
-
-        scene.backAction = backBtnBackAction
-    }
-
     map.createScene(BrowserTabMenu) { scene in
-        scene.backAction = closeMenuAction
         scene.tap(app.tables.cells["Settings"], to: SettingsScreen)
 
         scene.dismissOnUse = true
+        scene.backAction = cancelBackAction
     }
 
     return map
