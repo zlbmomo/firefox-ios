@@ -16,7 +16,7 @@ class NoImageTests: BaseTestCase {
 
     private func hideImages() {
         navigator.goto(BrowserTabMenu)
-        app.tables[ContextMenuIdentifier].cells[NoImageButtonIdentifier].tap()
+        app.tables.cells[NoImageButtonIdentifier].tap()
         navigator.nowAt(BrowserTab)
     }
 
