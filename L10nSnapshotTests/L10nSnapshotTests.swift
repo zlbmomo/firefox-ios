@@ -6,81 +6,47 @@ import XCTest
 
 class L10nSnapshotTests: L10nBaseSnapshotTests {
     func test02DefaultTopSites() {
+        navigator.goto(HomePanelsScreen)
         snapshot("02DefaultTopSites-01")
     }
 
     func test03MenuOnTopSites() {
-        let app = XCUIApplication()
-        app.buttons["TabToolbar.menuButton"].tap()
+        navigator.goto(NewTabScreen)
+        navigator.goto(BrowserTabMenu)
         snapshot("03MenuOnTopSites-01")
-        app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.25)).tap()
-
-        loadWebPage(url: "about:blank", waitForLoadToFinish: false)
-        sleep(2)
-        app.buttons["TabToolbar.menuButton"].tap()
-        snapshot("10MenuOnWebPage-01")
-        app.otherElements["MenuViewController.menuView"].swipeLeft()
-        snapshot("10MenuOnWebPage-02")
-        app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.25)).tap()
-
-        app.buttons["URLBarView.tabsButton"].tap()
-        app.buttons["TabTrayController.menuButton"].tap()
-        snapshot("10MenuOnTabsTray-02")
     }
 
-    func test04Foo() {
-        let app = XCUIApplication()
-        loadWebPage(url: "http://wopr.norad.org/~sarentz/fxios/testpages/index.html", waitForOtherElementWithAriaLabel: "body")
-        app.buttons["TabToolbar.menuButton"].tap()
-        snapshot("10MenuOnWebPage-01")
-        app.otherElements["MenuViewController.menuView"].swipeLeft()
-        snapshot("10MenuOnWebPage-02")
+    func scroll(_ table: XCUIElement, eachScreen: (Int) -> ()) {
+        // TODO implement steadily scrolling up the screen
+        // hint: find the last cell that is hittable, and swipe up until it isn't
+        eachScreen(0)
     }
 
     func test04Settings() {
-        let app = XCUIApplication()
-        app.buttons["TabToolbar.menuButton"].tap()
-        app.otherElements["MenuViewController.menuView"].swipeLeft()
-        app.cells["SettingsMenuItem"].tap()
-        snapshot("04SettingsTopLevel")
-
-        // TODO Scroll through the settings and make a screenshot of every page
-
-        // Screenshot all the settings that have a separate page
-        for cellName in ["Search", "NewTab", "Homepage", "Logins"] {
-            app.tables["AppSettingsTableViewController.tableView"].cells[cellName].tap()
-            snapshot("04Settings-\(cellName)")
-            app.navigationBars.element(boundBy: 0).buttons.element(boundBy: 0).tap()
+        let table = app.tables.element(boundBy: 0)
+        navigator.goto(SettingsScreen)
+        scroll(table) { i in
+            snapshot("04Settings-main-\(i)")
         }
 
-        // Unclear why this is needed - without it the test framework finds two TouchIDPasscode cells
-        app.tables["AppSettingsTableViewController.tableView"].swipeUp()
-
-        for cellName in ["TouchIDPasscode", "ClearPrivateData", "TrackingProtection"] {
-            app.tables["AppSettingsTableViewController.tableView"].cells[cellName].tap()
-            snapshot("04Settings-\(cellName)")
-            app.navigationBars.element(boundBy: 0).buttons.element(boundBy: 0).tap()
+        navigator.visitNodes(allSettingsScreens) { nodeName in
+            self.scroll(table) { i in
+                snapshot("04Settings-\(nodeName)-\(i)")
+            }
         }
     }
 
     func test05PrivateBrowsingTabsEmptyState() {
-        let app = XCUIApplication()
-        app.buttons["URLBarView.tabsButton"].tap() // Open tabs tray
-        app.buttons["TabTrayController.maskButton"].tap() // Switch to private mode
+        navigator.toggleOn(userState.isPrivate, withAction: Action.TogglePrivateMode)
         snapshot("05PrivateBrowsingTabsEmptyState-01")
     }
 
     func test06PanelsEmptyState() {
-        let app = XCUIApplication()
-        app.textFields["url"].tap()
-        app.buttons["HomePanels.Bookmarks"].tap()
-        snapshot("06PanelsEmptyState-01")
-        app.buttons["HomePanels.History"].tap()
-        snapshot("06PanelsEmptyState-02")
-        app.cells["HistoryPanel.syncedDevicesCell"].tap()
-        snapshot("06PanelsEmptyState-03")
-        app.buttons["HomePanels.ReadingList"].tap()
-        snapshot("06PanelsEmptyState-04")
+        var i = 0
+        navigator.visitNodes(allHomePanels) { nodeName in
+            snapshot("06PanelsEmptyState-\(i)-\(nodeName)")
+            i += 1
+        }
     }
 
     // From here on it is fine to load pages
@@ -100,58 +66,57 @@ class L10nSnapshotTests: L10nBaseSnapshotTests {
     }
 
     func test08URLBar() {
-        let app = XCUIApplication()
-        app.textFields["url"].tap()
+        navigator.goto(URLBarOpen)
         snapshot("08URLBar-01")
-        app.textFields["address"].typeText("moz")
+
+        userState.url = "moz"
+        navigator.performAction(Action.SetURLByTyping)
         snapshot("08URLBar-02")
     }
 
     func test09URLBarContextMenu() {
-        let app = XCUIApplication()
         // Long press with nothing on the clipboard
-        app.textFields["url"].press(forDuration: 2.0)
-        snapshot("09LocationBarContextMenu-01")
-        app.sheets.element(boundBy: 0).buttons.element(boundBy: 0).tap()
-        sleep(2)
+        navigator.goto(URLBarLongPressMenu)
+        snapshot("09LocationBarContextMenu-01-no-url")
+        navigator.back()
 
         // Long press with a URL on the clipboard
         UIPasteboard.general.string = "https://www.mozilla.com"
-        app.textFields["url"].press(forDuration: 2.0)
-        snapshot("09LocationBarContextMenu-02")
-        app.sheets.element(boundBy: 0).buttons.element(boundBy: 0).tap()
-        sleep(2)
+        navigator.goto(URLBarLongPressMenu)
+        snapshot("09LocationBarContextMenu-02-with-url")
     }
 
     func test10MenuOnWebPage() {
-        let app = XCUIApplication()
-        loadWebPage(url: "http://wopr.norad.org/~sarentz/fxios/testpages/index.html", waitForOtherElementWithAriaLabel: "body")
-        app.buttons["TabToolbar.menuButton"].tap()
+        userState.url = "http://wopr.norad.org/~sarentz/fxios/testpages/index.html"
+        navigator.performAction(Action.LoadURL)
+        navigator.goto(BrowserTabMenu)
         snapshot("10MenuOnWebPage-01")
-        app.otherElements["MenuViewController.menuView"].swipeLeft()
+
+        navigator.goto(PageOptionsMenu)
         snapshot("10MenuOnWebPage-02")
     }
 
     func test11WebViewContextMenu() {
-        let app = XCUIApplication()
-
         // Link
-        loadWebPage(url: "http://wopr.norad.org/~sarentz/fxios/testpages/link.html", waitForOtherElementWithAriaLabel: "body")
-        app.webViews.element(boundBy: 0).links["link"].press(forDuration: 2.0)
-        snapshot("11WebViewContextMenu-01")
-        app.sheets.element(boundBy: 0).buttons.element(boundBy: app.sheets.element(boundBy: 0).buttons.count-1).tap()
+        userState.url = "http://wopr.norad.org/~sarentz/fxios/testpages/link.html"
+        navigator.performAction(Action.LoadURL)
+        navigator.goto(WebLinkContextMenu)
+        snapshot("11WebViewContextMenu-01-link")
+        navigator.back()
 
         // Image
-        loadWebPage(url: "http://wopr.norad.org/~sarentz/fxios/testpages/image.html", waitForOtherElementWithAriaLabel: "body")
-        app.webViews.element(boundBy: 0).images["image"].press(forDuration: 2.0)
-        snapshot("11WebViewContextMenu-02")
-        app.sheets.element(boundBy: 0).buttons.element(boundBy: app.sheets.element(boundBy: 0).buttons.count-1).tap()
+        userState.url = "http://wopr.norad.org/~sarentz/fxios/testpages/image.html"
+        navigator.performAction(Action.LoadURL)
+        navigator.goto(WebImageContextMenu)
+        snapshot("11WebViewContextMenu-02-image")
+        navigator.back()
 
         // Image inside Link
-        loadWebPage(url: "http://wopr.norad.org/~sarentz/fxios/testpages/imageWithLink.html", waitForOtherElementWithAriaLabel: "body")
-        app.webViews.element(boundBy: 0).links["link"].press(forDuration: 2.0)
+        userState.url = "http://wopr.norad.org/~sarentz/fxios/testpages/imageWithLink.html"
+        navigator.performAction(Action.LoadURL)
+        navigator.goto(WebLinkContextMenu)
         snapshot("11WebViewContextMenu-03")
-        app.sheets.element(boundBy: 0).buttons.element(boundBy: app.sheets.element(boundBy: 0).buttons.count-1).tap()
+        navigator.back()
     }
 
     func test12WebViewAuthenticationDialog() {
@@ -164,13 +129,15 @@ class L10nSnapshotTests: L10nBaseSnapshotTests {
     }
 
     func test13ReloadButtonContextMenu() {
-        let app = XCUIApplication()
-        loadWebPage(url: "http://wopr.norad.org/~sarentz/fxios/testpages/index.html", waitForOtherElementWithAriaLabel: "body")
-        app.buttons["TabToolbar.stopReloadButton"].press(forDuration: 2.0)
-        snapshot("13ContextMenuReloadButton-01", waitForLoadingIndicator: false)
-        app.sheets.element(boundBy: 0).buttons.element(boundBy: 0).tap()
-        app.buttons["TabToolbar.stopReloadButton"].press(forDuration: 2.0)
+        userState.url = "http://wopr.norad.org/~sarentz/fxios/testpages/index.html"
+        navigator.performAction(Action.LoadURL)
+        navigator.toggleOff(userState.requestDesktopSite, withAction: Action.ToggleRequestDesktopSite)
+        navigator.goto(ReloadLongPressMenu)
+        snapshot("13ContextMenuReloadButton-01")
+        navigator.toggleOn(userState.requestDesktopSite, withAction: Action.ToggleRequestDesktopSite)
+        navigator.goto(ReloadLongPressMenu)
         snapshot("13ContextMenuReloadButton-02", waitForLoadingIndicator: false)
+        navigator.back()
     }
 
     func test14SetHompage() {
