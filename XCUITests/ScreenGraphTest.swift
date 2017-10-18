@@ -46,17 +46,17 @@ extension ScreenGraphTest {
 
     func testSimpleToggleAction() {
         // Switch night mode on, by toggling.
-        navigator.performAction(Action.ToggleNightMode)
+        navigator.performAction(TestActions.ToggleNightMode)
         XCTAssertTrue(navigator.userState.nightMode)
         XCTAssertEqual(navigator.screenState, BrowserTab)
 
         // Nothing should happen here, because night mode is already on.
-        navigator.toggleOn(navigator.userState.nightMode, withAction: Action.ToggleNightMode)
+        navigator.toggleOn(navigator.userState.nightMode, withAction: TestActions.ToggleNightMode)
         XCTAssertTrue(navigator.userState.nightMode)
         XCTAssertEqual(navigator.screenState, BrowserTab)
 
         // Switch night mode off.
-        navigator.toggleOff(navigator.userState.nightMode, withAction: Action.ToggleNightMode)
+        navigator.toggleOff(navigator.userState.nightMode, withAction: TestActions.ToggleNightMode)
         XCTAssertFalse(navigator.userState.nightMode)
         XCTAssertEqual(navigator.screenState, BrowserTab)
     }
@@ -65,7 +65,7 @@ extension ScreenGraphTest {
         let navigator = self.navigator!
         measure {
             navigator.userState.url = defaultURL
-            navigator.performAction(Action.LoadURLByPasting)
+            navigator.performAction(TestActions.LoadURLByPasting)
             XCTAssertEqual(navigator.screenState, BrowserTab)
         }
     }
@@ -74,12 +74,12 @@ extension ScreenGraphTest {
         let navigator = self.navigator!
         measure {
             navigator.userState.url = defaultURL
-            navigator.performAction(Action.LoadURLByTyping)
+            navigator.performAction(TestActions.LoadURLByTyping)
             XCTAssertEqual(navigator.screenState, BrowserTab)
         }
 
         navigator.userState.url = defaultURL
-        navigator.performAction(Action.LoadURL)
+        navigator.performAction(TestActions.LoadURL)
         XCTAssertEqual(navigator.screenState, BrowserTab)
     }
 
@@ -133,7 +133,7 @@ extension ScreenGraphTest {
 }
 
 
-let defaultURL = "https://example.com"
+private let defaultURL = "https://example.com"
 class TestUserState: UserState {
     required init() {
         super.init()
@@ -151,7 +151,7 @@ let PasscodeSettingsOff = "PasscodeSettingsOff"
 let SetPasscodeScreen = "SetPasscodeScreen"
 
 
-fileprivate class Action {
+fileprivate class TestActions {
     static let ToggleNightMode = "menu-NightMode"
     static let LoadURL = "LoadURL"
     static let LoadURLByTyping = "LoadURLByTyping"
@@ -174,7 +174,7 @@ fileprivate func createTestGraph(for test: XCTestCase, with app: XCUIApplication
         screenState.tap(app.buttons["TabToolbar.menuButton"], to: BrowserTabMenu)
         screenState.tap(app.textFields["url"], to: URLBarOpen)
 
-        screenState.gesture(forAction: Action.LoadURLByPasting, Action.LoadURL) { userState in
+        screenState.gesture(forAction: TestActions.LoadURLByPasting, TestActions.LoadURL) { userState in
             UIPasteboard.general.string = userState.url ?? defaultURL
             app.textFields["url"].press(forDuration: 1.0)
             app.sheets.element(boundBy: 0).buttons.element(boundBy: 0).tap()
@@ -182,13 +182,13 @@ fileprivate func createTestGraph(for test: XCTestCase, with app: XCUIApplication
     }
 
     map.addScreenState(URLBarOpen) { screenState in
-        screenState.gesture(forAction: Action.LoadURLByTyping, Action.LoadURL) { userState in
+        screenState.gesture(forAction: TestActions.LoadURLByTyping, TestActions.LoadURL) { userState in
             let urlString = userState.url ?? defaultURL
             app.textFields["address"].typeText("\(urlString)\r")
         }
     }
 
-    map.addScreenAction(Action.LoadURL, transitionTo: BrowserTab) { userState in
+    map.addScreenAction(TestActions.LoadURL, transitionTo: BrowserTab) { userState in
         // NOP
     }
 
@@ -197,7 +197,7 @@ fileprivate func createTestGraph(for test: XCTestCase, with app: XCUIApplication
         screenState.onEnter(element: app.tables["Context Menu"])
         screenState.tap(app.tables.cells["Settings"], to: SettingsScreen)
 
-        screenState.tap(app.cells["menu-NightMode"], forAction: Action.ToggleNightMode) { userState in
+        screenState.tap(app.cells["menu-NightMode"], forAction: TestActions.ToggleNightMode) { userState in
             userState.nightMode = !userState.nightMode
         }
 
