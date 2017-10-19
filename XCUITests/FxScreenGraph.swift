@@ -402,7 +402,7 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
         screenState.backAction = lastButtonIsCancel
         screenState.dismissOnUse = true
 
-        let rdsButton = app.cells["menu-RequestDesktopSite"]
+        let rdsButton = app.sheets.element(boundBy: 0).buttons.element(boundBy: 0)
         screenState.tap(rdsButton, forAction: Action.ToggleRequestDesktopSite) { userState in
             userState.requestDesktopSite = !userState.requestDesktopSite
         }
