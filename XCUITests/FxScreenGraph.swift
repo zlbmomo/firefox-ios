@@ -28,20 +28,22 @@ let ClearPrivateDataSettings = "ClearPrivateDataSettings"
 let LoginsSettings = "LoginsSettings"
 let OpenWithSettings = "OpenWithSettings"
 let ShowTourInSettings = "ShowTourInSettings"
+let TrackingProtectionSettings = "TrackingProtectionSettings"
 let Intro_FxASignin = "Intro_FxASignin"
 let WebImageContextMenu = "WebImageContextMenu"
 let WebLinkContextMenu = "WebLinkContextMenu"
 let CloseTabMenu = "CloseTabMenu"
 
 let allSettingsScreens = [
-    SettingsScreen,
     HomePageSettings,
-    PasscodeSettings,
     SearchSettings,
     NewTabSettings,
+    OpenWithSettings,
+
+    PasscodeSettings,
     ClearPrivateDataSettings,
     LoginsSettings,
-    OpenWithSettings
+    TrackingProtectionSettings,
 ]
 
 let HistoryPanelContextMenu = "HistoryPanelContextMenu"
@@ -175,6 +177,7 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
     let URLBarAvailable = "URLBarAvailable"
     let WebPageLoading = "WebPageLoading"
     let ToolBarAvailable = "ToolBarAvailable"
+    let SettingsScreen2 = "\(SettingsScreen)-bottom"
 
     map.addScreenState(NewTabScreen) { screenState in
         screenState.noop(to: HomePanelsScreen)
@@ -300,21 +303,35 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
         screenState.backAction = dismissContextMenuAction
     }
 
+    map.addScreenState(BookmarksPanelContextMenu) { screenState in
+        screenState.dismissOnUse = true
+        screenState.backAction = dismissContextMenuAction
+    }
 
-
-    map.createScene(SettingsScreen) { scene in
+    map.addScreenState(SettingsScreen) { screenState in
         let table = app.tables["AppSettingsTableViewController.tableView"]
 
-        scene.tap(table.cells["Search"], to: SearchSettings)
-        scene.tap(table.cells["NewTab"], to: NewTabSettings)
-        scene.tap(table.cells["Homepage"], to: HomePageSettings)
-        scene.tap(table.cells["TouchIDPasscode"], to: PasscodeSettings)
-        scene.tap(table.cells["Logins"], to: LoginsSettings)
-        scene.tap(table.cells["ClearPrivateData"], to: ClearPrivateDataSettings)
-        scene.tap(table.cells["OpenWith.Setting"], to: OpenWithSettings)
-        scene.tap(table.cells["ShowTour"], to: ShowTourInSettings)
+        screenState.tap(table.cells["Search"], to: SearchSettings)
+        screenState.tap(table.cells["NewTab"], to: NewTabSettings)
+        screenState.tap(table.cells["Homepage"], to: HomePageSettings)
+        screenState.tap(table.cells["OpenWith.Setting"], to: OpenWithSettings)
 
-        scene.backAction = navigationControllerBackAction
+        screenState.swipeUp(table, to: SettingsScreen2)
+
+        screenState.tap(table.cells["ShowTour"], to: ShowTourInSettings)
+        screenState.tap(table.cells["TrackingProtection"], to: TrackingProtectionSettings)
+
+        screenState.backAction = navigationControllerBackAction
+    }
+
+    map.addScreenState(SettingsScreen2) { screenState in
+        let table = app.tables["AppSettingsTableViewController.tableView"]
+
+        screenState.swipeDown(table, to: SettingsScreen)
+
+        screenState.tap(table.cells["TouchIDPasscode"], to: PasscodeSettings)
+        screenState.tap(table.cells["Logins"], to: LoginsSettings)
+        screenState.tap(table.cells["ClearPrivateData"], to: ClearPrivateDataSettings)
     }
 
     map.createScene(SearchSettings) { scene in
@@ -381,6 +398,10 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
             let startBrowsingButton = app.buttons["IntroViewController.startBrowsingButton"]
             startBrowsingButton.tap()
         }
+    }
+
+    map.addScreenState(TrackingProtectionSettings) { screenState in
+        screenState.backAction = navigationControllerBackAction
     }
 
     map.createScene(Intro_FxASignin) { scene in
