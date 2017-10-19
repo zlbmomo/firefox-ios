@@ -116,12 +116,10 @@ class L10nSnapshotTests: L10nBaseSnapshotTests {
     }
 
     func test12WebViewAuthenticationDialog() {
-        navigator.openURL("http://wopr.norad.org/~sarentz/fxios/testpages/basicauth/index.html")
-        let predicate = NSPredicate(format: "exists == 1")
-        let query = XCUIApplication().alerts.element(boundBy: 0)
-        expectation(for: predicate, evaluatedWith: query, handler: nil)
-        self.waitForExpectations(timeout: 3, handler: nil)
+        navigator.openURL("http://wopr.norad.org/~sarentz/fxios/testpages/basicauth/index.html", waitForLoading: false)
+        navigator.goto(BasicAuthDialog)
         snapshot("12WebViewAuthenticationDialog-01", waitForLoadingIndicator: false)
+        navigator.back()
     }
 
     func test13ReloadButtonContextMenu() {
