@@ -50,6 +50,7 @@ let allSettingsScreens = [
 
 let HistoryPanelContextMenu = "HistoryPanelContextMenu"
 let TopSitesPanelContextMenu = "TopSitesPanelContextMenu"
+
 let BasicAuthDialog = "BasicAuthDialog"
 let BookmarksPanelContextMenu = "BookmarksPanelContextMenu"
 let SetPasscodeScreen = "SetPasscodeScreen"
@@ -149,7 +150,12 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
     }
 
     let cancelBackAction = {
-        app.buttons["PhotonMenu.cancel"].tap()
+        if map.isiPad() {
+            // There is not Cancel option in iPad this way it is closed
+            app/*@START_MENU_TOKEN@*/.otherElements["PopoverDismissRegion"]/*[[".otherElements[\"dismiss popup\"]",".otherElements[\"PopoverDismissRegion\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        } else {
+            app.buttons["PhotonMenu.cancel"].tap()
+        }
     }
 
     let dismissContextMenuAction = {
@@ -299,7 +305,6 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
     map.addScreenState(HomePanel_TopSites) { screenState in
         let topSites = app.cells["TopSitesCell"]
         screenState.press(topSites.cells.matching(identifier: "TopSite").element(boundBy: 0), to: TopSitesPanelContextMenu)
-
         screenState.noop(to: HomePanelsScreen)
     }
 
@@ -350,7 +355,6 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
 
     map.addScreenState(SettingsScreen2) { screenState in
         let table = app.tables.element(boundBy: 0)
-
         screenState.swipeDown(table, to: SettingsScreen)
 
         screenState.tap(table.cells["TouchIDPasscode"], to: PasscodeSettings)
@@ -499,7 +503,6 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
         let reloadButton = app.buttons["TabToolbar.stopReloadButton"]
         scene.press(reloadButton, to: ReloadLongPressMenu)
         scene.tap(reloadButton, forAction: Action.ReloadURL, transitionTo: WebPageLoading) { _ in }
-        scene.tap(app.buttons["TabToolbar.menuButton"], to: BrowserTabMenu)
     }
 
     map.addScreenState(ReloadLongPressMenu) { screenState in
