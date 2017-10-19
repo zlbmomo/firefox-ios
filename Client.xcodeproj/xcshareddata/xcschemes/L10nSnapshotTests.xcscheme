@@ -41,34 +41,22 @@
             </BuildableReference>
             <SkippedTests>
                <Test
-                  Identifier = "L10nSnapshotTests/test03MenuOnTopSites()">
+                  Identifier = "L10nPermissionStringsSnapshotTests">
                </Test>
                <Test
                   Identifier = "L10nSnapshotTests/test04Foo()">
                </Test>
                <Test
-                  Identifier = "L10nSnapshotTests/test04Settings()">
-               </Test>
-               <Test
-                  Identifier = "L10nSnapshotTests/test05PrivateBrowsingTabsEmptyState()">
-               </Test>
-               <Test
-                  Identifier = "L10nSnapshotTests/test10MenuOnWebPage()">
+                  Identifier = "L10nSnapshotTests/test12WebViewAuthenticationDialog()">
                </Test>
                <Test
                   Identifier = "L10nSnapshotTests/test14SetHompage()">
                </Test>
                <Test
-                  Identifier = "L10nSnapshotTests/test18TopSitesMenu()">
-               </Test>
-               <Test
-                  Identifier = "L10nSnapshotTests/test19HistoryTableContextMenu()">
+                  Identifier = "L10nSnapshotTests/test17PasswordSnackbar()">
                </Test>
                <Test
                   Identifier = "L10nSnapshotTests/test20BookmarksTableContextMenu()">
-               </Test>
-               <Test
-                  Identifier = "L10nSnapshotTests/test23ReadingListTableRowMenu()">
                </Test>
                <Test
                   Identifier = "L10nSnapshotTests/test24BookmarksListTableRowMenu()">
