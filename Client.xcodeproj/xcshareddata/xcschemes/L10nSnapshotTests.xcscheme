@@ -49,9 +49,6 @@
                <Test
                   Identifier = "L10nSnapshotTests/test14SetHompage()">
                </Test>
-               <Test
-                  Identifier = "L10nSnapshotTests/test24BookmarksListTableRowMenu()">
-               </Test>
             </SkippedTests>
          </TestableReference>
       </Testables>
