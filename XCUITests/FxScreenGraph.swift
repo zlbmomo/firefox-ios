@@ -46,6 +46,7 @@ let allSettingsScreens = [
 
 let HistoryPanelContextMenu = "HistoryPanelContextMenu"
 let TopSitesPanelContextMenu = "TopSitesPanelContextMenu"
+let BasicAuthDialog = "BasicAuthDialog"
 
 let Intro_Welcome = "Intro.Welcome"
 let Intro_Search = "Intro.Search"
@@ -113,6 +114,7 @@ class FxUserState: UserState {
     var isPrivate = false
     var showIntro = false
     var showWhatsNew = false
+    var waitForLoading = true
     var url: String? = nil
     var requestDesktopSite = false
 }
@@ -171,7 +173,7 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
 
     // Some internally useful screen states.
     let URLBarAvailable = "URLBarAvailable"
-    let Loading = "Loading"
+    let WebPageLoading = "WebPageLoading"
     let ToolBarAvailable = "ToolBarAvailable"
 
     map.addScreenState(NewTabScreen) { screenState in
@@ -190,7 +192,7 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
 
     map.addScreenState(URLBarLongPressMenu) { screenState in
         let menu = app.sheets.element(boundBy: 0)
-        screenState.onEnter(element: menu)
+        screenState.onEnterWaitFor(element: menu)
 
         screenState.gesture(forAction: Action.LoadURLByPasting, Action.LoadURL) { userState in
             UIPasteboard.general.string = userState.url ?? defaultURL
@@ -227,12 +229,28 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
         scene.backAction = {
             app.buttons["urlBar-cancel"].tap()
         }
+        scene.dismissOnUse = true
     }
 
-    map.addScreenAction(Action.LoadURL, transitionTo: Loading) { _ in }
-    map.addScreenState(Loading) { screenState in
-        screenState.onEnter("exists != true", element: app.progressIndicators.element(boundBy: 0))
-        screenState.noop(to: BrowserTab)
+    map.addScreenAction(Action.LoadURL, transitionTo: WebPageLoading) { _ in }
+    map.addScreenState(WebPageLoading) { screenState in
+        screenState.dismissOnUse = true
+        // Would like to use app.otherElements.deviceStatusBars.networkLoadingIndicators.element
+        // but this means exposing some of SnapshotHelper to another target.
+        screenState.onEnterWaitFor("exists != true",
+                                   element: app.progressIndicators.element(boundBy: 0),
+                                   if: "waitForLoading == true")
+
+        screenState.noop(to: BrowserTab, if: "waitForLoading == true")
+        screenState.noop(to: BasicAuthDialog, if: "waitForLoading == false")
+    }
+
+    map.addScreenState(BasicAuthDialog) { screenState in
+        screenState.onEnterWaitFor(element: app.alerts.element(boundBy: 0))
+        screenState.backAction = {
+            app.alerts.element(boundBy: 0).buttons.element(boundBy: 0).tap()
+        }
+        screenState.dismissOnUse = true
     }
 
     map.createScene(HomePanelsScreen) { scene in
@@ -416,7 +434,7 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
 
         let reloadButton = app.buttons["TabToolbar.stopReloadButton"]
         scene.press(reloadButton, to: ReloadLongPressMenu)
-        scene.tap(reloadButton, forAction: Action.ReloadURL, transitionTo: Loading) { _ in }
+        scene.tap(reloadButton, forAction: Action.ReloadURL, transitionTo: WebPageLoading) { _ in }
     }
 
     map.addScreenState(ReloadLongPressMenu) { screenState in
@@ -477,8 +495,9 @@ extension Navigator where T == FxUserState {
         openURL(urlString)
     }
 
-    func openURL(_ urlString: String) {
+    func openURL(_ urlString: String, waitForLoading: Bool = true) {
         userState.url = urlString
+        userState.waitForLoading = waitForLoading
         performAction(Action.LoadURL)
     }
 
