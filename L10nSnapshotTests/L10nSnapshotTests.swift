@@ -90,9 +90,17 @@ class L10nSnapshotTests: L10nBaseSnapshotTests {
         navigator.openURL("http://wopr.norad.org/~sarentz/fxios/testpages/index.html")
         navigator.goto(BrowserTabMenu)
         snapshot("10MenuOnWebPage-01")
+        navigator.back()
+
+        navigator.toggleOn(userState.noImageMode, withAction: Action.ToggleNoImageMode)
+        navigator.toggleOn(userState.nightMode, withAction: Action.ToggleNightMode)
+        navigator.goto(BrowserTabMenu)
+        snapshot("10MenuOnWebPage-02")
+        navigator.back()
 
         navigator.goto(PageOptionsMenu)
-        snapshot("10MenuOnWebPage-02")
+        snapshot("10MenuOnWebPage-03")
+        navigator.back()
     }
 
     func test11WebViewContextMenu() {
