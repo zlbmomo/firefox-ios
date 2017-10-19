@@ -393,7 +393,7 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
 
         let reloadButton = app.buttons["TabToolbar.stopReloadButton"]
         scene.press(reloadButton, to: ReloadLongPressMenu)
-        scene.tap(reloadButton, forAction: Action.ReloadURL, Action.LoadURL) { _ in }
+        scene.tap(reloadButton, forAction: Action.ReloadURL, transitionTo: Loading) { _ in }
 
         scene.backAction = backBtnBackAction
     }
