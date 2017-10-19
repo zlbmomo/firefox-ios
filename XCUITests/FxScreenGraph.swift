@@ -44,6 +44,9 @@ let allSettingsScreens = [
     OpenWithSettings
 ]
 
+let HistoryPanelContextMenu = "HistoryPanelContextMenu"
+let TopSitesPanelContextMenu = "TopSitesPanelContextMenu"
+
 let Intro_Welcome = "Intro.Welcome"
 let Intro_Search = "Intro.Search"
 let Intro_Private = "Intro.Private"
@@ -238,42 +241,48 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
         scene.tap(app.buttons["HomePanels.History"], to: HomePanel_History)
         scene.tap(app.buttons["HomePanels.ReadingList"], to: HomePanel_ReadingList)
 
-        if map.isiPad() {
-            scene.tap(app.buttons["TopTabsViewController.tabsButton"], to: TabTray)
-        } else {
-            scene.gesture(to: TabTray) {
-                if (app.buttons["TabToolbar.tabsButton"].exists) {
-                } else {
-                    app.buttons["URLBarView.tabsButton"].tap()
-                }
+        scene.tap(app.buttons["TopTabsViewController.tabsButton"], to: TabTray, if: "iPad == true")
+        scene.gesture(to: TabTray, if: "iPad == false") {
+            if (app.buttons["TabToolbar.tabsButton"].exists) {
+                app.buttons["TabToolbar.tabsButton"].tap()
+            } else {
+                app.buttons["URLBarView.tabsButton"].tap()
             }
         }
     }
 
-    allHomePanels.forEach { name in
-        // Tab panel means that all the home panels are available all the time, so we can 
-        // fake this out by a noop back to the HomePanelsScreen which can get to every other panel.
-        map.createScene(name) { scene in
-            scene.backAction = noopAction
-        }
+    map.addScreenState(HomePanel_Bookmarks) { screenState in
+        screenState.backAction = noopAction
     }
 
-    let navigationControllerBackAction = {
-        app.navigationBars.element(boundBy: 0).buttons.element(boundBy: 0).tap()
+    map.addScreenState(HomePanel_TopSites) { screenState in
+        let topSites = app.cells["TopSitesCell"]
+        screenState.press(topSites.cells.matching(identifier: "TopSite").element(boundBy: 0), to: TopSitesPanelContextMenu)
+
+        screenState.backAction = noopAction
     }
 
-    let cancelBackAction = {
-        app.buttons["PhotonMenu.cancel"].tap()
+    map.addScreenState(HomePanel_History) { screenState in
+        screenState.backAction = noopAction
+
+        screenState.press(app.tables["History List"].cells.element(boundBy: 2), to: HistoryPanelContextMenu)
     }
 
-    let backBtnBackAction = {
-        if map.isiPad() {
-            app.buttons["URLBarView.backButton"].tap()
-        }
-        else {
-            app.buttons["TabToolbar.backButton"].tap()
-        }
+    map.addScreenState(HomePanel_ReadingList) { screenState in
+        screenState.backAction = noopAction
     }
+
+    map.addScreenState(HistoryPanelContextMenu) { screenState in
+        screenState.dismissOnUse = true
+        screenState.backAction = dismissContextMenuAction
+    }
+
+    map.addScreenState(TopSitesPanelContextMenu) { screenState in
+        screenState.dismissOnUse = true
+        screenState.backAction = dismissContextMenuAction
+    }
+
+
 
     map.createScene(SettingsScreen) { scene in
         let table = app.tables["AppSettingsTableViewController.tableView"]
@@ -408,8 +417,6 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
         let reloadButton = app.buttons["TabToolbar.stopReloadButton"]
         scene.press(reloadButton, to: ReloadLongPressMenu)
         scene.tap(reloadButton, forAction: Action.ReloadURL, transitionTo: Loading) { _ in }
-
-        scene.backAction = backBtnBackAction
     }
 
     map.addScreenState(ReloadLongPressMenu) { screenState in
