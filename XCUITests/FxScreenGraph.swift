@@ -104,6 +104,8 @@ class Action {
 
     static let TogglePrivateMode = "TogglePrivateBrowing"
     static let ToggleRequestDesktopSite = "ToggleRequestDesktopSite"
+    static let ToggleNightMode = "ToggleNightMode"
+    static let ToggleNoImageMode = "ToggleNoImageMode"
 
     static let Bookmark = "Bookmark"
     static let BookmarkThreeDots = "BookmarkThreeDots"
@@ -128,6 +130,9 @@ class FxUserState: UserState {
 
     var passcode: String? = nil
     var newPasscode: String = "111111"
+
+    var noImageMode = false
+    var nightMode = false
 }
 
 fileprivate let defaultURL = "https://www.mozilla.org/en-US/book/"
@@ -195,11 +200,11 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
     }
 
     map.addScreenState(URLBarAvailable) { screenState in
-        screenState.backAction = noopAction
         screenState.tap(app.textFields["url"], to: URLBarOpen)
         screenState.gesture(to: URLBarLongPressMenu) {
             app.textFields["url"].press(forDuration: 1.0)
         }
+        screenState.dismissOnUse = true
     }
 
     map.addScreenState(URLBarLongPressMenu) { screenState in
@@ -284,25 +289,23 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
     map.addScreenState(HomePanel_Bookmarks) { screenState in
         let bookmarkCell = app.tables["Bookmarks List"].cells.element(boundBy: 0)
         screenState.press(bookmarkCell, to: BookmarksPanelContextMenu)
-
-        screenState.backAction = noopAction
+        screenState.noop(to: HomePanelsScreen)
     }
 
     map.addScreenState(HomePanel_TopSites) { screenState in
         let topSites = app.cells["TopSitesCell"]
         screenState.press(topSites.cells.matching(identifier: "TopSite").element(boundBy: 0), to: TopSitesPanelContextMenu)
 
-        screenState.backAction = noopAction
+        screenState.noop(to: HomePanelsScreen)
     }
 
     map.addScreenState(HomePanel_History) { screenState in
-        screenState.backAction = noopAction
-
         screenState.press(app.tables["History List"].cells.element(boundBy: 2), to: HistoryPanelContextMenu)
+        screenState.noop(to: HomePanelsScreen)
     }
 
     map.addScreenState(HomePanel_ReadingList) { screenState in
-        screenState.backAction = noopAction
+        screenState.noop(to: HomePanelsScreen)
     }
 
     map.addScreenState(HistoryPanelContextMenu) { screenState in
@@ -449,6 +452,8 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
                 }
             }
         }
+
+        screenState.dismissOnUse = true
     }
 
     map.createScene(BrowserTab) { scene in
@@ -464,6 +469,7 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
         let reloadButton = app.buttons["TabToolbar.stopReloadButton"]
         scene.press(reloadButton, to: ReloadLongPressMenu)
         scene.tap(reloadButton, forAction: Action.ReloadURL, transitionTo: WebPageLoading) { _ in }
+        scene.tap(app.buttons["TabToolbar.menuButton"], to: BrowserTabMenu)
     }
 
     map.addScreenState(ReloadLongPressMenu) { screenState in
@@ -501,7 +507,20 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
     }
 
     map.createScene(BrowserTabMenu) { scene in
-        scene.tap(app.tables.cells["Settings"], to: SettingsScreen)
+        scene.tap(app.tables.cells["menu-Settings"], to: SettingsScreen)
+
+        scene.tap(app.tables.cells["menu-panel-TopSites"], to: HomePanel_TopSites)
+        scene.tap(app.tables.cells["menu-panel-Bookmarks"], to: HomePanel_Bookmarks)
+        scene.tap(app.tables.cells["menu-panel-History"], to: HomePanel_History)
+        scene.tap(app.tables.cells["menu-panel-ReadingList"], to: HomePanel_ReadingList)
+
+        scene.tap(app.tables.cells["menu-NoImageMode"], forAction: Action.ToggleNoImageMode) { userState in
+            userState.noImageMode = !userState.noImageMode
+        }
+
+        scene.tap(app.tables.cells["menu-NightMode"], forAction: Action.ToggleNightMode) { userState in
+            userState.nightMode = !userState.nightMode
+        }
 
         scene.dismissOnUse = true
         scene.backAction = cancelBackAction
