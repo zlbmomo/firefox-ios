@@ -326,6 +326,15 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
         screenState.dismissOnUse = true
         screenState.backAction = dismissContextMenuAction
     }
+    
+    let cancelBackAction = {
+        if map.isiPad() {
+            // There is not Cancel option in iPad this way it is closed
+            app/*@START_MENU_TOKEN@*/.otherElements["PopoverDismissRegion"]/*[[".otherElements[\"dismiss popup\"]",".otherElements[\"PopoverDismissRegion\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        } else {
+            app.buttons["PhotonMenu.cancel"].tap()
+        }
+    }
 
     map.addScreenState(SettingsScreen) { screenState in
         let table = app.tables.element(boundBy: 0)
