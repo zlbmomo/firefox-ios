@@ -103,6 +103,10 @@ class FxUserState: UserState {
         initialScreenState = FirstRun
     }
 
+    var iPad: Bool {
+        return UIDevice.current.userInterfaceIdiom == .pad
+    }
+
     var isPrivate = false
     var showIntro = false
     var showWhatsNew = false
@@ -115,11 +119,23 @@ fileprivate let defaultURL = "https://www.mozilla.org/en-US/book/"
 func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> ScreenGraph<FxUserState> {
     let map = ScreenGraph(for: test, with: FxUserState.self)
 
+    let navigationControllerBackAction = {
+        app.navigationBars.element(boundBy: 0).buttons.element(boundBy: 0).tap()
+    }
+
+    let cancelBackAction = {
+        app.buttons["PhotonMenu.cancel"].tap()
+    }
+
+    let dismissContextMenuAction = {
+        app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.25)).tap()
+    }
+
     let introScrollView = app.scrollViews["IntroViewController.scrollView"]
-    map.addScreenState(FirstRun) { scene in
-        scene.noop(to: BrowserTab, if: "showIntro == false && showWhatsNew == true")
-        scene.noop(to: NewTabScreen, if: "showIntro == false && showWhatsNew == false")
-        scene.noop(to: allIntroPages[0], if: "showIntro == true")
+    map.addScreenState(FirstRun) { screenState in
+        screenState.noop(to: BrowserTab, if: "showIntro == false && showWhatsNew == true")
+        screenState.noop(to: NewTabScreen, if: "showIntro == false && showWhatsNew == false")
+        screenState.noop(to: allIntroPages[0], if: "showIntro == true")
     }
 
     // Add the intro screens.
@@ -154,7 +170,6 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
     let URLBarAvailable = "URLBarAvailable"
     let Loading = "Loading"
     let ToolBarAvailable = "ToolBarAvailable"
-
 
     map.addScreenState(NewTabScreen) { screenState in
         screenState.noop(to: HomePanelsScreen)
@@ -228,7 +243,6 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
         } else {
             scene.gesture(to: TabTray) {
                 if (app.buttons["TabToolbar.tabsButton"].exists) {
-                    app.buttons["TabToolbar.tabsButton"].tap()
                 } else {
                     app.buttons["URLBarView.tabsButton"].tap()
                 }
@@ -449,15 +463,16 @@ extension ScreenGraph {
     }
 }
 
-extension Navigator {
+extension Navigator where T == FxUserState {
 
     // Open a URL. Will use/re-use the first BrowserTab or NewTabScreen it comes to.
     func openURL(urlString: String) {
-        self.goto(URLBarOpen)
-        let app = XCUIApplication()
-        app.textFields["address"].typeText(urlString + "\r")
+        openURL(urlString)
+    }
 
-        self.nowAt(BrowserTab)
+    func openURL(_ urlString: String) {
+        userState.url = urlString
+        performAction(Action.LoadURL)
     }
 
     // Opens a URL in a new tab.
