@@ -34,21 +34,24 @@ let WebImageContextMenu = "WebImageContextMenu"
 let WebLinkContextMenu = "WebLinkContextMenu"
 let CloseTabMenu = "CloseTabMenu"
 
+// These are in the exact order they appear in the settings
+// screen. XCUIApplication loses them on small screens.
 let allSettingsScreens = [
-    HomePageSettings,
     SearchSettings,
     NewTabSettings,
+    HomePageSettings,
     OpenWithSettings,
 
+    LoginsSettings,
     PasscodeSettings,
     ClearPrivateDataSettings,
-    LoginsSettings,
     TrackingProtectionSettings,
 ]
 
 let HistoryPanelContextMenu = "HistoryPanelContextMenu"
 let TopSitesPanelContextMenu = "TopSitesPanelContextMenu"
 let BasicAuthDialog = "BasicAuthDialog"
+let BookmarksPanelContextMenu = "BookmarksPanelContextMenu"
 
 let Intro_Welcome = "Intro.Welcome"
 let Intro_Search = "Intro.Search"
@@ -101,6 +104,9 @@ class Action {
 
     static let TogglePrivateMode = "TogglePrivateBrowing"
     static let ToggleRequestDesktopSite = "ToggleRequestDesktopSite"
+
+    static let Bookmark = "Bookmark"
+    static let BookmarkThreeDots = "BookmarkThreeDots"
 }
 
 class FxUserState: UserState {
@@ -119,6 +125,9 @@ class FxUserState: UserState {
     var waitForLoading = true
     var url: String? = nil
     var requestDesktopSite = false
+
+    var passcode: String? = nil
+    var newPasscode: String = "111111"
 }
 
 fileprivate let defaultURL = "https://www.mozilla.org/en-US/book/"
@@ -177,7 +186,7 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
     let URLBarAvailable = "URLBarAvailable"
     let WebPageLoading = "WebPageLoading"
     let ToolBarAvailable = "ToolBarAvailable"
-    let SettingsScreen2 = "\(SettingsScreen)-bottom"
+    let SettingsScreen2 = "\(SettingsScreen)-middle"
 
     map.addScreenState(NewTabScreen) { screenState in
         screenState.noop(to: HomePanelsScreen)
@@ -273,6 +282,9 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
     }
 
     map.addScreenState(HomePanel_Bookmarks) { screenState in
+        let bookmarkCell = app.tables["Bookmarks List"].cells.element(boundBy: 0)
+        screenState.press(bookmarkCell, to: BookmarksPanelContextMenu)
+
         screenState.backAction = noopAction
     }
 
@@ -309,29 +321,28 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
     }
 
     map.addScreenState(SettingsScreen) { screenState in
-        let table = app.tables["AppSettingsTableViewController.tableView"]
+        let table = app.tables.element(boundBy: 0)
 
         screenState.tap(table.cells["Search"], to: SearchSettings)
         screenState.tap(table.cells["NewTab"], to: NewTabSettings)
         screenState.tap(table.cells["Homepage"], to: HomePageSettings)
         screenState.tap(table.cells["OpenWith.Setting"], to: OpenWithSettings)
-
         screenState.swipeUp(table, to: SettingsScreen2)
-
-        screenState.tap(table.cells["ShowTour"], to: ShowTourInSettings)
-        screenState.tap(table.cells["TrackingProtection"], to: TrackingProtectionSettings)
 
         screenState.backAction = navigationControllerBackAction
     }
 
     map.addScreenState(SettingsScreen2) { screenState in
-        let table = app.tables["AppSettingsTableViewController.tableView"]
+        let table = app.tables.element(boundBy: 0)
 
         screenState.swipeDown(table, to: SettingsScreen)
 
         screenState.tap(table.cells["TouchIDPasscode"], to: PasscodeSettings)
-        screenState.tap(table.cells["Logins"], to: LoginsSettings)
+        screenState.tap(table.cells["Logins"], to: LoginsSettings, if: "passcode == nil")
         screenState.tap(table.cells["ClearPrivateData"], to: ClearPrivateDataSettings)
+
+        screenState.tap(table.cells["TrackingProtection"], to: TrackingProtectionSettings)
+        screenState.tap(table.cells["ShowTour"], to: ShowTourInSettings)
     }
 
     map.createScene(SearchSettings) { scene in
@@ -349,7 +360,8 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
     map.createScene(PasscodeSettings) { scene in
         scene.backAction = navigationControllerBackAction
 
-        scene.tap(app.tables["AuthenticationManager.settingsTableView"].staticTexts["Require Passcode"], to: PasscodeIntervalSettings)
+        let table = app.tables["AuthenticationManager.settingsTableView"]
+        scene.tap(table.staticTexts["Require Passcode"], to: PasscodeIntervalSettings, if: "passcode != nil")
     }
 
     map.createScene(PasscodeIntervalSettings) { scene in
@@ -367,13 +379,9 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
     }
 
     map.createScene(LoginsSettings) { scene in
-        scene.gesture(to: SettingsScreen) {
-            let loginList = app.tables["Login List"]
-            if loginList.exists {
-                app.navigationBars["Logins"].buttons["Settings"].tap()
-            } else {
-                app.navigationBars["Enter Passcode"].buttons["Cancel"].tap()
-            }
+        scene.onEnterWaitFor(element: app.tables["Login List"])
+        scene.backAction = {
+            navigationControllerBackAction()
         }
     }
 
@@ -481,6 +489,9 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
     // make sure after the menu action, navigator.nowAt() is used to set the current state
     map.createScene(PageOptionsMenu) {scene in
         scene.tap(app.tables["Context Menu"].cells["Find in Page"], to: FindInPage)
+        scene.tap(app.tables["Context Menu"].cells["menu-Bookmark"], forAction: Action.BookmarkThreeDots, Action.Bookmark) { _ in
+            // NOOP
+        }
         scene.backAction = cancelBackAction
         scene.dismissOnUse = true
     }
