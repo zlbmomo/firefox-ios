@@ -29,7 +29,8 @@ class L10nSnapshotTests: L10nBaseSnapshotTests {
             snapshot("04Settings-main-\(i)")
         }
 
-        navigator.visitNodes(allSettingsScreens) { nodeName in
+        allSettingsScreens.forEach { nodeName in
+            self.navigator.goto(nodeName)
             self.scroll(table) { i in
                 snapshot("04Settings-\(nodeName)-\(i)")
             }
@@ -52,8 +53,7 @@ class L10nSnapshotTests: L10nBaseSnapshotTests {
     // From here on it is fine to load pages
 
     func test07AddSearchProvider() {
-        let app = XCUIApplication()
-        loadWebPage(url: "http://wopr.norad.org/~sarentz/fxios/testpages/addSearchProvider.html", waitForOtherElementWithAriaLabel: "body")
+        navigator.openURL("http://wopr.norad.org/~sarentz/fxios/testpages/addSearchProvider.html")
         app.webViews.element(boundBy: 0).buttons["focus"].tap()
         snapshot("07AddSearchProvider-01", waitForLoadingIndicator: false)
         app.buttons["BrowserViewController.customSearchEngineButton"].tap()
@@ -165,14 +165,9 @@ class L10nSnapshotTests: L10nBaseSnapshotTests {
     }
 
     func test20BookmarksTableContextMenu() {
-        let app = XCUIApplication()
-        loadWebPage(url: "http://wopr.norad.org/~sarentz/fxios/testpages/index.html", waitForOtherElementWithAriaLabel: "body")
-        app.buttons["TabToolbar.menuButton"].tap()
-        app.cells["AddBookmarkMenuItem"].tap()
-        waitforNoExistence(app.otherElements["MenuViewController.menuView"])
-        app.textFields["url"].tap()
-        app.buttons["HomePanels.Bookmarks"].tap()
-        app.tables["Bookmarks List"].cells.element(boundBy: 0).press(forDuration: 2.0)
+        navigator.openURL("http://wopr.norad.org/~sarentz/fxios/testpages/index.html")
+        navigator.performAction(Action.Bookmark)
+        navigator.goto(BookmarksPanelContextMenu)
         snapshot("20BookmarksTableContextMenu-01")
     }
 

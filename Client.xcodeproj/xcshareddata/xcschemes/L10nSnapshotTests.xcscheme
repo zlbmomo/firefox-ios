@@ -47,16 +47,7 @@
                   Identifier = "L10nSnapshotTests/test04Foo()">
                </Test>
                <Test
-                  Identifier = "L10nSnapshotTests/test12WebViewAuthenticationDialog()">
-               </Test>
-               <Test
                   Identifier = "L10nSnapshotTests/test14SetHompage()">
-               </Test>
-               <Test
-                  Identifier = "L10nSnapshotTests/test17PasswordSnackbar()">
-               </Test>
-               <Test
-                  Identifier = "L10nSnapshotTests/test20BookmarksTableContextMenu()">
                </Test>
                <Test
                   Identifier = "L10nSnapshotTests/test24BookmarksListTableRowMenu()">
