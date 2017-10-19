@@ -619,6 +619,35 @@ class Navigator<T: UserState> {
         return gkPath.count > 0
     }
 
+    func plan(startAt startNode: String? = nil, goto nodeName: String) -> [String] {
+        let gkSrc: GKGraphNode
+        if let startNode = startNode,
+            let node = map.namedScenes[startNode] {
+            gkSrc = node.gkNode
+        } else {
+            gkSrc = currentScene.gkNode
+        }
+
+        guard let destNode = map.namedScenes[nodeName] else {
+            return []
+        }
+
+        let gkDest = destNode.gkNode
+        let gkPath = map.gkGraph.findPath(from: gkSrc, to: gkDest)
+
+        let path = gkPath.flatMap { gkNode in
+            return self.map.nodedScenes[gkNode]?.name
+        }
+
+        if path.isEmpty {
+            return path
+        }
+
+        let extras = followUpActions(destNode).flatMap { $0.name }
+
+        return path + extras
+    }
+
     /**
      * Move the application to the named node, wth an optional node visitor closure, which is called each time the
      * node changes.
@@ -675,20 +704,9 @@ class Navigator<T: UserState> {
 
         // If the path ends on an action, then we should follow that action
         // until we're on a valid screen state, or there's nothing left to do.
-        if let lastAction = currentScene as? ScreenActionNode {
-            var action = lastAction
-            var extras = [GraphNode<T>]()
-            while true {
-                if let nextNodeName = action.nextNodeName,
-                    let next = map.namedScenes[nextNodeName] {
-                    extras.append(next)
-                    if let nextAction = next as? ScreenActionNode<T> {
-                        action = nextAction
-                        continue
-                    }
-                }
-                break
-            }
+
+        let extras = followUpActions(currentScene)
+        if !extras.isEmpty {
             extras.forEach { nextScene in
                 moveDirectlyTo(nextScene)
             }
@@ -852,6 +870,26 @@ fileprivate extension Navigator {
 
     fileprivate func enter(_ nextScene: ScreenActionNode<T>) {
         nextScene.recorder?(userState)
+    }
+
+    func followUpActions(_ lastStep: GraphNode<T>) -> [GraphNode<T>] {
+        guard let lastAction = lastStep as? ScreenActionNode else {
+            return []
+        }
+        var action = lastAction
+        var extras = [GraphNode<T>]()
+        while true {
+            if let nextNodeName = action.nextNodeName,
+                let next = map.namedScenes[nextNodeName] {
+                extras.append(next)
+                if let nextAction = next as? ScreenActionNode<T> {
+                    action = nextAction
+                    continue
+                }
+            }
+            break
+        }
+        return extras
     }
 }
 
