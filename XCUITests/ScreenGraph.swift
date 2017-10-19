@@ -256,13 +256,19 @@ class ScreenActionNode<T: UserState>: GraphNode<T> {
 typealias Gesture = () -> Void
 
 class WaitCondition {
+    let userStatePredicate: NSPredicate?
     let predicate: NSPredicate
     let object: Any
     let file: String
     let line: UInt
 
-    init(_ predicate: String, object: Any, file: String, line: UInt) {
+    init(_ predicate: String, object: Any, if userStatePredicate: String? = nil, file: String, line: UInt) {
         self.predicate = NSPredicate(format: predicate)
+        if let p = userStatePredicate {
+            self.userStatePredicate = NSPredicate(format: p)
+        } else {
+            self.userStatePredicate = nil
+        }
         self.object = object
         self.file = file
         self.line = line
@@ -512,18 +518,16 @@ extension ScreenStateNode {
 
 extension ScreenStateNode {
     /// This allows us to record state changes in the app as the navigator moves into a given screen state.
-    func onEnter(_ predicate: String = "exists == true", element: Any? = nil,
-                 file: String = #file, line: UInt = #line,
-                 recorder: @escaping UserStateChange) {
-        if let element = element {
-            onEnter(predicate, element: element, file: file, line: line)
-        }
+    func onEnter(recorder: @escaping UserStateChange) {
         onEnterStateRecorder = recorder
     }
 
-    func onEnter(_ predicate: String = "exists == true", element: Any, file: String = #file, line: UInt = #line) {
-        onEnterWaitCondition = WaitCondition(predicate, object: element, file: file, line: line)
+    /// When entering the screenState, the navigator should wait for element.
+    /// The waiting can be made to be optional by specifying a predicate against the userState.
+    func onEnterWaitFor(_ predicate: String = "exists == true", element: Any, if userStatePredicate: String? = nil, file: String = #file, line: UInt = #line) {
+        onEnterWaitCondition = WaitCondition(predicate, object: element, if: userStatePredicate, file: file, line: line)
     }
+
 
     /// This allows us to record state changes in the app as the navigator leaves a given screen state.
     func onExit(recorder: @escaping UserStateChange) {
@@ -811,11 +815,20 @@ fileprivate extension Navigator {
 
     fileprivate func enter(_ nextScene: ScreenStateNode<T>, withVisitor nodeVisitor: NodeVisitor) {
         if let condition = nextScene.onEnterWaitCondition {
-            condition.wait { _ in
-                self.xcTest.recordFailure(withDescription: "Unsuccessfully entered \(nextScene.name)",
-                    inFile: condition.file,
-                    atLine: condition.line,
-                    expected: false)
+            let shouldWait: Bool
+            if let predicate = condition.userStatePredicate {
+                shouldWait = predicate.evaluate(with: userState)
+            } else {
+                shouldWait = true
+            }
+
+            if shouldWait {
+                condition.wait { _ in
+                    self.xcTest.recordFailure(withDescription: "Unsuccessfully entered \(nextScene.name)",
+                        inFile: condition.file,
+                        atLine: condition.line,
+                        expected: false)
+                }
             }
         }
 
