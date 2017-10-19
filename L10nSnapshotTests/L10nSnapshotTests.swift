@@ -87,8 +87,7 @@ class L10nSnapshotTests: L10nBaseSnapshotTests {
     }
 
     func test10MenuOnWebPage() {
-        userState.url = "http://wopr.norad.org/~sarentz/fxios/testpages/index.html"
-        navigator.performAction(Action.LoadURL)
+        navigator.openURL("http://wopr.norad.org/~sarentz/fxios/testpages/index.html")
         navigator.goto(BrowserTabMenu)
         snapshot("10MenuOnWebPage-01")
 
@@ -98,29 +97,26 @@ class L10nSnapshotTests: L10nBaseSnapshotTests {
 
     func test11WebViewContextMenu() {
         // Link
-        userState.url = "http://wopr.norad.org/~sarentz/fxios/testpages/link.html"
-        navigator.performAction(Action.LoadURL)
+        navigator.openURL("http://wopr.norad.org/~sarentz/fxios/testpages/link.html")
         navigator.goto(WebLinkContextMenu)
         snapshot("11WebViewContextMenu-01-link")
         navigator.back()
 
         // Image
-        userState.url = "http://wopr.norad.org/~sarentz/fxios/testpages/image.html"
-        navigator.performAction(Action.LoadURL)
+        navigator.openURL("http://wopr.norad.org/~sarentz/fxios/testpages/image.html")
         navigator.goto(WebImageContextMenu)
         snapshot("11WebViewContextMenu-02-image")
         navigator.back()
 
         // Image inside Link
-        userState.url = "http://wopr.norad.org/~sarentz/fxios/testpages/imageWithLink.html"
-        navigator.performAction(Action.LoadURL)
+        navigator.openURL("http://wopr.norad.org/~sarentz/fxios/testpages/imageWithLink.html")
         navigator.goto(WebLinkContextMenu)
-        snapshot("11WebViewContextMenu-03")
+        snapshot("11WebViewContextMenu-03-imageWithLink")
         navigator.back()
     }
 
     func test12WebViewAuthenticationDialog() {
-        loadWebPage(url: "http://wopr.norad.org/~sarentz/fxios/testpages/basicauth/index.html", waitForLoadToFinish: false)
+        navigator.openURL("http://wopr.norad.org/~sarentz/fxios/testpages/basicauth/index.html")
         let predicate = NSPredicate(format: "exists == 1")
         let query = XCUIApplication().alerts.element(boundBy: 0)
         expectation(for: predicate, evaluatedWith: query, handler: nil)
@@ -129,8 +125,7 @@ class L10nSnapshotTests: L10nBaseSnapshotTests {
     }
 
     func test13ReloadButtonContextMenu() {
-        userState.url = "http://wopr.norad.org/~sarentz/fxios/testpages/index.html"
-        navigator.performAction(Action.LoadURL)
+        navigator.openURL("http://wopr.norad.org/~sarentz/fxios/testpages/index.html")
         navigator.toggleOff(userState.requestDesktopSite, withAction: Action.ToggleRequestDesktopSite)
         navigator.goto(ReloadLongPressMenu)
         snapshot("13ContextMenuReloadButton-01")
@@ -149,30 +144,25 @@ class L10nSnapshotTests: L10nBaseSnapshotTests {
     }
 
     func test17PasswordSnackbar() {
-        let app = XCUIApplication()
-        loadWebPage(url: "http://wopr.norad.org/~sarentz/fxios/testpages/password.html", waitForOtherElementWithAriaLabel: "body")
+        navigator.openURL("http://wopr.norad.org/~sarentz/fxios/testpages/password.html")
         app.webViews.element(boundBy: 0).buttons["submit"].tap()
         snapshot("17PasswordSnackbar-01")
         app.buttons["SaveLoginPrompt.saveLoginButton"].tap()
         // The password is pre-filled with a random value so second this this will cause the update prompt
-        loadWebPage(url: "http://wopr.norad.org/~sarentz/fxios/testpages/password.html", waitForOtherElementWithAriaLabel: "body")
+        navigator.openURL("http://wopr.norad.org/~sarentz/fxios/testpages/password.html")
         app.webViews.element(boundBy: 0).buttons["submit"].tap()
         snapshot("17PasswordSnackbar-02")
     }
 
     func test18TopSitesMenu() {
-        let app = XCUIApplication()
-        let topSites = app.cells["TopSitesCell"]
-        topSites.cells.matching(identifier: "TopSite").element(boundBy: 0).press(forDuration: 2.0)
+        navigator.openURL("http://wopr.norad.org/~sarentz/fxios/testpages/index.html")
+        navigator.goto(TopSitesPanelContextMenu)
         snapshot("18TopSitesMenu-01")
     }
 
     func test19HistoryTableContextMenu() {
-        let app = XCUIApplication()
-        loadWebPage(url: "http://wopr.norad.org/~sarentz/fxios/testpages/index.html", waitForOtherElementWithAriaLabel: "body")
-        app.buttons["TabToolbar.menuButton"].tap()
-        app.toolbars.buttons["HistoryMenuToolbarItem"].tap()
-        app.tables["History List"].cells.element(boundBy: 2).press(forDuration: 2.0)
+        navigator.openURL("http://wopr.norad.org/~sarentz/fxios/testpages/index.html")
+        navigator.goto(HistoryPanelContextMenu)
         snapshot("19HistoryTableContextMenu-01")
     }
 
