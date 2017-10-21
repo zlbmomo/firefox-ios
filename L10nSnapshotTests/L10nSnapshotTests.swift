@@ -149,6 +149,26 @@ class L10nSnapshotTests: L10nBaseSnapshotTests {
         snapshot("14SetHomepage-01", waitForLoadingIndicator: false)
     }
 
+    func test16PasscodeSettings() {
+        navigator.goto(SetPasscodeScreen)
+        snapshot("16SetPasscodeScreen-1-nopasscode")
+        userState.newPasscode = "1111"
+        navigator.performAction(Action.SetPasscodeTypeOnce)
+        snapshot("16SetPasscodeScreen-2-typepasscode")
+
+        userState.newPasscode = "1112"
+        navigator.performAction(Action.SetPasscodeTypeOnce)
+        snapshot("16SetPasscodeScreen-3-passcodesmustmatch")
+
+        userState.newPasscode = "1111"
+        navigator.performAction(Action.SetPasscode)
+        snapshot("16SetPasscodeScreen-3")
+
+        navigator.goto(PasscodeIntervalSettings)
+        snapshot("16PasscodeIntervalScreen-1")
+
+    }
+
     func test17PasswordSnackbar() {
         navigator.openURL("http://wopr.norad.org/~sarentz/fxios/testpages/password.html")
         app.webViews.element(boundBy: 0).buttons["submit"].tap()
