@@ -52,6 +52,7 @@ let HistoryPanelContextMenu = "HistoryPanelContextMenu"
 let TopSitesPanelContextMenu = "TopSitesPanelContextMenu"
 let BasicAuthDialog = "BasicAuthDialog"
 let BookmarksPanelContextMenu = "BookmarksPanelContextMenu"
+let SetPasscodeScreen = "SetPasscodeScreen"
 
 let Intro_Welcome = "Intro.Welcome"
 let Intro_Search = "Intro.Search"
@@ -109,6 +110,9 @@ class Action {
 
     static let Bookmark = "Bookmark"
     static let BookmarkThreeDots = "BookmarkThreeDots"
+
+    static let SetPasscode = "SetPasscode"
+    static let SetPasscodeTypeOnce = "SetPasscodeTypeOnce"
 }
 
 class FxUserState: UserState {
@@ -341,7 +345,7 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
         screenState.swipeDown(table, to: SettingsScreen)
 
         screenState.tap(table.cells["TouchIDPasscode"], to: PasscodeSettings)
-        screenState.tap(table.cells["Logins"], to: LoginsSettings, if: "passcode == nil")
+        screenState.tap(table.cells["Logins"], to: LoginsSettings)
         screenState.tap(table.cells["ClearPrivateData"], to: ClearPrivateDataSettings)
 
         screenState.tap(table.cells["TrackingProtection"], to: TrackingProtectionSettings)
@@ -362,27 +366,44 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
 
     map.createScene(PasscodeSettings) { scene in
         scene.backAction = navigationControllerBackAction
+        let table = app.tables.element(boundBy: 0)
+        scene.tap(table.cells["TurnOnPasscode"], to: SetPasscodeScreen, if: "passcode == nil")
 
-        let table = app.tables["AuthenticationManager.settingsTableView"]
-        scene.tap(table.staticTexts["Require Passcode"], to: PasscodeIntervalSettings, if: "passcode != nil")
+//        scene.tap(table.cells["TurnOffPasscode"], to: SetPasscodeScreen, if: "passcode != nil")
+//        scene.tap(table.cells["ChangePasscode"], to: SetPasscodeScreen, if: "passcode != nil")
+
+        scene.tap(table.cells["PasscodeInterval"], to: PasscodeIntervalSettings, if: "passcode != nil")
     }
 
-    map.createScene(PasscodeIntervalSettings) { scene in
-        // The test is likely to know what it needs to do here.
-        // This screen is protected by a passcode and is essentially modal.
-        scene.gesture(to: PasscodeSettings) {
-            if app.navigationBars["Require Passcode"].exists {
-                // Go back, accepting modifications
-                app.navigationBars["Require Passcode"].buttons["Passcode For Logins"].tap()
-            } else {
-                // Cancel
-                app.navigationBars["Enter Passcode"].buttons["Cancel"].tap()
-            }
+    func typePasscode(_ passCode: String) {
+        passCode.forEach { char in
+            app.keys["\(char)"].tap()
         }
     }
 
+    map.addScreenState(SetPasscodeScreen) { screenState in
+        screenState.gesture(forAction: Action.SetPasscode, transitionTo: PasscodeSettings) { userState in
+            typePasscode(userState.newPasscode)
+            typePasscode(userState.newPasscode)
+            userState.passcode = userState.newPasscode
+        }
+
+        screenState.gesture(forAction: Action.SetPasscodeTypeOnce) { userState in
+            typePasscode(userState.newPasscode)
+        }
+    }
+
+    map.createScene(PasscodeIntervalSettings) { scene in
+        scene.onEnter { userState in
+            if let passcode = userState.passcode {
+                typePasscode(passcode)
+            }
+        }
+        scene.backAction = navigationControllerBackAction
+    }
+
     map.createScene(LoginsSettings) { scene in
-        scene.onEnterWaitFor(element: app.tables["Login List"])
+//        scene.onEnterWaitFor(element: app.tables["Login List"])
         scene.backAction = {
             navigationControllerBackAction()
         }
@@ -494,7 +515,7 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
 
     // make sure after the menu action, navigator.nowAt() is used to set the current state
     map.createScene(PageOptionsMenu) {scene in
-        scene.tap(app.tables["Context Menu"].cells["Find in Page"], to: FindInPage)
+        scene.tap(app.tables["Context Menu"].cells["menu-FindInPage"], to: FindInPage)
         scene.tap(app.tables["Context Menu"].cells["menu-Bookmark"], forAction: Action.BookmarkThreeDots, Action.Bookmark) { _ in
             // NOOP
         }
