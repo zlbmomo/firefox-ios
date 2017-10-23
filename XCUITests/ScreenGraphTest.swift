@@ -148,8 +148,6 @@ class TestUserState: UserState {
 
 let PasscodeSettingsOn = "PasscodeSettingsOn"
 let PasscodeSettingsOff = "PasscodeSettingsOff"
-let SetPasscodeScreen = "SetPasscodeScreen"
-
 
 fileprivate class TestActions {
     static let ToggleNightMode = "menu-NightMode"
@@ -167,7 +165,8 @@ fileprivate func createTestGraph(for test: XCTestCase, with app: XCUIApplication
     }
 
     map.addScreenState(BrowserTab) { screenState in
-        screenState.onEnter("exists != true", element: app.progressIndicators.element(boundBy: 0)) { userState in
+        screenState.onEnterWaitFor("exists != true", element: app.progressIndicators.element(boundBy: 0))
+        screenState.onEnter { userState in
             userState.url = app.textFields["url"].value as? String
         }
 
@@ -194,7 +193,7 @@ fileprivate func createTestGraph(for test: XCTestCase, with app: XCUIApplication
 
     map.addScreenState(BrowserTabMenu) { screenState in
         screenState.dismissOnUse = true
-        screenState.onEnter(element: app.tables["Context Menu"])
+        screenState.onEnterWaitFor(element: app.tables["Context Menu"])
         screenState.tap(app.tables.cells["Settings"], to: SettingsScreen)
 
         screenState.tap(app.cells["menu-NightMode"], forAction: TestActions.ToggleNightMode) { userState in
@@ -212,7 +211,7 @@ fileprivate func createTestGraph(for test: XCTestCase, with app: XCUIApplication
 
     map.addScreenState(SettingsScreen) { screenState in
         let table = app.tables["AppSettingsTableViewController.tableView"]
-        screenState.onEnter(element: table)
+        screenState.onEnterWaitFor(element: table)
 
         screenState.tap(table.cells["TouchIDPasscode"], to: PasscodeSettingsOff, if: "passcode == nil")
         screenState.tap(table.cells["TouchIDPasscode"], to: PasscodeSettingsOn, if: "passcode != nil")
