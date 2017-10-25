@@ -71,7 +71,7 @@ extension SQLiteHistory: HistoryRecommendations {
     "   GROUP BY \(ViewHistoryVisits).domain_id) AS domains ON domains.domain_id = \(TableHistory).domain_id AND visitDate = domains.visit_date"
 
     static let nonRecentHistory =
-        "SELECT historyID, url, siteTitle, guid, visitCount, visitDate, is_bookmarked, visitCount * icon_url_score * media_url_score AS score FROM (" +
+        "SELECT historyID, url, siteTitle, guid, visitCount, visitDate, is_bookmarked, icon_url_score * media_url_score AS score FROM (" +
             "   SELECT \(TableHistory).id as historyID, url, \(TableHistory).title AS siteTitle, guid, visitDate, \(TableHistory).domain_id," +
             "       (SELECT COUNT(1) FROM \(TableVisits) WHERE s = \(TableVisits).siteID) AS visitCount," +
             "       (SELECT COUNT(1) FROM \(ViewBookmarksLocalOnMirror) WHERE \(ViewBookmarksLocalOnMirror).bmkUri == url) AS is_bookmarked," +
@@ -176,7 +176,7 @@ extension SQLiteHistory: HistoryRecommendations {
             "SELECT historyID, url, siteTitle AS title, guid, visitCount, visitDate, is_bookmarked, score " +
             "FROM ( \(SQLiteHistory.nonRecentHistory) ) " +
             "GROUP BY url " +
-            "ORDER BY score DESC " +
+            "ORDER BY score DESC, visitDate DESC" +
             "LIMIT \(SQLiteHistory.highlightsLimit)"
         let args: Args = [thirtyMinutesAgo] + SQLiteHistory.blacklistedHosts
         return (highlightsQuery, args)
