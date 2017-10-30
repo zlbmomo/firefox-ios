@@ -228,6 +228,8 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
         screenState.dismissOnUse = true
     }
 
+    map.addScreenAction(Action.SetURL, transitionTo: URLBarOpen) { _ in }
+
     map.addScreenState(URLBarOpen) { scene in
         // This is used for opening BrowserTab with default mozilla URL
         // For custom URL, should use Navigator.openNewURL or Navigator.openURL.
