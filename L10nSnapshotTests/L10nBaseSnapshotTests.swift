@@ -41,7 +41,7 @@ class L10nBaseSnapshotTests: XCTestCase {
         args.forEach { arg in
             launchArguments.append(arg)
         }
-        app.launchArguments = launchArguments
+        app.launchArguments += launchArguments
         app.activate()
     }
 
