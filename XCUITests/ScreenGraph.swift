@@ -861,6 +861,23 @@ fileprivate extension Navigator {
                 nextScene.gkNode.addConnections(to: [ returnToRecentScene.gkNode ], bidirectional: false)
                 nextScene.gesture(to: returnToRecentScene.name, g: backAction)
             }
+        } else {
+            // We don't have a back here, but we might've had a back stack in the last scene.
+            // If that's the case, we should clear it down to make routing easier.
+            // This is important in more complex graph structures that possibly have backActions and cycles.
+            var screen: ScreenStateNode? = returnToRecentScene
+            while screen != nil {
+                guard let thisScene = screen,
+                    let prevScene = thisScene.returnNode else {
+                    break
+                }
+
+                thisScene.returnNode = nil
+                thisScene.edges.removeValue(forKey: prevScene.name)
+                thisScene.gkNode.removeConnections(to: [ prevScene.gkNode ], bidirectional: false)
+
+                screen = prevScene
+            }
         }
 
         nodeVisitor(currentScene.name)
