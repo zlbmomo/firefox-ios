@@ -97,7 +97,9 @@ class L10nSnapshotTests: L10nBaseSnapshotTests {
         navigator.goto(BrowserTabMenu)
         snapshot("10MenuOnWebPage-02")
         navigator.back()
+    }
 
+    func test10PageMenuOnWebPage() {
         navigator.goto(PageOptionsMenu)
         snapshot("10MenuOnWebPage-03")
         navigator.back()
