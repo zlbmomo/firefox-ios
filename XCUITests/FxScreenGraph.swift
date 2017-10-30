@@ -198,23 +198,13 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
     let noopAction = {}
 
     // Some internally useful screen states.
-    let URLBarAvailable = "URLBarAvailable"
     let WebPageLoading = "WebPageLoading"
-    let ToolBarAvailable = "ToolBarAvailable"
     let SettingsScreen2 = "\(SettingsScreen)-middle"
 
     map.addScreenState(NewTabScreen) { screenState in
         screenState.noop(to: HomePanelsScreen)
-        screenState.noop(to: URLBarAvailable)
+        makeURLBarAvailable(screenState)
         screenState.tap(app.buttons["TabToolbar.menuButton"], to: BrowserTabMenu)
-    }
-
-    map.addScreenState(URLBarAvailable) { screenState in
-        screenState.tap(app.textFields["url"], to: URLBarOpen)
-        screenState.gesture(to: URLBarLongPressMenu) {
-            app.textFields["url"].press(forDuration: 1.0)
-        }
-        screenState.dismissOnUse = true
     }
 
     map.addScreenState(URLBarLongPressMenu) { screenState in
@@ -470,10 +460,15 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
         app.sheets.element(boundBy: 0).buttons.element(boundBy: lastIndex).tap()
     }
 
-    map.addScreenState(ToolBarAvailable) { screenState in
-        screenState.backAction = noopAction
+    func makeURLBarAvailable(_ screenState: ScreenStateNode<FxUserState>) {
 
-        screenState.tap(app.buttons["TabLocationView.pageOptionsButton"], to: PageOptionsMenu)
+        screenState.tap(app.textFields["url"], to: URLBarOpen)
+        screenState.gesture(to: URLBarLongPressMenu) {
+            app.textFields["url"].press(forDuration: 1.0)
+        }
+    }
+
+    func makeToolBarAvailable(_ screenState: ScreenStateNode<FxUserState>) {
         screenState.tap(app.buttons["TabToolbar.menuButton"], to: BrowserTabMenu)
         if map.isiPad() {
             screenState.tap(app.buttons["TopTabsViewController.tabsButton"], to: TabTray)
@@ -486,14 +481,13 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
                 }
             }
         }
-
-        screenState.dismissOnUse = true
     }
 
     map.createScene(BrowserTab) { scene in
-        scene.noop(to: URLBarAvailable)
-        scene.noop(to: ToolBarAvailable)
+        makeURLBarAvailable(scene)
+        scene.tap(app.buttons["TabLocationView.pageOptionsButton"], to: PageOptionsMenu)
 
+        makeToolBarAvailable(scene)
         let link = app.webViews.element(boundBy: 0).links.element(boundBy: 0)
         let image = app.webViews.element(boundBy: 0).images.element(boundBy: 0)
 
