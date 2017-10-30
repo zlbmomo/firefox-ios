@@ -386,8 +386,8 @@ extension ScreenStateNode {
         let edge = Edge(destName: nodeName, predicate: predicate, transition: { xcTest, file, line in
             if let el = element {
                 waitOrTimeout(existsPredicate, object: el) { _ in
+                    xcTest.recordFailure(withDescription: "Cannot get from \(self.name) to \(nodeName). See \(declFile):\(declLine)", inFile: file, atLine: line, expected: false)
                     xcTest.recordFailure(withDescription: "Cannot find \(el)", inFile: declFile, atLine: declLine, expected: false)
-                    xcTest.recordFailure(withDescription: "Cannot get from \(self.name) to \(nodeName). See \(declFile)", inFile: file, atLine: line, expected: false)
                 }
             }
             g()
@@ -825,6 +825,8 @@ fileprivate extension Navigator {
             // state. Here we check if the transition above has taken us
             // back to the previous screen.
             if nextScene.name == currentScene.returnNode?.name {
+                // currentScene is the state we're returning from.
+                // nextScene is the state we're returning to.
                 currentScene.returnNode = nil
                 currentScene.gkNode.removeConnections(to: [ nextScene.gkNode ], bidirectional: false)
             }
@@ -853,11 +855,11 @@ fileprivate extension Navigator {
         // Now we've transitioned to the next node, we might want to note some state.
         nextScene.onEnterStateRecorder?(userState)
 
-        if nextScene.hasBack {
+        if let backAction = nextScene.backAction {
             if nextScene.returnNode == nil {
                 nextScene.returnNode = returnToRecentScene
                 nextScene.gkNode.addConnections(to: [ returnToRecentScene.gkNode ], bidirectional: false)
-                nextScene.gesture(to: returnToRecentScene.name, g: nextScene.backAction!)
+                nextScene.gesture(to: returnToRecentScene.name, g: backAction)
             }
         }
 
