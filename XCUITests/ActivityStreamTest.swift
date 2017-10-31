@@ -359,6 +359,7 @@ class ActivityStreamTest: BaseTestCase {
         XCUIDevice.shared().orientation = .landscapeLeft
 
         navigator.openURL(urlString: "http://example.com")
+        waitUntilPageLoad()
         if app.buttons["URLBarView.backButton"].isEnabled {
             app.buttons["URLBarView.backButton"].tap()
         } else {
