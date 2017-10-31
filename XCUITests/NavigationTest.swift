@@ -181,10 +181,12 @@ class NavigationTest: BaseTestCase {
 
         // From the website go to Desktop view
         goToDesktopFromMobile.tap()
+        waitUntilPageLoad()
         checkDesktopView()
 
         // From the website go back to Mobile view
         app.webViews.links.staticTexts["View Mobile Site"].tap()
+        waitUntilPageLoad()
         checkMobileView()
     }
 
