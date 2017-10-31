@@ -116,13 +116,20 @@ class Action {
     static let SetPasscodeTypeOnce = "SetPasscodeTypeOnce"
 }
 
+private var isTablet: Bool {
+    // There is more value in a variable having the same name,
+    // so it can be used in both predicates and in code
+    // than avoiding the duplication of one line of code.
+    return UIDevice.current.userInterfaceIdiom == .pad
+}
+
 class FxUserState: UserState {
     required init() {
         super.init()
         initialScreenState = FirstRun
     }
 
-    var iPad: Bool {
+    var isTablet: Bool {
         return UIDevice.current.userInterfaceIdiom == .pad
     }
 
@@ -150,7 +157,7 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
     }
 
     let cancelBackAction = {
-        if map.isiPad() {
+        if isTablet {
             // There is not Cancel option in iPad this way it is closed
             app/*@START_MENU_TOKEN@*/.otherElements["PopoverDismissRegion"]/*[[".otherElements[\"dismiss popup\"]",".otherElements[\"PopoverDismissRegion\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         } else {
@@ -278,8 +285,8 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
         scene.tap(app.buttons["HomePanels.History"], to: HomePanel_History)
         scene.tap(app.buttons["HomePanels.ReadingList"], to: HomePanel_ReadingList)
 
-        scene.tap(app.buttons["TopTabsViewController.tabsButton"], to: TabTray, if: "iPad == true")
-        scene.gesture(to: TabTray, if: "iPad == false") {
+        scene.tap(app.buttons["TopTabsViewController.tabsButton"], to: TabTray, if: "isTablet == true")
+        scene.gesture(to: TabTray, if: "isTablet == false") {
             if (app.buttons["TabToolbar.tabsButton"].exists) {
                 app.buttons["TabToolbar.tabsButton"].tap()
             } else {
@@ -322,15 +329,6 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
     map.addScreenState(BookmarksPanelContextMenu) { screenState in
         screenState.dismissOnUse = true
         screenState.backAction = dismissContextMenuAction
-    }
-    
-    let cancelBackAction = {
-        if map.isiPad() {
-            // There is not Cancel option in iPad this way it is closed
-            app/*@START_MENU_TOKEN@*/.otherElements["PopoverDismissRegion"]/*[[".otherElements[\"dismiss popup\"]",".otherElements[\"PopoverDismissRegion\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        } else {
-            app.buttons["PhotonMenu.cancel"].tap()
-        }
     }
 
     map.addScreenState(SettingsScreen) { screenState in
@@ -472,7 +470,7 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
 
     func makeToolBarAvailable(_ screenState: ScreenStateNode<FxUserState>) {
         screenState.tap(app.buttons["TabToolbar.menuButton"], to: BrowserTabMenu)
-        if map.isiPad() {
+        if isTablet {
             screenState.tap(app.buttons["TopTabsViewController.tabsButton"], to: TabTray)
         } else {
             screenState.gesture(to: TabTray) {
@@ -556,16 +554,6 @@ func createScreenGraph(for test: XCTestCase, with app: XCUIApplication) -> Scree
     }
 
     return map
-}
-extension ScreenGraph {
-
-    // Checks whether the current device is iPad or non-iPad
-    func isiPad() -> Bool {
-        if UIDevice.current.userInterfaceIdiom == .pad {
-            return true
-        }
-        return false
-    }
 }
 
 extension Navigator where T == FxUserState {
